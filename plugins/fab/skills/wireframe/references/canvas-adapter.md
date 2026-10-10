@@ -37,3 +37,9 @@ Before and after layout cleanup, compare navigation actions/destinations with
 the current access table, including creation, Back/Cancel and contextual returns.
 Route or relabel a crowded edge while preserving its transition. Removing
 essential edges to make the map quieter is a semantic regression.
+
+Fallback SVG now routes around non-group content and reports remaining edge/label
+collisions. This is approximate evidence, not native Obsidian geometry. Use SVG
+for edge QA; legacy optional PNG renderer has no routing parity. Make the declared
+primary entry a clear first overview anchor when the product has one. Main-screen
+placement, containment and native group header bands still need visual inspection.

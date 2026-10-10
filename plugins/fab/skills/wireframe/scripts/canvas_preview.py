@@ -9,6 +9,8 @@ from __future__ import annotations
 
 import argparse
 import html
+import heapq
+import math
 import json
 import re
 import textwrap
@@ -47,9 +49,9 @@ def label_lines(node: dict) -> list[str]:
         clean = raw.lstrip('# ').strip()
         if not clean:
             continue
-        lines.extend(textwrap.wrap(clean, width=max_chars, break_long_words=False)
+        lines.extend(textwrap.wrap(clean, width=max_chars, break_long_words=True)
                      or [clean])
-    return lines[:8]
+    return lines
 
 
 def contains(group: dict, child: dict) -> bool:
@@ -88,7 +90,83 @@ def layout_warnings(canvas: dict) -> list[str]:
             if (max(float(header['x']), float(other['x'])) < min(float(header['x']) + float(header['width']), float(other['x']) + float(other['width']))
                     and max(float(header['y']), float(other['y'])) < min(float(header['y']) + 50, float(other['y']) + float(other['height']))):
                 warnings.append(f'group title overlaps node: {group["id"]}, {other["id"]}')
+    by_id={n['id']:n for n in nodes}
+    for edge in canvas.get('edges',[]):
+        if edge.get('fromNode') not in by_id or edge.get('toNode') not in by_id:continue
+        route=edge_route(edge,by_id)
+        for node in nodes:
+            if node.get('type')=='group' or node['id'] in (edge['fromNode'],edge['toNode']):continue
+            if any(segment_hits_box(a,b,node) for a,b in zip(route,route[1:])):
+                warnings.append(f'edge crosses content: {edge["id"]}, {node["id"]}')
+        label=str(edge.get('label','')).strip()
+        if label:
+            cx,cy,w=edge_label_position(route,label);box={'x':cx-w/2,'y':cy-18,'width':w,'height':30}
+            for node in nodes:
+                if node.get('type')=='group':continue
+                if max(box['x'],float(node['x']))<min(box['x']+w,float(node['x'])+float(node['width'])) and max(box['y'],float(node['y']))<min(box['y']+30,float(node['y'])+float(node['height'])):
+                    warnings.append(f'edge label overlaps content: {edge["id"]}, {node["id"]}')
     return warnings
+
+
+def segment_hits_box(a, b, box):
+    """Strict interior crossing; contact with an anchor's boundary is allowed."""
+    x,y,w,h=(float(box[k]) for k in ('x','y','width','height'))
+    x += 0.01; y += 0.01; w -= 0.02; h -= 0.02
+    lo,hi=0.0,1.0
+    for origin,delta,low,high in ((a[0],b[0]-a[0],x,x+w),(a[1],b[1]-a[1],y,y+h)):
+        if abs(delta)<1e-9:
+            if not low<origin<high:return False
+        else:
+            t1,t2=(low-origin)/delta,(high-origin)/delta
+            lo=max(lo,min(t1,t2));hi=min(hi,max(t1,t2))
+            if lo>=hi:return False
+    return hi>0 and lo<1
+
+
+def edge_route(edge, by_id):
+    """Visibility-grid fallback around actual content, not a native Canvas claim."""
+    start,end=by_id[edge['fromNode']],by_id[edge['toNode']]
+    a,b=anchor(start,edge.get('fromSide','right')),anchor(end,edge.get('toSide','left'))
+    obstacles=[n for n in by_id.values() if n['id'] not in (start['id'],end['id']) and n.get('type')!='group']
+    # Source/target also obstruct intermediates; otherwise returns can cut through their own cards.
+    boxes=obstacles+[start,end] if start.get('type')!='group' and end.get('type')!='group' else obstacles
+    if not any(segment_hits_box(a,b,n) for n in boxes):return [a,b]
+    xs={a[0],b[0]};ys={a[1],b[1]}
+    for n in boxes:
+        x,y,w,h=(float(n[k]) for k in ('x','y','width','height'))
+        xs.update((x-22,x+w+22));ys.update((y-22,y+h+22))
+    xs,ys=sorted(xs),sorted(ys)
+    points={(i,j):(x,y) for i,x in enumerate(xs) for j,y in enumerate(ys)
+            if (x,y) in (a,b) or not any(float(n['x'])<x<float(n['x'])+float(n['width']) and float(n['y'])<y<float(n['y'])+float(n['height']) for n in boxes)}
+    source=(xs.index(a[0]),ys.index(a[1]));target=(xs.index(b[0]),ys.index(b[1]))
+    costs={source:0};previous={};queue=[(0,source)]
+    while queue:
+        cost,point=heapq.heappop(queue)
+        if cost!=costs[point]:continue
+        if point==target:break
+        for other in ((point[0]-1,point[1]),(point[0]+1,point[1]),(point[0],point[1]-1),(point[0],point[1]+1)):
+            if other not in points:continue
+            pa,pb=points[point],points[other]
+            if any(segment_hits_box(pa,pb,n) for n in boxes):continue
+            candidate=cost+math.dist(pa,pb)
+            if candidate<costs.get(other,float('inf')):
+                costs[other]=candidate;previous[other]=point;heapq.heappush(queue,(candidate,other))
+    if target not in costs:return [a,b] # warnings expose unresolved route, never remove it.
+    route=[points[target]];point=target
+    while point!=source:point=previous[point];route.append(points[point])
+    route.reverse();compact=[route[0]]
+    for i in range(1,len(route)-1):
+        p0,p1,p2=compact[-1],route[i],route[i+1]
+        if (p0[0]==p1[0]==p2[0]) or (p0[1]==p1[1]==p2[1]):continue
+        compact.append(p1)
+    return compact+[route[-1]]
+
+
+def edge_label_position(route,label):
+    width=min(280,max(60,len(label)*11))
+    # Prefer a long route segment; center above it so the label doesn't hide the edge.
+    a,b=max(zip(route,route[1:]),key=lambda pair:math.dist(*pair))
+    return (a[0]+b[0])/2,(a[1]+b[1])/2-24,width
 
 
 def render(canvas: dict) -> str:
@@ -129,15 +207,13 @@ def render(canvas: dict) -> str:
         end = by_id.get(edge.get('toNode'))
         if not start or not end:
             continue
-        x1, y1 = anchor(start, edge.get('fromSide', 'right'))
-        x2, y2 = anchor(end, edge.get('toSide', 'left'))
-        parts.append(f'<line x1="{x1:g}" y1="{y1:g}" x2="{x2:g}" '
-                     f'y2="{y2:g}" stroke="#777e87" stroke-width="2.5" '
-                     'marker-end="url(#arrow)"/>')
+        route = edge_route(edge, by_id)
+        points = " ".join(f"{x:g},{y:g}" for x,y in route)
+        parts.append(f'<polyline points="{points}" fill="none" '
+                     'stroke="#777e87" stroke-width="2.5" marker-end="url(#arrow)"/>')
         label = str(edge.get('label', '')).strip()
         if label:
-            cx, cy = (x1 + x2) / 2, (y1 + y2) / 2
-            label_width = min(280, max(60, len(label) * 11))
+            cx, cy, label_width = edge_label_position(route, label)
             parts.append(f'<rect x="{cx-label_width/2:g}" y="{cy-18:g}" '
                          f'width="{label_width:g}" height="30" rx="5" '
                          'fill="#fff" stroke="#ddd"/>')

@@ -101,3 +101,10 @@ separate from simulated interactions. These rules await a natural workflow check
 ## Technical dependency route
 
 Use [technical dependencies](../../../shared/methods/technical-ux-dependencies.md) for actual/simulated operations, persistence lifetime and evidence environment. A failure toggle tests interaction, not the underlying platform guarantee. Keep a compact linked note rather than a second mandatory registry.
+
+## Local run lifetime
+When providing a live local preview, confirm the server remains available after
+the generating task exits or identify it as a run command, not a live link. A
+process inside a short test session may be terminated with that session. Record
+actual root/origin/run command; keep server lifecycle separate from product data
+persistence. Do not claim reload passed if a dead preview server prevented it.

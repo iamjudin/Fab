@@ -57,3 +57,33 @@ class CanvasGroupTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+class EdgeRoutingTests(unittest.TestCase):
+    def fixture(self):
+        a=node('a','text',0,0,100,100,text='A')
+        b=node('b','text',500,0,100,100,text='B')
+        obstacle=node('middle','text',200,0,100,100,text='Obstacle')
+        edge={'id':'route','fromNode':'a','toNode':'b','fromSide':'right','toSide':'left'}
+        return a,b,obstacle,edge
+    def test_routed_preview_preserves_endpoints_and_avoids_middle_card(self):
+        a,b,obstacle,edge=self.fixture();route=MODULE.edge_route(edge,{n['id']:n for n in (a,b,obstacle)})
+        self.assertEqual(route[0],MODULE.anchor(a,'right'));self.assertEqual(route[-1],MODULE.anchor(b,'left'))
+        self.assertGreater(len(route),2)
+        self.assertFalse(any(MODULE.segment_hits_box(x,y,obstacle) for x,y in zip(route,route[1:])))
+        root=ET.fromstring(MODULE.render({'nodes':[a,b,obstacle],'edges':[edge]}))
+        self.assertEqual(len(root.findall('{http://www.w3.org/2000/svg}polyline')),1)
+    def test_warning_exposes_label_collision_instead_of_silencing_it(self):
+        a,b,obstacle,edge=self.fixture();edge['label']='A long transition label'
+        route=MODULE.edge_route(edge,{n['id']:n for n in (a,b,obstacle)})
+        cx,cy,width=MODULE.edge_label_position(route,edge['label'])
+        hidden=node('label-content','text',cx-width/2,cy-18,width,30,text='Meaning')
+        warnings=MODULE.layout_warnings({'nodes':[a,b,obstacle,hidden],'edges':[edge]})
+        # The route may change around the new card, so assert the actual collision diagnostic
+        # on a direct route with a label above it and content above the line.
+        a,b,_,edge=self.fixture();edge['label']='Navigation'
+        hidden=node('label-content','text',250,5,100,25,text='Meaning')
+        warnings=MODULE.layout_warnings({'nodes':[a,b,hidden],'edges':[edge]})
+        self.assertTrue(any('edge label overlaps content' in w for w in warnings))
+    def test_overflow_check_does_not_hide_ninth_line(self):
+        a=node('small','text',0,0,200,210,text='\n'.join(['line']*12))
+        self.assertTrue(any('overflow' in w for w in MODULE.layout_warnings({'nodes':[a],'edges':[]})))
