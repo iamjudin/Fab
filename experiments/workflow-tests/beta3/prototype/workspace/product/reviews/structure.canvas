@@ -1,0 +1,341 @@
+{
+  "nodes": [
+    {
+      "id": "S-01",
+      "type": "group",
+      "label": "S-01 · Главный / список",
+      "x": 0,
+      "y": 200,
+      "width": 500,
+      "height": 540
+    },
+    {
+      "id": "add",
+      "type": "text",
+      "text": "Добавить растение",
+      "x": 40,
+      "y": 230,
+      "width": 420,
+      "height": 60,
+      "color": "#93c5fd"
+    },
+    {
+      "id": "collection",
+      "type": "group",
+      "label": "Растения · коллекция",
+      "x": 20,
+      "y": 360,
+      "width": 460,
+      "height": 350
+    },
+    {
+      "id": "plant",
+      "type": "group",
+      "label": "Растение · повторяемый элемент",
+      "x": 40,
+      "y": 425,
+      "width": 420,
+      "height": 265
+    },
+    {
+      "id": "plant-info",
+      "type": "text",
+      "text": "Название растения",
+      "x": 60,
+      "y": 450,
+      "width": 380,
+      "height": 60,
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "open",
+      "type": "text",
+      "text": "Открыть карточку",
+      "x": 60,
+      "y": 530,
+      "width": 380,
+      "height": 60,
+      "color": "#93c5fd"
+    },
+    {
+      "id": "water",
+      "type": "text",
+      "text": "Отметить полив",
+      "x": 60,
+      "y": 610,
+      "width": 380,
+      "height": 60,
+      "color": "#16a34a"
+    },
+    {
+      "id": "S-02",
+      "type": "group",
+      "label": "S-02 · Карточка растения",
+      "x": 650,
+      "y": 200,
+      "width": 500,
+      "height": 710
+    },
+    {
+      "id": "back",
+      "type": "text",
+      "text": "Назад к списку",
+      "x": 690,
+      "y": 230,
+      "width": 420,
+      "height": 60,
+      "color": "#93c5fd"
+    },
+    {
+      "id": "data",
+      "type": "text",
+      "text": "Данные растения\nНазвание · напоминание",
+      "x": 690,
+      "y": 315,
+      "width": 420,
+      "height": 90,
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "edit",
+      "type": "text",
+      "text": "Изменить данные",
+      "x": 690,
+      "y": 425,
+      "width": 420,
+      "height": 60,
+      "color": "#93c5fd"
+    },
+    {
+      "id": "history",
+      "type": "group",
+      "label": "История · встроенная секция",
+      "x": 670,
+      "y": 555,
+      "width": 460,
+      "height": 325
+    },
+    {
+      "id": "record",
+      "type": "group",
+      "label": "Запись полива · повторяется",
+      "x": 690,
+      "y": 620,
+      "width": 420,
+      "height": 230
+    },
+    {
+      "id": "time",
+      "type": "text",
+      "text": "Дата и время полива",
+      "x": 710,
+      "y": 650,
+      "width": 380,
+      "height": 60,
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "correct",
+      "type": "text",
+      "text": "Удалить ошибочную запись",
+      "x": 710,
+      "y": 750,
+      "width": 380,
+      "height": 60,
+      "color": "#16a34a"
+    },
+    {
+      "id": "S-03",
+      "type": "group",
+      "label": "S-03 · Создание / modal sheet",
+      "x": 0,
+      "y": -400,
+      "width": 500,
+      "height": 420
+    },
+    {
+      "id": "new-fields",
+      "type": "text",
+      "text": "Название\nНапоминание (необязательно)",
+      "x": 40,
+      "y": -370,
+      "width": 420,
+      "height": 100,
+      "color": "#bae6fd"
+    },
+    {
+      "id": "create",
+      "type": "text",
+      "text": "Создать",
+      "x": 40,
+      "y": -245,
+      "width": 420,
+      "height": 60,
+      "color": "#16a34a"
+    },
+    {
+      "id": "cancel-new",
+      "type": "text",
+      "text": "Отмена → список",
+      "x": 40,
+      "y": -145,
+      "width": 420,
+      "height": 60,
+      "color": "#93c5fd"
+    },
+    {
+      "id": "S-04",
+      "type": "group",
+      "label": "S-04 · Изменение / modal sheet",
+      "x": 1300,
+      "y": 200,
+      "width": 500,
+      "height": 430
+    },
+    {
+      "id": "edit-fields",
+      "type": "text",
+      "text": "Название\nНапоминание (необязательно)",
+      "x": 1340,
+      "y": 230,
+      "width": 420,
+      "height": 100,
+      "color": "#bae6fd"
+    },
+    {
+      "id": "save",
+      "type": "text",
+      "text": "Сохранить",
+      "x": 1340,
+      "y": 355,
+      "width": 420,
+      "height": 60,
+      "color": "#16a34a"
+    },
+    {
+      "id": "cancel-edit",
+      "type": "text",
+      "text": "Отмена → карточка",
+      "x": 1340,
+      "y": 525,
+      "width": 420,
+      "height": 60,
+      "color": "#93c5fd"
+    },
+    {
+      "id": "intro",
+      "type": "text",
+      "text": "Уход за растениями · кандидат структуры\nВложенность = состав; стрелки = открытие/возврат.\nСоздать → список; Сохранить → карточка (при успехе).",
+      "x": 650,
+      "y": -400,
+      "width": 1150,
+      "height": 125,
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "legend-grey",
+      "type": "text",
+      "text": "Информация",
+      "x": 650,
+      "y": -230,
+      "width": 260,
+      "height": 60,
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "legend-local",
+      "type": "text",
+      "text": "Локальный ввод",
+      "x": 940,
+      "y": -230,
+      "width": 260,
+      "height": 60,
+      "color": "#bae6fd"
+    },
+    {
+      "id": "legend-blue",
+      "type": "text",
+      "text": "Навигация",
+      "x": 1230,
+      "y": -230,
+      "width": 260,
+      "height": 60,
+      "color": "#93c5fd"
+    },
+    {
+      "id": "legend-green",
+      "type": "text",
+      "text": "Сохранение изменения",
+      "x": 1520,
+      "y": -230,
+      "width": 280,
+      "height": 90,
+      "color": "#16a34a"
+    },
+    {
+      "id": "source",
+      "type": "file",
+      "file": "product/reviews/structure.md",
+      "x": 650,
+      "y": -80,
+      "width": 1150,
+      "height": 100
+    }
+  ],
+  "edges": [
+    {
+      "id": "nav-add",
+      "fromNode": "add",
+      "toNode": "S-03",
+      "fromSide": "top",
+      "toSide": "bottom",
+      "toEnd": "arrow",
+      "color": "#2563eb"
+    },
+    {
+      "id": "nav-cancel-new",
+      "fromNode": "cancel-new",
+      "toNode": "S-01",
+      "fromSide": "left",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#2563eb"
+    },
+    {
+      "id": "nav-open",
+      "fromNode": "open",
+      "toNode": "S-02",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#2563eb"
+    },
+    {
+      "id": "nav-back",
+      "fromNode": "back",
+      "toNode": "S-01",
+      "fromSide": "left",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "color": "#2563eb"
+    },
+    {
+      "id": "nav-edit",
+      "fromNode": "edit",
+      "toNode": "S-04",
+      "fromSide": "right",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#2563eb"
+    },
+    {
+      "id": "nav-cancel-edit",
+      "fromNode": "cancel-edit",
+      "toNode": "S-02",
+      "fromSide": "left",
+      "toSide": "right",
+      "toEnd": "arrow",
+      "color": "#2563eb"
+    }
+  ]
+}

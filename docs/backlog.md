@@ -13,6 +13,8 @@ Product/Wireframe migration; фиксируем незакрытые WF findings
 | FAB-04 | Отложено | Prototype/plugin/delivery | После bounded domain transfer; no maturity from copied text |
 | FAB-05 | Отложено | Mobile HIG/Material expertise | Глобальные исследования и conditional platform criteria |
 
+| FAB-06 | Исправлено, ждёт проверки | Whole-model creator-axis assessment | Initial new model conflated same actor with redundant axis; beta.5 clarification, one corrective pending. Evidence beta4-new-model-initial. |
+
 ## Наследованные findings: пока у исходного владельца
 WF-17/20/26/27/28 остаются в Wireframer docs/backlog.md. Здесь pointers, не
 новые дубли task records. Переход статуса/owner отдельно при реальном domain

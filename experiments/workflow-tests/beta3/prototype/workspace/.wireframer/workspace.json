@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "managedBy": "wireframer",
+  "slug": "plant-care",
+  "cleanupBoundary": "/private/tmp/fab-beta2-domain-20261010",
+  "generatedFiles": [
+    ".wireframer/graph.json",
+    ".wireframer/project.json",
+    ".wireframer/signals.json",
+    "product/evidence/structure.svg",
+    "product/journal.md",
+    "product/reviews/prototype.md",
+    "product/reviews/structure.canvas",
+    "product/reviews/structure.md",
+    "prototype/app.js",
+    "prototype/check.cjs",
+    "prototype/index.html"
+  ],
+  "generatedDirectories": [
+    ".wireframer",
+    "product",
+    "product/reviews",
+    "product/evidence"
+  ]
+}

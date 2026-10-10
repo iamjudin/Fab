@@ -1,0 +1,18 @@
+Browser tab: 11, Title: "Уход за растениями · прототип", URL: "http://127.0.0.1:8765/prototype/".
+1 AXWebArea Уход за растениями · прототип, URL: 127.0.0.1:8765/prototype/
+	2 container
+		3 container screen
+			4 heading Мои растения, Value: 1
+				5 text Мои растения
+			6 button Добавить растение
+			7 container
+				8 heading Монстера у окна, Value: 2
+					9 text Монстера у окна
+				10 text Проверить почву утром Поливов пока нет.
+				11 button Открыть карточку
+				12 button Отметить полив
+		13 container Тестовые controls
+			14 text Тест сохранения: 
+			15 button Ошибка следующего сохранения, ID: fail
+
+The focused UI element is 1 AXWebArea Уход за растениями · прототип, URL: 127.0.0.1:8765/prototype/

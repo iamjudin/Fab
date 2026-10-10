@@ -1,0 +1,16 @@
+{
+  "exit": 0,
+  "seconds": 94.4,
+  "events": [
+    {
+      "type": "turn.completed",
+      "usage": {
+        "input_tokens": 203593,
+        "cached_input_tokens": 168192,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2713,
+        "reasoning_output_tokens": 112
+      }
+    }
+  ]
+}

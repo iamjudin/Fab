@@ -104,6 +104,6 @@
     "ingestion scope no mandatory graph",
     "testing policy condensed from workflow-testing-design"
   ],
-  "fabricator": "4543046 inspected design provenance only; no craft/publish migration yet",
+  "fabricator": "Source4543046 untouched; craft/runtime/publication-principles adapted into Plugin/Delivery, rejecting old forced hard-clean/explicit-only/global public boilerplate",
   "landlord": "excluded"
 }

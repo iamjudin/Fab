@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 2,
+  "nodes": [
+    {
+      "id": "DR-01",
+      "type": "domain-rule",
+      "meaning": "Отмена не меняет сохранённые данные; ошибка сохраняет ввод",
+      "status": "accepted",
+      "links": []
+    },
+    {
+      "id": "UC-01",
+      "type": "use-case",
+      "meaning": "Просмотреть растения и открыть выбранную карточку",
+      "status": "accepted",
+      "links": []
+    },
+    {
+      "id": "UC-02",
+      "type": "use-case",
+      "meaning": "Добавить растение с названием и необязательным напоминанием",
+      "status": "accepted",
+      "links": [
+        "DR-01"
+      ]
+    },
+    {
+      "id": "UC-03",
+      "type": "use-case",
+      "meaning": "Отметить полив выбранного растения из списка",
+      "status": "accepted",
+      "links": []
+    },
+    {
+      "id": "UC-04",
+      "type": "use-case",
+      "meaning": "Просмотреть данные и историю поливов растения",
+      "status": "accepted",
+      "links": []
+    },
+    {
+      "id": "UC-05",
+      "type": "use-case",
+      "meaning": "Изменить название и напоминание растения",
+      "status": "accepted",
+      "links": [
+        "DR-01"
+      ]
+    },
+    {
+      "id": "UC-06",
+      "type": "use-case",
+      "meaning": "Исправить ошибочно отмеченный полив через историю",
+      "status": "accepted",
+      "links": []
+    },
+    {
+      "id": "DR-02",
+      "type": "domain-rule",
+      "meaning": "Полив и история принадлежат конкретному растению",
+      "status": "accepted",
+      "links": [
+        "UC-03",
+        "UC-04",
+        "UC-06"
+      ]
+    },
+    {
+      "id": "DR-03",
+      "type": "domain-rule",
+      "meaning": "Название и необязательное напоминание доступны при создании и редактировании; OS уведомления не подтверждены",
+      "status": "accepted",
+      "links": [
+        "UC-02",
+        "UC-05"
+      ]
+    },
+    {
+      "id": "DR-04",
+      "type": "domain-rule",
+      "meaning": "Исправление ошибочного полива удаляет выбранную запись из истории",
+      "status": "candidate",
+      "links": [
+        "UC-06",
+        "DR-02"
+      ]
+    },
+    {
+      "id": "DR-05",
+      "type": "domain-rule",
+      "meaning": "Быстрый полив добавляет запись с текущим временем после успешного сохранения",
+      "status": "candidate",
+      "links": [
+        "UC-03",
+        "DR-02"
+      ]
+    },
+    {
+      "id": "S-01",
+      "type": "surface",
+      "meaning": "Главный экран: список растений с действиями у каждого растения",
+      "status": "candidate",
+      "links": [
+        "UC-01",
+        "UC-03"
+      ]
+    },
+    {
+      "id": "S-02",
+      "type": "surface",
+      "meaning": "Карточка растения: данные и встроенная история",
+      "status": "candidate",
+      "links": [
+        "UC-04",
+        "UC-06",
+        "DR-04"
+      ]
+    },
+    {
+      "id": "S-03",
+      "type": "surface",
+      "meaning": "Создание растения: modal sheet из списка",
+      "status": "candidate",
+      "links": [
+        "UC-02",
+        "DR-01",
+        "DR-03"
+      ]
+    },
+    {
+      "id": "S-04",
+      "type": "surface",
+      "meaning": "Редактирование растения: modal sheet из карточки",
+      "status": "candidate",
+      "links": [
+        "UC-05",
+        "DR-01",
+        "DR-03"
+      ]
+    },
+    {
+      "id": "P-01",
+      "type": "prototype",
+      "meaning": "Технический браузерный кандидат UC-01–UC-06; localStorage, свободное напоминание, удаление ошибочного полива; UI прогон не подтверждён",
+      "status": "candidate",
+      "links": [
+        "UC-01",
+        "UC-02",
+        "UC-03",
+        "UC-04",
+        "UC-05",
+        "UC-06",
+        "S-01",
+        "S-02",
+        "S-03",
+        "S-04",
+        "DR-01",
+        "DR-04",
+        "DR-05"
+      ]
+    }
+  ]
+}

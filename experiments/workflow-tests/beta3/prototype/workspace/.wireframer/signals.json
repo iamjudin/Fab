@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "signals": [
+    {
+      "id": "SIG-01",
+      "meaning": "Личный инструмент, без аккаунта и монетизации в срезе",
+      "authority": "constraint",
+      "knowledgeStatus": "decision",
+      "disposition": {
+        "kind": "routed",
+        "targetType": "constraint",
+        "reason": "accepted slice boundary"
+      }
+    },
+    {
+      "id": "SIG-02",
+      "meaning": "Отмена не меняет сохранённые данные; ошибка сохраняет ввод",
+      "authority": "constraint",
+      "knowledgeStatus": "decision",
+      "disposition": {
+        "kind": "represented",
+        "refs": [
+          "DR-01"
+        ]
+      }
+    },
+    {
+      "id": "SIG-03",
+      "meaning": "Принятые UC текущего среза из accepted.md",
+      "authority": "constraint",
+      "knowledgeStatus": "decision",
+      "disposition": {
+        "kind": "represented",
+        "refs": [
+          "UC-01",
+          "UC-02",
+          "UC-03",
+          "UC-04",
+          "UC-05",
+          "UC-06",
+          "DR-03"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "slug": "plant-care",
+  "language": "ru",
+  "activeStage": "interaction-prototype",
+  "creatorIntent": "Личный инструмент ухода за домашними растениями",
+  "inputFlexibility": "accepted requirements with candidate implementation",
+  "boundaries": [
+    "no account",
+    "no payment",
+    "no cloud sync",
+    "no automatic watering"
+  ]
+}

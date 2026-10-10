@@ -17,3 +17,12 @@ Product/Wireframe references and compatible graph tools moved, shared decision
 policy resolves forced per-hierarchy approvals/partial-work prerequisites.
 25local tests PASS, installed parity48files/dddd417e672a74a3. Renderer unchanged;
 WF20 open. Existing plant-care bounded test contracted before launch.
+
+## 2026-10-10 - ten skills and selected prototype/release paths
+Beta.2 existing domain model->structure observed; no forced early approvals,
+original signals/rule retained. Beta.3 all ten executable contracts installed;
+prototype selected CUA paths pass under root observation, plugin+delivery source
+fix/readiness handled bounded. Private iamjudin/Fab remote created and verified;
+branch and recovery tag pushed. No public release/merge. Beta.4 SVG routing and
+preview lifetime boundary installed,31local tests pass. New-model smoke running.
+Actual current source83337f6; new-model contract records budget/runtime separately.

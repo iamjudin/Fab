@@ -1,0 +1,17 @@
+Browser tab: 10, Title: "Уход за растениями · прототип", URL: "http://127.0.0.1:8765/prototype/".
+0 AXWebArea Уход за растениями · прототип, URL: 127.0.0.1:8765/prototype/
+	1 container form
+		2 heading Изменить растение, Value: 2, ID: formTitle
+			3 text Изменить растение
+		4 container
+			5 text Название
+			6 text field (settable) Название, Value: Монстера у окна, ID: name
+		7 container
+			8 text Напоминание (необязательно)
+			9 text entry area (settable) Напоминание (необязательно), Value: Проверить почву утром, ID: reminder
+		10 text Свободный текст. Уведомления не отправляются.
+		13 text Не сохранено. Тестовая ошибка сохранения. Повтори попытку.
+		11 button Сохранить, ID: submit
+		12 button Отмена, ID: cancel
+
+The focused UI element is 6 text field (settable) Название, Value: Монстера у окна, ID: name

@@ -13,6 +13,11 @@ requirements/non-goals/authority; accepted input is usable without full discover
 - States/time/error/history/policies: [rules](references/domain-rules.md).
 - First/next coherent experience: [slice](references/product-slice.md).
 - Before mature output/change propagation: [preflight](references/preflight-review.md).
+For a whole new product model, assess both human and creator-side progress using
+HJ/JS and BJ/BS contracts even when the creator is also the only user. Same actor
+is not proof the axes are identical. If no distinct creator-side transition is
+supported, retain Creator Intent and explicitly record that assessment/limit;
+don't manufacture a Business Job to fill a quota, or claim HJ replaces the axis.
 A bounded feature/UC task needn't manufacture new Jobs or a whole product graph.
 Use existing .wireframer state when available; don't rename it to .fab or lose IDs.
 For new durable domain state retain its compatible schema while .fab remains an
