@@ -1,0 +1,24 @@
+---
+name: product
+description: Define a product model, use cases, rules or a bounded change in an existing product from intent, requirements and evidence. Use for deciding product behavior or a slice, not for research-only, artifact audit or drawing screens.
+---
+Read [shared core](../../shared/core.md), [decision policy](../../shared/decision-policy.md), and [project contract](../../shared/project-contract.md) for existing/durable work. Choose only relevant references.
+# Product
+Find new/existing/limited-change and requested stopping outcome. Preserve explicit
+requirements/non-goals/authority; accepted input is usable without full discovery.
+- New/ambiguous input: [intake](references/startup-gates.md).
+- Persistent domain state: [workspace](references/product-workspace.md).
+- Human progress: [HJ/JS](references/human-jobs.md); creator progress: [BJ/BS](references/business-jobs.md), only when these decisions are needed.
+- Promise/UC/capabilities: [shaping](references/product-shaping.md).
+- States/time/error/history/policies: [rules](references/domain-rules.md).
+- First/next coherent experience: [slice](references/product-slice.md).
+- Before mature output/change propagation: [preflight](references/preflight-review.md).
+A bounded feature/UC task needn't manufacture new Jobs or a whole product graph.
+Use existing .wireframer state when available; don't rename it to .fab or lose IDs.
+For new durable domain state retain its compatible schema while .fab remains an
+index. Missing empirical/technical evidence routes conditionally to Research or
+Testing/actual spike; simulation is not proof. Methods in shared/methods are read
+by active question. Keep intent personal/commercial/client distinct.
+Finish requested model/change with sufficient behavior, source coverage, unknowns
+and honest acceptance state. Wireframe is a next owner only if interface outcome
+was requested or a real dependency within authorized scope. No automatic full run.

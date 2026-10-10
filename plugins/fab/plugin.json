@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "fab",
-  "version": "0.1.0-beta.1",
-  "description": "Coauthor project work: orient, research, analyze, explore alternatives and test bounded hypotheses.",
+  "version": "0.1.0-beta.2",
+  "description": "Coauthor focused project work, product behavior and interface structure with traceable evidence.",
   "author": {
     "name": "iamjudin"
   },

@@ -1,8 +1,8 @@
 # Available beta capabilities
-Five executable skills: cowork, research, analysis, brainstorm and testing;
-shared culture applies to all. Read their SKILL.md only when their outcome is needed.
-Product modeling, wireframe, prototype, plugin maintenance and delivery are
-planned owners, not installed Fab skills in this beta. State this boundary; a
-user may still request ordinary host work explicitly, but do not claim it proves
-an unavailable Fab route. Mobile focus doesn't imply proven HIG/Material/native
-expertise. Landlord is excluded; landing is a future independently designed branch.
+Seven executable skills: Cowork, Research, Analysis, Brainstorm, Testing,
+Product and Wireframe. Shared culture applies to all; read only active refs.
+Product defines meaning/behavior; Wireframe organizes surfaces/navigation/flows/
+block composition. Partial existing work can start directly; no compulsory full
+Jobs route. Prototype, plugin maintenance and delivery are future owners, not
+installed Fab routes yet. No hidden fallback into old Wireframer/Fabricator.
+Mobile focus doesn't imply proven HIG/Material/native expertise. Landlord excluded.

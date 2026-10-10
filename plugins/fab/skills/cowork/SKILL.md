@@ -12,7 +12,8 @@ Offer a clear recommendation when ambiguous; do useful independent work while
 waiting only for genuinely required choices. No repeated briefing for known input.
 Read [capabilities](../../shared/capabilities.md) to route:
 research gathers/synthesizes evidence; analysis evaluates existing material;
-brainstorm explores options; testing runs a bounded experiment. Direct requests
+brainstorm explores options; testing runs a bounded experiment; product defines
+behavior, wireframe organizes visible interfaces. Direct requests
 can skip cowork. Preserve authorized scope on handoff; unavailable routes must be
 named, not silently sent through old Wireframer/Fabricator/Landlord.
 Stop at agreed orientation/plan/handoff, or continue the authorized result with

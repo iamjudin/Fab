@@ -1,0 +1,59 @@
+import importlib.util
+import unittest
+import xml.etree.ElementTree as ET
+from pathlib import Path
+
+SPEC = importlib.util.spec_from_file_location('canvas_preview', Path(__file__).parents[1] / 'plugins/fab/skills/wireframe/scripts/canvas_preview.py')
+MODULE = importlib.util.module_from_spec(SPEC)
+SPEC.loader.exec_module(MODULE)
+
+
+def node(identity, kind, x, y, width, height, **extra):
+    return dict(id=identity, type=kind, x=x, y=y, width=width, height=height, **extra)
+
+
+class CanvasGroupTests(unittest.TestCase):
+    def test_native_title_band_catches_previous_control(self):
+        group = node('collection', 'group', 20, 180, 400, 200, label='Collection')
+        previous = node('create', 'text', 20, 120, 400, 50, text='Create')
+        warnings = MODULE.layout_warnings({'nodes': [group, previous]})
+        self.assertIn('group title overlaps node: collection, create', warnings)
+        previous['y'] = 80
+        self.assertEqual(MODULE.layout_warnings({'nodes': [group, previous]}), [])
+
+    def test_svg_group_title_is_above_its_frame(self):
+        root = ET.fromstring(MODULE.render({'nodes': [self.group, self.action], 'edges': []}))
+        title = root.findall('{http://www.w3.org/2000/svg}text')[0]
+        self.assertLess(float(title.get('y')), self.group['y'])
+
+    def setUp(self):
+        self.group = node('screen', 'group', 0, 0, 500, 400, label='Main screen')
+        self.action = node('add', 'text', 40, 100, 200, 70, text='Add')
+
+    def test_native_hex_color_is_preserved_in_svg(self):
+        self.action['color'] = '#dbeafe'
+        root = ET.fromstring(MODULE.render({'nodes': [self.action], 'edges': []}))
+        rects = root.findall('{http://www.w3.org/2000/svg}rect')
+        self.assertEqual(rects[-1].get('fill'), '#dbeafe')
+        self.assertEqual(MODULE.node_fill({'color': '4'}), MODULE.COLORS['4'])
+        self.assertEqual(MODULE.node_fill({'color': '#invalid'}), '#fff')
+
+    def test_containment_is_valid_but_colliding_controls_are_not(self):
+        other = node('edit', 'text', 70, 120, 200, 70, text='Edit')
+        warnings = MODULE.layout_warnings({'nodes': [self.group, self.action, other]})
+        self.assertEqual(warnings, ['overlapping nodes: add, edit'])
+
+    def test_control_crossing_group_boundary_is_reported(self):
+        crossing = node('outside', 'text', 450, 100, 200, 70, text='Outside')
+        self.assertIn('overlapping nodes: screen, outside', MODULE.layout_warnings({'nodes': [self.group, crossing]}))
+
+    def test_group_renders_behind_control_regardless_of_node_order(self):
+        root = ET.fromstring(MODULE.render({'nodes': [self.action, self.group], 'edges': []}))
+        ns = {'s': 'http://www.w3.org/2000/svg'}
+        rects = root.findall('s:rect', ns)
+        self.assertEqual([r.get('width') for r in rects[-2:]], ['500', '200'])
+        self.assertEqual([t.text for t in root.findall('s:text', ns)], ['Main screen', 'Add'])
+
+
+if __name__ == '__main__':
+    unittest.main()

@@ -1,0 +1,62 @@
+{
+  "baseline": "Wireframer0.2.5",
+  "adaptedReferences": [
+    {
+      "source": "skills/craft/references/human-jobs.md",
+      "owner": "product",
+      "sourceSha256": "533a983aa53a124ddcf446535578643f3dc301aa09bb2b1a819f806e4123944c"
+    },
+    {
+      "source": "skills/craft/references/business-jobs.md",
+      "owner": "product",
+      "sourceSha256": "68e6420a36e1ddbd62eb8252aea0e50da9f588773f0db32b17ef0d5781eb4fbe"
+    },
+    {
+      "source": "skills/craft/references/product-shaping.md",
+      "owner": "product",
+      "sourceSha256": "d30d87e0ee55f66b5bc7938d09d028b01781c83ab48a1756313ecc91ebed0c33"
+    },
+    {
+      "source": "skills/craft/references/domain-rules.md",
+      "owner": "product",
+      "sourceSha256": "e62afde61d3f05b3e3592b37ff91cf8026ca69f69d2520fb16366ef426ad2d6e"
+    },
+    {
+      "source": "skills/craft/references/product-slice.md",
+      "owner": "product",
+      "sourceSha256": "257306b17340555c77c0584d6c97c8a66f91d041e83c3e8b34f7ea834bbedb0e"
+    },
+    {
+      "source": "skills/craft/references/product-workspace.md",
+      "owner": "product",
+      "sourceSha256": "aa05ab612940cefe20d65732de7e1f8f8f73a68695345f55cff4e685587390b8"
+    },
+    {
+      "source": "skills/craft/references/preflight-review.md",
+      "owner": "product",
+      "sourceSha256": "66b1b47424743dd2989a81c0bec192f925ea050359c198472895f8113b8d641b"
+    },
+    {
+      "source": "skills/craft/references/navigation-ia.md",
+      "owner": "wireframe",
+      "sourceSha256": "25f4e325ee073e44c1e0930fd3fe5551f56969fd9a1bbeb2f294451a45f08f6e"
+    },
+    {
+      "source": "skills/craft/references/critical-scenarios.md",
+      "owner": "wireframe",
+      "sourceSha256": "8a89be8413d527e5cdd12adb10719aa30a13be16aed393b29c0737ae10a59e5a"
+    },
+    {
+      "source": "skills/craft/references/block-screens.md",
+      "owner": "wireframe",
+      "sourceSha256": "3999e911af66ed9fb80742e187edfcfe6c8e5733b5fd3d8c799a6169cb64e19f"
+    },
+    {
+      "source": "skills/craft/references/canvas-adapter.md",
+      "owner": "wireframe",
+      "sourceSha256": "4be4163b7a4cba29c48783057247a8ae4313386ceae34be03f605206598839d9"
+    }
+  ],
+  "policyChange": "shared decision policy replaces forced per-hierarchy gates; partial existing mode accepts sufficient requirements",
+  "knownWF20": "renderer copied unchanged; unresolved geometry, no closure"
+}

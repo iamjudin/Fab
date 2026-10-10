@@ -11,3 +11,9 @@ independent-agent audit. TotalCLIinput470621, cached410624,
 output5886, wall305.9s. No correctionprompt/reset.
 One Testing transportreconnect completed. Handoff prepared, actualmainchat
 notcreated/transferred. No remote/publicrelease; oldrepositories preserved.
+
+## 2026-10-10 — beta.2 domain transfer before smoke
+Product/Wireframe references and compatible graph tools moved, shared decision
+policy resolves forced per-hierarchy approvals/partial-work prerequisites.
+25local tests PASS, installed parity48files/dddd417e672a74a3. Renderer unchanged;
+WF20 open. Existing plant-care bounded test contracted before launch.
