@@ -282,17 +282,20 @@ def render_png(canvas: dict, output: Path) -> None:
         end = by_id.get(edge.get('toNode'))
         if not start or not end:
             continue
-        a = pos(anchor(start, edge.get('fromSide', 'right')))
-        b = pos(anchor(end, edge.get('toSide', 'left')))
-        draw.line((a, b), fill='#777e87', width=3)
+        route = edge_route(edge, by_id)
+        pixels = [pos(point) for point in route]
+        a, b = pixels[0], pixels[-1]
+        draw.line(pixels, fill='#777e87', width=3)
         label = str(edge.get('label', '')).strip()
         if label:
-            cx, cy = (a[0] + b[0]) // 2, (a[1] + b[1]) // 2
+            lx, ly, _ = edge_label_position(route, label)
+            cx, cy = pos((lx, ly))
             box = draw.textbbox((cx, cy), label, font=edge_font, anchor='mm')
             draw.rounded_rectangle((box[0]-7, box[1]-4, box[2]+7, box[3]+4),
                                    radius=5, fill='#fff', outline='#ddd')
             draw.text((cx, cy), label, font=edge_font, fill='#30343a', anchor='mm')
-        dx, dy = b[0]-a[0], b[1]-a[1]
+        tail = pixels[-2]
+        dx, dy = b[0]-tail[0], b[1]-tail[1]
         length = max(1, (dx*dx+dy*dy) ** .5)
         ux, uy = dx/length, dy/length
         left = (round(b[0]-12*ux-6*uy), round(b[1]-12*uy+6*ux))

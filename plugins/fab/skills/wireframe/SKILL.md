@@ -18,6 +18,16 @@ blue navigation, green persistent mutation. These are diagram notation, not UI s
 Use familiar terms (modal sheet/navigation stack/tab bar). Proposed scope additions
 remain distinct. Creation/editing initial settings are checked together.
 Preflight semantics before geometry; JSON/preview/native Obsidian are distinct.
+When producing or revising a Canvas structure overview, run
+scripts/check_structure.py <canvas>
+--surface-id <S-ID> for each included surface before progressing. Each declared
+surface is a real group; separate control rows physically belong inside it.
+A separate app/global tab bar can own controls in a group whose ID starts with
+global-navigation; keep one meaningful owner per actor context, not duplicated
+inside every screen. Repeated collection/item nesting still needs semantic preflight. Labels like
+S-01/card aren't containment; a flat flow can be valid for scenarios but not this
+structure projection. Repair physical ownership failures autonomously; don't
+call the structure ready or drop arrows to silence the guard.
 Use ../product/scripts/product_workspace.py for registry/validate-canvas with
 actual vault root; scripts/canvas_preview.py for fallback. Layout warnings are
 not repaired by deleting required edges or hiding content. Renderer geometry is

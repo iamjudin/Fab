@@ -20,3 +20,10 @@ Runtime package plugins/fab, docs не скрытый обязательный r
 не становятся целью Fab. Старый paused sprng heartbeat не возобновлять.
 Основной рабочий чат пока в Wireframer; новый чат только по прямому запросу.
 Не создавай subagents без явного разрешения на делегацию.
+
+## Current boundary
+Installed Fab0.1.0-beta.5,56files/4096c3342f8d8939. All ten independent contracts.
+31local regressions, bounded outcome/domain/UI/maintenance smokes; not universal
+maturity. Current detailed state in docs/handoff.md and docs/backlog.md. Continue
+across checkpoints when authorized; user explicitly rejected artificial pauses.
+Private GitHub remote verified; no public release/merge. One reset allowed,unused.

@@ -1,0 +1,290 @@
+{
+  "nodes": [
+    {
+      "id": "coord",
+      "type": "text",
+      "text": "S-01 · Главный вход\nКоординатор / событие\nГотовность → фильтры → коллекция",
+      "x": 0.0,
+      "y": 0.0,
+      "width": 500,
+      "height": 192.0,
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "create",
+      "type": "text",
+      "text": "S-01 / экран\nСоздать поручение → S-03",
+      "x": 0.0,
+      "y": 240.0,
+      "width": 500,
+      "height": 144.0,
+      "color": "#2563eb"
+    },
+    {
+      "id": "item",
+      "type": "text",
+      "text": "S-01 / коллекция / карточка\nНазвание · исполнитель · статус\nОткрыть эту задачу → S-02",
+      "x": 0.0,
+      "y": 432.0,
+      "width": 500,
+      "height": 192.0,
+      "color": "#2563eb"
+    },
+    {
+      "id": "vol",
+      "type": "text",
+      "text": "S-04 · Волонтёр\nМои текущие / готовые / отменённые\nКоллекция только своих поручений",
+      "x": 0.0,
+      "y": 688.0,
+      "width": 500,
+      "height": 192.0,
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "vitem",
+      "type": "text",
+      "text": "S-04 / коллекция / карточка\nОткрыть своё поручение → S-02",
+      "x": 0.0,
+      "y": 928.0,
+      "width": 500,
+      "height": 144.0,
+      "color": "#2563eb"
+    },
+    {
+      "id": "detail",
+      "type": "text",
+      "text": "S-02 · Детали поручения\nИнструкция · назначение · статус\nИстория: кто / когда / что изменил",
+      "x": 792.0,
+      "y": 320.0,
+      "width": 500,
+      "height": 192.0,
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "done",
+      "type": "text",
+      "text": "S-02 / задача\nГотово ↔ Вернуть в работу\nСвоя активная / координатор",
+      "x": 792.0,
+      "y": 560.0,
+      "width": 500,
+      "height": 192.0,
+      "color": "#16a34a"
+    },
+    {
+      "id": "edit",
+      "type": "text",
+      "text": "S-02 / задача / координатор\nИзменить → S-03",
+      "x": 792.0,
+      "y": 800.0,
+      "width": 500,
+      "height": 144.0,
+      "color": "#2563eb"
+    },
+    {
+      "id": "cancel",
+      "type": "text",
+      "text": "S-02 / задача / координатор\nОтменить → S-05",
+      "x": 792.0,
+      "y": 992.0,
+      "width": 500,
+      "height": 144.0,
+      "color": "#2563eb"
+    },
+    {
+      "id": "restore",
+      "type": "text",
+      "text": "S-02 / отменённая / координатор\nВосстановить прежнее состояние",
+      "x": 792.0,
+      "y": 1184.0,
+      "width": 500,
+      "height": 144.0,
+      "color": "#16a34a"
+    },
+    {
+      "id": "close",
+      "type": "text",
+      "text": "S-02 / Закрыть\nВозврат к исходному списку",
+      "x": 792.0,
+      "y": 1376.0,
+      "width": 500,
+      "height": 144.0,
+      "color": "#2563eb"
+    },
+    {
+      "id": "form",
+      "type": "text",
+      "text": "S-03 · Форма / draft\nНазвание · инструкция · назначение\nОдинаковый состав create/edit",
+      "x": 1584.0,
+      "y": 0.0,
+      "width": 500,
+      "height": 192.0,
+      "color": "#bae6fd"
+    },
+    {
+      "id": "save",
+      "type": "text",
+      "text": "S-03 / Сохранить\nВалидация → localStorage\nОшибка: draft + прежний объект\nУспех: create → S-01; edit → S-02",
+      "x": 1584.0,
+      "y": 240.0,
+      "width": 500,
+      "height": 240.0,
+      "color": "#16a34a"
+    },
+    {
+      "id": "formcancel",
+      "type": "text",
+      "text": "S-03 / Отмена или Escape\nБез записи → источник",
+      "x": 1584.0,
+      "y": 528.0,
+      "width": 500,
+      "height": 144.0,
+      "color": "#2563eb"
+    },
+    {
+      "id": "confirm",
+      "type": "text",
+      "text": "S-05 · Подтверждение отмены\nНазвание + сохранение данных\nПодтвердить / Оставить",
+      "x": 1584.0,
+      "y": 992.0,
+      "width": 500,
+      "height": 192.0,
+      "color": "#bae6fd"
+    },
+    {
+      "id": "confirmyes",
+      "type": "text",
+      "text": "S-05 / Отменить поручение\nСохранить cancelled → S-02",
+      "x": 1584.0,
+      "y": 1232.0,
+      "width": 500,
+      "height": 144.0,
+      "color": "#16a34a"
+    },
+    {
+      "id": "confirmno",
+      "type": "text",
+      "text": "S-05 / Оставить или Escape\nБез изменения → S-02",
+      "x": 1584.0,
+      "y": 1424.0,
+      "width": 500,
+      "height": 144.0,
+      "color": "#2563eb"
+    },
+    {
+      "id": "scenario",
+      "type": "text",
+      "text": "Критические ветки · UC-01/02\nDraft → ошибка: сохранить ввод → повтор\nCancel/Escape → без мутации\nEdit assignee не снимает ready",
+      "x": 0.0,
+      "y": 1728.0,
+      "width": 500,
+      "height": 272.0,
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "recovery",
+      "type": "text",
+      "text": "Критические ветки · UC-04…08\nDone → поздний возврат → undo\nCancel → отменённые → восстановить\nОшибка записи → прежний факт + retry",
+      "x": 792.0,
+      "y": 1728.0,
+      "width": 500,
+      "height": 272.0,
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "legend",
+      "type": "text",
+      "text": "Нотация и пределы\nСерый: информация; голубой: draft\nСиний: переход; зелёный: запись\nКонтексты demo, не login.\nСтруктура + scenarios; блоки: blocks.html",
+      "x": 1584.0,
+      "y": 1728.0,
+      "width": 500,
+      "height": 272.0,
+      "color": "#b6bcc3"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "fromNode": "create",
+      "fromSide": "right",
+      "toNode": "form",
+      "toSide": "left"
+    },
+    {
+      "id": "e1",
+      "fromNode": "item",
+      "fromSide": "right",
+      "toNode": "detail",
+      "toSide": "left"
+    },
+    {
+      "id": "e2",
+      "fromNode": "vitem",
+      "fromSide": "right",
+      "toNode": "detail",
+      "toSide": "left"
+    },
+    {
+      "id": "e3",
+      "fromNode": "edit",
+      "fromSide": "right",
+      "toNode": "form",
+      "toSide": "left"
+    },
+    {
+      "id": "e4",
+      "fromNode": "cancel",
+      "fromSide": "right",
+      "toNode": "confirm",
+      "toSide": "left"
+    },
+    {
+      "id": "e5",
+      "fromNode": "formcancel",
+      "fromSide": "right",
+      "toNode": "detail",
+      "toSide": "left"
+    },
+    {
+      "id": "e6",
+      "fromNode": "confirmno",
+      "fromSide": "right",
+      "toNode": "detail",
+      "toSide": "left"
+    },
+    {
+      "id": "e7",
+      "fromNode": "confirmyes",
+      "fromSide": "right",
+      "toNode": "detail",
+      "toSide": "left"
+    },
+    {
+      "id": "e8",
+      "fromNode": "close",
+      "fromSide": "right",
+      "toNode": "coord",
+      "toSide": "left"
+    },
+    {
+      "id": "e9",
+      "fromNode": "close",
+      "fromSide": "right",
+      "toNode": "vol",
+      "toSide": "left"
+    },
+    {
+      "id": "e10",
+      "fromNode": "save",
+      "fromSide": "right",
+      "toNode": "coord",
+      "toSide": "left"
+    },
+    {
+      "id": "e11",
+      "fromNode": "save",
+      "fromSide": "right",
+      "toNode": "detail",
+      "toSide": "left"
+    }
+  ]
+}

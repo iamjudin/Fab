@@ -131,3 +131,11 @@ operator's choices as simulated assumptions, never as creator approval.
 [монетизацию](../../../shared/methods/monetization.md). Структура показывает владельца,
 применимый вход и возврат; сама не добавляет обязательные welcome slides,
 аккаунт, синхронизацию или paywall. Детальные ветки остаются в сценариях.
+
+## Physical projection check
+When controls are separate coloured Canvas nodes, their surface must be a real
+group, with collections/items nested where meaningful. S-ID text and a written
+access table cannot substitute for this physical ownership. Run the structure
+guard for included surfaces; it's a narrow projection check, not semantic proof.
+Critical flow-only diagrams don't need fake screen containers. Fix ownership
+before declaring structure sufficient for downstream candidate work.

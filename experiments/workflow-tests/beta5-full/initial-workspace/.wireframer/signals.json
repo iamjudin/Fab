@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "signals": [
+    {
+      "id": "SIG-01",
+      "meaning": "Клиентская работа; идеи гибкие, границы фиксированы",
+      "authority": "constraint",
+      "knowledgeStatus": "evidence",
+      "source": "User brief 2026-10-10",
+      "disposition": {
+        "kind": "routed",
+        "target": "project creatorIntent and boundaries"
+      }
+    },
+    {
+      "id": "SIG-02",
+      "meaning": "Координатор создаёт, назначает, видит готовность и исправляет",
+      "authority": "requirement",
+      "knowledgeStatus": "evidence",
+      "source": "User brief 2026-10-10",
+      "disposition": {
+        "kind": "represented",
+        "refs": [
+          "UC-01",
+          "UC-02",
+          "UC-06",
+          "CAP-05"
+        ]
+      }
+    },
+    {
+      "id": "SIG-03",
+      "meaning": "Волонтёр находит свои текущие задачи, понимает, выполняет и отменяет случайную отметку",
+      "authority": "requirement",
+      "knowledgeStatus": "evidence",
+      "source": "User brief 2026-10-10",
+      "disposition": {
+        "kind": "represented",
+        "refs": [
+          "UC-03",
+          "UC-04",
+          "UC-05"
+        ]
+      }
+    },
+    {
+      "id": "SIG-04",
+      "meaning": "Нет подписки и публичного маркетплейса",
+      "authority": "constraint",
+      "knowledgeStatus": "evidence",
+      "source": "User brief 2026-10-10",
+      "disposition": {
+        "kind": "routed",
+        "target": "project boundaries / slice out"
+      }
+    },
+    {
+      "id": "SIG-05",
+      "meaning": "Полный процесс до работающего браузерного кандидата; без раннего shortcut",
+      "authority": "direction",
+      "knowledgeStatus": "evidence",
+      "source": "User brief 2026-10-10",
+      "disposition": {
+        "kind": "represented",
+        "refs": [
+          "BS-01.1",
+          "PROTO-01"
+        ]
+      }
+    },
+    {
+      "id": "SIG-06",
+      "meaning": "Сохранить отмену, исправление и восстановление",
+      "authority": "requirement",
+      "knowledgeStatus": "evidence",
+      "source": "User brief 2026-10-10",
+      "disposition": {
+        "kind": "represented",
+        "refs": [
+          "UC-02",
+          "UC-05",
+          "UC-07",
+          "UC-08"
+        ]
+      }
+    },
+    {
+      "id": "SIG-07",
+      "meaning": "Не заявлять sync/auth/native; без клиентского acceptance",
+      "authority": "constraint",
+      "knowledgeStatus": "evidence",
+      "source": "User brief 2026-10-10",
+      "disposition": {
+        "kind": "routed",
+        "target": "project boundaries / prototype limitations"
+      }
+    },
+    {
+      "id": "SIG-08",
+      "meaning": "Неизвестные клиентские решения явно ограничить",
+      "authority": "direction",
+      "knowledgeStatus": "evidence",
+      "source": "User brief 2026-10-10",
+      "disposition": {
+        "kind": "open-gap",
+        "reason": "client access, approval, cancellation policy; product/reviews/model.md"
+      }
+    },
+    {
+      "id": "SIG-09",
+      "meaning": "Без агентов, smoke, commits, external mutations",
+      "authority": "constraint",
+      "knowledgeStatus": "evidence",
+      "source": "User brief 2026-10-10",
+      "disposition": {
+        "kind": "routed",
+        "target": "AGENTS.md and project boundaries"
+      }
+    }
+  ]
+}

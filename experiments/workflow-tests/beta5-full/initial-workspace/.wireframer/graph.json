@@ -1,0 +1,455 @@
+{
+  "schemaVersion": 2,
+  "nodes": [
+    {
+      "id": "HJ-01",
+      "type": "human-job",
+      "meaning": "Перейти от неясной готовности площадки к подготовке с понятной ответственностью",
+      "status": "assumption",
+      "links": []
+    },
+    {
+      "id": "JS-01.1",
+      "type": "job-story",
+      "meaning": "Когда начинается подготовка события, распределить работу так, чтобы необходимые действия не остались без исполнителя",
+      "status": "assumption",
+      "links": [
+        "HJ-01"
+      ]
+    },
+    {
+      "id": "JS-01.2",
+      "type": "job-story",
+      "meaning": "Когда обнаружена ошибка, восстановить верную картину ответственности и готовности",
+      "status": "assumption",
+      "links": [
+        "HJ-01"
+      ]
+    },
+    {
+      "id": "HJ-02",
+      "type": "human-job",
+      "meaning": "Перейти от неопределённости своего вклада к выполненной понятной части общей подготовки",
+      "status": "assumption",
+      "links": []
+    },
+    {
+      "id": "JS-02.1",
+      "type": "job-story",
+      "meaning": "Когда я прихожу помогать, понять свою текущую работу и довести её до результата",
+      "status": "assumption",
+      "links": [
+        "HJ-02"
+      ]
+    },
+    {
+      "id": "JS-02.2",
+      "type": "job-story",
+      "meaning": "Когда я ошибочно сообщил о готовности, вернуть достоверное состояние своей работы",
+      "status": "assumption",
+      "links": [
+        "HJ-02"
+      ]
+    },
+    {
+      "id": "BJ-01",
+      "type": "business-job",
+      "meaning": "Перейти от клиентского запроса к проверяемому варианту рабочего процесса до вложений в реализацию",
+      "status": "assumption",
+      "links": [],
+      "scope": "preparatory client candidate, no delivery acceptance"
+    },
+    {
+      "id": "BS-01.1",
+      "type": "business-story",
+      "meaning": "Когда клиентский процесс ещё не подтверждён, получить конкретный вариант для совместной проверки",
+      "status": "assumption",
+      "links": [
+        "BJ-01"
+      ]
+    },
+    {
+      "id": "CORE-01",
+      "type": "product-core",
+      "meaning": "Координатор распределяет подготовку и видит готовность; волонтёр находит свою работу и сообщает результат с возможностью исправления",
+      "status": "assumption",
+      "links": [
+        "HJ-01",
+        "HJ-02",
+        "BJ-01"
+      ]
+    },
+    {
+      "id": "UC-01",
+      "type": "use-case",
+      "meaning": "Подготовить поручение",
+      "status": "assumption",
+      "links": [
+        "JS-01.1"
+      ]
+    },
+    {
+      "id": "UC-02",
+      "type": "use-case",
+      "meaning": "Исправить поручение или назначение",
+      "status": "assumption",
+      "links": [
+        "JS-01.2"
+      ]
+    },
+    {
+      "id": "UC-03",
+      "type": "use-case",
+      "meaning": "Найти и понять свою текущую работу",
+      "status": "assumption",
+      "links": [
+        "JS-02.1"
+      ]
+    },
+    {
+      "id": "UC-04",
+      "type": "use-case",
+      "meaning": "Сообщить о готовности",
+      "status": "assumption",
+      "links": [
+        "JS-02.1"
+      ]
+    },
+    {
+      "id": "UC-05",
+      "type": "use-case",
+      "meaning": "Снять ошибочную готовность",
+      "status": "assumption",
+      "links": [
+        "JS-02.2"
+      ]
+    },
+    {
+      "id": "UC-06",
+      "type": "use-case",
+      "meaning": "Исправить готовность",
+      "status": "assumption",
+      "links": [
+        "JS-01.2"
+      ]
+    },
+    {
+      "id": "UC-07",
+      "type": "use-case",
+      "meaning": "Отменить ненужное поручение",
+      "status": "assumption",
+      "links": [
+        "JS-01.2"
+      ]
+    },
+    {
+      "id": "UC-08",
+      "type": "use-case",
+      "meaning": "Восстановить отменённое поручение",
+      "status": "assumption",
+      "links": [
+        "JS-01.2"
+      ]
+    },
+    {
+      "id": "DR-01",
+      "type": "domain-rule",
+      "meaning": "Поручение: стабильный ID, название, инструкция, ответственный или без назначения, отдельные факты completed и cancelled; список людей фиксирован для демонстрации.",
+      "status": "assumption",
+      "links": [
+        "UC-01",
+        "UC-02",
+        "UC-04",
+        "UC-05",
+        "UC-06",
+        "UC-07",
+        "UC-08"
+      ]
+    },
+    {
+      "id": "DR-02",
+      "type": "domain-rule",
+      "meaning": "Волонтёр видит только назначенные ему поручения; меняет готовность только своих активных. Координатор создаёт, редактирует, назначает и корректирует любые. Это локальная модель прав, не защита.",
+      "status": "assumption",
+      "links": [
+        "UC-01",
+        "UC-02",
+        "UC-04",
+        "UC-05",
+        "UC-06",
+        "UC-07",
+        "UC-08"
+      ]
+    },
+    {
+      "id": "DR-03",
+      "type": "domain-rule",
+      "meaning": "Готовность и отмена независимы: отмена сохраняет completed; восстановление возвращает прежнюю отметку. Переназначение не сбрасывает готовность.",
+      "status": "assumption",
+      "links": [
+        "UC-01",
+        "UC-02",
+        "UC-04",
+        "UC-05",
+        "UC-06",
+        "UC-07",
+        "UC-08"
+      ]
+    },
+    {
+      "id": "DR-04",
+      "type": "domain-rule",
+      "meaning": "Изменения только после успешной записи localStorage. Ошибка сохраняет исходные данные и открытый черновик. История хранит время, контекст и понятные старые/новые значения.",
+      "status": "assumption",
+      "links": [
+        "UC-01",
+        "UC-02",
+        "UC-04",
+        "UC-05",
+        "UC-06",
+        "UC-07",
+        "UC-08"
+      ]
+    },
+    {
+      "id": "DR-05",
+      "type": "domain-rule",
+      "meaning": "Название и инструкция обязательны после trim; искусственных лимитов длины нет. Отмена формы и подтверждения не мутирует объект. Несохранённый черновик не переживает перезагрузку.",
+      "status": "assumption",
+      "links": [
+        "UC-01",
+        "UC-02",
+        "UC-04",
+        "UC-05",
+        "UC-06",
+        "UC-07",
+        "UC-08"
+      ]
+    },
+    {
+      "id": "DR-06",
+      "type": "domain-rule",
+      "meaning": "Готовность считается по активным задачам; отменённые вне знаменателя; без назначения остаются активными. Пустой набор — Нет активных задач, а не 100%.",
+      "status": "assumption",
+      "links": [
+        "UC-01",
+        "UC-02",
+        "UC-04",
+        "UC-05",
+        "UC-06",
+        "UC-07",
+        "UC-08"
+      ]
+    },
+    {
+      "id": "DR-07",
+      "type": "domain-rule",
+      "meaning": "Повреждённое хранилище не затирается автоматически; работа с изменениями блокируется до явного сброса демонстрационных данных. Один браузерный контекст, конкурирующие вкладки вне гарантий.",
+      "status": "assumption",
+      "links": [
+        "UC-01",
+        "UC-02",
+        "UC-04",
+        "UC-05",
+        "UC-06",
+        "UC-07",
+        "UC-08"
+      ]
+    },
+    {
+      "id": "CAP-01",
+      "type": "product-capability",
+      "meaning": "Создание и редактирование поручения",
+      "status": "assumption",
+      "links": [
+        "UC-01",
+        "UC-02",
+        "DR-01",
+        "DR-05"
+      ],
+      "classification": "core"
+    },
+    {
+      "id": "CAP-02",
+      "type": "product-capability",
+      "meaning": "Назначение и переназначение",
+      "status": "assumption",
+      "links": [
+        "UC-01",
+        "UC-02",
+        "DR-02",
+        "DR-03"
+      ],
+      "classification": "core"
+    },
+    {
+      "id": "CAP-03",
+      "type": "product-capability",
+      "meaning": "Личный список и инструкции",
+      "status": "assumption",
+      "links": [
+        "UC-03",
+        "DR-02"
+      ],
+      "classification": "core"
+    },
+    {
+      "id": "CAP-04",
+      "type": "product-capability",
+      "meaning": "Изменение и исправление готовности",
+      "status": "assumption",
+      "links": [
+        "UC-04",
+        "UC-05",
+        "UC-06",
+        "DR-03"
+      ],
+      "classification": "core"
+    },
+    {
+      "id": "CAP-05",
+      "type": "product-capability",
+      "meaning": "Обзор готовности подготовки",
+      "status": "assumption",
+      "links": [
+        "UC-04",
+        "UC-06",
+        "DR-06"
+      ],
+      "classification": "core"
+    },
+    {
+      "id": "CAP-06",
+      "type": "product-capability",
+      "meaning": "Отмена и восстановление поручения",
+      "status": "assumption",
+      "links": [
+        "UC-07",
+        "UC-08",
+        "DR-03"
+      ],
+      "classification": "supporting"
+    },
+    {
+      "id": "CAP-07",
+      "type": "product-capability",
+      "meaning": "Понятная история изменений",
+      "status": "assumption",
+      "links": [
+        "UC-02",
+        "UC-05",
+        "UC-06",
+        "DR-04"
+      ],
+      "classification": "supporting"
+    },
+    {
+      "id": "CAP-08",
+      "type": "product-capability",
+      "meaning": "Локальная запись и явная ошибка без ложного успеха",
+      "status": "assumption",
+      "links": [
+        "DR-04",
+        "DR-07"
+      ],
+      "classification": "supporting"
+    },
+    {
+      "id": "SLICE-01",
+      "type": "product-slice",
+      "meaning": "Полный локальный цикл: подготовить → назначить → найти свою задачу → выполнить → увидеть готовность → исправить/отменить/восстановить",
+      "status": "assumption",
+      "links": [
+        "CORE-01",
+        "UC-01",
+        "UC-02",
+        "UC-03",
+        "UC-04",
+        "UC-05",
+        "UC-06",
+        "UC-07",
+        "UC-08",
+        "CAP-01",
+        "CAP-02",
+        "CAP-03",
+        "CAP-04",
+        "CAP-05",
+        "CAP-06",
+        "CAP-07",
+        "CAP-08"
+      ]
+    },
+    {
+      "id": "S-01",
+      "type": "surface",
+      "meaning": "Обзор координатора",
+      "status": "assumption",
+      "links": [
+        "UC-01",
+        "UC-02",
+        "UC-06",
+        "UC-07",
+        "UC-08"
+      ]
+    },
+    {
+      "id": "S-02",
+      "type": "surface",
+      "meaning": "Детали поручения, действия и история",
+      "status": "assumption",
+      "links": [
+        "UC-02",
+        "UC-03",
+        "UC-04",
+        "UC-05",
+        "UC-06",
+        "UC-07",
+        "UC-08"
+      ]
+    },
+    {
+      "id": "S-03",
+      "type": "surface",
+      "meaning": "Модальная форма создания и редактирования",
+      "status": "assumption",
+      "links": [
+        "UC-01",
+        "UC-02"
+      ]
+    },
+    {
+      "id": "S-04",
+      "type": "surface",
+      "meaning": "Мои поручения волонтёра",
+      "status": "assumption",
+      "links": [
+        "UC-03",
+        "UC-04",
+        "UC-05"
+      ]
+    },
+    {
+      "id": "S-05",
+      "type": "surface",
+      "meaning": "Подтверждение отмены",
+      "status": "assumption",
+      "links": [
+        "UC-07"
+      ]
+    },
+    {
+      "id": "PROTO-01",
+      "type": "prototype",
+      "meaning": "Исполняемый локальный браузерный кандидат",
+      "status": "assumption",
+      "links": [
+        "SLICE-01",
+        "S-01",
+        "S-02",
+        "S-03",
+        "S-04",
+        "S-05"
+      ]
+    }
+  ]
+}
