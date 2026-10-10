@@ -22,6 +22,12 @@ interaction. Preserve distinctions between navigation, draft selection, mutation
 and confirmed outcome; diagrams and executable behaviour must correspond.
 
 Choose state/data fixtures and failure controls from the question and risk.
+A recovery check must be operable from the failed state without discarding the
+draft or closing a modal to reach a background-only test control. Use a one-shot
+failure or an accessible recovery control when the question requires a retry.
+Verify the real UI sequence: failure, retained input, retry, confirmed result.
+A harness that changes an inert background toggle does not prove recovery.
+
 Include known alternate/error paths relevant to those checks; report untested
 coverage instead of asserting that all corner cases are handled. Domain states
 must not be collapsed merely to simplify code. Trace a missing input signal,

@@ -1,0 +1,679 @@
+{
+  "nodes": [
+    {
+      "id": "global-navigation-demo",
+      "type": "group",
+      "label": "Демонстрация · общий владелец",
+      "x": 0,
+      "y": 0,
+      "width": 650,
+      "height": 380
+    },
+    {
+      "id": "demo-info",
+      "type": "text",
+      "text": "Настройки демонстрации · обе роли\nSimulation identity, не login",
+      "x": 30,
+      "y": 30,
+      "width": 590,
+      "height": 90,
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "demo-role",
+      "type": "text",
+      "text": "Контекст: координатор / волонтёр\nВолонтёр: Анна / Борис / Вера",
+      "x": 30,
+      "y": 140,
+      "width": 590,
+      "height": 90,
+      "color": "#2563eb"
+    },
+    {
+      "id": "demo-fail",
+      "type": "text",
+      "text": "Отказ записи (demo)",
+      "x": 30,
+      "y": 250,
+      "width": 285,
+      "height": 60,
+      "color": "#bae6fd"
+    },
+    {
+      "id": "demo-reset",
+      "type": "text",
+      "text": "Сбросить демоданные",
+      "x": 335,
+      "y": 250,
+      "width": 285,
+      "height": 60,
+      "color": "#16a34a"
+    },
+    {
+      "id": "demo-docs",
+      "type": "text",
+      "text": "Ссылки: блоки / эта карта",
+      "x": 30,
+      "y": 330,
+      "width": 590,
+      "height": 50,
+      "color": "#2563eb"
+    },
+    {
+      "id": "legend",
+      "type": "text",
+      "text": "КАНДИДАТ v1 · SLICE-01 · UC-01…08 · DR-01…07\nСерый: информация · голубой: локальный ввод/фильтр\nСиний: переход · зелёный: запрос локальной записи\nВложенные рамки: состав, стрелки: переходы\nПервичный вход: S-01. Клиентского acceptance нет.",
+      "x": 900,
+      "y": 0,
+      "width": 700,
+      "height": 180,
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "scenario",
+      "type": "text",
+      "text": "UC-01/02: create/edit, draft и возвраты\nПодробные ветки — в interface.md",
+      "x": 1950,
+      "y": 0,
+      "width": 650,
+      "height": 90,
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "recovery",
+      "type": "text",
+      "text": "UC-03…08: ready/undo, cancel/restore\nОшибки и recovery — в interface.md",
+      "x": 1950,
+      "y": 110,
+      "width": 650,
+      "height": 90,
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "source-note",
+      "type": "file",
+      "file": "product/reviews/interface.md",
+      "x": 1950,
+      "y": 230,
+      "width": 650,
+      "height": 70
+    },
+    {
+      "id": "S-01",
+      "type": "group",
+      "label": "S-01 · Координатор · главный вход",
+      "x": 0,
+      "y": 520,
+      "width": 650,
+      "height": 870
+    },
+    {
+      "id": "coord",
+      "type": "text",
+      "text": "Соседский вечер · контекст координатора\nОбщий список поручений",
+      "x": 30,
+      "y": 550,
+      "width": 590,
+      "height": 90,
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "coord-summary",
+      "type": "text",
+      "text": "Готово / активных · без назначения\nОтменённые исключены из готовности",
+      "x": 30,
+      "y": 660,
+      "width": 590,
+      "height": 90,
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "create",
+      "type": "text",
+      "text": "+ Поручение → S-03 (создание)",
+      "x": 30,
+      "y": 770,
+      "width": 590,
+      "height": 60,
+      "color": "#2563eb"
+    },
+    {
+      "id": "coord-filter",
+      "type": "text",
+      "text": "Все активные / В работе / Готовые\nОтменённые · счётчик каждого фильтра",
+      "x": 30,
+      "y": 850,
+      "width": 590,
+      "height": 90,
+      "color": "#bae6fd"
+    },
+    {
+      "id": "coord-collection",
+      "type": "group",
+      "label": "Коллекция · по выбранному фильтру",
+      "x": 30,
+      "y": 1010,
+      "width": 590,
+      "height": 350
+    },
+    {
+      "id": "coord-item",
+      "type": "group",
+      "label": "Повторяемое поручение",
+      "x": 50,
+      "y": 1080,
+      "width": 550,
+      "height": 210
+    },
+    {
+      "id": "coord-item-info",
+      "type": "text",
+      "text": "Название · ответственный · статус",
+      "x": 65,
+      "y": 1100,
+      "width": 520,
+      "height": 60,
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "item",
+      "type": "text",
+      "text": "Открыть это поручение → S-02",
+      "x": 65,
+      "y": 1180,
+      "width": 520,
+      "height": 60,
+      "color": "#2563eb"
+    },
+    {
+      "id": "coord-empty",
+      "type": "text",
+      "text": "Пусто: изменить фильтр / создать",
+      "x": 50,
+      "y": 1310,
+      "width": 550,
+      "height": 50,
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "S-04",
+      "type": "group",
+      "label": "S-04 · Волонтёр · личный список",
+      "x": 0,
+      "y": 1580,
+      "width": 650,
+      "height": 700
+    },
+    {
+      "id": "vol",
+      "type": "text",
+      "text": "Событие · выбранный волонтёр\nМои поручения · без общего обзора",
+      "x": 30,
+      "y": 1610,
+      "width": 590,
+      "height": 90,
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "vol-filter",
+      "type": "text",
+      "text": "В работе / Готовые / Отменённые\nТолько задачи выбранного волонтёра",
+      "x": 30,
+      "y": 1720,
+      "width": 590,
+      "height": 90,
+      "color": "#bae6fd"
+    },
+    {
+      "id": "vol-collection",
+      "type": "group",
+      "label": "Коллекция · только свои",
+      "x": 30,
+      "y": 1880,
+      "width": 590,
+      "height": 370
+    },
+    {
+      "id": "vol-item",
+      "type": "group",
+      "label": "Повторяемое своё поручение",
+      "x": 50,
+      "y": 1950,
+      "width": 550,
+      "height": 210
+    },
+    {
+      "id": "vol-item-info",
+      "type": "text",
+      "text": "Название · ответственный · статус",
+      "x": 65,
+      "y": 1970,
+      "width": 520,
+      "height": 60,
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "vitem",
+      "type": "text",
+      "text": "Открыть своё поручение → S-02",
+      "x": 65,
+      "y": 2050,
+      "width": 520,
+      "height": 60,
+      "color": "#2563eb"
+    },
+    {
+      "id": "vol-empty",
+      "type": "text",
+      "text": "Пусто: уточнить назначение у координатора",
+      "x": 50,
+      "y": 2180,
+      "width": 550,
+      "height": 50,
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "S-02",
+      "type": "group",
+      "label": "S-02 · Детали · modal sheet",
+      "x": 950,
+      "y": 520,
+      "width": 650,
+      "height": 1380
+    },
+    {
+      "id": "detail",
+      "type": "text",
+      "text": "Открытое поручение · из S-01 или S-04\nСохраняется контекст исходного списка",
+      "x": 980,
+      "y": 550,
+      "width": 590,
+      "height": 90,
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "close",
+      "type": "text",
+      "text": "Закрыть / Escape → исходный список",
+      "x": 980,
+      "y": 660,
+      "width": 590,
+      "height": 60,
+      "color": "#2563eb"
+    },
+    {
+      "id": "detail-object",
+      "type": "group",
+      "label": "Открытое поручение · данные и действия",
+      "x": 980,
+      "y": 800,
+      "width": 590,
+      "height": 1070
+    },
+    {
+      "id": "detail-info",
+      "type": "text",
+      "text": "Название · статус · ответственный\nИнструкция; отмена: сохранённая готовность",
+      "x": 1000,
+      "y": 820,
+      "width": 550,
+      "height": 90,
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "done",
+      "type": "text",
+      "text": "Отметить готовым ↔ Вернуть в работу\nКоординатор / назначенный волонтёр\nТолько активное поручение",
+      "x": 1000,
+      "y": 930,
+      "width": 550,
+      "height": 120,
+      "color": "#16a34a"
+    },
+    {
+      "id": "coordinator-actions",
+      "type": "group",
+      "label": "Только координатор · это поручение",
+      "x": 1000,
+      "y": 1120,
+      "width": 550,
+      "height": 320
+    },
+    {
+      "id": "edit",
+      "type": "text",
+      "text": "Изменить → S-03 (редактирование)",
+      "x": 1015,
+      "y": 1140,
+      "width": 520,
+      "height": 60,
+      "color": "#2563eb"
+    },
+    {
+      "id": "cancel",
+      "type": "text",
+      "text": "Активное: отменить → S-05",
+      "x": 1015,
+      "y": 1220,
+      "width": 520,
+      "height": 60,
+      "color": "#2563eb"
+    },
+    {
+      "id": "restore",
+      "type": "text",
+      "text": "Отменённое: восстановить\nСохранённая готовность → активное",
+      "x": 1015,
+      "y": 1300,
+      "width": 520,
+      "height": 90,
+      "color": "#16a34a"
+    },
+    {
+      "id": "detail-vol-rule",
+      "type": "text",
+      "text": "Волонтёр: только своё; отменённое — чтение",
+      "x": 1000,
+      "y": 1470,
+      "width": 550,
+      "height": 60,
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "detail-history",
+      "type": "group",
+      "label": "История · коллекция изменений",
+      "x": 1000,
+      "y": 1660,
+      "width": 550,
+      "height": 170
+    },
+    {
+      "id": "history-item",
+      "type": "text",
+      "text": "Повторяемая запись: кто · когда · что\nИли: изменений ещё нет",
+      "x": 1015,
+      "y": 1680,
+      "width": 520,
+      "height": 90,
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "detail-error",
+      "type": "text",
+      "text": "Ошибка действия · прежний факт сохранён",
+      "x": 1015,
+      "y": 1540,
+      "width": 520,
+      "height": 60,
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "S-03",
+      "type": "group",
+      "label": "S-03 · Координатор · modal form",
+      "x": 1950,
+      "y": 520,
+      "width": 650,
+      "height": 720
+    },
+    {
+      "id": "form",
+      "type": "text",
+      "text": "Создать / изменить · один состав полей\nCreate из S-01; edit из S-02",
+      "x": 1980,
+      "y": 550,
+      "width": 590,
+      "height": 90,
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "form-fields",
+      "type": "group",
+      "label": "Форма · несохранённый draft",
+      "x": 1980,
+      "y": 710,
+      "width": 590,
+      "height": 280
+    },
+    {
+      "id": "form-title",
+      "type": "text",
+      "text": "Название · обязательное",
+      "x": 2000,
+      "y": 730,
+      "width": 550,
+      "height": 60,
+      "color": "#bae6fd"
+    },
+    {
+      "id": "form-instructions",
+      "type": "text",
+      "text": "Что нужно сделать · обязательная инструкция",
+      "x": 2000,
+      "y": 810,
+      "width": 550,
+      "height": 70,
+      "color": "#bae6fd"
+    },
+    {
+      "id": "form-assignee",
+      "type": "text",
+      "text": "Ответственный: никто / Анна / Борис / Вера",
+      "x": 2000,
+      "y": 890,
+      "width": 550,
+      "height": 60,
+      "color": "#bae6fd"
+    },
+    {
+      "id": "save",
+      "type": "text",
+      "text": "Сохранить · create → S-01; edit → S-02",
+      "x": 1980,
+      "y": 1020,
+      "width": 590,
+      "height": 60,
+      "color": "#16a34a"
+    },
+    {
+      "id": "formcancel",
+      "type": "text",
+      "text": "Отмена / Закрыть / Escape → источник",
+      "x": 1980,
+      "y": 1100,
+      "width": 590,
+      "height": 60,
+      "color": "#2563eb"
+    },
+    {
+      "id": "form-error",
+      "type": "text",
+      "text": "Ошибка формы/записи · draft остаётся",
+      "x": 1980,
+      "y": 1180,
+      "width": 590,
+      "height": 50,
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "S-05",
+      "type": "group",
+      "label": "S-05 · Координатор · подтверждение",
+      "x": 1950,
+      "y": 1450,
+      "width": 650,
+      "height": 510
+    },
+    {
+      "id": "confirm",
+      "type": "text",
+      "text": "Отменить открытое поручение?\nНазвание · последствия отмены",
+      "x": 1980,
+      "y": 1480,
+      "width": 590,
+      "height": 90,
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "confirm-info",
+      "type": "text",
+      "text": "Назначение, инструкция и ready сохраняются\nМожно восстановить из «Отменённых»",
+      "x": 1980,
+      "y": 1590,
+      "width": 590,
+      "height": 90,
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "confirmyes",
+      "type": "text",
+      "text": "Отменить поручение → S-02",
+      "x": 1980,
+      "y": 1700,
+      "width": 590,
+      "height": 60,
+      "color": "#16a34a"
+    },
+    {
+      "id": "confirmno",
+      "type": "text",
+      "text": "Оставить / Закрыть / Escape → S-02",
+      "x": 1980,
+      "y": 1780,
+      "width": 590,
+      "height": 60,
+      "color": "#2563eb"
+    },
+    {
+      "id": "confirm-error",
+      "type": "text",
+      "text": "Ошибка записи · прежний факт сохранён",
+      "x": 1980,
+      "y": 1860,
+      "width": 590,
+      "height": 60,
+      "color": "#b6bcc3"
+    }
+  ],
+  "edges": [
+    {
+      "id": "e0",
+      "fromNode": "create",
+      "fromSide": "right",
+      "toNode": "form",
+      "toSide": "left",
+      "label": "создание"
+    },
+    {
+      "id": "e1",
+      "fromNode": "item",
+      "fromSide": "right",
+      "toNode": "detail",
+      "toSide": "left",
+      "label": "координатор"
+    },
+    {
+      "id": "e2",
+      "fromNode": "vitem",
+      "fromSide": "right",
+      "toNode": "detail",
+      "toSide": "left",
+      "label": "свой ID"
+    },
+    {
+      "id": "e3",
+      "fromNode": "edit",
+      "fromSide": "right",
+      "toNode": "form",
+      "toSide": "left",
+      "label": "редактирование"
+    },
+    {
+      "id": "e4",
+      "fromNode": "cancel",
+      "fromSide": "right",
+      "toNode": "confirm",
+      "toSide": "left",
+      "label": "активное"
+    },
+    {
+      "id": "e5",
+      "fromNode": "formcancel",
+      "fromSide": "right",
+      "toNode": "detail",
+      "toSide": "right",
+      "label": "edit: без записи"
+    },
+    {
+      "id": "e6",
+      "fromNode": "confirmno",
+      "fromSide": "right",
+      "toNode": "detail",
+      "toSide": "left",
+      "label": "без записи"
+    },
+    {
+      "id": "e7",
+      "fromNode": "confirmyes",
+      "fromSide": "right",
+      "toNode": "detail",
+      "toSide": "right",
+      "label": "успех"
+    },
+    {
+      "id": "e8",
+      "fromNode": "close",
+      "fromSide": "right",
+      "toNode": "coord",
+      "toSide": "left",
+      "label": "из S-01"
+    },
+    {
+      "id": "e9",
+      "fromNode": "close",
+      "fromSide": "right",
+      "toNode": "vol",
+      "toSide": "left",
+      "label": "из S-04"
+    },
+    {
+      "id": "e10",
+      "fromNode": "save",
+      "fromSide": "right",
+      "toNode": "coord",
+      "toSide": "left",
+      "label": "create: успех"
+    },
+    {
+      "id": "e11",
+      "fromNode": "save",
+      "fromSide": "right",
+      "toNode": "detail",
+      "toSide": "right",
+      "label": "edit: успех"
+    },
+    {
+      "id": "e12",
+      "fromNode": "formcancel",
+      "fromSide": "right",
+      "toNode": "coord",
+      "toSide": "right",
+      "label": "create: без записи"
+    },
+    {
+      "id": "demo-coord",
+      "fromNode": "demo-role",
+      "fromSide": "left",
+      "toNode": "coord",
+      "toSide": "top"
+    },
+    {
+      "id": "demo-vol",
+      "fromNode": "demo-role",
+      "fromSide": "left",
+      "toNode": "vol",
+      "toSide": "bottom"
+    }
+  ]
+}

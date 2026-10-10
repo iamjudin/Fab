@@ -1,0 +1,25 @@
+Browser tab: 12, Title: "Подготовка · Соседский вечер", URL: "http://127.0.0.1:8873/prototype/".
+0 AXWebArea Подготовка · Соседский вечер, URL: 127.0.0.1:8873/prototype/
+	1 container Изменить поручение, ID: sheet
+		2 container sheet-body
+			3 heading Изменить поручение, Value: 2, ID: sheet-title
+				4 text Изменить поручение
+			5 button Закрыть детали
+			6 container task-form
+				7 text Название
+				8 text field (settable) Название, Value: Поставить стол регистрации у входа, ID: title
+				9 text Что нужно сделать
+				10 text entry area (settable) Что нужно сделать, Value: Поставить стол и два стула, оставить проход свободным., ID: instructions
+				11 text Ответственный
+				12 pop up button (collapsed, settable) Ответственный, Value: Борис, ID: assignee, Secondary Actions: Expand
+					13 menu
+						14 Без назначения
+						15 Анна
+						16 (selected) Борис
+						17 Вера
+				18 text Изменение ответственного сохраняет текущую готовность.
+				19 text Изменения не сохранены. Ввод остаётся в форме; прежние данные не изменены. Демонстрационный отказ записи. Изменения не сохранены. Отключи имитацию и повтори.
+				20 button Сохранить
+				21 button Отмена
+
+The focused UI element is 20 button Сохранить

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "slug": "community-setup",
+  "language": "ru",
+  "activeStage": "prototype",
+  "creatorIntent": "client",
+  "inputFlexibility": "candidate choices authorized; boundaries fixed",
+  "boundaries": [
+    "client work, no subscription or marketplace",
+    "local browser demonstration only",
+    "no authentication, multi-device sync or native OS claims",
+    "no client acceptance inferred",
+    "no external mutations, commits, agents or model smoke"
+  ],
+  "acceptance": "candidate; not reviewed by client",
+  "source": "User brief, 2026-10-10"
+}

@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "signals": [
+    {
+      "id": "SIG-01",
+      "meaning": "Forgets which cooking adjustments helped or ruined a recipe and repeats mistakes.",
+      "authority": "direction",
+      "knowledgeStatus": "evidence",
+      "source": "product/evidence/source-brief.md",
+      "disposition": {
+        "kind": "represented",
+        "refs": [
+          "HJ-01",
+          "HJ-02"
+        ]
+      }
+    },
+    {
+      "id": "SIG-02",
+      "meaning": "Keep a recipe.",
+      "authority": "direction",
+      "knowledgeStatus": "decision",
+      "source": "product/evidence/source-brief.md",
+      "disposition": {
+        "kind": "represented",
+        "refs": [
+          "UC-01"
+        ]
+      }
+    },
+    {
+      "id": "SIG-03",
+      "meaning": "Keep attempt notes with recipe.",
+      "authority": "direction",
+      "knowledgeStatus": "decision",
+      "source": "product/evidence/source-brief.md",
+      "disposition": {
+        "kind": "represented",
+        "refs": [
+          "UC-03",
+          "RULE-01"
+        ]
+      }
+    },
+    {
+      "id": "SIG-04",
+      "meaning": "Keep attempt photos with recipe.",
+      "authority": "direction",
+      "knowledgeStatus": "decision",
+      "source": "product/evidence/source-brief.md",
+      "disposition": {
+        "kind": "represented",
+        "refs": [
+          "UC-03",
+          "RULE-05"
+        ]
+      }
+    },
+    {
+      "id": "SIG-05",
+      "meaning": "Find what happened last time.",
+      "authority": "direction",
+      "knowledgeStatus": "decision",
+      "source": "product/evidence/source-brief.md",
+      "disposition": {
+        "kind": "represented",
+        "refs": [
+          "UC-02"
+        ]
+      }
+    },
+    {
+      "id": "SIG-06",
+      "meaning": "Record new attempt.",
+      "authority": "direction",
+      "knowledgeStatus": "decision",
+      "source": "product/evidence/source-brief.md",
+      "disposition": {
+        "kind": "represented",
+        "refs": [
+          "UC-03"
+        ]
+      }
+    },
+    {
+      "id": "SIG-07",
+      "meaning": "мобильный личный продукт, не платный сервис и не социальная сеть.",
+      "authority": "constraint",
+      "knowledgeStatus": "decision",
+      "source": "product/evidence/source-brief.md",
+      "disposition": {
+        "kind": "represented",
+        "refs": [
+          "CON-01",
+          "CI-01"
+        ]
+      }
+    },
+    {
+      "id": "SIG-08",
+      "meaning": "в первом scope нет генерации рецептов AI.",
+      "authority": "constraint",
+      "knowledgeStatus": "decision",
+      "source": "product/evidence/source-brief.md",
+      "disposition": {
+        "kind": "represented",
+        "refs": [
+          "CON-02"
+        ]
+      }
+    },
+    {
+      "id": "SIG-09",
+      "meaning": "в первом scope нет аккаунтов.",
+      "authority": "constraint",
+      "knowledgeStatus": "decision",
+      "source": "product/evidence/source-brief.md",
+      "disposition": {
+        "kind": "represented",
+        "refs": [
+          "CON-03"
+        ]
+      }
+    },
+    {
+      "id": "SIG-10",
+      "meaning": "в первом scope нет облачной синхронизации.",
+      "authority": "constraint",
+      "knowledgeStatus": "decision",
+      "source": "product/evidence/source-brief.md",
+      "disposition": {
+        "kind": "represented",
+        "refs": [
+          "CON-04"
+        ]
+      }
+    },
+    {
+      "id": "SIG-11",
+      "meaning": "текущая работа заканчивается моделью и компактной UC-картой; без экранов, IA и прототипа.",
+      "authority": "constraint",
+      "knowledgeStatus": "decision",
+      "source": "product/evidence/source-brief.md",
+      "disposition": {
+        "kind": "represented",
+        "refs": [
+          "CON-05"
+        ]
+      }
+    },
+    {
+      "id": "SIG-12",
+      "meaning": "Ideas are flexible except current explicit scope boundaries.",
+      "authority": "direction",
+      "knowledgeStatus": "decision",
+      "source": "product/evidence/source-brief.md",
+      "disposition": {
+        "kind": "routed",
+        "target": "project.inputFlexibility",
+        "reason": "Authority of ideas, not product-core meaning"
+      }
+    },
+    {
+      "id": "SIG-13",
+      "meaning": "Autonomously prepare a coherent candidate through compact UC map and relevant rules/unknowns.",
+      "authority": "constraint",
+      "knowledgeStatus": "decision",
+      "source": "product/evidence/source-brief.md",
+      "disposition": {
+        "kind": "routed",
+        "target": "project stopping/acceptance contract and AGENTS.md",
+        "reason": "Work authorization, acceptance and persistence obligations; not product behavior"
+      }
+    },
+    {
+      "id": "SIG-14",
+      "meaning": "Experience judged later; no separate hierarchy approval or creator-approved label.",
+      "authority": "constraint",
+      "knowledgeStatus": "decision",
+      "source": "product/evidence/source-brief.md",
+      "disposition": {
+        "kind": "routed",
+        "target": "project stopping/acceptance contract and AGENTS.md",
+        "reason": "Work authorization, acceptance and persistence obligations; not product behavior"
+      }
+    },
+    {
+      "id": "SIG-15",
+      "meaning": "Save context for continuation without chat.",
+      "authority": "constraint",
+      "knowledgeStatus": "decision",
+      "source": "product/evidence/source-brief.md",
+      "disposition": {
+        "kind": "routed",
+        "target": "project stopping/acceptance contract and AGENTS.md",
+        "reason": "Work authorization, acceptance and persistence obligations; not product behavior"
+      }
+    },
+    {
+      "id": "SIG-16",
+      "meaning": "No extra agents or model smoke.",
+      "authority": "constraint",
+      "knowledgeStatus": "decision",
+      "source": "product/evidence/source-brief.md",
+      "disposition": {
+        "kind": "routed",
+        "target": "project stopping/acceptance contract and AGENTS.md",
+        "reason": "Work authorization, acceptance and persistence obligations; not product behavior"
+      }
+    }
+  ]
+}

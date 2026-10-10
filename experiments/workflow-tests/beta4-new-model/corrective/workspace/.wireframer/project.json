@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "slug": "cooking-notebook",
+  "language": "ru",
+  "activeStage": "use-case-map",
+  "creatorIntent": "personal",
+  "inputFlexibility": "Ideas flexible except explicit boundaries in source brief",
+  "creatorApproved": false,
+  "candidateVersion": "v2",
+  "source": "product/evidence/source-brief.md",
+  "boundaries": [
+    "personal mobile; not paid or social",
+    "no generated AI recipes",
+    "no accounts",
+    "no cloud sync in first scope",
+    "no screens or prototype; no agents, commits, model smoke, external mutations"
+  ],
+  "stoppingOutcome": "candidate complete through compact UC map; further work requires new request",
+  "creatorIntentRef": "CI-01",
+  "creatorSideAssessment": {
+    "result": "No distinct BJ/BS supported by source; HJ does not replace creator axis",
+    "source": "product/evidence/source-brief.md",
+    "unsupportedGoals": [
+      "commercial viability",
+      "maintenance venture",
+      "learning experiment"
+    ]
+  }
+}

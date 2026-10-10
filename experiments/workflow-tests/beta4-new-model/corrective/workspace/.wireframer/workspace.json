@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "managedBy": "wireframer",
+  "slug": "cooking-notebook",
+  "cleanupBoundary": "/private/tmp/fab-beta4-new-model-20261010",
+  "generatedFiles": [
+    ".fab/index.md",
+    ".wireframer/graph.json",
+    ".wireframer/project.json",
+    ".wireframer/signals.json",
+    "product/evidence/source-brief.md",
+    "product/journal.md",
+    "product/reviews/candidate-model.md"
+  ],
+  "generatedDirectories": [
+    ".wireframer",
+    "product",
+    "product/reviews",
+    "product/evidence"
+  ]
+}
