@@ -1,0 +1,34 @@
+{
+  "sourceRuntime": "beta8/27ff6de3cf87a07d",
+  "rootEdits": [
+    "prototype/index.html: script URL revision only",
+    "product/reviews/interface.md: stale simulation sentence, observer attribution",
+    "product/evidence/checks.md: observer attribution",
+    "product/journal.md: literal newline repair, attribution"
+  ],
+  "modelUcSliceBlocksGraphUnchanged": true,
+  "candidateSha256": {
+    "run.sh": "dc1edda262d91b549fc11297ace55ae3d7fe3342e7087dacd275f0118086d019",
+    "README.md": "8c71177c70aaafc66d6fa0fed4e9c419486f20e5a94e219d5d4b54b753d3b1cf",
+    "AGENTS.md": "9c7cc24b9f34bfc60994ec8d2ad033db1623419467b3cd3b4e93dd3d8842e6b6",
+    "tests/workflow.cjs": "525f1255078c0ed0f70e5fa6ea7a6a41045182555254e692004013324c029533",
+    "prototype/index.html": "d01a0c69e7ad60b061e509b4a9cafcc679c4307bd487cc12cc97cd1bba43cd00",
+    "prototype/style.css": "4dd985119e5f5cecdbb5c3bfb93b5f592eed63929bf2552ee35693d64011277d",
+    "prototype/app.js": "f6ff2065f7245a7f49eaffadb04158e2a6f18a53c0091555bc7df2b5b036faea",
+    "product/journal.md": "fa16e72d7148569306e431b5a38cfa89a3c7f7697263578645afbba0faf683f8",
+    "product/evidence/checks.md": "6d9f137933ee2c6d154031baa8c1c3a6c5e83bc7ca87cf5123fe198b2a8b48c6",
+    "product/reviews/model.md": "98206b7db6fd6c1c6ca3a8d96d1891b140afddc71a0a69ca8bd4af46144ca1c8",
+    "product/reviews/interface.canvas": "04111717f4c7e1ea3fe5f61a227af8119dfff2afe9f7742e6a2442a019d949b5",
+    "product/reviews/slice.md": "5f701b98e480ce9dfaddd5b114248fe783cb1325d1fbb8937c986e857f66a59e",
+    "product/reviews/blocks.html": "7d0efd2399d278afd43957dccefa3a9fbea20d650890542df02b13a77cfa9944",
+    "product/reviews/interface-preview.svg": "ab11c3d6731d542131cfc82958889e2df65a1d23e503ea1f03fe0a568ed9ca22",
+    "product/reviews/interface.md": "84b0a4710b82fa4828bb832538bede68a32cda40844d4d2f9c8449eb20f332a8",
+    "product/reviews/use-cases.md": "227a6573d45c5d05a7a86caf3f4c434e1cd6cafeb5324172bd7a191f84a127b5",
+    ".fab/index.md": "03799ccf0409fb9830503c555d79fa362fec7f97a8b23c73b5e73d598b81e4cb",
+    ".wireframer/workspace.json": "135ffd63f10964d5728eedd48b488d387909a4ff935d23be806341f25a705728",
+    ".wireframer/project.json": "538c72c5f9ba1986ac7adf84473e7c01cad7983a3ee15e84c9231601977de70e",
+    ".wireframer/graph.json": "d4ed118319825e69ff5407e1806c9577d3e6f024095c3e041a4f9b274856dcbe",
+    ".wireframer/signals.json": "12a535948b671da5d91091d9a9a57ef9db0a0d2f50f11cd1341fbaa1234865db"
+  },
+  "resetUsed": 1
+}

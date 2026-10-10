@@ -26,3 +26,26 @@ fix/readiness handled bounded. Private iamjudin/Fab remote created and verified;
 branch and recovery tag pushed. No public release/merge. Beta.4 SVG routing and
 preview lifetime boundary installed,31local tests pass. New-model smoke running.
 Actual current source83337f6; new-model contract records budget/runtime separately.
+
+## 2026-10-10 - full route and bounded corrections
+Creator-axis corrective passed with an explicit empty unsupported BJ branch.
+Full client model-to-prototype reached visible blocks before code; root UI
+observed selected interactions but flat Canvas failed ownership. Beta7 adds
+physical guard and one corrective restores actual nesting; prototype frozen.
+Root UI found FAB08 inaccessible persistent failure toggle behind modal. Beta8
+recovery contract installed/parity checked; one corrective stopped by weekly
+limit before changing candidate. One reset authorized, zero used; user asked
+for official manual reset because no usable reset tool/authenticated UI.
+Current truth in handoff/backlog/autonomous-beta-results; no full PASS claimed.
+
+User confirmed the authorized reset performed manually. Exactly one reset
+now used; no further reset authorized. Resume only the incomplete recovery check.
+
+## 2026-10-10 - recovery closed and bounded beta complete
+One recovery corrective after reset:325474input/289024cached/3531output/94.3s.
+Root actual UI observed retained draft and retry without closing modal, ready
+and one history entry preserved. Browser cached older JS after reload/new tab;
+root asset URL revision resolved environment; root edits separated from agent
+evidence. Beta9 preview freshness contract installed57files/462d4cc828c5d99f.
+36local regressions+source/cache PASS. Current report/backlog/handoff updated.
+No general whole-route/native/client/production PASS and no stats-only rerun.

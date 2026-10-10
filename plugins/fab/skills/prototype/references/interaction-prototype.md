@@ -114,3 +114,8 @@ the generating task exits or identify it as a run command, not a live link. A
 process inside a short test session may be terminated with that session. Record
 actual root/origin/run command; keep server lifecycle separate from product data
 persistence. Do not claim reload passed if a dead preview server prevented it.
+
+When revising an already open preview, verify that the browser runs the current
+artifact. A reload can leave cached script modules active. Use an explicit asset
+revision or an appropriate development server cache policy if needed; record
+that environment intervention separately from domain fixes and initial-run proof.

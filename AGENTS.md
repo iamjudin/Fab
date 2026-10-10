@@ -22,8 +22,8 @@ Runtime package plugins/fab, docs не скрытый обязательный r
 Не создавай subagents без явного разрешения на делегацию.
 
 ## Current boundary
-Installed Fab0.1.0-beta.5,56files/4096c3342f8d8939. All ten independent contracts.
-31local regressions, bounded outcome/domain/UI/maintenance smokes; not universal
+Installed Fab0.1.0-beta.9,57files/462d4cc828c5d99f. All ten independent contracts.
+36local regressions, bounded outcome/domain/UI/maintenance smokes; not universal
 maturity. Current detailed state in docs/handoff.md and docs/backlog.md. Continue
 across checkpoints when authorized; user explicitly rejected artificial pauses.
-Private GitHub remote verified; no public release/merge. One reset allowed,unused.
+Private GitHub remote verified; no public release/merge. One authorized reset performed by creator; no further reset authorized.

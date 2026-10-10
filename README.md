@@ -1,10 +1,9 @@
-# Fab - private development beta
-Independent coauthor outcomes: Cowork, Research, Analysis, Brainstorm, Testing,
-Product, Wireframe, Prototype, Plugin and Delivery. Optional compositions,
-not a compulsory ten-stage product process. Mobile focus; native platform
-expertise still needs targeted research/evidence.
+# Fab — private development beta
 
-[Working index](AGENTS.md), [Beacon](docs/beacon.md), [Backlog](docs/backlog.md),
-[Handoff](docs/handoff.md). Current local runtime0.1.0-beta.4, marketplace fab-local,
-package plugins/fab. Private source: https://github.com/iamjudin/Fab .
-No public release or universal maturity claim. Old Wireframer/Fabricator preserved.
+10 самостоятельных навыков: Cowork, Research, Analysis, Brainstorm, Testing, Product, Wireframe, Prototype, Plugin и Delivery. Возможны совместные маршруты; полный путь не обязателен для каждого запроса.
+
+Runtime0.1.0-beta.9; package plugins/fab с собственным plugin.json; marketplace fab-local. Private source: https://github.com/iamjudin/Fab . Mobile focus; глубокая native platform экспертиза ещё требует исследования.
+
+[Индекс](AGENTS.md) · [Маяк](docs/beacon.md) · [Бэклог](docs/backlog.md) · [Состояние](docs/handoff.md) · [Результаты проверок](experiments/workflow-tests/2026-10-10-autonomous-beta-results.md).
+
+Это ограниченная beta, не публичный выпуск и не подтверждение универсальной зрелости. Старые Wireframer/Fabricator сохранены.

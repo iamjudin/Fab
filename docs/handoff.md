@@ -1,43 +1,45 @@
-# Fab working handoff
-Read AGENTS,backlog,beacon,current task evidence; check Git. Don't replay old chats.
+# Рабочее состояние Fab
 
-## Goal and agreement
-One bundle, ten independent outcomes/optional routes for an indie coauthor;
-mobile focus. Advice/critique/significant tradeoffs before implementation.
-Russian on ty, concise result/impact/risk/next first. Operator attention/tokens
-are resources. Continue authorized useful work across checkpoints; only genuine
-human choices/access/permission/resource blockers pause dependent work.
+## Цель и договор
 
-## Current implementation
-Lab/Fab,codex/bootstrap-beta,private https://github.com/iamjudin/Fab .
-Fab0.1.0-beta.5 installed from fab-local,56files/4096c3342f8d8939.
-Cowork/Research/Analysis/Brainstorm/Testing/Product/Wireframe/Prototype/Plugin/Delivery.
-Shared core/project contract/decision policy;8brief+full methods, no Brain runtime.
-Product graph compatible .wireframer; .fab is lightweight index, no duplicate PRD.
-31local regressions PASS. Beta1 five focused outcomes; beta2 accepted-context
-model->structure; beta3 real prototype UI (root observer) and plugin source repair
-+ truthful release readiness. Narrow cases, not universal/general maturity.
+Один bundle с 10 самостоятельными навыками и необязательными маршрутами для инди-создателя. Mobile focus; Landlord исключён. Мы соавторы: рекомендации, критика и существенные компромиссы до действия. Русский на ты, сначала результат/польза/риск. Операторское внимание и токены — ресурсы. Checkpoint не повод остановиться.
 
-## Active result and next
-New whole-model candidate reached UC without ritual approval but inferred creator
-axis redundant because user=creator. FAB06 clarified whole-model assessment while
-allowing empty unsupported BJ and partial requests. One corrective in progress;
-contract beta5-corrective and logs private/tmp/fab-beta4-new-model-20261010-logs.
-Root session82215 owns running CLI; no extra agents. Review actual output before
-closing. Preserve original snapshot beta4-new-model/initial-workspace separately.
-WF17 remains bounded, WF20 SVG mechanics improved but native/placement open.
+## Где работаем
 
-## Actual preview environment
-Plant-care test http://127.0.0.1:8765/prototype/ backed by root server session98899.
-Original CLI server ended with session; root browser tab11 actual reload retains
-localStorage. User-facing candidates are synthetic, not real creator approval.
-Root CUA proof in experiments/workflow-tests/beta3, no hidden browser state edits.
-Early prototype explicitly skipped block-layout stage; not a full pipeline PASS.
+- Source: /Users/iamjudin/Desktop/Lab/Fab, ветка codex/bootstrap-beta.
+- Private remote: https://github.com/iamjudin/Fab . Публичного выпуска/merge нет.
+- Установлена Fab0.1.0-beta.9, 57 файлов, fingerprint462d4cc828c5d99f, marketplace fab-local.
+- 36 локальных регрессий PASS; source/cache совпадают.
+- Основной чат остаётся в Wireframer. Новый чат не создан.
+- Wireframer0.2.5/recovery сохранены; Fabricator4543046/ahead3 и его чужие файлы не менялись.
+- Ровно один разрешённый сброс выполнен пользователем; дальнейшие сбросы не разрешены.
 
-## Scope/permission
-Autonomous implementation/install/tests authorized; exactly1reset allowed,noneused.
-Private remote created verified and checkpoint pushed; no public release/license
-selection/marketplace publication. Main chat remains old Wireframer; no new chat
-created. Landlord excluded. Mobile platform expertise/gamification not fabricated.
-Old Wireframer0.2.5 recovery/tag intact; Fabricator4543046/ahead3 untouched.
-WF17/20 active Fab owners; WF26/27/28 still old registry. No unasked merge/cleanup.
+## Что доказано
+
+Пять самостоятельных исходов beta1; частичный Product→Wireframe; выбранные реальные UI-пути Prototype; Plugin source repair + честная Delivery readiness. Полный клиентский маршрут beta5 прошёл model→UC/slice→structure/scenarios→visible blocks→prototype. Это кандидат, не client acceptance.
+
+Первый Canvas полного маршрута провалил владение: ноль групп. Beta7 corrective восстановил пять поверхностей и вложенность, исходные связи/IDs/роль/правила сохранены; prototype bytes при этой правке неизменны. Root просмотрел PNG из SVG, не native Obsidian.
+
+Creator-axis corrective прошёл отдельно: оценка двух осей даже при одном акторе, без выдуманных BJ. Первичный FAIL не переписан как чистый PASS.
+
+Root браузером проверил создание/Enter/валидацию, собственные задачи волонтёра, ready/undo/history, cancel edit, переназначение без потери ready, soft cancel/restore и reload. FAB-08 выявил недоступный persistent failure toggle за modal. Beta8 corrective заменил его однократной имитацией; root реально повторил сохранение в той же форме без работы с фоном. Результат и одна запись истории подтверждены.
+
+## Завершённый пакет и следующий смысловой шаг
+
+Автономная сборка beta и ограниченные технические проверки завершены. Не запускать новый полный продуктовый прогон ради статистики. Нужно оценить полезность bundle/кандидата с создателем; реальные continuity, native Obsidian, usability, большие карты и production guarantees не закрыты.
+
+Отчёт: experiments/workflow-tests/2026-10-10-autonomous-beta-results.md .
+Backlog содержит конкретные границы и триггеры. Native mobile экспертиза требует отдельного общего исследования: docs/research-briefs/mobile-structure-interaction-deep-research.md . После исследования применять его по вопросу, не добавлять обязательные этапы.
+
+## Кандидат и среда
+
+Full workspace: /private/tmp/fab-beta5-full-route-20261010 .
+Preview: http://127.0.0.1:8873/prototype/ — root server session69883. Если завершится: запустить run.sh8873 из workspace. Долговечность сервера отделена от localStorage. Root tab14 сохранён как кандидат.
+
+Reload и свежая вкладка сначала исполняли старый JS. Root добавил явную ревизию URL app.js?revision=recovery-beta8, затем наблюдал новое сообщение и успешный retry. Это поправка среды, не чистый исход первичного прогона. Beta9 уточняет проверку актуальности preview; новых агентных проверок ради этого не было.
+
+Логи recovery-aborted-before-reset сохранены отдельно; первый лимитный abort не исчез из истории. 13 завершённых CLI попыток + 1 aborted; root overhead отдельно/неизвестен.
+
+## Сохранность и ownership
+
+Оригинал, map corrective и recovery result заморожены отдельно в beta5-full. Root environment/documentation edits перечислены в intervention packet. Старые архивы не перезаписаны. WF-01/17/20 owner Fab; WF-26/27/28 пока Wireframer. Реального переноса основного чата нет, source старого плагина не изменён.

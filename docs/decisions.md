@@ -13,3 +13,8 @@
   partial feature/UC requests do not need an artificial full Jobs hierarchy.
 - Checkpoint is persistence, not a stop. Continue until agreed outcome or actual
   decision/access/budget boundary. Live preview lifetime distinct from data lifetime.
+
+- Physical ownership is required only for structure Canvas; flow-only maps
+  excluded, separate global navigation allowed. Geometry guard is not semantics.
+- Recovery testing must use accessible controls in the actual failed state;
+  changing inert background controls in a harness is insufficient evidence.

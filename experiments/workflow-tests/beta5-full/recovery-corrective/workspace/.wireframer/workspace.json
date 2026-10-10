@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "managedBy": "wireframer",
+  "slug": "community-setup",
+  "cleanupBoundary": "/private/tmp/fab-beta5-full-route-20261010",
+  "generatedFiles": [
+    ".fab/index.md",
+    ".wireframer/graph.json",
+    ".wireframer/project.json",
+    ".wireframer/signals.json",
+    "README.md",
+    "product/evidence/checks.md",
+    "product/journal.md",
+    "product/reviews/blocks.html",
+    "product/reviews/interface-preview.svg",
+    "product/reviews/interface.canvas",
+    "product/reviews/interface.md",
+    "product/reviews/model.md",
+    "product/reviews/slice.md",
+    "product/reviews/use-cases.md",
+    "prototype/app.js",
+    "prototype/index.html",
+    "prototype/style.css",
+    "run.sh",
+    "tests/workflow.cjs"
+  ],
+  "generatedDirectories": [
+    ".wireframer",
+    "product",
+    "product/reviews",
+    "product/evidence"
+  ]
+}
