@@ -27,7 +27,7 @@ criterion; ask for judgement of a perceivable candidate, not its wording alone.
 
 
 Continue to [block screens](block-screens.md) for visible composition, then
-[interactive prototype](../../../shared/capabilities.md) for selected executable checks.
+[interactive prototype](../../prototype/references/interaction-prototype.md) for selected executable checks.
 
 ## Выбор проверяемых веток
 

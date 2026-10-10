@@ -1,6 +1,6 @@
 # JTBD — operational brief
 
-Use with Human Jobs contract (future domain contract; not installed in this beta); that contract is the maintained
+Use with [Human Jobs contract](../../skills/product/references/human-jobs.md); that contract is the maintained
 Wireframer policy. Source: the maintainer's JTBD methodology research.
 Detailed packet: [jtbd.full.json](jtbd.full.json).
 

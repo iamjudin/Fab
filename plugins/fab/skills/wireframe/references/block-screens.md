@@ -40,6 +40,6 @@ Track the candidate and its relations to surfaces/scenarios in the workspace.
 Check ownership, hierarchy and relevant states before geometry. Use the
 [Canvas adapter](canvas-adapter.md) when drawing in Canvas. Findings that change
 access or domain behaviour update the respective source contract and reviews.
-Move to [interactive prototype](../../../shared/capabilities.md) when executable
+Move to [interactive prototype](../../prototype/references/interaction-prototype.md) when executable
 interaction is the useful next check; do not assert all states covered merely
 because block screens were reviewed.

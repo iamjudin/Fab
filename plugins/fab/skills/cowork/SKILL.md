@@ -13,7 +13,8 @@ waiting only for genuinely required choices. No repeated briefing for known inpu
 Read [capabilities](../../shared/capabilities.md) to route:
 research gathers/synthesizes evidence; analysis evaluates existing material;
 brainstorm explores options; testing runs a bounded experiment; product defines
-behavior, wireframe organizes visible interfaces. Direct requests
+behavior, wireframe organizes visible interfaces; prototype checks executable interaction;
+plugin engineers package/runtime; delivery implements/delivers real increments/releases. Direct requests
 can skip cowork. Preserve authorized scope on handoff; unavailable routes must be
 named, not silently sent through old Wireframer/Fabricator/Landlord.
 Stop at agreed orientation/plan/handoff, or continue the authorized result with

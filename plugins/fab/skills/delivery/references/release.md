@@ -1,0 +1,33 @@
+# Release mode: scope and honest readiness
+Resolve release object, canonical source, requested version/channel/audience,
+rollback and authorization. Local install, repository visibility, push, tag,
+GitHub Release and marketplace publication are distinct outputs; no implicit
+public release from a repair or ordinary checkpoint push.
+
+For plugin release read [Plugin](../../plugin/SKILL.md) and its runtime checklist.
+Plugin owns manifest/package/assets/discovery/install compatibility; Delivery
+owns organizing channel/readiness/version/evidence/rollback. App Store/native
+requirements need current platform evidence, not an untested generic checklist.
+Optional companion assets need own evidence only when actually present.
+
+Before external Git actions check local Git, target remotes and actual auth;
+no interactive login or new public remote by default. Preserve existing permissions
+and finish authorized preparation before any genuinely needed approval. If auth
+is missing, report exact action; don't label ready. CI/private/public/license
+choices are scoped to the intended distribution. No compulsory issue templates,
+banner or public repository for a personal tool.
+
+For public release: README/current usage/install/update/version/license/limitations
+and required release notes must match actual behavior. Relevant page metadata/
+assets aren't silently stale. Check pushed source/tag/Release in the requested
+channel. A branch push isn't Release evidence. Compare exact remote SHA when
+raw branch content lags; report propagation delay rather than skip verification.
+If install instructions changed run them in an isolated clean setup before claim.
+Actual distribution path is needed for public install evidence; a local marketplace
+smoke is only local evidence. Don't claim unobserved host/native interactions.
+
+For shared standards inspect only affected downstream projects in authorized scope;
+record unavailable pending owners instead of rewriting all projects. Future
+learning is concrete symptom/user-use evidence, not schedule-driven audits.
+Output ready/blocked/pending for each promised surface, exact evidence and limits.
+Public publication is never performed just because this skill was selected.

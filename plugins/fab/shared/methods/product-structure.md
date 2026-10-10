@@ -1,7 +1,7 @@
 # Product structure — operational brief
 
 Read at the selected-slice → structure decision; use the maintained
-navigation-ia contract (future domain contract; not installed in this beta). Detailed research:
+[navigation-ia contract](../../skills/wireframe/references/navigation-ia.md). Detailed research:
 [product-structure.full.json](product-structure.full.json).
 
 - Reconstruct composition and navigation separately. A surface owns its content

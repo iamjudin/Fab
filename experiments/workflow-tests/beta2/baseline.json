@@ -1,0 +1,49 @@
+{
+  "project": {
+    "schemaVersion": 1,
+    "slug": "plant-care",
+    "language": "ru",
+    "activeStage": "product-change",
+    "creatorIntent": "Личный инструмент ухода за домашними растениями",
+    "inputFlexibility": "accepted requirements with candidate implementation",
+    "boundaries": [
+      "no account",
+      "no payment",
+      "no cloud sync",
+      "no automatic watering"
+    ]
+  },
+  "signals": [
+    {
+      "id": "SIG-01",
+      "meaning": "Личный инструмент, без аккаунта и монетизации в срезе",
+      "authority": "constraint",
+      "knowledgeStatus": "decision",
+      "disposition": {
+        "kind": "routed",
+        "targetType": "constraint",
+        "reason": "accepted slice boundary"
+      }
+    },
+    {
+      "id": "SIG-02",
+      "meaning": "Отмена не меняет сохранённые данные; ошибка сохраняет ввод",
+      "authority": "constraint",
+      "knowledgeStatus": "decision",
+      "disposition": {
+        "kind": "represented",
+        "refs": [
+          "DR-01"
+        ]
+      }
+    }
+  ],
+  "node": {
+    "id": "DR-01",
+    "type": "domain-rule",
+    "meaning": "Отмена не меняет сохранённые данные; ошибка сохраняет ввод",
+    "status": "accepted",
+    "links": []
+  },
+  "acceptedSha256": "57892da2adde79424787f8baeb8117cbc238688b206dd83e1e3138b810696d10"
+}

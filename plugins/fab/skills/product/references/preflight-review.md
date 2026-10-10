@@ -80,7 +80,7 @@ For structure, apply [ownership/access](../../wireframe/references/navigation-ia
 apply [critical scenarios](../../wireframe/references/critical-scenarios.md) and [block screens](../../wireframe/references/block-screens.md).
 File/render checks use [Canvas adapter](../../wireframe/references/canvas-adapter.md). Keep semantic checks
 and actual application opening distinct. For interaction, apply the
-[prototype contract](../../../shared/capabilities.md), preserving scope and simulated
+[prototype contract](../../prototype/references/interaction-prototype.md), preserving scope and simulated
 versus actual outcomes.
 
 ### 3. Product Graph

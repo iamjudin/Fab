@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1341" viewBox="-60 -460 1920 1430">
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#636b74"/></marker></defs>
+<rect x="-60" y="-460" width="1920" height="1430" fill="#fbfbfa"/>
+<rect x="650" y="200" width="500" height="710" rx="12" fill="#f5f5f5" stroke="#59616d" stroke-width="3"/>
+<text x="650" y="188" font-size="21" font-family="Arial, sans-serif">S-02 · Карточка растения</text>
+<rect x="0" y="200" width="500" height="540" rx="12" fill="#f5f5f5" stroke="#59616d" stroke-width="3"/>
+<text x="0" y="188" font-size="21" font-family="Arial, sans-serif">S-01 · Главный / список</text>
+<rect x="1300" y="200" width="500" height="430" rx="12" fill="#f5f5f5" stroke="#59616d" stroke-width="3"/>
+<text x="1300" y="188" font-size="21" font-family="Arial, sans-serif">S-04 · Изменение / modal sheet</text>
+<rect x="0" y="-400" width="500" height="420" rx="12" fill="#f5f5f5" stroke="#59616d" stroke-width="3"/>
+<text x="0" y="-412" font-size="21" font-family="Arial, sans-serif">S-03 · Создание / modal sheet</text>
+<rect x="20" y="360" width="460" height="350" rx="12" fill="#f5f5f5" stroke="#59616d" stroke-width="3"/>
+<text x="20" y="348" font-size="21" font-family="Arial, sans-serif">Растения · коллекция</text>
+<rect x="670" y="555" width="460" height="325" rx="12" fill="#f5f5f5" stroke="#59616d" stroke-width="3"/>
+<text x="670" y="543" font-size="21" font-family="Arial, sans-serif">История · встроенная секция</text>
+<rect x="40" y="425" width="420" height="265" rx="12" fill="#f5f5f5" stroke="#59616d" stroke-width="3"/>
+<text x="40" y="413" font-size="21" font-family="Arial, sans-serif">Растение · повторяемый элемент</text>
+<rect x="690" y="620" width="420" height="230" rx="12" fill="#f5f5f5" stroke="#59616d" stroke-width="3"/>
+<text x="690" y="608" font-size="21" font-family="Arial, sans-serif">Запись полива · повторяется</text>
+<line x1="250" y1="230" x2="250" y2="20" stroke="#777e87" stroke-width="2.5" marker-end="url(#arrow)"/>
+<line x1="40" y1="-115" x2="0" y2="470" stroke="#777e87" stroke-width="2.5" marker-end="url(#arrow)"/>
+<line x1="440" y1="560" x2="650" y2="555" stroke="#777e87" stroke-width="2.5" marker-end="url(#arrow)"/>
+<line x1="690" y1="260" x2="500" y2="470" stroke="#777e87" stroke-width="2.5" marker-end="url(#arrow)"/>
+<line x1="1110" y1="455" x2="1300" y2="415" stroke="#777e87" stroke-width="2.5" marker-end="url(#arrow)"/>
+<line x1="1340" y1="555" x2="1150" y2="555" stroke="#777e87" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="40" y="230" width="420" height="60" rx="12" fill="#93c5fd" stroke="#59616d" stroke-width="3"/>
+<text x="56" y="262" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Добавить растение</text>
+<rect x="60" y="450" width="380" height="60" rx="12" fill="#b6bcc3" stroke="#59616d" stroke-width="3"/>
+<text x="76" y="482" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Название растения</text>
+<rect x="60" y="530" width="380" height="60" rx="12" fill="#93c5fd" stroke="#59616d" stroke-width="3"/>
+<text x="76" y="562" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Открыть карточку</text>
+<rect x="60" y="610" width="380" height="60" rx="12" fill="#16a34a" stroke="#59616d" stroke-width="3"/>
+<text x="76" y="642" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Отметить полив</text>
+<rect x="690" y="230" width="420" height="60" rx="12" fill="#93c5fd" stroke="#59616d" stroke-width="3"/>
+<text x="706" y="262" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Назад к списку</text>
+<rect x="690" y="315" width="420" height="90" rx="12" fill="#b6bcc3" stroke="#59616d" stroke-width="3"/>
+<text x="706" y="347" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Данные растения</text>
+<text x="706" y="372" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Название · напоминание</text>
+<rect x="690" y="425" width="420" height="60" rx="12" fill="#93c5fd" stroke="#59616d" stroke-width="3"/>
+<text x="706" y="457" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Изменить данные</text>
+<rect x="710" y="650" width="380" height="60" rx="12" fill="#b6bcc3" stroke="#59616d" stroke-width="3"/>
+<text x="726" y="682" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Дата и время полива</text>
+<rect x="710" y="750" width="380" height="60" rx="12" fill="#16a34a" stroke="#59616d" stroke-width="3"/>
+<text x="726" y="782" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Удалить ошибочную запись</text>
+<rect x="40" y="-370" width="420" height="100" rx="12" fill="#bae6fd" stroke="#59616d" stroke-width="3"/>
+<text x="56" y="-338" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Название</text>
+<text x="56" y="-313" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Напоминание (необязательно)</text>
+<rect x="40" y="-245" width="420" height="60" rx="12" fill="#16a34a" stroke="#59616d" stroke-width="3"/>
+<text x="56" y="-213" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Создать</text>
+<rect x="40" y="-145" width="420" height="60" rx="12" fill="#93c5fd" stroke="#59616d" stroke-width="3"/>
+<text x="56" y="-113" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Отмена → список</text>
+<rect x="1340" y="230" width="420" height="100" rx="12" fill="#bae6fd" stroke="#59616d" stroke-width="3"/>
+<text x="1356" y="262" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Название</text>
+<text x="1356" y="287" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Напоминание (необязательно)</text>
+<rect x="1340" y="355" width="420" height="60" rx="12" fill="#16a34a" stroke="#59616d" stroke-width="3"/>
+<text x="1356" y="387" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Сохранить</text>
+<rect x="1340" y="525" width="420" height="60" rx="12" fill="#93c5fd" stroke="#59616d" stroke-width="3"/>
+<text x="1356" y="557" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Отмена → карточка</text>
+<rect x="650" y="-400" width="1150" height="125" rx="12" fill="#b6bcc3" stroke="#59616d" stroke-width="3"/>
+<text x="666" y="-368" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Уход за растениями · кандидат структуры</text>
+<text x="666" y="-343" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Вложенность = состав; стрелки = открытие/возврат.</text>
+<text x="666" y="-318" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Создать → список; Сохранить → карточка (при успехе).</text>
+<rect x="650" y="-230" width="260" height="60" rx="12" fill="#b6bcc3" stroke="#59616d" stroke-width="3"/>
+<text x="666" y="-198" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Информация</text>
+<rect x="940" y="-230" width="260" height="60" rx="12" fill="#bae6fd" stroke="#59616d" stroke-width="3"/>
+<text x="956" y="-198" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Локальный ввод</text>
+<rect x="1230" y="-230" width="260" height="60" rx="12" fill="#93c5fd" stroke="#59616d" stroke-width="3"/>
+<text x="1246" y="-198" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Навигация</text>
+<rect x="1520" y="-230" width="280" height="90" rx="12" fill="#16a34a" stroke="#59616d" stroke-width="3"/>
+<text x="1536" y="-198" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Сохранение изменения</text>
+<rect x="650" y="-80" width="1150" height="100" rx="12" fill="#f1f1f3" stroke="#59616d" stroke-width="3"/>
+<text x="666" y="-48" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">↗ product/reviews/structure.md</text>
+</svg>

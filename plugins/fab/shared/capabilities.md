@@ -1,8 +1,12 @@
-# Available beta capabilities
-Seven executable skills: Cowork, Research, Analysis, Brainstorm, Testing,
-Product and Wireframe. Shared culture applies to all; read only active refs.
-Product defines meaning/behavior; Wireframe organizes surfaces/navigation/flows/
-block composition. Partial existing work can start directly; no compulsory full
-Jobs route. Prototype, plugin maintenance and delivery are future owners, not
-installed Fab routes yet. No hidden fallback into old Wireframer/Fabricator.
-Mobile focus doesn't imply proven HIG/Material/native expertise. Landlord excluded.
+# Executable capability owners
+Cowork: orientation/agreements/continuity; Research: applicable evidence;
+Analysis: existing artifact assessment; Brainstorm: alternatives/tradeoffs;
+Testing: bounded experiment; Product: meaning/behavior/slice;
+Wireframe: structure/access/scenarios/block composition;
+Prototype: executable selected interactions; Plugin: engineering/package/runtime;
+Delivery: real feasibility/increment/installation/release/use.
+Ten skills are executable contracts, not ten mandatory stages or ten agents.
+Each outcome can start directly. Read only the active skill/references/methods.
+Runtime packaging availability is not maturity or universal behavioral evidence.
+Mobile HIG/Material/gamification expertise remains a research gap, never fabricate it.
+Landlord excluded; future landing branch is independently designed, not installed.

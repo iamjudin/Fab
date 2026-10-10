@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "fab",
-  "version": "0.1.0-beta.2",
-  "description": "Coauthor focused project work, product behavior and interface structure with traceable evidence.",
+  "version": "0.1.0-beta.3",
+  "description": "Independent coauthor skills for product decisions, interfaces, prototypes, plugin engineering and delivery.",
   "author": {
     "name": "iamjudin"
   },
