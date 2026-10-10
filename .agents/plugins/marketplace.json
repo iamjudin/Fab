@@ -1,0 +1,17 @@
+{
+  "name": "fab-local",
+  "plugins": [
+    {
+      "name": "fab",
+      "source": {
+        "source": "local",
+        "path": "./plugins/fab"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

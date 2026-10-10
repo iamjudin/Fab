@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "modules": [
+    {
+      "id": "jtbd",
+      "sourceTitle": "Jobs To Be Done- методология для проверяемого продуктового проектирования",
+      "brief": "jtbd.md",
+      "full": "jtbd.full.json",
+      "sourceSha256": "3abb5fe5e678754e1ef20c392c46e8f61f438283fc6281ffbf349a668038fe0c",
+      "ingestedAt": "2026-10-08",
+      "validation": {
+        "structure": "lossless sections; explicit exclusions",
+        "claims": "Core premises spot-checked against primary sources on 2026-10-08"
+      },
+      "refreshTrigger": "contradiction, source update, or decision requiring current external evidence"
+    },
+    {
+      "id": "product-structure",
+      "sourceTitle": "От сценариев использования к структуре продукта — метод для Wireframer",
+      "brief": "product-structure.md",
+      "full": "product-structure.full.json",
+      "sourceSha256": "53709f5562a81b75fc5623c265920fa896e5a01323469c4eecb67b07dc5c8c07",
+      "ingestedAt": "2026-10-08",
+      "validation": {
+        "structure": "lossless sections; explicit exclusions",
+        "claims": "Method correspondence reviewed; full citation and current-example verification pending"
+      },
+      "refreshTrigger": "contradiction, source update, or decision requiring current external evidence"
+    },
+    {
+      "id": "ai-native",
+      "sourceTitle": "AI-native процесс производства цифровых продуктов",
+      "brief": "ai-native.md",
+      "full": "ai-native.full.json",
+      "sourceSha256": "ec7cfc8eb1f3484fd6c215ee645735864bb93aa5d82ac607d0006f689ca01a34",
+      "ingestedAt": "2026-10-08",
+      "validation": {
+        "structure": "lossless sections; explicit exclusions",
+        "claims": "Method correspondence reviewed; full citation and current-example verification pending"
+      },
+      "refreshTrigger": "contradiction, source update, or decision requiring current external evidence"
+    },
+    {
+      "id": "design-systems",
+      "sourceTitle": "Дизайн-системы- практическое руководство по построению, организации в Figma и внедрению",
+      "brief": "design-systems.md",
+      "full": "design-systems.full.json",
+      "sourceSha256": "716f32d92937c5f2388adc52c49f244ef306d41428c06f84ed1fbcf8d80c97f1",
+      "ingestedAt": "2026-10-08",
+      "validation": {
+        "structure": "lossless sections; explicit exclusions",
+        "claims": "Method correspondence reviewed; full citation and current-example verification pending"
+      },
+      "refreshTrigger": "contradiction, source update, or decision requiring current external evidence"
+    },
+    {
+      "id": "slice-completeness",
+      "sourceTitle": "Проверка полноты продуктового среза до реализации- методика для Wireframer",
+      "brief": "slice-completeness.md",
+      "full": "slice-completeness.full.json",
+      "sourceSha256": "abcc195f53fb2ad86f2c5dbda25198c0e3e24701ef57c9048c2ee78f34eecb10",
+      "ingestedAt": "2026-10-09",
+      "validation": {
+        "structure": "All supplied sections retained and indexed; source SHA verified",
+        "claims": "Risk-based coverage is methodological synthesis. Source completeness checked structurally; primary spot-check only; no universal pairwise guarantee or mandatory job for contractual rules."
+      },
+      "refreshTrigger": "change of slice/context/platform rules, contradiction or insufficient evidence for the active decision"
+    },
+    {
+      "id": "monetization",
+      "sourceTitle": "Метод выбора модели монетизации и проектирования связанных сценариев для инди-создателя",
+      "brief": "monetization.md",
+      "full": "monetization.full.json",
+      "sourceSha256": "057abab247054a57612475c35dba28d834adbd835c471f7c838b5e3070352a47",
+      "ingestedAt": "2026-10-09",
+      "validation": {
+        "structure": "All supplied sections retained and indexed; source SHA verified",
+        "claims": "Source reports four unresolved citation markers (EUR-Lex). Economic method reviewed; full legal/platform layer not validated. Require fresh jurisdiction/storefront/processor evidence."
+      },
+      "refreshTrigger": "change of slice/context/platform rules, contradiction or insufficient evidence for the active decision"
+    },
+    {
+      "id": "first-value",
+      "sourceTitle": "Первый вход и достижение первой ценности в цифровых продуктах",
+      "brief": "first-value.md",
+      "full": "first-value.full.json",
+      "sourceSha256": "4d50813b063a7cfbdf19666cfbcbaf1cb6e96bab813fb4033e5132ace4bc376d",
+      "ingestedAt": "2026-10-09",
+      "validation": {
+        "structure": "All supplied sections retained and indexed; source SHA verified",
+        "claims": "Source reports four unresolved citation markers. Definition/method reviewed; primary spot-check only. No blanket empirical proof; technical dependencies are routed through their separate brief."
+      },
+      "refreshTrigger": "change of slice/context/platform rules, contradiction or insufficient evidence for the active decision"
+    },
+    {
+      "id": "technical-ux-dependencies",
+      "sourceTitle": "Технические зависимости продуктового поведения до реализации",
+      "brief": "technical-ux-dependencies.md",
+      "full": "technical-ux-dependencies.full.json",
+      "sourceSha256": "0494dddc0c5256f01bc0e19a0ef0614b2b823f36084d570411dd203ac3352816",
+      "ingestedAt": "2026-10-09",
+      "validation": {
+        "structure": "lossless sections; explicit exclusions",
+        "claims": "Source reports 23 unresolved citation bindings. Method reviewed; AWS timeout/retry and Android offline-first source distinctions spot-checked. Platform/version claims require fresh primary verification; not exhaustive fact-check."
+      },
+      "refreshTrigger": "implementation environment changes, contradictory probe, changed primary source conditions or unresolved active risk"
+    }
+  ]
+}

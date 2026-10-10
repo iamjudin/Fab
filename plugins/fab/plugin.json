@@ -1,0 +1,25 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "fab",
+  "version": "0.1.0-beta.1",
+  "description": "Coauthor project work: orient, research, analyze, explore alternatives and test bounded hypotheses.",
+  "author": {
+    "name": "iamjudin"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Fab beta",
+        "shortDescription": "Coauthor focused project work with clear evidence.",
+        "developerName": "iamjudin",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write",
+          "Research",
+          "Code"
+        ]
+      }
+    }
+  }
+}

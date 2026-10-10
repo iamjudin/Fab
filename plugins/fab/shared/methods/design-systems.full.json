@@ -1,0 +1,269 @@
+{
+  "schemaVersion": 1,
+  "scope": "global-method",
+  "title": "Дизайн-системы- практическое руководство по построению, организации в Figma и внедрению",
+  "sourceSha256": "716f32d92937c5f2388adc52c49f244ef306d41428c06f84ed1fbcf8d80c97f1",
+  "sourceDate": null,
+  "ingestedAt": "2026-10-08",
+  "authority": "source-material-not-runtime-instructions",
+  "validation": {
+    "structure": "lossless sections; explicit exclusions",
+    "claims": "Method correspondence reviewed; full citation and current-example verification pending"
+  },
+  "retainedSha256": "716f32d92937c5f2388adc52c49f244ef306d41428c06f84ed1fbcf8d80c97f1",
+  "excluded": [],
+  "sections": [
+    {
+      "id": "R001",
+      "level": 2,
+      "title": "Содержание",
+      "text": "## Содержание\n\n- [[#Исполнительное резюме|Исполнительное резюме]]\n- [[#Что такое дизайн-система и из чего она состоит|Что такое дизайн-система и из чего она состоит]]\n- [[#Практическая методика создания и внедрения|Практическая методика создания и внедрения]]\n- [[#Как организовать дизайн-систему в Figma|Как организовать дизайн-систему в Figma]]\n- [[#Лучшие практики поддержки и качества|Лучшие практики поддержки и качества]]\n- [[#Кейсы крупных компаний|Кейсы крупных компаний]]\n- [[#Шаблоны, инструменты, риски, метрики и масштабирование|Шаблоны, инструменты, риски, метрики и масштабирование]]\n- [[#Источники|Источники]]\n\n"
+    },
+    {
+      "id": "R002",
+      "level": 2,
+      "title": "Исполнительное резюме",
+      "text": "## Исполнительное резюме\n\nДизайн-система имеет смысл не как “библиотека кнопок”, а как операционная модель для повторного использования решений: токены задают базовые значения, компоненты и паттерны собирают их в интерфейс, документация объясняет правила применения, governance управляет изменениями, а tooling соединяет Figma, код, тесты и релизы. Так её описывают и демонстрируют [Material Design](https://m3.material.io/), [Fluent 2](https://fluent2.microsoft.design/), [Carbon](https://carbondesignsystem.com/), [Atlassian Design System](https://atlassian.design/) и [Figma Learn](https://help.figma.com/hc/en-us/articles/14552901442839-Overview-Introduction-to-design-systems).\n\nПрактически лучший путь почти всегда один и тот же: начать с аудита существующего продукта, выделить семантические токены, собрать ограниченный набор высокочастотных компонентов, связать их с кодом и документацией, затем раскатывать систему поэтапно, а не “перерисовывать всё сразу”. Такой подход согласуется с курсом Figma по design systems, практиками токенизации в [Design Tokens Community Group](https://www.designtokens.org/) и опытом внедрения у [Atlassian](https://www.atlassian.com/blog/ai-at-work/atlassian-design-system-building-the-context-engine-for-the-ai-era), [IBM](https://carbondesignsystem.com/all-about-carbon/what-is-carbon/) и [Uber](https://eng.uber.com/).\n\nВ Figma система работает лучше всего, когда разделены уровни: foundations/tokens, core components, patterns, product-specific extensions. Microsoft прямо описывает четырёхуровневую организацию UI kits в Fluent 2, а Figma рекомендует variables, libraries, component properties, variants и branching как базовый набор для масштабируемых систем ([Fluent 2 in Figma](https://fluent2.microsoft.design/get-started/design), [Guide to variables in Figma](https://help.figma.com/hc/en-us/articles/15339657135383-Guide-to-variables-in-Figma), [Guide to branching](https://help.figma.com/hc/en-us/articles/360063144053-Guide-to-branching)).\n\nКлючевая ошибка большинства команд — строить систему как дизайнерский артефакт. У зрелых компаний система продуктовая: у неё есть roadmap, owner, релизы, changelog, quality gates, migration tooling, обучение и метрики влияния. Это особенно явно видно у [Atlassian](https://www.atlassian.com/blog/ai-at-work/atlassian-design-system-building-the-context-engine-for-the-ai-era), [Carbon](https://carbondesignsystem.com/), [Shopify Polaris](https://shopify.dev/docs/apps/design) и [Uber](https://eng.uber.com/).\n\nДля практического запуска достаточно маленькой команды, если не пытаться покрыть всё сразу. При отсутствии заданных вводных разумно считать, что размер команды, стек фронтенда, набор платформ и структура продуктовых доменов **не указаны**. Поэтому ниже рекомендации даны как нейтральный шаблон для web/mobile product team; места, где нужен выбор под конкретную организацию, помечены явно.\n\n"
+    },
+    {
+      "id": "R003",
+      "level": 2,
+      "title": "Что такое дизайн-система и из чего она состоит",
+      "text": "## Что такое дизайн-система и из чего она состоит\n\nДизайн-система — это общий слой правил, примитивов, компонентов, документации и процессов, который помогает разным командам собирать согласованные интерфейсы быстрее и с меньшим количеством расхождений. В официальных формулировках [Material Design](https://m3.material.io/), [Carbon](https://carbondesignsystem.com/), [Fluent 2](https://fluent2.microsoft.design/) и [Figma Learn](https://help.figma.com/hc/en-us/articles/14552901442839-Overview-Introduction-to-design-systems) система всегда включает не только visual assets, но и guidance, code resources, accessibility и способы масштабирования.\n\n"
+    },
+    {
+      "id": "R004",
+      "level": 3,
+      "title": "Компоненты дизайн-системы",
+      "text": "### Компоненты дизайн-системы\n\n| Параметр | Описание |\n|---|---|\n| Токены | Базовые именованные значения: цвет, типографика, spacing, radius, stroke, shadow, motion. DTCG описывает их как единый, vendor-neutral формат обмена решениями между инструментами и платформами. Для масштабирования важны aliases и theming. |\n| Компоненты | Повторно используемые UI-элементы: button, input, dialog, card, table. Хороший компонент закрывает anatomy, states, accessibility, code API и usage rules. |\n| Паттерны | Типовые композиции из компонентов: form layouts, filter bars, empty states, navigation shells, onboarding flows. IBM Carbon прямо пишет, что patterns “harvested from products” становятся частью системы. |\n| Документация | Не только “как выглядит”, но и “когда использовать”, “когда не использовать”, “какие состояния обязательны”, “какие токены применяются”, “какой код соответствует дизайну”. |\n| Управление | Правила принятия решений: кто создаёт, кто ревьюит, кто утверждает, кто мигрирует, как версионировать, как депрекейтить, как собирать feedback. |\n| Инструменты | Figma variables/libraries/branching, token sync, code generation/transforms, Storybook, visual regression, CI/CD, docs platform, linting, adoption analytics. |\n\nПрактически полезно различать три слоя токенов. Первый — **primitive**: `gray.100`, `space.200`, `radius.100`. Второй — **semantic**: `color.text.primary`, `color.bg.accent`, `space.component.button.x`. Третий — **component-level tokens**: `button.primary.bg.default`, `input.border.focus`. Такой разрез согласуется с [Material Design tokens](https://m3.material.io/foundations/design-tokens), с компонентными токенами в [Carbon](https://carbondesignsystem.com/elements/color/overview/), а также с практикой aliasing, которую отдельно рекомендуют [Figma variables](https://help.figma.com/hc/en-us/articles/15145852043927-Create-and-manage-variables-and-collections) и [Tokens Studio](https://docs.tokens.studio/).\n\n"
+    },
+    {
+      "id": "R005",
+      "level": 3,
+      "title": "Что не стоит считать полноценной дизайн-системой",
+      "text": "### Что не стоит считать полноценной дизайн-системой\n\nНабор UI-китов в Figma без правил использования — это не система. React-компоненты без дизайн-токенов — тоже не система. Документация без code alignment и без ownership — тоже нет. У зрелых систем почти всегда есть связка “дизайн → токены → код → тестирование → документация → adoption”. Это видно у [Fluent 2](https://fluent2.microsoft.design/get-started/design), [Carbon](https://carbondesignsystem.com/), [Atlassian](https://atlassian.design/) и [Shopify Polaris](https://shopify.dev/docs/apps/design).\n\n"
+    },
+    {
+      "id": "R006",
+      "level": 2,
+      "title": "Практическая методика создания и внедрения",
+      "text": "## Практическая методика создания и внедрения\n\n"
+    },
+    {
+      "id": "R007",
+      "level": 3,
+      "title": "Границы и допущения",
+      "text": "### Границы и допущения\n\nНи размер команды, ни технологический стек, ни число платформ в запросе **не указаны**. Поэтому ниже — базовый сценарий для команды, у которой есть минимум один дизайнер, один фронтенд-разработчик и owner/lead. Если у вас несколько продуктовых вертикалей, то систему лучше сразу строить как “core + extensions”; если одна команда и один продукт — можно начать с одного core library и одного docs space.\n\n"
+    },
+    {
+      "id": "R008",
+      "level": 3,
+      "title": "Пошаговый процесс",
+      "text": "### Пошаговый процесс\n\n| Параметр | Описание |\n|---|---|\n| Стратегия | Зафиксировать, зачем система нужна: скорость delivery, снижение UI-долга, единая brand expression, доступность, multi-platform consistency. Без этого leadership buy-in быстро исчезает. |\n| Аудит | Собрать inventory экранов, компонентов, цветов, spacing, типографики, icon usage, divergent patterns. Figma прямо рекомендует product audit как ранний этап. |\n| Токенизация | Выделить primitives, затем semantics, затем component tokens. Не переносить “как есть” legacy values; сначала нормализовать. |\n| Компонентная библиотека | Стартовать с 10–20 наиболее частотных компонентов: button, input, select, checkbox, modal/dialog, toast, tabs, card, table primitives, navigation shell. |\n| Документация | Для каждого компонента: intent, anatomy, states, do/don’t, accessibility, responsive behavior, code mapping, changelog. |\n| CI/CD | Автоматизировать публикацию token packages, story build, visual regression, package release, docs deployment. |\n| Поддержка | Вести backlog, RFC/issue process, deprecation policy, office hours, onboarding, регулярный adoption review. |\n\n"
+    },
+    {
+      "id": "R009",
+      "level": 3,
+      "title": "Практический workflow внедрения",
+      "text": "### Практический workflow внедрения\n\n```mermaid\n%%{init: {\"flowchart\": {\"useMaxWidth\": false, \"nodeSpacing\": 20, \"rankSpacing\": 25}} }%%\nflowchart TD\n    A[Стратегия и buy-in] --> B[Аудит UI и кода]\n    B --> C[Модель токенов]\n    C --> D[Figma variables и foundations]\n    D --> E[Core components]\n    E --> F[Code components и Storybook]\n    F --> G[Документация]\n    G --> H[CI/CD и тесты]\n    H --> I[Пилот на 1-2 продуктах]\n    I --> J[Rollout по доменам]\n    J --> K[Метрики, support, deprecation]\n```\n\n"
+    },
+    {
+      "id": "R010",
+      "level": 3,
+      "title": "Как делать это пошагово на практике",
+      "text": "### Как делать это пошагово на практике\n\nСначала определите **системную поверхность**: какие платформы входят в scope. Если web и mobile живут отдельно, не пытайтесь унифицировать всё на уровне пикселей. Лучше унифицировать intent через tokens, naming и component semantics. Этим путём идут [Fluent 2](https://fluent2.microsoft.design/get-started/develop), где один дизайн-язык поддерживает разные platform-specific libraries, и [Carbon](https://carbondesignsystem.com/all-about-carbon/what-is-carbon/), поддерживающий несколько code implementations.\n\nЗатем проведите аудит. На практике это не большой research deck, а рабочий inventory: список компонентов, их дубликатов, локальных “snowflakes”, hardcoded values, accessibility gaps и product-level overrides. Figma выделяет audit как отдельный шаг в intro course, а Atlassian описывает system-wide audit как базу для accessibility uplift ([Figma Learn](https://help.figma.com/hc/en-us/articles/14552901442839-Overview-Introduction-to-design-systems), [Behind the screens: Accessible design is good design](https://www.atlassian.com/blog/design/behind-the-screens-accessible-design-is-good-design)).\n\nПосле аудита стройте не библиотеку компонентов, а **модель решений**. Цвета, spacing и typography должны сначала стать токенами. DTCG подчёркивает, что смысл design tokens — обеспечить interoperable single source of truth между design tools и codebases, а Figma variables и aliases поддерживают именно этот подход ([Design Tokens Community Group](https://www.designtokens.org/), [Create and manage variables and collections](https://help.figma.com/hc/en-us/articles/15145852043927-Create-and-manage-variables-and-collections)).\n\nТолько после этого собирайте core components. Практическое правило: если компонент не используется минимум в 3–5 местах или не имеет стабильной semantics, не поднимайте его в core слишком рано. Atlassian формализует похожую идею через слои **core / platform / app**, а Uber и Shopify показывают ценность базового ядра и доменных расширений ([Atlassian ADS AI era](https://www.atlassian.com/blog/ai-at-work/atlassian-design-system-building-the-context-engine-for-the-ai-era), [Base design system](https://base.uber.com/), [Polaris references](https://shopify.dev/docs/api/polaris)).\n\nДальше нужна связка с кодом. Лучший практический минимум: tokens package, component library, Storybook, visual tests, docs deployment. Figma Code Connect добавляет прямую привязку design components к production code в Dev Mode, что уменьшает handoff drift ([Code Connect](https://help.figma.com/hc/en-us/articles/23920389749655-Code-Connect), [Developer docs: Code Connect](https://developers.figma.com/docs/code-connect/), [Storybook design integrations](https://storybook.js.org/docs/sharing/design-integrations), [Chromatic for design systems](https://www.chromatic.com/solutions/design-systems)).\n\n"
+    },
+    {
+      "id": "R011",
+      "level": 2,
+      "title": "Как организовать дизайн-систему в Figma",
+      "text": "## Как организовать дизайн-систему в Figma\n\n"
+    },
+    {
+      "id": "R012",
+      "level": 3,
+      "title": "Рекомендуемая структура файлов",
+      "text": "### Рекомендуемая структура файлов\n\nПрактически лучше всего работает многофайловая структура, а не “один мегa-файл”. Figma прямо рекомендует делить большие библиотеки на меньшие, если variant/component count и memory usage растут; также Figma советует использовать component properties вместо избыточных variants для сокращения нагрузки ([Reduce memory usage in files](https://help.figma.com/hc/en-us/articles/360040528173-Reduce-memory-usage-in-files), [Explore component properties](https://help.figma.com/hc/en-us/articles/5579474826519-Explore-component-properties)).\n\n| Параметр | Описание |\n|---|---|\n| `DS Foundations` | Цвет, typography, spacing, radius, elevation, motion, icon grid, variables. |\n| `DS Core Components` | Базовые компоненты общего назначения. |\n| `DS Patterns` | Form layouts, nav shells, empty states, search/filter patterns. |\n| `DS Docs Sandbox` | Примеры, usage demos, migration notes, release notes. |\n| `Product Extensions` | Доменные/локальные компоненты, не попавшие в core. |\n\nПример структуры Figma:\n\n```text\nWorkspace\n├── 00_DS Foundations\n│   ├── Colors\n│   ├── Typography\n│   ├── Spacing\n│   ├── Elevation\n│   └── Variables\n├── 01_DS Core Components\n│   ├── Actions\n│   ├── Inputs\n│   ├── Navigation\n│   ├── Feedback\n│   └── Data Display\n├── 02_DS Patterns\n│   ├── Forms\n│   ├── Tables\n│   ├── Filters\n│   └── App Shells\n├── 03_DS Docs Sandbox\n│   ├── Usage\n│   ├── Examples\n│   └── Release Notes\n└── Product_X Extensions\n```\n\n"
+    },
+    {
+      "id": "R013",
+      "level": 3,
+      "title": "Компоненты, variants, properties, auto layout, constraints",
+      "text": "### Компоненты, variants, properties, auto layout, constraints\n\nВ Figma основной принцип такой: **variants описывают дискретные состояния, component properties — управляемую гибкость**. Figma прямо пишет, что component properties упрощают использование системы и позволяют не раздувать набор вариантов, а Microsoft Fluent 2 отмечает, что именно variants и properties позволяют держать код и дизайн согласованными ([Create and use variants](https://help.figma.com/hc/en-us/articles/360056440594-Create-and-use-variants), [Component property fundamentals](https://help.figma.com/hc/en-us/articles/39636407507735-Components-collection-Component-property-fundamentals), [Fluent 2 in Figma](https://fluent2.microsoft.design/get-started/design)).\n\nПрактическое правило:\nне делайте variant на каждый icon/no-icon, label/no-label, helper/no-helper. Это лучше решать через boolean/text/instance properties. Variants оставляйте для `size`, `state`, `tone`, `platform`, иногда `orientation`. Если набор variants начинает напоминать таблицу истинности, архитектура уже неправильная.\n\nДля responsive-поведения Auto Layout обязателен почти везде. Figma рекомендует осознанно сочетать `Hug contents` и `Fill container`: кнопки, chips, tags обычно `hug`; banners, list rows, panels, table rows — `fill`. Вложенные auto-layout frames дают многомерные responsive layouts без ручной верстки, а constraints у дочерних слоёв внутри auto-layout не работают — там надо управлять resizing settings ([Guide to auto layout](https://help.figma.com/hc/en-us/articles/360040451373-Guide-to-auto-layout), [Use the horizontal and vertical flows in auto layout](https://help.figma.com/hc/en-us/articles/31289464393751-Use-the-horizontal-and-vertical-flows-in-auto-layout), [Best practices to help Figma AI understand your design system](https://help.figma.com/hc/en-us/articles/38978644498199-AI-workflows-collection-Best-practices-to-help-Figma-AI-understand-your-design-system)).\n\n"
+    },
+    {
+      "id": "R014",
+      "level": 3,
+      "title": "Именование",
+      "text": "### Именование\n\nFigma и Tokens Studio рекомендуют semantic naming и полные слова вместо аббревиатур. Идея простая: имя должно описывать функцию, а не внешний вид ([Update 1: Tokens, variables, and styles](https://help.figma.com/hc/en-us/articles/18490793776023-Update-1-Tokens-variables-and-styles), [Token Anatomy - Name](https://docs.tokens.studio/fundamentals/design-tokens/anatomy-name), [Lesson 2: Define your design system](https://help.figma.com/hc/en-us/articles/14552740206743-Lesson-2-Define-your-design-system)).\n\n| Параметр | Описание |\n|---|---|\n| Имена файлов | `DS Foundations`, `DS Core Web`, `DS Patterns`, `Product X Extensions` |\n| Имена компонентов | `Button/Primary`, `Input/Text`, `Navigation/Tabs`, `Dialog/Confirmation` |\n| Свойства вариантов | `size=sm|md|lg`, `state=default|hover|focus|disabled`, `tone=neutral|brand|danger` |\n| Переменные | `color/text/primary`, `color/bg/surface`, `space/200`, `radius/100` |\n| Компонентные токены | `button/primary/bg/default`, `input/border/focus`, `toast/success/icon` |\n\nПрактический шаблон именования компонентов:\n\n```text\n[Category]/[Component]/[Subtype]\nActions/Button\nInputs/Text field\nNavigation/Tabs\nFeedback/Toast\nData display/Table cell\n```\n\nПрактический шаблон для токенов:\n\n```text\ncolor/text/primary\ncolor/text/subtle\ncolor/bg/surface\ncolor/bg/brand/default\nspace/050\nspace/100\nspace/200\nradius/100\nfont/body/md\nbutton/primary/bg/default\nbutton/primary/bg/hover\n```\n\n"
+    },
+    {
+      "id": "R015",
+      "level": 3,
+      "title": "Переменные, стили, библиотеки, ветвление и плагины",
+      "text": "### Переменные, стили, библиотеки, ветвление и плагины\n\nПеревод legacy styles в variables — правильный путь, если вы хотите theming, brand modes и связь с кодом. Figma variables поддерживают collections, aliases и modes; Figma отдельно рекомендует использовать modes для light/dark themes и разных contexts, а `DTCG JSON format` — как формат обмена токенами ([Guide to variables in Figma](https://help.figma.com/hc/en-us/articles/15339657135383-Guide-to-variables-in-Figma), [Modes for variables](https://help.figma.com/hc/en-us/articles/15343816063383-Modes-for-variables), [DTCG format module](https://www.designtokens.org/TR/2025.10/format/)).\n\nLibraries стоит публиковать только после ревью и с описанием изменений. Figma предлагает descriptions для components/styles/variables и library update descriptions, а branching — как полноценный цикл create → share → request review → review → merge ([Publish a library](https://help.figma.com/hc/en-us/articles/360025508373-Publish-a-library), [Add descriptions to styles, components, and variables](https://help.figma.com/hc/en-us/articles/7938814091287-Add-descriptions-to-styles-components-and-variables), [Guide to branching](https://help.figma.com/hc/en-us/articles/360063144053-Guide-to-branching)).\n\n```mermaid\n%%{init: {\"flowchart\": {\"useMaxWidth\": false, \"nodeSpacing\": 20, \"rankSpacing\": 25}} }%%\nflowchart TD\n    A[tokens/]\n    A --> A1[core.json]\n    A --> A2[semantic.json]\n    A --> A3[components/button.json]\n    A --> A4[themes/light.json]\n    A --> A5[themes/dark.json]\n    B[src/]\n    B --> B1[components/]\n    B --> B2[patterns/]\n    B --> B3[styles/]\n    C[storybook/]\n    D[docs/]\n    E[.github/workflows/]\n    E --> E1[tokens.yml]\n    E --> E2[test.yml]\n    E --> E3[release.yml]\n```\n\n"
+    },
+    {
+      "id": "R016",
+      "level": 2,
+      "title": "Лучшие практики поддержки и качества",
+      "text": "## Лучшие практики поддержки и качества\n\n"
+    },
+    {
+      "id": "R017",
+      "level": 3,
+      "title": "Версионирование, управление и процесс участия",
+      "text": "### Версионирование, управление и процесс участия\n\nУ системы должны быть правила релизов. Минимальный рабочий вариант: semver для code packages, release notes для Figma library, changelog для docs, deprecation policy с датой sunset. Figma поддерживает version history и branch review; Atlassian и Carbon показывают, что система работает лучше как продукт с roadmap, triage и открытой обратной связью ([Guide to branching](https://help.figma.com/hc/en-us/articles/360063144053-Guide-to-branching), [Carbon contributing](https://v10.carbondesignsystem.com/contributing/component/), [Atlassian ADS AI era](https://www.atlassian.com/blog/ai-at-work/atlassian-design-system-building-the-context-engine-for-the-ai-era)).\n\n| Параметр | Описание |\n|---|---|\n| Владелец системы | Ведёт backlog, roadmap, приоритеты, принятие решений. |\n| Design maintainer | Отвечает за foundations, Figma, docs intent, visual QA. |\n| Engineering maintainer | Отвечает за code library, releases, CI/CD, tests, linting. |\n| Accessibility reviewer | Проверяет WCAG, keyboard, semantics, contrast, assistive tech. |\n| Product contributors | Подают запросы, RFC, issue reports, migration feedback. |\n\nПрактический governance workflow: issue → RFC/brief → design review → engineering review → accessibility review → branch → publish/update → announce → measure adoption.\n\n"
+    },
+    {
+      "id": "R018",
+      "level": 3,
+      "title": "Доступность, адаптивность, темы, тестирование и производительность",
+      "text": "### Доступность, адаптивность, темы, тестирование и производительность\n\nДоступность должна быть встроена в систему, а не проверяться в конце. W3C определяет WCAG 2.2 как технический стандарт; Carbon использует IBM Accessibility Checklist, основанный на WCAG AA; Atlassian описывает accessibility as default, а Shopify подчёркивает built-in accessibility web components ([WCAG 2.2](https://www.w3.org/TR/WCAG22/), [Carbon accessibility](https://carbondesignsystem.com/guidelines/accessibility/overview/), [Atlassian accessibility article](https://www.atlassian.com/blog/design/behind-the-screens-accessible-design-is-good-design), [Using Polaris web components](https://shopify.dev/docs/api/polaris/using-polaris-web-components)).\n\n| Практика | Как делать |\n|---|---|\n| Доступность | Контраст, focus states, keyboard, ARIA/semantics, screen reader review, error messaging, reduced motion. |\n| Адаптивные компоненты | Auto Layout, fill/hug rules, breakpoint-aware patterns, max-width constraints на content blocks. |\n| Темизация | Light/dark/brand modes на уровне variables; multiple modes без дублирования layout frames. |\n| Тестирование | Storybook stories на states/variants, visual regression в Chromatic или Playwright, accessibility snapshots и manual audit для critical components. |\n| Производительность | Не раздувать variant sets; split libraries; lazy migration; не генерировать thousands of one-off tokens. |\n\n"
+    },
+    {
+      "id": "R019",
+      "level": 3,
+      "title": "Обучение команды и change management",
+      "text": "### Обучение команды и change management\n\nChange management обычно недооценивают, хотя у IBM Carbon и Shopify Polaris это часть операционной модели: обучение, meetups, tutorials, office hours, документация и design reviews поддерживают adoption ([What is Carbon?](https://carbondesignsystem.com/all-about-carbon/what-is-carbon/), [Updating Illustrations at Scale](https://shopify.engineering/updating-illustrations-shopify-scale)).\n\nПрактически работающий минимум:\n\n- запускать еженедельные office hours;\n- вести “migration clinic” для продуктовых команд;\n- делать короткие screencasts по новым компонентам и breaking changes;\n- завести шаблон PR/RFC для изменений в системе;\n- раз в месяц публиковать “what changed / what to migrate / what is deprecated”.\n\n"
+    },
+    {
+      "id": "R020",
+      "level": 2,
+      "title": "Кейсы крупных компаний",
+      "text": "## Кейсы крупных компаний\n\n"
+    },
+    {
+      "id": "R021",
+      "level": 3,
+      "title": "Google Material",
+      "text": "### Google Material\n\n[Material Design 3](https://m3.material.io/) определяет систему как adaptable system of guidelines, components and tools; [design tokens guidance](https://m3.material.io/foundations/design-tokens) рекомендует использовать токены вместо hardcoded values, а [M3 design kit for Figma](https://m3.material.io/blog/material-3-figma-design-kit) показывает ставку на design kit как bridge между guidance и production. Практический урок Material: начинать с адаптивных foundation rules и токенов, а не с единственного “канонического” набора пикселей.\n\n| Параметр | Описание |\n|---|---|\n| Охват | Мультиплатформенная система для Android, web и других surfaces. |\n| Команда | не указано |\n| Стратегия внедрения | Через design guidance, Figma kits, tokens и open-source implementations. |\n| Инструменты | Material site, design kit for Figma, open-source code resources. |\n| Болевые точки | Нужна адаптивность под разные платформы и темы, включая expressive/themed UI. |\n| Результаты | Сильный foundation-first подход: tokens, guidance и components работают как единая модель. |\n\n"
+    },
+    {
+      "id": "R022",
+      "level": 3,
+      "title": "Microsoft Fluent",
+      "text": "### Microsoft Fluent\n\nFluent 2 очень явно показывает зрелую структуру system assets: [четыре уровня UI kits](https://fluent2.microsoft.design/get-started/design), code-aligned Figma kits, properties/variants, Figma variables для themes, а также platform-specific code libraries для React, Web Components, iOS, Android и Windows ([Start designing](https://fluent2.microsoft.design/get-started/design), [Start developing](https://fluent2.microsoft.design/get-started/develop)). Практический урок: разделяйте design language, core kits и experimental/labs-слой.\n\n| Параметр | Описание |\n|---|---|\n| Охват | Cross-platform design system Microsoft для web/mobile/Windows. |\n| Команда | не указано |\n| Стратегия внедрения | Через tiered UI kits и platform-specific code libraries. |\n| Инструменты | Figma UI kits, variables, React v9, Web Components, native libraries. |\n| Болевые точки | Сложность синхронизации одного design language с несколькими платформами. |\n| Результаты | Прямая связка design-to-code и ясное разделение уровней системы. |\n\n"
+    },
+    {
+      "id": "R023",
+      "level": 3,
+      "title": "IBM Carbon",
+      "text": "### IBM Carbon\n\nCarbon — один из самых “операционных” примеров: система открытая, модульная, многоплатформенная, поддерживает Figma kit, несколько code implementations и публичную contribution model ([Carbon homepage](https://carbondesignsystem.com/), [What is Carbon?](https://carbondesignsystem.com/all-about-carbon/what-is-carbon/)). Особенно силён их accessibility layer: есть formal guidelines и status matrix с automation + manual testing по компонентам ([Accessibility overview](https://carbondesignsystem.com/guidelines/accessibility/overview/), [Accessibility status](https://carbondesignsystem.com/components/overview/accessibility-status/)).\n\n| Параметр | Описание |\n|---|---|\n| Охват | IBM web and product ecosystem; open-source system. |\n| Команда | Точный размер не указан; указаны maintainers и community of contributors. |\n| Стратегия внедрения | Модульное внедрение через design kits, code libraries и patterns harvested from products. |\n| Инструменты | Figma kit, React/Web Components/Angular/Vue/Svelte, GitHub, accessibility matrix. |\n| Болевые точки | Масштаб IBM ecosystem, вклад community и необходимость явных quality gates. |\n| Результаты | Сильная governance-модель, training/support, прозрачная accessibility maturity. |\n\n"
+    },
+    {
+      "id": "R024",
+      "level": 3,
+      "title": "Atlassian",
+      "text": "### Atlassian\n\nAtlassian — сильный кейс внедрения “системы как продукта”. Их команда пишет о 15-летнем пути, работе на более чем 20 приложений и структуре core/platform/app; отдельно указано, что head of ADS ведёт более 35 дизайнеров по направлениям Design Language, Accessibility, Systems Architecture и AI ([ADS AI era](https://www.atlassian.com/blog/ai-at-work/atlassian-design-system-building-the-context-engine-for-the-ai-era)). Практический урок: центральная система не должна пытаться решать все domain problems; лучше дать качественный core и формализовать extension layers.\n\n| Параметр | Описание |\n|---|---|\n| Охват | Брендовый и продуктовый слой для 20+ apps. |\n| Команда | 35+ designers globally по официальной публикации; точный состав всей cross-functional команды не указан. |\n| Стратегия внедрения | Core/platform/app composition model, quality bar для foundations, migration tooling. |\n| Инструменты | Tokens, components, structured content, automation, AI-oriented context layer. |\n| Болевые точки | Масштаб across many apps, accessibility drift, необходимость гибкости без распада единства. |\n| Результаты | 58+ updates за 12 месяцев; accessibility uplift; метрики AI-context layer: +52% accuracy, −34% average task time, −16% AI token usage. |\n\n"
+    },
+    {
+      "id": "R025",
+      "level": 3,
+      "title": "Shopify Polaris",
+      "text": "### Shopify Polaris\n\nShopify использует Polaris как единый слой для app interfaces в embedded/admin surfaces; официальная документация прямо рекомендует Polaris для соответствия Shopify admin UX и говорит, что system evolves вместе с платформой ([App Design Guidelines](https://shopify.dev/docs/apps/design), [Polaris references](https://shopify.dev/docs/api/polaris)). Инженерные публикации Shopify подчёркивают, что Polaris вырос из потребности стандартизировать процессы, guidelines и reusable UI, а команда Polaris — multidisciplinary ([Building a Form with Polaris](https://shopify.engineering/building-polaris-form), [Updating Illustrations at Scale](https://shopify.engineering/updating-illustrations-shopify-scale)).\n\n| Параметр | Описание |\n|---|---|\n| Охват | Shopify admin и app ecosystem, включая internal и third-party apps. |\n| Команда | Multidisciplinary team; точный размер не указан. |\n| Стратегия внедрения | Через app guidelines, common UX expectations и unified UI framework. |\n| Инструменты | Polaris web components, historical React library, docs, Storybook/open-source tooling. |\n| Болевые точки | Масштаб экосистемы, need for consistency across host surfaces, large design-language updates. |\n| Результаты | Более нативный app UX, доверие merchants, упрощение повторного использования форм и паттернов. |\n\n"
+    },
+    {
+      "id": "R026",
+      "level": 3,
+      "title": "Uber Base",
+      "text": "### Uber Base\n\nBase теперь прямо определяется как foundation of user interfaces across Uber’s ecosystem; параллельно Uber публикует очень практичные истории про observability и system adoption. На инженерном сайте Uber есть важная метрика: команды, использующие Base, сообщают о **3x faster development** и **50% less code**, а observability pipeline детерминированно находит non-Base elements и автоматически заводит Jira tickets ([Base design system](https://base.uber.com/), [Uber Engineering](https://eng.uber.com/), [Uber Design Platform](https://medium.com/uber-design/uber-design-platform-1ebff86c89e7)). Практический урок: adoption нельзя измерять вручную — нужен технический контроль использования системы в коде.\n\n| Параметр | Описание |\n|---|---|\n| Охват | Foundations across Uber products and services. |\n| Команда | не указано |\n| Стратегия внедрения | Через foundational system + Base Web + observability of code usage. |\n| Инструменты | Base site, Base Web, component scanner, screenshot pipeline, Jira integration. |\n| Болевые точки | Невозможно вручную отслеживать system usage на сотнях экранов и тысячах feature flags. |\n| Результаты | 3x faster development и 50% less code по публикации Uber Engineering. |\n\n"
+    },
+    {
+      "id": "R027",
+      "level": 2,
+      "title": "Шаблоны, инструменты, риски, метрики и масштабирование",
+      "text": "## Шаблоны, инструменты, риски, метрики и масштабирование\n\n"
+    },
+    {
+      "id": "R028",
+      "level": 3,
+      "title": "Шаблон roadmap для запуска",
+      "text": "### Шаблон roadmap для запуска\n\n| Параметр | Описание |\n|---|---|\n| Месяц 1 | Strategy, scope, audit, stakeholders map, success metrics baseline |\n| Месяц 2 | Foundations, token model, variable collections, naming system |\n| Месяц 3 | 10–15 core components, docs skeleton, Storybook bootstrap |\n| Месяц 4 | Visual tests, release flow, pilot adoption в 1–2 продуктах |\n| Месяц 5 | Migration guides, office hours, extension policy, metrics dashboard |\n| Месяц 6 | Rollout, deprecation of high-cost legacy patterns, quarterly review |\n\n"
+    },
+    {
+      "id": "R029",
+      "level": 3,
+      "title": "QA-чеклист",
+      "text": "### QA-чеклист\n\n- [ ] У компонента определены anatomy, states и interactive behavior\n- [ ] Все значения привязаны к tokens/variables, а не hardcoded\n- [ ] Есть focus, hover, disabled, error, loading states\n- [ ] Есть keyboard navigation и screen reader sanity check\n- [ ] Контраст и typography соответствуют WCAG target\n- [ ] Есть responsive behavior и правила для narrow/wide containers\n- [ ] Есть Storybook story/preview для всех критичных состояний\n- [ ] Есть визуальный regression coverage\n- [ ] Есть описание “when to use / when not to use”\n- [ ] Есть version note, если изменение breaking\n\n"
+    },
+    {
+      "id": "R030",
+      "level": 3,
+      "title": "Чеклист онбординга",
+      "text": "### Чеклист онбординга\n\n- [ ] Новый участник понимает scope и owner модели\n- [ ] Есть доступ к Figma libraries, docs, repo, Storybook\n- [ ] Есть гайд по naming, tokens, component contribution\n- [ ] Есть список stable vs beta vs deprecated assets\n- [ ] Есть процесс branch review и library publishing\n- [ ] Есть contact point: office hours / Slack / issue tracker\n\n"
+    },
+    {
+      "id": "R031",
+      "level": 3,
+      "title": "Чеклист handoff",
+      "text": "### Чеклист handoff\n\n- [ ] Frame помечен статусом ready for dev\n- [ ] Используются published components и variables\n- [ ] Есть ссылки на docs и code component/Storybook story\n- [ ] Согласованы states, empty/loading/error behavior\n- [ ] Согласованы responsive rules и breakpoints\n- [ ] Согласованы analytics/accessibility requirements\n\n"
+    },
+    {
+      "id": "R032",
+      "level": 3,
+      "title": "Инструменты и плагины",
+      "text": "### Инструменты и плагины\n\n| Параметр | Описание |\n|---|---|\n| [Figma Variables](https://help.figma.com/hc/en-us/articles/15339657135383-Guide-to-variables-in-Figma) | Нативные tokens, modes, aliases, theming в Figma. |\n| [Figma Libraries](https://help.figma.com/hc/en-us/articles/360025508373-Publish-a-library) | Публикация компонентов, стилей и variables для повторного использования. |\n| [Figma Branching](https://help.figma.com/hc/en-us/articles/360063144053-Guide-to-branching) | Изолированные изменения, review и controlled merge. |\n| [Code Connect](https://developers.figma.com/docs/code-connect/) | Привязка design components к production code в Dev Mode. |\n| [Tokens Studio](https://docs.tokens.studio/) | Расширенное управление design tokens и sync в репозиторий. |\n| [GitHub Sync for Tokens Studio](https://docs.tokens.studio/token-storage/remote/sync-git-github) | Двусторонняя синхронизация токенов между Figma и GitHub. |\n| [Style Dictionary](https://styledictionary.com/) | Трансформация tokens в CSS, JS, iOS, Android и другие платформы. |\n| [Storybook](https://storybook.js.org/docs/sharing/design-integrations) | Каталог компонентов, dev docs, design integrations. |\n| [Chromatic](https://www.chromatic.com/storybook) | Visual regression и review workflow для Storybook. |\n| [Playwright](https://playwright.dev/docs/test-snapshots) | Скриншотные и accessibility-oriented проверки UI в CI. |\n| [zeroheight](https://zeroheight.com/documentation/) | Документация design system и measurement/adoption analytics. |\n| [Supernova](https://www.supernova.io/documentation) | Documentation + design system management + token governance. |\n| [GitHub Actions](https://docs.github.com/actions) | CI/CD для tokens, tests, releases и docs deploy. |\n\n"
+    },
+    {
+      "id": "R033",
+      "level": 3,
+      "title": "Риски и как их минимизировать",
+      "text": "### Риски и как их минимизировать\n\n| Параметр | Описание |\n|---|---|\n| Система становится “музеем” | Держать product backlog, owner, SLA на запросы и регулярные релизы. |\n| Слишком много variants | Переносить гибкость в component properties и slots; делить библиотеки. |\n| Drift между Figma и кодом | Token sync, Code Connect, Storybook, visual tests, component ownership. |\n| Слабая adoption | Пилотный rollout, migration guides, education, observability, metrics. |\n| Accessibility как post-factum | Встроить quality gates на уровне components и token decisions. |\n| Перегрузка core-системы | Ввести слои core/platform/app или core/extensions. |\n| Ломающее обновление библиотек | Semver, changelog, deprecation window, staged rollout. |\n\n"
+    },
+    {
+      "id": "R034",
+      "level": 3,
+      "title": "Метрики успеха и как измерять",
+      "text": "### Метрики успеха и как измерять\n\n| Параметр | Описание |\n|---|---|\n| Доля использования компонентов | Доля экранов/фич, использующих system components; измерять через code scan, Storybook usage, static analysis. |\n| Доля использования токенов | Доля styles/цветов/spacing без hardcoded values; измерять через linting и repo scan. |\n| Время до поставки UI | Время от design-ready до shipped UI для типовых задач; сравнивать до/после системы. |\n| Количество snowflakes | Количество уникальных локальных компонентов вне системы. |\n| Доля дефектов доступности | Количество issues на компонент/релиз; различать automated и manual findings. |\n| Вовлечённость в документацию | Самые читаемые и “провисающие” страницы docs; искать gaps в discoverability. |\n| Задержка миграции | Время между релизом system update и adoption в продуктовых командах. |\n| Восстановление после breaking changes | Сколько времени уходит на стабилизацию после системных изменений. |\n\nПрактически полезно не ограничиваться adoption-процентом: Figma и zeroheight оба подчеркивают, что meaningful measurement начинается там, где метрики связаны с реальной скоростью, качеством и ROI, а не только с числом установленных package versions ([Design system 104: Making metrics matter](https://www.figma.com/blog/design-systems-104-making-metrics-matter/), [From basic adoption to meaningful measurement](https://zeroheight.com/blog/from-basic-adoption-to-meaningful-measurement-how-design-system-metrics-evolve/), [How to measure your design system](https://help.zeroheight.com/hc/en-us/articles/36474116188187-How-to-measure-your-design-system)).\n\n"
+    },
+    {
+      "id": "R035",
+      "level": 3,
+      "title": "Масштабирование и локализация",
+      "text": "### Масштабирование и локализация\n\nДля масштабирования по странам и брендам система должна быть internationalization-ready. W3C определяет internationalization как проектирование продукта так, чтобы его было легко локализовать под разные языки и культуры; это означает Unicode, длину строк, направление письма, plural/gender, локальные форматы даты/времени/валют и вынос строк из компонентов ([Localization vs. Internationalization](https://www.w3.org/International/questions/qa-i18n), [Internationalization techniques](https://www.w3.org/International/techniques/authoring-html)).\n\n| Параметр | Описание |\n|---|---|\n| Multi-brand | Отделять brand tokens от semantic tokens; бренды не должны ломать component API. |\n| Multi-theme | Использовать modes и aliases вместо дублирования компонентов. |\n| Локализация | Не зашивать текст в компоненты; учитывать expansion, truncation и RTL. |\n| Масштабирование по доменам | Вводить product extensions layer, а не раздувать core. |\n| Масштабирование по платформам | Синхронизировать semantics и tokens, но не forcing pixel parity там, где платформа диктует свои паттерны. |\n\n"
+    },
+    {
+      "id": "R036",
+      "level": 3,
+      "title": "Примеры design tokens и token pipeline",
+      "text": "### Примеры design tokens и token pipeline\n\nПример токенов в DTCG-совместимом JSON:\n\n```json\n{\n  \"color\": {\n    \"gray\": {\n      \"100\": { \"$type\": \"color\", \"$value\": \"#F5F7FA\" },\n      \"900\": { \"$type\": \"color\", \"$value\": \"#111827\" }\n    },\n    \"brand\": {\n      \"500\": { \"$type\": \"color\", \"$value\": \"#2563EB\" }\n    },\n    \"text\": {\n      \"primary\": { \"$type\": \"color\", \"$value\": \"{color.gray.900}\" },\n      \"inverse\": { \"$type\": \"color\", \"$value\": \"#FFFFFF\" }\n    },\n    \"bg\": {\n      \"surface\": { \"$type\": \"color\", \"$value\": \"#FFFFFF\" },\n      \"brand\": { \"$type\": \"color\", \"$value\": \"{color.brand.500}\" }\n    }\n  },\n  \"space\": {\n    \"100\": { \"$type\": \"dimension\", \"$value\": \"4px\" },\n    \"200\": { \"$type\": \"dimension\", \"$value\": \"8px\" },\n    \"300\": { \"$type\": \"dimension\", \"$value\": \"12px\" }\n  },\n  \"radius\": {\n    \"100\": { \"$type\": \"dimension\", \"$value\": \"8px\" }\n  }\n}\n```\n\nПример component tokens:\n\n```json\n{\n  \"button\": {\n    \"primary\": {\n      \"bg\": {\n        \"default\": { \"$type\": \"color\", \"$value\": \"{color.bg.brand}\" },\n        \"hover\": { \"$type\": \"color\", \"$value\": \"#1D4ED8\" }\n      },\n      \"text\": {\n        \"default\": { \"$type\": \"color\", \"$value\": \"{color.text.inverse}\" }\n      },\n      \"padding\": {\n        \"x\": { \"$type\": \"dimension\", \"$value\": \"{space.300}\" },\n        \"y\": { \"$type\": \"dimension\", \"$value\": \"{space.200}\" }\n      },\n      \"radius\": {\n        \"default\": { \"$type\": \"dimension\", \"$value\": \"{radius.100}\" }\n      }\n    }\n  }\n}\n```\n\nПример структуры наборов для Figma/Tokens Studio:\n\n```json\n{\n  \"global/colors\": {},\n  \"global/spacing\": {},\n  \"semantic/light\": {},\n  \"semantic/dark\": {},\n  \"components/button\": {},\n  \"components/input\": {}\n}\n```\n\nМинимальный `style-dictionary` конфиг:\n\n```json\n{\n  \"source\": [\"tokens/**/*.json\"],\n  \"platforms\": {\n    \"css\": {\n      \"transformGroup\": \"css\",\n      \"buildPath\": \"build/css/\",\n      \"files\": [\n        {\n          \"destination\": \"variables.css\",\n          \"format\": \"css/variables\"\n        }\n      ]\n    },\n    \"js\": {\n      \"transformGroup\": \"js\",\n      \"buildPath\": \"build/js/\",\n      \"files\": [\n        {\n          \"destination\": \"tokens.js\",\n          \"format\": \"javascript/es6\"\n        }\n      ]\n    }\n  }\n}\n```\n\n"
+    },
+    {
+      "id": "R037",
+      "level": 2,
+      "title": "Источники",
+      "text": "## Источники\n\n"
+    },
+    {
+      "id": "R038",
+      "level": 3,
+      "title": "Исполнительное резюме и определение дизайн-системы",
+      "text": "### Исполнительное резюме и определение дизайн-системы\n\n- [Overview: Introduction to design systems — Figma Learn](https://help.figma.com/hc/en-us/articles/14552901442839-Overview-Introduction-to-design-systems)\n- [Material Design 3](https://m3.material.io/)\n- [Fluent 2 Design System](https://fluent2.microsoft.design/)\n- [Carbon Design System](https://carbondesignsystem.com/)\n- [Atlassian Design System](https://atlassian.design/)\n\n"
+    },
+    {
+      "id": "R039",
+      "level": 3,
+      "title": "Токены, переменные и стандарты",
+      "text": "### Токены, переменные и стандарты\n\n- [Design Tokens Community Group](https://www.designtokens.org/)\n- [Design Tokens specification reaches first stable version](https://www.w3.org/community/design-tokens/2025/10/28/design-tokens-specification-reaches-first-stable-version/)\n- [Design Tokens Format Module 2025.10](https://www.designtokens.org/TR/2025.10/format/)\n- [Guide to variables in Figma](https://help.figma.com/hc/en-us/articles/15339657135383-Guide-to-variables-in-Figma)\n- [Overview of variables, collections, and modes](https://help.figma.com/hc/en-us/articles/14506821864087-Overview-of-variables-collections-and-modes)\n- [Create and manage variables and collections](https://help.figma.com/hc/en-us/articles/15145852043927-Create-and-manage-variables-and-collections)\n- [Modes for variables](https://help.figma.com/hc/en-us/articles/15343816063383-Modes-for-variables)\n- [The difference between variables and styles](https://help.figma.com/hc/en-us/articles/15871097384471-The-difference-between-variables-and-styles)\n- [Tokens Studio Documentation](https://docs.tokens.studio/)\n- [Variables and Tokens Studio](https://docs.tokens.studio/figma/variables-overview)\n- [GitHub Sync Provider in Tokens Studio](https://docs.tokens.studio/token-storage/remote/sync-git-github)\n- [Style Dictionary](https://styledictionary.com/)\n- [Style Dictionary + SD Transforms](https://docs.tokens.studio/transform-tokens/style-dictionary)\n\n"
+    },
+    {
+      "id": "R040",
+      "level": 3,
+      "title": "Figma-организация и практики",
+      "text": "### Figma-организация и практики\n\n- [Publish a library](https://help.figma.com/hc/en-us/articles/360025508373-Publish-a-library)\n- [Guide to components in Figma](https://help.figma.com/hc/en-us/articles/360038662654-Guide-to-components-in-Figma)\n- [Create and use variants](https://help.figma.com/hc/en-us/articles/360056440594-Create-and-use-variants)\n- [Explore component properties](https://help.figma.com/hc/en-us/articles/5579474826519-Explore-component-properties)\n- [Component property fundamentals](https://help.figma.com/hc/en-us/articles/39636407507735-Components-collection-Component-property-fundamentals)\n- [Guide to auto layout](https://help.figma.com/hc/en-us/articles/360040451373-Guide-to-auto-layout)\n- [Use the horizontal and vertical flows in auto layout](https://help.figma.com/hc/en-us/articles/31289464393751-Use-the-horizontal-and-vertical-flows-in-auto-layout)\n- [Reduce memory usage in files](https://help.figma.com/hc/en-us/articles/360040528173-Reduce-memory-usage-in-files)\n- [Add descriptions to styles, components, and variables](https://help.figma.com/hc/en-us/articles/7938814091287-Add-descriptions-to-styles-components-and-variables)\n- [Guide to branching](https://help.figma.com/hc/en-us/articles/360063144053-Guide-to-branching)\n- [Code Connect](https://help.figma.com/hc/en-us/articles/23920389749655-Code-Connect)\n- [Code Connect developer docs](https://developers.figma.com/docs/code-connect/)\n\n"
+    },
+    {
+      "id": "R041",
+      "level": 3,
+      "title": "Доступность, тестирование, метрики и масштабирование",
+      "text": "### Доступность, тестирование, метрики и масштабирование\n\n- [WCAG 2.2](https://www.w3.org/TR/WCAG22/)\n- [WCAG 2 Overview](https://www.w3.org/WAI/standards-guidelines/wcag/)\n- [Guidance on Applying WCAG 2.2 to Mobile Applications](https://www.w3.org/TR/wcag2mobile-22/)\n- [Playwright visual comparisons](https://playwright.dev/docs/test-snapshots)\n- [Playwright ARIA snapshots](https://playwright.dev/docs/aria-snapshots)\n- [Chromatic for design systems](https://www.chromatic.com/solutions/design-systems)\n- [Chromatic for Storybook](https://www.chromatic.com/storybook)\n- [Storybook design integrations](https://storybook.js.org/docs/sharing/design-integrations)\n- [Design system 104: Making metrics matter](https://www.figma.com/blog/design-systems-104-making-metrics-matter/)\n- [From basic adoption to meaningful measurement](https://zeroheight.com/blog/from-basic-adoption-to-meaningful-measurement-how-design-system-metrics-evolve/)\n- [How to measure your design system](https://help.zeroheight.com/hc/en-us/articles/36474116188187-How-to-measure-your-design-system)\n- [Localization vs. Internationalization](https://www.w3.org/International/questions/qa-i18n)\n- [Internationalization techniques: Authoring HTML and CSS](https://www.w3.org/International/techniques/authoring-html)\n\n"
+    },
+    {
+      "id": "R042",
+      "level": 3,
+      "title": "Кейсы компаний",
+      "text": "### Кейсы компаний\n\n- [Material Design 3](https://m3.material.io/)\n- [Design tokens — Material Design 3](https://m3.material.io/foundations/design-tokens)\n- [Introducing the M3 design kit for Figma](https://m3.material.io/blog/material-3-figma-design-kit)\n\n- [Fluent 2 Start designing](https://fluent2.microsoft.design/get-started/design)\n- [Fluent 2 Start developing](https://fluent2.microsoft.design/get-started/develop)\n- [Fluent UI](https://developer.microsoft.com/en-us/fluentui)\n\n- [Carbon Design System](https://carbondesignsystem.com/)\n- [What is Carbon?](https://carbondesignsystem.com/all-about-carbon/what-is-carbon/)\n- [Carbon accessibility overview](https://carbondesignsystem.com/guidelines/accessibility/overview/)\n- [Carbon accessibility status](https://carbondesignsystem.com/components/overview/accessibility-status/)\n\n- [Atlassian Design System](https://atlassian.design/)\n- [Atlassian Design System: Building the context engine for the AI era](https://www.atlassian.com/blog/ai-at-work/atlassian-design-system-building-the-context-engine-for-the-ai-era)\n- [Behind the screens: Accessible design is good design](https://www.atlassian.com/blog/design/behind-the-screens-accessible-design-is-good-design)\n\n- [Shopify App Design Guidelines](https://shopify.dev/docs/apps/design)\n- [Polaris references](https://shopify.dev/docs/api/polaris)\n- [Using Polaris web components](https://shopify.dev/docs/api/polaris/using-polaris-web-components)\n- [Building a Form with Polaris](https://shopify.engineering/building-polaris-form)\n- [Updating Illustrations at Scale](https://shopify.engineering/updating-illustrations-shopify-scale)\n\n- [Base design system](https://base.uber.com/)\n- [Uber Engineering](https://eng.uber.com/)\n- [Uber Design Platform](https://medium.com/uber-design/uber-design-platform-1ebff86c89e7)\n"
+    }
+  ]
+}

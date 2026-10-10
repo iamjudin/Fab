@@ -1,0 +1,42 @@
+#!/usr/bin/env python3
+"""Validate package references, methods and optional installed parity."""
+import argparse, hashlib, json, re
+from pathlib import Path
+ROOT = Path(__file__).resolve().parents[1] / 'plugins/fab'
+def payload(root):
+    return {str(p.relative_to(root)):p.read_bytes() for p in root.rglob('*')
+            if p.is_file() and '__pycache__' not in p.parts and not p.name.endswith('.pyc')}
+def fingerprint(files):
+    h=hashlib.sha256()
+    for name,content in sorted(files.items()):
+        h.update(name.encode()+b'\0');h.update(hashlib.sha256(content).digest())
+    return h.hexdigest()[:16]
+def validate(root):
+    manifest=json.loads((root/'plugin.json').read_text())
+    assert manifest['name']=='fab'
+    for p in root.rglob('*.md'):
+        text=p.read_text();assert text.count('```')%2==0,p
+        # Prompt format contains a literal Markdown link example, not a resource.
+        if p.name=='deep-research.md':continue
+        for target in re.findall(r'\]\(([^)]+)\)',text):
+            if '://' in target or target.startswith('#'):continue
+            q=(p.parent/target.split('#')[0]).resolve()
+            assert q.is_relative_to(root.resolve()), (p,target,'outside package')
+            assert q.exists(), (p,target,'missing')
+    for p in (root/'skills').glob('*/SKILL.md'):
+        head=p.read_text().split('---',2)[1]
+        assert f'name: {p.parent.name}\n' in head
+        assert 'description: ' in head
+    for p in (root/'shared/methods').glob('*.full.json'):
+        d=json.loads(p.read_text());assert d['scope']=='global-method'
+        content=''.join(s['text'] for s in d['sections'])
+        assert hashlib.sha256(content.encode()).hexdigest()==d['retainedSha256']
+    return manifest
+if __name__=='__main__':
+    parser=argparse.ArgumentParser();parser.add_argument('--installed-root',type=Path);args=parser.parse_args()
+    m=validate(ROOT); files=payload(ROOT)
+    if args.installed_root:
+        other=payload(args.installed_root)
+        differences=[p for p in sorted(files.keys()|other.keys()) if files.get(p)!=other.get(p)]
+        assert not differences, differences
+    print(f"PASS: {m['version']}; {len(files)} files; fingerprint={fingerprint(files)}")

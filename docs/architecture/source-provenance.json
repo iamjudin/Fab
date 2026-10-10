@@ -1,0 +1,109 @@
+{
+  "wireframerCheckpoint": "cb4d220",
+  "runtimeBaseline": "0.2.5+codex.20261009224500",
+  "selectedCopies": [
+    {
+      "source": "skills/craft/scripts/research_packet.py",
+      "target": "plugins/fab/skills/research/scripts/research_packet.py",
+      "sourceSha256": "e8ecb29fcb386f1842c1a75e7bc8900f1b9d5e51d36906399abce1f30346d775"
+    },
+    {
+      "source": "skills/craft/references/knowledge/slice-completeness.md",
+      "target": "plugins/fab/shared/methods/slice-completeness.md",
+      "sourceSha256": "52b0c4445c63b1a48bd6b7dc04962d150b648b1ea65365456798dfedc7dc9c12"
+    },
+    {
+      "source": "skills/craft/references/knowledge/registry.json",
+      "target": "plugins/fab/shared/methods/registry.json",
+      "sourceSha256": "8290b66fa19fda3fb740204f9f0f982d777db5905e92fb513dd24bdf1e1d4e2c"
+    },
+    {
+      "source": "skills/craft/references/knowledge/ai-native.full.json",
+      "target": "plugins/fab/shared/methods/ai-native.full.json",
+      "sourceSha256": "2b4b4b32000367b5ac89dca974a7308be2087218b1dd9199f2e5c846f3668cfe"
+    },
+    {
+      "source": "skills/craft/references/knowledge/product-structure.md",
+      "target": "plugins/fab/shared/methods/product-structure.md",
+      "sourceSha256": "97e65b12f2f64c4e73177630bbcaaa2df4f4a73a649564024061db88ac569890"
+    },
+    {
+      "source": "skills/craft/references/knowledge/design-systems.md",
+      "target": "plugins/fab/shared/methods/design-systems.md",
+      "sourceSha256": "a65f495ef6e5966358ff6ba4a4413272947fa542f6543f5b6dd7c0e0d27dca47"
+    },
+    {
+      "source": "skills/craft/references/knowledge/technical-ux-dependencies.md",
+      "target": "plugins/fab/shared/methods/technical-ux-dependencies.md",
+      "sourceSha256": "eabe38fd20c78b8fbc02d32f94e83c38f3199b37f71e842b62a76e520046c810"
+    },
+    {
+      "source": "skills/craft/references/knowledge/monetization.full.json",
+      "target": "plugins/fab/shared/methods/monetization.full.json",
+      "sourceSha256": "9b21f001af39596121369907056a4882887a0893a26c09922d166198322675eb"
+    },
+    {
+      "source": "skills/craft/references/knowledge/ai-native.md",
+      "target": "plugins/fab/shared/methods/ai-native.md",
+      "sourceSha256": "fc9d178a340372bfe738a5ddda2340b79e064a1488da94b37761ac7046b35896"
+    },
+    {
+      "source": "skills/craft/references/knowledge/slice-completeness.full.json",
+      "target": "plugins/fab/shared/methods/slice-completeness.full.json",
+      "sourceSha256": "8d6b54df93a162dc324526a77775b3af95a9b9667be09b2f6d7e0241648f16f0"
+    },
+    {
+      "source": "skills/craft/references/knowledge/product-structure.full.json",
+      "target": "plugins/fab/shared/methods/product-structure.full.json",
+      "sourceSha256": "1e13d5ee6f2b2ce3df7a12b0bccfdb0bfd22b10978dce67d0354acaf73ad6cbd"
+    },
+    {
+      "source": "skills/craft/references/knowledge/index.md",
+      "target": "plugins/fab/shared/methods/index.md",
+      "sourceSha256": "cc5f5a713d21fec621aef5284a7a2359741b8de5fd35f4d300d97edeff8c24d0"
+    },
+    {
+      "source": "skills/craft/references/knowledge/design-systems.full.json",
+      "target": "plugins/fab/shared/methods/design-systems.full.json",
+      "sourceSha256": "eb447eb827109f12a93511914cdd2f9098262e2c9b598deac48be4f72720f770"
+    },
+    {
+      "source": "skills/craft/references/knowledge/jtbd.md",
+      "target": "plugins/fab/shared/methods/jtbd.md",
+      "sourceSha256": "300a56e6b52608647c655bdbd71c60c8e5e62d2ee71d7b2e1e2832f94e8190f6"
+    },
+    {
+      "source": "skills/craft/references/knowledge/first-value.full.json",
+      "target": "plugins/fab/shared/methods/first-value.full.json",
+      "sourceSha256": "829462ff2cf2023e5b3a771f95984ef9596f67cec96200077f46135cabaaffc1"
+    },
+    {
+      "source": "skills/craft/references/knowledge/first-value.md",
+      "target": "plugins/fab/shared/methods/first-value.md",
+      "sourceSha256": "535b39119a2836bcd5917783bc77ae091c9d44c8fe1ade4119e75a8f11f0b3e8"
+    },
+    {
+      "source": "skills/craft/references/knowledge/monetization.md",
+      "target": "plugins/fab/shared/methods/monetization.md",
+      "sourceSha256": "65cade91ad7d0b860daacb7537d333d8952846a92a226803f526ab63fbf6a724"
+    },
+    {
+      "source": "skills/craft/references/knowledge/jtbd.full.json",
+      "target": "plugins/fab/shared/methods/jtbd.full.json",
+      "sourceSha256": "42bd622d141f1a3c2fd876ddad661a943daa20c9645fc6007dc2fb4555fcebb4"
+    },
+    {
+      "source": "skills/craft/references/knowledge/technical-ux-dependencies.full.json",
+      "target": "plugins/fab/shared/methods/technical-ux-dependencies.full.json",
+      "sourceSha256": "3b8f64b9bac12350dd369fab35fec0384dea4a1377eaa01f6ef1d15ba22f8272"
+    }
+  ],
+  "adaptations": [
+    "shared principles generalized; product gates excluded",
+    "method brief external contract links removed until domain migration",
+    "ingestion scope no mandatory graph",
+    "testing policy condensed from workflow-testing-design"
+  ],
+  "fabricator": "4543046 inspected design provenance only; no craft/publish migration yet",
+  "landlord": "excluded"
+}
