@@ -1,0 +1,186 @@
+{
+  "runs": [
+    {
+      "case": "research",
+      "loadedSkills": [
+        "research"
+      ],
+      "usage": {
+        "input_tokens": 128138,
+        "cached_input_tokens": 109568,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1679,
+        "reasoning_output_tokens": 0
+      },
+      "seconds": 63.9,
+      "events": [
+        {
+          "type": "turn.completed",
+          "usage": {
+            "input_tokens": 128138,
+            "cached_input_tokens": 109568,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 1679,
+            "reasoning_output_tokens": 0
+          }
+        }
+      ],
+      "commands": [
+        "/bin/zsh -lc 'cat /Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.1/skills/research/SKILL.md'",
+        "/bin/zsh -lc \"rg --files -g 'AGENTS.md' -g '*backlog*' -g 'original.md' -g '*research*' -g '*brief*'\"",
+        "/bin/zsh -lc 'cat /Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.1/shared/core.md /Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.1/shared/project-contract.md /Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.1/skills/research/references/ingestion.md'",
+        "/bin/zsh -lc 'cat AGENTS.md original.md'",
+        "/bin/zsh -lc \"rg --files /Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.1 | rg 'research_packet.py\"'$'\"'\"",
+        "/bin/zsh -lc \"python3 /Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.1/skills/research/scripts/research_packet.py build original.md full.json --title 'Исследование первого входа в приложение домашних запасов' --scope project-evidence\"",
+        "/bin/zsh -lc 'python3 /Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.1/skills/research/scripts/research_packet.py read full.json --index'",
+        "/bin/zsh -lc 'cat full.json'",
+        "/bin/zsh -lc 'python3 /Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.1/skills/research/scripts/research_packet.py validate full.json'",
+        "/bin/zsh -lc \"python3 -c 'import json,pathlib,hashlib; p=json.loads(pathlib.Path(\\\"full.json\\\").read_text()); original=pathlib.Path(\\\"original.md\\\").read_bytes(); retained=\\\"\\\".join(s[\\\"text\\\"] for s in p[\\\"sections\\\"]).encode(); assert retained==original; assert hashlib.sha256(original).hexdigest()==p[\\\"sourceSha256\\\"]; brief=pathlib.Path(\\\"brief.md\\\").read_text(); assert all(s[\\\"id\\\"] in brief for s in p[\\\"sections\\\"]); assert all(pathlib.Path(f).is_file() for f in (\\\"original.md\\\",\\\"full.json\\\")); print(\\\"Побайтное соответствие, SHA-256, ссылки и ссылки на все разделы: OK\\\")'\""
+      ]
+    },
+    {
+      "case": "analysis",
+      "loadedSkills": [
+        "analysis"
+      ],
+      "usage": {
+        "input_tokens": 81698,
+        "cached_input_tokens": 71936,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 843,
+        "reasoning_output_tokens": 22
+      },
+      "seconds": 33.7,
+      "events": [
+        {
+          "type": "turn.completed",
+          "usage": {
+            "input_tokens": 81698,
+            "cached_input_tokens": 71936,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 843,
+            "reasoning_output_tokens": 22
+          }
+        }
+      ],
+      "commands": [
+        "/bin/zsh -lc 'cat /Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.1/skills/analysis/SKILL.md'",
+        "/bin/zsh -lc \"rg --files -g '*.md' -g '\"'!node_modules'\"' -g '\"'!vendor'\"'\"",
+        "/bin/zsh -lc 'cat /Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.1/shared/core.md /Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.1/shared/project-contract.md /Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.1/shared/methods/index.md'",
+        "/bin/zsh -lc 'ls -la; cat screens.md; cat AGENTS.md'",
+        "/bin/zsh -lc 'cat /Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.1/shared/methods/slice-completeness.md; nl -ba screens.md'"
+      ]
+    },
+    {
+      "case": "brainstorm",
+      "loadedSkills": [
+        "brainstorm"
+      ],
+      "usage": {
+        "input_tokens": 59050,
+        "cached_input_tokens": 45056,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1131,
+        "reasoning_output_tokens": 37
+      },
+      "seconds": 45.6,
+      "events": [
+        {
+          "type": "turn.completed",
+          "usage": {
+            "input_tokens": 59050,
+            "cached_input_tokens": 45056,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 1131,
+            "reasoning_output_tokens": 37
+          }
+        }
+      ],
+      "commands": [
+        "/bin/zsh -lc 'cat /Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.1/skills/brainstorm/SKILL.md'",
+        "/bin/zsh -lc \"rg --files -g '*.md' -g '\"'!node_modules'\"'\"",
+        "/bin/zsh -lc 'cat AGENTS.md findings.md screens.md'",
+        "/bin/zsh -lc 'cat /Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.1/shared/core.md /Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.1/shared/project-contract.md'"
+      ]
+    },
+    {
+      "case": "cowork",
+      "loadedSkills": [
+        "cowork"
+      ],
+      "usage": {
+        "input_tokens": 100511,
+        "cached_input_tokens": 92032,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 722,
+        "reasoning_output_tokens": 43
+      },
+      "seconds": 56.0,
+      "events": [
+        {
+          "type": "turn.completed",
+          "usage": {
+            "input_tokens": 100511,
+            "cached_input_tokens": 92032,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 722,
+            "reasoning_output_tokens": 43
+          }
+        }
+      ],
+      "commands": [
+        "/bin/zsh -lc 'cat /Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.1/skills/cowork/SKILL.md'",
+        "/bin/zsh -lc \"rg --files -g '\"'!node_modules'\"' -g '\"'!.git'\"' -g '\"'!dist'\"' -g '\"'!build'\"' -g '.*' -g '*'\"",
+        "/bin/zsh -lc 'cat /Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.1/shared/core.md /Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.1/shared/project-contract.md /Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.1/shared/capabilities.md'",
+        "/bin/zsh -lc 'cat AGENTS.md .fab/index.md .fab/agreement.md screens.md'",
+        "/bin/zsh -lc 'ls -l screens.md .fab/index.md .fab/agreement.md'",
+        "/bin/zsh -lc 'cat screens.md'"
+      ]
+    },
+    {
+      "case": "testing",
+      "loadedSkills": [
+        "testing"
+      ],
+      "usage": {
+        "input_tokens": 101224,
+        "cached_input_tokens": 92032,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1511,
+        "reasoning_output_tokens": 32
+      },
+      "seconds": 106.7,
+      "events": [
+        {
+          "type": "error",
+          "message": "Reconnecting... 2/5 (request timed out)"
+        },
+        {
+          "type": "turn.completed",
+          "usage": {
+            "input_tokens": 101224,
+            "cached_input_tokens": 92032,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 1511,
+            "reasoning_output_tokens": 32
+          }
+        }
+      ],
+      "commands": [
+        "/bin/zsh -lc \"pwd; rg --files -g 'AGENTS.md' -g '*backlog*' -g 'BACKLOG.md' -g 'requirements.md' -g 'subject.py'\"",
+        "/bin/zsh -lc 'cat /Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.1/skills/testing/SKILL.md'",
+        "/bin/zsh -lc \"cat AGENTS.md requirements.md subject.py; cat /Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.1/shared/core.md /Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.1/shared/project-contract.md; rg --files -g '\"'! .git'\"'\"",
+        "/bin/zsh -lc 'PYTHONDONTWRITEBYTECODE=1 python3 experiment_cancel.py'"
+      ]
+    }
+  ],
+  "totals": {
+    "input_tokens": 470621,
+    "cached_input_tokens": 410624,
+    "output_tokens": 5886
+  },
+  "seconds": 305.9,
+  "rawLogs": "/Users/iamjudin/Desktop/Lab/Fab/experiments/workflow-tests/beta1/raw",
+  "interventions": 0,
+  "resetUsed": false
+}
