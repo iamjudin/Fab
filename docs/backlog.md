@@ -9,7 +9,7 @@ Product/Wireframe migration; фиксируем незакрытые WF findings
 | --- | --- | --- | --- |
 | FAB-01 | Закрыто | Упаковка/пять skills/общий core/методы | Source/install parity + five natural Fab requests PASS; see beta1-results |
 | FAB-02 | Исправлено, ждёт проверки | Continuity/соавторство | Fixture PASS; фактический переход основного чата ещё не проверен |
-| FAB-03 | Отложено | Product/wireframe перенос | После beta; preserve graph semantics, address relevant WF findings |
+| FAB-03 | В следующее обновление | Product/wireframe перенос | Beta проверена; bounded contracts + graph semantics + applicable WF findings |
 | FAB-04 | Отложено | Prototype/plugin/delivery | После bounded domain transfer; no maturity from copied text |
 | FAB-05 | Отложено | Mobile HIG/Material expertise | Глобальные исследования и conditional platform criteria |
 
