@@ -43,3 +43,12 @@ Reload и свежая вкладка сначала исполняли стар
 ## Сохранность и ownership
 
 Оригинал, map corrective и recovery result заморожены отдельно в beta5-full. Root environment/documentation edits перечислены в intervention packet. Старые архивы не перезаписаны. WF-01/17/20 owner Fab; WF-26/27/28 пока Wireframer. Реального переноса основного чата нет, source старого плагина не изменён.
+
+## 2026-10-11 - transition preparation
+Creator started the mobile-structure Deep Research; result pending. Creator is
+ready to move the primary working chat into Lab/Fab. Fab is not yet a saved
+Codex project according to list_projects; creator should add the existing folder
+and open a normal local chat there. Existing branch/checkpoint retained.
+First new-chat task: restore goal, coauthor agreement, checked boundary and next
+step from AGENTS/backlog/handoff/beacon/report. FAB02 remains unverified until
+actual continuity is observed. Do not infer acceptance from a prepared prompt.

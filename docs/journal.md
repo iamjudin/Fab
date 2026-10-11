@@ -49,3 +49,8 @@ root asset URL revision resolved environment; root edits separated from agent
 evidence. Beta9 preview freshness contract installed57files/462d4cc828c5d99f.
 36local regressions+source/cache PASS. Current report/backlog/handoff updated.
 No general whole-route/native/client/production PASS and no stats-only rerun.
+
+## 2026-10-11 - primary chat transition prepared
+Creator started mobile research and requested migration instructions. Handoff
+updated; new chat not created yet. FAB02 real continuity remains open. Corrected
+backlog runtime label beta8->beta9 to match unchanged installed fingerprint.
