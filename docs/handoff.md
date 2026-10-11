@@ -6,12 +6,12 @@
 
 ## Где работаем
 
-- Source: /Users/iamjudin/Desktop/Lab/Fab, ветка codex/bootstrap-beta.
+- Source: /Users/iamjudin/Desktop/Lab/Fab, текущая экспериментальная ветка codex/partial-workflow-tests от codex/bootstrap-beta; merge не выполнялся.
 - Private remote: https://github.com/iamjudin/Fab . Публичного выпуска/merge нет.
 - 2026-10-12 creator подтвердил самостоятельные Git checks и локальные коммиты
   проверенных этапов. Формат теста на наше усмотрение; evidence указывает actual
   model/effort и fresh-context boundary. Это не обязательные новые sidebar-чаты.
-- Установлена Fab0.1.0-beta.15, 60 файлов, fingerprintcf1d23be54742d51, marketplace fab-local.
+- Установлена Fab0.1.0-beta.16, 60 файлов, fingerprintc96709ca2d41760d, marketplace fab-local.
 - 36 локальных регрессий PASS; source/cache совпадают.
 - Основной рабочий чат — текущий чат в Lab/Fab с 2026-10-11; creator подтвердил, что дальше работаем здесь.
 - FAB-02: первое восстановление контекста через Fab Cowork успешно; устойчивая непрерывность пока открыта.
@@ -164,3 +164,19 @@ Beta.15 закрепляет в core/Cowork вывод для цели, посл
 причиной, реальные варианты при развилке. Нет обязательного шаблона, нового
 gate или остановки авторизованной работы. FAB-11 остаётся awaiting behavior;
 следующее обычное продолжение должно показать содержательный итог без напоминания.
+
+## 2026-10-12 — автономные частичные задачи
+Creator разрешил отдельные partial-task tests и автономные адресные исправления;
+2–3five-hour windows — допустимый запас при необходимости, credit resets не
+разрешены. Экспериментальная ветка codex/partial-workflow-tests; не merge обратно.
+Baseline beta.15:7primary+1synthetic follow-up+1natural-entry diagnostic, свежие
+CLI contexts вне repo, GPT-6.1 Sol/Low.9turns522.4sum-seconds/input1280784/
+cached1105920/output18988. Консультации, варианты, read-only audit и короткие
+analysis→options/evidence→slice полезны без обязательного full process.
+Два partial FAIL: Undo document достаточен, но final только file status (FAB-11);
+Wireframe owners/returns исправлены, однако совместимый Undo удалён из-за
+отсутствия имени команды в domain model (FAB-03). Исходные ответы сохранены.
+Beta.16 установлена с узкой правкой этих различений; source/cache и36tests PASS.
+Следующий шаг — два fresh correctives с теми же inputs, без подсказки findings.
+Contract/evidence: experiments/workflow-tests/2026-10-12-partial-routes-contract.md,
+partial-routes-20261012. Это developer evaluation, не independent human acceptance.

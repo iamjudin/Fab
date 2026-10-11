@@ -21,6 +21,10 @@ one surface, and one UC may cross several surfaces.
 Compile from the selected slice, current UC, capabilities and domain rules.
 Before drawing, synchronise any newly included goal into the UC Markdown
 review and graph. Keep accepted scope distinct from unapproved policy detail.
+A UI control can implement an existing UC without being named in the domain model;
+that is not a newly included goal. Compare its behavior with the rules before
+calling it unsupported. Preserve compatible current interactions during repair;
+unresolved semantics stay explicit, not silently removed from the interface.
 Explain the main screen and access priority using frequency, importance,
 urgency and working context; label inferred frequency as a hypothesis.
 Do not invent a dashboard, tab or detail screen merely to give a feature a node.

@@ -177,3 +177,12 @@ Undo artifact sound but final reply only file status (FAB-11); scoped Wireframe
 repair restores owners/returns yet drops compatible Undo on unsupported domain-name
 argument (FAB-03). Sources/IDs retained, no prototype/full model ceremony.
 No corrections hidden inside baseline; two focused fixes/correctives next.
+
+## 2026-10-12 — beta.16 partial-route corrections installed
+Shared core now requires practical synthesis in the actual reply for artifact
+delivery, not only inside its file. Wireframe entry/navigation clarify that UI
+control names need not be separate domain goals; preserve compatible existing
+mechanisms and distinguish behavior conflicts from underspecified details.
+Both changes follow actual baseline failures, not hypothetical universal rules.
+36regressions and installed source/cache60files/c96709ca2d41760d PASS. Next two
+fresh same-input correctives, no hints/golden answers and no successful-case repeats.

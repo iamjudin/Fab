@@ -12,6 +12,11 @@ Choose the requested mode: [structure/access](references/navigation-ia.md),
 existing accepted inputs count. Read [Canvas adapter](references/canvas-adapter.md)
 only when producing/checking Canvas. Stable S-IDs, actual control ownership,
 composition vs navigation and return context must survive all projections.
+In partial repairs preserve existing interactions compatible with the UC/rules.
+Absence of a control's exact name in the domain model is not a contradiction or
+permission to delete its mechanism. Separate a genuine behavior conflict from
+an underspecified interface detail; expose a material experience change before
+dependent edits, rather than simplifying it away to make projections agree.
 Small projects use one Canvas with separated areas; split by domain only when
 readability actually requires it. Grey information, light blue local interaction,
 blue navigation, green persistent mutation. These are diagram notation, not UI styling.

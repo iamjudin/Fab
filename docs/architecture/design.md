@@ -3,7 +3,7 @@ Design v0.2 accepted for bounded autonomous beta implementation on 2026-10-10.
 Target owners: cowork, research, product, wireframe, prototype, analysis,
 brainstorm, testing, plugin, delivery. Historical beta.1 had five skills:
 cowork/research/analysis/brainstorm/testing plus shared core.
-All ten skill contracts are now installed in beta.15. Meaning/behavior maturity
+All ten skill contracts are now installed in beta.16. Meaning/behavior maturity
 is bounded by concrete smoke evidence, not availability. Product/Wireframe use
 compatible graph adapter; Prototype/Plugin/Delivery have independent modes.
 Cowork maintains collaboration/intent/continuity; direct invocation bypasses it.
@@ -45,6 +45,11 @@ the project goal, practical consequences and a reasoned next action. Technical
 assessment belongs to Fab; creator preferences/value/acceptance remain distinct.
 Meaningful forks need concise options and a recommendation before dependent work;
 no mandatory report template, extra skill gate or pause for authorized next work.
+Beta.16 responds to two partial-route failures: the user-facing artifact handoff
+must contain the useful synthesis even when the document already has it; an
+existing UI mechanism is checked against domain behavior, not rejected because
+its control name is absent from the Product model. Focused corrective evidence
+is required separately from installed parity; initial failures stay in evidence.
 
 Original rationale: Wireframer docs/fab at checkpoint cb4d220. Those documents
 are provenance, not required runtime resources. Working project guidance is here.
