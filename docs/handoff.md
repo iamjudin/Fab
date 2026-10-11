@@ -10,7 +10,8 @@
 - Private remote: https://github.com/iamjudin/Fab . Публичного выпуска/merge нет.
 - Установлена Fab0.1.0-beta.9, 57 файлов, fingerprint462d4cc828c5d99f, marketplace fab-local.
 - 36 локальных регрессий PASS; source/cache совпадают.
-- Основной чат остаётся в Wireframer. Новый чат не создан.
+- Основной рабочий чат — текущий чат в Lab/Fab с 2026-10-11; creator подтвердил, что дальше работаем здесь.
+- FAB-02: первое восстановление контекста через Fab Cowork успешно; устойчивая непрерывность пока открыта.
 - Wireframer0.2.5/recovery сохранены; Fabricator4543046/ahead3 и его чужие файлы не менялись.
 - Ровно один разрешённый сброс выполнен пользователем; дальнейшие сбросы не разрешены.
 
@@ -42,13 +43,15 @@ Reload и свежая вкладка сначала исполняли стар
 
 ## Сохранность и ownership
 
-Оригинал, map corrective и recovery result заморожены отдельно в beta5-full. Root environment/documentation edits перечислены в intervention packet. Старые архивы не перезаписаны. WF-01/17/20 owner Fab; WF-26/27/28 пока Wireframer. Реального переноса основного чата нет, source старого плагина не изменён.
+Оригинал, map corrective и recovery result заморожены отдельно в beta5-full. Root environment/documentation edits перечислены в intervention packet. Старые архивы не перезаписаны. WF-01/17/20 owner Fab; WF-26/27/28 пока Wireframer. Основной рабочий чат перенесён в Lab/Fab; source старого плагина не изменён.
 
-## 2026-10-11 - transition preparation
-Creator started the mobile-structure Deep Research; result pending. Creator is
-ready to move the primary working chat into Lab/Fab. Fab is not yet a saved
-Codex project according to list_projects; creator should add the existing folder
-and open a normal local chat there. Existing branch/checkpoint retained.
-First new-chat task: restore goal, coauthor agreement, checked boundary and next
-step from AGENTS/backlog/handoff/beacon/report. FAB02 remains unverified until
-actual continuity is observed. Do not infer acceptance from a prepared prompt.
+## 2026-10-11 — основной чат перенесён
+Creator назначил текущий чат в Lab/Fab основной рабочей средой и подтвердил:
+«Дальше работаем здесь». Через Fab Cowork прочитаны AGENTS, handoff, backlog,
+beacon и autonomous-beta-results; проверены Git и общий runtime-договор.
+В первом ответе восстановлены цель, соглашения соавторства, проверенные границы,
+открытые вопросы и следующий полезный шаг. Creator подтвердил успешное первое
+восстановление для FAB-02. Это наблюдаемый первый перенос, а не доказательство
+устойчивой непрерывности: она остаётся открытой до дальнейшего продолжения работы
+с сохранением решений и границ. Ветка codex/bootstrap-beta сохранена.
+Mobile-structure Deep Research запущен creator; результат ожидается.

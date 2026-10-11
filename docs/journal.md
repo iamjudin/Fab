@@ -54,3 +54,11 @@ No general whole-route/native/client/production PASS and no stats-only rerun.
 Creator started mobile research and requested migration instructions. Handoff
 updated; new chat not created yet. FAB02 real continuity remains open. Corrected
 backlog runtime label beta8->beta9 to match unchanged installed fingerprint.
+
+## 2026-10-11 — primary chat transition observed
+Creator designated the current Lab/Fab chat as the primary working environment.
+Fab Cowork restored context from AGENTS/handoff/backlog/beacon/beta-results and
+shared runtime contracts; Git was clean on codex/bootstrap-beta. Creator confirmed
+successful first context restoration for FAB-02 and continued work here.
+AGENTS, handoff and owning backlog now record the actual transition. Sustained
+continuity remains open; this first restoration does not close the whole contract.
