@@ -8,7 +8,7 @@
 
 - Source: /Users/iamjudin/Desktop/Lab/Fab, ветка codex/bootstrap-beta.
 - Private remote: https://github.com/iamjudin/Fab . Публичного выпуска/merge нет.
-- Установлена Fab0.1.0-beta.10, 58 файлов, fingerprintb1727424d24f991a, marketplace fab-local.
+- Установлена Fab0.1.0-beta.11, 58 файлов, fingerprintbe69314355a40291, marketplace fab-local.
 - 36 локальных регрессий PASS; source/cache совпадают.
 - Основной рабочий чат — текущий чат в Lab/Fab с 2026-10-11; creator подтвердил, что дальше работаем здесь.
 - FAB-02: первое восстановление контекста через Fab Cowork успешно; устойчивая непрерывность пока открыта.
@@ -76,3 +76,14 @@ FAB-09 остаётся fixed-awaiting-check для будущего generated-p
 остаются в отслеживаемом evidence. Workspace и точные standalone helpers этого
 прогона удалены. Старые tmp/preview inputs не тронуты; runtime старых тестовых пакетов
 задним числом не менялся. Публикации нет.
+
+## 2026-10-11 — видимая маркировка исследований Fab
+Research ingestion теперь явно задаёт для включённых maintainer-оригиналов
+`Fab: <исходное название>.md`, `Использование в Fab`, fab-import marker и
+`#fab/imported`, без переименования исходного исследовательского заголовка.
+Восемь notes в Brain/Library перенесены с Wireframer: на Fab:, top-блок указывает
+на текущие brief/full и сохраняет историю Wireframer. Тела исследований совпали
+по SHA; существующих ссылок с прежними именами/URI-encoding не найдено.
+Оригинальные backups в ignored `experiments/maintenance/research-labels-20261011/raw/originals`,
+receipt — migration.json рядом. Scratch helper удалён. Beta.11 installed parity
+PASS. Старые пакеты/исследовательские titles/историческое evidence не переписаны.

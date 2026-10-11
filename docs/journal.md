@@ -87,3 +87,14 @@ Current smoke63files/helpers preserved in ignored project raw/local-run archive,
 SHA compared before deleting exact task workspace and helpers. Others' temp files
 and earlier preview inputs untouched. Original tested packages not retroactively
 edited/published. FAB-09 fixed-awaiting-check for fresh generated-rule behavior.
+
+## 2026-10-11 — research labels migrated to Fab
+Creator requested Fab: instead of Wireframer: for marked research filenames.
+Ingestion had a Fab tag but no explicit visible filename rule. Beta.11 adds
+maintainer filename/marker/tag/pointer convention, collision/idempotence guards,
+body/history preservation and exact backlink maintenance. Eight actually bundled
+Brain originals renamed; top metadata updated, all research bodies SHA-preserved.
+No exact plain/URI-encoded old filename backlinks found in authorized vault.
+Originals backed up in ignored project archive, helper removed after verification.
+Installed beta.11 parity58files/be69314355a40291. FAB-10 closed for current
+rule/migration; future fresh ingestion not claimed tested. No public publication.

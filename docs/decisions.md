@@ -23,3 +23,7 @@
   evidence are retained and verified. No shared tmp sweep or cleanup of delivered
   products. Generated plugins inherit self-contained runtime instructions for
   this lifecycle; they must not depend on Fab/cache/maintainer docs for cleanup.
+
+- 2026-10-11: включённые maintainer-исследования в Brain помечаются видимым
+  `Fab:` и верхним Fab marker/tag/pointer. Это обозначение текущего включения,
+  не новая авторская версия исследования; тело и исторические даты/версии сохраняются.

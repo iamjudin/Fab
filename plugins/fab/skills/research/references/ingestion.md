@@ -76,7 +76,22 @@ Read relevant sections when the decision needs their detail, as described above.
 ## Maintenance
 
 An imported original may receive a tag and pointer only after the pair is
-available in the intended location. Keep the body intact. Version the pair
+available in the intended location. For maintainer notes being marked in Brain,
+use the visible filename `Fab: <original title>.md`, the top technical heading
+`Использование в Fab`, marker `<!-- fab-import:<module-id> -->` and tag
+`#fab/imported`. Link the current brief/full and state the included version/date
+and validation limits. The prefix is a filename label, not a new research title.
+Preserve the actual source title and historical Wireframer attribution in the body.
+Do not apply this filename convention to every user's project or unbundled report.
+
+When migrating an existing `Wireframer:` label, replace the prefix once; never
+stack prefixes. Preserve the research body byte-for-byte and retain old inclusion
+dates/versions as history. Verify the module is actually included, refuse target
+collisions/symlinks, and update exact affected wiki/Markdown links within the
+authorized vault/project. Do not globally replace the word Wireframer in source
+text or rewrite historical packets/checkpoints. Repeated marking is idempotent.
+If a module is withdrawn, remove its current Fab marker/prefix without erasing
+historical provenance. Otherwise keep the body intact. Version the pair
 together and preserve source fingerprints when updating it. For the maintainer,
 `#fab/imported` means included, not universally validated.
 

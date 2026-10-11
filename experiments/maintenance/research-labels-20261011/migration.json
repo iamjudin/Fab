@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-11",
+  "version": "0.1.0-beta.11",
+  "notes": [
+    {
+      "module": "ai-native",
+      "before": "/Users/iamjudin/Library/Mobile Documents/iCloud~md~obsidian/Documents/Brain/Library/Wireframer: AI-native процесс производства цифровых продуктов.md",
+      "after": "/Users/iamjudin/Library/Mobile Documents/iCloud~md~obsidian/Documents/Brain/Library/Fab: AI-native процесс производства цифровых продуктов.md",
+      "originalSha256": "3e7d7bfd354bbdaceb0c3e47a67140cce65a87939ad32e32d7d157e407f45c9e",
+      "updatedSha256": "1b76b9b3ab937f15bca107eac4f15534092c5dc4feec62abd240b70771c8aee2",
+      "researchBodySha256": "ec7cfc8eb1f3484fd6c215ee645735864bb93aa5d82ac607d0006f689ca01a34",
+      "bodyPreserved": true,
+      "historyPreserved": true,
+      "backup": "/Users/iamjudin/Desktop/Lab/Fab/experiments/maintenance/research-labels-20261011/raw/originals/Wireframer: AI-native процесс производства цифровых продуктов.md"
+    },
+    {
+      "module": "jtbd",
+      "before": "/Users/iamjudin/Library/Mobile Documents/iCloud~md~obsidian/Documents/Brain/Library/Wireframer: Jobs To Be Done- методология для проверяемого продуктового проектирования.md",
+      "after": "/Users/iamjudin/Library/Mobile Documents/iCloud~md~obsidian/Documents/Brain/Library/Fab: Jobs To Be Done- методология для проверяемого продуктового проектирования.md",
+      "originalSha256": "6560a06508c79ab0332ec90f0daa92fd76c37d9878826861db1851bbe6d0dd9b",
+      "updatedSha256": "d8cddf9b46b833f006a64fb8b16c78abe0b0cf53c556cd7ffb4b472fe23e2333",
+      "researchBodySha256": "3abb5fe5e678754e1ef20c392c46e8f61f438283fc6281ffbf349a668038fe0c",
+      "bodyPreserved": true,
+      "historyPreserved": true,
+      "backup": "/Users/iamjudin/Desktop/Lab/Fab/experiments/maintenance/research-labels-20261011/raw/originals/Wireframer: Jobs To Be Done- методология для проверяемого продуктового проектирования.md"
+    },
+    {
+      "module": "design-systems",
+      "before": "/Users/iamjudin/Library/Mobile Documents/iCloud~md~obsidian/Documents/Brain/Library/Wireframer: Дизайн-системы- практическое руководство по построению, организации в Figma и внедрению.md",
+      "after": "/Users/iamjudin/Library/Mobile Documents/iCloud~md~obsidian/Documents/Brain/Library/Fab: Дизайн-системы- практическое руководство по построению, организации в Figma и внедрению.md",
+      "originalSha256": "523d9374297dde7dd1c3db1537ad1ea49895e82f276dbc0d6846f468318b8456",
+      "updatedSha256": "eb5838bbabf295110ec60cbd3524b9ed2adf44e59ebbd99fd22e962ce07e6598",
+      "researchBodySha256": "716f32d92937c5f2388adc52c49f244ef306d41428c06f84ed1fbcf8d80c97f1",
+      "bodyPreserved": true,
+      "historyPreserved": true,
+      "backup": "/Users/iamjudin/Desktop/Lab/Fab/experiments/maintenance/research-labels-20261011/raw/originals/Wireframer: Дизайн-системы- практическое руководство по построению, организации в Figma и внедрению.md"
+    },
+    {
+      "module": "monetization",
+      "before": "/Users/iamjudin/Library/Mobile Documents/iCloud~md~obsidian/Documents/Brain/Library/Wireframer: Метод выбора модели монетизации и проектирования связанных сценариев для инди-создателя.md",
+      "after": "/Users/iamjudin/Library/Mobile Documents/iCloud~md~obsidian/Documents/Brain/Library/Fab: Метод выбора модели монетизации и проектирования связанных сценариев для инди-создателя.md",
+      "originalSha256": "3db5b2174b3ff184e5e3b6ec73c8f97156368915ea06d60e9bc8dffe18694009",
+      "updatedSha256": "58297de2531ae71da6d4c51a7deeb5de661cae64e0bc3de50da799c5934f6f8e",
+      "researchBodySha256": "057abab247054a57612475c35dba28d834adbd835c471f7c838b5e3070352a47",
+      "bodyPreserved": true,
+      "historyPreserved": true,
+      "backup": "/Users/iamjudin/Desktop/Lab/Fab/experiments/maintenance/research-labels-20261011/raw/originals/Wireframer: Метод выбора модели монетизации и проектирования связанных сценариев для инди-создателя.md"
+    },
+    {
+      "module": "product-structure",
+      "before": "/Users/iamjudin/Library/Mobile Documents/iCloud~md~obsidian/Documents/Brain/Library/Wireframer: От сценариев использования к структуре продукта — метод для Wireframer.md",
+      "after": "/Users/iamjudin/Library/Mobile Documents/iCloud~md~obsidian/Documents/Brain/Library/Fab: От сценариев использования к структуре продукта — метод для Wireframer.md",
+      "originalSha256": "5b12528113449df7fdbd7bf71d3b6cb5650f15c737fb42458bc7c1217281fa53",
+      "updatedSha256": "3db985297c79bb0d30f93b6e3c6f13a20180f90b5aaa21967e6d25411cb24a4a",
+      "researchBodySha256": "53709f5562a81b75fc5623c265920fa896e5a01323469c4eecb67b07dc5c8c07",
+      "bodyPreserved": true,
+      "historyPreserved": true,
+      "backup": "/Users/iamjudin/Desktop/Lab/Fab/experiments/maintenance/research-labels-20261011/raw/originals/Wireframer: От сценариев использования к структуре продукта — метод для Wireframer.md"
+    },
+    {
+      "module": "first-value",
+      "before": "/Users/iamjudin/Library/Mobile Documents/iCloud~md~obsidian/Documents/Brain/Library/Wireframer: Первый вход и достижение первой ценности в цифровых продуктах.md",
+      "after": "/Users/iamjudin/Library/Mobile Documents/iCloud~md~obsidian/Documents/Brain/Library/Fab: Первый вход и достижение первой ценности в цифровых продуктах.md",
+      "originalSha256": "70925f6b8b02ea8d8ad4e509154f976bb2a1cffa0d7ba6372928a63a0098bd7f",
+      "updatedSha256": "fa3b74aafb045e01ee35c75e5f5d10888f3a9cfe95eb0dd864d6daf159183400",
+      "researchBodySha256": "4d50813b063a7cfbdf19666cfbcbaf1cb6e96bab813fb4033e5132ace4bc376d",
+      "bodyPreserved": true,
+      "historyPreserved": true,
+      "backup": "/Users/iamjudin/Desktop/Lab/Fab/experiments/maintenance/research-labels-20261011/raw/originals/Wireframer: Первый вход и достижение первой ценности в цифровых продуктах.md"
+    },
+    {
+      "module": "slice-completeness",
+      "before": "/Users/iamjudin/Library/Mobile Documents/iCloud~md~obsidian/Documents/Brain/Library/Wireframer: Проверка полноты продуктового среза до реализации- методика для Wireframer.md",
+      "after": "/Users/iamjudin/Library/Mobile Documents/iCloud~md~obsidian/Documents/Brain/Library/Fab: Проверка полноты продуктового среза до реализации- методика для Wireframer.md",
+      "originalSha256": "3a62a0a1b7383171fa6ae63fae15a8c0f0813075056c3ccec06c1c5bf65c0754",
+      "updatedSha256": "b96d540d88b243cedee6cb9199ffcd4f120d8bc39a82b695e2559137813c73e1",
+      "researchBodySha256": "abcc195f53fb2ad86f2c5dbda25198c0e3e24701ef57c9048c2ee78f34eecb10",
+      "bodyPreserved": true,
+      "historyPreserved": true,
+      "backup": "/Users/iamjudin/Desktop/Lab/Fab/experiments/maintenance/research-labels-20261011/raw/originals/Wireframer: Проверка полноты продуктового среза до реализации- методика для Wireframer.md"
+    },
+    {
+      "module": "technical-ux-dependencies",
+      "before": "/Users/iamjudin/Library/Mobile Documents/iCloud~md~obsidian/Documents/Brain/Library/Wireframer: Технические зависимости продуктового поведения до реализации.md",
+      "after": "/Users/iamjudin/Library/Mobile Documents/iCloud~md~obsidian/Documents/Brain/Library/Fab: Технические зависимости продуктового поведения до реализации.md",
+      "originalSha256": "8715c15bd8e976b3e9e3358d5ee9b7c373a86d2f6661c55667baf1ce7e11500a",
+      "updatedSha256": "8c5a3d8ab28648c50eb2a72f21f4f571e206e75a4d60cec054d6f401fee0e997",
+      "researchBodySha256": "0494dddc0c5256f01bc0e19a0ef0614b2b823f36084d570411dd203ac3352816",
+      "bodyPreserved": true,
+      "historyPreserved": true,
+      "backup": "/Users/iamjudin/Desktop/Lab/Fab/experiments/maintenance/research-labels-20261011/raw/originals/Wireframer: Технические зависимости продуктового поведения до реализации.md"
+    }
+  ],
+  "backlinksPreflight": "No exact old filenames referenced in Markdown notes in the authorized Brain vault",
+  "sourceTitlesAndPackets": "Unchanged; prefix is a display/filename label only",
+  "originalBackups": "Retained in ignored project raw/originals for undo; no temp files used",
+  "verification": {
+    "bodyAndBackupSha256": "PASS for all eight",
+    "markers": "PASS for all eight",
+    "stalePlainOrEncodedFilenameReferences": [],
+    "collisions": "none",
+    "oldFilesRemaining": 0
+  }
+}
