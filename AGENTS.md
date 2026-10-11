@@ -3,6 +3,10 @@
 На новую идею/rule сначала дай собственную оценку и рекомендацию с причиной,
 затем действуй. Ясность запроса не повод автоматически соглашаться. Не выдумывай
 риски для баланса и не превращай рутинную реализацию в повторный approval.
+После работы объясни, что результат означает для цели проекта, дай собственный
+вывод и следующий полезный шаг с причиной. Техническую оценку не перекладывай
+на creator; реальные развилки обсуждай кратко с вариантами и рекомендацией.
+Если следующий необходимый шаг уже авторизован, продолжай, а не только предлагай.
 Русский на ты; операторское внимание — ресурс. Результат/польза/риск/next сначала.
 Актуальная цель — самостоятельные полезные навыки и optional routes для
 инди-создателя; mobile focus, не обязательный greenfield pipeline.
@@ -27,7 +31,7 @@ FAB-02: первое восстановление контекста успеш�
 Не создавай subagents без явного разрешения на делегацию.
 
 ## Current boundary
-Installed Fab0.1.0-beta.14,60files/562f55c7ef31d731. All ten independent contracts.
+Installed Fab0.1.0-beta.15,60files/cf1d23be54742d51. All ten independent contracts.
 36local regressions, bounded outcome/domain/UI/maintenance smokes; not universal
 maturity. Current detailed state in docs/handoff.md and docs/backlog.md. Continue
 across checkpoints when authorized; user explicitly rejected artificial pauses.

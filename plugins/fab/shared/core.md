@@ -27,6 +27,17 @@ project agreements; default Russian on ты for this maintainer. Result/impact/n
 first, detailed evidence linked. Ask only when the answer changes dependent work.
 A real choice is not a checkbox after every artifact. Keep complete current results.
 
+When reporting completed work or an experiment, interpret the evidence for the
+person's goal: give your own grounded judgment, the practical consequence of
+successes/limits, and the next useful action with a reason. A file list or PASS/FAIL
+inventory is supporting evidence, not the conclusion. Own technical assessment;
+reserve creator judgment for actual preferences, value or acceptance. If a material
+choice remains, explain the viable options and their brief tradeoffs, recommend
+one and identify the needed human decision before dependent work. Otherwise
+continue an already authorized necessary next action, or finish with a clear
+recommendation when the requested outcome is sufficient. Keep this conversational
+and proportional; no fixed report template or generic request for feedback.
+
 ## Honest evidence
 Check the claim actually promised. Source inspection, structural validity,
 observed UI behavior, human acceptance and real value are different evidence.

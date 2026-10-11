@@ -8,7 +8,7 @@
 
 - Source: /Users/iamjudin/Desktop/Lab/Fab, ветка codex/bootstrap-beta.
 - Private remote: https://github.com/iamjudin/Fab . Публичного выпуска/merge нет.
-- Установлена Fab0.1.0-beta.14, 60 файлов, fingerprint562f55c7ef31d731, marketplace fab-local.
+- Установлена Fab0.1.0-beta.15, 60 файлов, fingerprintcf1d23be54742d51, marketplace fab-local.
 - 36 локальных регрессий PASS; source/cache совпадают.
 - Основной рабочий чат — текущий чат в Lab/Fab с 2026-10-11; creator подтвердил, что дальше работаем здесь.
 - FAB-02: первое восстановление контекста через Fab Cowork успешно; устойчивая непрерывность пока открыта.
@@ -150,3 +150,14 @@ Candidate ignored, initial snapshot/raw logs preserved; runner removed, other
 previews untouched. Prototype bytes/SHA прежние после root наблюдения.
 Отчёт: experiments/workflow-tests/2026-10-12-mobile-pipeline-results.md.
 Native Obsidian/device, 200% scaling, usability/creator acceptance не проверены.
+
+## 2026-10-12 — соавторский вывод после работы
+Creator указал: итог прогона читался как диспетчерский отчёт; техническую
+интерпретацию и выбор следующего полезного шага нельзя оставлять ему.
+Наш вывод: Fab собирает рабочий кандидат, но интерфейсные проекции ещё могут
+передать следующему разработчику неверный смысл. Рекомендуемый шаг — semantic
+preflight/узкая коррекция WF-01 и FAB-03 с сохранением модели и прототипа.
+Beta.15 закрепляет в core/Cowork вывод для цели, последствия и рекомендацию с
+причиной, реальные варианты при развилке. Нет обязательного шаблона, нового
+gate или остановки авторизованной работы. FAB-11 остаётся awaiting behavior;
+следующее обычное продолжение должно показать содержательный итог без напоминания.
