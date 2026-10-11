@@ -1,0 +1,19 @@
+{
+  "README.md": "90aa798bdd9e3a8b10156b7081a0dae5664952bdd06356ab02b08a5378fb6e2c",
+  "AGENTS.md": "6c0a2d50504fb10c4da355eac1072007ddc46486c348846b2109e2e76cfb75fa",
+  "prototype/index.html": "8eb918bc2e43d5380ea2f74b0c918e39123b82aa815ed8fd4d64e8c8f8745b9e",
+  "prototype/app.js": "1756f3354d994c1f9feeaf0efd04bb8acce1c3c9e539e5c9253a37ed93dcc895",
+  "docs/backlog.md": "a139cf35de5e97c3ecf99d402077e3bf6af55d0b837bbd323b2a766a33fae87f",
+  "product/journal.md": "2143b85a62dc1f69c0db609cb57eb0f1b9901a9cbe7d59a27517524d2a5a79e6",
+  "product/evidence/runtime-check.cjs": "90384fa6dd075e3f8fe33c0842f9b6247da06a96e9409496f78c4149ece561fb",
+  "product/evidence/review.md": "2b3ef1dea4ffa45f0104ead0b10269c0ca462e9f40f66767c2013452ae7adb10",
+  "product/reviews/model.md": "4183021f8e6d8971c893d3ed1deae6f24f77632f32aeb1c7cb435127f0404fe4",
+  "product/reviews/blocks.html": "a63de3935baa442b7410f97e3849e94020a78e1f2290d312740aa5deddeb8e16",
+  "product/reviews/structure.canvas": "53cd8241b9daf249ca623b647af83237c0a29d7582cce76405eaa8bd721800bd",
+  "product/reviews/structure.svg": "0823de9ab0e3dc8ebd7474b5a4eb05ba1f9b6036b1b23b02d28daf787ed9ad9b",
+  "product/reviews/interface.md": "6e3168448d7978ae67e13836b2b359a4a2abae72d07ded6787e7b00900ff2700",
+  ".wireframer/workspace.json": "a8f9e510bba3d543c8573bfa51fd4df8e8ded5535c82d34a0e8dde7191d9504b",
+  ".wireframer/project.json": "680e9c8724279ed5282b1df626acd4cd5b0e8a78d8c945b1c87f6334141ea091",
+  ".wireframer/graph.json": "c955f3b27488a966665a36ff65fe0aa50a501f8685f834a9813a20aff3d50e20",
+  ".wireframer/signals.json": "754506322585f7abf3bb3734d944dee3133aed107bdbf3d557e5b7bd1ad9c00e"
+}

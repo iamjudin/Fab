@@ -10,8 +10,10 @@ Desktop web остаётся возможным направлением, но �
 Original: Brain/Library/Мобильная структура и взаимодействие для Fab.md.
 Source/retained SHA256: `f72f0d703fb94d10dafa04dd9ccc2da2a43570b88c2f4701d32631daa258dc3d`.
 49 разделов сохранены без исключений. Ingested 2026-10-12; исследовательская дата
-публикации неизвестна, sourceDate=null. Исходник пока не переименован/помечен:
-опциональная пометка требует ответа после готового ingestion.
+публикации неизвестна, sourceDate=null. После готового ingestion creator ответил
+«Да, пометить Fab»: исходник теперь `Brain/Library/Fab: Мобильная структура и взаимодействие для Fab.md`,
+с `#project/fab`, `#fab/imported` и usage-блоком. Тело совпало по SHA; links с прежним
+именем не найдены. [Usage receipt](../../experiments/maintenance/mobile-ingestion-20261012/source-usage.json).
 
 ## Что переносим
 Оперативный метод: вход/owner/результат перехода/сохраняемый контекст,

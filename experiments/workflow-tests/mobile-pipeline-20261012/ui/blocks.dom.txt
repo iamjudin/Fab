@@ -1,0 +1,39 @@
+- generic: S-01 · корень
+- heading "Поездки" [level=2]
+- paragraph:
+  - text: На море →
+  - generic: 1 из 3 собрано
+- paragraph:
+  - text: Выходные →
+  - generic: 0 из 2 собрано
+- button "Новая поездка"
+- generic: S-02 · выбранная поездка
+- button "← Поездки"
+- heading "На море" [level=2]
+- paragraph: 1 из 3 собрано
+- button "Все | Осталось"
+- paragraph:
+  - text: ○ Зарядное устройство с длинным проводом
+  - text: Изменить
+- paragraph:
+  - text: ○ Паспорт
+  - text: Изменить
+- button "Добавить вещь"
+- generic: "После отметки: Собрано · Вернуть"
+- generic: S-03 · modal form
+- heading "Изменить вещь" [level=2]
+- text: Название вещи
+- textbox "Название вещи": Зарядное устройство
+- paragraph: Место для ошибки; введённое остаётся
+- button "Сохранить"
+- button "Отмена"
+- heading "Пустые состояния" [level=2]
+- paragraph:
+  - text: Пока нет поездок
+  - text: Создай первую поездку
+- paragraph:
+  - text: Список пока пуст
+  - text: Добавь первую вещь
+- paragraph:
+  - text: Всё собрано
+  - text: Показать все вещи

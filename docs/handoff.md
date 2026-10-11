@@ -121,8 +121,32 @@ brief/full,49losslesssections, Product/Wireframe/Prototype/Delivery conditional 
 Root primary-check Apple modality/tab-bars и Android back-stack; поиск не всегда
 команда, dedicated search surface возможна. 7 source binding unknowns сохранены.
 Общий смысл/правила остаются переносимыми, platform surfaces/evidence условные.
-36regressions/source-cache PASS. Исходник пока не помечен: вопрос creator задан
-после ingestion, ответ ожидается и не блокирует основную работу.
-Один fresh iOS-first travel-packing candidate в mobile-pipeline-20261012;
-test contract записан. Root UI/структурная проверка отдельно от author harness.
+36regressions/source-cache PASS. После ingestion creator согласился на пометку:
+исходник теперь `Fab: Мобильная структура и взаимодействие для Fab.md`, tags
+`#project/fab`/`#fab/imported` и usage-блок, body SHA прежний. Receipt в
+experiments/maintenance/mobile-ingestion-20261012/source-usage.json.
+Один fresh iOS-first travel-packing candidate в mobile-pipeline-20261012 завершён.
+Root UI/структурная проверка отдельно от author harness; итог ниже.
 Нативная реализация/OS/device и desktop web не объявляются проверенными.
+
+## 2026-10-12 — результат app-пайплайна
+241.1s/input708771/cached659968/output10996, GPT-6.1 Sol/Low default CLI,
+один primary без corrective. Product/сценарии/отдельные blocks до кода; mobile
+метод прочитан, отсутствие отдельных BJ обосновано. Root browser IAB реально
+прошёл создание/Enter/валидацию, edit-cancel/save, packed/Undo/Осталось,
+one-shot failure → draft → retry без дубликата, trip isolation, same-origin reload,
+Escape и long-name layout при320/430CSSpx. Selected UI bounded PASS.
+
+Полный clean PASS не дан: trip-row ownership S-01/open не отражён group,
+shared S-03 «Save/Create → parent» и interface.md не различают create-trip
+commit в S-02 от cancel в S-01; egress edges отсутствуют. Mechanical guard PASS
+не доказывает этот смысл. Next — focused Wireframe semantic preflight/коррекция,
+не full rerun и не изменение рабочей модели/прототипа ради карты.
+
+Preview http://127.0.0.1:8842/prototype/ , root server session3372. Авторский
+server закончился после CLI; root запустил ту же root/port, source/JS не менял.
+Запуск и материалы: experiments/workflow-tests/mobile-pipeline-20261012/README.md.
+Candidate ignored, initial snapshot/raw logs preserved; runner removed, other
+previews untouched. Prototype bytes/SHA прежние после root наблюдения.
+Отчёт: experiments/workflow-tests/2026-10-12-mobile-pipeline-results.md.
+Native Obsidian/device, 200% scaling, usability/creator acceptance не проверены.

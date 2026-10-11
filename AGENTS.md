@@ -36,3 +36,6 @@ Task-owned scratch is cleaned after verified retention; generated plugins inheri
 a self-contained runtime cleanup rule. FAB-09 fresh generated-behavior check open.
 Mobile app method ingested; shared product semantics with conditional platform
 branches, not a universal native promise. One new mobile full-route test authorized.
+That route reached executable candidate and root browser bounded PASS; WF-01/
+FAB-03 projections partly failed. Current next: focused semantic Wireframe repair,
+not stats-only full rerun. Evidence in 2026-10-12-mobile-pipeline-results.md.

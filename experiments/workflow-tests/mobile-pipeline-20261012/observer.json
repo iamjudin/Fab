@@ -1,0 +1,81 @@
+{
+  "sourceUnchangedDuringRootObservation": true,
+  "mobileBriefActuallyRead": true,
+  "sourceCreationSequence": [
+    {
+      "event": 12,
+      "marker": "model.md"
+    },
+    {
+      "event": 12,
+      "marker": "blocks.html"
+    },
+    {
+      "event": 13,
+      "marker": "item-owner"
+    },
+    {
+      "event": 16,
+      "marker": "prototype/index.html"
+    },
+    {
+      "event": 18,
+      "marker": "prototype/index.html"
+    },
+    {
+      "event": 19,
+      "marker": "model.md"
+    },
+    {
+      "event": 19,
+      "marker": "blocks.html"
+    },
+    {
+      "event": 19,
+      "marker": "prototype/index.html"
+    },
+    {
+      "event": 20,
+      "marker": "item-owner"
+    }
+  ],
+  "structure": {
+    "mechanicalContainment": "PASS",
+    "surfaces": [
+      "S-01",
+      "S-02",
+      "S-03"
+    ],
+    "groupCount": 4,
+    "semanticOwnership": "FAIL: no trip-item owner group for S-01/open despite interface.md per-trip row claim",
+    "returnContext": "FAIL: S-03 Save/Create points to parent, but new-trip create goes S-01→S-03→S-02; no Save/Cancel egress edges",
+    "nativeObsidian": "NOT TESTED",
+    "rootPreview": "structure-root.png"
+  },
+  "prototype": {
+    "environment": "IAB real browser; actual script + localStorage at http://127.0.0.1:8842/prototype/",
+    "observed": [
+      "space-only validation with input focus",
+      "Enter trip create",
+      "Enter item create",
+      "long unbroken item name",
+      "edit/cancel original retained",
+      "edit/save with Enter",
+      "packed in Remaining disappears",
+      "Undo inside Remaining returns item",
+      "one-shot write failure retains modal/input",
+      "retry in same modal creates one item",
+      "two trips maintain independent progress",
+      "same-origin reload retains current trip/filter/count",
+      "Escape cancels edit",
+      "no horizontal overflow at 320 and 430 CSS px"
+    ],
+    "notObserved": [
+      "native device/system keyboard/system gestures/VoiceOver/Dynamic Type",
+      "200% text scaling",
+      "usability or real creator acceptance",
+      "corrupt storage in actual browser (author harness only)"
+    ],
+    "environmentIntervention": "Author loopback server ended after CLI. Root initial URL got ERR_CONNECTION_REFUSED, then root started same port/source session3372. No source/cache edits."
+  }
+}

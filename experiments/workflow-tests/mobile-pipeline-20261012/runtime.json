@@ -1,0 +1,16 @@
+{
+  "sourceCheckpoint": "1c11df485c154b2dbfdd6ac340e74daff965faf3",
+  "installedRoot": "/Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.14",
+  "version": "0.1.0-beta.14",
+  "files": 60,
+  "fingerprint": "562f55c7ef31d731",
+  "promptSha256": "d4fd37d1c179f2e69f0ea49a972ea75ca3d51011c0f96053ea074ebef48db105",
+  "wallStopSeconds": 900,
+  "forecastInput": 1500000,
+  "forecastOutput": 25000,
+  "actualModel": {
+    "model": "gpt-6.1-sol",
+    "effort": "low"
+  },
+  "threadId": "01a12cdf-f6f3-7be2-bdf8-fda4302def03"
+}

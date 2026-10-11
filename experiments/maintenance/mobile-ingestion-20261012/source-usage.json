@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-12",
+  "authorizedBy": "Creator answered Да, пометить Fab to concrete filename/tag proposal",
+  "project": "Fab",
+  "before": "/Users/iamjudin/Library/Mobile Documents/iCloud~md~obsidian/Documents/Brain/Library/Мобильная структура и взаимодействие для Fab.md",
+  "after": "/Users/iamjudin/Library/Mobile Documents/iCloud~md~obsidian/Documents/Brain/Library/Fab: Мобильная структура и взаимодействие для Fab.md",
+  "sourceId": "fab-method:mobile-structure",
+  "bodySha256": "f72f0d703fb94d10dafa04dd9ccc2da2a43570b88c2f4701d32631daa258dc3d",
+  "bodyPreserved": true,
+  "markedFileSha256": "ec4243c2b0475f302e9f49ee0b08d06464d39dda1dfa433cebec82ef40bbe825",
+  "version": "0.1.0-beta.14",
+  "brief": "/Users/iamjudin/Desktop/Lab/Fab/plugins/fab/shared/methods/mobile-structure.md",
+  "full": "/Users/iamjudin/Desktop/Lab/Fab/plugins/fab/shared/methods/mobile-structure.full.json",
+  "backup": "/Users/iamjudin/Desktop/Lab/Fab/experiments/maintenance/mobile-ingestion-20261012/raw/originals/Мобильная структура и взаимодействие для Fab.md",
+  "oldFilenameBacklinks": [],
+  "tags": [
+    "project/fab",
+    "fab/imported"
+  ]
+}

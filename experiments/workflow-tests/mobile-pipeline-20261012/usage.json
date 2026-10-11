@@ -1,0 +1,9 @@
+{
+  "seconds": 241.1,
+  "input_tokens": 708771,
+  "cached_input_tokens": 659968,
+  "cache_write_input_tokens": 0,
+  "output_tokens": 10996,
+  "reasoning_output_tokens": 164,
+  "boundary": "One CLI primary run only; root orchestration/browser/marking excluded. No reset or corrective model run."
+}

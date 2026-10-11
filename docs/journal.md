@@ -132,3 +132,18 @@ Seven unresolved bindings retained; no exhaustive fact-check/native proof.
 36regressions and installed parity60files/562f55c7ef31d731 PASS. Source marking
 offered after ingestion, creator answer pending; full-route work independent.
 One fresh iOS-first personal travel-packing route contracted, no repeat for stats.
+
+## 2026-10-12 — mobile pipeline observed, projection partly failed
+One fresh installed beta.14 run completed241.1s/input708771/cached659968/output10996,
+actual GPT-6.1 Sol/Low CLI. Intent/UC/rules preserved; assessed creator axis without
+unsupported BJ; own recommendation, model/blocks before code and mobile brief read.
+Root IAB selected UI passed create/Enter/validation, edit/cancel/save, packed/Undo,
+Remaining, one-shot recovery without losing draft/duplicate, trip isolation/reload,
+Escape and320/430layout. Author Chrome access denied; its server ended after CLI.
+Root restarted same origin, no source/cache change; original SHA/frozen workspace
+retained. Map mechanical guard passes but S01 trip row lacks item ownership and
+S03 generic parent return disagrees with create-trip commit to S02; full clean PASS
+withheld. WF01/FAB03 open; next focused projection/semantics repair, no full rerun.
+Mobile source marked only after explicit creator answer; body SHA preserved,
+usage/source record and backup retained. Runner/marking helpers removed; local
+candidate/raw archive ignored, no external publication/reset/extra agents.
