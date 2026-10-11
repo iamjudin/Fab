@@ -8,6 +8,9 @@
 
 - Source: /Users/iamjudin/Desktop/Lab/Fab, ветка codex/bootstrap-beta.
 - Private remote: https://github.com/iamjudin/Fab . Публичного выпуска/merge нет.
+- 2026-10-12 creator подтвердил самостоятельные Git checks и локальные коммиты
+  проверенных этапов. Формат теста на наше усмотрение; evidence указывает actual
+  model/effort и fresh-context boundary. Это не обязательные новые sidebar-чаты.
 - Установлена Fab0.1.0-beta.15, 60 файлов, fingerprintcf1d23be54742d51, marketplace fab-local.
 - 36 локальных регрессий PASS; source/cache совпадают.
 - Основной рабочий чат — текущий чат в Lab/Fab с 2026-10-11; creator подтвердил, что дальше работаем здесь.

@@ -20,6 +20,10 @@
 6. docs/handoff.md — состояние для нового основного чата, когда подготовлено.
 
 Перед edits Git/guidance/backlog; preserve others. Commit key verified stages.
+Creator подтвердил 2026-10-12: проверять Git и делать локальные checkpoint-коммиты
+самостоятельно после проверки; отдельное согласие на каждый commit не требуется.
+Формат тестов выбираем по цели: fresh context для поведения, bounded CLI для
+технических проверок. Фиксируем реальную модель/effort и изоляцию в evidence.
 Experimental branch codex/; не merge/main/public release без явного scope.
 Runtime package plugins/fab, docs не скрытый обязательный runtime источник.
 Устанавливаемая beta самодостаточна, Brain/old cache не prerequisites.
