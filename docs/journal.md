@@ -98,3 +98,15 @@ No exact plain/URI-encoded old filename backlinks found in authorized vault.
 Originals backed up in ignored project archive, helper removed after verification.
 Installed beta.11 parity58files/be69314355a40291. FAB-10 closed for current
 rule/migration; future fresh ingestion not claimed tested. No public publication.
+
+## 2026-10-12 — project usage marks after research ingestion
+Creator expanded the source marking convention: ask after processing whether to
+add current project name and a tag; preserve existing names and append without
+duplicates, to identify consumers when the source changes. Beta.12 routes the
+post-ingestion optional choice from Research, defines project usage block and
+local revision/artifact provenance, and separates source-body updates from marks.
+Refusal/silence does not mutate source or block completed artifacts. Changed-source
+review lists affected/unknown projects; no automatic external updates/monitor.
+36local regressions and installed parity58files/7103a9d47eee3e55 PASS.
+No new model run or retroactive original edits. FAB-10 fixed-awaiting-check for
+consent/refusal/additive labels and source revision propagation evidence.

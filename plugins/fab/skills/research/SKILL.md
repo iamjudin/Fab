@@ -16,6 +16,9 @@ otherwise prepare the brief/prompt and name what remains unperformed. Verify
 unstable consequential facts through current primary sources.
 When ingesting read [ingestion contract](references/ingestion.md); original,
 brief and compatible indexed full retain qualifications and provenance.
+After completing ingestion, offer the source's project-name/tag annotation as
+defined there. Preserve prior project labels; modify the source only after the
+person's answer. This optional choice never blocks completed research artifacts.
 Project evidence stays in project; global promotion requires a reusable gap and
 explicit applicability, not a market report becoming universal knowledge.
 Research findings are not creator acceptance or proof of demand. Update affected

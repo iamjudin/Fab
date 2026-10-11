@@ -8,7 +8,7 @@
 
 - Source: /Users/iamjudin/Desktop/Lab/Fab, ветка codex/bootstrap-beta.
 - Private remote: https://github.com/iamjudin/Fab . Публичного выпуска/merge нет.
-- Установлена Fab0.1.0-beta.11, 58 файлов, fingerprintbe69314355a40291, marketplace fab-local.
+- Установлена Fab0.1.0-beta.12, 58 файлов, fingerprint7103a9d47eee3e55, marketplace fab-local.
 - 36 локальных регрессий PASS; source/cache совпадают.
 - Основной рабочий чат — текущий чат в Lab/Fab с 2026-10-11; creator подтвердил, что дальше работаем здесь.
 - FAB-02: первое восстановление контекста через Fab Cowork успешно; устойчивая непрерывность пока открыта.
@@ -87,3 +87,17 @@ Research ingestion теперь явно задаёт для включённы�
 Оригинальные backups в ignored `experiments/maintenance/research-labels-20261011/raw/originals`,
 receipt — migration.json рядом. Scratch helper удалён. Beta.11 installed parity
 PASS. Старые пакеты/исследовательские titles/историческое evidence не переписаны.
+
+## 2026-10-12 — опциональная маркировка проекта и связи исходника
+Creator уточнил: после обработки спросить, добавить ли имя текущего проекта
+к исходному документу и тег внутри; прежние имена сохранить и добавить новое.
+Beta.12: вопрос после готового brief/full, конкретные before/after/tag, согласие
+нужно только для пометки исходника. `Fab: Title.md` → `Fab + Murmur: Title.md`,
+`#project/murmur`; без дублей, при отказе исходник неизменен.
+Top usage-блок хранит список проектов, расположения brief/full и обработанную
+ревизию/дату. Local provenance остаётся при отказе от внешней пометки.
+При повторной обработке изменённого исходника перечисляются отстающие/непроверенные
+проекты; их файлы и решения не обновляются автоматически. Annotation-only правки
+отличаются от ревизии research body. Legacy boundaries не угадываются.
+36 регрессий и beta.12 source/cache parity PASS. Fresh model behavior ещё не
+наблюдалось — FAB-10 reopened fixed-awaiting-check. Старые originals не менялись.
