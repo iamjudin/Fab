@@ -28,5 +28,9 @@ For application platform choices that affect behaviour, read
 [mobile structure](../../shared/methods/mobile-structure.md). Keep domain intent/
 rules separate from platform surfaces; don't make a browser prototype a web target.
 Finish requested model/change with sufficient behavior, source coverage, unknowns
-and honest acceptance state. Wireframe is a next owner only if interface outcome
+and honest acceptance state. In the user-facing conclusion recommend the bounded
+design with its reason, identify the meaningful remaining tradeoff/check and
+the next useful action. Saving the proposal and reporting coverage does not
+replace this product judgment; keep it brief and do not expand the task to obtain
+a more impressive next stage. Wireframe is a next owner only if interface outcome
 was requested or a real dependency within authorized scope. No automatic full run.

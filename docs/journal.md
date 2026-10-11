@@ -186,3 +186,15 @@ mechanisms and distinguish behavior conflicts from underspecified details.
 Both changes follow actual baseline failures, not hypothetical universal rules.
 36regressions and installed source/cache60files/c96709ca2d41760d PASS. Next two
 fresh same-input correctives, no hints/golden answers and no successful-case repeats.
+
+## 2026-10-12 — Product exit correction beta.17
+Beta.16 fresh feature corrective improved the reply from file-status-only to a
+recommended one-step rule and consequences, but omitted its rationale/next.
+Artifact itself remains coherent and accepted source unchanged. Core alone was
+insufficient in this bounded Product exit; beta.17 ties its finish instruction to
+the practical product judgment/reason/check/next, without a new stage or approval.
+36regressions/source-installed60files/5d8a3a9d23f096ed PASS. Beta.16 Wireframe finished at22:38:12UTC before17install at22:38:15UTC; the
+update then retired16cache, so post-update parity with its absent path failed.
+All run commands exited0; original16snapshot retained. No in-run correction or
+cache substitution occurred. Future updates wait until all active runs finish.
+One last planned fresh feature corrective, same inputs, no output hints.

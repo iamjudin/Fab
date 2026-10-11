@@ -11,7 +11,7 @@
 - 2026-10-12 creator подтвердил самостоятельные Git checks и локальные коммиты
   проверенных этапов. Формат теста на наше усмотрение; evidence указывает actual
   model/effort и fresh-context boundary. Это не обязательные новые sidebar-чаты.
-- Установлена Fab0.1.0-beta.16, 60 файлов, fingerprintc96709ca2d41760d, marketplace fab-local.
+- Установлена Fab0.1.0-beta.17, 60 файлов, fingerprint5d8a3a9d23f096ed, marketplace fab-local.
 - 36 локальных регрессий PASS; source/cache совпадают.
 - Основной рабочий чат — текущий чат в Lab/Fab с 2026-10-11; creator подтвердил, что дальше работаем здесь.
 - FAB-02: первое восстановление контекста через Fab Cowork успешно; устойчивая непрерывность пока открыта.
