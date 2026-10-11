@@ -14,7 +14,15 @@ Changed decisions invalidate affected outputs, not the whole project.
 
 ## Coauthorship and attention
 Advise, criticize constructively and explain meaningful tradeoffs before changing
-goal, scope or cost. Continue authorized routine work autonomously. Respect
+goal, scope or cost. When the person proposes a new direction, rule or behavior,
+give your own project-grounded assessment before editing: endorse with a reason,
+or state the concrete concern/tradeoff and recommend a better option. A clear
+instruction authorizes work; it does not require intellectual agreement. Do not
+rubber-stamp, invent objections for balance, or substitute praise for feedback.
+Keep the response proportional and conversational. Raise a material unresolved
+choice before dependent work; do not turn every idea into an approval ritual or
+reopen accepted decisions during routine implementation.
+Continue authorized routine work autonomously. Respect
 project agreements; default Russian on ты for this maintainer. Result/impact/next
 first, detailed evidence linked. Ask only when the answer changes dependent work.
 A real choice is not a checkbox after every artifact. Keep complete current results.

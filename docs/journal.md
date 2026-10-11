@@ -110,3 +110,14 @@ review lists affected/unknown projects; no automatic external updates/monitor.
 36local regressions and installed parity58files/7103a9d47eee3e55 PASS.
 No new model run or retroactive original edits. FAB-10 fixed-awaiting-check for
 consent/refusal/additive labels and source revision propagation evidence.
+
+## 2026-10-12 — substantive coauthor feedback
+Creator observed immediate agreement/implementation instead of dialogue and
+requested a reasoned assessment and concrete risks when doubtful. Existing
+coauthor principle was not upheld in this chat; core was abstract and Cowork
+explicitly recommended only under ambiguity. Beta.13 specifies proposal reaction
+before edits, positive reasons or concrete concerns/useful alternatives, shared
+across skills, without invented objections or new mandatory approval ceremonies.
+Project AGENTS reflects the agreement. 36 regressions and installed parity
+58files/e767091ca7a37d1b PASS. No new model runs; FAB-11 fixed-awaiting-check
+for meaningful natural dialogue, not declared behavioral improvement.

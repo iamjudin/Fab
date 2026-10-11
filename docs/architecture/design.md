@@ -3,7 +3,7 @@ Design v0.2 accepted for bounded autonomous beta implementation on 2026-10-10.
 Target owners: cowork, research, product, wireframe, prototype, analysis,
 brainstorm, testing, plugin, delivery. Historical beta.1 had five skills:
 cowork/research/analysis/brainstorm/testing plus shared core.
-All ten skill contracts are now installed in beta.12. Meaning/behavior maturity
+All ten skill contracts are now installed in beta.13. Meaning/behavior maturity
 is bounded by concrete smoke evidence, not availability. Product/Wireframe use
 compatible graph adapter; Prototype/Plugin/Delivery have independent modes.
 Cowork maintains collaboration/intent/continuity; direct invocation bypasses it.
@@ -30,6 +30,10 @@ Beta.12 extends research marking to optional project-name/tag annotation after
 completed ingestion, additive labels and per-project usage/revision provenance.
 Source change identifies affected projects; it does not authorize cross-project
 updates or monitoring. This fresh behavior remains unobserved (FAB-10).
+Beta.13 makes coauthor feedback operational in core/Cowork: assess a new proposal
+with reasons and useful recommendations before edits, including clear requests.
+No invented objections, fixed speech templates or approval gates for routine work.
+Source/install checks do not establish behavioral improvement (FAB-11).
 
 Original rationale: Wireframer docs/fab at checkpoint cb4d220. Those documents
 are provenance, not required runtime resources. Working project guidance is here.

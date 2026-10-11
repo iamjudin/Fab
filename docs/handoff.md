@@ -8,7 +8,7 @@
 
 - Source: /Users/iamjudin/Desktop/Lab/Fab, ветка codex/bootstrap-beta.
 - Private remote: https://github.com/iamjudin/Fab . Публичного выпуска/merge нет.
-- Установлена Fab0.1.0-beta.12, 58 файлов, fingerprint7103a9d47eee3e55, marketplace fab-local.
+- Установлена Fab0.1.0-beta.13, 58 файлов, fingerprinte767091ca7a37d1b, marketplace fab-local.
 - 36 локальных регрессий PASS; source/cache совпадают.
 - Основной рабочий чат — текущий чат в Lab/Fab с 2026-10-11; creator подтвердил, что дальше работаем здесь.
 - FAB-02: первое восстановление контекста через Fab Cowork успешно; устойчивая непрерывность пока открыта.
@@ -101,3 +101,15 @@ Top usage-блок хранит список проектов, располож�
 отличаются от ревизии research body. Legacy boundaries не угадываются.
 36 регрессий и beta.12 source/cache parity PASS. Fresh model behavior ещё не
 наблюдалось — FAB-10 reopened fixed-awaiting-check. Старые originals не менялись.
+
+## 2026-10-12 — обратная связь соавтора до изменений
+Creator указал на автоматическое согласие без собственной оценки. Предыдущий
+coauthor-договор существовал, но core оставался общим, Cowork явно требовал
+recommendation лишь при неоднозначности; в текущем чате принцип не был выдержан.
+Beta.13 конкретизирует реакцию на новую идею/rule/behavior: обоснованное согласие
+либо конкретное сомнение/tradeoff, полезная рекомендация до implementation.
+Это сквозной договор всех навыков, не обязательный Cowork gate. Значимые
+неразрешённые развилки обсуждаем до зависимых edits; уже принятые решения и
+рутину не открываем заново, риски/возражения ради формы не придумываем.
+36 регрессий и installed parity PASS; реальная следующая дискуссия — наблюдение
+для FAB-11, а не автоматически подтверждённый behavioral PASS.

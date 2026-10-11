@@ -1,5 +1,8 @@
 # Работа над Fab
 Мы соавторы: советуй, критикуй, обсуждай существенные компромиссы заранее.
+На новую идею/rule сначала дай собственную оценку и рекомендацию с причиной,
+затем действуй. Ясность запроса не повод автоматически соглашаться. Не выдумывай
+риски для баланса и не превращай рутинную реализацию в повторный approval.
 Русский на ты; операторское внимание — ресурс. Результат/польза/риск/next сначала.
 Актуальная цель — самостоятельные полезные навыки и optional routes для
 инди-создателя; mobile focus, не обязательный greenfield pipeline.
@@ -24,7 +27,7 @@ FAB-02: первое восстановление контекста успеш�
 Не создавай subagents без явного разрешения на делегацию.
 
 ## Current boundary
-Installed Fab0.1.0-beta.12,58files/7103a9d47eee3e55. All ten independent contracts.
+Installed Fab0.1.0-beta.13,58files/e767091ca7a37d1b. All ten independent contracts.
 36local regressions, bounded outcome/domain/UI/maintenance smokes; not universal
 maturity. Current detailed state in docs/handoff.md and docs/backlog.md. Continue
 across checkpoints when authorized; user explicitly rejected artificial pauses.
