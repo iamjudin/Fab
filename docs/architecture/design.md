@@ -3,7 +3,7 @@ Design v0.2 accepted for bounded autonomous beta implementation on 2026-10-10.
 Target owners: cowork, research, product, wireframe, prototype, analysis,
 brainstorm, testing, plugin, delivery. Historical beta.1 had five skills:
 cowork/research/analysis/brainstorm/testing plus shared core.
-All ten skill contracts are now installed in beta.13. Meaning/behavior maturity
+All ten skill contracts are now installed in beta.14. Meaning/behavior maturity
 is bounded by concrete smoke evidence, not availability. Product/Wireframe use
 compatible graph adapter; Prototype/Plugin/Delivery have independent modes.
 Cowork maintains collaboration/intent/continuity; direct invocation bypasses it.
@@ -15,7 +15,8 @@ Common Git culture is not a separate skill. No orchestrator/MCP/queue/hidden swa
 New repo with independent history, package plugins/fab, portable package-root plugin.json.
 Old repositories remain untouched source/recovery. Selected reusable knowledge
 pairs copied with hashes/limits; project reports/test products excluded.
-Mobile-specific expertise/gamification remain research gaps. Landlord excluded.
+Mobile method now has brief/full and conditional app routes; native/device
+behaviour and gamification remain separate evidence gaps. Landlord excluded.
 
 Shared artifact lifecycle covers task-owned scratch, verified retention and
 bounded cleanup. Plugin exports an equivalent self-contained rule to generated
@@ -34,6 +35,11 @@ Beta.13 makes coauthor feedback operational in core/Cowork: assess a new proposa
 with reasons and useful recommendations before edits, including clear requests.
 No invented objections, fixed speech templates or approval gates for routine work.
 Source/install checks do not establish behavioral improvement (FAB-11).
+Beta.14 retains platform-neutral intent/UC/rules/slice and adds conditional
+mobile structure/input/return evidence in Product/Wireframe/Prototype/Delivery.
+iOS/Android/mobile web share methods, not identical navigation/input/lifecycle.
+Desktop web can reuse meaning and adapt its surfaces/URL/browser conditions;
+its completeness isn't claimed by the mobile research. No extra mandatory stage.
 
 Original rationale: Wireframer docs/fab at checkpoint cb4d220. Those documents
 are provenance, not required runtime resources. Working project guidance is here.

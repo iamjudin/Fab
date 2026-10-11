@@ -3,3 +3,4 @@ __pycache__/
 .DS_Store
 experiments/**/raw/
 experiments/**/renders/
+experiments/workflow-tests/mobile-pipeline-20261012/candidate/

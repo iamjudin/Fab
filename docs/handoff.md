@@ -8,7 +8,7 @@
 
 - Source: /Users/iamjudin/Desktop/Lab/Fab, ветка codex/bootstrap-beta.
 - Private remote: https://github.com/iamjudin/Fab . Публичного выпуска/merge нет.
-- Установлена Fab0.1.0-beta.13, 58 файлов, fingerprinte767091ca7a37d1b, marketplace fab-local.
+- Установлена Fab0.1.0-beta.14, 60 файлов, fingerprint562f55c7ef31d731, marketplace fab-local.
 - 36 локальных регрессий PASS; source/cache совпадают.
 - Основной рабочий чат — текущий чат в Lab/Fab с 2026-10-11; creator подтвердил, что дальше работаем здесь.
 - FAB-02: первое восстановление контекста через Fab Cowork успешно; устойчивая непрерывность пока открыта.
@@ -113,3 +113,16 @@ Beta.13 конкретизирует реакцию на новую идею/rul
 рутину не открываем заново, риски/возражения ради формы не придумываем.
 36 регрессий и installed parity PASS; реальная следующая дискуссия — наблюдение
 для FAB-11, а не автоматически подтверждённый behavioral PASS.
+
+## 2026-10-12 — мобильное исследование и новый pipeline
+Creator предоставил мобильное исследование и запросил новый полный app-маршрут
+до рабочего прототипа, с возможностью позже поддержать web. Beta.14: mobile
+brief/full,49losslesssections, Product/Wireframe/Prototype/Delivery conditional links.
+Root primary-check Apple modality/tab-bars и Android back-stack; поиск не всегда
+команда, dedicated search surface возможна. 7 source binding unknowns сохранены.
+Общий смысл/правила остаются переносимыми, platform surfaces/evidence условные.
+36regressions/source-cache PASS. Исходник пока не помечен: вопрос creator задан
+после ingestion, ответ ожидается и не блокирует основную работу.
+Один fresh iOS-first travel-packing candidate в mobile-pipeline-20261012;
+test contract записан. Root UI/структурная проверка отдельно от author harness.
+Нативная реализация/OS/device и desktop web не объявляются проверенными.

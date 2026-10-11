@@ -17,6 +17,9 @@ readability actually requires it. Grey information, light blue local interaction
 blue navigation, green persistent mutation. These are diagram notation, not UI styling.
 Use familiar terms (modal sheet/navigation stack/tab bar). Proposed scope additions
 remain distinct. Creation/editing initial settings are checked together.
+For mobile application structure/input read [mobile structure](../../shared/methods/mobile-structure.md).
+Use the selected platform branch without prescribing tabs/dashboard or replacing
+the domain model; future web navigation/input gets its own platform assessment.
 Preflight semantics before geometry; JSON/preview/native Obsidian are distinct.
 When producing or revising a Canvas structure overview, run
 scripts/check_structure.py <canvas>

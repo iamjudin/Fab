@@ -15,5 +15,8 @@ Inspect chosen interactions with actual available UI/runtime tools; code/syntax
 can't substitute. If UI unavailable produce usable candidate/run instructions
 and report unverified interaction; don't invent an observation. Use project
 registry at ../product/scripts/product_workspace.py when it already applies.
+For mobile candidates read [mobile structure](../../shared/methods/mobile-structure.md):
+test selected viewport/input/return paths and distinguish browser observations
+from native keyboard, gestures, system Back and lifecycle evidence.
 Propagate changed behavior to Product/flows; stable IDs and scope persist.
 Stop at requested interactive check. Production delivery is a different owner.

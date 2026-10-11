@@ -9,6 +9,8 @@ Existing accepted inputs/working code suffice, no compulsory Jobs route.
 - Real feasibility/build/use: [realisation](references/realisation.md).
 - Version/channel/rollback/release: [release](references/release.md).
 Profile-specific requirements stay with Plugin or applicable platform guidance.
+For mobile platform checks read [mobile structure](../../shared/methods/mobile-structure.md)
+and current primary guidance for the active native/device question.
 Browser simulation isn't native/offline/billing proof. Critical technical unknown
 blocks the dependent guarantee, not every unrelated part of a project.
 Keep source decisions and code/checks linked where it changes impact. Complete

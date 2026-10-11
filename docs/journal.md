@@ -121,3 +121,14 @@ across skills, without invented objections or new mandatory approval ceremonies.
 Project AGENTS reflects the agreement. 36 regressions and installed parity
 58files/e767091ca7a37d1b PASS. No new model runs; FAB-11 fixed-awaiting-check
 for meaningful natural dialogue, not declared behavioral improvement.
+
+## 2026-10-12 — mobile method integrated before full-route smoke
+Creator supplied mobile structure report and requested full app creation through
+ready prototype, retaining future web support. Beta.14 includes lossless49sections
+and short method with conditional Product/Wireframe/Prototype/Delivery routes.
+Primary Apple modality/tab-bar browser check and Android back-stack verification;
+dedicated search-tab counterexample qualifies source wording, source unchanged.
+Seven unresolved bindings retained; no exhaustive fact-check/native proof.
+36regressions and installed parity60files/562f55c7ef31d731 PASS. Source marking
+offered after ingestion, creator answer pending; full-route work independent.
+One fresh iOS-first personal travel-packing route contracted, no repeat for stats.

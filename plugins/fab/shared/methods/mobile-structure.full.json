@@ -1,0 +1,311 @@
+{
+  "schemaVersion": 1,
+  "scope": "global-method",
+  "title": "Мобильная структура и взаимодействие для Fab",
+  "sourceSha256": "f72f0d703fb94d10dafa04dd9ccc2da2a43570b88c2f4701d32631daa258dc3d",
+  "sourceDate": null,
+  "ingestedAt": "2026-10-12",
+  "authority": "source-material-not-runtime-instructions",
+  "validation": {
+    "structure": "lossless sections; explicit exclusions",
+    "claims": "Source declares 7 unresolved citation bindings; platform guidance and author synthesis remain distinct. Partial primary verification recorded in registry/audit; not exhaustive fact-check or native evidence."
+  },
+  "retainedSha256": "f72f0d703fb94d10dafa04dd9ccc2da2a43570b88c2f4701d32631daa258dc3d",
+  "excluded": [],
+  "sections": [
+    {
+      "id": "R001",
+      "level": 2,
+      "title": "Содержание",
+      "text": "## Содержание\n\n- [[#Метод выбора структуры|Метод выбора структуры]]\n- [[#Переходы, Back и подтверждение результата|Переходы, Back и подтверждение результата]]\n- [[#Состояния, жизненный цикл и системные возможности|Состояния, жизненный цикл и системные возможности]]\n- [[#Ветки iOS, Android и мобильного веба|Ветки iOS, Android и мобильного веба]]\n- [[#Матрица решений и критерии достаточности|Матрица решений и критерии достаточности]]\n- [[#Что хранить в оперативной выжимке Fab|Что хранить в оперативной выжимке Fab]]\n- [[#Источники|Источники]]\n\n> Область исследования: как переводить уже определённые сценарии, правила продукта и технические ограничения в мобильную структуру и взаимодействие. Здесь не вводится новый продуктовый процесс и не повторяются JTBD, выбор среза, первый результат, монетизация, полнота поведения или технические зависимости.\n>\n> Проверка источников: 11 октября 2026. Приоритет — Apple Human Interface Guidelines, Android Developers, Material Design и W3C. Android Developers обычно публикует дату последнего обновления страницы; у части страниц Apple HIG содержимое и change log отдаются JavaScript и дата не всегда доступна в текстовом представлении, поэтому такие источники ниже помечены как «проверено», а не как имеющие достоверную дату публикации.\n\nДля различения силы доказательства используются четыре метки:\n\n- **[Платформа]** — поведение или ограничение, которое задаёт сама ОС/браузер.\n- **[Рекомендация]** — HIG, Material или официальная design guidance; это сильный default, но не закон продукта.\n- **[Стандарт]** — проверяемое требование стандарта, прежде всего WCAG для web.\n- **[Синтез]** — вывод этого исследования из нескольких источников. Это правило выбора для Fab, а не утверждение платформы.\n\nАктуального первичного эмпирического основания для универсальных тезисов вроде «tab bar всегда лучше dashboard», «не больше N уровней вложенности» или «модальная форма всегда конвертирует лучше отдельного экрана» в исследованных источниках не найдено. Поэтому такие пороги ниже не выдаются за доказанный факт.\n\n"
+    },
+    {
+      "id": "R002",
+      "level": 2,
+      "title": "Метод выбора структуры",
+      "text": "## Метод выбора структуры\n\nГлавная единица мобильного проектирования здесь — не экран и не компонент, а **контекст, который должен оставаться понятным после каждого перехода**.\n\nFab уже получает сценарии из предыдущих методов. Для мобильного решения из активного сценария достаточно извлечь четыре свойства:\n\n| Параметр | Описание |\n| --- | --- |\n| Контекст входа | Откуда человек приходит: запуск приложения, конкретный объект, глубокая ссылка, уведомление, виджет, возврат после прерывания. |\n| Владелец действия | Действие относится ко всему приложению, коллекции, конкретному объекту или временной операции над объектом. |\n| Результат перехода | Человек меняет раздел, углубляется в объект, временно отвлекается на подзадачу или совершает подтверждаемое изменение. |\n| Необходимость возврата | Что должно сохраниться после перехода: выбранная вкладка, позиция списка, фильтр, открытый объект, заполненный черновик, результат действия. |\n\nЭто не новый обязательный этап Fab: это четыре вопроса, которые можно задавать только тогда, когда активный вопрос касается структуры или interaction model.\n\n**[Синтез] Базовое правило:** выбирать нужно **наименьшую топологию поверхностей, которая сохраняет требуемый контекст и делает обратный путь однозначным**. Не добавлять top-level navigation из-за количества функций и не убирать её ради визуальной простоты, если человеку действительно приходится регулярно переключаться между независимыми контекстами.\n\n```mermaid\n%%{init: {\"flowchart\": {\"useMaxWidth\": false, \"nodeSpacing\": 20, \"rankSpacing\": 25}} }%%\nflowchart TD\n    A[Активный сценарий] --> B{Есть несколько устойчивых<br/>равноправных контекстов?}\n\n    B -- Нет --> C{Нужно углубляться<br/>в объект или иерархию?}\n    C -- Нет --> D[Один основной экран]\n    C -- Да --> E[Стек навигации]\n\n    B -- Да --> F{Человек регулярно<br/>возвращается между ними?}\n    F -- Да --> G[Навигация верхнего уровня]\n    F -- Нет --> H[Один основной контекст<br/>+ переходы по необходимости]\n\n    A --> I{Подзадача временная<br/>и принадлежит текущему контексту?}\n    I -- Да --> J{Короткая и локальная?}\n    J -- Да --> K[Нижняя панель или диалог]\n    J -- Нет --> L[Полноэкранное модальное окно<br/>или отдельный сценарий]\n\n    A --> M{Сам запуск — это<br/>обзор и выбор следующего действия?}\n    M -- Да --> N[Обзорная панель может быть оправдана]\n```\n\n"
+    },
+    {
+      "id": "R003",
+      "level": 3,
+      "title": "Один экран, стек, навигация верхнего уровня и обзорная панель",
+      "text": "### Один экран, стек, навигация верхнего уровня и обзорная панель\n\n**Один экран** — хороший исходный вариант, когда есть один главный контекст, а дополнительные состояния и действия не образуют самостоятельных мест, к которым человек постоянно возвращается. Это **[Синтез]**, а не требование HIG.\n\n**Стек навигации** нужен, когда структура естественно выражается как «коллекция → объект → более конкретная часть объекта». Android формализует навигационное состояние через back stack; его документация отдельно рассматривает сохранение состояния разных back stacks. [Back stack — Android Developers](https://developer.android.com/guide/navigation/backstack)\n\n**Навигация верхнего уровня** оправдана не количеством функций, а наличием **равноправных устойчивых destinations**. Apple определяет tab bar как средство перемещения между top-level sections и рекомендует сохранять навигационное состояние каждого раздела; tab bar должен представлять destinations, а не команды. [Tab bars — Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/tab-bars) Android guidance для compact layouts рекомендует navigation bar для трёх–пяти destinations сопоставимой важности. Это хороший Android-specific default, но не универсальный закон «любое приложение должно иметь 3–5 разделов». [Navigation bar — Android Developers](https://developer.android.com/develop/ui/compose/components/navigation-bar)\n\nОтсюда полезная граница:\n\n> **[Синтез] Панель вкладок или навигации отвечает на вопрос «где я работаю?», а не «что я сейчас сделаю?».**\n\nЕсли элемент инициирует Create, Search, Scan, Generate или Upload, это действие, а не top-level destination. Apple прямо предостерегает от использования tab bar для действий. [Tab bars — Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/tab-bars)\n\n**Dashboard** нужен только тогда, когда сама первая задача — **увидеть состояние нескольких разнородных областей и выбрать следующую работу**. Например: обзор проблем, последних результатов, статусов и shortcuts. Если dashboard лишь дублирует ссылки на четыре постоянных раздела, он создаёт дополнительный уровень навигации без новой функции. Это **[Синтез]**; ни Apple HIG, ни Android guidance не дают общего количественного порога, после которого «нужен dashboard».\n\nЧастота сама по себе тоже недостаточна. Редкий, но критический destination может требовать высокой видимости, а частое действие может оставаться локальным действием объекта. Поэтому для Fab полезно рассматривать три фактора вместе: **частота возврата × важность × независимость контекста**.\n\n"
+    },
+    {
+      "id": "R004",
+      "level": 3,
+      "title": "Поверхность должна соответствовать типу перехода",
+      "text": "### Поверхность должна соответствовать типу перехода\n\nУдобная модель:\n\n| Переход | Наиболее естественная поверхность | Главный компромисс |\n|---|---|---|\n| Внутрь уже выбранной сущности | стек навигации | Сохраняет контекст пути, но глубокая иерархия делает Back менее очевидным |\n| Между независимыми постоянными областями | панель вкладок или навигации, на больших окнах боковая панель навигации | Быстрое переключение ценой постоянных элементов навигации |\n| Короткая локальная подзадача | нижняя панель | Родительский контекст остаётся видимым, но места и глубины мало |\n| Важная временная многошаговая задача | полноэкранное модальное окно | Сильный фокус, но временно разрывает основной навигационный контекст |\n| Одно решение/подтверждение | диалог или предупреждение | Максимальная заметность ценой блокировки остального интерфейса |\n| Обзор состояния и выбор следующей работы | обзорная панель | Сильный обзор, но легко превратить в лишнюю «домашнюю страницу» |\n\nApple описывает modality как отдельный режим, временно блокирующий взаимодействие с родительским контекстом, и рекомендует её, когда нужно сфокусировать внимание на критической информации, узкой задаче, подтверждении изменения либо более погружённом временном процессе. Apple отдельно предупреждает, что modal presentation прерывает текущий контекст, а сложную full-screen modality стоит применять для действительно глубоких задач. [Modality — Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/modality)\n\nВ Android `AlertDialog` прямо предназначен, среди прочего, для подтверждения действий, небольшого ввода и выбора варианта; modal bottom sheet является отдельной временной поверхности с собственным dismissal lifecycle. Страница dialog обновлена 1 октября 2026, как и текущая Compose guidance по bottom sheets. [Dialog — Android Developers](https://developer.android.com/develop/ui/compose/components/dialog)\n\n**[Синтез]** Из этого не следует, что «форма = sheet». Решение зависит от отношения формы к родителю:\n\n- изменение локального свойства текущего объекта хорошо подходит sheet;\n- создание объекта из конкретной коллекции может быть modal flow, если после создания нужно вернуться в эту коллекцию;\n- создание — главный сценарий продукта и может продолжаться долго — отдельная/full-screen поверхность обычно честнее;\n- dialog не должен становиться мини-экраном с полноценной навигацией.\n\nApple также рекомендует не создавать «app inside an app» внутри modal flow и, если modal содержит subviews, сохранять понятный единый путь. [Modality — Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/modality)\n\n"
+    },
+    {
+      "id": "R005",
+      "level": 3,
+      "title": "Владение содержимым и настройками",
+      "text": "### Владение содержимым и настройками\n\nБольшая часть путаницы вложенности возникает не из-за глубины, а из-за неверного владельца команды.\n\n**[Синтез] Хорошее распределение:**\n\n| Владелец | Что обычно находится здесь |\n|---|---|\n| Коллекция или список | сортировка, фильтр, поиск, массовые действия и создание для этой коллекции |\n| Объект или его карточка | данные объекта, история объекта, действия над ним, настройки объекта |\n| Временная операция | поля и элементы управления, существующие только пока выполняется действие |\n| Приложение или учётная запись | глобальные настройки, учётная запись, поведение всего продукта |\n| Операционная система | разрешения и системные возможности, которыми управляет ОС |\n\nApple рекомендует помещать собственные in-app settings только там, где они действительно являются общими настройками, влияющими на experience в приложении; ряд системных разрешений и параметров остаётся собственностью Settings/ОС. [Settings — Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/settings)\n\nПоэтому:\n\n- настройка уведомлений **конкретной сущности** принадлежит сущности;\n- общий режим уведомлений — настройки приложения или учётной записи;\n- системное разрешение на notifications — ОС;\n- фильтр списка не должен прятаться в app settings;\n- изменение имени объекта не должно превращать его detail в глобальный Settings flow.\n\nЭто особенно полезная проверка против «смешивания ролей»: если control нельзя однозначно приписать владельцу, вероятно, граница surface ещё не определена.\n\n"
+    },
+    {
+      "id": "R006",
+      "level": 2,
+      "title": "Переходы, Back и подтверждение результата",
+      "text": "## Переходы, Back и подтверждение результата\n\nНа мобильном интерфейсе различие между **переходом**, **dismissal** и **rollback** важнее конкретной подписи кнопки.\n\n**[Синтез] Смысл команд должен быть таким:**\n\n| Команда | Семантическое обещание |\n|---|---|\n| **Back** | Вернуться к предыдущему навигационному состоянию |\n| **Close** | Закрыть временную поверхность |\n| **Cancel** | Отказаться от ещё не подтверждённой операции/изменений |\n| **Done** | Закончить текущую задачу с принятием текущего результата |\n| **Save** | Явно зафиксировать изменения |\n| **Закрытие жестом** | Жестовый эквивалент закрытия конкретной временной поверхности, но не скрытый «Delete» или «Cancel» |\n\nКлючевое следствие:\n\n> **Back не должен тайно означать Cancel, а Close — тайно означать Save.**\n\nИсключение возможно, если продукт использует понятную модель непрерывного autosave. Тогда Close может просто закрывать редактор, потому что отменять уже нечего; но rollback, если он поддерживается, должен иметь отдельную семантику. Это **[Синтез]**, а не универсальная норма платформы.\n\n"
+    },
+    {
+      "id": "R007",
+      "level": 3,
+      "title": "Back — это навигация, а не кнопка",
+      "text": "### Back — это навигация, а не кнопка\n\nНа Android back stack является частью модели навигации. В 2026 году особенно важно учитывать Predictive Back: Android показывает preview того, куда приведёт системный back gesture. Android описывает это как способ сделать результат Back предсказуемее; текущая setup guidance для predictive back обновлена 1 октября 2026. [Predictive back design — Android Developers](https://developer.android.com/design/ui/mobile/guides/patterns/predictive-back)\n\nЭто создаёт сильное правило для Delivery:\n\n**[Платформа] Android:** если продукт перехватывает Back нестандартной логикой, preview и реальный результат должны совпадать. Неожиданная отмена, переход в другую сущность или закрытие приложения после preview другой surface нарушают саму модель predictive back. [Predictive back design — Android Developers](https://developer.android.com/design/ui/mobile/guides/patterns/predictive-back)\n\nНа iOS modal surface обычно имеет явный dismissal и может поддерживать системный жест закрытия; Apple отдельно требует защитить пользовательский контент, если dismiss может привести к его потере. [Modality — Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/modality)\n\n**[Синтез]** Поэтому unsaved state нельзя защищать только кнопкой Cancel: нужно проверить **все** пути ухода — Back, swipe, Close, системный gesture, deep link, app interruption.\n\nДля mobile web browser Back принципиально принадлежит **session history браузера**. HTML Standard определяет `history.back()` как переход на −1 entry в session history, а `history.go(delta)` — как traversal по истории. Следовательно, превращать browser Back в произвольную business-команду особенно рискованно: следующий history entry может быть другой страницей приложения или вообще другим сайтом. [HTML Standard: Navigation and session history](https://html.spec.whatwg.org/multipage/nav-history-apis.html)\n\n"
+    },
+    {
+      "id": "R008",
+      "level": 3,
+      "title": "Создание, редактирование, карточка и история",
+      "text": "### Создание, редактирование, карточка и история\n\nЗдесь полезно отделить **состояние сущности** от **состояния операции над ней**.\n\n**[Синтез]**\n\n- Detail отвечает: «что это за объект сейчас?»\n- Edit отвечает: «какие изменения я сейчас предлагаю?»\n- History отвечает: «что происходило с этим объектом?»\n- Create отвечает: «какой новый объект я сейчас формирую?»\n- Initial setup отвечает: «какие данные нужны, чтобы созданная вещь впервые стала пригодна к сценарию?»\n\nПоэтому initial setup не надо автоматически отправлять в Settings. Если параметры обязательны, чтобы объект вообще выполнил свой основной сценарий, это продолжение сценария создания или первого использования, а не настройка приложения.\n\nИстория конкретного объекта естественно принадлежит detail этого объекта. Общая активность или история нескольких объектов — отдельная app-level область только тогда, когда человек действительно работает с ней как с самостоятельным контекстом.\n\nNested navigation допустима, когда дочерняя иерархия имеет понятного владельца. Плохой признак: человек открыл item → modal → ещё один список → detail другого объекта → editor и уже не может предсказать, что означает Back. **[Синтез] Критерий не «глубже трёх уровней», а «можно ли для каждого перехода назвать родительский контекст и следующий результат Back».**\n\n"
+    },
+    {
+      "id": "R009",
+      "level": 3,
+      "title": "Формы, клавиатура и фокус",
+      "text": "### Формы, клавиатура и фокус\n\nФорма на мобильном устройстве существует не только в макете: с появлением software keyboard доступное окно резко меняется. Android TextField APIs отдельно моделируют keyboard type и IME action, то есть клавиатура является частью interaction contract, а не внешним визуальным эффектом. [Configure text fields — Android Developers](https://developer.android.com/develop/ui/compose/text/user-input)\n\n**[Синтез] Для каждого важного input-flow нужно проверить:**\n\n- какой control получает initial focus;\n- нужен ли вообще automatic focus — он не всегда полезен, потому что немедленно открывает keyboard;\n- остаётся ли активное поле и его ошибка видимыми над keyboard;\n- куда ведёт «Далее» или «Готово» на keyboard;\n- можно ли закрыть keyboard, не потеряв введённое;\n- возвращается ли focus в разумное место после ошибки, dialog или sheet;\n- не закреплена ли CTA так, что keyboard перекрывает её или она перекрывает поле.\n\nВалидация должна соответствовать моменту, когда ошибка уже достоверно известна. Формат можно проверять локально; серверную уникальность нельзя честно объявлять ошибкой до ответа сервера. Для длинной формы summary errors полезен только вместе с локальной ошибкой у поля; иначе человек знает, что форма неверна, но не знает, где исправлять. Это **[Синтез]**.\n\nЛокализация и большие шрифты нельзя считать косметической проверкой после wireframe. Apple Dynamic Type позволяет пользователю менять предпочитаемый размер текста на уровне системы. [Typography — Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/typography) Для web WCAG 2.2 Level AA требует, чтобы текст можно было увеличить до 200% без потери контента или функции; Reflow требует сохранять содержание и функциональность при ширине, эквивалентной 320 CSS px, кроме действительно двумерных интерфейсов. [Web Content Accessibility Guidelines 2.2 — W3C](https://www.w3.org/TR/WCAG22/)\n\nСледовательно, **[Синтез]** макет, работающий только при одной длине английского label и одном font size, ещё не доказывает структуру поверхности. Особенно опасны fixed-height rows, segmented controls с длинными labels, кнопки с жёсткой шириной и формы, где подпись и поле рассчитывались как одна строка.\n\nДля области нажатия нельзя переносить одно число между платформами как универсальную физическую константу. Android accessibility guidance рекомендует минимум **48×48 dp** для touch target и отмечает, что стандартные Material components часто уже обеспечивают нужную область, тогда как custom controls надо проверять отдельно; страницы accessibility и Compose accessibility обновлены 22 сентября 2026. [Make apps more accessible — Android Developers](https://developer.android.com/guide/topics/ui/accessibility/apps)\n\nДля mobile web WCAG 2.2 AA задаёт минимум **24×24 CSS px** с перечисленными исключениями и правилами spacing; более сильный AAA criterion — 44×44 CSS px. Это критерии web conformance, а не «эквивалент Android 48 dp». [Web Content Accessibility Guidelines 2.2 — W3C](https://www.w3.org/TR/WCAG22/)\n\nФиксировать в оперативной выжимке Fab единый «44/48 px для всего mobile» поэтому неправильно.\n\n"
+    },
+    {
+      "id": "R010",
+      "level": 2,
+      "title": "Состояния, жизненный цикл и системные возможности",
+      "text": "## Состояния, жизненный цикл и системные возможности\n\nДоменные методы Fab уже решают, какие failure modes существуют. Мобильный слой должен ответить на другое: **где эти состояния проявляются, переживают ли переходы и прерывания и что происходит с вводом**.\n\n"
+    },
+    {
+      "id": "R011",
+      "level": 3,
+      "title": "Пустое состояние, загрузка, ошибка, отсутствие сети и неизвестный результат",
+      "text": "### Пустое состояние, загрузка, ошибка, отсутствие сети и неизвестный результат\n\n**Empty** применим только там, где отсутствие объектов — корректное состояние данной surface. «Object not found» на detail — не empty list.\n\n**Loading** нужен только там, где интерфейс реально ждёт результат. Не стоит вводить фиктивный loading state ради полноты каталога экранов.\n\n**Failure** должен принадлежать минимальному контексту, который сломался. Ошибка загрузки одного блока dashboard не обязана заменять весь dashboard full-screen error.\n\n**Offline** применим, когда сценарий зависит от сети и отсутствие связи меняет возможное действие. Полностью локальной операции отдельный offline state не нужен.\n\n**Unknown result** нужен после операции, где запрос мог уйти, но клиент не знает, был ли результат зафиксирован. В мобильном UI важны два свойства: не терять исходный ввод и не превращать Retry в потенциально дублирующую разрушительную или неидемпотентную операцию. Бизнес-способ reconciliation остаётся за существующими доменными методами Fab.\n\nЭто всё **[Синтез]**.\n\nПолезная мобильная проверка:\n\n> Если пользователь в любом редактирования или асинхронной операции состоянии нажмёт Home, перейдёт по notification, сменит окно или процесс будет восстановлен позднее — понятно ли, какой контекст и какие локальные данные должны вернуться?\n\nAndroid navigation documentation прямо предоставляет механизмы сохранения/восстановления back-stack state, включая независимые navigation stacks. [Back stack — Android Developers](https://developer.android.com/guide/navigation/backstack) Это не означает «сохранять всё», но показывает, что восстановление UI state — часть платформенной модели, а не edge case.\n\n**[Синтез] Минимум для draft:** всё, что пользователь ввёл и ещё не может безопасно восстановить из committed model, нельзя считать временным только потому, что surface пока открыта.\n\n"
+    },
+    {
+      "id": "R012",
+      "level": 3,
+      "title": "Разрешения",
+      "text": "### Разрешения\n\nЗдесь платформа сильнее большинства дизайн-систем.\n\nAndroid требует runtime permission для соответствующих protected capabilities и рекомендует запрашивать его **в контексте, когда пользователь начинает использовать требующую permission функцию**, давать возможность отказаться от explanatory flow и graceful degradation после отказа. Android также прямо запрещает рассчитывать на конкретное системное поведение permission groups; системный permission dialog нельзя произвольно кастомизировать. [Request runtime permissions — Android Developers](https://developer.android.com/training/permissions/requesting)\n\nЭто даёт хороший общий принцип и для iOS и мобильного веба:\n\n> **[Синтез] Permission — не onboarding slide. Это ветвление конкретного сценария, где уже понятна ценность запрашиваемого доступа.**\n\nОтказ должен приводить либо к альтернативному сценарию, либо к локальному объяснению недоступности конкретной функции — а не обязательно блокировать всё приложение. Android guidance прямо рекомендует минимизировать loss of functionality после denial. [Request runtime permissions — Android Developers](https://developer.android.com/training/permissions/requesting)\n\nНа web детали permission UI намеренно оставлены user agent: W3C Permissions specification говорит, что браузер сам определяет UI и интерпретацию пользовательского намерения. Это важная граница для прототипирования: нарисовать собственный fake permission dialog можно для объяснения flow, но он не доказывает реальный browser prompt. [Permissions — W3C](https://www.w3.org/TR/permissions/)\n\n"
+    },
+    {
+      "id": "R013",
+      "level": 3,
+      "title": "Уведомления",
+      "text": "### Уведомления\n\nNotification имеет смысл, когда продукту нужно **вернуть внимание человека вне текущей сессии** или дать актуальную информацию, пока приложение не находится на foreground. Apple описывает локальные и push-уведомления именно как способ доставлять актуальное и значимое содержимое, когда приложение находится в фоновом или неактивном режиме. [Notifications — Apple Developer](https://developer.apple.com/notifications/)\n\nНа Android 13+ для нового install notifications выключены до предоставления `POST_NOTIFICATIONS`; текущая документация этого flow обновлена 1 октября 2026. [Notification runtime permission — Android Developers](https://developer.android.com/develop/ui/compose/notifications/notification-permission)\n\n**[Синтез]** Поэтому notification — не просто message template. Нужно определить:\n\n1. событие, заслуживающее внешнего interruption;\n2. destination при tap;\n3. доступность этого destination из cold start;\n4. поведение при уже открытом объекте;\n5. состояние при отозванном или отклонённом разрешении.\n\nWeb Notifications API тоже имеет permission state; стандарт не гарантирует одинаковое представление и возможности notifications во всех user agents. [Notifications API Standard — WHATWG](https://notifications.spec.whatwg.org/)\n\n"
+    },
+    {
+      "id": "R014",
+      "level": 3,
+      "title": "Виджеты",
+      "text": "### Виджеты\n\nWidget оправдан, когда ценность появляется **до открытия приложения**: glanceable state либо короткий вход в часто используемое действие.\n\nApple HIG характеризует widget как способ дать быстрый доступ к essential information и focused interactions в дополнительных системных контекстах. [Widgets — Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/widgets) Android также описывает information widgets как surfaces для crucial information, меняющейся во времени, а tap обычно ведёт к соответствующему detail приложения. [App widgets overview — Android Developers](https://developer.android.com/develop/ui/views/appwidgets/overview)\n\n**[Синтез]** Добавлять widget только ради «ещё одной поверхности» нет смысла. Нужен сценарий, который объективно сокращается за счёт контекста домашнего экрана или экрана блокировки.\n\n"
+    },
+    {
+      "id": "R015",
+      "level": 3,
+      "title": "Темы и многооконный режим",
+      "text": "### Темы и многооконный режим\n\nТемы нужно считать не skin, а дополнительным состоянием UI: contrast, system appearance, изображения, custom surfaces и системные bars могут измениться.\n\nAndroid adaptive navigation умеет изменять тип navigation UI во время работы в зависимости от window size — например, compact layout использует navigation bar, а более просторный может перейти к rail. Документация adaptive navigation обновлена 22 сентября 2026. [Build adaptive navigation — Android Developers](https://developer.android.com/develop/ui/compose/layouts/adaptive/build-adaptive-navigation)\n\nЭто важнее термина «tablet»: **[Синтез] layout должен зависеть от доступного окна и контекста, а не от предположения, что устройство всегда полноэкранный телефон.**\n\nApple tab-bar guidance аналогично различает presentation между iPhone и iPadOS и допускает переход к sidebar-подобному представлению на подходящих устройствах; текущий change log страницы содержит изменения 2025–2026 годов, что само по себе показывает опасность замораживать визуальную форму компонента в вечное правило Fab. [Tab bars — Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/tab-bars)\n\n"
+    },
+    {
+      "id": "R016",
+      "level": 2,
+      "title": "Ветки iOS, Android и мобильного веба",
+      "text": "## Ветки iOS, Android и мобильного веба\n\nОбщая information architecture может быть общей; **механика системного перехода должна ветвиться там, где её владельцем становится платформа**.\n\n"
+    },
+    {
+      "id": "R017",
+      "level": 3,
+      "title": "Общая основа",
+      "text": "### Общая основа\n\nБез отдельного чтения platform guide допустимо использовать следующие инварианты как **[Синтез]**:\n\n- top-level navigation содержит места, а не команды;\n- peer destinations должны быть действительно равноправны;\n- drill-down естественно представлять stack;\n- modal surface должна иметь временного владельца и понятный путь возврата;\n- settings следует размещать на уровне сущности, которую они изменяют;\n- Back, dismissal и rollback не являются синонимами;\n- draft и navigation context должны переживать ожидаемые мобильные interruptions настолько, насколько это необходимо сценарию;\n- загрузка, ошибка и пустое состояние принадлежат минимальной affected surface;\n- длинные тексты, увеличенные шрифты и экранная клавиатура могут изменить layout, поэтому проверяются до визуального polish;\n- системная capability добавляется только при наличии сценария, который ею реально улучшается.\n\n"
+    },
+    {
+      "id": "R018",
+      "level": 3,
+      "title": "Когда обязательно открыть рекомендации iOS",
+      "text": "### Когда обязательно открыть рекомендации iOS\n\nЧитать актуальную Apple guidance, если выполняется хотя бы один trigger:\n\n**Есть несколько top-level contexts** → [Tab bars — Apple HIG](https://developer.apple.com/design/human-interface-guidelines/tab-bars). Tab bar — навигация между top-level sections; состояние разделов должно сохраняться.\n\n**Есть модальное создание, редактирование или подтверждение** → [Modality — Apple HIG](https://developer.apple.com/design/human-interface-guidelines/modality). Особенно если разрешён swipe-to-dismiss или возможна потеря введённого.\n\n**Есть глобальные или системные настройки** → [Settings — Apple HIG](https://developer.apple.com/design/human-interface-guidelines/settings). Нужно решить, что принадлежит приложению, а что системному Settings.\n\n**Есть пользовательский или увеличенный текст** → [Typography — Apple HIG](https://developer.apple.com/design/human-interface-guidelines/typography) и [Accessibility — Apple Developer](https://developer.apple.com/documentation/accessibility). Dynamic Type является системным механизмом изменения размера текста.\n\n**Есть уведомления, виджеты или разрешения** → [Notifications — Apple HIG](https://developer.apple.com/design/human-interface-guidelines/notifications), [Widgets — Apple HIG](https://developer.apple.com/design/human-interface-guidelines/widgets), [Privacy — Apple HIG](https://developer.apple.com/design/human-interface-guidelines/privacy).\n\n**Есть экран, который может жить на iPad или в изменяемом окне** → проверять текущие рекомендации по компоновке и управлению окнами вместо фиксированного «iPad layout».\n\n"
+    },
+    {
+      "id": "R019",
+      "level": 3,
+      "title": "Когда обязательно открыть рекомендации Android",
+      "text": "### Когда обязательно открыть рекомендации Android\n\n**Есть любой нестандартный Back flow** → [Principles of navigation](https://developer.android.com/guide/navigation/principles), [Back stack](https://developer.android.com/guide/navigation/backstack) и [Predictive back gesture](https://developer.android.com/guide/navigation/custom-back/predictive-back-gesture). Android navigation overview был обновлён 23 сентября 2026, predictive-back implementation guidance — 1 октября 2026. [Navigation overview — Android Developers](https://developer.android.com/guide/navigation)\n\n**Есть несколько top-level destinations** → [Navigation bar](https://developer.android.com/develop/ui/compose/components/navigation-bar). В compact layout официальный default — 3–5 destinations сопоставимой важности.\n\n**Есть планшеты, foldables или resizing** → [Build adaptive navigation](https://developer.android.com/develop/ui/compose/layouts/adaptive/build-adaptive-navigation), обновлено 22 сентября 2026.\n\n**Есть runtime capability** → [Request runtime permissions](https://developer.android.com/training/permissions/requesting). Не фиксировать permission flow по старым версиям Android.\n\n**Есть push-уведомления или локальные уведомления** → [Notification runtime permission](https://developer.android.com/develop/ui/compose/notifications/notification-permission), обновлено 1 октября 2026.\n\n**Есть custom interactive controls** → [Make apps more accessible](https://developer.android.com/guide/topics/ui/accessibility/apps) и [Accessibility API defaults in Compose](https://developer.android.com/develop/ui/compose/accessibility/api-defaults), обе проверенные страницы обновлены 22 сентября 2026.\n\n"
+    },
+    {
+      "id": "R020",
+      "level": 3,
+      "title": "Когда mobile web становится отдельным случаем",
+      "text": "### Когда mobile web становится отдельным случаем\n\nВетка обязательна, когда navigation state представлена URL и истории браузера, интерфейс должен работать как browser content или native-like prototype планируется использовать как доказательство поведения.\n\nКлючевые отличия:\n\n| Параметр | Описание |\n| --- | --- |\n| Browser Back принадлежит history | , а не приложению. [HTML Standard: Navigation and session history](https://html.spec.whatwg.org/multipage/nav-history-apis.html) |\n| Permissions принадлежат user agent | , включая представление prompt. [Permissions — W3C](https://www.w3.org/TR/permissions/) |\n| Accessibility имеет свои нормативные критерии. | WCAG 2.2 — W3C Recommendation от 12 декабря 2024; она прямо применима к mobile web. [Web Content Accessibility Guidelines 2.2 — W3C](https://www.w3.org/TR/WCAG22/) |\n\nМинимум для responsive mobile web, если целью является WCAG 2.2 AA:\n\n- текст до 200% без потери содержимого или функциональности; [Web Content Accessibility Guidelines 2.2 — W3C](https://www.w3.org/TR/WCAG22/)\n- reflow при эквиваленте 320 CSS px, кроме intrinsically two-dimensional content; [Web Content Accessibility Guidelines 2.2 — W3C](https://www.w3.org/TR/WCAG22/)\n- pointer target 24×24 CSS px либо предусмотренное стандартом исключение/spacing; [Web Content Accessibility Guidelines 2.2 — W3C](https://www.w3.org/TR/WCAG22/)\n- focused component не должен быть полностью закрыт author-created content. [Web Content Accessibility Guidelines 2.2 — W3C](https://www.w3.org/TR/WCAG22/)\n\nПоследний пункт особенно релевантен sticky footer, cookie banner, virtual keyboard-like overlays и modal layers.\n\n"
+    },
+    {
+      "id": "R021",
+      "level": 3,
+      "title": "Что не может доказать браузерный прототип",
+      "text": "### Что не может доказать браузерный прототип\n\nBrowser prototype отлично проверяет **структуру сценария**, labels, relative hierarchy, количество переходов, основные пустые состояния и состояния ошибок, responsive composition и длинные тексты.\n\nНо **[Синтез]** он не является доказательством native behavior для:\n\n- Android system Back и Predictive Back;\n- iOS нативных жестов навигации и закрытия;\n- реальных system permission sheets, denial и revocation;\n- native доставки уведомлений, cold-start entry и lock-screen context;\n- виджетов домашнего экрана и экрана блокировки;\n- native клавиатуры и IME, autofill и реальные реакции области просмотра и отступов;\n- Dynamic Type и Android system font scaling в реальной native hierarchy;\n- семантики VoiceOver и TalkBack, которые зависят от итоговых native controls;\n- активного режима, фонового режима и восстановления поведения;\n- реальные touch mechanics и gestures;\n- изменения размеров окна, положения складного устройства и многооконного режима;\n- hardware-dependent capabilities.\n\nДля mobile-web продукта browser prototype может быть гораздо ближе к production, но даже тогда необходимо тестировать конкретные target browsers и реальные mobile сценарии области просмотра, клавиатуры и разрешений.\n\n"
+    },
+    {
+      "id": "R022",
+      "level": 2,
+      "title": "Матрица решений и критерии достаточности",
+      "text": "## Матрица решений и критерии достаточности\n\n"
+    },
+    {
+      "id": "R023",
+      "level": 3,
+      "title": "Матрица «контекст → вариант → компромисс → источник → граница»",
+      "text": "### Матрица «контекст → вариант → компромисс → источник → граница»\n\n"
+    },
+    {
+      "id": "R024",
+      "level": 4,
+      "title": "1. Один доминирующий сценарий без равноправных разделов",
+      "text": "#### 1. Один доминирующий сценарий без равноправных разделов\n\n**Варианты:** Один основной экран; стек только для карточки объекта\n\n**Главный компромисс:** Минимум постоянных элементов интерфейса, но нельзя прятать действительно независимые контексты\n\n**Источник:** **[Синтез]**\n\n**Граница применения:** Не выводить из «MVP должен иметь мало экранов»\n\n"
+    },
+    {
+      "id": "R025",
+      "level": 4,
+      "title": "2. Несколько устойчивых равноправных контекстов, между которыми регулярно возвращаются",
+      "text": "#### 2. Несколько устойчивых равноправных контекстов, между которыми регулярно возвращаются\n\n**Варианты:** Панель вкладок iOS; панель навигации Android; адаптивная боковая панель\n\n**Главный компромисс:** Быстрое переключение и сохранение состояния против постоянных элементов интерфейса\n\n**Источник:** [Apple Tab bars](https://developer.apple.com/design/human-interface-guidelines/tab-bars), [Android Navigation bar](https://developer.android.com/develop/ui/compose/components/navigation-bar)\n\n**Граница применения:** Android 3–5 — рекомендация платформы для компактной панели навигации, а не универсальный межплатформенный закон\n\n"
+    },
+    {
+      "id": "R026",
+      "level": 4,
+      "title": "3. Запуск нужен для обзора разнородного состояния и выбора работы",
+      "text": "#### 3. Запуск нужен для обзора разнородного состояния и выбора работы\n\n**Варианты:** Обзорная панель\n\n**Главный компромисс:** Обзор против лишнего промежуточного слоя\n\n**Источник:** **[Синтез]**\n\n**Граница применения:** Не использовать просто из-за большого количества функций\n\n"
+    },
+    {
+      "id": "R027",
+      "level": 4,
+      "title": "4. Коллекция → объект → часть объекта",
+      "text": "#### 4. Коллекция → объект → часть объекта\n\n**Варианты:** Стек навигации\n\n**Главный компромисс:** Понятная иерархия против глубокого пути возврата\n\n**Источник:** [Android Back stack](https://developer.android.com/guide/navigation/backstack)\n\n**Граница применения:** Глубина не имеет универсального численного лимита\n\n"
+    },
+    {
+      "id": "R028",
+      "level": 4,
+      "title": "5. Короткая локальная задача поверх текущего контекста",
+      "text": "#### 5. Короткая локальная задача поверх текущего контекста\n\n**Варианты:** Нижняя панель\n\n**Главный компромисс:** Контекст виден, но ограничены пространство и сложность\n\n**Источник:** [Apple Modality](https://developer.apple.com/design/human-interface-guidelines/modality), [Material Bottom sheets](https://m3.material.io/components/bottom-sheets/overview)\n\n**Граница применения:** Не превращать нижнюю панель в независимое многоуровневое мини-приложение\n\n"
+    },
+    {
+      "id": "R029",
+      "level": 4,
+      "title": "6. Временная, но глубокая или погружающая задача",
+      "text": "#### 6. Временная, но глубокая или погружающая задача\n\n**Варианты:** Полноэкранное модальное окно либо отдельный сценарий\n\n**Главный компромисс:** Фокус против разрыва навигационного контекста\n\n**Источник:** [Apple Modality](https://developer.apple.com/design/human-interface-guidelines/modality)\n\n**Граница применения:** Если раздел постоянный, стек может быть честнее модальности\n\n"
+    },
+    {
+      "id": "R030",
+      "level": 4,
+      "title": "7. Короткое решение, блокирующее остальной интерфейс",
+      "text": "#### 7. Короткое решение, блокирующее остальной интерфейс\n\n**Варианты:** Диалог или предупреждение\n\n**Главный компромисс:** Ясное решение против прерывания\n\n**Источник:** [Android Dialog](https://developer.android.com/develop/ui/compose/components/dialog)\n\n**Граница применения:** Не центр навигации; сложные формы требуют другой поверхности\n\n"
+    },
+    {
+      "id": "R031",
+      "level": 4,
+      "title": "8. Действия и настройки конкретного объекта",
+      "text": "#### 8. Действия и настройки конкретного объекта\n\n**Варианты:** Карточка объекта или локальная нижняя панель\n\n**Главный компромисс:** Близость к объекту против перегруженности\n\n**Источник:** **[Синтез]**\n\n**Граница применения:** Не выносить в настройки приложения только ради «чистой карточки»\n\n"
+    },
+    {
+      "id": "R032",
+      "level": 4,
+      "title": "9. Глобальная настройка",
+      "text": "#### 9. Глобальная настройка\n\n**Варианты:** Настройки приложения\n\n**Главный компромисс:** Централизация против удалённости от конкретного сценария\n\n**Источник:** [Apple Settings](https://developer.apple.com/design/human-interface-guidelines/settings)\n\n**Граница применения:** Если затрагивает один объект, это уже не глобальная настройка\n\n"
+    },
+    {
+      "id": "R033",
+      "level": 4,
+      "title": "10. Разрешение",
+      "text": "#### 10. Разрешение\n\n**Варианты:** Контекстная ветка сценария и системный запрос\n\n**Главный компромисс:** Понятная причина против прерывания\n\n**Источник:** [Android permissions](https://developer.android.com/training/permissions/requesting), [W3C Permissions](https://www.w3.org/TR/permissions/)\n\n**Граница применения:** Системным запросом управляет платформа или браузер\n\n"
+    },
+    {
+      "id": "R034",
+      "level": 4,
+      "title": "11. Back в Android",
+      "text": "#### 11. Back в Android\n\n**Варианты:** Возврат по стеку, закрытие модального окна или выход из приложения в зависимости от состояния\n\n**Главный компромисс:** Согласованность против нестандартной навигации\n\n**Источник:** [Predictive Back](https://developer.android.com/guide/navigation/custom-back/predictive-back-gesture)\n\n**Граница применения:** Нестандартный перехват требует проверки на уровне платформы\n\n"
+    },
+    {
+      "id": "R035",
+      "level": 4,
+      "title": "12. Back в мобильном вебе",
+      "text": "#### 12. Back в мобильном вебе\n\n**Варианты:** Переход по истории сеанса\n\n**Главный компромисс:** История браузера и возможность делиться ссылками против ограниченного контроля приложения\n\n**Источник:** [HTML Standard — Navigation and session history](https://html.spec.whatwg.org/multipage/nav-history-apis.html)\n\n**Граница применения:** Нельзя считать Back эквивалентом Cancel\n\n"
+    },
+    {
+      "id": "R036",
+      "level": 4,
+      "title": "13. Разные размеры окна",
+      "text": "#### 13. Разные размеры окна\n\n**Варианты:** Адаптация навигации и компоновки\n\n**Главный компромисс:** Больше компоновок для проверки против лучшего использования пространства\n\n**Источник:** [Android adaptive navigation](https://developer.android.com/develop/ui/compose/layouts/adaptive/build-adaptive-navigation)\n\n**Граница применения:** Решать по окну, а не только по типу устройства\n\n"
+    },
+    {
+      "id": "R037",
+      "level": 4,
+      "title": "14. Частый быстрый обзор или короткий путь вне приложения",
+      "text": "#### 14. Частый быстрый обзор или короткий путь вне приложения\n\n**Варианты:** Виджет\n\n**Главный компромисс:** Сокращённый сценарий против ещё одной поверхности с собственным жизненным циклом и системным поведением\n\n**Источник:** [Apple Widgets](https://developer.apple.com/design/human-interface-guidelines/widgets), [Android App widgets](https://developer.android.com/develop/ui/views/appwidgets/overview)\n\n**Граница применения:** Нужна самостоятельная ценность до открытия приложения\n\n\n"
+    },
+    {
+      "id": "R038",
+      "level": 3,
+      "title": "Проверки структуры",
+      "text": "### Проверки структуры\n\nСтруктура достаточно определена, когда для каждого важного сценария можно пройти граф и ответить:\n\n- откуда он может начаться;\n- какая surface является текущим context owner;\n- где открывается новый navigation context, а где временная операция;\n- что сделает Back;\n- что сделает dismissal;\n- какой state должен сохраниться;\n- куда приводит глубокая ссылка или уведомление;\n- возвращается ли человек в тот же объект/позицию списка или вкладку.\n\nОсобенно полезный structural invariant:\n\n> **После каждого перехода можно одним предложением сказать: «я всё ещё работаю с X» или «я перешёл в Y».**\n\nЕсли ответ требует «это вроде modal, но внутри уже отдельный раздел приложения», surface boundary, вероятно, неверна.\n\n"
+    },
+    {
+      "id": "R039",
+      "level": 3,
+      "title": "Проверки сценария",
+      "text": "### Проверки сценария\n\nДля создания и редактирования и asynchronous flows проходить как минимум альтернативные выходы:\n\n`success → cancel → validation failure → remote failure → offline → interruption → retry → unknown result`.\n\nНе потому, что каждый flow обязан иметь все эти состояния, а чтобы явно отметить **неприменимые**. Это не новая продуктовая completeness method; это mobile interaction check над уже известным поведением.\n\nДля destructive или irreversible action отдельно проверить:\n\n- Back;\n- gesture dismiss;\n- двойное нажатие или повторная отправка;\n- прерывание уведомлением или глубокой ссылкой;\n- повторное открытие после неизвестного результата.\n\n"
+    },
+    {
+      "id": "R040",
+      "level": 3,
+      "title": "Проверки видимого интерфейса",
+      "text": "### Проверки видимого интерфейса\n\nДо того как визуальный UI можно считать доказанным:\n\n**Текст:** длинные реальные labels, длинные translated values, multiline, largest relevant Dynamic Type или системное масштабирование шрифтов.\n\n**Ввод:** открытая клавиатура, переходы фокуса, ошибка после валидации, многострочное поле с длинным вводом, поля, чувствительные к автозаполнению.\n\n**Нажатия:** реальные hit regions, а не только размер нарисованной иконки. Android default — ориентироваться на 48×48 dp recommendation; web AA — на WCAG 2.5.8 и его исключения. [Make apps more accessible — Android Developers](https://developer.android.com/guide/topics/ui/accessibility/apps)\n\n**Доступность:** осмысленная семантика, порядок и описания. Android предупреждает, что даже при доступных defaults Material и Compose разработчик должен проверить, что semantics соответствуют реальной функции custom UI. [Accessibility API defaults in Compose — Android Developers](https://developer.android.com/develop/ui/compose/accessibility/api-defaults)\n\n**Адаптивность:** узкое и широкое окно, поворот и изменение размеров там, где поддерживается.\n\n"
+    },
+    {
+      "id": "R041",
+      "level": 3,
+      "title": "Что обязательно вынести на настоящее устройство",
+      "text": "### Что обязательно вынести на настоящее устройство\n\nРеальное устройство требуется, когда вопрос касается не расположения прямоугольников, а **чувства и поведения платформы**:\n\n- системного Back и Predictive Back;\n- навигации и закрытия жестом;\n- реального software keyboard;\n- screen reader;\n- large system text;\n- permissions;\n- notifications;\n- widgets;\n- прерывание при смене активного и фонового режима;\n- тёмного и светлого системного оформления;\n- touch reach and gesture conflict;\n- многооконного режима, складных устройств и окон iPad;\n- performance-sensitive loading transitions.\n\nСимулятор или эмулятор полезен для многих из этих проверок, но тоже не является доказательством реальных нажатий, окружения при прерываниях и интеграции с оборудованием или контекста использования уведомлений и виджетов.\n\n"
+    },
+    {
+      "id": "R042",
+      "level": 3,
+      "title": "Критерий остановки",
+      "text": "### Критерий остановки\n\nИсследование **не должно продолжаться до описания всего приложения**.\n\nДля перехода к следующему решению информации достаточно, когда выполнены пять условий:\n\n1. Для активного сценария выбран owner и тип основной surface.\n2. Все переходы между постоянными и временными contexts имеют определённую семантику.\n3. Back / Close / Cancel / commit не дают противоречащих результатов.\n4. Неопределённые platform-specific вопросы либо разрешены источником, либо явно превращены в device-test.\n5. Оставшаяся неопределённость уже не может изменить выбранную topology — только component choice, visual detail или implementation.\n\nЭто **[Синтез]** и, вероятно, наиболее важный stop-rule для Fab: прекращать чтение HIG, когда следующая продуктовая/структурная развилка уже определена; возвращаться к документации только при появлении platform trigger.\n\n"
+    },
+    {
+      "id": "R043",
+      "level": 2,
+      "title": "Что хранить в оперативной выжимке Fab",
+      "text": "## Что хранить в оперативной выжимке Fab\n\nВ short operational layer стоит помещать только правила с высокой переносимостью и низкой вероятностью устаревания.\n\n**Допустимо в оперативной выжимке:**\n\n- выбирай минимальную topology, сохраняющую контекст важных сценариев;\n- top-level navigation — для постоянных peer destinations, не для actions;\n- stack — для drill-down;\n- modal — для временной задачи с определённым родителем;\n- dialog — для короткого blocking decision, не для полноценной навигации;\n- controls и settings принадлежат минимальной сущности, которую изменяют;\n- Back = navigation, Cancel = rollback, Close = dismissal; не смешивать эти смыслы;\n- сохраняй пользовательский draft и требуемый navigation context при mobile interruptions;\n- пустое состояние, загрузку и ошибку размещай на минимальной affected surface;\n- при permission denial сценарий должен либо деградировать локально, либо ясно объяснить недоступную функцию;\n- проверяй keyboard, длинные и локализованные тексты, системное масштабирование текста, области нажатия, focus и accessibility;\n- browser prototype не доказывает native system behaviour;\n- platform guidance — сильный default там, где платформе принадлежит поведение, но не доказательство правильности product topology.\n\n**Только в полном исследовании / читать при соответствующем условии:**\n\n- Android «3–5 navigation destinations»;\n- Android 48 dp touch-target recommendation;\n- конкретные WCAG 24/44 CSS px criteria;\n- текущая реализация Predictive Back и Android-version differences;\n- текущее поведение разрешений и уведомлений конкретной OS version;\n- визуальная форма актуального Apple tab bar / Liquid Glass и её platform variants;\n- конкретные API нижних панелей и диалогов;\n- особенности адаптивных окон iPadOS и Android;\n- widget restrictions;\n- точные implementation details state restoration;\n- browser-specific поведение разрешений, уведомлений и PWA.\n\nПричина разделения принципиальна: первая группа описывает **семантику**, вторая — **текущую реализацию платформы**. Последняя меняется; например, страницы Android о навигации, Predictive Back и уведомлениях обновлялись буквально в сентябре–октябре 2026, а Apple tab-bar guidance имела существенные изменения в 2025–2026 годах. [Navigation overview — Android Developers](https://developer.android.com/guide/navigation)\n\nИменно поэтому Fab не должен хранить Material и HIG как набор вечных заповедей. Оперативная выжимка должна отвечать **«какой вопрос задать и когда открыть первоисточник»**, а не пытаться заморозить текущую версию платформы.\n\n"
+    },
+    {
+      "id": "R044",
+      "level": 2,
+      "title": "Источники",
+      "text": "## Источники\n\n> Статус источников: markers_scanned — 96; verified_title_links_inserted — 89; unresolved — 7. Сохранены 68 исходных ссылок с названиями и 36 записей в группах источников. Неразрешённые маркеры удалены; утверждения сохранены без восстановленной ссылки. Источниковый слой неполон: заметка структурно очищена, но не является заново проверенным исследованием.\n\n\n"
+    },
+    {
+      "id": "R045",
+      "level": 3,
+      "title": "Структура и навигация",
+      "text": "### Структура и навигация\n\n- [Tab bars — Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/tab-bars) — навигация верхнего уровня, сохранение состояния разделов, навигация и действия; проверено 2026-10-11, история изменений включает обновления 2025–2026.\n- [Principles of navigation — Android Developers](https://developer.android.com/guide/navigation/principles) — общие принципы навигации Android; страница доступна в актуальном разделе рекомендаций Android.\n- [Navigation overview — Android Developers](https://developer.android.com/guide/navigation) — актуальная точка входа по навигации Android; обновлено 2026-09-23.\n- [Back stack — Android Developers](https://developer.android.com/guide/navigation/backstack) — стек возврата и сохранение нескольких стеков навигации; обновлено 2026-05-29.\n- [Navigation bar — Android Developers](https://developer.android.com/develop/ui/compose/components/navigation-bar) — 3–5 равноправных разделов в компактном окне как рекомендация Android и Material по умолчанию.\n- [Navigation bar — Material Design 3](https://m3.material.io/components/navigation-bar/overview) — рекомендации Material по компоненту.\n- [Tabs — Material Design 3](https://m3.material.io/components/tabs/specs) — вкладки как организация связанного содержимого и категорий, а не модель действий уровня приложения.\n- [Build adaptive navigation — Android Developers](https://developer.android.com/develop/ui/compose/layouts/adaptive/build-adaptive-navigation) — панель навигации и боковая панель, адаптация во время работы по WindowSizeClass; обновлено 2026-09-22.\n\n"
+    },
+    {
+      "id": "R046",
+      "level": 3,
+      "title": "Модальность, Back и настройки",
+      "text": "### Модальность, Back и настройки\n\n- [Modality — Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/modality) — назначение модальных поверхностей, закрытие, полноэкранная модальность и защита пользовательского контента.\n- [Settings — Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/settings) — разграничение настроек внутри приложения и системных настроек.\n- [Dialog — Android Developers](https://developer.android.com/develop/ui/compose/components/dialog) — семантика предупреждений и диалогов, руководство по реализации; обновлено 2026-10-01.\n- [Bottom sheets — Android Developers](https://developer.android.com/develop/ui/compose/components/bottom-sheets) — жизненный цикл модальной нижней панели; обновлено 2026-10-01.\n- [Bottom sheets — Material Design 3](https://m3.material.io/components/bottom-sheets/overview) — рекомендации Material по поверхности.\n- [Predictive back design — Android Developers](https://developer.android.com/design/ui/mobile/guides/patterns/predictive-back) — предпросмотр места возврата и ожидаемость Back.\n- [Add support for the predictive back gesture — Android Developers](https://developer.android.com/guide/navigation/custom-back/predictive-back-gesture) — актуальное руководство платформы по реализации; обновлено 2026-10-01.\n- [HTML Standard: Navigation and session history](https://html.spec.whatwg.org/multipage/nav-history-apis.html) — нормативная модель истории браузера и возврата.\n\n"
+    },
+    {
+      "id": "R047",
+      "level": 3,
+      "title": "Ввод и доступность",
+      "text": "### Ввод и доступность\n\n- [Text fields — Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/text-fields) — рекомендации Apple для текстового ввода.\n- [Typography — Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/typography) — Dynamic Type и системная типографика.\n- [Accessibility — Apple Developer Documentation](https://developer.apple.com/documentation/accessibility) — точка входа в документацию по доступности платформы.\n- [VoiceOver — Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/voiceover) — особенности интерфейса для VoiceOver; запись HIG обновлена 2025-03-07.\n- [Configure text fields — Android Developers](https://developer.android.com/develop/ui/compose/text/user-input) — TextField, тип клавиатуры, действия IME и состояние ввода.\n- [Make apps more accessible — Android Developers](https://developer.android.com/guide/topics/ui/accessibility/apps) — области нажатия, описания, контраст и проверки; обновлено 2026-09-22.\n- [Accessibility API defaults in Compose — Android Developers](https://developer.android.com/develop/ui/compose/accessibility/api-defaults) — доступные настройки по умолчанию Material и Compose и ответственность нестандартных компонентов; обновлено 2026-09-22.\n- [Web Content Accessibility Guidelines 2.2 — W3C](https://www.w3.org/TR/WCAG22/) — рекомендация W3C от 2024-12-12; изменение размера текста, перекомпоновка, неперекрытый фокус, перетаскивание и размер цели нажатия.\n\n"
+    },
+    {
+      "id": "R048",
+      "level": 3,
+      "title": "Разрешения и внешние поверхности",
+      "text": "### Разрешения и внешние поверхности\n\n- [Privacy — Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/privacy) — доступ в контексте сценария и интерфейс конфиденциальности; проверено 2026-10-11, страница отдаётся через JavaScript.\n- [Request runtime permissions — Android Developers](https://developer.android.com/training/permissions/requesting) — контекстный запрос разрешения, отказ и сохранение доступных функций после отказа.\n- [Permissions — W3C](https://www.w3.org/TR/permissions/) — состояние разрешений и интерфейс, которыми управляет браузер, и намерение пользователя.\n- [Notifications — Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/notifications) — рекомендации по взаимодействию с уведомлениями.\n- [Notifications — Apple Developer](https://developer.apple.com/notifications/) — локальные и push-уведомления и контекст доставки в фоновом или неактивном режиме.\n- [Notification runtime permission — Android Developers](https://developer.android.com/develop/ui/compose/notifications/notification-permission) — разрешение на уведомления в Android 13+; обновлено 2026-10-01.\n- [Notifications API Standard — WHATWG](https://notifications.spec.whatwg.org/) — разрешение на веб-уведомления и семантика API.\n- [Widgets — Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/widgets) — ключевая информация, понятная с первого взгляда, и узконаправленные взаимодействия.\n- [App widgets overview — Android Developers](https://developer.android.com/develop/ui/views/appwidgets/overview) — роли виджетов и переход к карточке объекта в приложении.\n\n"
+    },
+    {
+      "id": "R049",
+      "level": 3,
+      "title": "Как читать HIG и Material",
+      "text": "### Как читать HIG и Material\n\n- [Human Interface Guidelines — Apple](https://developer.apple.com/design/human-interface-guidelines/) — основной актуальный источник рекомендаций Apple по дизайну.\n- [Material Design 3](https://m3.material.io/get-started) — дизайн-система и рекомендации по компонентам для реализаций Material; не самостоятельное доказательство структуры продукта.\n- [Accessibility API defaults in Compose — Android Developers](https://developer.android.com/develop/ui/compose/accessibility/api-defaults) — хороший пример правильной границы: рекомендации платформы и дизайн-системы по умолчанию помогают, но нестандартная семантика всё равно должна соответствовать реальному назначению интерфейса.\n"
+    }
+  ]
+}

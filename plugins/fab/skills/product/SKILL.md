@@ -24,6 +24,9 @@ For new durable domain state retain its compatible schema while .fab remains an
 index. Missing empirical/technical evidence routes conditionally to Research or
 Testing/actual spike; simulation is not proof. Methods in shared/methods are read
 by active question. Keep intent personal/commercial/client distinct.
+For application platform choices that affect behaviour, read
+[mobile structure](../../shared/methods/mobile-structure.md). Keep domain intent/
+rules separate from platform surfaces; don't make a browser prototype a web target.
 Finish requested model/change with sufficient behavior, source coverage, unknowns
 and honest acceptance state. Wireframe is a next owner only if interface outcome
 was requested or a real dependency within authorized scope. No automatic full run.

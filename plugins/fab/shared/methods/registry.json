@@ -104,6 +104,19 @@
         "claims": "Source reports 23 unresolved citation bindings. Method reviewed; AWS timeout/retry and Android offline-first source distinctions spot-checked. Platform/version claims require fresh primary verification; not exhaustive fact-check."
       },
       "refreshTrigger": "implementation environment changes, contradictory probe, changed primary source conditions or unresolved active risk"
+    },
+    {
+      "id": "mobile-structure",
+      "sourceTitle": "Мобильная структура и взаимодействие для Fab",
+      "brief": "mobile-structure.md",
+      "full": "mobile-structure.full.json",
+      "sourceSha256": "f72f0d703fb94d10dafa04dd9ccc2da2a43570b88c2f4701d32631daa258dc3d",
+      "ingestedAt": "2026-10-12",
+      "validation": {
+        "structure": "lossless sections; explicit exclusions",
+        "claims": "Source declares 7 unresolved citation bindings; platform guidance and author synthesis remain distinct. Partial primary verification recorded in registry/audit; not exhaustive fact-check or native evidence."
+      },
+      "refreshTrigger": "platform change, contradiction in an active app flow or insufficient evidence for structure/input/native claim"
     }
   ]
 }
