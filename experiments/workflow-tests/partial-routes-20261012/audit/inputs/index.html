@@ -1,0 +1,12 @@
+<!doctype html><html lang="ru"><meta charset="utf-8"><title>Личные дела</title><body><h1>Личные дела</h1><select id="list"><option value="a">Дом</option><option value="b">Поездка</option></select><label><input type="checkbox" id="remaining">Осталось</label><div id="count"></div><button id="add">Добавить</button><ul id="items"></ul><dialog id="form"><label>Название<input id="title"></label><button id="cancel">Отмена</button><button id="save">Сохранить</button><p id="error"></p></dialog><label><input type="checkbox" id="fail">Ошибка следующей записи</label><script>
+const initial={active:'a',remaining:false,items:[{id:'1',list:'a',title:'Посылка',done:false},{id:'2',list:'a',title:'Полить цветы',done:true},{id:'3',list:'b',title:'Билеты',done:false}]};
+let state=JSON.parse(localStorage.getItem('tasks')||JSON.stringify(initial));let editing=null;
+const $=id=>document.getElementById(id);
+function persist(){if($('fail').checked){$('fail').checked=false;throw new Error('Не удалось записать')}localStorage.setItem('tasks',JSON.stringify(state))}
+function render(){ $('count').textContent='Осталось '+state.items.filter(i=>!i.done).length; $('items').replaceChildren(); for(const i of state.items.filter(i=>i.list===state.active&&(!state.remaining||!i.done))){const li=document.createElement('li');const toggle=document.createElement('button');toggle.textContent=i.done?'Вернуть':'Собрано';toggle.onclick=()=>{const before=i.done;i.done=!i.done;try{persist();render()}catch(e){i.done=before;$('error').textContent=e.message}};const edit=document.createElement('button');edit.textContent='Изменить';edit.onclick=()=>open(i);li.append(document.createTextNode(i.title+' '),toggle,edit);$('items').append(li)}}
+function open(item){editing=item;$('title').value=item?item.title:'';$('error').textContent='';$('form').showModal()}
+$('title').oninput=()=>{if(editing)editing.title=$('title').value};
+$('cancel').onclick=()=>{$('form').close();render()};
+$('save').onclick=()=>{if(!$('title').value.trim()){$('error').textContent='Введи название';return} if(!editing){state.items.push({id:crypto.randomUUID(),list:state.active,title:$('title').value.trim(),done:false})} try{persist();$('form').close();render()}catch(e){$('title').value='';$('error').textContent=e.message}};
+$('list').onchange=()=>{state.active=$('list').value;render()};$('remaining').onchange=()=>{state.remaining=$('remaining').checked;render()};$('add').onclick=()=>open(null);render();
+</script></body></html>

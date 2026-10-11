@@ -1,0 +1,197 @@
+{
+  "nodes": [
+    {
+      "id": "S-01",
+      "type": "group",
+      "x": 0,
+      "y": 0,
+      "width": 440,
+      "height": 650,
+      "label": "S-01 Поездки"
+    },
+    {
+      "id": "trips",
+      "type": "text",
+      "x": 25,
+      "y": 60,
+      "width": 390,
+      "height": 65,
+      "text": "Поездки / название, прогресс",
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "open",
+      "type": "text",
+      "x": 25,
+      "y": 145,
+      "width": 390,
+      "height": 65,
+      "text": "Открыть поездку → S-02",
+      "color": "#2563eb"
+    },
+    {
+      "id": "newtrip",
+      "type": "text",
+      "x": 25,
+      "y": 230,
+      "width": 390,
+      "height": 65,
+      "text": "Новая поездка → S-03",
+      "color": "#2563eb"
+    },
+    {
+      "id": "S-02",
+      "type": "group",
+      "x": 520,
+      "y": 0,
+      "width": 440,
+      "height": 690,
+      "label": "S-02 Вещи поездки"
+    },
+    {
+      "id": "back",
+      "type": "text",
+      "x": 545,
+      "y": 60,
+      "width": 390,
+      "height": 65,
+      "text": "Назад → S-01",
+      "color": "#2563eb"
+    },
+    {
+      "id": "filter",
+      "type": "text",
+      "x": 545,
+      "y": 145,
+      "width": 390,
+      "height": 65,
+      "text": "Все / Осталось",
+      "color": "#bae6fd"
+    },
+    {
+      "id": "items",
+      "type": "text",
+      "x": 545,
+      "y": 310,
+      "width": 390,
+      "height": 65,
+      "text": "Вещь / название",
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "toggle",
+      "type": "text",
+      "x": 545,
+      "y": 395,
+      "width": 390,
+      "height": 65,
+      "text": "Отметить / вернуть",
+      "color": "#16a34a"
+    },
+    {
+      "id": "edit",
+      "type": "text",
+      "x": 545,
+      "y": 480,
+      "width": 390,
+      "height": 65,
+      "text": "Править вещь → S-03",
+      "color": "#2563eb"
+    },
+    {
+      "id": "add",
+      "type": "text",
+      "x": 545,
+      "y": 590,
+      "width": 390,
+      "height": 65,
+      "text": "Добавить вещь → S-03",
+      "color": "#2563eb"
+    },
+    {
+      "id": "S-03",
+      "type": "group",
+      "x": 1040,
+      "y": 0,
+      "width": 440,
+      "height": 650,
+      "label": "S-03 Форма"
+    },
+    {
+      "id": "name",
+      "type": "text",
+      "x": 1065,
+      "y": 60,
+      "width": 390,
+      "height": 65,
+      "text": "Название (черновик)",
+      "color": "#bae6fd"
+    },
+    {
+      "id": "save",
+      "type": "text",
+      "x": 1065,
+      "y": 145,
+      "width": 390,
+      "height": 65,
+      "text": "Создать / Сохранить → родитель",
+      "color": "#16a34a"
+    },
+    {
+      "id": "cancel",
+      "type": "text",
+      "x": 1065,
+      "y": 230,
+      "width": 390,
+      "height": 65,
+      "text": "Отмена → родитель",
+      "color": "#2563eb"
+    },
+    {
+      "id": "item-owner",
+      "type": "group",
+      "x": 535,
+      "y": 270,
+      "width": 410,
+      "height": 300,
+      "label": "Вещь (повторяется)"
+    }
+  ],
+  "edges": [
+    {
+      "id": "openedge",
+      "fromNode": "open",
+      "toNode": "S-02",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "backedge",
+      "fromNode": "back",
+      "toNode": "S-01",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "newtripedge",
+      "fromNode": "newtrip",
+      "toNode": "S-03",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "editedge",
+      "fromNode": "edit",
+      "toNode": "S-03",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "addedge",
+      "fromNode": "add",
+      "toNode": "S-03",
+      "fromSide": "right",
+      "toSide": "left"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "baseline": "167c6be09f81890af2e22165f91a693c39789645",
+  "version": "0.1.0-beta.15",
+  "fingerprint": "cf1d23be54742d51",
+  "installedRoot": "/Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.15",
+  "scratch": "/private/tmp/fab-partial-routes-20261012",
+  "cases": [
+    {
+      "id": "opinion",
+      "entry": "cowork"
+    },
+    {
+      "id": "ideas",
+      "entry": "brainstorm"
+    },
+    {
+      "id": "audit",
+      "entry": "analysis"
+    },
+    {
+      "id": "audit-options",
+      "entry": "cowork"
+    },
+    {
+      "id": "feature",
+      "entry": "product"
+    },
+    {
+      "id": "wireframe",
+      "entry": "wireframe"
+    },
+    {
+      "id": "evidence-slice",
+      "entry": "cowork"
+    }
+  ]
+}
