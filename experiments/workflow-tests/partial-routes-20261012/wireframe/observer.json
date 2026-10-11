@@ -1,0 +1,26 @@
+{
+  "observer": "root developer, not independent human",
+  "verdict": "ownership/egress repair PASS / compatible-interaction preservation FAIL",
+  "findings": [
+    {
+      "claim": "focused correction with stable model and IDs",
+      "result": "PASS",
+      "evidence": "Only interface.md and structure.canvas changed; original node/edge IDs retained; source model SHA unchanged. Trip list/item owners physically nested; branch-specific successful S02 and cancel S01/S02, write error stays in S03. Root guard and corrected absolute-path validate-canvas PASS."
+    },
+    {
+      "claim": "compatible existing interaction preservation",
+      "result": "FAIL",
+      "backlog": "FAB-03",
+      "expected": "Correct mismatches while retaining UI mechanisms compatible with domain behavior, or raise meaningful change before dropping them.",
+      "observed": "UC04 description removed prior feedback/Undo and requires switching All to return packed item, reasoning that model does not name a separate Undo action. Model requires mark/return and does not prohibit this shortcut; missing control name is not a contradiction.",
+      "impact": "Changes an existing candidate interaction during projection repair and may diverge from working prototype.",
+      "confidence": "high for unsupported rationale; candidate is not creator-accepted",
+      "owner": "Wireframe domain/interface distinction",
+      "closure": "Fresh same bounded repair after narrow rule preserves compatible feedback/Undo or transparently separates unresolved mechanism without silently dropping it."
+    }
+  ],
+  "interventions": [
+    "Root initially passed relative canvas path to vault-root resolver incorrectly; reran with absolute path, PASS. No edits to model-run output."
+  ],
+  "next": "Narrow contract repair then one fresh corrective; native readability and full-route recurrence remain separate."
+}

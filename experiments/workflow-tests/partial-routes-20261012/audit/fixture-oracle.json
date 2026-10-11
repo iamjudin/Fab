@@ -1,0 +1,30 @@
+{
+  "method": "Node VM with minimal DOM stub; fixture behavior oracle, not browser UI evidence",
+  "results": [
+    {
+      "path": "initial list a counter",
+      "expected": "Осталось 1",
+      "observed": "Осталось 2"
+    },
+    {
+      "path": "edit then cancel",
+      "expected": "Посылка",
+      "observed": "Изменённое имя"
+    },
+    {
+      "path": "failed create draft",
+      "expected": "Блокнот",
+      "observed": ""
+    },
+    {
+      "path": "failed create in-memory count",
+      "expected": 3,
+      "observed": 4
+    },
+    {
+      "path": "failed create then retry matching records",
+      "expected": 1,
+      "observed": 2
+    }
+  ]
+}

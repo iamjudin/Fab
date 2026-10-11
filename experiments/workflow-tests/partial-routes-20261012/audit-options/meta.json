@@ -1,0 +1,47 @@
+{
+  "case": "audit-options",
+  "exit": 0,
+  "timeout": false,
+  "seconds": 38.1,
+  "command": [
+    "codex",
+    "exec",
+    "--json",
+    "--skip-git-repo-check",
+    "--approve-for-me",
+    "-C",
+    "/private/tmp/fab-partial-routes-20261012/audit-options",
+    "-o",
+    "/Users/iamjudin/Desktop/Lab/Fab/experiments/workflow-tests/partial-routes-20261012/audit-options/final.md",
+    "-"
+  ],
+  "threadId": "01a12d12-b80b-7a22-9cb0-8b69f8e9ab7a",
+  "actualModel": {
+    "model": "gpt-6.1-sol",
+    "effort": "low"
+  },
+  "usage": {
+    "input_tokens": 106186,
+    "cached_input_tokens": 86784,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1208,
+    "reasoning_output_tokens": 11
+  },
+  "events": [
+    {
+      "type": "thread.started",
+      "thread_id": "01a12d12-b80b-7a22-9cb0-8b69f8e9ab7a"
+    },
+    {
+      "type": "turn.completed",
+      "usage": {
+        "input_tokens": 106186,
+        "cached_input_tokens": 86784,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1208,
+        "reasoning_output_tokens": 11
+      }
+    }
+  ],
+  "retainedWorkspaceVerified": true
+}

@@ -1,0 +1,331 @@
+{
+  "nodes": [
+    {
+      "id": "S-01",
+      "type": "group",
+      "x": 0,
+      "y": 0,
+      "width": 480,
+      "height": 990,
+      "label": "S-01 Поездки · корень"
+    },
+    {
+      "id": "trips-title",
+      "type": "text",
+      "x": 25,
+      "y": 45,
+      "width": 430,
+      "height": 80,
+      "text": "Поездки\nПусто: создай поездку",
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "trip-list",
+      "type": "group",
+      "x": 20,
+      "y": 190,
+      "width": 440,
+      "height": 340,
+      "label": "Список поездок"
+    },
+    {
+      "id": "trip-owner",
+      "type": "group",
+      "x": 35,
+      "y": 240,
+      "width": 410,
+      "height": 270,
+      "label": "Поездка · повторяется"
+    },
+    {
+      "id": "trips",
+      "type": "text",
+      "x": 55,
+      "y": 280,
+      "width": 370,
+      "height": 70,
+      "text": "Название поездки\nСобрано X из Y",
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "open",
+      "type": "text",
+      "x": 55,
+      "y": 380,
+      "width": 370,
+      "height": 65,
+      "text": "Открыть эту поездку → S-02",
+      "color": "#2563eb"
+    },
+    {
+      "id": "newtrip",
+      "type": "text",
+      "x": 25,
+      "y": 570,
+      "width": 430,
+      "height": 65,
+      "text": "Новая поездка → S-03",
+      "color": "#2563eb"
+    },
+    {
+      "id": "read-status",
+      "type": "text",
+      "x": 25,
+      "y": 700,
+      "width": 430,
+      "height": 110,
+      "text": "Ошибка чтения: сообщение;\nданные не перезаписываются.\nПодробности — interface.md",
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "S-02",
+      "type": "group",
+      "x": 760,
+      "y": 0,
+      "width": 480,
+      "height": 990,
+      "label": "S-02 Выбранная поездка"
+    },
+    {
+      "id": "back",
+      "type": "text",
+      "x": 785,
+      "y": 45,
+      "width": 430,
+      "height": 60,
+      "text": "Назад → S-01",
+      "color": "#2563eb"
+    },
+    {
+      "id": "trip-summary",
+      "type": "text",
+      "x": 785,
+      "y": 125,
+      "width": 430,
+      "height": 80,
+      "text": "Полное название поездки\nСобрано X из Y (все вещи)",
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "filter",
+      "type": "text",
+      "x": 785,
+      "y": 215,
+      "width": 430,
+      "height": 60,
+      "text": "Все / Осталось · текущая поездка",
+      "color": "#bae6fd"
+    },
+    {
+      "id": "item-list",
+      "type": "group",
+      "x": 780,
+      "y": 335,
+      "width": 440,
+      "height": 375,
+      "label": "Список вещей · по фильтру"
+    },
+    {
+      "id": "item-owner",
+      "type": "group",
+      "x": 795,
+      "y": 385,
+      "width": 410,
+      "height": 305,
+      "label": "Вещь · повторяется"
+    },
+    {
+      "id": "items",
+      "type": "text",
+      "x": 815,
+      "y": 425,
+      "width": 370,
+      "height": 60,
+      "text": "Название вещи · packed",
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "toggle",
+      "type": "text",
+      "x": 815,
+      "y": 510,
+      "width": 370,
+      "height": 60,
+      "text": "Отметить / вернуть эту вещь",
+      "color": "#16a34a"
+    },
+    {
+      "id": "edit",
+      "type": "text",
+      "x": 815,
+      "y": 595,
+      "width": 370,
+      "height": 60,
+      "text": "Править эту вещь → S-03",
+      "color": "#2563eb"
+    },
+    {
+      "id": "add",
+      "type": "text",
+      "x": 785,
+      "y": 750,
+      "width": 430,
+      "height": 60,
+      "text": "Добавить вещь → S-03",
+      "color": "#2563eb"
+    },
+    {
+      "id": "item-status",
+      "type": "text",
+      "x": 785,
+      "y": 835,
+      "width": 430,
+      "height": 120,
+      "text": "Пустая поездка ≠ всё собрано.\nОшибка отметки: прежний статус\nи сообщение. Возврат через «Все».",
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "S-03",
+      "type": "group",
+      "x": 1520,
+      "y": 0,
+      "width": 480,
+      "height": 990,
+      "label": "S-03 Временная форма"
+    },
+    {
+      "id": "form-mode",
+      "type": "text",
+      "x": 1545,
+      "y": 45,
+      "width": 430,
+      "height": 110,
+      "text": "Новая поездка / добавить вещь /\nправить вещь. Контекст: Trip.id,\nпри правке — также Item.id.",
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "name",
+      "type": "text",
+      "x": 1545,
+      "y": 190,
+      "width": 430,
+      "height": 90,
+      "text": "Название · поле с label\nЧерновик; правка: исходное имя",
+      "color": "#bae6fd"
+    },
+    {
+      "id": "form-error",
+      "type": "text",
+      "x": 1545,
+      "y": 300,
+      "width": 430,
+      "height": 95,
+      "text": "Пустое имя / ошибка записи:\nсообщение у поля; ввод остаётся.\nПовтор — той же кнопкой записи.",
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "save",
+      "type": "text",
+      "x": 1545,
+      "y": 440,
+      "width": 430,
+      "height": 100,
+      "text": "Создать / Добавить / Сохранить\nУспешная запись → S-02\nОшибка: остаёмся в S-03",
+      "color": "#16a34a"
+    },
+    {
+      "id": "cancel",
+      "type": "text",
+      "x": 1545,
+      "y": 620,
+      "width": 430,
+      "height": 100,
+      "text": "Отмена / Escape → источник\nНовая поездка: S-01\nВещь: та же S-02",
+      "color": "#2563eb"
+    },
+    {
+      "id": "form-context",
+      "type": "text",
+      "x": 1545,
+      "y": 790,
+      "width": 430,
+      "height": 135,
+      "text": "Отмена удаляет только черновик.\nКлик снаружи не закрывает.\nПосле записи вещи — та же поездка\nи фильтр; новая поездка — «Все».",
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "legend",
+      "type": "text",
+      "x": 0,
+      "y": 1100,
+      "width": 850,
+      "height": 120,
+      "text": "Карта структуры · кандидат · model.md → interface.md\nСерый: информация; голубой: локальный ввод/фильтр;\nсиний: навигация; зелёный: запрос изменения данных.\nВложенные группы — владельцы, стрелки — переходы.",
+      "color": "#b6bcc3"
+    }
+  ],
+  "edges": [
+    {
+      "id": "openedge",
+      "fromNode": "open",
+      "toNode": "S-02",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "backedge",
+      "fromNode": "back",
+      "toNode": "S-01",
+      "fromSide": "left",
+      "toSide": "right"
+    },
+    {
+      "id": "newtripedge",
+      "fromNode": "newtrip",
+      "toNode": "S-03",
+      "fromSide": "top",
+      "toSide": "top",
+      "label": "Создание поездки"
+    },
+    {
+      "id": "editedge",
+      "fromNode": "edit",
+      "toNode": "S-03",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "Trip.id + Item.id"
+    },
+    {
+      "id": "addedge",
+      "fromNode": "add",
+      "toNode": "S-03",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "Trip.id"
+    },
+    {
+      "id": "saveedge",
+      "fromNode": "save",
+      "toNode": "S-02",
+      "fromSide": "left",
+      "toSide": "right",
+      "label": "После успешной записи"
+    },
+    {
+      "id": "cancel-trip-edge",
+      "fromNode": "cancel",
+      "toNode": "S-01",
+      "fromSide": "right",
+      "toSide": "top",
+      "label": "Отмена → S-01"
+    },
+    {
+      "id": "cancel-item-edge",
+      "fromNode": "cancel",
+      "toNode": "S-02",
+      "fromSide": "left",
+      "toSide": "right",
+      "label": "Отмена добавления / правки"
+    }
+  ]
+}

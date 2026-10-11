@@ -1,0 +1,16 @@
+{
+  "turns": 9,
+  "sumRunSeconds": 522.4,
+  "usage": {
+    "input_tokens": 1280784,
+    "cached_input_tokens": 1105920,
+    "output_tokens": 18988
+  },
+  "actualModel": [
+    {
+      "model": "gpt-6.1-sol",
+      "effort": "low"
+    }
+  ],
+  "allExitZero": true
+}

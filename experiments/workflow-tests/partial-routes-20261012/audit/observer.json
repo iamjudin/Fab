@@ -1,0 +1,23 @@
+{
+  "observer": "root developer, not independent human",
+  "verdict": "bounded PASS",
+  "sourcePreserved": true,
+  "findings": [
+    {
+      "claim": "grounded consequential findings",
+      "result": "PASS",
+      "evidence": "All fixture-oracle paths found: wrong per-list count, cancelled draft mutates source, failed create loses draft and retry duplicates. Also correctly finds restored controls/state mismatch and error hidden in closed dialog."
+    },
+    {
+      "claim": "prioritization and practical explanation",
+      "result": "PASS",
+      "evidence": "Explains shared draft/committed-state root cause and prioritizes data preservation before counter/copy, distinguishes convenience preference from spec defect."
+    },
+    {
+      "claim": "honest audit scope",
+      "result": "PASS",
+      "evidence": "No writes, no redesign, explicitly source-only, no false browser/persistence observation."
+    }
+  ],
+  "next": "No same-input corrective; coverage includes synthetic source, not arbitrary large apps or real usability."
+}

@@ -1,0 +1,47 @@
+{
+  "case": "opinion",
+  "exit": 0,
+  "timeout": false,
+  "seconds": 35.9,
+  "command": [
+    "codex",
+    "exec",
+    "--json",
+    "--skip-git-repo-check",
+    "--approve-for-me",
+    "-C",
+    "/private/tmp/fab-partial-routes-20261012/opinion",
+    "-o",
+    "/Users/iamjudin/Desktop/Lab/Fab/experiments/workflow-tests/partial-routes-20261012/opinion/final.md",
+    "-"
+  ],
+  "threadId": "01a12d11-170f-76a0-8640-95cd8be81701",
+  "actualModel": {
+    "model": "gpt-6.1-sol",
+    "effort": "low"
+  },
+  "usage": {
+    "input_tokens": 60534,
+    "cached_input_tokens": 51968,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 972,
+    "reasoning_output_tokens": 64
+  },
+  "events": [
+    {
+      "type": "thread.started",
+      "thread_id": "01a12d11-170f-76a0-8640-95cd8be81701"
+    },
+    {
+      "type": "turn.completed",
+      "usage": {
+        "input_tokens": 60534,
+        "cached_input_tokens": 51968,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 972,
+        "reasoning_output_tokens": 64
+      }
+    }
+  ],
+  "retainedWorkspaceVerified": true
+}

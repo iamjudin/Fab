@@ -164,3 +164,16 @@ quick_validate could not run: PyYAML absent in system and bundled Python; packag
 frontmatter/reference checks passed. No dependency install or new model run.
 FAB-11 awaits natural post-work/dialogue evidence; instructions aren't proof of
 behavior. Only this check's scratch log removed after summary retention.
+
+## 2026-10-12 — partial routes baseline
+Creator authorized autonomous partial-task testing with optional2–3five-hour
+windows when useful; no credit reset authorization. Branch codex/partial-workflow-tests
+from167c6be, no merge.7fresh primary+1synthetic resume+1natural-entry diagnostic,
+installed beta.15, ordinary GPT-6.1 Sol/Low.9turns522.4sum-seconds,input1280784/
+cached1105920/output18988. Fixtures outside maintainer repo, no primary chat history.
+Consultations/ideas/read-only audit/analysis-options/evidence-slice useful bounded
+PASS; technical fixture oracle confirms draft loss/cancel mutation/retry duplicate.
+Undo artifact sound but final reply only file status (FAB-11); scoped Wireframe
+repair restores owners/returns yet drops compatible Undo on unsupported domain-name
+argument (FAB-03). Sources/IDs retained, no prototype/full model ceremony.
+No corrections hidden inside baseline; two focused fixes/correctives next.

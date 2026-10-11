@@ -1,0 +1,49 @@
+{
+  "case": "ideas-followup",
+  "exit": 0,
+  "timeout": false,
+  "seconds": 22.5,
+  "command": [
+    "codex",
+    "exec",
+    "--json",
+    "--skip-git-repo-check",
+    "--approve-for-me",
+    "-C",
+    "/private/tmp/fab-partial-routes-20261012/ideas",
+    "-o",
+    "/Users/iamjudin/Desktop/Lab/Fab/experiments/workflow-tests/partial-routes-20261012/ideas-followup/final.md",
+    "resume",
+    "01a12d11-fbfa-7372-a9dd-16edc0f45630",
+    "-"
+  ],
+  "threadId": "01a12d11-fbfa-7372-a9dd-16edc0f45630",
+  "actualModel": {
+    "model": "gpt-6.1-sol",
+    "effort": "low"
+  },
+  "usage": {
+    "input_tokens": 81035,
+    "cached_input_tokens": 72320,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1461,
+    "reasoning_output_tokens": 0
+  },
+  "events": [
+    {
+      "type": "thread.started",
+      "thread_id": "01a12d11-fbfa-7372-a9dd-16edc0f45630"
+    },
+    {
+      "type": "turn.completed",
+      "usage": {
+        "input_tokens": 81035,
+        "cached_input_tokens": 72320,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1461,
+        "reasoning_output_tokens": 0
+      }
+    }
+  ],
+  "retainedWorkspaceVerified": true
+}

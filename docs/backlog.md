@@ -35,3 +35,14 @@ Next — узкая коррекция Wireframe по двум находкам 
 Один ID, один владелец и статус. Запись содержит ожидаемое → наблюдаемое, версию/evidence, следующий проверяемый шаг и границу закрытия. Дедуплицировать с прежними WF-ID; локальные продуктовые неизвестные остаются в проекте. Отложенный пункт имеет триггер. Закрытие не означает универсальную зрелость.
 
 WF-01/17/20 сопровождаются здесь; Wireframer хранит историческое evidence и указатель. WF-26/27/28 пока имеют прежнего владельца. История — journal, текущий договор — handoff. Проверки запускаем, когда результат меняет решение.
+
+## 2026-10-12 — partial-route baseline beta.15
+9model turns:7primary,1synthetic follow-up,1natural-input diagnostic; GPT-6.1 Sol/Low.
+Мнение/варианты/audit/analysis→options/evidence→slice и короткий диалог дали
+полезные bounded outputs без full pipeline. Product Undo artifact PASS, final
+reply «сохранил файл» — FAB-11 FAIL. Wireframe исправил WF-01/egress при сохранении
+model/IDs, но удалил совместимый feedback/Undo лишь из-за отсутствия отдельного
+названия в domain model — FAB-03 preservation FAIL. Initial runs сохранены.
+Next: narrow shared artifact-handoff + Wireframe semantics correction, два fresh
+corrective; no repeat successful cases. [Контракт](../experiments/workflow-tests/2026-10-12-partial-routes-contract.md),
+[baseline usage](../experiments/workflow-tests/partial-routes-20261012/baseline-usage.json).

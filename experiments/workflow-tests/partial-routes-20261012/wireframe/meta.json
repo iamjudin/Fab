@@ -1,0 +1,47 @@
+{
+  "case": "wireframe",
+  "exit": 0,
+  "timeout": false,
+  "seconds": 191.4,
+  "command": [
+    "codex",
+    "exec",
+    "--json",
+    "--skip-git-repo-check",
+    "--approve-for-me",
+    "-C",
+    "/private/tmp/fab-partial-routes-20261012/wireframe",
+    "-o",
+    "/Users/iamjudin/Desktop/Lab/Fab/experiments/workflow-tests/partial-routes-20261012/wireframe/final.md",
+    "-"
+  ],
+  "threadId": "01a12d13-b899-7c21-94f8-dc7eb265ba7b",
+  "actualModel": {
+    "model": "gpt-6.1-sol",
+    "effort": "low"
+  },
+  "usage": {
+    "input_tokens": 563657,
+    "cached_input_tokens": 505344,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 7649,
+    "reasoning_output_tokens": 866
+  },
+  "events": [
+    {
+      "type": "thread.started",
+      "thread_id": "01a12d13-b899-7c21-94f8-dc7eb265ba7b"
+    },
+    {
+      "type": "turn.completed",
+      "usage": {
+        "input_tokens": 563657,
+        "cached_input_tokens": 505344,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7649,
+        "reasoning_output_tokens": 866
+      }
+    }
+  ],
+  "retainedWorkspaceVerified": true
+}
