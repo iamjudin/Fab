@@ -20,5 +20,10 @@ staleness, not proof capability unavailable. Never clean neighboring plugins.
 Own profile-specific release checks (identity, package, assets, discovery, runtime).
 Public release organization belongs to Delivery: [release](../delivery/SKILL.md).
 Do not publish or create remote/visibility as automatic final maintenance step.
+For scratch work and generated packages read [artifact lifecycle](../../shared/artifact-lifecycle.md).
+Include an equivalent self-contained cleanup rule in each generated plugin's
+runtime instructions and route temporary-producing skills to it. Verify this
+alongside package references; a README-only promise or a dependency on Fab does
+not make the rule executable. Preserve delivered code/evidence before housekeeping.
 If project script/content surface needs no plugin runtime gate, use appropriate
 project evidence. Continue authorized useful work after a checkpoint.

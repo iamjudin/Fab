@@ -134,6 +134,10 @@ status and applicable classification to the graph before showing it.
 For an explicitly disposable experiment, cleanup is available only when the
 workspace identity and slug match:
 
+This command deletes registered product artifacts; it is distinct from routine
+[scratch housekeeping](../../../shared/artifact-lifecycle.md), which preserves
+deliverables and evidence before removing task-owned temporary files.
+
 ```bash
 python3 <skill-directory>/scripts/product_workspace.py clean <product-root> --slug <slug>
 ```

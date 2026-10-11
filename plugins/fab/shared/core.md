@@ -33,4 +33,9 @@ under project agreement. Experiments use a separate branch; no unsolicited merge
 Runtime uses bundled methods/project evidence, never requires maintainer Brain.
 Test products stay separate. No public release inferred from ordinary push.
 
+Keep temporary work task-owned and contained. When scratch files are used, read
+[artifact lifecycle](artifact-lifecycle.md): preserve useful results/evidence in
+durable project paths, verify the copy, then clean only this task's disposable
+files. A final answer must not depend on a temporary path scheduled for removal.
+
 Continue authorized work after checkpoints. Yield only on sufficient requested outcome, genuine human-owned choice, actual access/tool blocker or exhausted permission/budget. A stage name is not a reason to stop.

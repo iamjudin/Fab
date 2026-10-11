@@ -99,10 +99,15 @@ Root overhead отдельно/неизвестен; эти числа не пр
 до repair только для проверки сохранности dirty edits; HEAD отсутствует,
 remote пустой. Ни один тестовый пакет не установлен, не закоммичен и не опубликован.
 
-Тестовые package workspaces и raw logs:
-`/private/tmp/fab-plugin-smokes-20261011/{create,repair}` и соседние JSONL/stderr.
+Исходные test package workspaces и raw logs находились в
+`/private/tmp/fab-plugin-smokes-20261011/{create,repair}` и соседних JSONL/stderr.
 В Fab сохранены запросы/ответы, content pages, hashes, observer и compact events;
 сами сгенерированные package sources остаются вне Git Fab.
+После запроса creator на уборку 2026-10-11 они перенесены в ignored local archive
+`plugin-smokes-20261011/raw/local-run` рядом с этим отчётом. 63 non-cache файла
+и helpers сверены по SHA перед удалением исходного workspace/точных helpers.
+Снимки запросов/ответов сохраняют первоначальные временные пути как историю,
+а актуальные пакеты находятся в архиве проекта. [Cleanup evidence](plugin-smokes-20261011/cleanup.json).
 Root observer — роль, не независимый сторонний аудит и не creator acceptance.
 
 ## Что меняет решение

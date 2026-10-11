@@ -74,3 +74,16 @@ Preflight sandbox state-DB failure separately retained; authorized CLI retry,
 no corrective model run/reset/install/remote/commit/publication of test packages.
 Reports/prompts/page drafts/observer evidence saved here; generated sources in tmp.
 FAB-04 evidence expanded, no general PASS or automatic closure of FAB-02.
+
+## 2026-10-11 — scratch lifecycle and generated-plugin contract
+Creator identified tmp clutter and requested cleanup after retaining useful
+information, including the rule in plugins created by Fab. Root cause: shared
+runtime had no artifact-retention/housekeeping contract; Plugin did not require
+generated packages to inherit one. Beta.10 adds shared artifact-lifecycle,
+core/project links, Plugin inheritance, Testing retention and Product distinction
+between deleting results and cleaning scratch. 36local regressions PASS;
+installed beta.10 parity58files/b1727424d24f991a. No extra model smoke.
+Current smoke63files/helpers preserved in ignored project raw/local-run archive,
+SHA compared before deleting exact task workspace and helpers. Others' temp files
+and earlier preview inputs untouched. Original tested packages not retroactively
+edited/published. FAB-09 fixed-awaiting-check for fresh generated-rule behavior.

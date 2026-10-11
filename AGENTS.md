@@ -24,8 +24,10 @@ FAB-02: первое восстановление контекста успеш�
 Не создавай subagents без явного разрешения на делегацию.
 
 ## Current boundary
-Installed Fab0.1.0-beta.9,57files/462d4cc828c5d99f. All ten independent contracts.
+Installed Fab0.1.0-beta.10,58files/b1727424d24f991a. All ten independent contracts.
 36local regressions, bounded outcome/domain/UI/maintenance smokes; not universal
 maturity. Current detailed state in docs/handoff.md and docs/backlog.md. Continue
 across checkpoints when authorized; user explicitly rejected artificial pauses.
 Private GitHub remote verified; no public release/merge. One authorized reset performed by creator; no further reset authorized.
+Task-owned scratch is cleaned after verified retention; generated plugins inherit
+a self-contained runtime cleanup rule. FAB-09 fresh generated-behavior check open.

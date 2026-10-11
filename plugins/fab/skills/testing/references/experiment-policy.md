@@ -24,3 +24,7 @@ fixed-awaiting-check, closed(with evidence boundary). Reuse an existing finding 
 Stop on first substantive failure when it defeats the question; don't fix halfway
 and call the run clean. Corrective tests separately state intervention.
 Full text/logs are not automatically copied into instructions or product memory.
+Keep each run's helpers/logs/fixtures in one task-owned directory. Follow
+[artifact lifecycle](../../../shared/artifact-lifecycle.md): promote useful
+evidence and requested candidates, verify preservation, then remove owned scratch.
+Frozen evidence is retained in the project archive, not abandoned in shared temp.

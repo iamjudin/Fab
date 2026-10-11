@@ -8,7 +8,7 @@
 
 - Source: /Users/iamjudin/Desktop/Lab/Fab, ветка codex/bootstrap-beta.
 - Private remote: https://github.com/iamjudin/Fab . Публичного выпуска/merge нет.
-- Установлена Fab0.1.0-beta.9, 57 файлов, fingerprint462d4cc828c5d99f, marketplace fab-local.
+- Установлена Fab0.1.0-beta.10, 58 файлов, fingerprintb1727424d24f991a, marketplace fab-local.
 - 36 локальных регрессий PASS; source/cache совпадают.
 - Основной рабочий чат — текущий чат в Lab/Fab с 2026-10-11; creator подтвердил, что дальше работаем здесь.
 - FAB-02: первое восстановление контекста через Fab Cowork успешно; устойчивая непрерывность пока открыта.
@@ -61,3 +61,18 @@ beacon и autonomous-beta-results; проверены Git и общий runtime-
 устойчивой непрерывности: она остаётся открытой до дальнейшего продолжения работы
 с сохранением решений и границ. Ветка codex/bootstrap-beta сохранена.
 Mobile-structure Deep Research запущен creator; результат ожидается.
+
+## 2026-10-11 — lifecycle временной работы
+Beta.10 добавляет общий runtime-договор: один каталог задачи, сохранение полезных
+результатов/evidence, проверка копии и уборка только своего disposable scratch.
+Plugin переносит самостоятельное правило в создаваемые пакеты; Testing сохраняет
+frozen evidence в архив проекта. Удаление результата Product отделено от housekeeping.
+36 локальных регрессий и source/cache parity PASS; fresh model-run не выполнялся.
+FAB-09 остаётся fixed-awaiting-check для будущего generated-plugin поведения.
+
+Последний Plugin smoke сохранён (63 файла с проверенными SHA, плюс helpers) в
+`experiments/workflow-tests/plugin-smokes-20261011/raw/local-run` (ignored local archive).
+Тестовые пакеты и raw logs теперь там, а не в `/private/tmp`; отчёт и content pages
+остаются в отслеживаемом evidence. Workspace и точные standalone helpers этого
+прогона удалены. Старые tmp/preview inputs не тронуты; runtime старых тестовых пакетов
+задним числом не менялся. Публикации нет.

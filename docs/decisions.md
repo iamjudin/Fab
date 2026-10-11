@@ -18,3 +18,8 @@
   excluded, separate global navigation allowed. Geometry guard is not semantics.
 - Recovery testing must use accessible controls in the actual failed state;
   changing inert background controls in a harness is insufficient evidence.
+
+- 2026-10-11: task-owned scratch is contained and cleaned after useful outputs/
+  evidence are retained and verified. No shared tmp sweep or cleanup of delivered
+  products. Generated plugins inherit self-contained runtime instructions for
+  this lifecycle; they must not depend on Fab/cache/maintainer docs for cleanup.

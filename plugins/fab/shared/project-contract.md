@@ -13,3 +13,5 @@ affected stale outputs and authorized next. Full transcripts aren't required.
 Check current versions on stale/change; unaffected decisions remain usable.
 One active writer per decision; no hidden parallel writers. User authorization
 persists, but changing owner/route doesn't expand it. Keep test products isolated.
+For temporary work follow [artifact lifecycle](artifact-lifecycle.md). Reuse the
+project's retention conventions; keep final handoff links outside disposable paths.
