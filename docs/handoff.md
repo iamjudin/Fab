@@ -17,6 +17,12 @@
 
 ## Что доказано
 
+2026-10-11: два свежих прямых входа Fab Plugin (GPT-6.1 Sol/Low CLI) завершили
+создание нового пакета и ремонт существующего с подготовкой контента страниц.
+Root подтвердил локальные проверки и сохранность; тестовые пакеты не установлены
+и не опубликованы. [Отчёт](../experiments/workflow-tests/2026-10-11-plugin-smokes-results.md).
+Автоматический выбор skill и installed behavior созданных пакетов не проверены.
+
 Пять самостоятельных исходов beta1; частичный Product→Wireframe; выбранные реальные UI-пути Prototype; Plugin source repair + честная Delivery readiness. Полный клиентский маршрут beta5 прошёл model→UC/slice→structure/scenarios→visible blocks→prototype. Это кандидат, не client acceptance.
 
 Первый Canvas полного маршрута провалил владение: ноль групп. Beta7 corrective восстановил пять поверхностей и вложенность, исходные связи/IDs/роль/правила сохранены; prototype bytes при этой правке неизменны. Root просмотрел PNG из SVG, не native Obsidian.

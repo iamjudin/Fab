@@ -1,0 +1,25 @@
+{
+  "samples_unchanged": {
+    "samples/meeting.md": true,
+    "samples/idea.md": true
+  },
+  "git_directory_exists": false,
+  "root_validation": "PASS: manifest fields, two skill headers, contained references, delivery links, unchanged samples",
+  "source_inventory": {
+    "README.md": "4a106c0c02e4891ef65883d53f32aebbb14a75d51f1abea0985200402f584e2a",
+    "AGENTS.md": "87d1a9e091506896fdff6d940a69fe09ad8b1648c22a634591e98192fc9f73cb",
+    "plugins/note-compass/plugin.json": "70620eb26b09ee523367456962b2670ad9ec223a7289a7416ce6982c8e6b3371",
+    "plugins/note-compass/shared/rules.md": "9a64c3eda7ef30b6181cb245139348a02175676ca0bbc3645b166afd47c0e328",
+    "plugins/note-compass/skills/compare/SKILL.md": "8e1fd2538058ef47ab715d1e9fea970491493099c5a88b4792345db5ed19534a",
+    "plugins/note-compass/skills/unpack/SKILL.md": "190228c6c751c0ba046ed8d998369ecc4502ff58939da580e069b6a7a84535d3",
+    "tests/scenarios.md": "1a567f3a0cca40480e865aacf54fabc6cb74e5cafdaa1a69fe6af5d9f34cae6f",
+    "docs/validation.md": "40152788a646df730552b112bf6d689e23ed0070db642733ad73b2ea9ba137cb",
+    "docs/plugin-page.md": "a164b08bff30ec0ba4662764f436c1c4c161b5be424c8ed4e38be841817006c7",
+    "samples/meeting.md": "2db92fc890995c3836ff1aa3c3ce546f636592b4c4b5ca9cb2c32d8dbc33ccf1",
+    "samples/idea.md": "5617f131abcd98f8accd2e581ce6d80f927d937f2f695de32478ab392c742007",
+    "scripts/validate.py": "0b86cd48dbf2a134c2b5518480ba69fdef9d28fb96cf6614b8648bccbd0f6288",
+    "outputs/idea-unpacked.md": "9c3d6e0f3d2bee5202ae4cb3b96942030404281ee0b73f8336568a4e0357dc59",
+    "outputs/compared.md": "d37e4931ff7d5ebee9974ee107a385db4adca1d8b539607cec7014ee7ad13858",
+    "outputs/meeting-unpacked.md": "f9b25e6a01752101ced462d0469bca48b2817bf837fee678c77bf919305351ab"
+  }
+}

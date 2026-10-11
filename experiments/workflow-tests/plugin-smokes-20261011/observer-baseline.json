@@ -1,0 +1,23 @@
+{
+  "mode": "baseline",
+  "collision": {
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "foreign_file_preserved": false,
+  "first": {
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "second": {
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "repeat_bytes_equal": false,
+  "self_excluded": false,
+  "alpha_preserved": true,
+  "output": "# Notes index\n\n- alpha.md\n- generated.md\n- index.md\n"
+}

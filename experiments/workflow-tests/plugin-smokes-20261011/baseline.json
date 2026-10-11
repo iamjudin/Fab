@@ -1,0 +1,19 @@
+{
+  "create": {
+    "AGENTS.md": "87d1a9e091506896fdff6d940a69fe09ad8b1648c22a634591e98192fc9f73cb",
+    "samples/meeting.md": "2db92fc890995c3836ff1aa3c3ce546f636592b4c4b5ca9cb2c32d8dbc33ccf1",
+    "samples/idea.md": "5617f131abcd98f8accd2e581ce6d80f927d937f2f695de32478ab392c742007"
+  },
+  "repair": {
+    "accepted.md": "564af07b90ef4cfc074c8eb3717178c1376612aa5a34b34b43a7fb41c3997c10",
+    "README.md": "8420582031311a9bf6fa139b2c3ccddbc95de90c20f80736b3ace1b4b8cf79cf",
+    "AGENTS.md": "ca6a38bb87ed986bc866908b2506b55a202ebadb099a9a181545f2c4a9741b03",
+    "plugins/local-index/plugin.json": "32106da275728921faeb9baa57a71f938354e40a2dc3b01afc62f18ad4586fa3",
+    "plugins/local-index/scripts/index_notes.py": "c3480dd4cb3f81b017bb70a0423e9e9eff3d3a5083112bd63a5c4147e5c93c5b",
+    "plugins/local-index/skills/index/SKILL.md": "1d7fda90042d411ca0c0d315b22085aab79d8b5aaa9ecf87f57a936cf72255ed",
+    "plugins/local-index/skills/index/references/method.md": "553c486732c484160c75096ffa561c69b41ec35e8a3c69ebbc42bdb7f326c85d",
+    "docs/backlog.md": "ea46e69ef2c73f4f517df9626e7ca1ac9570920b61cfd74fe559c3865b2f8c5a",
+    "notes/alpha.md": "fd543d8819b7e4ea6ed139da157685b709ea425f574fb2034a4f2151495399c1",
+    "notes/index.md": "1bedbb309dd183d802407944ff18eddf87a34cd1902f27df67a6b0274557bba2"
+  }
+}

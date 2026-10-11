@@ -1,0 +1,32 @@
+{
+  "exit": 0,
+  "seconds": 183.8,
+  "command": [
+    "codex",
+    "exec",
+    "--json",
+    "--skip-git-repo-check",
+    "--approve-for-me",
+    "-C",
+    "/private/tmp/fab-plugin-smokes-20261011/create",
+    "-o",
+    "/private/tmp/fab-plugin-smokes-20261011/create.final.md",
+    "-"
+  ],
+  "events": [
+    {
+      "type": "thread.started",
+      "thread_id": "01a12c92-6f75-75f3-b7a8-625b87132a6f"
+    },
+    {
+      "type": "turn.completed",
+      "usage": {
+        "input_tokens": 369669,
+        "cached_input_tokens": 322176,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6552,
+        "reasoning_output_tokens": 74
+      }
+    }
+  ]
+}

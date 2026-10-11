@@ -1,0 +1,58 @@
+[
+  {
+    "type": "agent_message",
+    "text": "Использую установленный skill Fab Plugin: проверю причины повторного включения результата и перезаписи `index.md`, сохранив filename-only метод и твои правки. Затем проверю исправление локально и подготовлю текст страницы плагина.\n"
+  },
+  {
+    "type": "command_execution",
+    "command": "/bin/zsh -lc 'cat /Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.9/skills/plugin/SKILL.md'",
+    "exit_code": 0
+  },
+  {
+    "type": "command_execution",
+    "command": "/bin/zsh -lc \"pwd; rg --files -g '\"'!node_modules'\"' -g '\"'!.git'\"'; git status --short\"",
+    "exit_code": 0
+  },
+  {
+    "type": "command_execution",
+    "command": "/bin/zsh -lc 'cat /Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.9/shared/core.md /Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.9/shared/decision-policy.md /Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.9/shared/project-contract.md /Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.9/skills/plugin/references/runtime.md'",
+    "exit_code": 0
+  },
+  {
+    "type": "command_execution",
+    "command": "/bin/zsh -lc 'cat AGENTS.md accepted.md docs/backlog.md README.md plugins/local-index/plugin.json plugins/local-index/skills/index/SKILL.md plugins/local-index/skills/index/references/method.md plugins/local-index/scripts/index_notes.py notes/index.md notes/alpha.md; git diff'",
+    "exit_code": 0
+  },
+  {
+    "type": "agent_message",
+    "text": "В бэклоге уже есть исправление повторной индексации — текущая задача его покрывает. Причины нашёл: скрипт включает все `*.md`, в том числе выходной файл, и без проверки перезаписывает результат. Skill также заявляет слишком широкую область активации.\n\nДобавлю исключение выходного пути и проверку метки собственного индекса. Чужой файл будет отклоняться; filename-only метод сохранится. Проверю также запуск из другого рабочего каталога и границы применения skill.\n"
+  },
+  {
+    "type": "command_execution",
+    "command": "/bin/zsh -lc 'mkdir -p plugins/local-index/tests'",
+    "exit_code": 0
+  },
+  {
+    "type": "command_execution",
+    "command": "/bin/zsh -lc \"cat > plugins/local-index/tests/test_index_notes.py <<'PY'\nimport subprocess\nimport sys\nimport tempfile\nimport unittest\nfrom pathlib import Path\n\nSCRIPT = Path(__file__).resolve().parents[1] / 'scripts/index_notes.py'\n\n\nclass IndexTests(unittest.TestCase):\n    def run_index(self, notes, output, cwd):\n        return subprocess.run([sys.executable, str(SCRIPT), str(notes), str(output)],\n                              cwd=cwd, capture_output=True, text=True)\n\n    def test_repeat_and_source_preservation(self):\n        with tempfile.TemporaryDirectory() as tmp:\n            root = Path(tmp)\n            notes = root / 'notes with spaces'\n            notes.mkdir()\n            (notes / 'alpha.md').write_bytes(b'private body\\\\xff')\n            (notes / 'index.md').write_text('personal index')\n            (notes / 'nested.md').mkdir()\n            output = notes / 'local-index.md'\n            before = {p.name: p.read_bytes() for p in notes.iterdir() if p.is_file()}\n            self.assertEqual(self.run_index(notes, output, root).returncode, 0)\n            first = output.read_bytes()\n            self.assertEqual(self.run_index(notes, output, root).returncode, 0)\n            self.assertEqual(output.read_bytes(), first)\n            self.assertEqual(output.read_text().splitlines()[3:], ['- alpha.md', '- index.md'])\n            self.assertEqual({name: (notes / name).read_bytes() for name in before}, before)\n\n    def test_refuse_foreign_and_legacy_outputs(self):\n        with tempfile.TemporaryDirectory() as tmp:\n            root = Path(tmp)\n            for body in ['personal index', '# Notes index\\\\n\\\\n- alpha.md\\\\n']:\n                output = root / 'index.md'\n                output.write_text(body)\n                result = self.run_index(root, output, root)\n                self.assertNotEqual(result.returncode, 0)\n                self.assertIn('Refusing', result.stderr)\n                self.assertEqual(output.read_text(), body)\n\n    def test_symlink_and_missing_directory(self):\n        with tempfile.TemporaryDirectory() as tmp:\n            root = Path(tmp)\n            source = root / 'alpha.md'\n            source.write_text('personal')\n            output = root / 'link.md'\n            output.symlink_to(source)\n            self.assertNotEqual(self.run_index(root, output, root).returncode, 0)\n            self.assertEqual(source.read_text(), 'personal')\n            self.assertNotEqual(self.run_index(root / 'missing', root / 'new.md', root).returncode, 0)\n            self.assertFalse((root / 'new.md').exists())\n\n\nif __name__ == '__main__':\n    unittest.main()\nPY\npython3 -m unittest discover -s plugins/local-index/tests -v\"",
+    "exit_code": 0
+  },
+  {
+    "type": "agent_message",
+    "text": "Локальные проверки прошли: повторный запуск даёт тот же результат без включения себя; чужой `index.md` и старый индекс без метки остаются неизменными; выходная символьная ссылка отклоняется. Запуск по абсолютному пути работает из другого каталога, включая пути с пробелами.\n\nОписание skill теперь ограничено перечнем имён Markdown-файлов. Это проверка исходных инструкций, а не фактической активации в установленном runtime: установку мы не выполняем, поэтому такого подтверждения не заявляю.\n"
+  },
+  {
+    "type": "command_execution",
+    "command": "/bin/zsh -lc \"cat >> README.md <<'MD'\n\n## Local Index — перечень Markdown-заметок\n\nПлагин создаёт локальный, отсортированный список имён \"'`.md`-файлов в выбранном каталоге. Он не читает содержимое заметок, не делает AI-сводки и не извлекает задачи или решения.\n\n### Пример запроса\n\n«Используй Local Index: составь список имён Markdown-заметок из `/absolute/path/notes` и сохрани его в `/absolute/path/notes/local-index.md`. Содержимое заметок не анализируй».\n\nДля проверки локального пакета из корня этого workspace:\n\n```sh\npython3 plugins/local-index/scripts/index_notes.py notes notes/local-index.md\n```\n\nТу же команду можно повторить: собственный выходной файл исключается из списка. Существующий личный `notes/index.md` останется нетронутым и будет указан среди заметок.\n\nРезультат:\n\n```markdown\n<!-- local-index: filename-only v1 -->\n# Notes index\n\n- alpha.md\n- index.md\n```\n\n### Ограничения\n\n- Нужен Python 3; каталог заметок и родительский каталог результата должны существовать.\n- Сканируется только выбранный каталог, без вложенных каталогов, только `*.md`.\n- Обновлять можно только файл с точной меткой Local Index в первой строке. Чужие файлы и старые индексы без метки отклоняются; выбирай для них новый выходной путь.\n- Выходная символьная ссылка отклоняется. Метка — соглашение об авторстве, а не криптографическая проверка.\n- Запускай одного писателя за раз: защиты от одновременного редактирования нет.\n- Локально проверены helper и инструкции пакета. Установка, реальная активация skill в новом сеансе и поведение установленного результата не проверялись.\n\nПроверки: `python3 -m unittest discover -s plugins/local-index/tests -v`.\nMD\ncat > docs/local-index-verification.md <<'\"'MD'\n# Проверка исправления Local Index\n\nПроверено 2026-10-11 в отдельном локальном workspace. Установленный Fab Plugin использован как инструкция работы; изменялся только локальный пакет Local Index и документация проекта.\n\n## Причины и исправление\n\n\"'`glob('\"'*.md')\"'` включал выходной файл; безусловный `write_text` затирал любой существующий результат. Helper теперь исключает разрешённый выходной путь и проверяет точную метку собственного результата перед обновлением. Исходные заметки не читаются; проверяется только первая строка выходного файла. Старые немаркированные результаты автоматически не присваиваются плагину.\n\nОписание skill раньше охватывало любые заметки, исследования, планирование и сводки. Теперь положительная граница — создание/обновление локального перечня имён Markdown-файлов; отрицательная — сводки, исследования, планирование и извлечение задач. Текущий запрос о ремонте плагина относится к Fab Plugin; выполнение самого filename index относится к Local Index.\n\n## Исполнимость и свидетельства\n\nОт `skills/index/SKILL.md` путь `../../scripts/index_notes.py` ведёт к существующему helper. Ссылка `references/method.md` существует, метод автономен и не зависит от `accepted.md` в пользовательском проекте. Команда использует абсолютные пути и не зависит от рабочего каталога. Manifest разбирается как JSON; это структурная проверка, не сертификация host-совместимости.\n\n`python3 -m unittest discover -s plugins/local-index/tests -v`: 3 теста прошли. Проверены два запуска и побайтовое равенство результатов, исключение результата, сохранность исходных файлов, отсутствие чтения тела заметки с невалидным UTF-8, пути с пробелами, другой рабочий каталог, чужой и старый выход, выходная символьная ссылка, отсутствующий входной каталог.\n\nПредположение: метка идентифицирует собственный результат по соглашению, запуск выполняется одним писателем. Конкурентная модификация не защищена блокировкой. Используется прямой, нерекурсивный перечень `*.md`, как в прежнем helper.\n\nФактическая автоматическая активация skill и поведение установленного Local Index не проверены: установка исключена условиями задачи. Это оставшаяся граница доказательств, не блокер локального исправления. Remote, коммиты, публикация и глобальные настройки не изменялись. Пользовательские строки README и accepted.md сохранены.\nMD\npython3 -m json.tool plugins/local-index/plugin.json\n git diff --check\n git status --short'",
+    "exit_code": 0
+  },
+  {
+    "type": "command_execution",
+    "command": "/bin/zsh -lc 'find plugins/local-index -type d -name __pycache__ -exec rm -r {} +; git diff --check'",
+    "exit_code": 0
+  },
+  {
+    "type": "agent_message",
+    "text": "Исправлено локально:\n\n- Индекс исключает себя при повторном запуске.\n- Чужой `index.md` не перезаписывается; обновление требует метки Local Index.\n- Skill ограничен filename-only задачей, пути запуска уточнены.\n- Принятый метод и твои незакоммиченные правки сохранены.\n\nТри локальных теста прошли, `git diff --check` — без ошибок.\n\nКонтент страницы с примером и ограничениями — [README.md](README.md). Подробности проверки — [отчёт](docs/local-index-verification.md).\n\nФактическая активация установленного skill не проверена: установка исключена твоими условиями. Fab, глобальные настройки, remote и коммиты не изменял."
+  }
+]

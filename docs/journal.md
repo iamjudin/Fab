@@ -62,3 +62,15 @@ shared runtime contracts; Git was clean on codex/bootstrap-beta. Creator confirm
 successful first context restoration for FAB-02 and continued work here.
 AGENTS, handoff and owning backlog now record the actual transition. Sustained
 continuity remains open; this first restoration does not close the whole contract.
+
+## 2026-10-11 — two autonomous Plugin inputs observed
+Creator requested new Plugin/former Fabricator tests with different inputs,
+including page content but no Git release. Two fresh CLI contexts on installed
+beta.9 (parity57files/462d4cc828c5d99f), actual GPT-6.1 Sol/Low, completed creation
+and maintenance. Root observed source outcomes, preservation and actual helper
+recovery from overwrite/self-indexing. Both honest about untested install/discovery.
+Total CLI291.3s/input531387/cached470016/output10451; root overhead excluded.
+Preflight sandbox state-DB failure separately retained; authorized CLI retry,
+no corrective model run/reset/install/remote/commit/publication of test packages.
+Reports/prompts/page drafts/observer evidence saved here; generated sources in tmp.
+FAB-04 evidence expanded, no general PASS or automatic closure of FAB-02.

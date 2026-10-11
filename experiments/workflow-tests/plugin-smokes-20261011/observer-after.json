@@ -1,0 +1,35 @@
+{
+  "mode": "after",
+  "collision": {
+    "exit": 1,
+    "stdout": "",
+    "stderr": "Local Index: Refusing to overwrite a file without the Local Index marker\n"
+  },
+  "foreign_file_preserved": true,
+  "first": {
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "second": {
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "repeat_bytes_equal": true,
+  "self_excluded": true,
+  "alpha_preserved": true,
+  "output": "<!-- local-index: filename-only v1 -->\n# Notes index\n\n- alpha.md\n- index.md\n",
+  "git_status": "A  AGENTS.md\nAM README.md\nA  accepted.md\nAM docs/backlog.md\nA  notes/alpha.md\nA  notes/index.md\nA  plugins/local-index/plugin.json\nAM plugins/local-index/scripts/index_notes.py\nAM plugins/local-index/skills/index/SKILL.md\nAM plugins/local-index/skills/index/references/method.md\n?? docs/local-index-verification.md\n?? plugins/local-index/tests/\n",
+  "git_remotes": "",
+  "git_commit_exists": false,
+  "baseline_byte_comparison": {
+    "README.md": false,
+    "accepted.md": true,
+    "notes/alpha.md": true,
+    "notes/index.md": true,
+    "plugins/local-index/skills/index/references/method.md": false
+  },
+  "README_original_prefix_preserved": true,
+  "method_original_prefix_preserved": true
+}
