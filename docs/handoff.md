@@ -13,6 +13,9 @@
   model/effort и fresh-context boundary. Это не обязательные новые sidebar-чаты.
 - Установлена Fab0.1.0-beta.18, 60 файлов, fingerprintc463bb6928771c74, marketplace fab-local.
 - 36 локальных регрессий PASS; source/cache совпадают.
+- Beta.18 закреплена локальным tag `checkpoint-beta18-2026-10-12`;
+  [границы checkpoint](checkpoints/fab-beta.18.md). Пакет можно подключать к
+  одному проекту для ограниченного реального использования; карта не имеет общего PASS.
 - Partial-route suite завершён: 12turns, адресные FAB-11/FAB-03/WF-01 PASS;
   next — SVG readability/diagnostics WF-20 и наблюдение cleanup beta.18 FAB-09.
   [Актуальный вывод](../experiments/workflow-tests/2026-10-12-partial-routes-results.md).
