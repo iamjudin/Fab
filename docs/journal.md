@@ -213,3 +213,18 @@ open; best next technical work is renderer readability/diagnostics, not full rer
 11workspaces+5helpers retained/verified in ignored raw, scratch root removed.
 Final report/selected result files and readable path-normalized answers tracked.
 No reset/purchase/public release/merge; source branch remains experimental.
+
+## 2026-10-12 — beta18 frozen; Canvas alternatives researched
+Creator asked research/options before map engineering and pin current Fab for
+possible project use. Checkpoint document committed10e44cf and annotated local
+tag checkpoint-beta18-2026-10-12, branch codex/canvas-layout-research created;
+runtime beta18/60files/c463bb6928771c74 unchanged and installed parity PASS.
+Read-only reproduction isolates missing label-label checks; rectangles for
+save-return/cancel-item-return overlap while warnings empty. Primary JSON Canvas
+spec/ELK/plugin docs consulted, plugin catalogue checked. Existing Canvas Mindmap
+1.0.2 enabled in Brain metadata; app1.12.7, Advanced current manifests require1.13.
+Proposal: correct diagnostics, bounded scene-aware ELK adapter experiment, avoid
+full new editor before actual need. JSON Canvas cannot store exact routed bends/
+label coordinates; native viewer decision matters. No installs, engine execution,
+source graph/map edits or runtime promotion. Research note/receipts retained;
+creator asked primary viewer preference before dependent implementation.

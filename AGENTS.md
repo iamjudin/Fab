@@ -50,3 +50,7 @@ and preserves compatible feedback. Partial-route suite completed12turns, useful
 bounded outcomes; FAB-11 addressed in beta.17. Current next: Canvas readability/
 SVG diagnostics (WF-20), observe beta.18 preview cleanup (FAB-09). No stats-only
 full rerun. Evidence in 2026-10-12-partial-routes-results.md.
+Beta.18 pinned at checkpoint-beta18-2026-10-12 (10e44cf). Current work: research
+Canvas/card layout alternatives before implementation; see docs/research/
+canvas-layout-options-2026-10-12.md. Proposed ELK adapter is not accepted yet;
+primary interactive viewer choice remains open. No third-party installs or map edits.

@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-12",
+  "obsidianVersion": "1.12.7",
+  "vaultScope": "Brain plugin metadata only; no research-note reads or changes",
+  "canvasMindmap": {
+    "id": "canvas-mindmap",
+    "name": "Canvas Mindmap",
+    "version": "1.0.2",
+    "minAppVersion": "1.4.0"
+  },
+  "canvasMindmapEnabled": true,
+  "advancedCanvasManifestPresent": false,
+  "checkpointTag": "checkpoint-beta18-2026-10-12",
+  "tagCommit": "10e44cf267c6a1ccc3da6d36528c3fbb423a64ef",
+  "runtimeVersion": "0.1.0-beta.18",
+  "runtimeFingerprint": "c463bb6928771c74",
+  "changesToUserVault": false
+}

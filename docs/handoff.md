@@ -6,7 +6,7 @@
 
 ## Где работаем
 
-- Source: /Users/iamjudin/Desktop/Lab/Fab, текущая экспериментальная ветка codex/partial-workflow-tests от codex/bootstrap-beta; merge не выполнялся.
+- Source: /Users/iamjudin/Desktop/Lab/Fab, текущая исследовательская ветка codex/canvas-layout-research от checkpoint-beta18-2026-10-12; предыдущий partial-пакет в codex/partial-workflow-tests; merge не выполнялся.
 - Private remote: https://github.com/iamjudin/Fab . Публичного выпуска/merge нет.
 - 2026-10-12 creator подтвердил самостоятельные Git checks и локальные коммиты
   проверенных этапов. Формат теста на наше усмотрение; evidence указывает actual
@@ -206,3 +206,20 @@ readable/results долговечны. Старые previews и server3372 не 
 (WF-20): root PNG показывает наложение return labels вопреки no-warning. Следующий
 нужный preview также проверит cleanup18; нет необходимости нового full model-run.
 Ветка codex/partial-workflow-tests остаётся отдельной, merge/public release нет.
+
+## 2026-10-12 — checkpoint18 и исследование карт
+Creator выбрал WF-20 следующим фокусом, запросил research/options до реализации
+и закрепление текущей версии для возможного подключения к одному проекту.
+Beta.18 закреплена tag checkpoint-beta18-2026-10-12 на10e44cf; source/runtime
+c463bb6928771c74 совпадают, package не менялась. Ветка research отделена.
+Read-only repro: checker warnings=[], но save-return/cancel-item-return labels
+пересекаются; label-vs-label проверки нет. JSON Canvas не хранит bends/label
+positions, поэтому собственный preview не обещает native fidelity.
+Исследованы Canvas Mindmap/Mindvas/Advanced Canvas, Kanvas/Excalidraw, ELK и
+viewer alternatives. Local Obsidian1.12.7, Canvas Mindmap1.0.2 enabled;
+Advanced Canvas7.1.0 и6.5.4 требуют1.13.0. Ничего не устанавливалось.
+[Варианты и рекомендация](research/canvas-layout-options-2026-10-12.md): честная
+diagnostics correction + маленький ELK core/adapter spike; собственный полноценный
+viewer/plugin только по результату. Это proposal, не принятое решение.
+Вопрос creator об основном interactive view (Obsidian vs local web) отправлен;
+ожидаемый выбор определяет native adapter scope. До него implementation нет.

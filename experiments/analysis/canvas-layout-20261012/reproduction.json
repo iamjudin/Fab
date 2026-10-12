@@ -1,0 +1,41 @@
+{
+  "runtimeVersion": "0.1.0-beta.18",
+  "packageFingerprint": "c463bb6928771c74",
+  "sourceCanvas": "experiments/workflow-tests/partial-routes-20261012/wireframe-corrective/result/product/reviews/structure.canvas",
+  "canvasSha256": "5ce4700fdc841798a5bdef1e668e960351faf80e58d1ed6381d8ef0098dcb601",
+  "rendererSha256": "98dcb4597256534b64769cf9c5db80b25efe1cfbd3e96fce3bc21963e4cf7913",
+  "existingWarnings": [],
+  "labelBoxes": [
+    {
+      "id": "save-return",
+      "text": "Успешная запись",
+      "x": 1195.0,
+      "y": 908.0,
+      "width": 165,
+      "height": 30
+    },
+    {
+      "id": "cancel-trip-return",
+      "text": "Новая поездка: отмена",
+      "x": 1063.5,
+      "y": 433.0,
+      "width": 231,
+      "height": 30
+    },
+    {
+      "id": "cancel-item-return",
+      "text": "Вещь: отмена",
+      "x": 1211.5,
+      "y": 908.0,
+      "width": 132,
+      "height": 30
+    }
+  ],
+  "independentRectOverlapPairs": [
+    [
+      "save-return",
+      "cancel-item-return"
+    ]
+  ],
+  "interpretation": "Read-only reproduction; warning checker tests labels vs nodes but omits label-vs-label pairs. No map/runtime changes."
+}
