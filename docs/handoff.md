@@ -223,3 +223,9 @@ diagnostics correction + маленький ELK core/adapter spike; собств
 viewer/plugin только по результату. Это proposal, не принятое решение.
 Вопрос creator об основном interactive view (Obsidian vs local web) отправлен;
 ожидаемый выбор определяет native adapter scope. До него implementation нет.
+Creator затем выразил предпочтение своему редактору и запросил оценку с отладкой,
+готов набросать UI. Предварительно: layout spike6–12h, prototype24–40h total,
+bounded MVP60–100h total; Obsidian custom-view wrapper+24–48h. Это rough engineering
+estimate, не подтверждённая скорость;35–45%внутри диапазонов на debug/checks.
+Own UI на готовом layout engine рекомендован; container/manual-pin UX ещё открыты,
+implementation не запускалась. Детальный scope/границы в research note.
