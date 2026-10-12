@@ -11,7 +11,16 @@
 Актуальная цель — самостоятельные полезные навыки и optional routes для
 инди-создателя; mobile focus, не обязательный greenfield pipeline.
 
-## Индекс
+## Git/GitHub language and approved presentation
+Authored repository text, examples, new journal/handoff entries, metadata,
+commit/tag messages, PRs, issues and release notes are English. Conversation stays
+Russian on ты. Preserve supplied research and frozen historical evidence in their
+recorded language; translating the archive requires explicit scope.
+Approved identity: Fab; full name Fabricator; tagline "brainstorm, build, ship".
+Use the creator-supplied factory icon unchanged. Resolve missing public branding
+before publication, and validate metadata/asset paths without claiming host UI QA.
+
+## Project index
 1. docs/backlog.md — текущий пакет и единственный реестр Fab.
 2. docs/beacon.md → plugins/fab/shared/core.md — канонические принципы.
 3. docs/architecture/design.md — implemented vs planned skill boundaries.
@@ -43,8 +52,8 @@ Creator 2026-10-12 запросил создание отдельного Canvas
 Не создавай subagents без явного разрешения на делегацию.
 
 ## Current boundary
-Installed Fab0.1.0-beta.22,67files/71349e50dbffe9c0. All ten independent contracts.
-46local regressions, bounded outcome/domain/UI/maintenance smokes; not universal
+Installed Fab0.1.0-beta.23,68files/7a402724db9b66ae. All ten independent contracts.
+50local regressions, bounded outcome/domain/UI/maintenance smokes; not universal
 maturity. Current detailed state in docs/handoff.md and docs/backlog.md. Continue
 across checkpoints when authorized; user explicitly rejected artificial pauses.
 Creator 2026-10-12 authorized public GitHub release of current iamjudin/Fab,

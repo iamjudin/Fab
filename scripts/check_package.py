@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Validate package references, methods and optional installed parity."""
-import argparse, hashlib, json, re
+import argparse, hashlib, json, re, struct, zlib
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1] / 'plugins/fab'
 def payload(root):
@@ -11,9 +11,43 @@ def fingerprint(files):
     for name,content in sorted(files.items()):
         h.update(name.encode()+b'\0');h.update(hashlib.sha256(content).digest())
     return h.hexdigest()[:16]
+def validate_branding(root, manifest):
+    """Fab's PNG distribution profile; container checks, not host rendering."""
+    interface = manifest['extensions']['com.openai']['interface']
+    for key, limit in [('displayName', 30), ('shortDescription', 30),
+                       ('longDescription', 4000), ('developerName', 80)]:
+        value = interface.get(key)
+        assert isinstance(value, str) and value.strip() and len(value) <= limit, key
+        assert not re.search(r'[\u0400-\u04ff]', value), (key, 'English listing required')
+    for key in ('composerIcon', 'logo'):
+        value = interface.get(key)
+        assert isinstance(value, str) and value.startswith('./'), (key, 'missing relative asset')
+        path = (root / value).resolve()
+        assert path.is_relative_to(root.resolve()), (key, 'asset escapes package')
+        assert path.is_file() and path.suffix.lower() == '.png', (key, 'Fab requires a PNG asset')
+        data = path.read_bytes()
+        assert len(data) <= 5 * 1024 * 1024 and data[:8] == b'\x89PNG\r\n\x1a\n', key
+        assert data[12:16] == b'IHDR' and len(data) >= 33, key
+        width, height = struct.unpack('>II', data[16:24])
+        assert width == height and 48 <= width <= 4096, (key, 'icon dimensions')
+        offset, chunks = 8, []
+        while offset < len(data):
+            assert offset + 12 <= len(data), (key, 'truncated PNG')
+            size = struct.unpack('>I', data[offset:offset + 4])[0]
+            end = offset + 12 + size
+            assert end <= len(data), (key, 'truncated PNG chunk')
+            kind = data[offset + 4:offset + 8]
+            chunk = data[offset + 4:offset + 8 + size]
+            crc = struct.unpack('>I', data[offset + 8 + size:end])[0]
+            assert zlib.crc32(chunk) & 0xffffffff == crc, (key, 'PNG CRC mismatch')
+            chunks.append(kind)
+            offset = end
+        assert chunks[0] == b'IHDR' and b'IDAT' in chunks and chunks[-1] == b'IEND', key
+
 def validate(root):
     manifest=json.loads((root/'plugin.json').read_text())
     assert manifest['name']=='fab'
+    validate_branding(root, manifest)
     for p in root.rglob('*.md'):
         text=p.read_text();assert text.count('```')%2==0,p
         # Prompt format contains a literal Markdown link example, not a resource.

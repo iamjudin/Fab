@@ -19,7 +19,14 @@ banner or public repository for a personal tool.
 
 For public release: README/current usage/install/update/version/license/limitations
 and required release notes must match actual behavior. Relevant page metadata/
-assets aren't silently stale. Check pushed source/tag/Release in the requested
+assets aren't silently stale. Before publishing, resolve the approved display name,
+short/long descriptions and required icon/logo with the creator. Reuse accepted
+assets; missing branding is a concrete creator choice, not permission to invent
+it or call public presentation complete. Follow the intended host's current image
+and text limits, and check included files as well as paths. Put practical use
+cases before installation details; move lengthy technical material to linked
+docs. Keep GitHub-facing copy and examples in English under the shared contract.
+Check pushed source/tag/Release in the requested
 channel. A branch push isn't Release evidence. Compare exact remote SHA when
 raw branch content lags; report propagation delay rather than skip verification.
 If install instructions changed run them in an isolated clean setup before claim.

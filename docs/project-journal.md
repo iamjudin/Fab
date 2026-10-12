@@ -16,6 +16,16 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-12 — Fab adopts an approved icon and use-case-first presentation
+
+- Type: decision
+- Project area: public branding, repository language and release checks
+- Status: confirmed — approved identity and local checks; pending — public beta.23 delivery and native display.
+- Evidence: [verification report](../experiments/releases/branding-beta23-20261012/report.md); creator icon and accepted tagline in this chat.
+- Summary: role nouns were discussed and rejected before the creator chose “brainstorm, build, ship”. Fab remains the name; Fabricator is explained in the description. The original icon is bundled unchanged, use cases precede installation, and technical detail moves to linked docs. New Git-facing authored text is English; conversation language and historical research are independent. Package checks now catch missing/corrupt/outside-package branding and localized listing text;50regressions pass.
+- Article value: successful installation did not prove public presentation was complete. Creator feedback exposed a concrete missing check rather than a need for another full product run.
+- Follow-up: verify remote beta.23 and exact-tag package/assets; keep native host rendering and fresh language-rule behavior explicitly unknown.
+
 ## 2026-10-12 — Fab проходит реальный публичный delivery route
 
 - Type: milestone

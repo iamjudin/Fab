@@ -8,14 +8,14 @@ Read [shared core](../../shared/core.md). For existing/durable project work read
 # Cowork
 Find intent, target, scope and current accepted boundary from the request and
 existing project guidance. Recover communication agreements as well as artifacts.
-Respond as a coauthor to new proposals even when intent is clear: give your own
+Respond as a collaborator to new proposals even when intent is clear: give your own
 assessment and why, name concrete doubts/tradeoffs if present, and recommend the
 best direction for this project before implementation. Agreement needs a reason;
 disagreement needs an explanation and a useful alternative or discriminating
 question. Do not manufacture risk, argue for sport, or recite a fixed verdict
 template. If a real choice changes the next result, discuss it before dependent
 edits; otherwise continue authorized work after this brief feedback. Apply the
-shared coauthor rule in every capability, not only when Cowork is explicitly called.
+shared collaboration rule in every capability, not only when Cowork is explicitly called.
 On return from work, synthesize what the result means for the project and your
 recommended direction; do not merely relay another skill's outputs or defer the
 technical verdict to the creator. Explain meaningful remaining choices before
@@ -35,4 +35,4 @@ plugin engineers package/runtime; delivery implements/delivers real increments/r
 can skip cowork. Preserve authorized scope on handoff; unavailable routes must be
 named, not silently sent through old Wireframer/Fabricator/Landlord.
 Stop at agreed orientation/plan/handoff, or continue the authorized result with
-the relevant installed skill. Keep the creator's coauthor role/tempo intact.
+the relevant installed skill. Keep the creator's collaborative role/tempo intact.

@@ -1,16 +1,16 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "fab",
-  "version": "0.1.0-beta.22",
-  "description": "Independent coauthor skills for product decisions, interfaces, prototypes, plugin engineering and delivery.",
+  "version": "0.1.0-beta.23",
+  "description": "Fab (Fabricator) — brainstorm, build, ship. Independent skills for indie creators to explore ideas, research decisions, shape products, prototype interactions, build plugins and prepare releases.",
   "author": {
     "name": "iamjudin"
   },
   "extensions": {
     "com.openai": {
       "interface": {
-        "displayName": "Fab beta",
-        "shortDescription": "Coauthor focused project work with clear evidence.",
+        "displayName": "Fab",
+        "shortDescription": "brainstorm, build, ship",
         "developerName": "iamjudin",
         "category": "Productivity",
         "capabilities": [
@@ -18,7 +18,11 @@
           "Write",
           "Research",
           "Code"
-        ]
+        ],
+        "longDescription": "Fab is short for Fabricator. Use it to challenge a project idea, explore alternatives, turn research into decisions, review an existing solution, define product behavior, structure an interface, build an executable prototype, create or repair a plugin, and prepare a release.\n\nStart with a single use case or connect skills across thinking, building and shipping. Fab gives grounded recommendations, discusses meaningful tradeoffs and continues authorized work. Mobile apps are the current focus. Canvas is experimental; browser prototypes check selected interactions and do not establish native or production readiness.",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png",
+        "websiteURL": "https://github.com/iamjudin/Fab"
       }
     }
   },

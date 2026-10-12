@@ -2,7 +2,7 @@
 
 ## Сейчас
 
-Установлена beta.22: 10 самостоятельных навыков, 67 файлов, fingerprint `71349e50dbffe9c0`. Табличный default, Canvas opt-in; разрешённое отделение чата включает реальный перенос контекста и проверку восстановления. Ограниченная готовность по поверхностям, не общий PASS.
+Installed beta.23: ten independent skills,68files, fingerprint `7a402724db9b66ae`. Tables are default; Canvas is opt-in. Public branding and English authored Git artifacts are validated locally. Outcome readiness remains bounded; authorized chat handoff includes actual transfer and recovery verification.
 Реализован и проверен ограниченный пакет переноса. Полный клиентский маршрут дошёл до прототипа; два сбоя потребовали отдельных коррекций. Общего PASS нет.
 
 **Итог пакета:** Fab способен собрать исполняемый кандидат, но передача смысла между интерфейсными артефактами ещё ненадёжна. FAB-08 проверен в реальном браузере после коррекции и отдельно записанного обновления ресурса preview. Две проекции исправлены адресным partial corrective; текущий default — таблицы структуры/переходов; Canvas отдельно ждёт прототип creator, наблюдение уборки preview открыто. Оценка creator полезности/вкуса отдельна и не заменяет технический вывод. Новых полных прогонов ради статистики не нужно. Один разрешённый сброс использован.
@@ -57,3 +57,11 @@ model/IDs, но удалил совместимый feedback/Undo лишь из-
 Последующие correctives записаны в [итогах](../experiments/workflow-tests/2026-10-12-partial-routes-results.md);
 исходные FAIL не переписаны, successful cases не повторялись. [Контракт](../experiments/workflow-tests/2026-10-12-partial-routes-contract.md),
 [baseline usage](../experiments/workflow-tests/partial-routes-20261012/baseline-usage.json).
+
+## Public presentation — 2026-10-12
+
+Beta.23 candidate uses the approved Fab/Fabricator identity, creator icon and
+English use-case-first copy. Local50regressions/package/scope checks pass.
+[Evidence](../experiments/releases/branding-beta23-20261012/report.md).
+Public delivery is pending; native icon display and fresh generated-language
+behavior are unobserved. This extends FAB-13 without closing its chat-recovery gap.

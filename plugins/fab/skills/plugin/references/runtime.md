@@ -20,3 +20,10 @@ isolated runtime not default every minor fix. No destructive cleanup without
 scoped authorization/need. If fresh chat/restart is indispensable, state exact
 remaining boundary without falsely declaring fresh behavioral smoke passed.
 A runtime mismatch invalidates affected interpretation, not unrelated analysis.
+
+For public packaging validate listing text and required icon/logo files against
+current host limits. Include every referenced asset inside the package. Inspect
+actual images and theme contrast; metadata/file checks do not prove host display.
+Generated plugins inherit self-contained guidance separating conversation language
+from English Git/GitHub artifacts and requiring approved public branding before
+publication; do not make the new plugin depend on Fab for that guidance.

@@ -1,98 +1,49 @@
-# Fab — coauthor skills for indie creators
+<img src="plugins/fab/assets/icon.png" alt="Fab icon" width="96" height="96">
 
-Fab helps you assess an idea, explore alternatives, use research, define product
-behavior, organize an interface, build an executable prototype, engineer a plugin
-or prepare delivery. Start with the task you need; a full pipeline is optional.
-The working language is Russian, with direct recommendations and explicit evidence.
+# Fab — brainstorm, build, ship
 
-**Public beta: 0.1.0-beta.22.** Mobile apps are the current focus. Browser prototypes
-check selected interactions; they do not establish native or production readiness.
+**Fab**, short for **Fabricator**, helps indie creators turn ideas into useful
+products. Think through decisions, shape an interface, build a prototype or
+prepare a release. Use one skill on its own or connect the steps your project needs.
 
-## Install in Codex
+## Use cases
 
-Use a Codex client with plugin marketplace support. Install this fixed release:
+- **Challenge an idea.** “Is this app worth building? Challenge my assumptions and recommend a first test.”
+- **Explore possibilities.** “Suggest three approaches, explain the tradeoffs and recommend one.”
+- **Review what exists.** “Audit this onboarding flow and identify the most useful improvement.”
+- **Use research.** “Turn this study into decisions we can apply to our project.”
+- **Shape and prototype.** “Define this feature's behavior, organize the screens and build a prototype of the critical interaction.”
+- **Build and ship a plugin.** “Repair this skill, check its installed package and prepare a GitHub release.”
+- **Continue a project.** “Recover our decisions, open questions and next useful action.”
+
+## How Fab works
+
+**Brainstorm:** Cowork, Research, Analysis, Brainstorm and Testing help you frame
+questions, gather evidence, compare options and run focused checks.
+
+**Build:** Product, Wireframe, Prototype and Plugin define behavior, organize
+interfaces and create executable candidates or plugin packages.
+
+**Ship:** Delivery checks feasibility, prepares handoff and organizes a release
+for the agreed channel. Each skill also works independently.
+
+## Install
+
+Use a Codex client with plugin marketplace support:
 
 ```sh
-codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.22
+codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.23
 codex plugin add fab@fab-local
 ```
 
-`fab-local` is the existing marketplace identifier, including for Git installs.
-The package is `plugins/fab`; it includes its methods and does not need the
-maintainer's Obsidian vault, other plugins, or development reports.
-The package has no MCP server or external service credentials of its own.
-Research, Git and UI tasks use capabilities available in your host environment.
+Already installed? See [update and rollback](docs/install.md).
 
-For an update or rollback, first remove the existing marketplace registration,
-then add the desired published tag and reinstall Fab:
+## Beta status
 
-```sh
-codex plugin marketplace remove fab-local
-codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.22
-codex plugin add fab@fab-local
-```
+**0.1.0-beta.23** focuses on mobile apps. Structure and scenarios use Markdown
+tables; Canvas remains experimental. Browser prototypes have bounded checks.
+Read [known limits](docs/limitations.md) and [release notes](docs/releases/0.1.0-beta.23.md).
 
-Replace the example tag with the target release. Review its limits first.
-Run these commands outside the Fab source checkout to use the registered Git
-marketplace. Removing this registration is a catalog operation; the tested host
-retains the installed plugin until reinstall. A pinned marketplace stays on its
-selected release. `marketplace add` alone rejects a different ref for an existing
-registration; it does not switch versions. This corrects the update paragraph
-in the immutable beta.22 tagged README; use these maintained instructions or
-the GitHub Release notes.
+## Development and license
 
-The commands follow the [official plugin packaging documentation](https://developers.openai.com/plugins/build/plugins)
-and the installed CLI. Distribution-test results are recorded in the
-[release report](https://github.com/iamjudin/Fab/blob/codex/fab-maintenance/experiments/releases/public-beta22-20261012/report.md).
-This GitHub distribution is separate from publication in the public Plugins Directory.
-
-## Use
-
-Choose a Fab skill in your client, or explicitly name it in the request. Examples:
-
-- **Fab Analysis:** «Оцени этот существующий онбординг: где пользователь застрянет?»
-- **Fab Brainstorm:** «Предложи три подхода к приложению для сборов в поездку и выбери лучший для первого теста».
-- **Fab Product → Wireframe:** «Уточни поведение редактирования, затем обнови структуру существующего интерфейса».
-- **Fab Cowork:** «Продолжим проект: восстанови решения, открытые вопросы и следующий полезный шаг».
-
-The ten independent skills are Cowork, Research, Analysis, Brainstorm, Testing,
-Product, Wireframe, Prototype, Plugin and Delivery. Each can produce a bounded
-useful outcome. Explicit instructions and project agreements determine scope;
-ordinary changes do not authorize public releases or messages to other people.
-
-## Beta limits
-
-- Structure and scenarios default to Markdown tables. Canvas is opt-in and
-  experimental: labels can overlap; native Obsidian rendering is unverified.
-- Executable prototypes have evidence for selected browser paths. Device,
-  native, offline, payment and production guarantees need their own checks.
-- Fresh-context tests support bounded independent tasks and partial routes.
-  They do not prove that every skill succeeds on every input in this version.
-- Automatic chat handoff depends on host tools; sustained continuity and the
-  last queued Canvas-chat recovery remain unverified.
-- Research citation coverage is partial. Recheck changing platform, legal and
-  economic claims against current primary sources before using them.
-- Temporary-output cleanup and cross-project research updates still have
-  open behavioral cases. Read [known work](docs/backlog.md) before relying on them.
-
-See [release notes](docs/releases/0.1.0-beta.22.md) and
-[scoped readiness](docs/release-policy.md). A valid package is not whole-product approval.
-
-## Development
-
-```sh
-python3 -B scripts/check_package.py
-python3 -B -m unittest discover -s tests -q
-python3 -B scripts/check_fab_release.py
-```
-
-[Working index](AGENTS.md) · [Beacon](docs/beacon.md) · [Backlog](docs/backlog.md) ·
-[Handoff](docs/handoff.md) · [Project journal](docs/project-journal.md).
-Development reports include retained synthetic test products and historical failures;
-those products are evidence, not Fab's product roadmap.
-
-## License
-
-Original Fab code, instructions and authored documentation are available under
-[MIT](LICENSE). Referenced third-party materials retain their own rights;
-see [notices](NOTICE.md). Please retain attribution when redistributing Fab.
+[Development checks](docs/development.md) · [MIT](LICENSE) · [Attribution](NOTICE.md).

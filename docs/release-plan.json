@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "version": "0.1.0-beta.22",
-  "fingerprint": "71349e50dbffe9c0",
+  "version": "0.1.0-beta.23",
+  "fingerprint": "7a402724db9b66ae",
   "channel": "beta",
   "surfaces": [
     {
@@ -238,6 +238,24 @@
           "name": "actual thread creation and recovery",
           "result": "unknown",
           "evidence": "experiments/maintenance/chat-handoff-20261012/receipt.json"
+        }
+      ]
+    },
+    {
+      "id": "plugin.public-presentation",
+      "default": true,
+      "status": "limited",
+      "limitations": "Approved English listing and packaged PNG verified; no native Codex card/composer UI observation or public-directory submission. Historical Russian research/evidence retained.",
+      "checks": [
+        {
+          "name": "approved identity and English use-case presentation",
+          "result": "pass",
+          "evidence": "docs/decisions.md; README.md; creator approved tagline and supplied icon 2026-10-12"
+        },
+        {
+          "name": "listing fields and included PNG container/dimensions",
+          "result": "pass",
+          "evidence": "scripts/check_package.py; tests/test_package_guard.py; experiments/releases/branding-beta23-20261012/report.md"
         }
       ]
     }

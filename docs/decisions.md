@@ -61,3 +61,9 @@
   остаётся в import metadata/provenance, без второго видимого `#fab/imported`.
   При согласованной точечной миграции сохранять тело, filename и чужие project tags;
   новый default не разрешает массовую перепись всех старых notes.
+
+- 2026-10-12: approved public name Fab, full name Fabricator, tagline "brainstorm,
+  build, ship" and creator-supplied factory PNG. Public copy starts with use cases;
+  lengthy technical detail moves to linked docs. New authored Git/GitHub artifacts
+  are English regardless of chat language; source research and frozen evidence
+  keep their recorded language. Resolve missing public branding before publication.

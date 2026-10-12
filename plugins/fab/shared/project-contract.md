@@ -21,3 +21,12 @@ For ingested research keep the source revision and brief/full locations in proje
 provenance. Optional source-name/tag marking and cross-project usage follow the
 [Research contract](../skills/research/references/ingestion.md); source annotation
 requires the person's answer and never gates the completed research result.
+
+## Git and GitHub language
+
+Write authored Git/GitHub artifacts in English: repository documentation and
+examples, new journal/handoff entries, commit and tag messages, PRs, issues,
+release notes and public metadata. Conversation may use the person's language;
+do not carry chat localization into GitHub copy. Keep source research, quoted
+inputs and frozen historical evidence in their recorded language unless a
+translation is explicitly requested. Preserve stable IDs, filenames and refs.

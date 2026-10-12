@@ -1,0 +1,37 @@
+# Install, update and rollback
+
+Fab is distributed through the GitHub repository marketplace. Use a Codex client
+with Git-backed plugin support. The marketplace identifier is `fab-local` and the
+plugin selector is `fab@fab-local`.
+
+## First install
+
+```sh
+codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.23
+codex plugin add fab@fab-local
+```
+
+## Change version
+
+Run outside the Fab source checkout. Remove the existing catalog registration,
+add the desired published tag, then reinstall:
+
+```sh
+codex plugin marketplace remove fab-local
+codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.23
+codex plugin add fab@fab-local
+```
+
+Use the target tag for an update or rollback. The tested host retains the installed
+plugin until reinstall. Adding a different ref without removing the existing
+registration is rejected. A pinned marketplace stays on its selected release.
+
+## Environment
+
+The package contains its methods and does not require the maintainer's Obsidian
+vault or other plugins. It has no MCP server or service credentials of its own;
+research, Git and UI work use capabilities available in your host. This GitHub
+channel is separate from the public Plugins Directory.
+
+See the [official packaging documentation](https://developers.openai.com/plugins/build/plugins)
+and the [verified beta.22 distribution route](../experiments/releases/public-beta22-20261012/report.md).

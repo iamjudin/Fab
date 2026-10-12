@@ -45,8 +45,9 @@ ID, владельцев, UC, ветки результата/ошибки/во�
 
 Beta.18 сохранена как исторический checkpoint с известным Canvas FAIL. Её tag
 checkpoint-beta18-2026-10-12 на10e44cf неизменен. Beta.19 сохранена checkpoint3e53097.
-Пакет установлен локально как beta.22 (67files/71349e50dbffe9c0);
-переименование версии не превращает эксперимент в зрелую функциональность.
+Installed beta.23:68files/7a402724db9b66ae; version changes do not make
+experimental behavior mature. English Git artifacts and creator-approved public
+branding are required; see [presentation verification](../experiments/releases/branding-beta23-20261012/report.md).
 
 ## Git и владение
 Основной чат «Восстановить контекст Fab» / Lab/Fab / codex/fab-maintenance:

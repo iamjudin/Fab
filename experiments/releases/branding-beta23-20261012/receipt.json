@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-12",
+  "version": "0.1.0-beta.23",
+  "files": 68,
+  "fingerprint": "7a402724db9b66ae",
+  "approved": {
+    "name": "Fab",
+    "full_name": "Fabricator",
+    "tagline": "brainstorm, build, ship",
+    "public_language": "English",
+    "conversation_language": "Russian"
+  },
+  "icon": {
+    "path": "plugins/fab/assets/icon.png",
+    "sha256": "aedd9caa5fef1c687482c62f7fcf288defce540f3f013779de7734c6f1523e0a",
+    "source_bytes_unchanged": true,
+    "dimensions": [
+      512,
+      512
+    ],
+    "opaque": true,
+    "slots": [
+      "logo",
+      "composerIcon"
+    ]
+  },
+  "reference": "Tarsy README inspected read-only: purpose/features before installation, detailed instructions linked",
+  "readme": {
+    "before_words": 645,
+    "after_words": 286,
+    "use_cases_before_install": true,
+    "authored_public_copy": "English"
+  },
+  "checks": {
+    "local_regressions": 50,
+    "package": "pass",
+    "scope": "pass",
+    "public_copy": "pass",
+    "native_icon_display": "unknown",
+    "fresh_behavior_for_new_language_rule": "not observed",
+    "primary_cache_parity": "pass"
+  },
+  "publication": "pending",
+  "cleanup": "pending"
+}

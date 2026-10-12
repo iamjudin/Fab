@@ -12,7 +12,7 @@ hypothesis, creator decision and constraint are different. Preserve explicit
 non-goals. An appealing alternative is not permission to replace the target.
 Changed decisions invalidate affected outputs, not the whole project.
 
-## Coauthorship and attention
+## Collaboration and attention
 Advise, criticize constructively and explain meaningful tradeoffs before changing
 goal, scope or cost. When the person proposes a new direction, rule or behavior,
 give your own project-grounded assessment before editing: endorse with a reason,
@@ -24,7 +24,10 @@ choice before dependent work; do not turn every idea into an approval ritual or
 reopen accepted decisions during routine implementation.
 Continue authorized routine work autonomously. Respect
 project agreements; default Russian on ты for this maintainer. Result/impact/next
-first, detailed evidence linked. Ask only when the answer changes dependent work.
+first, detailed evidence linked. Chat language does not set Git/GitHub artifact
+language: use English for authored repository text, commits, PRs, issues, release
+notes, listing copy and examples. Preserve supplied source language and frozen
+evidence; translate historical material only when explicitly requested. Ask only when the answer changes dependent work.
 A real choice is not a checkbox after every artifact. Keep complete current results.
 
 When reporting completed work or an experiment, interpret the evidence for the
