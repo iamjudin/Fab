@@ -16,6 +16,16 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-12 — Видимая маркировка исследования упрощена до имени проекта
+
+- Type: decision
+- Project area: Research metadata
+- Status: confirmed — явный выбор creator и точечная миграция; needs-check — новые model-generated annotations.
+- Evidence: выбор `#Fab` в текущем чате, [receipt](../experiments/maintenance/research-tag-style-20261012/receipt.json), [ingestion rule](../plugins/fab/skills/research/references/ingestion.md).
+- Summary: namespace `#project/fab` и служебный `#fab/imported` были выведены рядом. Создатель выбрал один простой `#Fab`. Beta.21 меняет новый default; mobile note исправлена только внутри технического блока, тело по SHA/bytes сохранено. Import status остался в скрытой metadata, обработанная research revision прежняя.
+- Article value: пользовательская маркировка и служебный статус должны иметь понятные разные роли; изменение metadata не является новой редакцией исследования.
+- Follow-up: другие старые notes не мигрировались без явного scope; прочие FAB-10 cases остаются открытыми.
+
 ## 2026-10-12 — От отдельных веток к общему Git-процессу
 
 - Type: question

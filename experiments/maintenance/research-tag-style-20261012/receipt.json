@@ -1,0 +1,27 @@
+{
+  "source": "/Users/iamjudin/Library/Mobile Documents/iCloud~md~obsidian/Documents/Brain/Library/Fab: Мобильная структура и взаимодействие для Fab.md",
+  "beforeSha256": "ec4243c2b0475f302e9f49ee0b08d06464d39dda1dfa433cebec82ef40bbe825",
+  "afterSha256": "908c7f6e8d4f17ea2137bd2155e7fcdbfbdc83167378d0a7a6b2425913f5dd27",
+  "bodySha256": "f72f0d703fb94d10dafa04dd9ccc2da2a43570b88c2f4701d32631daa258dc3d",
+  "visibleTagBefore": [
+    "project/fab",
+    "fab/imported"
+  ],
+  "visibleTagAfter": [
+    "Fab"
+  ],
+  "importMetadataPreserved": true,
+  "backup": "experiments/maintenance/research-tag-style-20261012/raw/originals/mobile-structure-before.md",
+  "date": "2026-10-12",
+  "authorizedBy": "Creator selected simple #Fab tag",
+  "bodyPreserved": true,
+  "applied": true,
+  "runtime": {
+    "version": "0.1.0-beta.21",
+    "fingerprint": "4760530ec4471a3a",
+    "files": 65,
+    "sourceCacheParity": "pass",
+    "regressions": 46,
+    "freshModelTaggingObserved": false
+  }
+}

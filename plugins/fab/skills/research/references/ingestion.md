@@ -79,7 +79,8 @@ After the original, brief and indexed packet are processed and checked, ask once
 whether to add the current project's accepted name to the original filename and
 a project tag inside that document. Show the concrete before/after filename and
 tag. For example: `Fab: Report.md` → `Fab + Murmur: Report.md`,
-`#project/murmur`. Ask after the usable result is ready; this is an optional
+`#Murmur`. For this maintainer's Fab project use `#Fab`.
+Ask after the usable result is ready; this is an optional
 source annotation, not approval to perform ingestion or continue the project.
 If the person already explicitly authorized this marking for this source/project,
 honor that answer without asking again. Silence is not consent. A refusal leaves
@@ -91,10 +92,14 @@ known labels before `: <original title>`. Do not replace Fab or an earlier proje
 add duplicate prefixes, or interpret arbitrary colons in a title as project labels.
 If the project is already marked, keep its label and tag without another duplicate.
 If only one of label/tag is present, ask before completing the missing annotation.
-Project tags use `#project/<stable-project-slug>`; reuse an existing valid slug,
-and show a proposed safe slug when the project name has spaces or punctuation.
-The existing `#fab/imported` tag still denotes actual inclusion in the Fab bundle,
-not use by every project running Fab.
+Use a simple accepted project tag, such as `#Fab` or `#Murmur`, without adding a
+`project/` namespace by default. Reuse the person's existing valid tag; for names
+with spaces/punctuation show the proposed safe tag before source marking.
+Do not expose bundle inclusion as a second `#fab/imported` tag. Store that status
+in the machine-readable `<!-- fab-import:<module-id> -->` metadata marker and
+usage/provenance record; inclusion is distinct from use by a project running Fab.
+Existing legacy tags are not permission for a bulk migration: update only the
+source/tag scheme the person authorized, preserving other projects' tags.
 
 On agreement, add/update a small delimited technical block at the top of the
 original, leaving the research body intact. Use
@@ -144,8 +149,9 @@ An imported original may receive a tag and pointer only after the pair is
 available in the intended location. For maintainer notes being marked in Brain,
 after agreement under the source-marking policy, use `Fab: <original title>.md`
 when Fab is the only project label, or retain all labels as above. Keep the top technical heading
-`Использование в Fab`, marker `<!-- fab-import:<module-id> -->` and tag
-`#fab/imported`. Link the current brief/full and state the included version/date
+`Использование в Fab`, marker `<!-- fab-import:<module-id> -->` and the
+simple project tag `#Fab`. Bundle inclusion stays in the metadata marker,
+not a visible imported tag. Link the current brief/full and state the included version/date
 and validation limits. The prefix is a filename label, not a new research title.
 Preserve the actual source title and historical Wireframer attribution in the body.
 Project-specific marking is optional under the policy above; bundle import marks
@@ -157,11 +163,12 @@ dates/versions as history. Verify the module is actually included, refuse target
 collisions/symlinks, and update exact affected wiki/Markdown links within the
 authorized vault/project. Do not globally replace the word Wireframer in source
 text or rewrite historical packets/checkpoints. Repeated marking is idempotent.
-If a module is withdrawn, remove its current bundle-import marker/tag, preserving
-historical provenance and project usage labels/entries. Do not erase a Fab usage
+If a module is withdrawn, remove its current bundle-import marker, preserving
+historical provenance and project usage labels/entries. Remove a legacy imported
+tag if still present; do not erase the `#Fab` usage
 label merely because bundle inclusion ended. Otherwise keep the body intact. Version the pair
 together and preserve source fingerprints when updating it. For the maintainer,
-`#fab/imported` means included, not universally validated.
+the import marker means included, not universally validated.
 
 Revisit a module when primary sources change, a product exposes a contradiction,
 or a decision needs detail absent from the brief. Update the brief, packet audit,

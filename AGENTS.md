@@ -43,7 +43,7 @@ Creator 2026-10-12 запросил создание отдельного Canvas
 Не создавай subagents без явного разрешения на делегацию.
 
 ## Current boundary
-Installed Fab0.1.0-beta.20,65files/597115ccbb4b0a59. All ten independent contracts.
+Installed Fab0.1.0-beta.21,65files/4760530ec4471a3a. All ten independent contracts.
 46local regressions, bounded outcome/domain/UI/maintenance smokes; not universal
 maturity. Current detailed state in docs/handoff.md and docs/backlog.md. Continue
 across checkpoints when authorized; user explicitly rejected artificial pauses.

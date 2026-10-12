@@ -319,3 +319,14 @@ evidence map confirmed/needs-check/do-not-use и story spine для возмож
 целиком не восстановлена, поэтому точный состав старого merger остаётся needs-check.
 AGENTS задаёт дальнейшее обновление нового журнала на значимых границах; backlog
 остаётся единственным реестром задач. Runtime/version/Git-process не менялись.
+
+## 2026-10-12 — простой проектный тег
+Creator выбрал `#Fab` вместо namespace/service pair в показанной mobile note.
+Beta.21: Research использует простой принятый project tag; bundle import хранится
+в metadata marker, без видимого imported tag. В исходнике mobile заменена только
+строка технического блока на `#Fab`, research body побайтно прежний и import marker
+сохранён. Filename/processing revision и другие notes не менялись. Backup verified;
+[receipt](../experiments/maintenance/research-tag-style-20261012/receipt.json).
+Installed65files/4760530ec4471a3a, source/cache/46tests/scoped gate PASS.
+Fresh model generation по новой tag policy отдельно не наблюдалась. FAB-10 другие
+consent/refusal/additive/source-revision границы остаются открытыми.
