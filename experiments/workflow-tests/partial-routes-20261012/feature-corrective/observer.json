@@ -1,0 +1,18 @@
+{
+  "observer": "root developer, not independent human",
+  "verdict": "artifact PASS / final synthesis improved but next-action criterion incomplete",
+  "findings": [
+    {
+      "claim": "bounded artifact and preservation",
+      "result": "PASS",
+      "evidence": "Only undo.md added; source unchanged, candidate acceptance honest. Behavior coherent, IDs/filter/failed-write/trip switch/later completion handled as candidate rules."
+    },
+    {
+      "claim": "artifact handoff quality after beta.16",
+      "result": "PARTIAL",
+      "backlog": "FAB-11",
+      "evidence": "Final now recommends single-step undo and names filter/switch/error effects instead of only file status. It still omits why this is the right bounded choice and a useful next action; shared correction does not fully satisfy the criterion."
+    }
+  ],
+  "next": "One narrow Product exit clarification, then last planned fresh corrective; no blanket behavioral PASS."
+}

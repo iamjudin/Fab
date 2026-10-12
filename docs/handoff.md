@@ -11,8 +11,11 @@
 - 2026-10-12 creator подтвердил самостоятельные Git checks и локальные коммиты
   проверенных этапов. Формат теста на наше усмотрение; evidence указывает actual
   model/effort и fresh-context boundary. Это не обязательные новые sidebar-чаты.
-- Установлена Fab0.1.0-beta.17, 60 файлов, fingerprint5d8a3a9d23f096ed, marketplace fab-local.
+- Установлена Fab0.1.0-beta.18, 60 файлов, fingerprintc463bb6928771c74, marketplace fab-local.
 - 36 локальных регрессий PASS; source/cache совпадают.
+- Partial-route suite завершён: 12turns, адресные FAB-11/FAB-03/WF-01 PASS;
+  next — SVG readability/diagnostics WF-20 и наблюдение cleanup beta.18 FAB-09.
+  [Актуальный вывод](../experiments/workflow-tests/2026-10-12-partial-routes-results.md).
 - Основной рабочий чат — текущий чат в Lab/Fab с 2026-10-11; creator подтвердил, что дальше работаем здесь.
 - FAB-02: первое восстановление контекста через Fab Cowork успешно; устойчивая непрерывность пока открыта.
 - Wireframer0.2.5/recovery сохранены; Fabricator4543046/ahead3 и его чужие файлы не менялись.
@@ -180,3 +183,23 @@ Beta.16 установлена с узкой правкой этих разли�
 Следующий шаг — два fresh correctives с теми же inputs, без подсказки findings.
 Contract/evidence: experiments/workflow-tests/2026-10-12-partial-routes-contract.md,
 partial-routes-20261012. Это developer evaluation, не independent human acceptance.
+
+## Итог автономного partial-пакета — 2026-10-12
+Прогоны завершены:12turns/835.4sum-seconds/input2073222/cached1817472/output30703,
+GPT-6.1 Sol/Low. [Результат](../experiments/workflow-tests/2026-10-12-partial-routes-results.md).
+Fab полезен для мнения/альтернатив/read-only audit и коротких analysis→options/
+evidence→slice без обязательного pipeline. Beta.17 Product corrective исправил
+file-status-only итог: рекомендация/причина/компромисс с honest proposal status.
+Beta.16 Wireframe corrective сохраняет feedback/Undo, owners/returns/model/IDs.
+Это scoped developer/synthetic PASS, не все реальные пользовательские контексты.
+
+Current beta.18:60files/c463bb6928771c74, source/cache/36tests PASS. Последняя правка
+явно связывает temporary renders с lifecycle после фактически оставленного SVG;
+fresh model cleanup18 ещё не наблюдался. Root SVG сохранил/SHA проверил/убрал.
+Все11workspaces+5helpers verified и owned scratch удалён; raw retained/ignored,
+readable/results долговечны. Старые previews и server3372 не тронуты.
+
+Текущий рекомендуемый next — читаемость Canvas/исправление SVG label diagnostics
+(WF-20): root PNG показывает наложение return labels вопреки no-warning. Следующий
+нужный preview также проверит cleanup18; нет необходимости нового full model-run.
+Ветка codex/partial-workflow-tests остаётся отдельной, merge/public release нет.

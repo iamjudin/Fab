@@ -1,0 +1,7 @@
+{
+  "finalMtimeUTC": "2026-10-11T22:38:12.766128+00:00",
+  "metaMtimeUTC": "2026-10-11T22:38:12.913954+00:00",
+  "beta17CacheCreationCTimeUTC": "2026-10-11T22:38:15.729577+00:00",
+  "postUpdateOldCacheParity": "FAIL: old installed path retired by supported updater",
+  "interpretation": "Run output and metadata completed before update. Commands returned zero; no cache substitution. Frozen original beta16 retained in raw/runtime-beta16."
+}

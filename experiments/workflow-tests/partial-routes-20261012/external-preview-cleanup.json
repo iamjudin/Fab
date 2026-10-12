@@ -1,0 +1,9 @@
+{
+  "ownedPath": "/private/tmp/wireframe-corrective-preview.svg",
+  "provenance": "wireframe-corrective observed-events commands",
+  "retained": "/Users/iamjudin/Desktop/Lab/Fab/experiments/workflow-tests/partial-routes-20261012/wireframe-corrective/ui/author-preview.svg",
+  "sha256": "f3f3f191873fefa818a0abe8d5f0a8c1702f7b9aa67331b0eb48485bfadeb2cb",
+  "verified": true,
+  "removed": true,
+  "modelCleanupObserved": "FAIL; root cleanup is not proof of beta18 behavior"
+}

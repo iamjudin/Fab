@@ -1,0 +1,9 @@
+{
+  "baselineCase": "feature",
+  "sourceCheckpoint": "683c7476b773161692a2f370e8ee84181d8fa530",
+  "version": "0.1.0-beta.16",
+  "files": 60,
+  "fingerprint": "c96709ca2d41760d",
+  "onlyPromptChange": "beta.15 to beta.16 installed entry; user request bytes identical",
+  "expectedAnswerNotSupplied": true
+}

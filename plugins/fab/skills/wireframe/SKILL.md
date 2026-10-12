@@ -26,6 +26,10 @@ For mobile application structure/input read [mobile structure](../../shared/meth
 Use the selected platform branch without prescribing tabs/dashboard or replacing
 the domain model; future web navigation/input gets its own platform assessment.
 Preflight semantics before geometry; JSON/preview/native Obsidian are distinct.
+For temporary renders read [artifact lifecycle](../../shared/artifact-lifecycle.md).
+A limit on final deliverables is not a reason to park previews in shared temp:
+contain them in a task-owned directory, retain useful evidence and clean the
+disposable preview when observation ends.
 When producing or revising a Canvas structure overview, run
 scripts/check_structure.py <canvas>
 --surface-id <S-ID> for each included surface before progressing. Each declared

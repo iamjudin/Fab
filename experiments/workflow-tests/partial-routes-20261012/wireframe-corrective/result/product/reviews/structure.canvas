@@ -1,0 +1,308 @@
+{
+  "nodes": [
+    {
+      "id": "S-01",
+      "type": "group",
+      "x": 0,
+      "y": 0,
+      "width": 440,
+      "height": 1010,
+      "label": "S-01 Поездки • вход"
+    },
+    {
+      "id": "trips",
+      "type": "text",
+      "x": 50,
+      "y": 165,
+      "width": 340,
+      "height": 70,
+      "text": "Название поездки\nСобрано X из Y",
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "open",
+      "type": "text",
+      "x": 50,
+      "y": 255,
+      "width": 340,
+      "height": 60,
+      "text": "Открыть поездку → S-02",
+      "color": "#2563eb"
+    },
+    {
+      "id": "newtrip",
+      "type": "text",
+      "x": 25,
+      "y": 455,
+      "width": 390,
+      "height": 60,
+      "text": "Новая поездка → S-03",
+      "color": "#2563eb"
+    },
+    {
+      "id": "S-02",
+      "type": "group",
+      "x": 640,
+      "y": 0,
+      "width": 440,
+      "height": 950,
+      "label": "S-02 Выбранная поездка"
+    },
+    {
+      "id": "back",
+      "type": "text",
+      "x": 665,
+      "y": 45,
+      "width": 390,
+      "height": 55,
+      "text": "Назад к поездкам",
+      "color": "#2563eb"
+    },
+    {
+      "id": "filter",
+      "type": "text",
+      "x": 665,
+      "y": 215,
+      "width": 390,
+      "height": 55,
+      "text": "Все / Осталось",
+      "color": "#bae6fd"
+    },
+    {
+      "id": "items",
+      "type": "text",
+      "x": 685,
+      "y": 415,
+      "width": 350,
+      "height": 55,
+      "text": "Название вещи / собрана ли",
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "toggle",
+      "type": "text",
+      "x": 685,
+      "y": 490,
+      "width": 350,
+      "height": 55,
+      "text": "Отметить / вернуть",
+      "color": "#16a34a"
+    },
+    {
+      "id": "edit",
+      "type": "text",
+      "x": 685,
+      "y": 565,
+      "width": 350,
+      "height": 55,
+      "text": "Править вещь → S-03",
+      "color": "#2563eb"
+    },
+    {
+      "id": "add",
+      "type": "text",
+      "x": 665,
+      "y": 705,
+      "width": 390,
+      "height": 55,
+      "text": "Добавить вещь → S-03",
+      "color": "#2563eb"
+    },
+    {
+      "id": "S-03",
+      "type": "group",
+      "x": 1280,
+      "y": 0,
+      "width": 440,
+      "height": 630,
+      "label": "S-03 Временная форма"
+    },
+    {
+      "id": "name",
+      "type": "text",
+      "x": 1305,
+      "y": 140,
+      "width": 390,
+      "height": 80,
+      "text": "Название\nПоле черновика",
+      "color": "#bae6fd"
+    },
+    {
+      "id": "save",
+      "type": "text",
+      "x": 1305,
+      "y": 335,
+      "width": 390,
+      "height": 60,
+      "text": "Создать / Сохранить",
+      "color": "#16a34a"
+    },
+    {
+      "id": "cancel",
+      "type": "text",
+      "x": 1305,
+      "y": 445,
+      "width": 390,
+      "height": 60,
+      "text": "Отмена / Escape",
+      "color": "#2563eb"
+    },
+    {
+      "id": "item-owner",
+      "type": "group",
+      "x": 670,
+      "y": 395,
+      "width": 380,
+      "height": 250,
+      "label": "Вещь (повторяется)"
+    },
+    {
+      "id": "trip-list",
+      "type": "group",
+      "x": 20,
+      "y": 90,
+      "width": 400,
+      "height": 310,
+      "label": "Список поездок"
+    },
+    {
+      "id": "trip-owner",
+      "type": "group",
+      "x": 35,
+      "y": 140,
+      "width": 370,
+      "height": 230,
+      "label": "Поездка (повторяется)"
+    },
+    {
+      "id": "trip-summary",
+      "type": "text",
+      "x": 665,
+      "y": 120,
+      "width": 390,
+      "height": 70,
+      "text": "Полное название поездки\nСобрано X из Y",
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "item-list",
+      "type": "group",
+      "x": 655,
+      "y": 345,
+      "width": 410,
+      "height": 330,
+      "label": "Список вещей поездки"
+    },
+    {
+      "id": "feedback-return",
+      "type": "text",
+      "x": 665,
+      "y": 785,
+      "width": 390,
+      "height": 55,
+      "text": "Вернуть отметку через feedback",
+      "color": "#16a34a"
+    },
+    {
+      "id": "empty-state",
+      "type": "text",
+      "x": 665,
+      "y": 860,
+      "width": 390,
+      "height": 55,
+      "text": "Нет вещей / Всё собрано",
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "form-heading",
+      "type": "text",
+      "x": 1305,
+      "y": 45,
+      "width": 390,
+      "height": 70,
+      "text": "Новая поездка /\nДобавить / Править вещь",
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "form-error",
+      "type": "text",
+      "x": 1305,
+      "y": 225,
+      "width": 390,
+      "height": 60,
+      "text": "Ошибка ввода / записи",
+      "color": "#b6bcc3"
+    },
+    {
+      "id": "legend",
+      "type": "text",
+      "x": 0,
+      "y": 1110,
+      "width": 580,
+      "height": 155,
+      "text": "Обозначения\nСерый — информация\nГолубой — локальный ввод\nСиний — переход; зелёный — запись\nВозврат после записи: только успех",
+      "color": "#b6bcc3"
+    }
+  ],
+  "edges": [
+    {
+      "id": "openedge",
+      "fromNode": "open",
+      "toNode": "S-02",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "backedge",
+      "fromNode": "back",
+      "toNode": "S-01",
+      "fromSide": "left",
+      "toSide": "right"
+    },
+    {
+      "id": "newtripedge",
+      "fromNode": "newtrip",
+      "toNode": "S-03",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "editedge",
+      "fromNode": "edit",
+      "toNode": "S-03",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "addedge",
+      "fromNode": "add",
+      "toNode": "S-03",
+      "fromSide": "right",
+      "toSide": "left"
+    },
+    {
+      "id": "save-return",
+      "fromNode": "save",
+      "toNode": "S-02",
+      "fromSide": "right",
+      "toSide": "bottom",
+      "label": "Успешная запись"
+    },
+    {
+      "id": "cancel-trip-return",
+      "fromNode": "cancel",
+      "toNode": "S-01",
+      "fromSide": "right",
+      "toSide": "left",
+      "label": "Новая поездка: отмена"
+    },
+    {
+      "id": "cancel-item-return",
+      "fromNode": "cancel",
+      "toNode": "S-02",
+      "fromSide": "right",
+      "toSide": "bottom",
+      "label": "Вещь: отмена"
+    }
+  ]
+}

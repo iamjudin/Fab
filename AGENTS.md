@@ -35,7 +35,7 @@ FAB-02: первое восстановление контекста успеш�
 Не создавай subagents без явного разрешения на делегацию.
 
 ## Current boundary
-Installed Fab0.1.0-beta.17,60files/5d8a3a9d23f096ed. All ten independent contracts.
+Installed Fab0.1.0-beta.18,60files/c463bb6928771c74. All ten independent contracts.
 36local regressions, bounded outcome/domain/UI/maintenance smokes; not universal
 maturity. Current detailed state in docs/handoff.md and docs/backlog.md. Continue
 across checkpoints when authorized; user explicitly rejected artificial pauses.
@@ -45,5 +45,8 @@ a self-contained runtime cleanup rule. FAB-09 fresh generated-behavior check ope
 Mobile app method ingested; shared product semantics with conditional platform
 branches, not a universal native promise. One new mobile full-route test authorized.
 That route reached executable candidate and root browser bounded PASS; WF-01/
-FAB-03 projections partly failed. Current next: focused semantic Wireframe repair,
-not stats-only full rerun. Evidence in 2026-10-12-mobile-pipeline-results.md.
+FAB-03 projections partly failed; partial corrective now passed those owners/returns
+and preserves compatible feedback. Partial-route suite completed12turns, useful
+bounded outcomes; FAB-11 addressed in beta.17. Current next: Canvas readability/
+SVG diagnostics (WF-20), observe beta.18 preview cleanup (FAB-09). No stats-only
+full rerun. Evidence in 2026-10-12-partial-routes-results.md.

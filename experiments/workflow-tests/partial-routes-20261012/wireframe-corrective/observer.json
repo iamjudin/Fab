@@ -1,0 +1,29 @@
+{
+  "observer": "root developer, not independent human",
+  "verdict": "focused semantics PASS / housekeeping FAIL",
+  "findings": [
+    {
+      "claim": "compatible interaction preservation after beta16",
+      "result": "PASS",
+      "evidence": "Feedback tied to exact marked item preserved in S02 and UC04; exact duration/presentation remain explicitly open. No new model acceptance or source change."
+    },
+    {
+      "claim": "owners and branch returns",
+      "result": "PASS",
+      "evidence": "Root guards/JSON pass; collections/items nested, S03 commit goes S02 and cancel S01/S02 by mode, write error stays S03. All original node/edge IDs and model retained."
+    },
+    {
+      "claim": "task-owned scratch lifecycle",
+      "result": "FAIL",
+      "backlog": "FAB-09",
+      "expected": "Temporary preview contained and cleaned after useful evidence retained, limited deliverables do not mean global tmp parking.",
+      "observed": "/private/tmp/wireframe-corrective-preview.svg created outside workspace and left after final reply. Actual command provenance confirms task ownership.",
+      "next": "Retain exact SVG with SHA, clean exact owned file; clarify constrained-delivery preview lifecycle. Fresh model cleanup behavior remains a separate check."
+    }
+  ],
+  "runtimeBoundary": "Run finished before beta17 updater retired16cache; chronology saved, no in-run fallback/cache mutation.",
+  "rootVisualObservation": {
+    "environment": "Retained author SVG to PNG with existing sharp; root image inspection, no native Obsidian",
+    "result": "Nested owners and preserved feedback visible. Return labels at bottom overlap and center routes are dense despite no automatic warnings; WF-20 remains open."
+  }
+}

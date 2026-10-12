@@ -1,0 +1,95 @@
+{
+  "ownedRoot": "/private/tmp/fab-partial-routes-20261012",
+  "removed": true,
+  "retentionVerified": [
+    {
+      "name": "run.py",
+      "sha256": "159326714fc13df0e490f96d0dc889a3efbccd9c6d54472bb177c3f70119ab2c"
+    },
+    {
+      "name": "fixture-oracle.cjs",
+      "sha256": "54ca03a5c9709c428b891432d14f1926cae6d62f2e99755bf7edd9a2a9ae2790"
+    },
+    {
+      "name": "regressions.log",
+      "sha256": "0fe12ad3747ef7d5a3cf91035e3b7f9dd03adf4e8b4bf8dc2d68eab899464374"
+    },
+    {
+      "name": "regressions-beta17.log",
+      "sha256": "cedd751b754e9ece0d20fc40c6f9487887f8a40668b98803e9fe76ad6a43c756"
+    },
+    {
+      "name": "regressions-beta18.log",
+      "sha256": "9ae4aa48b08a7d2bae44bc837f24f84c45fbc70bd2620063f0555bda70b31a78"
+    },
+    {
+      "workspace": "wireframe",
+      "retainedCase": "wireframe",
+      "files": 4,
+      "verified": true
+    },
+    {
+      "workspace": "ideas",
+      "retainedCase": "ideas-followup",
+      "files": 1,
+      "verified": true
+    },
+    {
+      "workspace": "feature-corrective",
+      "retainedCase": "feature-corrective",
+      "files": 3,
+      "verified": true
+    },
+    {
+      "workspace": "audit",
+      "retainedCase": "audit",
+      "files": 3,
+      "verified": true
+    },
+    {
+      "workspace": "opinion",
+      "retainedCase": "opinion",
+      "files": 1,
+      "verified": true
+    },
+    {
+      "workspace": "feature-final",
+      "retainedCase": "feature-final",
+      "files": 3,
+      "verified": true
+    },
+    {
+      "workspace": "feature",
+      "retainedCase": "feature",
+      "files": 3,
+      "verified": true
+    },
+    {
+      "workspace": "evidence-slice",
+      "retainedCase": "evidence-slice",
+      "files": 3,
+      "verified": true
+    },
+    {
+      "workspace": "audit-options",
+      "retainedCase": "audit-options",
+      "files": 2,
+      "verified": true
+    },
+    {
+      "workspace": "natural-advice",
+      "retainedCase": "natural-advice",
+      "files": 1,
+      "verified": true
+    },
+    {
+      "workspace": "wireframe-corrective",
+      "retainedCase": "wireframe-corrective",
+      "files": 4,
+      "verified": true
+    }
+  ],
+  "otherPreviewsUntouched": true,
+  "externalPreviewReceipt": "external-preview-cleanup.json",
+  "rootHousekeepingNotModelBehaviorProof": true
+}

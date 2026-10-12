@@ -1,0 +1,47 @@
+{
+  "case": "wireframe-corrective",
+  "exit": 0,
+  "timeout": false,
+  "seconds": 189.6,
+  "command": [
+    "codex",
+    "exec",
+    "--json",
+    "--skip-git-repo-check",
+    "--approve-for-me",
+    "-C",
+    "/private/tmp/fab-partial-routes-20261012/wireframe-corrective",
+    "-o",
+    "/Users/iamjudin/Desktop/Lab/Fab/experiments/workflow-tests/partial-routes-20261012/wireframe-corrective/final.md",
+    "-"
+  ],
+  "threadId": "01a12d1a-f36b-71e3-92dc-0d0e1008c217",
+  "actualModel": {
+    "model": "gpt-6.1-sol",
+    "effort": "low"
+  },
+  "usage": {
+    "input_tokens": 548827,
+    "cached_input_tokens": 515072,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 7301,
+    "reasoning_output_tokens": 986
+  },
+  "events": [
+    {
+      "type": "thread.started",
+      "thread_id": "01a12d1a-f36b-71e3-92dc-0d0e1008c217"
+    },
+    {
+      "type": "turn.completed",
+      "usage": {
+        "input_tokens": 548827,
+        "cached_input_tokens": 515072,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7301,
+        "reasoning_output_tokens": 986
+      }
+    }
+  ],
+  "retainedWorkspaceVerified": true
+}

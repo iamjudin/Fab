@@ -1,0 +1,18 @@
+{
+  "turns": 12,
+  "sumRunSeconds": 835.4,
+  "usage": {
+    "input_tokens": 2073222,
+    "cached_input_tokens": 1817472,
+    "output_tokens": 30703
+  },
+  "actualModel": [
+    {
+      "model": "gpt-6.1-sol",
+      "effort": "low"
+    }
+  ],
+  "allExitZero": true,
+  "unknownUsage": [],
+  "accountWindowsNotInferredFromTokens": true
+}

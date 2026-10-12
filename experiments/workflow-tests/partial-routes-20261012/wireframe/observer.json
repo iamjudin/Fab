@@ -22,5 +22,9 @@
   "interventions": [
     "Root initially passed relative canvas path to vault-root resolver incorrectly; reran with absolute path, PASS. No edits to model-run output."
   ],
-  "next": "Narrow contract repair then one fresh corrective; native readability and full-route recurrence remain separate."
+  "next": "Narrow contract repair then one fresh corrective; native readability and full-route recurrence remain separate.",
+  "rootVisualObservation": {
+    "environment": "SVG fallback converted with existing sharp to PNG, root visual inspection; no native Obsidian",
+    "result": "Collection/item ownership visible and branch egress labels inspectable; center arrows densely cross, so native clarity/WF-20 not closed. Automated no-warning result is weaker than visual readability."
+  }
 }

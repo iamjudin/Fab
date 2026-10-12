@@ -198,3 +198,18 @@ update then retired16cache, so post-update parity with its absent path failed.
 All run commands exited0; original16snapshot retained. No in-run correction or
 cache substitution occurred. Future updates wait until all active runs finish.
 One last planned fresh feature corrective, same inputs, no output hints.
+
+## 2026-10-12 — partial-route suite finished
+12turns:7primary+1synthetic dialogue+1natural-entry diagnostic+3corrective.
+All GPT-6.1 Sol/Low,835.4sum-run-seconds/input2073222/cached1817472/output30703.
+Beta.17 final Product corrective gives recommendation/reason/trip-reload tradeoff;
+artifact/source constraints intact, bounded FAB-11 PASS. Beta.16 Wireframe keeps
+compatible feedback/Undo and owners/branch returns, bounded FAB-03/WF-01 PASS.
+Its external preview SVG remained in tmp: FAB-09 actual FAIL, root copied/SHA
+verified and removed exact file. Beta.18 adds explicit lifecycle route for renders;
+36regressions/installed60files/c463bb6928771c74 PASS, no model cleanup proof for18.
+Root PNG inspection still sees return-label overlap despite zero warnings, WF-20
+open; best next technical work is renderer readability/diagnostics, not full rerun.
+11workspaces+5helpers retained/verified in ignored raw, scratch root removed.
+Final report/selected result files and readable path-normalized answers tracked.
+No reset/purchase/public release/merge; source branch remains experimental.

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1355" viewBox="-60 -60 1840 1385">
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#636b74"/></marker></defs>
+<rect x="-60" y="-60" width="1840" height="1385" fill="#fbfbfa"/>
+<rect x="0" y="0" width="440" height="1010" rx="12" fill="#f5f5f5" stroke="#59616d" stroke-width="3"/>
+<text x="0" y="-12" font-size="21" font-family="Arial, sans-serif">S-01 Поездки • вход</text>
+<rect x="640" y="0" width="440" height="950" rx="12" fill="#f5f5f5" stroke="#59616d" stroke-width="3"/>
+<text x="640" y="-12" font-size="21" font-family="Arial, sans-serif">S-02 Выбранная поездка</text>
+<rect x="1280" y="0" width="440" height="630" rx="12" fill="#f5f5f5" stroke="#59616d" stroke-width="3"/>
+<text x="1280" y="-12" font-size="21" font-family="Arial, sans-serif">S-03 Временная форма</text>
+<rect x="655" y="345" width="410" height="330" rx="12" fill="#f5f5f5" stroke="#59616d" stroke-width="3"/>
+<text x="655" y="333" font-size="21" font-family="Arial, sans-serif">Список вещей поездки</text>
+<rect x="20" y="90" width="400" height="310" rx="12" fill="#f5f5f5" stroke="#59616d" stroke-width="3"/>
+<text x="20" y="78" font-size="21" font-family="Arial, sans-serif">Список поездок</text>
+<rect x="670" y="395" width="380" height="250" rx="12" fill="#f5f5f5" stroke="#59616d" stroke-width="3"/>
+<text x="670" y="383" font-size="21" font-family="Arial, sans-serif">Вещь (повторяется)</text>
+<rect x="35" y="140" width="370" height="230" rx="12" fill="#f5f5f5" stroke="#59616d" stroke-width="3"/>
+<text x="35" y="128" font-size="21" font-family="Arial, sans-serif">Поездка (повторяется)</text>
+<polyline points="390,285 640,475" fill="none" stroke="#777e87" stroke-width="2.5" marker-end="url(#arrow)"/>
+<polyline points="665,72.5 440,505" fill="none" stroke="#777e87" stroke-width="2.5" marker-end="url(#arrow)"/>
+<polyline points="415,485 1057,485 1057,417 1077,417 1077,315 1280,315" fill="none" stroke="#777e87" stroke-width="2.5" marker-end="url(#arrow)"/>
+<polyline points="1035,592.5 1280,315" fill="none" stroke="#777e87" stroke-width="2.5" marker-end="url(#arrow)"/>
+<polyline points="1055,732.5 1280,315" fill="none" stroke="#777e87" stroke-width="2.5" marker-end="url(#arrow)"/>
+<polyline points="1695,365 1695,950 860,950" fill="none" stroke="#777e87" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="1195" y="908" width="165" height="30" rx="5" fill="#fff" stroke="#ddd"/>
+<text x="1277.5" y="929" text-anchor="middle" font-size="18" font-family="Arial, sans-serif" fill="#30343a">Успешная запись</text>
+<polyline points="1695,475 663,475 663,505 643,505 643,537 0,537 0,505" fill="none" stroke="#777e87" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="1063.5" y="433" width="231" height="30" rx="5" fill="#fff" stroke="#ddd"/>
+<text x="1179" y="454" text-anchor="middle" font-size="18" font-family="Arial, sans-serif" fill="#30343a">Новая поездка: отмена</text>
+<polyline points="1695,475 1695,950 860,950" fill="none" stroke="#777e87" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="1211.5" y="908" width="132" height="30" rx="5" fill="#fff" stroke="#ddd"/>
+<text x="1277.5" y="929" text-anchor="middle" font-size="18" font-family="Arial, sans-serif" fill="#30343a">Вещь: отмена</text>
+<rect x="50" y="165" width="340" height="70" rx="12" fill="#b6bcc3" stroke="#59616d" stroke-width="3"/>
+<text x="66" y="197" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Название поездки</text>
+<text x="66" y="222" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Собрано X из Y</text>
+<rect x="50" y="255" width="340" height="60" rx="12" fill="#2563eb" stroke="#59616d" stroke-width="3"/>
+<text x="66" y="287" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Открыть поездку → S-02</text>
+<rect x="25" y="455" width="390" height="60" rx="12" fill="#2563eb" stroke="#59616d" stroke-width="3"/>
+<text x="41" y="487" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Новая поездка → S-03</text>
+<rect x="665" y="45" width="390" height="55" rx="12" fill="#2563eb" stroke="#59616d" stroke-width="3"/>
+<text x="681" y="77" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Назад к поездкам</text>
+<rect x="665" y="215" width="390" height="55" rx="12" fill="#bae6fd" stroke="#59616d" stroke-width="3"/>
+<text x="681" y="247" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Все / Осталось</text>
+<rect x="685" y="415" width="350" height="55" rx="12" fill="#b6bcc3" stroke="#59616d" stroke-width="3"/>
+<text x="701" y="447" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Название вещи / собрана ли</text>
+<rect x="685" y="490" width="350" height="55" rx="12" fill="#16a34a" stroke="#59616d" stroke-width="3"/>
+<text x="701" y="522" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Отметить / вернуть</text>
+<rect x="685" y="565" width="350" height="55" rx="12" fill="#2563eb" stroke="#59616d" stroke-width="3"/>
+<text x="701" y="597" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Править вещь → S-03</text>
+<rect x="665" y="705" width="390" height="55" rx="12" fill="#2563eb" stroke="#59616d" stroke-width="3"/>
+<text x="681" y="737" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Добавить вещь → S-03</text>
+<rect x="1305" y="140" width="390" height="80" rx="12" fill="#bae6fd" stroke="#59616d" stroke-width="3"/>
+<text x="1321" y="172" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Название</text>
+<text x="1321" y="197" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Поле черновика</text>
+<rect x="1305" y="335" width="390" height="60" rx="12" fill="#16a34a" stroke="#59616d" stroke-width="3"/>
+<text x="1321" y="367" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Создать / Сохранить</text>
+<rect x="1305" y="445" width="390" height="60" rx="12" fill="#2563eb" stroke="#59616d" stroke-width="3"/>
+<text x="1321" y="477" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Отмена / Escape</text>
+<rect x="665" y="120" width="390" height="70" rx="12" fill="#b6bcc3" stroke="#59616d" stroke-width="3"/>
+<text x="681" y="152" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Полное название поездки</text>
+<text x="681" y="177" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Собрано X из Y</text>
+<rect x="665" y="785" width="390" height="55" rx="12" fill="#16a34a" stroke="#59616d" stroke-width="3"/>
+<text x="681" y="817" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Вернуть отметку через feedback</text>
+<rect x="665" y="860" width="390" height="55" rx="12" fill="#b6bcc3" stroke="#59616d" stroke-width="3"/>
+<text x="681" y="892" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Нет вещей / Всё собрано</text>
+<rect x="1305" y="45" width="390" height="70" rx="12" fill="#b6bcc3" stroke="#59616d" stroke-width="3"/>
+<text x="1321" y="77" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Новая поездка /</text>
+<text x="1321" y="102" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Добавить / Править вещь</text>
+<rect x="1305" y="225" width="390" height="60" rx="12" fill="#b6bcc3" stroke="#59616d" stroke-width="3"/>
+<text x="1321" y="257" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Ошибка ввода / записи</text>
+<rect x="0" y="1110" width="580" height="155" rx="12" fill="#b6bcc3" stroke="#59616d" stroke-width="3"/>
+<text x="16" y="1142" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Обозначения</text>
+<text x="16" y="1167" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Серый — информация</text>
+<text x="16" y="1192" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Голубой — локальный ввод</text>
+<text x="16" y="1217" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Синий — переход; зелёный — запись</text>
+<text x="16" y="1242" font-size="21" font-family="Arial, sans-serif" fill="#1d2227">Возврат после записи: только успех</text>
+</svg>
