@@ -354,13 +354,14 @@ Beta.23 installed:68files/7a402724db9b66ae,50local checks/parity PASS; public
 delivery/CI/exact-tag installation/anonymous asset parity PASS. Native card display and fresh language-rule behavior are unobserved.
 [Evidence](../experiments/releases/branding-beta23-20261012/report.md).
 
-## 2026-10-12 — Legacy retirement pending remote permission
+## 2026-10-12 — Legacy retirement completed
 
 Local Landlord, Wireframer, Fabricator and Separator folders are retained as
 ordinary directories with verified working-file preservation. Local/remote Git
 history is saved in ignored archives; Desktop entries and installed old plugins
 are removed. Landlord/Separator were not installed; chats remain untouched.
-GitHub deletion pending: CLI lacks delete_repo. Creator chose CLI permission
-refresh and will say ready; then delete only iamjudin/-plug, Wireframer, Fabricator
-and Separator-1 and verify the other repositories. Runtime Fab beta.23 unchanged.
+GitHub deletion completed after creator refreshed delete_repo and confirmed
+ready: iamjudin/-plug, Wireframer, Fabricator and Separator-1 are absent from the
+authenticated repository list; the other six repositories remain. Final346file
+and archive SHA checks PASS. Runtime Fab beta.23 unchanged.
 [Local checkpoint](../experiments/maintenance/retire-legacy-20261012/status.md).

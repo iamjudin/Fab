@@ -7,9 +7,10 @@ All346working files are preserved; all four directories are ordinary folders.
 Desktop entries are removed without sending source folders to Trash. Wireframer
 and Fabricator are uninstalled; Landlord and Separator were not installed.
 
-GitHub deletion is pending: CLI returned HTTP403 because its token lacks
-`delete_repo`. The selected browser is signed out. Creator chose to refresh CLI
-permission and will signal completion. No remote repository deletion is claimed.
+GitHub deletion completed after creator refreshed CLI permission and confirmed
+ready. Initial HTTP403/missing delete_repo is retained as a resolved blocker.
+All four targeted deletions succeeded; authenticated repository listing confirms
+absence of those names and preservation of the other six repositories.
 Private inventories/archives stay in ignored `raw/`; no old source is published.
 Fab remains beta.23 with exact cache parity. Chats were not modified or archived;
 visible legacy chat entries remain listed. The host project catalog still caches
