@@ -48,6 +48,12 @@ Name environment, limits and unknowns. Negative paths/recovery matter when they
 change outcome. No false PASS from a weaker substitute. Own preflight is continuous;
 a separate testing/analysis task is conditional, not automatic after each file.
 
+## Release and workstream boundaries
+Read [scoped release policy](release-policy.md) when changing promised outcomes,
+preparing a release/install or starting substantial independent work after a
+checkpoint. Proactively recommend isolation with a reason; do not wait for the
+creator to discover scope drift. Readiness belongs to each promised surface.
+
 ## Progress and learning
 Store durable decisions and deltas where useful; consult project guidance/Git/
 owning backlog, preserve others' edits. Commit verified significant checkpoints

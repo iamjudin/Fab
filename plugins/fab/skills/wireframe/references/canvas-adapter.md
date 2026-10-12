@@ -1,5 +1,9 @@
 # Canvas file and render adapter
 
+Opt-in experimental: known label-overlap diagnostic gap. Default to
+[table view](table-view.md). A valid file or empty warning list does not prove
+readability; inspect the actual output and disclose native-render unknowns.
+
 Read only when producing or checking Canvas artifacts. Structure/scenario/layout
 contracts decide what the map must mean; this adapter checks its physical files
 and presentation. JSON, a fallback preview and actual Obsidian opening are

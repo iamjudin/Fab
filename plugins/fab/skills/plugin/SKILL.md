@@ -17,6 +17,9 @@ layout or hard-clean rule. Installed outcome requires source/cache/version proof
 and fresh behavior boundary, not source-only success. Official update first;
 scoped remove/reinstall only when actually necessary. Old cache link is runtime
 staleness, not proof capability unavailable. Never clean neighboring plugins.
+Generated plugins inherit self-contained scoped-readiness and workstream
+isolation guidance from [release policy](../../shared/release-policy.md); adapt
+the surface registry and checks to their actual promises.
 Own profile-specific release checks (identity, package, assets, discovery, runtime).
 Public release organization belongs to Delivery: [release](../delivery/SKILL.md).
 Do not publish or create remote/visibility as automatic final maintenance step.

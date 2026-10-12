@@ -2,14 +2,15 @@
 
 Read after sufficient structure under shared decision policy when steps, states, branches or returns need
 inspection. Use [structure/access](navigation-ia.md) and current slice/UC/rules;
-use the [Canvas adapter](canvas-adapter.md) for file and visual checks.
+use [scenario tables](table-view.md) by default. Only for explicitly requested
+experimental Canvas use the [Canvas adapter](canvas-adapter.md).
 
 ## Second decision: critical scenarios
 
 After sufficient structure under shared decision policy, map only the scenarios whose steps, branches,
 temporal rules, unusual entries or risk need inspection. Reuse S-IDs and
-place details in a distinct area of the same canvas, or link them from the
-overview when the project needs separate canvases. Trace entry, actions, meaningful states,
+link scenario rows to the overview by IDs. In opt-in Canvas, place details in
+a distinct area or link from the overview. Trace entry, actions, meaningful states,
 observable result, safe exit and later return. Make Back, Close, Cancel and
 Undo distinct where their semantics affect the path. If a scenario needs a
 new surface or opening relationship, revise the structure and expose the

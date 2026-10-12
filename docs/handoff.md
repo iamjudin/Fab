@@ -229,3 +229,30 @@ bounded MVP60–100h total; Obsidian custom-view wrapper+24–48h. Это rough 
 estimate, не подтверждённая скорость;35–45%внутри диапазонов на debug/checks.
 Own UI на готовом layout engine рекомендован; container/manual-pin UX ещё открыты,
 implementation не запускалась. Детальный scope/границы в research note.
+
+## 2026-10-12 — изоляция карты и политика готовности
+Creator сначала подготовит свой UI-прототип карты; затем предложим реализацию.
+Это отменяет прежний предлагаемый порядок ELK spike первым. Сейчас принят
+табличный fallback: Markdown-структура/переходы default, Canvas experimental opt-in.
+Prototype и блоковые экраны отдельны; сбой Canvas не блокирует их. WF-20 не закрыт.
+
+Основная работа перенесена в codex/fab-maintenance в Lab/Fab. Отдельная ветка
+codex/fab-map-view и managed checkout готовы, parked до creator prototype.
+Исторический checkpoint beta.18/tag сохранён. Main owns backlog/core/release;
+feature не меняет общий runtime и не merge автоматически. Новый чат пока не создан.
+Архитектура/политика: [release-policy](release-policy.md). Runtime policy и
+executable gate фиксируют exact identity/default scope/checks/limits; это не
+автоматическое доказательство качества и не технический запрет любого git push.
+Beta.19 source candidate; установка/проверки отмечаются отдельным checkpoint ниже.
+
+### Проверенный локальный checkpoint beta.19
+Установлена через `codex plugin add fab@fab-local --json`:64files/40cf2ca557e185fb,
+source/cache parity PASS,46deterministic regressions PASS, release plan eligibility
+PASS для объявленного limited beta scope; Canvas default=false и readability FAIL
+сохранён. [Пример таблицы](../experiments/maintenance/release-policy-20261012/structure-table.md)
+сохранил25nodes/8edges/full JSON snapshot; старые map bytes не менялись.
+Ветка карты имеет собственный scope-checkpoint75540f1, изменений renderer нет.
+GitHub workflow подготовлен, не запускался на remote; branch protection не меняли.
+Fresh model table generation/proactive isolation/native Obsidian ещё не наблюдались.
+Next: пользоваться table/default на реальной частичной задаче; карту разбираем после
+creator prototype. Main продолжает общую отладку Fab. Public release/merge/push нет.

@@ -9,7 +9,11 @@ behavior returns only the dependent question to Product; no mandatory full Jobs.
 Choose the requested mode: [structure/access](references/navigation-ia.md),
 [critical scenarios](references/critical-scenarios.md), or
 [block screens](references/block-screens.md). Semantic dependencies remain;
-existing accepted inputs count. Read [Canvas adapter](references/canvas-adapter.md)
+existing accepted inputs count. Default structure/scenario representation is
+[Markdown tables](references/table-view.md); preserve owners, IDs and all relevant
+branches. This fallback does not replace perceivable block screens or executable
+prototypes. Canvas is opt-in experimental while readability is unresolved.
+Read [Canvas adapter](references/canvas-adapter.md)
 only when producing/checking Canvas. Stable S-IDs, actual control ownership,
 composition vs navigation and return context must survive all projections.
 In partial repairs preserve existing interactions compatible with the UC/rules.
@@ -17,7 +21,7 @@ Absence of a control's exact name in the domain model is not a contradiction or
 permission to delete its mechanism. Separate a genuine behavior conflict from
 an underspecified interface detail; expose a material experience change before
 dependent edits, rather than simplifying it away to make projections agree.
-Small projects use one Canvas with separated areas; split by domain only when
+For explicitly requested experimental Canvas, small projects use one Canvas with separated areas; split by domain only when
 readability actually requires it. Grey information, light blue local interaction,
 blue navigation, green persistent mutation. These are diagram notation, not UI styling.
 Use familiar terms (modal sheet/navigation stack/tab bar). Proposed scope additions

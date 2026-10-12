@@ -20,7 +20,9 @@ the slice/jobs/constraints and record candidate status separately from approval.
 ## Organisation
 
 Retain the navigational overview as the entry point while composing block
-screens. For a small project or test, use one canvas: screen composition and
+screens. Default overview/scenarios stay in [tables](table-view.md); build
+perceivable block screens in a suitable visible format. For explicitly requested
+experimental Canvas in a small project or test, use one canvas: screen composition and
 navigation together, states and critical scenarios in clearly labelled areas.
 The sequential structure/scenario/design reviews remain distinct even when
 they share a file. Do not split merely because another screen appears.

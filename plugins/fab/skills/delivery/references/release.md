@@ -31,3 +31,23 @@ record unavailable pending owners instead of rewriting all projects. Future
 learning is concrete symptom/user-use evidence, not schedule-driven audits.
 Output ready/blocked/pending for each promised surface, exact evidence and limits.
 Public publication is never performed just because this skill was selected.
+
+## Executable scope gate
+Read [shared release policy](../../../shared/release-policy.md). Prepare a project
+release plan outside the package (so its fingerprint can bind the complete payload).
+Run `python3 <delivery-directory>/scripts/check_release.py <plan.json>
+--package-root <package>`, alongside package checks and actual behavior checks.
+A failure stops the dependent release/install promise; fix or explicitly remove
+the default promise rather than ignoring the gate. Promotion remains an authorized
+action, never an automatic effect of this script.
+
+Plan schema1: `version`, `fingerprint` (16-character sorted-path/content SHA256
+payload identity), `channel` (`beta`/`stable`), `surfaces` (nonempty list). Each surface
+has unique `id`, `default` boolean, `status` (`verified`/`limited`/`experimental`/
+`blocked`/`unknown`), `limitations`, and `checks`: named required results with
+`name`, `result` (`pass`/`fail`/`unknown`) and `evidence` (actual report/observation).
+Default outcomes require passing checks with evidence. Limited defaults require
+beta and disclosed bounds; blocked/unknown/experimental cannot be default.
+Excluded/opt-in outcomes require disclosure. Register all promised outcomes, not
+just the easiest check; native adapters and prototypes are separate surfaces.
+The tool does not run tests or verify evidence truth; review actual evidence.

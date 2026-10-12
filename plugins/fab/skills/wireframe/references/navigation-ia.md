@@ -57,8 +57,9 @@ invent subscription policy, accounts or technical guarantees from their labels.
 
 ## Overview notation
 
-Create one overview Canvas with stable surface IDs and a short linked
-rationale/access table. Start with top-level areas and screens, then show
+Default to [structure/access tables](table-view.md) with stable surface IDs,
+explicit parent/item owners and a short rationale. The following graphical
+notation applies only to an explicitly requested experimental Canvas overview. Start with top-level areas and screens, then show
 compact lists of their content. A repeated collection shows one representative
 item and its nested fields/actions. Use grey for noninteractive information,
 light blue for input and selection within the current surface, green for

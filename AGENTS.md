@@ -35,8 +35,8 @@ FAB-02: первое восстановление контекста успеш�
 Не создавай subagents без явного разрешения на делегацию.
 
 ## Current boundary
-Installed Fab0.1.0-beta.18,60files/c463bb6928771c74. All ten independent contracts.
-36local regressions, bounded outcome/domain/UI/maintenance smokes; not universal
+Installed Fab0.1.0-beta.19,64files/40cf2ca557e185fb. All ten independent contracts.
+46local regressions, bounded outcome/domain/UI/maintenance smokes; not universal
 maturity. Current detailed state in docs/handoff.md and docs/backlog.md. Continue
 across checkpoints when authorized; user explicitly rejected artificial pauses.
 Private GitHub remote verified; no public release/merge. One authorized reset performed by creator; no further reset authorized.
@@ -50,7 +50,11 @@ and preserves compatible feedback. Partial-route suite completed12turns, useful
 bounded outcomes; FAB-11 addressed in beta.17. Current next: Canvas readability/
 SVG diagnostics (WF-20), observe beta.18 preview cleanup (FAB-09). No stats-only
 full rerun. Evidence in 2026-10-12-partial-routes-results.md.
-Beta.18 pinned at checkpoint-beta18-2026-10-12 (10e44cf). Current work: research
-Canvas/card layout alternatives before implementation; see docs/research/
-canvas-layout-options-2026-10-12.md. Proposed ELK adapter is not accepted yet;
-primary interactive viewer choice remains open. No third-party installs or map edits.
+Beta.18 pinned at checkpoint-beta18-2026-10-12 (10e44cf), immutable.
+Current main branch codex/fab-maintenance: core/general debugging and table fallback.
+Canvas is experimental opt-in; default structure/scenarios are Markdown tables.
+WF-20 remains open, prototypes have independent readiness. Release promises use
+per-surface checks; see docs/release-policy.md and runtime shared/release-policy.md.
+Map work isolated in codex/fab-map-view at separate managed checkout; parked until
+creator supplies prototype, then propose implementation options. No engine choice
+or ELK spike accepted. Main chat owns global backlog/release/runtime installation.

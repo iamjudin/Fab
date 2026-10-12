@@ -1,0 +1,227 @@
+{
+  "schema": 1,
+  "version": "0.1.0-beta.19",
+  "fingerprint": "40cf2ca557e185fb",
+  "channel": "beta",
+  "surfaces": [
+    {
+      "id": "analysis",
+      "default": true,
+      "status": "limited",
+      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee.",
+      "checks": [
+        {
+          "name": "bundled contract/reference integrity",
+          "result": "pass",
+          "evidence": "scripts/check_package.py; 2026-10-12 candidate package preflight"
+        },
+        {
+          "name": "retained bounded baseline evidence",
+          "result": "pass",
+          "evidence": "experiments/workflow-tests/2026-10-12-partial-routes-results.md"
+        }
+      ]
+    },
+    {
+      "id": "brainstorm",
+      "default": true,
+      "status": "limited",
+      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee.",
+      "checks": [
+        {
+          "name": "bundled contract/reference integrity",
+          "result": "pass",
+          "evidence": "scripts/check_package.py; 2026-10-12 candidate package preflight"
+        },
+        {
+          "name": "retained bounded baseline evidence",
+          "result": "pass",
+          "evidence": "experiments/workflow-tests/2026-10-12-partial-routes-results.md"
+        }
+      ]
+    },
+    {
+      "id": "cowork",
+      "default": true,
+      "status": "limited",
+      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee.",
+      "checks": [
+        {
+          "name": "bundled contract/reference integrity",
+          "result": "pass",
+          "evidence": "scripts/check_package.py; 2026-10-12 candidate package preflight"
+        },
+        {
+          "name": "retained bounded baseline evidence",
+          "result": "pass",
+          "evidence": "experiments/workflow-tests/2026-10-10-autonomous-beta-results.md"
+        }
+      ]
+    },
+    {
+      "id": "delivery",
+      "default": true,
+      "status": "limited",
+      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee.",
+      "checks": [
+        {
+          "name": "bundled contract/reference integrity",
+          "result": "pass",
+          "evidence": "scripts/check_package.py; 2026-10-12 candidate package preflight"
+        },
+        {
+          "name": "retained bounded baseline evidence",
+          "result": "pass",
+          "evidence": "experiments/workflow-tests/2026-10-10-autonomous-beta-results.md"
+        }
+      ]
+    },
+    {
+      "id": "plugin",
+      "default": true,
+      "status": "limited",
+      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee.",
+      "checks": [
+        {
+          "name": "bundled contract/reference integrity",
+          "result": "pass",
+          "evidence": "scripts/check_package.py; 2026-10-12 candidate package preflight"
+        },
+        {
+          "name": "retained bounded baseline evidence",
+          "result": "pass",
+          "evidence": "experiments/workflow-tests/2026-10-11-plugin-smokes-results.md"
+        }
+      ]
+    },
+    {
+      "id": "product",
+      "default": true,
+      "status": "limited",
+      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee.",
+      "checks": [
+        {
+          "name": "bundled contract/reference integrity",
+          "result": "pass",
+          "evidence": "scripts/check_package.py; 2026-10-12 candidate package preflight"
+        },
+        {
+          "name": "retained bounded baseline evidence",
+          "result": "pass",
+          "evidence": "experiments/workflow-tests/2026-10-12-partial-routes-results.md"
+        }
+      ]
+    },
+    {
+      "id": "prototype",
+      "default": true,
+      "status": "limited",
+      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee.",
+      "checks": [
+        {
+          "name": "bundled contract/reference integrity",
+          "result": "pass",
+          "evidence": "scripts/check_package.py; 2026-10-12 candidate package preflight"
+        },
+        {
+          "name": "retained bounded baseline evidence",
+          "result": "pass",
+          "evidence": "experiments/workflow-tests/2026-10-12-mobile-pipeline-results.md"
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "default": true,
+      "status": "limited",
+      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee.",
+      "checks": [
+        {
+          "name": "bundled contract/reference integrity",
+          "result": "pass",
+          "evidence": "scripts/check_package.py; 2026-10-12 candidate package preflight"
+        },
+        {
+          "name": "retained bounded baseline evidence",
+          "result": "pass",
+          "evidence": "experiments/workflow-tests/2026-10-10-autonomous-beta-results.md"
+        }
+      ]
+    },
+    {
+      "id": "testing",
+      "default": true,
+      "status": "limited",
+      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee.",
+      "checks": [
+        {
+          "name": "bundled contract/reference integrity",
+          "result": "pass",
+          "evidence": "scripts/check_package.py; 2026-10-12 candidate package preflight"
+        },
+        {
+          "name": "retained bounded baseline evidence",
+          "result": "pass",
+          "evidence": "experiments/workflow-tests/2026-10-10-autonomous-beta-results.md"
+        }
+      ]
+    },
+    {
+      "id": "wireframe",
+      "default": true,
+      "status": "limited",
+      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee.",
+      "checks": [
+        {
+          "name": "bundled contract/reference integrity",
+          "result": "pass",
+          "evidence": "scripts/check_package.py; 2026-10-12 candidate package preflight"
+        },
+        {
+          "name": "retained bounded baseline evidence",
+          "result": "pass",
+          "evidence": "experiments/workflow-tests/2026-10-12-partial-routes-results.md"
+        }
+      ]
+    },
+    {
+      "id": "wireframe.table-view",
+      "default": true,
+      "status": "limited",
+      "limitations": "Deterministic existing-Canvas inventory preserves fields/IDs/branches; semantic review required. Fresh model generation and native Obsidian table display not independently observed.",
+      "checks": [
+        {
+          "name": "conversion preservation and invalid-link rejection",
+          "result": "pass",
+          "evidence": "tests/test_release_policy.py + experiments/maintenance/release-policy-20261012/verification.json"
+        }
+      ]
+    },
+    {
+      "id": "wireframe.canvas-preview",
+      "default": false,
+      "status": "blocked",
+      "limitations": "Known label overlap despite empty warnings; experimental only on explicit request. WF-20 open. Replacement layout parked pending creator prototype.",
+      "checks": [
+        {
+          "name": "readability",
+          "result": "fail",
+          "evidence": "experiments/analysis/canvas-layout-20261012/reproduction.json"
+        }
+      ]
+    },
+    {
+      "id": "wireframe.native-canvas",
+      "default": false,
+      "status": "unknown",
+      "limitations": "Native Obsidian UI not observed. JSON and preview geometry do not prove host rendering.",
+      "checks": [
+        {
+          "name": "native host render",
+          "result": "unknown",
+          "evidence": "docs/research/canvas-layout-options-2026-10-12.md"
+        }
+      ]
+    }
+  ]
+}

@@ -3,7 +3,7 @@ Design v0.2 accepted for bounded autonomous beta implementation on 2026-10-10.
 Target owners: cowork, research, product, wireframe, prototype, analysis,
 brainstorm, testing, plugin, delivery. Historical beta.1 had five skills:
 cowork/research/analysis/brainstorm/testing plus shared core.
-All ten skill contracts are now installed in beta.18. Meaning/behavior maturity
+All ten skill contracts are now installed in beta.19. Meaning/behavior maturity
 is bounded by concrete smoke evidence, not availability. Product/Wireframe use
 compatible graph adapter; Prototype/Plugin/Delivery have independent modes.
 Cowork maintains collaboration/intent/continuity; direct invocation bypasses it.
@@ -61,3 +61,12 @@ PASS and actual fallback readability remain distinct; WF-20 is still open.
 
 Original rationale: Wireframer docs/fab at checkpoint cb4d220. Those documents
 are provenance, not required runtime resources. Working project guidance is here.
+
+Beta.19: scoped release policy, exact-package readiness gate and
+proactive isolation of substantial independent work. Wireframe meaning is separate
+from its representation: tables default, Canvas opt-in with known WF-20 defect,
+block screens/prototypes independent. Existing Canvas converter preserves all
+fields and branches; semantic/new table generation remains a separate judgment.
+Viewer redesign parked on codex/fab-map-view until creator's prototype.
+No engine, orchestrator or mandatory new-chat workflow added. See
+[release policy](../release-policy.md) for main/satellite ownership and promotion.

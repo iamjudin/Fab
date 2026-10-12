@@ -1,0 +1,40 @@
+{
+  "version": "0.1.0-beta.19",
+  "fingerprint": "40cf2ca557e185fb",
+  "verification": "deterministic developer checks, not fresh model/native observation",
+  "table": {
+    "source": "experiments/workflow-tests/partial-routes-20261012/wireframe-corrective/result/product/reviews/structure.canvas",
+    "sourceSha256": "5ce4700fdc841798a5bdef1e668e960351faf80e58d1ed6381d8ef0098dcb601",
+    "output": "experiments/maintenance/release-policy-20261012/structure-table.md",
+    "outputSha256": "748bb5fb362e0146f7915bcfb7115c600587d11b9966e5f6082b3a50aa00b0be",
+    "nodes": 25,
+    "edges": 8,
+    "snapshotEqual": true
+  },
+  "regressions": {
+    "count": 46,
+    "result": "pass"
+  },
+  "packageReferences": "pass",
+  "releaseGate": "eligible for declared limited beta scope; Canvas excluded",
+  "unobserved": [
+    "fresh model table generation",
+    "proactive branch suggestion in fresh context",
+    "native Obsidian table rendering",
+    "remote CI run",
+    "branch protection"
+  ],
+  "mapWorkstream": {
+    "branch": "codex/fab-map-view",
+    "baseline": "14f4dbf",
+    "checkout": "/Users/iamjudin/.codex/worktrees/fab-map-view/Fab",
+    "status": "parked awaiting creator prototype",
+    "scopeCheckpoint": "75540f1"
+  },
+  "publication": "none",
+  "installed": {
+    "version": "0.1.0-beta.19",
+    "path": "/Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.19",
+    "sourceCacheParity": "pass"
+  }
+}

@@ -228,3 +228,16 @@ full new editor before actual need. JSON Canvas cannot store exact routed bends/
 label coordinates; native viewer decision matters. No installs, engine execution,
 source graph/map edits or runtime promotion. Research note/receipts retained;
 creator asked primary viewer preference before dependent implementation.
+
+## 2026-10-12 — beta19, scoped readiness and map isolation
+Creator requested release boundaries and Git isolation, then accepted tables as
+interim representation. Main codex/fab-maintenance; codex/fab-map-view separate
+managed checkout, parked pending creator prototype. No ELK spike/viewer choice.
+Core proposes scope isolation proactively; generated plugins inherit self-contained
+policy. Per-surface beta plan + portable gate + Fab coverage + prepared CI; failed
+Canvas excluded by default, prototypes independent. Native and fresh model behavior
+not claimed. Converter retains25nodes/8edges/all fields,46regressions/package PASS.
+Installed beta19 via supported CLI:64files/40cf2ca557e185fb, exact source/cache parity
+PASS. Beta18 tag remains10e44cf; no merge/push/public release/reset/subagents.
+Map scope-checkpoint75540f1; architecture/release decisions docs/release-policy.md,
+evidence experiments/maintenance/release-policy-20261012/verification.json.
