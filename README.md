@@ -4,7 +4,7 @@
 
 Runtime0.1.0-beta.20; package plugins/fab с собственным plugin.json; marketplace fab-local. Private source: https://github.com/iamjudin/Fab . Mobile apps first: общий смысл/правила и условные платформенные ветви; browser prototype не доказывает native/device behaviour.
 
-[Индекс](AGENTS.md) · [Маяк](docs/beacon.md) · [Бэклог](docs/backlog.md) · [Состояние](docs/handoff.md) · [Результаты проверок](experiments/workflow-tests/2026-10-10-autonomous-beta-results.md).
+[Индекс](AGENTS.md) · [Маяк](docs/beacon.md) · [Бэклог](docs/backlog.md) · [Состояние](docs/handoff.md) · [Журнал проекта](docs/project-journal.md) · [Результаты проверок](experiments/workflow-tests/2026-10-10-autonomous-beta-results.md).
 
 Это ограниченная beta, не публичный выпуск и не подтверждение универсальной зрелости. Старые Wireframer/Fabricator сохранены.
 

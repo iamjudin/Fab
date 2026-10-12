@@ -15,13 +15,18 @@
 1. docs/backlog.md — текущий пакет и единственный реестр Fab.
 2. docs/beacon.md → plugins/fab/shared/core.md — канонические принципы.
 3. docs/architecture/design.md — implemented vs planned skill boundaries.
-4. docs/decisions.md, docs/journal.md — решения и checkpoints.
+4. docs/decisions.md, docs/journal.md — решения и технические checkpoints;
+   docs/project-journal.md — значимые повороты, причины и evidence для истории проекта.
 5. experiments/workflow-tests/ — test contracts/results.
 6. docs/handoff.md — состояние для нового основного чата, когда подготовлено.
 
 Перед edits Git/guidance/backlog; preserve others. Commit key verified stages.
 Creator подтвердил 2026-10-12: проверять Git и делать локальные checkpoint-коммиты
 самостоятельно после проверки; отдельное согласие на каждый commit не требуется.
+После значимых решений/итераций/проверок поддерживать docs/project-journal.md:
+коротко контекст/решение/результат/лимиты/evidence, новые записи сверху. Не каждый
+tool call, полный чат или копия backlog. Publicator story packets — датированные
+срезы evidence для будущего текста, не новые канонические списки задач.
 Формат тестов выбираем по цели: fresh context для поведения, bounded CLI для
 технических проверок. Фиксируем реальную модель/effort и изоляцию в evidence.
 Experimental branch codex/; не merge/main/public release без явного scope.

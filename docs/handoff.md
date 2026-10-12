@@ -307,3 +307,15 @@ Migration/default-branch change/merge/push/cleanup не выполнялись. 
 не менялся. Canvas checkout/recovery pending и creator-first prototype сохранены.
 Следующий полезный шаг — согласовать конкретный переход из proposal; не считать
 исследование разрешением на изменение shared GitHub settings или интеграцию.
+
+## 2026-10-12 — история проекта для дальнейшего продолжения
+По запросу creator через Publicator Extractor проверен существующий технический
+docs/journal.md; он сохранён без переписывания. Создан [project journal](project-journal.md):
+14значимых этапов в обратной хронологии, причины/альтернативы/turns/результаты/лимиты
+с evidence. [Story packet](story-packets/fab-development-2026-10-12.md) содержит
+evidence map confirmed/needs-check/do-not-use и story spine для возможного Writer.
+Просмотрены текущая переписка, durable Fab docs/reports/receipts/Git и последние
+пять turns старого Plugin Wireframer о переезде; ранняя дискуссия объединения
+целиком не восстановлена, поэтому точный состав старого merger остаётся needs-check.
+AGENTS задаёт дальнейшее обновление нового журнала на значимых границах; backlog
+остаётся единственным реестром задач. Runtime/version/Git-process не менялись.
