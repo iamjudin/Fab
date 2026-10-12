@@ -1,0 +1,8 @@
+{
+  "branch": "codex/fab-map-view",
+  "head": "75540f12377ded939746084fd25d59abdc6826ee",
+  "clean": true,
+  "markerAbsent": true,
+  "smokeCommitRetained": "25eaa72961520a78b7451ce19ef301968e029a45",
+  "result": "pass"
+}

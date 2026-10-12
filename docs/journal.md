@@ -241,3 +241,10 @@ Installed beta19 via supported CLI:64files/40cf2ca557e185fb, exact source/cache 
 PASS. Beta18 tag remains10e44cf; no merge/push/public release/reset/subagents.
 Map scope-checkpoint75540f1; architecture/release decisions docs/release-policy.md,
 evidence experiments/maintenance/release-policy-20261012/verification.json.
+
+## 2026-10-12 — Canvas branch creation smoke
+Creator requested testing a new Canvas branch. Reused isolated managed checkout;
+created codex/canvas-branch-smoke from main3e53097, marker-only commit25eaa72.
+Main branch/HEAD/tracked state and installed fingerprint unchanged; returned map
+checkout to75540f1/clean, test history retained. Technical isolation PASS, no fresh
+model behavior or Canvas quality claim. Report workflow-tests/2026-10-12-canvas-branch-smoke.md.

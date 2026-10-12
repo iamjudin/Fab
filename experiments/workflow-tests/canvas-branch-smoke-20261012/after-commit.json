@@ -1,0 +1,16 @@
+{
+  "smokeBranch": "codex/canvas-branch-smoke",
+  "smokeHead": "25eaa72961520a78b7451ce19ef301968e029a45",
+  "parent": "3e530979c6bd4c226c93756c34c2df131ae79350",
+  "committedPaths": [
+    "experiments/workflow-tests/canvas-branch-smoke-20261012/branch-marker.md"
+  ],
+  "mainBranch": "codex/fab-maintenance",
+  "mainHead": "3e530979c6bd4c226c93756c34c2df131ae79350",
+  "mainTrackedDiff": "empty",
+  "mainMarkerPresent": false,
+  "mapRefUnchanged": true,
+  "sourceAndInstalledUnchanged": true,
+  "modelRuns": 0,
+  "claim": "deterministic Git branch/checkout/history isolation only"
+}

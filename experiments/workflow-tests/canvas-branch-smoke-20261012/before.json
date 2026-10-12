@@ -1,0 +1,11 @@
+{
+  "mainBranch": "codex/fab-maintenance",
+  "mainHead": "3e530979c6bd4c226c93756c34c2df131ae79350",
+  "mainStatus": "?? experiments/workflow-tests/2026-10-12-canvas-branch-smoke.md",
+  "mapBranch": "codex/fab-map-view",
+  "mapHead": "75540f12377ded939746084fd25d59abdc6826ee",
+  "mapStatus": "",
+  "sourceFingerprint": "40cf2ca557e185fb",
+  "installedFingerprint": "40cf2ca557e185fb",
+  "smokeRefExists": false
+}

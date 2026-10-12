@@ -256,3 +256,12 @@ GitHub workflow подготовлен, не запускался на remote; b
 Fresh model table generation/proactive isolation/native Obsidian ещё не наблюдались.
 Next: пользоваться table/default на реальной частичной задаче; карту разбираем после
 creator prototype. Main продолжает общую отладку Fab. Public release/merge/push нет.
+
+## 2026-10-12 — тест новой Canvas-ветки
+По запросу creator выполнен bounded deterministic Git smoke: новая
+codex/canvas-branch-smoke от main3e53097, marker-only commit25eaa72 в отдельном
+checkout. Основная ветка/HEAD/tracked files и installed beta19 не изменились.
+Checkout возвращён на codex/fab-map-view75540f1, clean; test branch сохранён отдельно.
+[Отчёт](../experiments/workflow-tests/2026-10-12-canvas-branch-smoke.md).
+Без model runs/new chat/merge/push/install. FAB-13 independent behavioral boundary
+открыта; WF-20/ожидание UI-прототипа не менялись. Не создавать дубли map-workstream.
