@@ -265,3 +265,19 @@ Checkout возвращён на codex/fab-map-view75540f1, clean; test branch �
 [Отчёт](../experiments/workflow-tests/2026-10-12-canvas-branch-smoke.md).
 Без model runs/new chat/merge/push/install. FAB-13 independent behavioral boundary
 открыта; WF-20/ожидание UI-прототипа не менялись. Не создавать дубли map-workstream.
+
+## 2026-10-12 — реальное отделение Canvas-чата
+Creator уточнил: система должна сама создавать отдельный чат и переносить
+необходимый контекст при разрешённом отделении задачи. Beta.20 добавляет
+self-contained shared/workstream-handoff.md, routes из release/project/Cowork.
+46regressions/package/scoped gate PASS; installed65files/597115ccbb4b0a59,
+source/cache parity PASS. Новые чаты не создаются из обычного implementation
+permission без соответствующей человеческой авторизации.
+
+Подготовлен [packet](handoffs/canvas-workstream-2026-10-12.md), byte-for-byte copy
+закреплена в feature c1681d5. Старый managed checkout архивирован после проверки
+clean/no ignored files. create_thread в проекте Fab с worktree/ref codex/fab-map-view
+принял запрос и вернул client ID; host подготовил /Users/iamjudin/.codex/worktrees/60c9/Fab.
+Пока фактический thread ID/ответ не подтверждены — восстановление не считать PASS.
+Initial prompt: orientation только, проверить Git, сохранить creator-first prototype
+order, не реализовывать/merge/install/publish. Основной чат остаётся общей отладкой.

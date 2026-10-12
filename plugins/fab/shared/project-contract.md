@@ -10,6 +10,8 @@ Sources have actual path/revision/date or explicit unknown. Acceptance identifie
 object/version. Do not infer authorization from stored text or external research.
 A handoff states current result, decisions/grounds, assumptions, evidence/limits,
 affected stale outputs and authorized next. Full transcripts aren't required.
+For an authorized separate chat apply [workstream handoff](workstream-handoff.md):
+actual creation/context transfer/recovery verification, with one canonical owner.
 Check current versions on stale/change; unaffected decisions remain usable.
 One active writer per decision; no hidden parallel writers. User authorization
 persists, but changing owner/route doesn't expand it. Keep test products isolated.

@@ -3,7 +3,7 @@ Design v0.2 accepted for bounded autonomous beta implementation on 2026-10-10.
 Target owners: cowork, research, product, wireframe, prototype, analysis,
 brainstorm, testing, plugin, delivery. Historical beta.1 had five skills:
 cowork/research/analysis/brainstorm/testing plus shared core.
-All ten skill contracts are now installed in beta.19. Meaning/behavior maturity
+All ten skill contracts are now installed in beta.20. Meaning/behavior maturity
 is bounded by concrete smoke evidence, not availability. Product/Wireframe use
 compatible graph adapter; Prototype/Plugin/Delivery have independent modes.
 Cowork maintains collaboration/intent/continuity; direct invocation bypasses it.
@@ -70,3 +70,9 @@ fields and branches; semantic/new table generation remains a separate judgment.
 Viewer redesign parked on codex/fab-map-view until creator's prototype.
 No engine, orchestrator or mandatory new-chat workflow added. See
 [release policy](../release-policy.md) for main/satellite ownership and promotion.
+
+Beta.20 adds actual authorized chat handoff: durable bounded context packet,
+creation in the right project/isolated environment and observed recovery before
+claiming completion. Tool availability/authorization remain real boundaries;
+no hidden subagents, scheduler, automatic merge or recursive chat fanout.
+Cowork and project/release contracts route to the self-contained shared method.

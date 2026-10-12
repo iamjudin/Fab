@@ -22,7 +22,10 @@ dependent work. For routine bounded repairs do not demand a new branch or chat.
 Respect existing authorization. Preserve the release tag; work in a codex/ branch
 under project conventions. Branch alone isolates history, not concurrent files:
 independent simultaneous chats need separate checkouts/worktrees. A chat is a
-coordination choice, not a release boundary. Never install an experimental branch
+coordination choice, not a release boundary. For an explicitly authorized separate
+chat, perform [context handoff](workstream-handoff.md): create/locate the chat,
+transfer the bounded packet and verify recovery; don't leave rebriefing to the
+creator. Never install an experimental branch
 into shared default runtime, merge, publish or change another workstream's scope
 without authorization. Record owner, branch/checkout, allowed files, acceptance
 checks and return condition in the owning project's existing documents.

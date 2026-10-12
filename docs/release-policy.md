@@ -44,14 +44,17 @@ ID, владельцев, UC, ветки результата/ошибки/во�
    согласованного возвращения результата и явного разрешения merge.
 
 Beta.18 сохранена как исторический checkpoint с известным Canvas FAIL. Её tag
-checkpoint-beta18-2026-10-12 на10e44cf неизменен. Пакет установлен локально как beta.19 (64files/40cf2ca557e185fb);
+checkpoint-beta18-2026-10-12 на10e44cf неизменен. Beta.19 сохранена checkpoint3e53097.
+Пакет установлен локально как beta.20 (65files/597115ccbb4b0a59);
 переименование версии не превращает эксперимент в зрелую функциональность.
 
 ## Git и владение
 Основной чат «Восстановить контекст Fab» / Lab/Fab / codex/fab-maintenance:
 core, независимые навыки, таблицы, общая отладка, release policy и канонический backlog.
-Отдельный codex/fab-map-view стартует с14f4dbf, исследовательская beta.18 база,
-в managed checkout /Users/iamjudin/.codex/worktrees/fab-map-view/Fab.
+Отдельный codex/fab-map-view стартует с14f4dbf, исследовательская beta.18 база;
+scope guard75540f1 и handoff packet c1681d5. При создании отдельного чата host
+подготовил checkout /Users/iamjudin/.codex/worktrees/60c9/Fab; прежняя ручная
+рабочая копия архивирована после сохранения packet, чтобы не было двух active copies.
 Это физическая изоляция; два чата не должны переключать branch одной папки.
 Старые codex/canvas-layout-research и codex/partial-workflow-tests сохранены.
 
@@ -61,7 +64,10 @@ Scope: карточки, соединения, неналожение, свор�
 и его собственные проверки. Не менять общий core/version/release/backlog,
 не устанавливать feature-source в общий default runtime. Находки — scoped report
 с proposal для основной ветки; main owner принимает решения о переносе.
-Отдельный чат необязателен до появления прототипа; ветка/checkout уже готовы.
+Creator запросил отдельный Canvas-чат с автоматическим переносом контекста.
+Packet: [Canvas handoff](handoffs/canvas-workstream-2026-10-12.md). При разрешённом
+отделении Fab выполняет создание чата/изоляцию/context transfer и проверяет реальное
+восстановление. Новый чат ждёт прототипа; разрешение на чат не запускает layout spike.
 
 Для возвращения нужны: согласованный контракт данных, сохранность IDs/связей,
 читаемость representative и сложных случаев, отрицательные/return branches,
@@ -71,5 +77,9 @@ Scope: карточки, соединения, неналожение, свор�
 Fab сам предлагает изоляцию для самостоятельной существенной переработки после
 checkpoint/release: причина, scope, baseline, branch и критерий возврата. Рутинная
 маленькая правка не требует нового чата или обязательного отдельного процесса.
+
+Передача контекста — [runtime handoff](../plugins/fab/shared/workstream-handoff.md):
+цель/решения/revisions/evidence/scope/owner/next; actual thread ID и checkout,
+содержательный ответ нового чата. Без инструмента не утверждать создание.
 
 Workflow использует официальный [actions/checkout](https://github.com/actions/checkout) v7; remote CI пока не запускался.

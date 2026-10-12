@@ -21,6 +21,10 @@ recommended direction; do not merely relay another skill's outputs or defer the
 technical verdict to the creator. Explain meaningful remaining choices before
 their dependent work, following the shared rule. A useful handoff makes the next
 action and any genuinely needed creator contribution clear.
+For explicitly authorized separation into another chat read
+[workstream handoff](../../shared/workstream-handoff.md); prepare the context,
+create/locate the actual chat and verify recovery with available host tools.
+Branch creation alone is not a completed chat handoff.
 Offer a clear recommendation when ambiguous; do useful independent work while
 waiting only for genuinely required choices. No repeated briefing for known input.
 Read [capabilities](../../shared/capabilities.md) to route:

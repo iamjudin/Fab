@@ -31,11 +31,14 @@ Runtime package plugins/fab, docs не скрытый обязательный r
 не становятся целью Fab. Старый paused sprng heartbeat не возобновлять.
 Основной рабочий чат — текущий чат в Lab/Fab с 2026-10-11; дальше работаем здесь.
 FAB-02: первое восстановление контекста успешно; устойчивая непрерывность открыта.
-Новый чат только по прямому запросу.
+Creator 2026-10-12 запросил создание отдельного Canvas-чата с переносом контекста.
+При принятом отделении workstream не оставлять повторный брифинг creator:
+подготовить packet, выполнить разрешённое создание/перенос и проверить восстановление.
+Другие новые чаты — по прямому запросу; не расширять этот scope до hidden delegation.
 Не создавай subagents без явного разрешения на делегацию.
 
 ## Current boundary
-Installed Fab0.1.0-beta.19,64files/40cf2ca557e185fb. All ten independent contracts.
+Installed Fab0.1.0-beta.20,65files/597115ccbb4b0a59. All ten independent contracts.
 46local regressions, bounded outcome/domain/UI/maintenance smokes; not universal
 maturity. Current detailed state in docs/handoff.md and docs/backlog.md. Continue
 across checkpoints when authorized; user explicitly rejected artificial pauses.
