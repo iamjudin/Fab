@@ -15,3 +15,12 @@ Private inventories/archives stay in ignored `raw/`; no old source is published.
 Fab remains beta.23 with exact cache parity. Chats were not modified or archived;
 visible legacy chat entries remain listed. The host project catalog still caches
 old Git flags; disk/CLI checks confirm no Git repository in the retained folders.
+
+## Additional cleanup
+
+Creator also requested deletion of iamjudin/igolka_pro. It was an empty public
+repository with no branches, tags, releases or issues; metadata was retained
+locally before deletion. Deletion succeeded and the authenticated repository
+list now contains only Fab, Storyteller, Bookworm, Tarsy and Publicator. Desktop
+shows the same five entries. No matching local directory was found in the bounded
+Desktop/Documents search; no file or chat was removed.

@@ -365,3 +365,8 @@ ready: iamjudin/-plug, Wireframer, Fabricator and Separator-1 are absent from th
 authenticated repository list; the other six repositories remain. Final346file
 and archive SHA checks PASS. Runtime Fab beta.23 unchanged.
 [Local checkpoint](../experiments/maintenance/retire-legacy-20261012/status.md).
+
+2026-10-12 follow-up: empty iamjudin/igolka_pro also retired at creator request.
+No branches/tags/releases/issues existed; local metadata retained. GitHub and
+Desktop now list Fab, Storyteller, Bookworm, Tarsy and Publicator. No local file
+or chat was removed for this additional cleanup.
