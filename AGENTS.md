@@ -49,7 +49,9 @@ maturity. Current detailed state in docs/handoff.md and docs/backlog.md. Continu
 across checkpoints when authorized; user explicitly rejected artificial pauses.
 Creator 2026-10-12 authorized public GitHub release of current iamjudin/Fab,
 MIT for original material and retention of history including author email/paths.
-Public repo and commit-pinned clean install verified; beta.22 tag/Release pending.
+Public beta.22 at v0.1.0-beta.22/8186ed6: GitHub CI, anonymous assets, clean
+exact-tag install and corrected update/rollback verified. Tagged README update
+erratum lives in maintained README/Release notes; never move the version tag.
 No Canvas merge or main migration.
 One authorized reset performed by creator; no further reset authorized.
 Task-owned scratch is cleaned after verified retention; generated plugins inherit

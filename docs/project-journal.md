@@ -20,11 +20,12 @@ Backfill выполнен по текущему чату и проектным �
 
 - Type: milestone
 - Project area: Delivery, GitHub distribution
-- Status: confirmed — явный public/MIT/history scope, remote CI и commit-pinned clean install; needs-check — final tag/Release.
+- Status: confirmed — явный public/MIT/history scope, remote CI и commit-pinned clean install; confirmed — final tag/Release и corrected update/rollback; frozen README erratum сохранена.
 - Evidence: [distribution report](../experiments/releases/public-beta22-20261012/report.md), [first CI](https://github.com/iamjudin/Fab/actions/runs/38269178037), source0763cea.
 - Summary: creator выбрал открытие текущего репозитория с историей вместо отдельного public distribution repo и подтвердил сохранение author email/paths. Beta.22 добавляет MIT/notices и install/update/rollback copy. Первый push получил HTTP400; per-command HTTP/1.1/postBuffer retry прошёл, глобальный Git не менялся. Repo PUBLIC, default maintenance; CI и remote Git marketplace/install из отдельной cwd/cache PASS. Все67files совпадают по bytes/fingerprint.
 - Article value: локальная сборка не доказывает публичную доставку; проверяется канал, а не только package gate. Исходный transport failure сохранён в evidence.
-- Follow-up: закрепить final tag/Release, повторить точные install-команды по тегу и проверить скачанные assets. Canvas/native и прочие behavioral границы не закрываются релизом.
+- Result: v0.1.0-beta.22/8186ed6 опубликован, exact-tag clean install и anonymous ZIP SHA/bytes PASS. Add нового ref на существующий marketplace FAIL: исправлена последовательность remove/add/reinstall. Rollback9 → update22 реально прошёл. Tagged README не переписан; maintained README/Release notes явно исправляют update erratum.
+- Follow-up: подключать к реальному проекту по проверенным инструкциям; Canvas/native и прочие behavioral границы не закрываются релизом.
 
 ## 2026-10-12 — Видимая маркировка исследования упрощена до имени проекта
 

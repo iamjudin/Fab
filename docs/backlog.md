@@ -34,9 +34,11 @@
 
 ## Публичный delivery route — 2026-10-12
 
-Creator авторизовал публичный текущий iamjudin/Fab с историей и MIT. Local46tests,
-GitHub CI и commit-pinned install в отдельный cache PASS; beta.22 tag/Release
-и exact-tag installation ещё pending. [Отчёт](../experiments/releases/public-beta22-20261012/report.md).
+Creator авторизовал публичный текущий iamjudin/Fab с историей и MIT. Local46tests, GitHub CI,
+public tag/Release, anonymous assets и exact-tag install в отдельный cache PASS.
+Обнаружен ref-switch FAIL: fixed README/Release notes требуют remove registration
+перед add нового ref; реальный rollback beta.9 → update beta.22 PASS. Frozen tagged
+README имеет явно исправленную erratum; tag/archive не переписывались. [Отчёт](../experiments/releases/public-beta22-20261012/report.md).
 Это новый distribution outcome в FAB-13; Canvas/continuity/open behavior не закрывает.
 
 ## Правила

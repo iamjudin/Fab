@@ -59,13 +59,45 @@ error. No model behavior turn was run.
 
 Primary installed runtime also updated through supported updater: beta.22,
 67 files, fingerprint `71349e50dbffe9c0`, exact parity PASS.
-Final version tag, GitHub prerelease/assets and exact-tag replay still pending.
+Final version tag `v0.1.0-beta.22` targets
+`8186ed6ce417dde0ca2d84a68ef5f5b3d9e543d9` and is unchanged.
+Tagged source CI PASS: [run38269761589](https://github.com/iamjudin/Fab/actions/runs/38269761589).
+[GitHub prerelease](https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.22)
+published at 2026-10-12T15:23:32Z with plugin ZIP, scope snapshot and SHA256SUMS.
+Anonymous downloads PASS; checksums and all67 ZIP-member bytes match source.
+Clean exact-tag marketplace/install PASS in a second new home, outside the source
+checkout; fetched Git HEAD equals the version-tag commit. Primary cache also matches.
+
+A real update test exposed a documentation defect: adding a new ref to an existing
+marketplace rejects it as a different source. The initial update paragraph was
+incorrect. Corrected sequence: remove only the named marketplace registration,
+add the target ref, then reinstall the plugin. Actual rollback to historical
+beta.9 PASS (57 files/fingerprint462d4cc828c5d99f), followed by return to beta.22
+PASS and full byte parity. Removing the registration retained beta.9 cache until
+reinstall; supported reinstall retired the old version. These observations are
+specific to Codex CLI0.162.0-alpha.17.2, Git2.39.3, gh2.95.0 on this host.
+
+The version tag/archive are never rewritten. The immutable tagged README has the
+original incorrect update paragraph; maintained README and GitHub Release notes
+include a clear erratum and the verified sequence. This is a real initial FAIL
+and a corrected distribution route, not a claim that the first attempt was clean.
+Machine-readable [receipt](receipt.json) retains source, assets, checks and failures.
 The immutable tagged report is a preparation snapshot; the current report on the
 maintenance lane retains final observations without moving the version tag.
 
 ## Interpretation
 
-Success requires that another person can access the repository/release and obtain
-the exact package through the documented Git marketplace route. It does not close
+Observed result: the public repository, prerelease and exact-tag install are
+accessible, downloaded assets match source, and corrected update/rollback commands
+work in isolated caches. The initial frozen update paragraph remains explicitly
+superseded by the maintained instructions. This is a bounded distribution PASS
+after correction, not an untouched first-attempt PASS. It does not close
 Canvas, native readiness or independent skill behavioral gaps. No model turn,
 operator simulation or credit reset is needed for this technical distribution test.
+
+## Retention and cleanup
+
+Final receipt, downloaded/uploaded artifacts and original tracked preview images
+retain the useful results. Both task-owned Codex homes, derivative contact sheet
+and empty scratch cwd were removed after another asset/cache byte comparison.
+Primary installed beta.22 and other workstreams/previews were not touched.

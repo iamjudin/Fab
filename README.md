@@ -23,10 +23,23 @@ maintainer's Obsidian vault, other plugins, or development reports.
 The package has no MCP server or external service credentials of its own.
 Research, Git and UI tasks use capabilities available in your host environment.
 
-For later releases, select the new release tag with the same marketplace-add
-command, then run `codex plugin add fab@fab-local` again. Review the new release's
-limits first. To return to this version, select its tag and reinstall. A pinned
-marketplace stays on its selected release; it does not follow development commits.
+For an update or rollback, first remove the existing marketplace registration,
+then add the desired published tag and reinstall Fab:
+
+```sh
+codex plugin marketplace remove fab-local
+codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.22
+codex plugin add fab@fab-local
+```
+
+Replace the example tag with the target release. Review its limits first.
+Run these commands outside the Fab source checkout to use the registered Git
+marketplace. Removing this registration is a catalog operation; the tested host
+retains the installed plugin until reinstall. A pinned marketplace stays on its
+selected release. `marketplace add` alone rejects a different ref for an existing
+registration; it does not switch versions. This corrects the update paragraph
+in the immutable beta.22 tagged README; use these maintained instructions or
+the GitHub Release notes.
 
 The commands follow the [official plugin packaging documentation](https://developers.openai.com/plugins/build/plugins)
 and the installed CLI. Distribution-test results are recorded in the

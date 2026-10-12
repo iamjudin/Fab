@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "date": "2026-10-12",
+  "route": "Fab Delivery + Plugin",
+  "model": "not invoked",
+  "effort": "not applicable; bounded technical CLI/API checks",
+  "tools": {
+    "codex": "0.162.0-alpha.17.2",
+    "git": "2.39.3 (Apple Git-146)",
+    "gh": "2.95.0"
+  },
+  "version": "0.1.0-beta.22",
+  "files": 67,
+  "fingerprint": "71349e50dbffe9c0",
+  "source_tag": "v0.1.0-beta.22",
+  "source_commit": "8186ed6ce417dde0ca2d84a68ef5f5b3d9e543d9",
+  "repository": {
+    "url": "https://github.com/iamjudin/Fab",
+    "visibility": "PUBLIC",
+    "default_branch": "codex/fab-maintenance",
+    "history_rewritten": false,
+    "main_migration": false,
+    "canvas_merged": false
+  },
+  "authorization": {
+    "public_existing_repo": true,
+    "mit_original_material": true,
+    "retain_email_and_paths": true
+  },
+  "release": {
+    "url": "https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.22",
+    "draft": false,
+    "prerelease": true,
+    "published_at": "2026-10-12T15:23:32Z",
+    "anonymous_download": "pass",
+    "assets_sha256": {
+      "release-scope.json": "0e5ecee2c0d5643444fe36c3cabdc337103591bbe97f4f9b55a2087aec95e6b0",
+      "SHA256SUMS.txt": "5bf34969d25fda214c602f4e869ee7638bb0ac31b2faa4f27aedad8ac4426c38",
+      "fab-0.1.0-beta.22.zip": "eb175823525b94e98086891135bc088e4a03327c39997d625877ed7317126261"
+    }
+  },
+  "checks": {
+    "local_regressions": 46,
+    "package_integrity": "pass",
+    "declared_scope": "pass",
+    "tagged_source_ci": "pass",
+    "ci_url": "https://github.com/iamjudin/Fab/actions/runs/38269761589",
+    "clean_exact_tag_install": "pass",
+    "git_snapshot_commit": "8186ed6ce417dde0ca2d84a68ef5f5b3d9e543d9",
+    "installed_byte_parity": "pass",
+    "anonymous_zip_source_parity": "pass",
+    "primary_cache_parity": "pass",
+    "update_after_catalog_removal": "pass",
+    "rollback": {
+      "rollback_version": "0.1.0-beta.9",
+      "file_count": 57,
+      "fingerprint": "462d4cc828c5d99f",
+      "source_cache_parity": "pass",
+      "old_22_cache_retained": false
+    }
+  },
+  "isolation": {
+    "codex_homes": "two new task-owned homes; no auth/config copied",
+    "cwd": "outside Fab source checkout",
+    "git_credential_helper": "disabled for marketplace fetches",
+    "catalog_resolution": "fab-local resolved from remote Git snapshot; host personal catalog still listed",
+    "ui_or_fresh_skill_behavior": "not checked"
+  },
+  "retained_failures": [
+    {
+      "step": "first push",
+      "observed": "HTTP400/disconnect; remote ref absent",
+      "correction": "per-command HTTP/1.1 and 50MiB postBuffer; exact transport cause unproven"
+    },
+    {
+      "step": "initial harness",
+      "observed": "CODEX_HOME directory absent",
+      "correction": "created task-owned home"
+    },
+    {
+      "step": "repin existing marketplace",
+      "observed": "add rejects different ref as different source",
+      "correction": "remove named registration, add desired tag, reinstall; maintained README and Release notes corrected; frozen tagged README still has original faulty update paragraph"
+    }
+  ],
+  "cleanup": "complete: verified downloaded assets + final receipt retained; two task-owned Codex homes, derivative contact sheet and empty external cwd removed; primary installed cache retained",
+  "limits": [
+    "No universal skill maturity or native/UI evidence",
+    "Canvas opt-in known defect; native Obsidian unknown",
+    "No public Plugins Directory submission",
+    "Tagged README update erratum corrected in maintained docs and GitHub Release notes"
+  ],
+  "image_audit": {
+    "experiments/workflow-tests/beta2/preview.png": "292a66914bd581cf925559280f6cba2355dffd50817c720575f3fb34d5e1cca4",
+    "experiments/workflow-tests/beta3/observer-error.png": "0a7af2f92c5a0c73ca306c06bad1f22e48e9bccb2e0dc3ec5127962b8a1ccab5",
+    "experiments/workflow-tests/beta3/observer-reload.png": "8c703bf2684ae631887e2b8c284e3866ef43c5e85f21e2c21f696532311af3a4",
+    "experiments/workflow-tests/beta5-full/initial-interface.png": "787d66a046856069fef3cd30d4644496e7410534ca371016985afa1b640b88ce",
+    "experiments/workflow-tests/beta5-full/map-corrective/root-preview.png": "c28b3856f7c68dab08541db971a8b73d42a05f2bf8efd73edc913a284b6e0c5f",
+    "experiments/workflow-tests/beta5-full/observer-ready.png": "0fba45bfff0daa9f65345a25ff6b953398698264560e6bb0f7eb7244128b3cee",
+    "experiments/workflow-tests/beta5-full/recovery-blocked.png": "4ca98258ec7b85255eb1ef12011cb6e638b6e4d23a61b12c85ab53e590c3a3ac",
+    "experiments/workflow-tests/beta5-full/recovery-corrective/recovery-retained.png": "941ade1cfca28e8ec454eec37ca026edcb6386fcd7234c712ccb3f6e7f8f9310",
+    "experiments/workflow-tests/beta5-full/recovery-corrective/recovery-success.png": "1c06d801fdf993b342e83b28f833f8b0694fd30dc421c9ecb1c231c8b48a4c78",
+    "experiments/workflow-tests/beta5-full/restored-reload.png": "077382d1ece1d9f4587f16c6f21deeef53e97b66625c2e85d18fb7240d708a10",
+    "experiments/workflow-tests/mobile-pipeline-20261012/structure-root.png": "c55f5fa270aedeb7529a8a5ba2eb6aadd6af6b2d73c73afc585ccefefa5ca401",
+    "experiments/workflow-tests/mobile-pipeline-20261012/ui/blocks.jpg": "0474321a4596784ec257e9699844dca2f0405c27ab2728936a0e3dbfdb3f79bc",
+    "experiments/workflow-tests/mobile-pipeline-20261012/ui/narrow-320.jpg": "d0d1f6127940c4b6a563a2510934d563baabb202783f1c38d8a8a6c1318cecdb",
+    "experiments/workflow-tests/mobile-pipeline-20261012/ui/recovery-retained.jpg": "5afc804dc3583bf7e1995618a68b200fce479054c78729157c561d33a4d773c4",
+    "experiments/workflow-tests/mobile-pipeline-20261012/ui/recovery-success.jpg": "7fa1724f9fd7c69276beedbcb2f18dae4905145c6338ea79f588d80218baf913",
+    "experiments/workflow-tests/partial-routes-20261012/wireframe/ui/structure.png": "80f928a59a4a999bbd5ceab3c2b48a9835b1b300a169a2d7f24a4a272af81a4d",
+    "experiments/workflow-tests/partial-routes-20261012/wireframe-corrective/ui/structure.png": "e7532d1488aa63e0e8be47d12ce74769ebb2fb380e2aa2db6ed8a4b9efe9dc9f"
+  }
+}

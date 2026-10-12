@@ -6,13 +6,13 @@
 
 ## Где работаем
 
-- Source: /Users/iamjudin/Desktop/Lab/Fab, текущая исследовательская ветка codex/canvas-layout-research от checkpoint-beta18-2026-10-12; предыдущий partial-пакет в codex/partial-workflow-tests; merge не выполнялся.
-- Private remote: https://github.com/iamjudin/Fab . Публичного выпуска/merge нет.
+- Source: /Users/iamjudin/Desktop/Lab/Fab, текущая codex/fab-maintenance; публичный beta.22 tag v0.1.0-beta.22 на8186ed6. Canvas остаётся отдельно; merge не выполнялся.
+- Public remote: https://github.com/iamjudin/Fab . GitHub beta.22 prerelease опубликован; main migration/Canvas merge нет.
 - 2026-10-12 creator подтвердил самостоятельные Git checks и локальные коммиты
   проверенных этапов. Формат теста на наше усмотрение; evidence указывает actual
   model/effort и fresh-context boundary. Это не обязательные новые sidebar-чаты.
-- Установлена Fab0.1.0-beta.18, 60 файлов, fingerprintc463bb6928771c74, marketplace fab-local.
-- 36 локальных регрессий PASS; source/cache совпадают.
+- Установлена Fab0.1.0-beta.22, 67 файлов, fingerprint71349e50dbffe9c0, marketplace fab-local.
+- 46 локальных регрессий PASS; source/cache совпадают; remote CI и чистая публичная установка по тегу проверены.
 - Beta.18 закреплена локальным tag `checkpoint-beta18-2026-10-12`;
   [границы checkpoint](checkpoints/fab-beta.18.md). Пакет можно подключать к
   одному проекту для ограниченного реального использования; карта не имеет общего PASS.
@@ -339,4 +339,7 @@ Creator разрешил открыть текущий iamjudin/Fab, выбра�
 поведенческие инструкции beta.21 сохранены. Installed67files/71349e50dbffe9c0,
 source/cache parity и46regressions/scoped gate PASS. Первый GitHub CI PASS;
 публичный commit-pinned remote marketplace/install из отдельной cwd/cache PASS.
-Tag/GitHub Release/exact-tag install pending. [Distribution report](../experiments/releases/public-beta22-20261012/report.md).
+Tag v0.1.0-beta.22 на8186ed6/GitHub prerelease/exact-tag install PASS; anonymous
+assets SHA/source bytes PASS. Исправлена update-инструкция: marketplace remove
+перед add другого ref; реальный rollback9/update22 PASS. Tagged README сохраняет
+ошибочную историческую update-фразу, maintained README и Release notes её явно исправляют. [Distribution report](../experiments/releases/public-beta22-20261012/report.md).
