@@ -1,16 +1,85 @@
-# Fab — private development beta
+# Fab — coauthor skills for indie creators
 
-10 самостоятельных навыков: Cowork, Research, Analysis, Brainstorm, Testing, Product, Wireframe, Prototype, Plugin и Delivery. Возможны совместные маршруты; полный путь не обязателен для каждого запроса.
+Fab helps you assess an idea, explore alternatives, use research, define product
+behavior, organize an interface, build an executable prototype, engineer a plugin
+or prepare delivery. Start with the task you need; a full pipeline is optional.
+The working language is Russian, with direct recommendations and explicit evidence.
 
-Runtime0.1.0-beta.21; package plugins/fab с собственным plugin.json; marketplace fab-local. Private source: https://github.com/iamjudin/Fab . Mobile apps first: общий смысл/правила и условные платформенные ветви; browser prototype не доказывает native/device behaviour.
+**Public beta: 0.1.0-beta.22.** Mobile apps are the current focus. Browser prototypes
+check selected interactions; they do not establish native or production readiness.
 
-[Индекс](AGENTS.md) · [Маяк](docs/beacon.md) · [Бэклог](docs/backlog.md) · [Состояние](docs/handoff.md) · [Журнал проекта](docs/project-journal.md) · [Результаты проверок](experiments/workflow-tests/2026-10-10-autonomous-beta-results.md).
+## Install in Codex
 
-Это ограниченная beta, не публичный выпуск и не подтверждение универсальной зрелости. Старые Wireframer/Fabricator сохранены.
+Use a Codex client with plugin marketplace support. Install this fixed release:
 
-## Readiness boundary
-Structure/scenario documentation defaults to Markdown tables. Canvas previews
-are experimental opt-in with a known label-overlap defect; native Obsidian
-rendering is not verified. Executable prototypes have separate bounded evidence.
-[Release policy](docs/release-policy.md) separates package integrity, outcome
-readiness and isolated experiments; a beta version is not whole-product approval.
+```sh
+codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.22
+codex plugin add fab@fab-local
+```
+
+`fab-local` is the existing marketplace identifier, including for Git installs.
+The package is `plugins/fab`; it includes its methods and does not need the
+maintainer's Obsidian vault, other plugins, or development reports.
+The package has no MCP server or external service credentials of its own.
+Research, Git and UI tasks use capabilities available in your host environment.
+
+For later releases, select the new release tag with the same marketplace-add
+command, then run `codex plugin add fab@fab-local` again. Review the new release's
+limits first. To return to this version, select its tag and reinstall. A pinned
+marketplace stays on its selected release; it does not follow development commits.
+
+The commands follow the [official plugin packaging documentation](https://developers.openai.com/plugins/build/plugins)
+and the installed CLI. Distribution-test results are recorded in the
+[release report](experiments/releases/public-beta22-20261012/report.md).
+This GitHub distribution is separate from publication in the public Plugins Directory.
+
+## Use
+
+Choose a Fab skill in your client, or explicitly name it in the request. Examples:
+
+- **Fab Analysis:** «Оцени этот существующий онбординг: где пользователь застрянет?»
+- **Fab Brainstorm:** «Предложи три подхода к приложению для сборов в поездку и выбери лучший для первого теста».
+- **Fab Product → Wireframe:** «Уточни поведение редактирования, затем обнови структуру существующего интерфейса».
+- **Fab Cowork:** «Продолжим проект: восстанови решения, открытые вопросы и следующий полезный шаг».
+
+The ten independent skills are Cowork, Research, Analysis, Brainstorm, Testing,
+Product, Wireframe, Prototype, Plugin and Delivery. Each can produce a bounded
+useful outcome. Explicit instructions and project agreements determine scope;
+ordinary changes do not authorize public releases or messages to other people.
+
+## Beta limits
+
+- Structure and scenarios default to Markdown tables. Canvas is opt-in and
+  experimental: labels can overlap; native Obsidian rendering is unverified.
+- Executable prototypes have evidence for selected browser paths. Device,
+  native, offline, payment and production guarantees need their own checks.
+- Fresh-context tests support bounded independent tasks and partial routes.
+  They do not prove that every skill succeeds on every input in this version.
+- Automatic chat handoff depends on host tools; sustained continuity and the
+  last queued Canvas-chat recovery remain unverified.
+- Research citation coverage is partial. Recheck changing platform, legal and
+  economic claims against current primary sources before using them.
+- Temporary-output cleanup and cross-project research updates still have
+  open behavioral cases. Read [known work](docs/backlog.md) before relying on them.
+
+See [release notes](docs/releases/0.1.0-beta.22.md) and
+[scoped readiness](docs/release-policy.md). A valid package is not whole-product approval.
+
+## Development
+
+```sh
+python3 -B scripts/check_package.py
+python3 -B -m unittest discover -s tests -q
+python3 -B scripts/check_fab_release.py
+```
+
+[Working index](AGENTS.md) · [Beacon](docs/beacon.md) · [Backlog](docs/backlog.md) ·
+[Handoff](docs/handoff.md) · [Project journal](docs/project-journal.md).
+Development reports include retained synthetic test products and historical failures;
+those products are evidence, not Fab's product roadmap.
+
+## License
+
+Original Fab code, instructions and authored documentation are available under
+[MIT](LICENSE). Referenced third-party materials retain their own rights;
+see [notices](NOTICE.md). Please retain attribution when redistributing Fab.
