@@ -330,3 +330,13 @@ Beta.21: Research использует простой принятый project t
 Installed65files/4760530ec4471a3a, source/cache/46tests/scoped gate PASS.
 Fresh model generation по новой tag policy отдельно не наблюдалась. FAB-10 другие
 consent/refusal/additive/source-revision границы остаются открытыми.
+
+## 2026-10-12 — Первый публичный delivery route
+
+Creator разрешил открыть текущий iamjudin/Fab, выбрал MIT и сохранение истории
+с author email/local paths. Repo PUBLIC, default codex/fab-maintenance; main
+не создавалась, Canvas не merged. Beta.22: metadata/license/notice/public README,
+поведенческие инструкции beta.21 сохранены. Installed67files/71349e50dbffe9c0,
+source/cache parity и46regressions/scoped gate PASS. Первый GitHub CI PASS;
+публичный commit-pinned remote marketplace/install из отдельной cwd/cache PASS.
+Tag/GitHub Release/exact-tag install pending. [Distribution report](../experiments/releases/public-beta22-20261012/report.md).

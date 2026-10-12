@@ -16,6 +16,16 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-12 — Fab проходит реальный публичный delivery route
+
+- Type: milestone
+- Project area: Delivery, GitHub distribution
+- Status: confirmed — явный public/MIT/history scope, remote CI и commit-pinned clean install; needs-check — final tag/Release.
+- Evidence: [distribution report](../experiments/releases/public-beta22-20261012/report.md), [first CI](https://github.com/iamjudin/Fab/actions/runs/38269178037), source0763cea.
+- Summary: creator выбрал открытие текущего репозитория с историей вместо отдельного public distribution repo и подтвердил сохранение author email/paths. Beta.22 добавляет MIT/notices и install/update/rollback copy. Первый push получил HTTP400; per-command HTTP/1.1/postBuffer retry прошёл, глобальный Git не менялся. Repo PUBLIC, default maintenance; CI и remote Git marketplace/install из отдельной cwd/cache PASS. Все67files совпадают по bytes/fingerprint.
+- Article value: локальная сборка не доказывает публичную доставку; проверяется канал, а не только package gate. Исходный transport failure сохранён в evidence.
+- Follow-up: закрепить final tag/Release, повторить точные install-команды по тегу и проверить скачанные assets. Canvas/native и прочие behavioral границы не закрываются релизом.
+
 ## 2026-10-12 — Видимая маркировка исследования упрощена до имени проекта
 
 - Type: decision

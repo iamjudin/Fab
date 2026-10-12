@@ -30,7 +30,7 @@ marketplace stays on its selected release; it does not follow development commit
 
 The commands follow the [official plugin packaging documentation](https://developers.openai.com/plugins/build/plugins)
 and the installed CLI. Distribution-test results are recorded in the
-[release report](experiments/releases/public-beta22-20261012/report.md).
+[release report](https://github.com/iamjudin/Fab/blob/codex/fab-maintenance/experiments/releases/public-beta22-20261012/report.md).
 This GitHub distribution is separate from publication in the public Plugins Directory.
 
 ## Use

@@ -43,13 +43,14 @@ Creator 2026-10-12 запросил создание отдельного Canvas
 Не создавай subagents без явного разрешения на делегацию.
 
 ## Current boundary
-Installed Fab0.1.0-beta.21,65files/4760530ec4471a3a. All ten independent contracts.
+Installed Fab0.1.0-beta.22,67files/71349e50dbffe9c0. All ten independent contracts.
 46local regressions, bounded outcome/domain/UI/maintenance smokes; not universal
 maturity. Current detailed state in docs/handoff.md and docs/backlog.md. Continue
 across checkpoints when authorized; user explicitly rejected artificial pauses.
 Creator 2026-10-12 authorized public GitHub release of current iamjudin/Fab,
 MIT for original material and retention of history including author email/paths.
-Release candidate beta.22; public route checks pending. No Canvas merge or main migration.
+Public repo and commit-pinned clean install verified; beta.22 tag/Release pending.
+No Canvas merge or main migration.
 One authorized reset performed by creator; no further reset authorized.
 Task-owned scratch is cleaned after verified retention; generated plugins inherit
 a self-contained runtime cleanup rule. FAB-09 fresh generated-behavior check open.

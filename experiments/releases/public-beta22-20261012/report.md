@@ -41,8 +41,27 @@ Local package/reference checks PASS: 67 files, fingerprint `71349e50dbffe9c0`.
 All 46 regression tests PASS; negative-fixture errors are expected assertions.
 The declared beta scope is eligible; `git diff --check` PASS.
 GitHub had no previous Actions runs, issues or forks at review.
-Remote CI, public access, Release assets and isolated install remain pending.
-Publication is not yet claimed successful.
+First remote CI PASS: [run38269178037](https://github.com/iamjudin/Fab/actions/runs/38269178037)
+for source `0763ceaf034ccabd03f699d710656271b044f794`, all check steps succeeded.
+The first push failed with HTTP400/disconnect; a retry with per-command
+HTTP/1.1 and 50MiB postBuffer passed. No global Git setting changed; the exact
+transport cause is not proven. No oversized file or secret-pattern blocker found.
+
+Repository PUBLIC and anonymous API access observed; default branch
+`codex/fab-maintenance`, GitHub recognizes MIT. Clean remote marketplace/install
+at that exact commit PASS, from an empty cwd outside the repository with Git's
+credential helper disabled and a task-specific Codex home. The resolved marketplace
+is the Git snapshot, not the source checkout. No auth/config was copied into that
+home; the host still lists its personal catalog, but Fab resolution and all67
+installed bytes match the Git snapshot/source. Initial isolated-home invocation
+failed because the directory did not yet exist; creating it resolved the harness
+error. No model behavior turn was run.
+
+Primary installed runtime also updated through supported updater: beta.22,
+67 files, fingerprint `71349e50dbffe9c0`, exact parity PASS.
+Final version tag, GitHub prerelease/assets and exact-tag replay still pending.
+The immutable tagged report is a preparation snapshot; the current report on the
+maintenance lane retains final observations without moving the version tag.
 
 ## Interpretation
 

@@ -33,7 +33,7 @@ ID, владельцев, UC, ветки результата/ошибки/во�
 4. Run package/regression + executable scope gate. В Fab `scripts/check_fab_release.py`
    также требует записей всех десяти навыков и трёх Wireframe-представлений;
    plan хранится в docs/release-plan.json. CI workflow повторяет эти проверки
-   на push/PR после загрузки в GitHub; remote run пока не выполнен. Это не
+   на push/PR после загрузки в GitHub; remote run PASS для beta.22 release preparation; см. distribution report. Это не
    branch protection: без настройки required checks прямые действия не запрещены.
    Никогда не объявлять limited исторические проверки свежим PASS новой beta.
     Beta допускает limited с
@@ -45,7 +45,7 @@ ID, владельцев, UC, ветки результата/ошибки/во�
 
 Beta.18 сохранена как исторический checkpoint с известным Canvas FAIL. Её tag
 checkpoint-beta18-2026-10-12 на10e44cf неизменен. Beta.19 сохранена checkpoint3e53097.
-Пакет установлен локально как beta.21 (65files/4760530ec4471a3a);
+Пакет установлен локально как beta.22 (67files/71349e50dbffe9c0);
 переименование версии не превращает эксперимент в зрелую функциональность.
 
 ## Git и владение
@@ -85,4 +85,6 @@ checkpoint/release: причина, scope, baseline, branch и критерий 
 чата queued с client ID, actual recovery не наблюдалось. Это отдельная строка
 release plan; остальные самостоятельные Cowork-исходы не объявлены заблокированными.
 
-Workflow использует официальный [actions/checkout](https://github.com/actions/checkout) v7; remote CI пока не запускался.
+Workflow использует официальный [actions/checkout](https://github.com/actions/checkout) v7;
+первый remote CI PASS: [run38269178037](https://github.com/iamjudin/Fab/actions/runs/38269178037).
+Публичный distribution route описан в [отчёте](../experiments/releases/public-beta22-20261012/report.md).

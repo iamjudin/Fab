@@ -2,7 +2,7 @@
 
 ## Сейчас
 
-Установлена beta.21: 10 самостоятельных навыков, 65 файлов, fingerprint `4760530ec4471a3a`. Табличный default, Canvas opt-in; разрешённое отделение чата включает реальный перенос контекста и проверку восстановления. Ограниченная готовность по поверхностям, не общий PASS.
+Установлена beta.22: 10 самостоятельных навыков, 67 файлов, fingerprint `71349e50dbffe9c0`. Табличный default, Canvas opt-in; разрешённое отделение чата включает реальный перенос контекста и проверку восстановления. Ограниченная готовность по поверхностям, не общий PASS.
 Реализован и проверен ограниченный пакет переноса. Полный клиентский маршрут дошёл до прототипа; два сбоя потребовали отдельных коррекций. Общего PASS нет.
 
 **Итог пакета:** Fab способен собрать исполняемый кандидат, но передача смысла между интерфейсными артефактами ещё ненадёжна. FAB-08 проверен в реальном браузере после коррекции и отдельно записанного обновления ресурса preview. Две проекции исправлены адресным partial corrective; текущий default — таблицы структуры/переходов; Canvas отдельно ждёт прототип creator, наблюдение уборки preview открыто. Оценка creator полезности/вкуса отдельна и не заменяет технический вывод. Новых полных прогонов ради статистики не нужно. Один разрешённый сброс использован.
@@ -31,6 +31,13 @@
 | WF-17 | Исправлено, ждёт проверки | Содержательные gates и глубина | Partial/full и beta.14 mobile route без approval-пауз; model/blocks до кода. Semantic review карты всё ещё пропустил WF-01/FAB-03. Реальные спорные creator decisions/другие контексты не обобщены; глубина проверяется смыслом, не именами этапов. |
 | FAB-13 | Реализовано; Git isolation PASS; chat recovery pending | Готовность по поверхностям и изоляция переработок | [Политика](release-policy.md): beta.20 включает разрешённое создание/context transfer/recovery check. [Git smoke](../experiments/workflow-tests/2026-10-12-canvas-branch-smoke.md) PASS. [Chat receipt](../experiments/maintenance/chat-handoff-20261012/receipt.json): packet byte-equal, checkout чист, actual recovery pending; не создавать дубль. [Git workflow proposal](research/git-workflow-options-2026-10-12.md): main отсутствует, remote default bootstrap; рекомендована одна main/task branches/tags с conditional hotfix. Принятие/migration не авторизованы этим research. Native Obsidian/fresh routing открыты; Canvas FAIL не блокирует Prototype. |
 | WF-20 | Открыто | Геометрия и читаемость Canvas | Два partial PNG root просмотрел: owners понятны, но стрелки плотные и return labels перекрываются даже при automatic no-warning. [Preview](../experiments/workflow-tests/partial-routes-20261012/wireframe-corrective/ui/structure.png). Read-only repro подтвердил пропущенный label-label overlap; [research/options](research/canvas-layout-options-2026-10-12.md). Default заменён таблицами; Canvas opt-in. Ветка codex/fab-map-view изолирована, parked до прототипа creator; затем варианты реализации. ELK spike не принят; viewer/engine не выбран. Native UI/community plugins/ELK не тестировались. |
+
+## Публичный delivery route — 2026-10-12
+
+Creator авторизовал публичный текущий iamjudin/Fab с историей и MIT. Local46tests,
+GitHub CI и commit-pinned install в отдельный cache PASS; beta.22 tag/Release
+и exact-tag installation ещё pending. [Отчёт](../experiments/releases/public-beta22-20261012/report.md).
+Это новый distribution outcome в FAB-13; Canvas/continuity/open behavior не закрывает.
 
 ## Правила
 
