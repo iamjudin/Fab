@@ -16,6 +16,15 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-12 — Legacy projects become retained local folders
+
+- Type: maintenance checkpoint
+- Project area: legacy repositories and installed plugins
+- Status: confirmed — local detachment, file preservation, Desktop removal and uninstall; pending — GitHub deletion permission.
+- Evidence: [retirement checkpoint](../experiments/maintenance/retire-legacy-20261012/status.md); private archive receipts remain ignored locally.
+- Summary: creator requested retirement while preserving source folders and chats. Verified archives retain local unpublished commits and remote refs. All346working files remain unchanged after removal of .git. Native Desktop removal kept Trash unchecked. Wireframer/Fabricator uninstall succeeded; Landlord/Separator were already absent. GitHub API deletion returned403 due to missing delete_repo; creator is refreshing permission. Fab's installed payload remains unchanged.
+- Follow-up: continue only the four named remote deletions when permission refresh is confirmed; do not remove chat/project records or publish private legacy archives.
+
 ## 2026-10-12 — Fab adopts an approved icon and use-case-first presentation
 
 - Type: decision
