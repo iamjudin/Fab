@@ -293,3 +293,17 @@ client ID в read_thread/wait_threads. Recovery pending, не PASS. Дополн
 [Receipt](../experiments/maintenance/chat-handoff-20261012/receipt.json).
 Опциональная `cowork.chat-handoff` в release plan experimental/default=false;
 отсутствие observed recovery не блокирует прежние независимые исходы Cowork.
+
+## 2026-10-12 — исследование общего Git-процесса
+Creator запросил объяснение веток по ситуациям и best-practice research.
+[Результат/proposal](research/git-workflow-options-2026-10-12.md): одна постоянная
+main + короткие codex/task branches + version tags; conditional release/hotfix,
+полный Git-flow/develop пока не нужен. Это рекомендация, не принятое новое правило.
+Readonly remote confirmed: main нет, default codex/bootstrap-beta/e6dfeab,
+новые checkpoints18/19/20 ещё локальные; HEAD983fbf6 был22commits ahead remote
+до сохранения этого research. Canonical integration line/remote backup — реальный
+следующий пробел, не новая необходимость ещё одного viewer/plugin.
+Migration/default-branch change/merge/push/cleanup не выполнялись. Runtime beta20
+не менялся. Canvas checkout/recovery pending и creator-first prototype сохранены.
+Следующий полезный шаг — согласовать конкретный переход из proposal; не считать
+исследование разрешением на изменение shared GitHub settings или интеграцию.

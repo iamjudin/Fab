@@ -259,3 +259,13 @@ checkout60c9 on codex/fab-map-view/c1681d5/clean, packet byte-equal.
 Actual thread ID/recovery not yet exposed by list_threads, so optional chat-handoff
 experimental/default=false, recovery pending. No duplicate create, hidden subagent,
 implementation/merge/push/publication. Receipt maintenance/chat-handoff-20261012.
+
+## 2026-10-12 — Git workflow research
+Read primary Git/GitHub/trunk-based/Git-flow author docs and inspected actual refs,
+including read-only ls-remote. No local/remote main; GitHub default bootstrap/e6dfeab,
+only old1/9checkpoint tags remote, current beta20 checkpoints local.
+Recommended lightweight GitHub flow with conditional version support, not full
+develop/release bureaucracy for one beta line. Proposal includes task/spike/fix/
+hotfix/release cases, chat/worktree/runtime boundaries, review/cleanup and migration.
+No refs/settings/runtime changes; proposal not accepted by creator yet.
+Report docs/research/git-workflow-options-2026-10-12.md; related FAB-13 updated.
