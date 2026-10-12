@@ -38,8 +38,26 @@
     "public_copy": "pass",
     "native_icon_display": "unknown",
     "fresh_behavior_for_new_language_rule": "not observed",
-    "primary_cache_parity": "pass"
+    "primary_cache_parity": "pass",
+    "remote_ci": "pass",
+    "clean_exact_tag_install": "pass",
+    "downloaded_asset_sha_and_source_parity": "pass",
+    "installed_icon_source_sha": "pass"
   },
-  "publication": "pending",
-  "cleanup": "pending"
+  "publication": {
+    "release": "https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.23",
+    "tag": "v0.1.0-beta.23",
+    "commit": "c97c29d1d5b01af3749c9864ea790d5d78d584f3",
+    "ci": "https://github.com/iamjudin/Fab/actions/runs/38274601566",
+    "is_prerelease": true,
+    "assets_sha256": {
+      "release-scope.json": "ed63f9d7e36aec81e3ea9704c838a6cefe3905a67a1ae5ac4909a2ed7b32958a",
+      "fab-0.1.0-beta.23.zip": "f8914057c9b270f8172365fb1732ac31f7683dde2082b72414af097dec525718",
+      "SHA256SUMS.txt": "a9ca81c05e2f54265743ec0dc7369c33e76d7b194b077cb4a685bf51bc536585"
+    }
+  },
+  "cleanup": "complete: verified ZIP/downloads/receipt retained; isolated home and empty external cwd removed; primary cache retained",
+  "initial_failures": [
+    "Isolated marketplace fetch started while tag push was still running: tag pathspec missing. Follow-on plugin add found no marketplace. After completed push, sequential retry/install passed; ordering error in test harness, not a package defect."
+  ]
 }

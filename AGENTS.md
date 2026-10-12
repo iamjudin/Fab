@@ -58,7 +58,10 @@ maturity. Current detailed state in docs/handoff.md and docs/backlog.md. Continu
 across checkpoints when authorized; user explicitly rejected artificial pauses.
 Creator 2026-10-12 authorized public GitHub release of current iamjudin/Fab,
 MIT for original material and retention of history including author email/paths.
-Public beta.22 at v0.1.0-beta.22/8186ed6: GitHub CI, anonymous assets, clean
+Current public beta.23 at v0.1.0-beta.23/c97c29d: creator icon, English use-case
+copy,50tests, remote CI, anonymous assets and isolated exact-tag install PASS.
+Native card display and fresh language-rule behavior remain unobserved.
+Historical beta.22 at v0.1.0-beta.22/8186ed6: GitHub CI, anonymous assets, clean
 exact-tag install and corrected update/rollback verified. Tagged README update
 erratum lives in maintained README/Release notes; never move the version tag.
 No Canvas merge or main migration.

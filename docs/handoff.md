@@ -12,7 +12,7 @@
   проверенных этапов. Формат теста на наше усмотрение; evidence указывает actual
   model/effort и fresh-context boundary. Это не обязательные новые sidebar-чаты.
 - Installed Fab0.1.0-beta.23,68files, fingerprint7a402724db9b66ae, marketplace fab-local.
--50local regressions and source/cache parity PASS. Public exact-tag install is verified for beta.22; beta.23 delivery pending.
+-50local regressions and source/cache parity PASS. Public exact-tag install/CI/assets are verified for beta.23.
 - Beta.18 закреплена локальным tag `checkpoint-beta18-2026-10-12`;
   [границы checkpoint](checkpoints/fab-beta.18.md). Пакет можно подключать к
   одному проекту для ограниченного реального использования; карта не имеет общего PASS.
@@ -351,5 +351,5 @@ icon bundled unchanged in logo/composerIcon. New Git/GitHub authored text is Eng
 conversation remains Russian. Source research/frozen evidence retain their language.
 README now leads with use cases; install/limits/developer detail are linked below.
 Beta.23 installed:68files/7a402724db9b66ae,50local checks/parity PASS; public
-delivery pending. Native card display and fresh language-rule behavior are unobserved.
+delivery/CI/exact-tag installation/anonymous asset parity PASS. Native card display and fresh language-rule behavior are unobserved.
 [Evidence](../experiments/releases/branding-beta23-20261012/report.md).

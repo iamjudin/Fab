@@ -31,7 +31,25 @@ separates English Git/GitHub artifacts from Russian conversation.
 - Package:68files, fingerprint `7a402724db9b66ae`. No Canvas/native readiness change.
 
 [Receipt](receipt.json) records image identity, copy reduction and scope.
-Remote source/tag/Release, CI and public exact-tag install remain pending.
+Public [beta.23 prerelease](https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.23)
+uses immutable tag `v0.1.0-beta.23` at `c97c29d1d5b01af3749c9864ea790d5d78d584f3`.
+[Source CI](https://github.com/iamjudin/Fab/actions/runs/38274601566) PASS.
+Clean exact-tag install from an external empty cwd and task-specific Codex home
+PASS; no auth/config copied and Git credential helper disabled. The resolved
+snapshot SHA matches the tag; all68installed files match source, including the
+unchanged original icon. Primary supported installation also has exact parity.
+Anonymous downloads of ZIP/scope/SHA256SUMS PASS; every ZIP member matches source.
+The README is286words versus645before, with seven English use cases before install.
+
+Initial fetch began while tag push was still running and failed on missing tag;
+the dependent plugin add then found no marketplace. Waiting for completed push
+and retrying sequentially passed. This was a harness ordering mistake, preserved
+here rather than reported as an untouched first-pass success.
+
+Verified assets, receipt and source remain retained. The task-owned isolated home
+and empty external cwd were removed after another cache/archive comparison.
+[Official packaging metadata guidance](https://developers.openai.com/plugins/deploy/submission)
+supports the image slots/text bounds; file checks are not native UI observation.
 
 ## Evidence limits
 

@@ -63,5 +63,5 @@ model/IDs, но удалил совместимый feedback/Undo лишь из-
 Beta.23 candidate uses the approved Fab/Fabricator identity, creator icon and
 English use-case-first copy. Local50regressions/package/scope checks pass.
 [Evidence](../experiments/releases/branding-beta23-20261012/report.md).
-Public delivery is pending; native icon display and fresh generated-language
+Public beta.23/CI/exact-tag install/assets PASS; native icon display and fresh generated-language
 behavior are unobserved. This extends FAB-13 without closing its chat-recovery gap.

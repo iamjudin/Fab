@@ -20,11 +20,12 @@ Backfill выполнен по текущему чату и проектным �
 
 - Type: decision
 - Project area: public branding, repository language and release checks
-- Status: confirmed — approved identity and local checks; pending — public beta.23 delivery and native display.
+- Status: confirmed — approved identity and local checks; confirmed — public beta.23 delivery; unknown — native display/fresh language-rule behavior.
 - Evidence: [verification report](../experiments/releases/branding-beta23-20261012/report.md); creator icon and accepted tagline in this chat.
 - Summary: role nouns were discussed and rejected before the creator chose “brainstorm, build, ship”. Fab remains the name; Fabricator is explained in the description. The original icon is bundled unchanged, use cases precede installation, and technical detail moves to linked docs. New Git-facing authored text is English; conversation language and historical research are independent. Package checks now catch missing/corrupt/outside-package branding and localized listing text;50regressions pass.
 - Article value: successful installation did not prove public presentation was complete. Creator feedback exposed a concrete missing check rather than a need for another full product run.
-- Follow-up: verify remote beta.23 and exact-tag package/assets; keep native host rendering and fresh language-rule behavior explicitly unknown.
+- Result: v0.1.0-beta.23/c97c29d published; remote CI, isolated exact-tag install and anonymous ZIP/icon SHA/byte parity PASS. Initial fetch raced the tag push; a sequential retry after confirmed upload passed. Source/cache68files match and task-owned scratch is removed.
+- Follow-up: observe native card rendering and language-rule behavior in ordinary work; preserve those unknowns instead of starting another broad rerun.
 
 ## 2026-10-12 — Fab проходит реальный публичный delivery route
 
