@@ -222,6 +222,24 @@
           "evidence": "docs/research/canvas-layout-options-2026-10-12.md"
         }
       ]
+    },
+    {
+      "id": "cowork.chat-handoff",
+      "default": false,
+      "status": "experimental",
+      "limitations": "Explicitly authorized separate chat only. Context packet and isolated branch verified; host creation returned a client ID, actual thread/recovery not yet observed. No general automatic creation claim.",
+      "checks": [
+        {
+          "name": "packet preservation and checkout isolation",
+          "result": "pass",
+          "evidence": "experiments/maintenance/chat-handoff-20261012/receipt.json"
+        },
+        {
+          "name": "actual thread creation and recovery",
+          "result": "unknown",
+          "evidence": "experiments/maintenance/chat-handoff-20261012/receipt.json"
+        }
+      ]
     }
   ]
 }

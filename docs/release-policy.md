@@ -81,5 +81,8 @@ checkpoint/release: причина, scope, baseline, branch и критерий 
 Передача контекста — [runtime handoff](../plugins/fab/shared/workstream-handoff.md):
 цель/решения/revisions/evidence/scope/owner/next; actual thread ID и checkout,
 содержательный ответ нового чата. Без инструмента не утверждать создание.
+Сейчас `cowork.chat-handoff` — opt-in experimental: packet/Git проверены, создание
+чата queued с client ID, actual recovery не наблюдалось. Это отдельная строка
+release plan; остальные самостоятельные Cowork-исходы не объявлены заблокированными.
 
 Workflow использует официальный [actions/checkout](https://github.com/actions/checkout) v7; remote CI пока не запускался.

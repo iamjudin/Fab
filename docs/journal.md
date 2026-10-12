@@ -248,3 +248,14 @@ created codex/canvas-branch-smoke from main3e53097, marker-only commit25eaa72.
 Main branch/HEAD/tracked state and installed fingerprint unchanged; returned map
 checkout to75540f1/clean, test history retained. Technical isolation PASS, no fresh
 model behavior or Canvas quality claim. Report workflow-tests/2026-10-12-canvas-branch-smoke.md.
+
+## 2026-10-12 — beta20, authorized chat handoff
+Creator asked actual chat creation/context transfer for isolated work. Shared
+handoff method routes from Cowork/project/release contracts.46tests/package/gate,
+installed65files/597115ccbb4b0a59 exact parity PASS; main source checkpoint83ab56e.
+Canvas packet retained in feature c1681d5, old managed checkout clean/archived;
+native create_thread dispatched to Fab/worktree and returned client ID. New
+checkout60c9 on codex/fab-map-view/c1681d5/clean, packet byte-equal.
+Actual thread ID/recovery not yet exposed by list_threads, so optional chat-handoff
+experimental/default=false, recovery pending. No duplicate create, hidden subagent,
+implementation/merge/push/publication. Receipt maintenance/chat-handoff-20261012.

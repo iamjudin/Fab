@@ -281,3 +281,15 @@ clean/no ignored files. create_thread в проекте Fab с worktree/ref code
 Пока фактический thread ID/ответ не подтверждены — восстановление не считать PASS.
 Initial prompt: orientation только, проверить Git, сохранить creator-first prototype
 order, не реализовывать/merge/install/publish. Основной чат остаётся общей отладкой.
+
+### Наблюдаемая граница handoff
+Main checkpoint beta20:83ab56e. Новый checkout /Users/iamjudin/.codex/worktrees/60c9/Fab
+на codex/fab-map-view/c1681d5, clean; packet в main и feature byte-equal.
+create_thread client ID `client-new-thread:64e92d6c-ad1f-4658-b27c-a25aa7a90cb8`.
+Повторные штатные list_threads пока не раскрыли фактический thread ID; не передавать
+client ID в read_thread/wait_threads. Recovery pending, не PASS. Дополнительный
+дублирующий чат не создавать. После появления thread ID — read/wait его ориентацию
+и записать, сохранил ли creator-first prototype и разделение scope.
+[Receipt](../experiments/maintenance/chat-handoff-20261012/receipt.json).
+Опциональная `cowork.chat-handoff` в release plan experimental/default=false;
+отсутствие observed recovery не блокирует прежние независимые исходы Cowork.

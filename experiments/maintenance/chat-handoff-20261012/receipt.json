@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-12",
+  "authorization": "Human requested Canvas chat creation and necessary context transfer",
+  "creation": {
+    "tool": "codex-app-tools create_thread",
+    "projectId": "74d9a89d-a254-4b10-b4df-63daedc3c724",
+    "requestedTitle": "Fab Canvas — карточки и связи",
+    "clientThreadId": "client-new-thread:64e92d6c-ad1f-4658-b27c-a25aa7a90cb8",
+    "threadId": null,
+    "status": "setup pending; real thread ID not returned/discovered",
+    "initialPromptIncludedContext": true
+  },
+  "environment": {
+    "checkout": "/Users/iamjudin/.codex/worktrees/60c9/Fab",
+    "branch": "codex/fab-map-view",
+    "head": "c1681d50dcc5ebb10fca7f61724735d5c948e4be",
+    "clean": true,
+    "previousManagedCheckoutArchived": true
+  },
+  "packet": {
+    "path": "docs/handoffs/canvas-workstream-2026-10-12.md",
+    "sha256": "a8c4fe70b9576cf6155a553932a622d9635dbf76e8a3a49f33b7bb2792c8d0bc",
+    "copiedIntoFeatureIdentically": true
+  },
+  "runtime": {
+    "version": "0.1.0-beta.20",
+    "files": 65,
+    "fingerprint": "597115ccbb4b0a59",
+    "sourceCacheParity": "pass",
+    "regressions": 46,
+    "scopeGate": "pass"
+  },
+  "recovery": {
+    "status": "not observed",
+    "reason": "Native list_threads does not yet expose a real ID; client IDs cannot be used with wait/read_thread",
+    "readinessClaim": "packet and Git isolation verified; chat recovery pending"
+  },
+  "implementationStarted": false,
+  "publication": "none",
+  "modelSettings": "not overridden; actual created-chat settings unavailable",
+  "uiInspection": "Computer Use denied access to com.openai.codex; no workaround attempted"
+}
