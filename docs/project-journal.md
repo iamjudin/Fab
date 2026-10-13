@@ -16,6 +16,24 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-13 — Research readability becomes an authorized separate workstream
+
+- Context: creator finds new research exports difficult to read and supplied a
+  structured market study plus an integrated report as references. Task spans
+  Fab research assignment/output design and a Bookworm engineering brief.
+- Initial diagnosis: the Deep Research tail specifies syntax but leaves reader
+  architecture largely implicit. Bookworm already has layout rules and a source
+  prose-preservation boundary, so application/helper behavior needs inspection.
+  Text counts support the density complaint without proving readability or cause.
+- Decision: creator bans semicolons in newly authored reader prose and agrees to
+  a separate Fab chat with isolated branch/worktree. Preserve quotes/code, causal
+  reasoning and evidence qualifiers. Keep private inputs out of public history.
+- Result/boundary: [packet](handoffs/research-readability-2026-10-13.md) prepared,
+  FAB-15 is the main owning record. Actual creation/recovery still pending at this
+  checkpoint. No readability runtime edit, install, release or Bookworm mutation.
+- Next: dispatch and verify recovery, then continue the authorized scoped work in
+  the new chat without requiring another creator briefing.
+
 ## 2026-10-13 — Beta.24 reaches both local and public distribution
 
 - Result: [beta.24](https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.24)

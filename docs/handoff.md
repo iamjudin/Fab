@@ -1,5 +1,16 @@
 # Рабочее состояние Fab
 
+## 2026-10-13 — Research readability separation authorized
+
+FAB-15: creator requested a full reconsideration of research framing/output tail
+and a separate Bookworm repair task. Examples, initial diagnosis and latest
+semicolon instruction are preserved in the [packet](handoffs/research-readability-2026-10-13.md),
+with private source paths retained in the ignored input record. Creator agreed to
+create a separate Fab chat with branch/worktree and transfer the task. Creation
+and recovery are pending, not yet claimed. Main owns release/install/backlog.
+Installed/public beta.24 remains unchanged. Preserve the unrelated pending
+external-observation record when preparing this handoff checkpoint.
+
 ## 2026-10-13 — Beta.24 installed and publicly released
 
 - Version/package:0.1.0-beta.24,69files/24fcdfca505a5a13. Immutable tag
