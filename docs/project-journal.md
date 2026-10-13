@@ -16,6 +16,18 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-13 — Prepare practical raw Deep Research comparison
+
+- Context: creator supplied a previous market assignment and its raw report and
+  requested a replacement prompt to run before any Bookworm processing.
+- Result: localized candidate retains scope and accepted requirements, adds the
+  reader presentation plan and makes existing evidence guards explicit. Original
+  input/output preserved byte-for-byte in ignored private task storage.
+- Interpretation/limits: practical prompt-version comparison, not a controlled
+  formatting-only test. No external run yet. Coverage, economics coherence,
+  provenance and reading structure will be reviewed separately.
+  [Comparison contract](../experiments/maintenance/research-readability-20261013/once-market-comparison-contract.md).
+
 ## 2026-10-13 — Extend Bookworm reader task to Digest
 
 - Context/decision: creator explicitly includes Digest in the separate Bookworm
