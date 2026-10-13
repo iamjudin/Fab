@@ -16,6 +16,32 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-13 — Beta.24 reaches both local and public distribution
+
+- Result: [beta.24](https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.24)
+  is publicly published and installed through the supported exact-tag marketplace
+  route. Source/cache/anonymous ZIP bind69files/24fcdfca505a5a13; immutable older
+  tags preserved. Creator's factory icon is unchanged.
+- Verification:50local regressions and source-scope gate pass;
+  [exact-source CI](https://github.com/iamjudin/Fab/actions/runs/38411797526),
+  clean anonymous tag install, primary install, downloaded asset hashes and
+  complete ZIP/cache parity pass. Four GPT-6.1 Sol/Medium CLI turns show actual
+  beta.24 rereading in an existing conversation, accepted decisions preserved,
+  useful Brainstorm critique/alternatives and a growing-workstream chat proposal.
+- Imperfection retained: resumed conversation guessed an absent legacy manifest
+  path, then found root plugin.json without correction. The450,000input forecast
+  was exceeded by4,575; actual cost454,575input/384,512cached/3,549output,
+  process wall183.53s excluding root overhead. No reset or purchase.
+- Judgment/limits: ready for limited everyday beta use, not universal maturity,
+  native desktop reload/new-chat recovery or long-term consistency. Canvas stays
+  experimental. No other product writes or messages were part of this release.
+- Agreement: for Fab, "release" means local update and public GitHub release
+  unless narrowed; commits, installation and publication remain separate actions.
+- Retention/next: [report](../experiments/releases/dialogue-beta24-20261013/report.md)
+  and receipts retained; owned scratch cleaned after verification. Next useful
+  evidence is ordinary use after explicit rereading of current skills, not another
+  repeated synthetic suite or an inferred management action in the observed project.
+
 ## 2026-10-13 — Tested dialogue promoted for a local and public release
 
 - Context: creator requested all validated current work to be released and asked

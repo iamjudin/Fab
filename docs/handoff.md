@@ -1,5 +1,28 @@
 # Рабочее состояние Fab
 
+## 2026-10-13 — Beta.24 installed and publicly released
+
+- Version/package:0.1.0-beta.24,69files/24fcdfca505a5a13. Immutable tag
+  v0.1.0-beta.24 resolves to e4b49aa6641fa6c36db969349889da65b6070f76.
+- [Public release](https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.24)
+  and supported primary install completed; anonymous clean exact-tag installation,
+  complete cache/ZIP parity, asset hashes,50regressions and exact-source CI pass.
+- Four actual GPT-6.1 Sol/Medium CLI turns: old-installed baseline, existing
+  conversation resumed on beta.24, fresh substantive Brainstorm and growing-task
+  separation proposal. Required new files were read and prior decisions retained;
+  legacy-manifest lookup failed then recovered without intervention. Native live
+  desktop reload and actual new-chat recovery remain unobserved.
+- Included: tested Brainstorm v2 and agreed growing-task context-transfer guidance.
+  Canvas remains isolated/experimental; no other project writes or chat messages.
+  Real-use consistency and creator usefulness remain open.
+- Creator terminology: "release" means local update plus public GitHub release
+  unless explicitly narrowed; neither happens automatically from a commit.
+- [Report/receipt](../experiments/releases/dialogue-beta24-20261013/report.md)
+  retain checks and limits. Owned temporary fixtures removed after verified
+  retention. Existing desktop chat should explicitly reread current skills; restart
+  Codex if the updated skill is unavailable. This is the next useful use boundary,
+  not a reason for another statistics-only test suite.
+
 ## 2026-10-13 — Beta.24 promotion and public release authorized
 
 Creator explicitly requested all current validated work to be released locally

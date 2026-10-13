@@ -1,0 +1,35 @@
+{
+  "case": "resume",
+  "exitCode": 0,
+  "timeout": false,
+  "threadId": "01a1359d-1bea-7c13-8049-750edd854816",
+  "actualRuntime": {
+    "model": "gpt-6.1-sol",
+    "effort": "medium"
+  },
+  "seconds": 48.47,
+  "usage": {
+    "input_tokens": 212934,
+    "cached_input_tokens": 184832,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1228,
+    "reasoning_output_tokens": 8
+  },
+  "workspaceUnchanged": true,
+  "command": [
+    "codex",
+    "exec",
+    "-C",
+    "/var/folders/s5/ndr2tg0d2d91ngg2txtxncgr0000gp/T/fab-release-beta24-9ulbu56v/conversation",
+    "-s",
+    "read-only",
+    "resume",
+    "--json",
+    "--skip-git-repo-check",
+    "01a1359d-1bea-7c13-8049-750edd854816",
+    "-o",
+    "/Users/iamjudin/Desktop/Lab/Fab/experiments/releases/dialogue-beta24-20261013/behavior/resume.md",
+    "-"
+  ],
+  "errors": []
+}

@@ -8,15 +8,58 @@
     "package": "pass",
     "scope": "pass",
     "testedBrainstormBytes": "equal e7d94f8",
-    "remoteCI": "pending",
-    "cleanExactTagInstall": "pending",
-    "primaryInstall": "pending",
-    "installedBehavior": "pending"
+    "remoteCI": "pass",
+    "cleanExactTagInstall": "pass",
+    "primaryInstall": "pass",
+    "installedBehavior": "bounded pass: new contribution, grounded critique, hinge question, growing-task separation proposal; existing CLI reread and accepted constraints",
+    "cleanSnapshotSha": "e4b49aa6641fa6c36db969349889da65b6070f76",
+    "primaryCacheParity": "pass",
+    "existingCliConversationReread": "pass",
+    "desktopExistingChatReload": "unobserved",
+    "unchangedCreatorIcon": "pass",
+    "anonymousReleaseAssets": "pass",
+    "downloadedZipSourceParity": "pass"
   },
   "limits": [
     "unblinded bounded behavior",
     "long-context stability unknown",
     "native chat recovery and UI unverified",
     "Canvas experimental"
-  ]
+  ],
+  "publication": {
+    "tag": "v0.1.0-beta.24",
+    "commit": "e4b49aa6641fa6c36db969349889da65b6070f76",
+    "assetsSha256": {
+      "release-scope.json": "eb435fde173c9a478154d8b99281d0458dfcf7521c68d5639f8bb0cd6b6d9612",
+      "fab-0.1.0-beta.24.zip": "c12d058bfcf74b26b25e8a9cee70f87f5c5c832884fec6e390d2607867a94438",
+      "SHA256SUMS.txt": "ee6121ed75811963b4e0ba65bc5095b258f8ed0ff1d054cf538eabc73bbedbad"
+    },
+    "ci": "https://github.com/iamjudin/Fab/actions/runs/38411797526",
+    "release": "https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.24",
+    "isPrerelease": true,
+    "isDraft": false
+  },
+  "installedPath": "/Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.24",
+  "initialFailures": [
+    "Resumed CLI conversation guessed absent .claude-plugin/plugin.json before locating the actual root plugin.json; recovered without correction prompt."
+  ],
+  "iconSha256": "aedd9caa5fef1c687482c62f7fcf288defce540f3f013779de7734c6f1523e0a",
+  "behavior": {
+    "model": "gpt-6.1-sol",
+    "effort": "medium",
+    "turns": 4,
+    "cost": {
+      "turns": 4,
+      "input_tokens": 454575,
+      "cached_input_tokens": 384512,
+      "output_tokens": 3549,
+      "seconds": 183.53,
+      "root_overhead": "excluded",
+      "forecast": "450,000 input estimate exceeded by 4,575; not a hard cap",
+      "account_window_use": "unknown",
+      "resets": 0
+    },
+    "judgment": "primary agent unblinded; no statistical or native desktop proof"
+  },
+  "cleanup": "complete: owned temporary fixtures, isolated home and external cwd removed after source/asset/output retention checks; primary cache retained"
 }

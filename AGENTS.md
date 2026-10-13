@@ -17,6 +17,11 @@ commit/tag messages, PRs, issues and release notes are English. Conversation sta
 Russian on ты. Preserve supplied research and frozen historical evidence in their
 recorded language; translating the archive requires explicit scope.
 Approved identity: Fab; full name Fabricator; tagline "brainstorm, build, ship".
+For this project, a creator request to "release" means both a versioned local
+plugin update and public GitHub tag/Release publication unless explicitly narrowed.
+They are separate actions and both need verification; a commit or push alone is
+not completion. This shorthand does not authorize publication without a release
+request or promotion of an unrelated experimental workstream.
 Use the creator-supplied factory icon unchanged. Resolve missing public branding
 before publication, and validate metadata/asset paths without claiming host UI QA.
 
@@ -68,10 +73,11 @@ runtime installation or publication. Keep main ownership and return criteria cle
 ## Current boundary
 Creator 2026-10-13 authorized integration, local update and public GitHub release
 of the tested Brainstorm v2 and growing-task chat separation rule. V2 is integrated
-from codex/fab-brainstorm-dialogue via 10ba4e6; Canvas remains separate. Candidate
-beta.24 has 69 files/fingerprint24fcdfca505a5a13. Fifty regressions, package and
-scoped beta gate pass; publication and exact-tag/primary installation are in
-progress, not yet claimed. Evidence: experiments/releases/dialogue-beta24-20261013.
+from codex/fab-brainstorm-dialogue via 10ba4e6; Canvas remains separate. Released/installed
+beta.24 has69files/fingerprint24fcdfca505a5a13. Fifty regressions, package/scoped
+gate, exact-source CI, anonymous assets, clean exact-tag and primary installation
+pass. Four GPT-6.1 Sol/Medium CLI turns include installed dialogue/proposal and
+existing-conversation rereading; native live-thread reload remains unobserved. Evidence: experiments/releases/dialogue-beta24-20261013.
 FAB-14 retains sixteen inconclusive generic turns, six contextual turns with the
 original v1 depth miss and a narrow v2 correction, plus five varied situations/
 seven v2 turns on GPT-6.1 Sol/Medium. All initial variants read relevant research;
@@ -79,14 +85,15 @@ the gap was visible application. No forced Six Hats mask. Long-context stability
 creator usefulness and native chat recovery remain open. One copy timing-anchor
 assumption is retained as a caveat. New chat creation requires explicit agreement
 to its concrete scope; this release authorization does not itself create a chat.
-Installed Fab0.1.0-beta.23,68files/7a402724db9b66ae. All ten independent contracts.
+Installed Fab0.1.0-beta.24,69files/24fcdfca505a5a13. All ten independent contracts.
 50local regressions, bounded outcome/domain/UI/maintenance smokes; not universal
 maturity. Current detailed state in docs/handoff.md and docs/backlog.md. Continue
 across checkpoints when authorized; user explicitly rejected artificial pauses.
 Creator 2026-10-12 authorized public GitHub release of current iamjudin/Fab,
 MIT for original material and retention of history including author email/paths.
-Current public beta.23 at v0.1.0-beta.23/c97c29d: creator icon, English use-case
+Current public beta.24 at v0.1.0-beta.24/e4b49aa: creator icon, English use-case
 copy,50tests, remote CI, anonymous assets and isolated exact-tag install PASS.
+Historical beta.23 remains immutable at v0.1.0-beta.23/c97c29d.
 Native card display and fresh language-rule behavior remain unobserved.
 Historical beta.22 at v0.1.0-beta.22/8186ed6: GitHub CI, anonymous assets, clean
 exact-tag install and corrected update/rollback verified. Tagged README update

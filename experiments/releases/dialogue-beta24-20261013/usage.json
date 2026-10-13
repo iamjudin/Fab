@@ -1,0 +1,11 @@
+{
+  "turns": 4,
+  "input_tokens": 454575,
+  "cached_input_tokens": 384512,
+  "output_tokens": 3549,
+  "seconds": 183.53,
+  "root_overhead": "excluded",
+  "forecast": "450,000 input estimate exceeded by 4,575; not a hard cap",
+  "account_window_use": "unknown",
+  "resets": 0
+}
