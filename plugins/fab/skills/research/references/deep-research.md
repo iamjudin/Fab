@@ -5,6 +5,11 @@ State the decision or knowledge question, required evidence, transfer boundaries
 stop condition and unknowns. Add a topic-specific presentation plan: what the
 reader needs to compare, scan and understand causally. Keep the full evidence
 scope, but separate detailed records from the main reading path.
+Apply [independent research and application](reuse.md). Formulate a standalone
+research question with relevant topic conditions instead of the consuming project
+name. Request independent findings, then prepare local application separately.
+Add this topic-specific instruction to the assignment, not merely to its format
+footer. Preserve source names and named studied cases when they are evidence.
 
 Append the following output contract in the requested report language. Translate
 it faithfully when needed. The former verbatim Russian tail is superseded.

@@ -117,3 +117,30 @@ The creator asked to wait for the new raw Deep Research result before transferri
 the Bookworm task. Prepared scope now includes all three modes. Review the raw
 comparison first and update actionable examples, without treating that report as
 Digest or Enrich validation. No Bookworm transfer has occurred.
+
+## Independent research and project application correction
+
+Creator approved separation of standalone topic research from project application
+on 2026-10-13. New runtime `research/references/reuse.md` defines the two layers
+and is linked from Research, the reader contract, Deep Research and ingestion.
+Research preserves audience, region, language, intervention, economic units and
+transfer limits. Consumer identity, accepted decisions and actual local forecasts
+remain in the application. Tags record use, not applicability.
+
+Updated source marking to keep new topic titles and filenames independent of
+consumers by default. Existing sources, labels and frozen evidence are preserved.
+Source annotations still require authorization. No bulk source migration, library
+creation or new packet schema. Generic subject matter does not authorize bundling
+into Fab runtime. The application can use the existing operational brief.
+
+[Reviewable example](reuse-example.md) covers new research, reuse, old supplied
+sources and names required for source provenance. Package guard PASS: 71 files,
+candidate fingerprint `012dd9de33c299b3`. Existing 50 regressions PASS and diff
+checks pass. No fresh model test or independent external research run validates
+this new boundary yet. The ongoing market-prompt comparison stays unchanged to
+avoid mixing presentation correction with the newly approved separation rule.
+
+Main-owner integration review must include the change to default source marking.
+Recommend a separate bounded behavior check for independent question formation
+and project transfer after the pending raw report review. No installation,
+publication, merge or edits to other projects were performed.

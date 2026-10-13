@@ -18,7 +18,7 @@ persists, but changing owner/route doesn't expand it. Keep test products isolate
 For temporary work follow [artifact lifecycle](artifact-lifecycle.md). Reuse the
 project's retention conventions; keep final handoff links outside disposable paths.
 For ingested research keep the source revision and brief/full locations in project
-provenance. Optional source-name/tag marking and cross-project usage follow the
+provenance. Optional source-usage/tag marking and cross-project usage follow the
 [Research contract](../skills/research/references/ingestion.md); source annotation
 requires the person's answer and never gates the completed research result.
 

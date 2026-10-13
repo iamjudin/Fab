@@ -2,7 +2,8 @@
 
 Use for new research assignments, synthesis and operational briefs. This is an
 information architecture contract, not a quota for tables or a summary length.
-Preserve the requested research depth and significant qualifications.
+Preserve the requested research depth and significant qualifications. Apply
+[independent research and application](reuse.md) before choosing the outline.
 
 ## Plan the assignment
 

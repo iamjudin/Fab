@@ -16,6 +16,23 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-13 — Separate reusable research from project application
+
+- Context/decision: creator approved independent topic research with project use
+  recorded through tags and a separate application. Retain relevant conditions
+  so removing a project name does not imply universal applicability.
+- Result: new bundled reuse contract routed through Research, reader planning,
+  Deep Research and ingestion. Consumer decisions/forecasts stay local. New
+  topic filenames remain independent, legacy labels are preserved without bulk
+  migration. Application can serve as the existing operational brief.
+- Evidence: package guard and 50 regressions PASS, scoped example and source-
+  marking boundaries reviewed. No packet schema or installation change.
+  [Result](../experiments/maintenance/research-readability-20261013/results.md)
+  and [example](../experiments/maintenance/research-readability-20261013/reuse-example.md).
+- Limits/next: fresh behavior and reuse utility unobserved. Keep the pending raw
+  market comparison unchanged, check this separate boundary afterward. Main
+  owns integration and should review the revised default source-marking policy.
+
 ## 2026-10-13 — Include purposeful Enrich growth in the Bookworm task
 
 - Context/decision: creator requests readable growth and depth in Enrich as well
