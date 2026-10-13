@@ -16,6 +16,19 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-13 — Include purposeful Enrich growth in the Bookworm task
+
+- Context/decision: creator requests readable growth and depth in Enrich as well
+  as Refine and Digest. Read-only source inspection confirms attribution, source
+  verification and layout rules already exist.
+- Result: task adds purposeful contribution criteria, source-grounded mechanisms,
+  examples, alternatives and limits, with independent Enrich checks. Original
+  source layers remain distinct. No mandatory expansion or volume quotas.
+- Boundary: no Bookworm edit, transfer or Enrich behavior test. Creator asked to
+  await the raw Deep Research comparison before task transfer. Digest and Enrich
+  still require their own checks after that comparison.
+  [Engineering task](../experiments/maintenance/research-readability-20261013/bookworm-engineering-task.md).
+
 ## 2026-10-13 — Prepare practical raw Deep Research comparison
 
 - Context: creator supplied a previous market assignment and its raw report and

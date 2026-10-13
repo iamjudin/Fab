@@ -23,7 +23,7 @@ The main chat owns the canonical FAB-15 backlog and release decisions.
 | Deep Research | Replacement output tail and required topic-specific presentation plan |
 | Ingestion | Human brief uses the contract, original and full packet stay preserved |
 | Example | Synthetic before/after and assignment plan, no private research copied |
-| Bookworm | Separate Refine/Digest engineering task and direct Refine helper reproduction |
+| Bookworm | Separate Refine/Digest/Enrich engineering task and direct Refine helper reproduction |
 
 The former literal Russian output tail is explicitly superseded by this authorized
 correction. The canonical repository contract is English and is translated into
@@ -103,3 +103,17 @@ is not inferred from this workstream. A useful follow-up is one fresh-context
 research assignment/synthesis check and an actual Obsidian reading observation.
 These would test the remaining behavior and rendering boundaries without a full
 research rerun. Bookworm implementation requires its own authorized project task.
+
+## Enrich scope and pending transfer
+
+Creator also included Enrich on 2026-10-13. The engineering task now specifies
+purposeful source-backed growth: mechanisms, worked examples, alternatives,
+failure conditions and application detail where they address a relevant gap.
+Read-only source inspection confirms existing labelled additions, verified-source
+and layout rules. Preserve these while checking semantic contribution and the
+combined reading path. No Enrich behavior check was performed.
+
+The creator asked to wait for the new raw Deep Research result before transferring
+the Bookworm task. Prepared scope now includes all three modes. Review the raw
+comparison first and update actionable examples, without treating that report as
+Digest or Enrich validation. No Bookworm transfer has occurred.

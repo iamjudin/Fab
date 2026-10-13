@@ -1,11 +1,12 @@
-# Bookworm engineering task: readable Refine and Digest notes
+# Bookworm engineering task: readable Refine, Digest and Enrich notes
 
 ## Requested outcome and ownership
 
 Make Bookworm Refine produce a readable working note when an export contains
 long paragraphs mixing comparisons, independent items and causal explanation.
 Keep substantive content intact. Apply the same reader requirements when Digest
-creates a working note from a book or standalone article. Implement in Bookworm's own isolated workstream,
+creates a working note from a book or standalone article and when Enrich adds
+new source-backed meaning and depth to an existing note. Implement in Bookworm's own isolated workstream,
 not in Fab. No Bookworm edit, install or vault transfer was performed here.
 
 Refine remains distinct from Digest and Enrich. For Refine, the correction permits
@@ -26,6 +27,8 @@ requests verification. Layout quality does not make the claim reliable.
 | Helper, `assert_sources_preserved` and `audit_refined_sources` | Checks source counts and added URL provenance | Counts do not prove claim coverage or source-to-claim association |
 | `plugins/bookworm/skills/digest/SKILL.md`, Research Information Architecture | Already requests tables, lists, causal prose and portrait Mermaid | Apply the shared reader contract during composition, not just final cleanup |
 | Same Digest skill, Fullness Standard, Workflow and quality gates | Requires section coverage, mechanisms, examples, limitations, evidence anchors and reader review | Make readability compatible with this coverage, not a reason to over-compress |
+| `plugins/bookworm/skills/enrich/SKILL.md`, Content Rules and Enrich Structure Gate | Requires clearly attributed additions near relevant sections, with opened sources and no second catalogue | Preserve attribution while making the purpose and contribution of each new block explicit |
+| Same Enrich skill, Obsidian Layout Rules and Reader Review Gate | Already defines compact tables, lists, portrait diagrams and labelled-block checks | Review the added meaning and combined reading path, not just block count or formatting |
 | `plugins/bookworm/tests/test_bookworm_helper.py` | Existing syntax/source/handoff tests | Add targeted structural and semantic workflow cases, preserve existing safeguards |
 
 A read-only direct-helper probe preserved a synthetic dense paragraph verbatim
@@ -73,7 +76,7 @@ Any change to that preservation rule needs an explicit decision in Bookworm.
 ## Digest application and distinct preservation boundary
 
 Creator explicitly added Digest to this engineering scope on 2026-10-13.
-Use one self-contained Bookworm reader contract for both modes. Do not depend on
+Use one self-contained Bookworm reader contract for all three modes. Do not depend on
 Fab runtime or copy two divergent rule sets. Readability requirements apply to
 Digest's headings, tables, lists, causal paragraphs, sources and editable diagrams.
 This includes no semicolons in newly authored reader text, with exact quotation
@@ -105,10 +108,56 @@ The helper probe above is Refine evidence only. Source inspection confirms
 Digest's existing requirements, but no Digest output or fresh behavior has been
 tested here. Verify its execution independently in Bookworm.
 
+## Enrich application and purposeful depth
+
+Creator explicitly included Enrich on 2026-10-13. Apply the common reader contract
+to new content during enrichment and to the combined note before handoff.
+Enrich adds substance. It must not merely lengthen the source or rephrase existing
+material. Identify a relevant knowledge gap from the request and note before
+researching additions. Stay within the requested focus and stop when it is served.
+
+Each addition should have a concrete contribution, for example:
+
+- Explain how or why a mechanism works, retaining its conditions and limits.
+- Add a worked example that makes an abstract principle usable.
+- Contrast a relevant alternative and explain when the choice changes.
+- Add a counterexample, failure mode or applicability boundary.
+- Extend an application procedure with grounded details and their reasons.
+
+This is a set of possible contributions, not a checklist that every section must
+receive. Do not invent a new taxonomy, add filler examples or repeat the original
+record just to create more blocks. Claims and source material must support the
+actual addition, not only share its broad topic.
+
+Place new meaning near the relevant original section inside the existing labelled
+addition format, with opened and verified source links. New topics or profiles
+also stay inside attributed blocks. Use meaningful subheadings where needed,
+compact comparisons, lists for peer points or steps, and short connected prose
+for causal depth. Avoid long paragraphs and prose-heavy table cells. The ban on
+semicolons applies to newly authored reader text, with code and exact quotations
+preserved. Preserve existing visual and diagram policies and inspect actual width.
+
+Keep original reasoning and claims distinct from external additions. Do not
+silently repair unresolved original sources or present new evidence as the book
+or source author's view. If new evidence disagrees, state the disagreement within
+the attributed addition with its applicability limit. Do not rewrite the original
+layer without explicit rewrite scope. Keep ledger evidence of each addition's
+source and claim. No new metadata ceremony is needed in the reader note.
+
+Review both the contribution and the combined reading path: can the reader see
+what was added, why it helps, how to use it and where it stops applying? Verify
+that the original remains identifiable and accessible, that additions do not
+create a second catalogue, and that depth survives without dense prose. More
+blocks, more words or more tables do not establish successful enrichment.
+
+Source inspection confirms these existing attribution and layout boundaries.
+No Enrich behavior, external-source research or enriched-note output was tested
+here. The earlier Refine helper reproduction does not validate Enrich.
+
 ## Bounded verification contract
 
 Run existing tests and separate fresh-context Refine and Digest workflows on
-synthetic fixtures. For Digest use a small multi-section book fixture and a
+synthetic fixtures, plus an independent Enrich workflow. For Digest use a small multi-section book fixture and a
 standalone article fixture, including an important visual.
 Record actual model/effort, input/runtime revision, tools, cost and isolation.
 No installation, source deletion or vault write is needed to test temporary output.
@@ -139,6 +188,22 @@ Audit coverage against the source map, then ask bounded questions using only the
 resulting note. Distinguish this controlled Q&A check from proof that the digest
 can answer every future question without returning to the source.
 
+For Enrich, also check:
+
+| Case | Required result |
+|---|---|
+| Thin explanation of a mechanism | Source-backed causal depth with conditions, no unsupported conclusion |
+| Abstract principle needing application | Worked example or usable procedure that adds meaning rather than restating the principle |
+| Relevant alternative or counterexample | Explicit comparison and applicability boundary inside an attributed addition |
+| Unresolved original source or conflicting new evidence | Original status preserved, new evidence attributed, no silent source repair |
+| Already sufficient section | No obligatory expansion, duplicate catalogue or filler block |
+| Combined note after enrichment | Original and additions distinguishable, navigation and reading flow remain useful |
+
+Use a controlled source set for reproducible Enrich fixtures and actually open
+sources before attributing them. Record source availability and failures. Compare
+the input and enriched copy, map added claims to their support and review whether
+each addition answers the requested gap. Keep originals and vaults untouched.
+
 Render representative notes at ordinary and narrow reading widths in Obsidian
 when available. Record the actual widths and inspect overflow, label readability,
 table scanning and the opening navigation. Without that surface, mark native
@@ -154,7 +219,17 @@ an additional human observation, not a substitute for the author's own review.
 
 Return the corrected boundary and its application path, focused diff, existing
 regressions, Refine before/after fixtures with semantic mappings, Digest fixtures
-with section coverage and bounded Q&A evidence, separate fresh behavior evidence,
+with section coverage and bounded Q&A evidence, Enrich additions with
+contribution/source mappings, separate fresh behavior evidence for all three modes,
 rendering evidence or named limitation, and remaining failures. Keep source,
 transfer-confirmation and cleanup safeguards intact. Stop before install/release
 unless that project authorizes them. No further chat creation is included here.
+
+## Transfer timing
+
+Creator asked to wait for the raw Deep Research result before transferring the
+Bookworm task. Refine, Digest and Enrich are included in the prepared scope, but
+no task transfer or implementation is authorized by this packet alone. First
+review the new raw report against the previous report, then refine examples and
+remaining processing needs. That comparison does not substitute for independent
+Digest or Enrich behavior checks.
