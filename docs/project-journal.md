@@ -16,6 +16,19 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-13 — Useful dialogue tested without a Six Hats mask
+
+- Type: experimental learning checkpoint
+- Project area: Brainstorm, cooperation and ordinary Cowork entry
+- Status: confirmed — sixteen source-snapshot turns and package checks; inconclusive — advantage over beta.23; unknown — ordinary long-lived dialogue and creator usefulness.
+- Evidence: [results](../experiments/workflow-tests/brainstorm-dialogue-20261013/results.md), [contract](../experiments/workflow-tests/brainstorm-dialogue-20261013/contract.md), [cost](../experiments/workflow-tests/brainstorm-dialogue-20261013/usage.json); candidate branch codex/fab-brainstorm-dialogue/8d1bde4.
+- Context: creator rejected another format-selection exercise and clarified the target: material new thinking, reasoned criticism and questions that deepen a task. Autonomous candidate/testing was authorized; no release was requested.
+- Result: baseline and v1 both generated causal alternatives, explained criticism, retained accepted competition after feedback, developed a selected direction and answered a short naming task briefly. Both Cowork entry traces loaded Brainstorm. These probes did not reproduce a passive baseline or prove candidate superiority.
+- Interpretation: adding a named technique is not yet justified as the cure. V1 operationalizes useful dialogue moves, but much overlaps shared core. Preserve the creator's report and examine a concrete everyday miss before changing the correct owner.
+- Verification: all turns GPT-6.1 Sol/Medium; 1,096,198 input/898,048 cached/11,479 output tokens; summed model-process wall489.3s, main overhead excluded. Package check/eight package guards pass; workspaces unchanged and task-owned temporary copies removed after verified retention.
+- Boundary: unblinded root review, synthetic follow-ups and explicit skill-directed entry; no independent/user acceptance or installed behavior claim. Implementation remains on the experimental branch; only evidence and conclusions were copied into maintenance. No install, merge or publication.
+- Follow-up: keep FAB-14 open, observe a consequential ordinary-use miss with its context and avoid repeating easy cases for statistics.
+
 ## 2026-10-13 — Brainstorm strategy choice stays open after research
 
 - Type: research and design question

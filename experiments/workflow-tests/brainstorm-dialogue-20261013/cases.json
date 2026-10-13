@@ -1,0 +1,26 @@
+[
+  {
+    "id": "explore",
+    "initial": "I want a small app for unfinished hobby projects. I was thinking of a task list, a timer and reminders so people stop abandoning things. Let us think this through.",
+    "followup": "For me, after a week away I do not remember why I made earlier decisions. I still want to continue. I dislike notifications and do not want another routine to maintain. What does that change?"
+  },
+  {
+    "id": "critique",
+    "initial": "My idea is a daily writing app for adults. A streak resets after a missed day and every Sunday a public ranking rewards the most words. I think pressure is what people need to keep writing. What is your take?",
+    "followup": "The competition is intentional: five friends asked for a shared writing challenge. They want a playful league. I agree that missed days should not wipe progress. Keep the competition and help me develop a better mechanic."
+  },
+  {
+    "id": "develop",
+    "initial": "We chose an offline app where a maker can leave one short note about the next step of a personal project. That direction is accepted. I want to think through how returning after a break should work. No accounts, AI or notifications.",
+    "followup": "Do not add a history or reflection ritual. I only have ten minutes when I come back, and the note may be out of date. How would you handle that without making me organize everything first?"
+  },
+  {
+    "id": "small",
+    "initial": "For the accepted one-note offline app, suggest three short labels for a button that opens the saved next-step note. Russian labels, calm tone, no new features."
+  },
+  {
+    "id": "entry",
+    "entry": "cowork",
+    "initial": "I want an app for unfinished hobby projects. My current concept is a task list, a timer and reminders. Give me five ideas to make it stand out."
+  }
+]

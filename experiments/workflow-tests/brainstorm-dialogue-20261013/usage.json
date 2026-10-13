@@ -1,0 +1,23 @@
+{
+  "baseline": {
+    "turns": 8,
+    "input_tokens": 530799,
+    "cached_input_tokens": 414592,
+    "output_tokens": 5952,
+    "modelProcessSeconds": 258.68
+  },
+  "candidate-v1": {
+    "turns": 8,
+    "input_tokens": 565399,
+    "cached_input_tokens": 483456,
+    "output_tokens": 5527,
+    "modelProcessSeconds": 230.62
+  },
+  "total": {
+    "turns": 16,
+    "input_tokens": 1096198,
+    "cached_input_tokens": 898048,
+    "output_tokens": 11479,
+    "modelProcessSeconds": 489.3
+  }
+}

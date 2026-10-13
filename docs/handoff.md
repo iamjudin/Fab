@@ -17,9 +17,16 @@
   research. [Brief](research/brainstorm-six-hats-2026-10-13/brief.md) and indexed
   authored synthesis are ready. Recommended candidate: optional strategies inside
   Brainstorm, with question reframing and tailored perspective switching rather
-  than a mandatory six-part answer. Creator confirms repetitive ideas, premature
-  convergence and weak dialogue/critique; precise causes and candidate acceptance
-  remain open. Runtime edits/tests/release have not been selected.
+  than a mandatory six-part answer. Creator then clarified useful new thinking,
+  reasoned critique and deepening questions, without a framework mask, and
+  authorized autonomous candidate/testing work.
+- Brainstorm v1 is isolated in codex/fab-brainstorm-dialogue/8d1bde4 at a managed
+  checkout. [Sixteen-turn comparison](../experiments/workflow-tests/brainstorm-dialogue-20261013/results.md)
+  on GPT-6.1 Sol/Medium shows useful baseline and candidate dialogue; superiority
+  is unproven. Evidence is retained here, implementation remains on the experiment
+  branch. Maintenance source/cache stay beta.23; no install/merge/release. Next:
+  inspect a concrete ordinary-use miss rather than repeat easy fresh cases or
+  assume a missing named method is the cause. Main backlog owns FAB-14.
 
 ## Цель и договор
 

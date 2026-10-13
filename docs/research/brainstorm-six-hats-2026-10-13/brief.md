@@ -2,6 +2,13 @@
 
 Date: 2026-10-13. Status: proposal, no runtime change.
 
+Follow-up: creator authorized an experimental dialogue candidate and tests after
+clarifying that the goal is material new thinking, reasoned critique and useful
+questions, not a framework mask. [Sixteen-turn comparison](../../../experiments/workflow-tests/brainstorm-dialogue-20261013/results.md)
+shows useful baseline and v1 behavior but no established quality advantage.
+V1 remains isolated/uninstalled; maintenance runtime is unchanged. The research
+and indexed synthesis below preserve the pre-experiment reasoning and limits.
+
 Decision: how to add perspective and generation strategies without turning every
 Brainstorm request into a mandatory workshop.
 

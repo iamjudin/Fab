@@ -1,0 +1,38 @@
+{
+  "variant": "baseline",
+  "case": "develop",
+  "turn": "followup",
+  "exitCode": 0,
+  "timeout": false,
+  "seconds": 20.57,
+  "threadId": "01a134ce-9a0f-7460-90e5-a86bb64f2643",
+  "actualRuntime": {
+    "model": "gpt-6.1-sol",
+    "effort": "medium"
+  },
+  "usage": {
+    "input_tokens": 79875,
+    "cached_input_tokens": 58752,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 943,
+    "reasoning_output_tokens": 49
+  },
+  "workspaceUnchanged": true,
+  "workspaceChanges": [],
+  "command": [
+    "codex",
+    "exec",
+    "-C",
+    "/private/tmp/fab-brainstorm-dialogue-20261013-boxj_hmw/baseline",
+    "-s",
+    "read-only",
+    "resume",
+    "--json",
+    "--skip-git-repo-check",
+    "01a134ce-9a0f-7460-90e5-a86bb64f2643",
+    "-o",
+    "/Users/iamjudin/.codex/worktrees/fab-brainstorm-dialogue/Fab/experiments/workflow-tests/brainstorm-dialogue-20261013/baseline/develop/followup.md",
+    "-"
+  ],
+  "errors": []
+}

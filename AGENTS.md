@@ -52,6 +52,12 @@ Creator 2026-10-12 запросил создание отдельного Canvas
 Не создавай subagents без явного разрешения на делегацию.
 
 ## Current boundary
+Brainstorm dialogue experiment authorized 2026-10-13: isolated managed checkout
+on codex/fab-brainstorm-dialogue, candidate checkpoint 8d1bde4. Sixteen source
+turns on GPT-6.1 Sol/Medium show useful baseline/v1 behavior, not proven superiority.
+Evidence retained in maintenance; candidate is not installed/merged/released.
+FAB-14 remains open for ordinary-use context and promotion judgment. No forced
+Six Hats mask or shared-core rewrite was accepted by this experiment.
 Installed Fab0.1.0-beta.23,68files/7a402724db9b66ae. All ten independent contracts.
 50local regressions, bounded outcome/domain/UI/maintenance smokes; not universal
 maturity. Current detailed state in docs/handoff.md and docs/backlog.md. Continue
