@@ -51,7 +51,25 @@ Creator 2026-10-12 запросил создание отдельного Canvas
 Другие новые чаты — по прямому запросу; не расширять этот scope до hidden delegation.
 Не создавай subagents без явного разрешения на делегацию.
 
+## Growing tasks and separate chats
+Reassess scope as work develops, not only at intake. When a task becomes a
+substantial independent workstream with its own questions, iterations or evidence,
+proactively propose a separate project chat: explain the benefit, bounded scope
+and what remains owned here. Task size is a signal, not an automatic split;
+routine repairs and work that needs the current dialogue can stay here.
+Creator agreement to the concrete proposal is an explicit request to create that
+chat and transfer context. Then prepare the minimum durable packet, create the
+chat with the host tools and verify its recovery without asking for a second
+briefing or repeated creation approval. Respect host restrictions; do not claim
+queued setup is complete. A branch alone does not complete the chat handoff.
+This rule does not authorize an immediate new chat, hidden delegation, a merge,
+runtime installation or publication. Keep main ownership and return criteria clear.
+
 ## Current boundary
+2026-10-13 growing-task chat proposal rule is updated in maintenance source only;
+installed/public beta.23 is unchanged. Package/reference checks and eight package
+guards pass; no fresh behavior or new chat-recovery claim. Install/promotion is
+a separate authorized stage, not implicit in recording this rule.
 Brainstorm dialogue experiment authorized 2026-10-13: isolated managed checkout
 on codex/fab-brainstorm-dialogue, latest v2 checkpoint e7d94f8. Sixteen generic
 turns were inconclusive; six contextual turns preserve v1's depth miss and a bounded

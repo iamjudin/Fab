@@ -18,7 +18,11 @@ experiments, never silently enabled to satisfy a default route.
 When work introduces an independent outcome, substantial redesign or uncertain
 implementation beyond a released checkpoint, proactively recommend isolation:
 explain the scope, current baseline, benefit/risk and proposed branch before
-dependent work. For routine bounded repairs do not demand a new branch or chat.
+dependent work. Reassess during execution when a small task grows into a
+substantial independent workstream. Recommend a separate chat when its own
+questions, iterations or evidence would otherwise crowd the main dialogue;
+explain the proposed scope and retained main ownership. Task size is a signal,
+not a mandatory split. For routine bounded repairs do not demand a new branch or chat.
 Respect existing authorization. Preserve the release tag; work in a codex/ branch
 under project conventions. Branch alone isolates history, not concurrent files:
 independent simultaneous chats need separate checkouts/worktrees. A chat is a

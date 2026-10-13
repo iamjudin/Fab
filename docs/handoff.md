@@ -1,5 +1,19 @@
 # Рабочее состояние Fab
 
+## 2026-10-13 — Propose chat separation when task scope grows
+
+Creator accepted a general collaboration rule: reassess scope during work and
+propose a separate project chat when a task becomes a substantial independent
+workstream. Explain the benefit, scope and main ownership; do not split routine
+work automatically. Agreement to the concrete creation/context-transfer proposal
+authorizes execution without a second briefing or creation approval. Prepare the
+durable packet, create the actual chat and verify recovery using host tools.
+Branch isolation alone is insufficient. This request creates no new chat and
+does not authorize Brainstorm promotion, runtime installation or publication.
+Runtime source guidance is updated; installed/public beta.23 is unchanged and
+does not contain this source delta. Fresh behavior and actual new handoff remain
+unverified; FAB-13's existing recovery limit is preserved.
+
 ## 2026-10-13 — Current investigation and recorded observation
 
 - Runtime remains installed/public beta.23; this iteration changes research and

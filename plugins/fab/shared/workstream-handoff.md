@@ -1,9 +1,16 @@
 # Separate chat and context handoff
 
-Use for an authorized separate workstream, not every task or partial skill route.
+Use when proposing or executing a separate workstream, not every task or partial
+skill route. Reassess scope during work: a task that started small may develop
+its own sustained questions, iterations and evidence. Propose a separate chat
+when that separation helps focus and ownership; explain why, the bounded target
+and what remains in the main chat. Do not split solely by duration or file count.
 First explain the boundary and recommend isolation under [release policy](release-policy.md).
 An explicit request to create the separate chat authorizes preparing it and passing
-its necessary context. Apply a standing creator instruction only within its named
+its necessary context. Explicit creator agreement to a concrete proposal to
+create the chat and transfer context is that request; do not require a second
+creation approval or a repeated briefing. Agreement to an idea, branch or
+implementation alone is not agreement to chat creation. Apply a standing creator instruction only within its named
 scope and actual host permissions; ordinary implementation permission alone is not
 permission to start another user-owned chat. If not authorized, propose the concrete
 scope before asking. Do not confuse a user-owned chat with a hidden subagent.

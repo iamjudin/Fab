@@ -56,6 +56,11 @@ Read [scoped release policy](release-policy.md) when changing promised outcomes,
 preparing a release/install or starting substantial independent work after a
 checkpoint. Proactively recommend isolation with a reason; do not wait for the
 creator to discover scope drift. Readiness belongs to each promised surface.
+Reassess growing tasks during work: when a substantial independent workstream
+would benefit from its own dialogue, propose a separate chat and its scope.
+After explicit creator agreement, follow [context handoff](workstream-handoff.md)
+to create the chat, transfer context and verify recovery. Size alone does not
+require splitting routine work; a branch alone is not a chat handoff.
 
 ## Progress and learning
 Store durable decisions and deltas where useful; consult project guidance/Git/

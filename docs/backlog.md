@@ -2,7 +2,7 @@
 
 ## Сейчас
 
-Installed beta.23: ten independent skills,68files, fingerprint `7a402724db9b66ae`. Tables are default; Canvas is opt-in. Public branding and English authored Git artifacts are validated locally. Outcome readiness remains bounded; authorized chat handoff includes actual transfer and recovery verification.
+Installed beta.23: ten independent skills,68files, fingerprint `7a402724db9b66ae`. Tables are default; Canvas is opt-in. Public branding and English authored Git artifacts are validated locally. Outcome readiness remains bounded; authorized chat handoff includes actual transfer and recovery verification. Source-only FAB-13 clarification on 2026-10-13: reassess growing tasks and propose a separate chat for substantial independent work; explicit agreement to the concrete creation/transfer proposal authorizes execution. Not installed/released; no new chat or fresh recovery claim.
 Реализован и проверен ограниченный пакет переноса. Полный клиентский маршрут дошёл до прототипа; два сбоя потребовали отдельных коррекций. Общего PASS нет.
 
 **Итог пакета:** Fab способен собрать исполняемый кандидат, но передача смысла между интерфейсными артефактами ещё ненадёжна. FAB-08 проверен в реальном браузере после коррекции и отдельно записанного обновления ресурса preview. Две проекции исправлены адресным partial corrective; текущий default — таблицы структуры/переходов; Canvas отдельно ждёт прототип creator, наблюдение уборки preview открыто. Оценка creator полезности/вкуса отдельна и не заменяет технический вывод. Новых полных прогонов ради статистики не нужно. Один разрешённый сброс использован.

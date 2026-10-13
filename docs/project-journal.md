@@ -16,6 +16,30 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-13 — Growing tasks trigger a chat-separation proposal
+
+- Context: a small Brainstorm change grew into research and several test series,
+  yet only Git isolation was established. The creator asked to preserve a rule
+  for proposing a separate chat when such growth becomes substantial.
+- Decision: reassess scope during work; recommend a separate chat when independent
+  questions, iterations or evidence justify it. Explain scope and main ownership.
+  Size alone does not mandate splitting a task. Explicit agreement to the concrete
+  creation/context-transfer proposal authorizes execution without a repeated brief.
+- Result: project guidance, shared runtime entry, Cowork, release boundaries and
+  handoff instructions now distinguish proposing separation from executing an
+  authorized transfer. The existing packet/actual-chat/recovery checks are reused.
+- Limits: source-only change; no new chat, installed update, experimental merge
+  or public release. Structural checks do not establish fresh model behavior or
+  resolve FAB-13's actual recovery gap. Brainstorm promotion remains a separate choice.
+- Evidence: [runtime handoff](../plugins/fab/shared/workstream-handoff.md),
+  [current boundary](handoff.md). Package/reference validation and eight existing
+  package guards pass; source has 68 files, fingerprint bf7b9c51e47a07c1, with
+  unchanged beta.23 manifest pending a separately authorized versioned install.
+  Skill Creator's quick validator could not run because PyYAML is unavailable;
+  the package guard checks the unchanged frontmatter and bundled references.
+  Carry this source delta into a separately authorized installation rather than
+  claiming it already runs in other chats.
+
 ## 2026-10-13 — New v2 tested through varied virtual situations
 
 - Type: bounded behavior checkpoint
