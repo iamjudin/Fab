@@ -27,6 +27,19 @@
   branch. Maintenance source/cache stay beta.23; no install/merge/release. Next:
   inspect a concrete ordinary-use miss rather than repeat easy fresh cases or
   assume a missing named method is the cause. Main backlog owns FAB-14.
+- Follow-up at e7d94f8: [contextual comparison and v2](../experiments/workflow-tests/brainstorm-context-20261013/results.md)
+  complete six source turns. Baseline/v1 read the available evidence but initially
+  remain largely incremental; explicit feedback deepens both. V2 examines a
+  consequential change before that feedback and stays brief on a cosmetic control.
+  Stage: tested narrow corrective, pending limited adoption decision; stability
+  remains unobserved. Early observer inference of missing consultation corrected.
+  Private source context/answers remain ignored. No merge/install/public release.
+- Creator then requested varied virtual situations for the new candidate rather
+  than making progress depend on the older installed project chat. [V2 suite](../experiments/workflow-tests/brainstorm-v2-situations-20261013/results.md):
+  five situations/seven turns on unchanged v2, bounded behavior checks satisfied;
+  timing-anchor assumption in one copy example is a retained caveat. Evidence
+  a572d3e. Recommended next: limited everyday trial after explicit promotion/local
+  update scope. No new failure requiring correction; no general maturity claim.
 
 ## Цель и договор
 

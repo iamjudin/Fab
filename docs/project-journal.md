@@ -16,6 +16,29 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-13 — New v2 tested through varied virtual situations
+
+- Type: bounded behavior checkpoint
+- Area: Brainstorm dialogue, Cowork entry and task-stage clarity
+- Evidence: [five situations/seven turns](../experiments/workflow-tests/brainstorm-v2-situations-20261013/results.md), [cost](../experiments/workflow-tests/brainstorm-v2-situations-20261013/usage.json); target e7d94f8/evidence a572d3e.
+- Context: creator questioned reliance on the older installed application chat and requested virtual situations. Clarified that beta.23 observation, earlier v1 comparison and current v2 validation are distinct; the observed project is not a gate for new testing.
+- Result: v2 challenges a weak simplification premise, revises its view with feedback, explores different directions without forced acceptance, supports a sound proposal, preserves an accepted rule and challenges compliments treated as demand. No mandatory hats, questionnaire, product build or manufactured conflict. A copy example assumes an unspecified timing anchor; retain that limitation.
+- Judgment: sufficient bounded source behavior for a recommended limited everyday trial. Not proof of statistical superiority, long-context consistency, installed behavior or creator taste. No correction reruns were needed; stop after the declared seven primary turns.
+- Verification/cost: actual GPT-6.1 Sol/Medium;579,790input/479,360cached/5,301output tokens, process wall269.36s excluding main overhead. Workspaces unchanged; frozen target/responses verified before owned temporary cleanup. One Markdown hard-break in frozen response retained deliberately rather than changing evidence bytes.
+- Boundary/next: implementation remains experimental; maintenance/runtime beta.23 unchanged. Explicit experimental-branch promotion/local-update scope is the next genuine decision; no public release. Do not frame the task as indefinitely waiting for another observed-project response.
+
+## 2026-10-13 — A real depth complaint yields a narrow corrective candidate
+
+- Type: corrective and status checkpoint
+- Area: Brainstorm cooperation under incremental proposals
+- Evidence: [contextual results](../experiments/workflow-tests/brainstorm-context-20261013/results.md), [contract](../experiments/workflow-tests/brainstorm-context-20261013/contract.md), [cost](../experiments/workflow-tests/brainstorm-context-20261013/usage.json); candidate e7d94f8 on codex/fab-brainstorm-dialogue.
+- Context: creator asked what would happen next and why task stage was unclear. Continued the already authorized experiment using the observed depth complaint; six new contextual turns, preserving the earlier inconclusive comparison.
+- Diagnosis: baseline/v1 read the available briefs but their initial replies did not develop the decision-relevant distinction. An early observer inference that consultation was missing was wrong; trace inspection corrected it. Both deepen after explicit feedback.
+- Correction: v2 checks whether an apparently small proposal changes meaning, effort, obligations or agency, then applies the nearest relevant evidence and explains a consequence. Fresh corrective shows that move before further prompting; a cosmetic wording control stays brief.
+- Limits: one bounded context reconstruction, unknown original model/full host context, unblinded review; no scientific or creator-value proof. Source v2/package validation passes. Installed/source maintenance remains beta.23; no merge, install or release.
+- Cost: six GPT-6.1 Sol/Medium turns;558,748input/461,056cached/5,569output tokens, summed process wall286.02s; main overhead excluded. Private inputs/replies retained ignored; owned temporary workspaces removed after retention checks.
+- Stage/next: narrow diagnosis and corrective complete; limited adoption decision is next, then ordinary-use stability. Do not describe this as waiting indefinitely for examples or as an already installed improvement.
+
 ## 2026-10-13 — Useful dialogue tested without a Six Hats mask
 
 - Type: experimental learning checkpoint

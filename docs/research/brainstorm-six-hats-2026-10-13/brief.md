@@ -9,6 +9,19 @@ shows useful baseline and v1 behavior but no established quality advantage.
 V1 remains isolated/uninstalled; maintenance runtime is unchanged. The research
 and indexed synthesis below preserve the pre-experiment reasoning and limits.
 
+Further follow-up: [contextual corrective](../../../experiments/workflow-tests/brainstorm-context-20261013/results.md)
+finds the narrower issue of bringing known evidence into an incremental answer.
+V2 checks consequential changes of meaning/effort/agency and passes a same-context
+corrective plus cosmetic proportion control. Six turns, one reconstructed episode;
+promotion and ordinary-use stability remain open. The correction is not a full-hat
+framework, and all initial targets had already read the supplied research.
+
+Varied v2 validation: [five situations/seven turns](../../../experiments/workflow-tests/brainstorm-v2-situations-20261013/results.md)
+now covers criticism, sound agreement, open exploration, feedback and accepted
+constraints. Recommend a limited everyday trial after explicit promotion authority.
+This tests v2 directly; observation of the older installed project is a separate
+workstream, not a gate for virtual tests. A copy-anchor caveat remains visible.
+
 Decision: how to add perspective and generation strategies without turning every
 Brainstorm request into a mandatory workshop.
 

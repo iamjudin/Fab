@@ -53,11 +53,18 @@ Creator 2026-10-12 запросил создание отдельного Canvas
 
 ## Current boundary
 Brainstorm dialogue experiment authorized 2026-10-13: isolated managed checkout
-on codex/fab-brainstorm-dialogue, candidate checkpoint 8d1bde4. Sixteen source
-turns on GPT-6.1 Sol/Medium show useful baseline/v1 behavior, not proven superiority.
+on codex/fab-brainstorm-dialogue, latest v2 checkpoint e7d94f8. Sixteen generic
+turns were inconclusive; six contextual turns preserve v1's depth miss and a bounded
+v2 corrective/proportion PASS on GPT-6.1 Sol/Medium. All initial variants read the
+available research; the observed gap is visible application, not source access.
 Evidence retained in maintenance; candidate is not installed/merged/released.
-FAB-14 remains open for ordinary-use context and promotion judgment. No forced
+FAB-14 is at tested corrective/promotion decision, with real-use stability open. No forced
 Six Hats mask or shared-core rewrite was accepted by this experiment.
+Unchanged v2 at e7d94f8 also completed five varied virtual situations/seven turns;
+evidence checkpoint a572d3e. Bounded contribution/critique/agreement/feedback/
+accepted-scope checks pass; recommend limited everyday trial, not universal maturity.
+An illustrative copy timing assumption is retained as a caveat. Promotion still
+requires explicit scope; installed beta.23 and its existing project chat stay separate.
 Installed Fab0.1.0-beta.23,68files/7a402724db9b66ae. All ten independent contracts.
 50local regressions, bounded outcome/domain/UI/maintenance smokes; not universal
 maturity. Current detailed state in docs/handoff.md and docs/backlog.md. Continue
