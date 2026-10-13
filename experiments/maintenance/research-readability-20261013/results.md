@@ -23,7 +23,7 @@ The main chat owns the canonical FAB-15 backlog and release decisions.
 | Deep Research | Replacement output tail and required topic-specific presentation plan |
 | Ingestion | Human brief uses the contract, original and full packet stay preserved |
 | Example | Synthetic before/after and assignment plan, no private research copied |
-| Bookworm | Reviewable separate engineering task and direct helper reproduction |
+| Bookworm | Separate Refine/Digest engineering task and direct Refine helper reproduction |
 
 The former literal Russian output tail is explicitly superseded by this authorized
 correction. The canonical repository contract is English and is translated into
@@ -79,6 +79,14 @@ followed by bidirectional claim/condition/source review. Keep the helper's guard
 against prose-heavy tables. Bookworm owns its diagram-preservation policy, which
 currently disallows splitting. The [engineering task](bookworm-engineering-task.md)
 keeps that distinction and defines realistic fixtures and return evidence.
+
+Creator extended this task to Digest on 2026-10-13. Read-only inspection confirms
+that Digest already includes research information architecture, section coverage,
+mechanisms/examples/limitations, visual preservation and reader review. The task
+now applies the common reader contract during Digest composition and its quality
+gates, with separate section-coverage and bounded Q&A checks. Digest's permitted
+synthesis remains distinct from Refine's stricter preservation. No Digest behavior
+probe was performed, and the Refine helper receipt is not evidence for Digest.
 
 ## Return criteria and integration proposal
 

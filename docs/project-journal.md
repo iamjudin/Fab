@@ -16,6 +16,20 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-13 — Extend Bookworm reader task to Digest
+
+- Context/decision: creator explicitly includes Digest in the separate Bookworm
+  engineering task. Read-only inspection found existing architecture, fullness,
+  visual and reader-review rules, so the task connects their application instead
+  of duplicating formatting slogans.
+- Result: shared reader requirements apply during composition and final review.
+  Digest retains substantive section coverage and source-grounded synthesis.
+  Refine retains its stricter semantic preservation boundary. Separate Digest
+  fixtures and bounded Q&A checks are specified.
+- Evidence/limits: task and return packet reviewed for consistency. No Bookworm
+  mutation or Digest behavior test. The existing helper probe covers Refine only.
+  [Engineering task](../experiments/maintenance/research-readability-20261013/bookworm-engineering-task.md).
+
 ## 2026-10-13 — Research reader contract and Bookworm boundary correction candidate
 
 - Context: FAB-15 recovered in its authorized isolated chat and branch. Creator
