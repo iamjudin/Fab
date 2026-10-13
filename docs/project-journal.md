@@ -16,6 +16,28 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-13 — Brainstorm strategy choice stays open after research
+
+- Type: research and design question
+- Project area: Brainstorm, partial routes and collaboration
+- Status: confirmed — bounded primary-source review, indexed synthesis and all three creator-reported pains; proposal — optional strategy selection; unknown — precise causes and candidate effectiveness.
+- Evidence: [research](research/brainstorm-six-hats-2026-10-13/research.md), [brief](research/brainstorm-six-hats-2026-10-13/brief.md), [indexed synthesis](research/brainstorm-six-hats-2026-10-13/full.json).
+- Context: creator dislikes current Brainstorm and proposed Six Thinking Hats without imposing the method. Source inspection found desired outcomes but little operational strategy-selection guidance; this is a diagnostic hypothesis, not proof of root cause.
+- Result: recommend conditional perspective switching and question reframing within one skill. Original method separates thinking directions; limited empirical work does not prove Fab superiority, and an LLM facilitation study reports poor convergence timing.
+- Limits: no runtime edit, new behavior test, source training-material reproduction, installation or release. Research has not accepted a new default. Creator confirms repetitive ideas, premature convergence and weak dialogue/critique; the candidate should address all three.
+- Verification: twelve authored research sections preserved in the packet, runtime reader validation/index checks passed; factual claims carry linked primary sources and accessibility limits.
+- Follow-up: discuss the preferred candidate covering all three pains; define the smallest comparison only after a direction is accepted.
+
+## 2026-10-13 — Real-use observation becomes a durable learning record
+
+- Type: observation checkpoint
+- Project area: semantic coverage, collaboration and partial-route outcomes
+- Status: confirmed — creator authorized recording; bounded observation — useful outcome and corrective reasoning; unknown — complete board preservation/native quality.
+- Evidence: [sanitized observation](../experiments/workflow-tests/2026-10-13-external-chat-observation.md); private turn/cursor state remains ignored locally.
+- Result: research informed candidate jobs and an editable review surface. Reading ability was explicit in a supplied brief but initially absent as a distinct job-story context; creator prompting led to a meaningful correction. Preserve both the omission and correction.
+- Interpretation: the existing input-accounting contract needs observation in ordinary work; do not respond to every miss by adding more rules. This extends FAB-03/FAB-11/FAB-12 rather than closing them.
+- Boundary: hourly heartbeat records meaningful deltas but does not manage the product, send messages, start new experiments, commit/publish or apply repairs. Improvements are held for later discussion.
+
 ## 2026-10-12 — Legacy projects become retained local folders
 
 - Type: maintenance checkpoint

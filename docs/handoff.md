@@ -1,5 +1,26 @@
 # Рабочее состояние Fab
 
+## 2026-10-13 — Current investigation and recorded observation
+
+- Runtime remains installed/public beta.23; this iteration changes research and
+  observation records only, with no release, installation or Canvas merge.
+- Creator requested durable records of the monitored real project, with improvement
+  discussion later. The hourly heartbeat now maintains a sanitized
+  [observation log](../experiments/workflow-tests/2026-10-13-external-chat-observation.md)
+  and private ignored cursor/evidence state. It does not edit the observed product,
+  message its chat, run tests or commit/publish on a monitor wake.
+- Observed bounded Research-to-Product-to-editable-review outcome and a reading
+  context omission corrected after creator feedback. This informs existing
+  FAB-03/FAB-11/FAB-12, without declaring a universal pass or an independently
+  verified native board.
+- Creator reports Brainstorm dissatisfaction and requested Six Thinking Hats
+  research. [Brief](research/brainstorm-six-hats-2026-10-13/brief.md) and indexed
+  authored synthesis are ready. Recommended candidate: optional strategies inside
+  Brainstorm, with question reframing and tailored perspective switching rather
+  than a mandatory six-part answer. Creator confirms repetitive ideas, premature
+  convergence and weak dialogue/critique; precise causes and candidate acceptance
+  remain open. Runtime edits/tests/release have not been selected.
+
 ## Цель и договор
 
 Один bundle с 10 самостоятельными навыками и необязательными маршрутами для инди-создателя. Mobile focus; Landlord исключён. Мы соавторы: рекомендации, критика и существенные компромиссы до действия. Русский на ты, сначала результат/польза/риск. Операторское внимание и токены — ресурсы. Checkpoint не повод остановиться.
