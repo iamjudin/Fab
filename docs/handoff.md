@@ -12,6 +12,10 @@ thread01a135d2-7e5b-7371-8a5d-4a35bb9f95be, now works at
 7c4b26f. Packet/private input reads and the orientation/accepted boundaries are
 verified in its trace; main independently confirmed the actual branch/baseline.
 Context recovery succeeded, correction results are still in progress.
+Original proactive trigger failed: main only proposed separation after the
+creator's sarcastic reminder, despite the existing rule. Technical creation/
+recovery is a corrective outcome and must not be reported as a full proactive
+workflow pass. FAB-13 owns the remaining initiation/application issue.
 Main owns release/install/backlog.
 Installed/public beta.24 remains unchanged. Preserve the unrelated pending
 external-observation record when preparing this handoff checkpoint.

@@ -88,6 +88,16 @@ That file is ignored and is not a required installed-runtime dependency.
 
 ## Verified handoff status
 
+### Original initiation failure
+
+The main chat began substantial investigation before proposing separation,
+despite the accepted growing-task rule being available in project guidance.
+Only the creator's sarcastic reminder prompted the proposal. The creator later
+explicitly identified this as a rule-application failure. Preserve it as a failed
+proactive trigger, followed by consent-based creation and successful recovery.
+The technical handoff success does not correct or validate that earlier trigger.
+This is a Fab collaboration finding, not extra readability or Bookworm scope.
+
 Creator approved creation and context transfer on2026-10-13. Actual project chat:
 "Fab — читаемость исследований", thread01a135d2-7e5b-7371-8a5d-4a35bb9f95be,
 host local. Checkout: /Users/iamjudin/.codex/worktrees/b266/Fab, branch

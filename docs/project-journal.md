@@ -25,6 +25,12 @@ Backfill выполнен по текущему чату и проектным �
   architecture largely implicit. Bookworm already has layout rules and a source
   prose-preservation boundary, so application/helper behavior needs inspection.
   Text counts support the density complaint without proving readability or cause.
+- Original collaboration failure: main investigated in depth before proposing
+  a separate chat. The creator's sarcastic reminder triggered the proposal and
+  was initially taken literally. The creator explicitly confirms that the
+  proactive rule did not work. The rule was available in guidance, so missing
+  wording/source access is not established as the cause. Keep this application
+  miss distinct from the successful consent-based transfer below.
 - Decision: creator bans semicolons in newly authored reader prose and agrees to
   a separate Fab chat with isolated branch/worktree. Preserve quotes/code, causal
   reasoning and evidence qualifiers. Keep private inputs out of public history.
