@@ -16,6 +16,23 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-13 — Tested dialogue promoted for a local and public release
+
+- Context: creator requested all validated current work to be released and asked
+  whether local and public updates happen together. Explained that integration,
+  installation, push/tag and GitHub Release are distinct outputs; the request
+  authorizes the full route, not only a source checkpoint.
+- Decision/result: integrate the tested Brainstorm v2 and growing-task chat rule
+  into beta.24. Merge 10ba4e6 preserves exact Brainstorm bytes and the more complete
+  maintenance journal. Canvas stays separate and experimental.
+- Preparation:69files/24fcdfca505a5a13;50regressions, package/reference checks and
+  scoped beta eligibility pass. Public presentation remains approved/English.
+- Limits/next: complete remote CI, immutable tag, clean and primary installation,
+  asset verification and bounded installed behavior. No universal maturity,
+  new-chat recovery or native UI proof; preserve prior failures and test caveats.
+- Evidence: [release contract](../experiments/releases/dialogue-beta24-20261013/contract.md)
+  and [verification report](../experiments/releases/dialogue-beta24-20261013/report.md).
+
 ## 2026-10-13 — Growing tasks trigger a chat-separation proposal
 
 - Context: a small Brainstorm change grew into research and several test series,

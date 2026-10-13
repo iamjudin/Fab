@@ -45,7 +45,8 @@ ID, владельцев, UC, ветки результата/ошибки/во�
 
 Beta.18 сохранена как исторический checkpoint с известным Canvas FAIL. Её tag
 checkpoint-beta18-2026-10-12 на10e44cf неизменен. Beta.19 сохранена checkpoint3e53097.
-Installed beta.23:68files/7a402724db9b66ae; version changes do not make
+Beta.24 candidate:69files/24fcdfca505a5a13; installed beta.23 remains the baseline
+until the [release receipt](../experiments/releases/dialogue-beta24-20261013/report.md) confirms the update; version changes do not make
 experimental behavior mature. English Git artifacts and creator-approved public
 branding are required; see [presentation verification](../experiments/releases/branding-beta23-20261012/report.md).
 

@@ -32,17 +32,22 @@ for the agreed channel. Each skill also works independently.
 Use a Codex client with plugin marketplace support:
 
 ```sh
-codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.23
+codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.24
 codex plugin add fab@fab-local
 ```
 
 Already installed? See [update and rollback](docs/install.md).
 
+Brainstorm develops ideas through grounded critique, meaningful alternatives and
+focused questions. Six Thinking Hats perspectives are optional, not a fixed answer
+format. When a task grows into an independent workstream, Fab proposes a separate
+chat and transfers context after your agreement, subject to host support.
+
 ## Beta status
 
-**0.1.0-beta.23** focuses on mobile apps. Structure and scenarios use Markdown
+**0.1.0-beta.24** focuses on mobile apps. Structure and scenarios use Markdown
 tables; Canvas remains experimental. Browser prototypes have bounded checks.
-Read [known limits](docs/limitations.md) and [release notes](docs/releases/0.1.0-beta.23.md).
+Read [known limits](docs/limitations.md) and [release notes](docs/releases/0.1.0-beta.24.md).
 
 ## Development and license
 

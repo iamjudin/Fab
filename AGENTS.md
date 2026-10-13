@@ -66,23 +66,19 @@ This rule does not authorize an immediate new chat, hidden delegation, a merge,
 runtime installation or publication. Keep main ownership and return criteria clear.
 
 ## Current boundary
-2026-10-13 growing-task chat proposal rule is updated in maintenance source only;
-installed/public beta.23 is unchanged. Package/reference checks and eight package
-guards pass; no fresh behavior or new chat-recovery claim. Install/promotion is
-a separate authorized stage, not implicit in recording this rule.
-Brainstorm dialogue experiment authorized 2026-10-13: isolated managed checkout
-on codex/fab-brainstorm-dialogue, latest v2 checkpoint e7d94f8. Sixteen generic
-turns were inconclusive; six contextual turns preserve v1's depth miss and a bounded
-v2 corrective/proportion PASS on GPT-6.1 Sol/Medium. All initial variants read the
-available research; the observed gap is visible application, not source access.
-Evidence retained in maintenance; candidate is not installed/merged/released.
-FAB-14 is at tested corrective/promotion decision, with real-use stability open. No forced
-Six Hats mask or shared-core rewrite was accepted by this experiment.
-Unchanged v2 at e7d94f8 also completed five varied virtual situations/seven turns;
-evidence checkpoint a572d3e. Bounded contribution/critique/agreement/feedback/
-accepted-scope checks pass; recommend limited everyday trial, not universal maturity.
-An illustrative copy timing assumption is retained as a caveat. Promotion still
-requires explicit scope; installed beta.23 and its existing project chat stay separate.
+Creator 2026-10-13 authorized integration, local update and public GitHub release
+of the tested Brainstorm v2 and growing-task chat separation rule. V2 is integrated
+from codex/fab-brainstorm-dialogue via 10ba4e6; Canvas remains separate. Candidate
+beta.24 has 69 files/fingerprint24fcdfca505a5a13. Fifty regressions, package and
+scoped beta gate pass; publication and exact-tag/primary installation are in
+progress, not yet claimed. Evidence: experiments/releases/dialogue-beta24-20261013.
+FAB-14 retains sixteen inconclusive generic turns, six contextual turns with the
+original v1 depth miss and a narrow v2 correction, plus five varied situations/
+seven v2 turns on GPT-6.1 Sol/Medium. All initial variants read relevant research;
+the gap was visible application. No forced Six Hats mask. Long-context stability,
+creator usefulness and native chat recovery remain open. One copy timing-anchor
+assumption is retained as a caveat. New chat creation requires explicit agreement
+to its concrete scope; this release authorization does not itself create a chat.
 Installed Fab0.1.0-beta.23,68files/7a402724db9b66ae. All ten independent contracts.
 50local regressions, bounded outcome/domain/UI/maintenance smokes; not universal
 maturity. Current detailed state in docs/handoff.md and docs/backlog.md. Continue

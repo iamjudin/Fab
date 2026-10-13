@@ -7,7 +7,7 @@ plugin selector is `fab@fab-local`.
 ## First install
 
 ```sh
-codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.23
+codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.24
 codex plugin add fab@fab-local
 ```
 
@@ -18,13 +18,25 @@ add the desired published tag, then reinstall:
 
 ```sh
 codex plugin marketplace remove fab-local
-codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.23
+codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.24
 codex plugin add fab@fab-local
 ```
 
 Use the target tag for an update or rollback. The tested host retains the installed
 plugin until reinstall. Adding a different ref without removing the existing
 registration is rejected. A pinned marketplace stays on its selected release.
+
+## Continue an existing chat after updating
+
+After installing the new package, ask the existing chat to check the installed
+Fab version, reread the current Cowork/Brainstorm instructions and relevant
+references, then continue with accepted project decisions intact. A chat message
+requests rereading; it does not install a plugin or advance a pinned marketplace.
+Codex detects skill changes automatically; restart Codex if the updated skill is
+not available. Desktop continuation and resumed CLI behavior are separate checks.
+See [official skill guidance](https://learn.chatgpt.com/docs/build-skills).
+
+For rollback, repeat the version-change commands with `v0.1.0-beta.23`.
 
 ## Environment
 

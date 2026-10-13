@@ -1,5 +1,19 @@
 # Рабочее состояние Fab
 
+## 2026-10-13 — Beta.24 promotion and public release authorized
+
+Creator explicitly requested all current validated work to be released locally
+and publicly. Integrated Brainstorm v2 from the isolated experiment with a merge
+checkpoint; kept maintenance journal history and unchanged tested Brainstorm
+bytes. Growing-task chat separation/context transfer is included. Candidate:
+0.1.0-beta.24,69files/24fcdfca505a5a13;50regressions, package and scope gate PASS.
+Public tag/CI/assets and clean/primary installation are still pending at this
+preparation checkpoint; installed beta.23 remains the prior baseline. No Canvas
+merge, other project writes, chat creation or public Plugins Directory submission.
+[Release report](../experiments/releases/dialogue-beta24-20261013/report.md) owns
+final publication/runtime verification. Earlier not-promoted entries below are
+historical; promotion is now authorized, behavioral limits remain.
+
 ## 2026-10-13 — Propose chat separation when task scope grows
 
 Creator accepted a general collaboration rule: reassess scope during work and

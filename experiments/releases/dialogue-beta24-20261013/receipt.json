@@ -1,0 +1,22 @@
+{
+  "version": "0.1.0-beta.24",
+  "files": 69,
+  "fingerprint": "24fcdfca505a5a13",
+  "sourceIntegration": "10ba4e6",
+  "checks": {
+    "regressions": 50,
+    "package": "pass",
+    "scope": "pass",
+    "testedBrainstormBytes": "equal e7d94f8",
+    "remoteCI": "pending",
+    "cleanExactTagInstall": "pending",
+    "primaryInstall": "pending",
+    "installedBehavior": "pending"
+  },
+  "limits": [
+    "unblinded bounded behavior",
+    "long-context stability unknown",
+    "native chat recovery and UI unverified",
+    "Canvas experimental"
+  ]
+}

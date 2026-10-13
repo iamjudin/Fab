@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "version": "0.1.0-beta.23",
-  "fingerprint": "7a402724db9b66ae",
+  "version": "0.1.0-beta.24",
+  "fingerprint": "24fcdfca505a5a13",
   "channel": "beta",
   "surfaces": [
     {
@@ -13,7 +13,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; 2026-10-12 candidate package preflight"
+          "evidence": "scripts/check_package.py; experiments/releases/dialogue-beta24-20261013/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -26,17 +26,22 @@
       "id": "brainstorm",
       "default": true,
       "status": "limited",
-      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee.",
+      "limitations": "Bounded contextual and varied virtual v2 evidence on GPT-6.1 Sol/Medium; exact Brainstorm files retained. Shared instructions changed separately. No statistical superiority, long-context stability, taste or universal maturity claim; illustrative copy-anchor assumption retained.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; 2026-10-12 candidate package preflight"
+          "evidence": "scripts/check_package.py; experiments/releases/dialogue-beta24-20261013/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
           "result": "pass",
           "evidence": "experiments/workflow-tests/2026-10-12-partial-routes-results.md"
+        },
+        {
+          "name": "contextual v2 correction and varied virtual situations",
+          "result": "pass",
+          "evidence": "experiments/workflow-tests/brainstorm-context-20261013/results.md; experiments/workflow-tests/brainstorm-v2-situations-20261013/results.md"
         }
       ]
     },
@@ -49,7 +54,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; 2026-10-12 candidate package preflight"
+          "evidence": "scripts/check_package.py; experiments/releases/dialogue-beta24-20261013/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -67,7 +72,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; 2026-10-12 candidate package preflight"
+          "evidence": "scripts/check_package.py; experiments/releases/dialogue-beta24-20261013/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -85,7 +90,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; 2026-10-12 candidate package preflight"
+          "evidence": "scripts/check_package.py; experiments/releases/dialogue-beta24-20261013/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -103,7 +108,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; 2026-10-12 candidate package preflight"
+          "evidence": "scripts/check_package.py; experiments/releases/dialogue-beta24-20261013/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -121,7 +126,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; 2026-10-12 candidate package preflight"
+          "evidence": "scripts/check_package.py; experiments/releases/dialogue-beta24-20261013/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -139,7 +144,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; 2026-10-12 candidate package preflight"
+          "evidence": "scripts/check_package.py; experiments/releases/dialogue-beta24-20261013/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -157,7 +162,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; 2026-10-12 candidate package preflight"
+          "evidence": "scripts/check_package.py; experiments/releases/dialogue-beta24-20261013/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -175,7 +180,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; 2026-10-12 candidate package preflight"
+          "evidence": "scripts/check_package.py; experiments/releases/dialogue-beta24-20261013/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -227,7 +232,7 @@
       "id": "cowork.chat-handoff",
       "default": false,
       "status": "experimental",
-      "limitations": "Explicitly authorized separate chat only. Context packet and isolated branch verified; host creation returned a client ID, actual thread/recovery not yet observed. No general automatic creation claim.",
+      "limitations": "Growing-task proposal and explicitly approved context transfer guidance. Host creation/recovery remains opt-in experimental with retained queued historical evidence; no automatic chat creation or general native recovery claim.",
       "checks": [
         {
           "name": "packet preservation and checkout isolation",
