@@ -168,3 +168,13 @@ conditions and defers project application. [V3 contract](v3-contract.md) records
 the practical comparison, checks and creator-run boundary. Package guard and 50
 regressions pass. External Deep Research run remains pending. No install/release,
 Bookworm transfer or broader validation is inferred from local checks.
+
+## V3 external result reviewed
+
+Creator confirmed launch and supplied the raw result. [V3 review](v3-results.md)
+records bounded positives for independent topic framing and experiment field
+structure. Overall compliance remains partial, with arithmetic/source and reader
+layout failures. Do not infer useful cross-project transfer before performing it.
+No full rerun is automatically recommended. Current rules define the expected
+behavior, output review identifies actual remaining work. Bookworm task gains
+structural fixtures while source/calculation corrections retain separate scope.

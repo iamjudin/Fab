@@ -16,6 +16,19 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-13 — Standalone V3 improves framing but retains evidence failures
+
+- Context: creator confirmed Deep Research launch and returned the raw export.
+- Result: independent topic framing and separate experiment fields are visible.
+  Both economic models exist, but internal arithmetic/periods conflict, important
+  claims lack linked support and dense duplicate reading layers remain.
+- Judgment: partial overall compliance. Actual output review is necessary, adding
+  more footer rules does not prove external behavior. Preserve private originals
+  and distinguish structural Bookworm work from explicit substantive repair.
+- Limits/next: no source fact-check, native rendering, cross-project application
+  or Digest/Enrich behavior. No automatic full rerun or task transfer.
+  [V3 result](../experiments/maintenance/research-readability-20261013/v3-results.md).
+
 ## 2026-10-13 — Correct observed research misses and prepare standalone V3 test
 
 - Context/decision: creator asks to update Fab rules from the raw result and test

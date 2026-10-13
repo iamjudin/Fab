@@ -253,3 +253,13 @@ Do not mistake improved formatting for completed economics or source verificatio
 Missing costs, unsupported projections or inconsistent assumptions require an
 explicit substantive scope beyond ordinary Refine. No raw private report excerpts
 belong in public test fixtures. This observation does not validate Digest/Enrich.
+
+## V3 raw comparison observation
+
+[V3 review](v3-results.md) observes independent topic framing and separate experiment
+fields, but only partial overall compliance. Add HTML tables, long orientation
+paragraphs, duplicate full profiles and heading/anchor mismatches to structural
+fixtures. Preserve original claims and their unsupported status during layout
+repair. Do not silently correct contradictory numerical models or introduce
+unverified sources under Refine. Numeric/source repair requires an explicit scope.
+No Digest/Enrich behavior is established by this external research result.
