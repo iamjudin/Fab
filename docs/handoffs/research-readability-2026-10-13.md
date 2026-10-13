@@ -115,3 +115,15 @@ Context recovery is confirmed within this handoff, not proof of completed
 readability correction, full future continuity or native Obsidian rendering.
 Main owns the global backlog and release. Read feature results through normal
 status/read tools when needed. No automatic cross-chat messaging or new monitor.
+## Workstream return before integration
+
+Recovery verified on 2026-10-13 in managed checkout `b266/Fab`, branch
+`codex/fab-research-readability` from `7c4b26f`. The isolated chat read this packet,
+private input references and applicable project guidance without another briefing.
+
+The scoped correction, synthetic reading example, Bookworm task and checks are
+complete. See [result and return packet](../../experiments/maintenance/research-readability-20261013/results.md).
+Main retains canonical backlog/integration/install/release ownership. No Bookworm
+edit, additional chat, subagent, install, merge or publication occurred in the
+workstream. Creator then explicitly authorized Main Fab to integrate this candidate
+and complete local/public release. See the [release return packet](research-readability-return-2026-10-13.md).

@@ -16,6 +16,122 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-13 — Standalone V3 improves framing but retains evidence failures
+
+- Context: creator confirmed Deep Research launch and returned the raw export.
+- Result: independent topic framing and separate experiment fields are visible.
+  Both economic models exist, but internal arithmetic/periods conflict, important
+  claims lack linked support and dense duplicate reading layers remain.
+- Judgment: partial overall compliance. Actual output review is necessary, adding
+  more footer rules does not prove external behavior. Preserve private originals
+  and distinguish structural Bookworm work from explicit substantive repair.
+- Limits/next: no source fact-check, native rendering, cross-project application
+  or Digest/Enrich behavior. No automatic full rerun or task transfer.
+  [V3 result](../experiments/maintenance/research-readability-20261013/v3-results.md).
+
+## 2026-10-13 — Correct observed research misses and prepare standalone V3 test
+
+- Context/decision: creator asks to update Fab rules from the raw result and test
+  the approved independent-research boundary. Keep relevant topic conditions and
+  separate project application rather than merely removing the project name.
+- Result: output-review contract covers explicit gaps, empirical support and
+  conditional numerical consistency. Reader rules strengthen separate experiment
+  fields and nonduplicated profile/detail presentation. V3 prompt is retained
+  privately with a review contract, ready for the creator's external run.
+- Evidence: package guard and 50 regressions PASS, prompt reviewed for scope,
+  independent identity, structure and punctuation. No external behavior yet.
+  [V3 test contract](../experiments/maintenance/research-readability-20261013/v3-contract.md).
+- Boundary/next: await raw V3 and assess it before project application or Bookworm.
+  No installation, release, task transfer or native layout claim.
+
+## 2026-10-13 — Raw research comparison shows partial compliance
+
+- Context: creator supplied the second raw report before Bookworm processing.
+  Both originals and a location-based audit are retained privately with hashes.
+- Result: orientation and comparison improved, but dense numbered blocks,
+  duplicated prose/table layers and punctuation restrictions remain unresolved.
+  Substantive evidence and economic coverage gaps are separate from formatting.
+- Decision: record partial evidence, add observed pattern classes to the Bookworm
+  task, preserve stricter source boundaries. No invented support or silent
+  substantive correction under Refine. Digest/Enrich remain independently untested.
+- Limits/next: external configuration, source verification and native layout
+  unobserved. Raw-review waiting prerequisite is satisfied, no task transfer yet.
+  [Comparison result](../experiments/maintenance/research-readability-20261013/once-market-comparison-results.md).
+
+## 2026-10-13 — Separate reusable research from project application
+
+- Context/decision: creator approved independent topic research with project use
+  recorded through tags and a separate application. Retain relevant conditions
+  so removing a project name does not imply universal applicability.
+- Result: new bundled reuse contract routed through Research, reader planning,
+  Deep Research and ingestion. Consumer decisions/forecasts stay local. New
+  topic filenames remain independent, legacy labels are preserved without bulk
+  migration. Application can serve as the existing operational brief.
+- Evidence: package guard and 50 regressions PASS, scoped example and source-
+  marking boundaries reviewed. No packet schema or installation change.
+  [Result](../experiments/maintenance/research-readability-20261013/results.md)
+  and [example](../experiments/maintenance/research-readability-20261013/reuse-example.md).
+- Limits/next: fresh behavior and reuse utility unobserved. Keep the pending raw
+  market comparison unchanged, check this separate boundary afterward. Main
+  owns integration and should review the revised default source-marking policy.
+
+## 2026-10-13 — Include purposeful Enrich growth in the Bookworm task
+
+- Context/decision: creator requests readable growth and depth in Enrich as well
+  as Refine and Digest. Read-only source inspection confirms attribution, source
+  verification and layout rules already exist.
+- Result: task adds purposeful contribution criteria, source-grounded mechanisms,
+  examples, alternatives and limits, with independent Enrich checks. Original
+  source layers remain distinct. No mandatory expansion or volume quotas.
+- Boundary: no Bookworm edit, transfer or Enrich behavior test. Creator asked to
+  await the raw Deep Research comparison before task transfer. Digest and Enrich
+  still require their own checks after that comparison.
+  [Engineering task](../experiments/maintenance/research-readability-20261013/bookworm-engineering-task.md).
+
+## 2026-10-13 — Prepare practical raw Deep Research comparison
+
+- Context: creator supplied a previous market assignment and its raw report and
+  requested a replacement prompt to run before any Bookworm processing.
+- Result: localized candidate retains scope and accepted requirements, adds the
+  reader presentation plan and makes existing evidence guards explicit. Original
+  input/output preserved byte-for-byte in ignored private task storage.
+- Interpretation/limits: practical prompt-version comparison, not a controlled
+  formatting-only test. No external run yet. Coverage, economics coherence,
+  provenance and reading structure will be reviewed separately.
+  [Comparison contract](../experiments/maintenance/research-readability-20261013/once-market-comparison-contract.md).
+
+## 2026-10-13 — Extend Bookworm reader task to Digest
+
+- Context/decision: creator explicitly includes Digest in the separate Bookworm
+  engineering task. Read-only inspection found existing architecture, fullness,
+  visual and reader-review rules, so the task connects their application instead
+  of duplicating formatting slogans.
+- Result: shared reader requirements apply during composition and final review.
+  Digest retains substantive section coverage and source-grounded synthesis.
+  Refine retains its stricter semantic preservation boundary. Separate Digest
+  fixtures and bounded Q&A checks are specified.
+- Evidence/limits: task and return packet reviewed for consistency. No Bookworm
+  mutation or Digest behavior test. The existing helper probe covers Refine only.
+  [Engineering task](../experiments/maintenance/research-readability-20261013/bookworm-engineering-task.md).
+
+## 2026-10-13 — Research reader contract and Bookworm boundary correction candidate
+
+- Context: FAB-15 recovered in its authorized isolated chat and branch. Creator
+  requested readable research while retaining evidence and full source material.
+- Decision: one bundled reader contract maps questions to comparisons, lists and
+  causal prose. Replace the former literal Deep Research tail and route research
+  assignments, synthesis and ingestion briefs to it. Do not impose layout quotas.
+- Result: source candidate and synthetic reading example prepared. A read-only
+  Bookworm helper probe preserves dense prose and transforms compact labeled
+  fields. Its separate engineering task clarifies semantic editing permission
+  without changing that project or repeating its existing formatting rules.
+- Evidence: package guard and 50 regressions pass. Semantic example review caught
+  and corrected a denominator error, illustrating why layout review alone fails.
+  [Result packet](../experiments/maintenance/research-readability-20261013/results.md).
+- Limits/next: no fresh model behavior, external research generation or native
+  Obsidian rendering observed. Main owns backlog/integration and any release.
+  Recommend one behavior check and reader observation before broader claims.
+
 ## 2026-10-13 — Research readability becomes an authorized separate workstream
 
 - Context: creator finds new research exports difficult to read and supplied a

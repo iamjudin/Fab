@@ -1,16 +1,20 @@
 # Research knowledge: library and project
 
 Read when a supplied research report must be ingested, a reusable method is
-needed, or the operational brief cannot resolve a decision.
+needed, or the operational brief cannot resolve a decision. Apply
+[independent research and project application](reuse.md) to new outputs. Preserve
+supplied originals even when their titles or bodies are project-specific.
 
 ## Ownership and two levels
 
 - Global methodological research belongs to Fab package `shared/methods/`.
   The human original stays with its author (Brain for this maintainer).
 - Market, audience, competitor, legal jurisdiction or implementation evidence
-  for a particular product belongs to that product's `product/research/`.
-  Preserve the supplied original there; never promote it into the plugin
-  automatically. A user may supply material from any environment.
+  consumed by a particular product is registered in its `product/research/`.
+  An independent report may stay in the person's existing research library with
+  exact revision links and project-local provenance. Preserve supplied originals
+  and never promote them into the plugin automatically. A user may supply
+  material from any environment.
 - Each included report has an operational brief and a detailed machine packet.
   Produce both during ingestion. Reading the detailed packet is conditional,
   not a separate permission gate for creating it.
@@ -46,7 +50,8 @@ human original even when a bundled module is withdrawn; remove its import mark.
 2. Preserve all in-scope source sections in a machine packet with an index and
    external source links. Label case-specific sections and exclusions. Structural
    conversion must not quietly discard counterevidence or qualifications.
-3. Write the brief: decision served, when to read deeper, applicable method,
+3. Apply the [reader contract](reader-contract.md) to the human brief without
+   rewriting the preserved original or lossless full packet. Write the brief: decision served, when to read deeper, applicable method,
    evidence/interpretation/hypothesis boundaries, limitations and update trigger.
    Keep source-section IDs for traceability. A summary is not new evidence.
 4. Validate correspondence to the source, links and conflicts with current
@@ -75,26 +80,23 @@ Read relevant sections when the decision needs their detail, as described above.
 
 ## Optional source marking after processing
 
-After the original, brief and indexed packet are processed and checked, ask once
-whether to add the current project's accepted name to the original filename and
-a project tag inside that document. Show the concrete before/after filename and
-tag. For example: `Fab: Report.md` → `Fab + Murmur: Report.md`,
-`#Murmur`. For this maintainer's Fab project use `#Fab`.
-Ask after the usable result is ready; this is an optional
-source annotation, not approval to perform ingestion or continue the project.
-If the person already explicitly authorized this marking for this source/project,
-honor that answer without asking again. Silence is not consent. A refusal leaves
-the original name/content untouched; preserve the completed project artifacts.
+After the original, brief and indexed packet are processed and checked, offer
+once to record the current project's accepted tag and usage entry in the source.
+Keep a new independent report's topic title and filename unchanged. The person's
+agreement is required before source annotation. This optional choice never blocks
+usable research artifacts or project-local provenance. If already authorized for
+this source/project, honor that answer. Silence is not consent.
 
-Use the accepted human project name, not an invented name or an internal test ID.
-Retain all existing project names and append the new one once, using ` + ` between
-known labels before `: <original title>`. Do not replace Fab or an earlier project,
-add duplicate prefixes, or interpret arbitrary colons in a title as project labels.
-If the project is already marked, keep its label and tag without another duplicate.
-If only one of label/tag is present, ask before completing the missing annotation.
-Use a simple accepted project tag, such as `#Fab` or `#Murmur`, without adding a
-`project/` namespace by default. Reuse the person's existing valid tag; for names
-with spaces/punctuation show the proposed safe tag before source marking.
+Show the concrete tag and usage change. Use the accepted project name and a simple
+tag such as `#Fab` or `#Murmur`, not an invented test ID or namespace. Preserve
+existing tags and entries and do not duplicate them. For names with spaces or
+punctuation show the proposed safe tag. If marking is declined, retain the source
+untouched and keep the completed project artifacts.
+
+Older sources may already have project-name filename prefixes. Preserve them as
+historical labels. Do not offer a filename prefix as the default for new research.
+An explicit rename request may change existing labels after collision and link
+checks, but policy acceptance is not permission for a migration.
 Do not expose bundle inclusion as a second `#fab/imported` tag. Store that status
 in the machine-readable `<!-- fab-import:<module-id> -->` metadata marker and
 usage/provenance record; inclusion is distinct from use by a project running Fab.
@@ -146,18 +148,16 @@ findings/artifacts; it does not make every earlier conclusion false.
 ## Maintenance
 
 An imported original may receive a tag and pointer only after the pair is
-available in the intended location. For maintainer notes being marked in Brain,
-after agreement under the source-marking policy, use `Fab: <original title>.md`
-when Fab is the only project label, or retain all labels as above. Keep the top technical heading
-`Использование в Fab`, marker `<!-- fab-import:<module-id> -->` and the
-simple project tag `#Fab`. Bundle inclusion stays in the metadata marker,
-not a visible imported tag. Link the current brief/full and state the included version/date
-and validation limits. The prefix is a filename label, not a new research title.
-Preserve the actual source title and historical Wireframer attribution in the body.
-Project-specific marking is optional under the policy above; bundle import marks
-are only for actually included reports.
+available in the intended location and source annotation is authorized. Keep the
+topic title and filename unchanged by default. Preserve older filename labels and
+historical technical headings. Keep marker `<!-- fab-import:<module-id> -->`,
+project tag and provenance entry only for actual inclusion/use, with validated
+brief/full links, revision/date and verification limits. Do not add a project
+prefix just because a report is bundled or reused. These are usage annotations,
+not changes to the research body or evidence scope.
 
-When migrating an existing `Wireframer:` label, replace the prefix once; never
+Only when an existing label migration is explicitly requested, for example
+a `Wireframer:` label, replace the prefix once. Never
 stack prefixes. Preserve the research body byte-for-byte and retain old inclusion
 dates/versions as history. Verify the module is actually included, refuse target
 collisions/symlinks, and update exact affected wiki/Markdown links within the
