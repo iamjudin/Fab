@@ -16,6 +16,18 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-13 — Brainstorm dialogue candidate compared without a framework mask
+
+- Type: experimental checkpoint
+- Project area: Brainstorm dialogue and ordinary Cowork entry
+- Status: confirmed — sixteen source-snapshot turns and package checks; inconclusive — superiority over beta.23; unknown — real creator usefulness and long-lived context behavior.
+- Evidence: [comparison](../experiments/workflow-tests/brainstorm-dialogue-20261013/results.md), [contract](../experiments/workflow-tests/brainstorm-dialogue-20261013/contract.md), [cost](../experiments/workflow-tests/brainstorm-dialogue-20261013/usage.json).
+- Context: creator clarified that the goal is useful new thinking, reasoned criticism and deepening questions, not a Six Hats mask. Authorized autonomous candidate/testing work; implementation remains isolated in codex/fab-brainstorm-dialogue.
+- Result: beta.23 and v1 both offered causal alternatives, grounded criticism, feedback uptake and proportional short answers. Both Cowork probes read Brainstorm. V1 makes dialogue moves explicit but does not demonstrate a clear quality gain in these cases.
+- Limits: unblinded root review, synthetic follow-ups, fresh expressly skill-directed contexts; no independent judgment or installed-runtime claim. Do not dismiss the reported ordinary-use problem because these probes were strong.
+- Verification: GPT-6.1 Sol/Medium verified per turn; sixteen unchanged workspaces, package check/eight existing guards pass. Raw evidence retained; owned temporary workspaces removed after byte checks. No install, merge or release.
+- Follow-up: keep v1 experimental and examine a concrete ordinary-use miss before deciding the correct owner or promotion. Main maintenance backlog remains the canonical registry.
+
 ## 2026-10-13 — Brainstorm strategy choice stays open after research
 
 - Type: research and design question

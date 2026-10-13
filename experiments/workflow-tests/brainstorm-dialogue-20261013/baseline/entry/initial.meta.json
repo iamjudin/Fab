@@ -1,0 +1,36 @@
+{
+  "variant": "baseline",
+  "case": "entry",
+  "turn": "initial",
+  "exitCode": 0,
+  "timeout": false,
+  "seconds": 38.97,
+  "threadId": "01a134d1-5ef1-7723-9d6b-bd49e5a27a7e",
+  "actualRuntime": {
+    "model": "gpt-6.1-sol",
+    "effort": "medium"
+  },
+  "usage": {
+    "input_tokens": 59193,
+    "cached_input_tokens": 46720,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 742,
+    "reasoning_output_tokens": 54
+  },
+  "workspaceUnchanged": true,
+  "workspaceChanges": [],
+  "command": [
+    "codex",
+    "exec",
+    "--json",
+    "--skip-git-repo-check",
+    "-s",
+    "read-only",
+    "-C",
+    "/private/tmp/fab-brainstorm-dialogue-20261013-boxj_hmw/baseline",
+    "-o",
+    "/Users/iamjudin/.codex/worktrees/fab-brainstorm-dialogue/Fab/experiments/workflow-tests/brainstorm-dialogue-20261013/baseline/entry/initial.md",
+    "-"
+  ],
+  "errors": []
+}
