@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "version": "0.1.0-beta.24",
-  "fingerprint": "24fcdfca505a5a13",
+  "version": "0.1.0-beta.25",
+  "fingerprint": "fdc8e22c01e7957c",
   "channel": "beta",
   "surfaces": [
     {
@@ -13,7 +13,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/dialogue-beta24-20261013/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/research-beta25-20261013/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -31,7 +31,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/dialogue-beta24-20261013/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/research-beta25-20261013/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -54,7 +54,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/dialogue-beta24-20261013/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/research-beta25-20261013/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -72,7 +72,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/dialogue-beta24-20261013/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/research-beta25-20261013/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -90,7 +90,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/dialogue-beta24-20261013/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/research-beta25-20261013/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -108,7 +108,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/dialogue-beta24-20261013/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/research-beta25-20261013/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -126,7 +126,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/dialogue-beta24-20261013/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/research-beta25-20261013/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -139,17 +139,22 @@
       "id": "research",
       "default": true,
       "status": "limited",
-      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee.",
+      "limitations": "Framing/readability/reuse/output-review contract with bounded evidence. External V2/V3 compliance PARTIAL with source/numeric/layout failures retained. No decision-grade, native render, cross-project transfer or Bookworm behavior guarantee.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/dialogue-beta24-20261013/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/research-beta25-20261013/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
           "result": "pass",
           "evidence": "experiments/workflow-tests/2026-10-10-autonomous-beta-results.md"
+        },
+        {
+          "name": "reviewed source contracts and external failure retention",
+          "result": "pass",
+          "evidence": "experiments/maintenance/research-readability-20261013/results.md; experiments/maintenance/research-readability-20261013/v3-results.md"
         }
       ]
     },
@@ -162,7 +167,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/dialogue-beta24-20261013/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/research-beta25-20261013/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -180,7 +185,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/dialogue-beta24-20261013/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/research-beta25-20261013/report.md"
         },
         {
           "name": "retained bounded baseline evidence",

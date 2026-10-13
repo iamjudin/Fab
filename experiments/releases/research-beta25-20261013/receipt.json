@@ -1,0 +1,55 @@
+{
+  "version": "0.1.0-beta.25",
+  "files": 72,
+  "fingerprint": "fdc8e22c01e7957c",
+  "checks": {
+    "package": "pass",
+    "regressions": 50,
+    "scope": "pass",
+    "sourceBehavior": "bounded corrective pass after explicit host-policy change; original conflict retained",
+    "remoteCI": "pending",
+    "cleanInstall": "pending",
+    "primaryInstall": "pending",
+    "assets": "pending",
+    "installedModelBehavior": "unobserved; two source turns only"
+  },
+  "limits": [
+    "External compliance PARTIAL",
+    "No Bookworm behavior or implementation",
+    "No native render or cross-project proof"
+  ],
+  "initialFailures": [
+    "Auto-review rejected unsafe-looking conflict strategy; read both sides and retained both explicitly.",
+    "Initial probe preparation failed on stdin encoding before any model turn; bundled Python file preparation succeeded.",
+    "First source probe read new contract but inserted host-mandated legacy footer; global section corrected only after creator consent."
+  ],
+  "publication": {
+    "assetsSha256": {
+      "release-scope.json": "b85ea04127016dae883c79e9373f84237563cb47485495a08f07adedc4b5ae8f",
+      "fab-0.1.0-beta.25.zip": "c782923155e4111ffe57d26fe3c8edfa17c096dc350ccdd3bbfe302ca7468b43",
+      "SHA256SUMS.txt": "030e0af84deba63c65f095c00a56776e50909ee4e09c30e4a1ae232533186379"
+    }
+  },
+  "usage": {
+    "turns": 2,
+    "input_tokens": 126229,
+    "cached_input_tokens": 96640,
+    "output_tokens": 4596,
+    "seconds": 170.15,
+    "actualRuntime": [
+      {
+        "model": "gpt-6.1-sol",
+        "effort": "medium"
+      },
+      {
+        "model": "gpt-6.1-sol",
+        "effort": "medium"
+      }
+    ],
+    "root_overhead": "excluded",
+    "account_window_use": "unknown",
+    "resets": 0,
+    "boundary": "source initial/corrective, not installed model execution"
+  },
+  "hostCorrection": "global literal footer replaced by active-contract routing after creator approval; other sections preserved"
+}

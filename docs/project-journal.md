@@ -16,6 +16,23 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-13 — Research candidate returns for a scoped public/local release
+
+- Creator explicitly authorized integration and release in the feature chat.
+- Merge2526511 incorporates df664b6 with existing50regressions/package checks PASS.
+  Conflicted handoff retains both the original proactive FAIL and feature return.
+- Automatic approval rejected an initial HEAD-replacement conflict approach for
+  possible loss of feature content. Read both sides and resolved explicitly with
+  both histories preserved. No remaining permission blocker or destructive reset.
+- Beta.25 scopes framing/readability/reuse/output review. Preserve external V2/V3
+  PARTIAL results and unknown source support, numerical and layout reliability.
+- Bounded probe: initial fresh assignment reads new contracts but inserts the
+  global legacy footer. Creator approves a host-only routing correction, keeping
+  other global rules intact. Same-input corrective omits old footer/semicolons
+  with thematic/application separation. Two source turns, no installed model claim.
+- Next: tag/CI/anonymous distribution and primary update. No full external rerun, Bookworm implementation or unrelated merge.
+- [Release contract](../experiments/releases/research-beta25-20261013/contract.md).
+
 ## 2026-10-13 — Standalone V3 improves framing but retains evidence failures
 
 - Context: creator confirmed Deep Research launch and returned the raw export.

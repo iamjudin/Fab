@@ -1,0 +1,21 @@
+{
+  "turns": 2,
+  "input_tokens": 126229,
+  "cached_input_tokens": 96640,
+  "output_tokens": 4596,
+  "seconds": 170.15,
+  "actualRuntime": [
+    {
+      "model": "gpt-6.1-sol",
+      "effort": "medium"
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "effort": "medium"
+    }
+  ],
+  "root_overhead": "excluded",
+  "account_window_use": "unknown",
+  "resets": 0,
+  "boundary": "source initial/corrective, not installed model execution"
+}

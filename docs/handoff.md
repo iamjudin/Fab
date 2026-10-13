@@ -1,5 +1,17 @@
 # Рабочее состояние Fab
 
+## 2026-10-13 — Beta.25 research integration authorized
+
+Creator explicitly approved integration and local/public release from the feature
+chat. Candidate df664b6 is integrated via2526511 with both handoff histories kept.
+Beta.25 preparation:72files/fdc8e22c01e7957c. Reader/presentation, independent
+research/application and output review are included. V2/V3 external results remain
+PARTIAL with source/numeric/layout defects, not proof of reliable external outputs.
+Bookworm task prepared only. Source checks pass, behavior/distribution verification
+in progress. Installed/public beta.24 remains the preceding baseline until the
+[release receipt](../experiments/releases/research-beta25-20261013/report.md) confirms update.
+No Canvas merge, source migration, Bookworm changes or new chats.
+
 ## 2026-10-13 — Research readability separation authorized
 
 FAB-15: creator requested a full reconsideration of research framing/output tail

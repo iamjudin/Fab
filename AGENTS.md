@@ -71,12 +71,15 @@ This rule does not authorize an immediate new chat, hidden delegation, a merge,
 runtime installation or publication. Keep main ownership and return criteria clear.
 
 ## Current boundary
-FAB-15 creator-authorized separate chat is active: "Fab — читаемость исследований",
-thread01a135d2-7e5b-7371-8a5d-4a35bb9f95be, checkout b266/Fab on
-codex/fab-research-readability from7c4b26f. Packet and ignored private input reads,
-accepted boundaries and actual branch verified. It owns research assignment/
-reader-contract correction and a Bookworm task, not Bookworm edits or shared
-install/merge/publication. Main keeps global backlog/release ownership.
+FAB-15 returned candidate df664b6 and creator explicitly authorized integration,
+local update and public GitHub release on2026-10-13. Integrated via2526511.
+Beta.25 preparation:72files/fdc8e22c01e7957c, framing/readability/independent
+research/application/output review. External V2/V3 compliance remains PARTIAL
+with source, arithmetic and layout failures. No guaranteed Deep Research
+compliance, personal-data anonymization, native render or cross-project proof.
+Bookworm task prepared, no implementation/transfer authorized. Main owns release.
+For Fab Research the creator-approved localized reader/presentation contract
+supersedes the former literal Deep Research tail. Historical prompts stay frozen.
 Creator 2026-10-13 authorized integration, local update and public GitHub release
 of the tested Brainstorm v2 and growing-task chat separation rule. V2 is integrated
 from codex/fab-brainstorm-dialogue via 10ba4e6; Canvas remains separate. Released/installed
