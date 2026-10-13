@@ -15,6 +15,26 @@ Do not copy the private project's research or complete conversation into Fab.
 No messages to the observed chat, product edits, new tests, commits or publication
 are authorized by a monitor run. Main-chat work may commit this sanitized record.
 
+## 2026-10-13 — Approved source annotations completed
+
+- Request: apply the previously offered project marking after explicit creator
+  consent, preserving the research bodies and updating their references.
+- Observed completion: the tool trace reports two renamed and annotated source
+  documents, exact original-body preservation checks, updated provenance and
+  links, and a successful Git commit/push. Local provenance records now include
+  annotation dates, prefixed source paths and body/annotated-file hashes.
+- Evidence boundary: the observer read the provenance records and execution
+  output; it did not independently reread the annotated vault documents or fetch
+  remote Git state. This resolves the preceding pending-annotation observation
+  within that bounded evidence, without erasing the earlier ingestion reminder
+  or quota interruption.
+- Interpretation: the ready-copy → consent → source-marking boundary held in
+  ordinary use, adding FAB-10 evidence. Refusal, additive second-project naming
+  and changed-source propagation remain unobserved; no broad contract is closed.
+- No new defect, consequential decision or creator action was identified.
+  The exact task-owned temporary helper was removed in the trace. Repairs remain
+  deferred for discussion; no monitor-driven patch or test was performed.
+
 ## 2026-10-13 — Useful external sources retained after creator prompting
 
 - Request: after useful domain material informed the discussion, the creator
