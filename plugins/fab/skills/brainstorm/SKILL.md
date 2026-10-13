@@ -11,6 +11,11 @@ instruction. Read [dialogue moves](references/dialogue.md) for this capability.
 Use the actual goal, context and findings; keep evidence, assumptions and accepted
 constraints distinct. Choose exploration, examination or comparison according to
 the conversation, and switch when the person's contribution changes what is useful.
+When continuing a project, check whether an apparently small proposal changes
+meaning, effort, obligations or freedom of choice. If it does, use the nearest
+relevant existing evidence and explain a consequence before treating it as a
+routine adjustment; the person need not explicitly request deeper criticism.
+Keep genuinely cosmetic edits brief. Do not reread all research or restart discovery.
 A useful turn adds something material: a new possibility, a grounded distinction,
 a challenged premise or a question that could change the direction. Develop what
 is already useful rather than manufacture novelty or objections on every reply.

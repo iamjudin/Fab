@@ -19,6 +19,19 @@ A provisional favorite may help exploration, but explain what remains open and
 leave room for a new contribution. A selected direction calls for development,
 not another unsolicited set of competing directions.
 
+## Incremental proposals in an existing project
+
+A request to combine, rename or enrich an idea can hide a change in the user's
+experience. Check the relationship to the known goal: does the proposal change
+what someone must understand, hold in mind, decide, supply or do? If a relevant
+project finding already addresses that change, consult it before settling the
+answer. Explain the useful consequence or tradeoff, and propose a bounded way
+forward. A short reasoned reply can be sufficient; more headings are not depth.
+
+For a purely cosmetic edit with known meaning, answer directly. Do not manufacture
+a debate or demand evidence for every label. The trigger is a consequential change
+of meaning, not the presence of words such as "rename" or "merge".
+
 ## Bring a new contribution
 
 Useful moves include separating a symptom from its cause, exposing an overlooked

@@ -16,6 +16,15 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-13 — Contextual depth corrective isolates knowledge application
+
+- Type: experimental corrective checkpoint
+- Area: Brainstorm incremental proposals
+- Evidence: [contextual results](../experiments/workflow-tests/brainstorm-context-20261013/results.md).
+- Result: baseline/v1 read evidence but remained mostly incremental until creator feedback. V2 brings a consequential distinction into the initial reply; cosmetic control remains brief. Original miss and correction are separate.
+- Limits: six source turns, bounded context reconstruction, GPT-6.1 Sol/Medium, unblinded root review. Source access was not the observed blocker; an early observer inference is corrected. No universal dialogue or installed-runtime pass.
+- Next: limited adoption decision for v2; implementation remains experimental and main backlog owns FAB-14. No merge/install/release or observed-product change.
+
 ## 2026-10-13 — Brainstorm dialogue candidate compared without a framework mask
 
 - Type: experimental checkpoint
