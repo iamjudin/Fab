@@ -1,0 +1,7 @@
+{
+  "helper_sha256": "a4b2cb1aac19c0f10e3ba5ed8a67c07d04629102c3e5f77fd447b6ac8f398a02",
+  "synthetic_input_sha256": "e83d2b9582f3ae744560bd42fdfd030bfe941f09a1619cd1931fe419ad7408bf",
+  "dense_paragraph_preserved_verbatim": true,
+  "compact_label_fields_become_table": true,
+  "scope": "Direct helper calls only, no model turn, source edits or vault transfer"
+}

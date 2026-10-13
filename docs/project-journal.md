@@ -16,6 +16,24 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-13 — Research reader contract and Bookworm boundary correction candidate
+
+- Context: FAB-15 recovered in its authorized isolated chat and branch. Creator
+  requested readable research while retaining evidence and full source material.
+- Decision: one bundled reader contract maps questions to comparisons, lists and
+  causal prose. Replace the former literal Deep Research tail and route research
+  assignments, synthesis and ingestion briefs to it. Do not impose layout quotas.
+- Result: source candidate and synthetic reading example prepared. A read-only
+  Bookworm helper probe preserves dense prose and transforms compact labeled
+  fields. Its separate engineering task clarifies semantic editing permission
+  without changing that project or repeating its existing formatting rules.
+- Evidence: package guard and 50 regressions pass. Semantic example review caught
+  and corrected a denominator error, illustrating why layout review alone fails.
+  [Result packet](../experiments/maintenance/research-readability-20261013/results.md).
+- Limits/next: no fresh model behavior, external research generation or native
+  Obsidian rendering observed. Main owns backlog/integration and any release.
+  Recommend one behavior check and reader observation before broader claims.
+
 ## 2026-10-13 — Research readability becomes an authorized separate workstream
 
 - Context: creator finds new research exports difficult to read and supplied a

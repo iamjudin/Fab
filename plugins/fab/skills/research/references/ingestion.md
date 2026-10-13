@@ -46,7 +46,8 @@ human original even when a bundled module is withdrawn; remove its import mark.
 2. Preserve all in-scope source sections in a machine packet with an index and
    external source links. Label case-specific sections and exclusions. Structural
    conversion must not quietly discard counterevidence or qualifications.
-3. Write the brief: decision served, when to read deeper, applicable method,
+3. Apply the [reader contract](reader-contract.md) to the human brief without
+   rewriting the preserved original or lossless full packet. Write the brief: decision served, when to read deeper, applicable method,
    evidence/interpretation/hypothesis boundaries, limitations and update trigger.
    Keep source-section IDs for traceability. A summary is not new evidence.
 4. Validate correspondence to the source, links and conflicts with current

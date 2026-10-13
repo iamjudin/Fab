@@ -8,6 +8,9 @@ Read [shared core](../../shared/core.md). For existing/durable project work read
 # Research
 Identify what decision the evidence can change, sources/method, sufficient scope,
 stop and limits. Use existing context without a mandatory product frame/graph.
+For research assignments, synthesis and human briefs read the
+[reader contract](references/reader-contract.md). Plan evidence and its reader
+presentation together, without reducing the evidence scope to fit the layout.
 For reusable knowledge choose only the relevant [method](../../shared/methods/index.md).
 If deeper needed, use scripts/research_packet.py read <full.json> --index, then
 --section <ID>. No full-library reading or Brain dependency.

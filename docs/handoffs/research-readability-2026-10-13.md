@@ -88,7 +88,11 @@ That file is ignored and is not a required installed-runtime dependency.
 
 ## Handoff status
 
-This packet prepares a proposed separate chat. Actual creation, branch/checkout
-identity and recovery are not yet established. Ask the new chat to orient briefly
-and continue the authorized work once creation is approved. A queued client ID is
-not a verified recovery. Keep a single owning backlog in the main project.
+Recovery verified on 2026-10-13 in managed checkout `b266/Fab`, branch
+`codex/fab-research-readability` from `7c4b26f`. The isolated chat read this packet,
+private input references and applicable project guidance without another briefing.
+
+The scoped correction, synthetic reading example, Bookworm task and checks are
+complete. See [result and return packet](../../experiments/maintenance/research-readability-20261013/results.md).
+Main retains canonical backlog/integration/install/release ownership. No Bookworm
+edit, additional chat, subagent, install, merge or publication occurred.
