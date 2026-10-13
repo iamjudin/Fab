@@ -73,11 +73,15 @@ runtime installation or publication. Keep main ownership and return criteria cle
 ## Current boundary
 FAB-15 returned candidate df664b6 and creator explicitly authorized integration,
 local update and public GitHub release on2026-10-13. Integrated via2526511.
-Beta.25 preparation:72files/fdc8e22c01e7957c, framing/readability/independent
+Released/installed beta.25:72files/fdc8e22c01e7957c, framing/readability/independent
 research/application/output review. External V2/V3 compliance remains PARTIAL
 with source, arithmetic and layout failures. No guaranteed Deep Research
 compliance, personal-data anonymization, native render or cross-project proof.
 Bookworm task prepared, no implementation/transfer authorized. Main owns release.
+50regressions, scoped gate, exact-source CI, anonymous assets and clean/primary
+exact-tag installation pass. Two source GPT-6.1 Sol/Medium turns retain the initial
+legacy-host-footer conflict and corrective after creator-approved global routing
+change. Other global rules unchanged. No installed model turn is claimed.
 For Fab Research the creator-approved localized reader/presentation contract
 supersedes the former literal Deep Research tail. Historical prompts stay frozen.
 Creator 2026-10-13 authorized integration, local update and public GitHub release
@@ -94,14 +98,15 @@ the gap was visible application. No forced Six Hats mask. Long-context stability
 creator usefulness and native chat recovery remain open. One copy timing-anchor
 assumption is retained as a caveat. New chat creation requires explicit agreement
 to its concrete scope; this release authorization does not itself create a chat.
-Installed Fab0.1.0-beta.24,69files/24fcdfca505a5a13. All ten independent contracts.
+Installed Fab0.1.0-beta.25,72files/fdc8e22c01e7957c. All ten independent contracts.
 50local regressions, bounded outcome/domain/UI/maintenance smokes; not universal
 maturity. Current detailed state in docs/handoff.md and docs/backlog.md. Continue
 across checkpoints when authorized; user explicitly rejected artificial pauses.
 Creator 2026-10-12 authorized public GitHub release of current iamjudin/Fab,
 MIT for original material and retention of history including author email/paths.
-Current public beta.24 at v0.1.0-beta.24/e4b49aa: creator icon, English use-case
+Current public beta.25 at v0.1.0-beta.25/edf938d: creator icon, English use-case
 copy,50tests, remote CI, anonymous assets and isolated exact-tag install PASS.
+Historical beta.24 remains immutable at v0.1.0-beta.24/e4b49aa.
 Historical beta.23 remains immutable at v0.1.0-beta.23/c97c29d.
 Native card display and fresh language-rule behavior remain unobserved.
 Historical beta.22 at v0.1.0-beta.22/8186ed6: GitHub CI, anonymous assets, clean

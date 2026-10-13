@@ -7,10 +7,10 @@
     "regressions": 50,
     "scope": "pass",
     "sourceBehavior": "bounded corrective pass after explicit host-policy change; original conflict retained",
-    "remoteCI": "pending",
-    "cleanInstall": "pending",
-    "primaryInstall": "pending",
-    "assets": "pending",
+    "remoteCI": "pass",
+    "cleanInstall": "pass: anonymous exact-tag snapshot SHA and72-file parity",
+    "primaryInstall": "pass: supported exact-tag update and72-file parity",
+    "assets": "pass: anonymous hashes, full ZIP/source and scope correspondence",
     "installedModelBehavior": "unobserved; two source turns only"
   },
   "limits": [
@@ -28,7 +28,13 @@
       "release-scope.json": "b85ea04127016dae883c79e9373f84237563cb47485495a08f07adedc4b5ae8f",
       "fab-0.1.0-beta.25.zip": "c782923155e4111ffe57d26fe3c8edfa17c096dc350ccdd3bbfe302ca7468b43",
       "SHA256SUMS.txt": "030e0af84deba63c65f095c00a56776e50909ee4e09c30e4a1ae232533186379"
-    }
+    },
+    "tag": "v0.1.0-beta.25",
+    "commit": "edf938de15474f07fde4cd79d9de573ef9418f2f",
+    "ci": "https://github.com/iamjudin/Fab/actions/runs/38432420997",
+    "release": "https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.25",
+    "isDraft": false,
+    "isPrerelease": true
   },
   "usage": {
     "turns": 2,
@@ -51,5 +57,7 @@
     "resets": 0,
     "boundary": "source initial/corrective, not installed model execution"
   },
-  "hostCorrection": "global literal footer replaced by active-contract routing after creator approval; other sections preserved"
+  "hostCorrection": "global literal footer replaced by active-contract routing after creator approval; other sections preserved",
+  "installedPath": "/Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.25",
+  "cleanup": "complete: source/isolated cache matched retained assets, fixture guidance copied, owned temporary root removed; primary cache and global backup retained"
 }

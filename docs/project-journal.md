@@ -16,6 +16,26 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-13 — Beta.25 reaches exact-tag public and local installation
+
+- Result: [beta.25](https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.25)
+  installed/published,72files/fdc8e22c01e7957c. Source EDF tag, CI, anonymous
+  assets, clean install and primary update bind the exact package.50regressions
+  and scoped gate pass. Original creator icon and older tags unchanged.
+- Meaning: readable/reusable research and output review are now shipped contracts,
+  with independent-topic conditions and separate local application. External
+  source/numeric/layout failures remain PARTIAL, not reliable-service proof.
+- Host correction: first source probe retains a stale globally mandated footer.
+  Creator approves a neutral routing replacement, other global rules unchanged.
+  Same-input corrective supports new-format application. Two source GPT-6.1
+  Sol/Medium turns,126,229input/96,640cached/4,596output,170.15s excluding root
+  overhead. No installed model turn or additional external research rerun.
+- Limits/next: native rendering, full source quality, cross-project transfer and
+  Bookworm modes remain unverified. Bookworm task is prepared, not implemented.
+  [Report/receipt](../experiments/releases/research-beta25-20261013/report.md)
+  preserve initial failures, scope and retained artifacts. Owned scratch cleaned
+  after parity/retention checks. Next is separately authorized Bookworm work.
+
 ## 2026-10-13 — Research candidate returns for a scoped public/local release
 
 - Creator explicitly authorized integration and release in the feature chat.

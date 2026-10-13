@@ -1,5 +1,24 @@
 # Рабочее состояние Fab
 
+## 2026-10-13 — Beta.25 release completed
+
+Installed/public0.1.0-beta.25,72files/fdc8e22c01e7957c, immutable source tag at
+edf938de15474f07fde4cd79d9de573ef9418f2f.
+[Release](https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.25) and
+[receipt](../experiments/releases/research-beta25-20261013/report.md):50regressions,
+scope, exact-source CI, anonymous assets, clean/primary exact-tag installs and
+complete ZIP/cache parity pass. Source assignment initially used the globally
+mandated old footer despite new contract reads. Creator approved replacing only
+that global section with neutral active-contract routing. Same-input source
+corrective on GPT-6.1 Sol/Medium omits old footer/semicolons and separates topic/
+application. No installed model execution or guaranteed external compliance.
+V2/V3 failures and the original proactive chat-trigger FAIL remain preserved.
+Bookworm task is prepared only. Canvas/source history remain unchanged.
+Owned temporary roots cleaned after verified retention. Next useful scope:
+separately authorized Bookworm implementation and ordinary-use observations,
+not another full external research rerun or automatic source migration.
+
+
 ## 2026-10-13 — Beta.25 research integration authorized
 
 Creator explicitly approved integration and local/public release from the feature

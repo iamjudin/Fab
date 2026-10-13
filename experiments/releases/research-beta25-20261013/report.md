@@ -1,5 +1,10 @@
 # Fab beta.25 release verification
 
+Outcome: beta.25 is published and installed,72files/fingerprint `fdc8e22c01e7957c`.
+Source/scope/regression checks, exact-source CI, anonymous assets and clean/primary
+installation pass. Initial host conflict and source corrective are retained.
+External research compliance remains PARTIAL and Bookworm is unimplemented.
+
 Creator authorized integration and local/public release. Source merge preserves
 both the workstream result and the original missed proactive chat separation.
 Research scope: reader contract, localized assignment tail, independent topic and
@@ -8,8 +13,9 @@ and returned-output coverage/source/numeric review. No bulk history migration.
 
 ## Preparation
 
-Version0.1.0-beta.25, package identity to be recorded. Existing50regressions pass
-on integrated candidate. Source probes and distribution verification pending.
+At the tagged preparation checkpoint: version0.1.0-beta.25,72files and existing
+50regressions pass on integrated candidate. Source/distribution checks were pending.
+The completed records below supersede preparation without moving the tag.
 
 ## Retained failures and boundaries
 
@@ -53,3 +59,27 @@ excluding root overhead. No resets, purchases or third model run. The originally
 proposed output-review probe is not run because the second turn is used for the
 host corrective. No installed-model execution is claimed. Source/cache parity
 and installation are separately checked below.
+
+## Completed distribution
+
+[Public beta.25](https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.25)
+is a published prerelease, not draft. Immutable tag resolves to
+`edf938de15474f07fde4cd79d9de573ef9418f2f`.
+[Exact-source CI](https://github.com/iamjudin/Fab/actions/runs/38432420997) passes.
+Clean anonymous exact-tag marketplace/install with isolated Codex home and disabled
+Git credentials matches snapshot SHA and all72source files. Supported primary
+update matches72files/fingerprint `fdc8e22c01e7957c`. Anonymous ZIP/scope/checksum
+downloads match upload hashes, full source inventory and the tagged scope plan.
+Older release tags remain unchanged. No public Plugins Directory submission.
+
+Package/source/regressions and bounded source corrective evidence support limited
+beta use of the new contracts. Actual installed-model execution, native rendering,
+independent external research reliability and cross-project application remain
+unverified. The initial host conflict and external partial failures stay visible.
+Bookworm task is prepared but unimplemented. Next useful work is its separately
+authorized implementation, with mode-specific coverage/preservation evidence.
+
+Useful events, outputs, source tag, assets, fixture guidance and private global-rule
+backup are retained. Source and isolated cache matched retained artifacts before
+owned temporary root removal. Primary cache remains. Saved probes require fixture
+recreation before reuse. No private raw reports/screenshots were copied into Git.
