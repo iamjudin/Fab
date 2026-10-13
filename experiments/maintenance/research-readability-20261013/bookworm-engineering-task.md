@@ -233,3 +233,23 @@ no task transfer or implementation is authorized by this packet alone. First
 review the new raw report against the previous report, then refine examples and
 remaining processing needs. That comparison does not substitute for independent
 Digest or Enrich behavior checks.
+
+## Raw comparison observation, 2026-10-13
+
+The creator supplied the second raw report and it has now been reviewed before
+Bookworm. See [comparison result](once-market-comparison-results.md). Waiting for
+this observation is complete, but no task transfer has occurred or been inferred.
+
+Add these observed pattern classes to synthetic Refine fixtures:
+
+- Numbered experiments whose fields remain inside long paragraphs.
+- Comparison tables that repeat preceding full profiles.
+- Mixed-purpose cells containing multiple claims and explanations.
+- New reader prose that retains prohibited punctuation.
+- Unsupported substantive claims embedded in otherwise reformattable content.
+
+Verify that structural editing preserves the claims and their evidence status.
+Do not mistake improved formatting for completed economics or source verification.
+Missing costs, unsupported projections or inconsistent assumptions require an
+explicit substantive scope beyond ordinary Refine. No raw private report excerpts
+belong in public test fixtures. This observation does not validate Digest/Enrich.

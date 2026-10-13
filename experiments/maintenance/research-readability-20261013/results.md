@@ -144,3 +144,13 @@ Main-owner integration review must include the change to default source marking.
 Recommend a separate bounded behavior check for independent question formation
 and project transfer after the pending raw report review. No installation,
 publication, merge or edits to other projects were performed.
+
+## Raw result received and reviewed
+
+The second raw external export was supplied and preserved on 2026-10-13.
+[Comparison result](once-market-comparison-results.md) records partial orientation
+and comparison improvements alongside dense experiments, duplicated reading layers,
+punctuation misses and substantive evidence gaps. Native layout, source facts and
+external execution configuration remain unverified. No Bookworm processing.
+The waiting prerequisite is satisfied, but task transfer remains unperformed and
+requires its own authorization. No automatic new chat or other-project edit.

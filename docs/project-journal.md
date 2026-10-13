@@ -16,6 +16,20 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-13 — Raw research comparison shows partial compliance
+
+- Context: creator supplied the second raw report before Bookworm processing.
+  Both originals and a location-based audit are retained privately with hashes.
+- Result: orientation and comparison improved, but dense numbered blocks,
+  duplicated prose/table layers and punctuation restrictions remain unresolved.
+  Substantive evidence and economic coverage gaps are separate from formatting.
+- Decision: record partial evidence, add observed pattern classes to the Bookworm
+  task, preserve stricter source boundaries. No invented support or silent
+  substantive correction under Refine. Digest/Enrich remain independently untested.
+- Limits/next: external configuration, source verification and native layout
+  unobserved. Raw-review waiting prerequisite is satisfied, no task transfer yet.
+  [Comparison result](../experiments/maintenance/research-readability-20261013/once-market-comparison-results.md).
+
 ## 2026-10-13 — Separate reusable research from project application
 
 - Context/decision: creator approved independent topic research with project use
