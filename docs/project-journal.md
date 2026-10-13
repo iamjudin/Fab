@@ -29,10 +29,15 @@ Backfill выполнен по текущему чату и проектным �
   a separate Fab chat with isolated branch/worktree. Preserve quotes/code, causal
   reasoning and evidence qualifiers. Keep private inputs out of public history.
 - Result/boundary: [packet](handoffs/research-readability-2026-10-13.md) prepared,
-  FAB-15 is the main owning record. Actual creation/recovery still pending at this
-  checkpoint. No readability runtime edit, install, release or Bookworm mutation.
-- Next: dispatch and verify recovery, then continue the authorized scoped work in
-  the new chat without requiring another creator briefing.
+  FAB-15 is the main owning record. Actual creation/recovery subsequently confirmed: thread
+  01a135d2-7e5b-7371-8a5d-4a35bb9f95be, isolated checkout b266/Fab and branch
+  codex/fab-research-readability at7c4b26f. The trace reads packet/private inputs
+  and states the accepted outcome/boundaries, then creates the branch and continues.
+  The initial queued client ID/detached checkout was not treated as completion.
+  No shared runtime update, release or Bookworm mutation.
+- Next: the new chat continues scoped correction and reviewable evidence, without
+  another creator briefing. Recovery is bounded handoff evidence, not completion
+  of the research readability task or universal continuity.
 
 ## 2026-10-13 — Beta.24 reaches both local and public distribution
 

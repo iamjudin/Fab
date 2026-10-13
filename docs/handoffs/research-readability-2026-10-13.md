@@ -86,9 +86,22 @@ Private local input paths and latest creator feedback are retained by the main
 chat at experiments/maintenance/research-readability-20261013/raw/inputs.json.
 That file is ignored and is not a required installed-runtime dependency.
 
-## Handoff status
+## Verified handoff status
 
-This packet prepares a proposed separate chat. Actual creation, branch/checkout
-identity and recovery are not yet established. Ask the new chat to orient briefly
-and continue the authorized work once creation is approved. A queued client ID is
-not a verified recovery. Keep a single owning backlog in the main project.
+Creator approved creation and context transfer on2026-10-13. Actual project chat:
+"Fab — читаемость исследований", thread01a135d2-7e5b-7371-8a5d-4a35bb9f95be,
+host local. Checkout: /Users/iamjudin/.codex/worktrees/b266/Fab, branch
+codex/fab-research-readability, baseline7c4b26f1abcdcf7ee4a5de7e45eefbd9e1ab1a78.
+
+The host initially returned only a queued client ID and a detached checkout.
+The actual thread was subsequently found in the correct Fab project. Its tool
+trace reads this packet and the ignored private input record, then project
+AGENTS and relevant installed/source contracts. The new chat states the reader
+outcome, preservation and semicolon requirements, confirms no install/merge/
+publication or Bookworm writes, creates its own codex/ branch and continues
+source/example inspection. Main verified the actual branch and baseline.
+
+Context recovery is confirmed within this handoff, not proof of completed
+readability correction, full future continuity or native Obsidian rendering.
+Main owns the global backlog and release. Read feature results through normal
+status/read tools when needed. No automatic cross-chat messaging or new monitor.

@@ -6,8 +6,13 @@ FAB-15: creator requested a full reconsideration of research framing/output tail
 and a separate Bookworm repair task. Examples, initial diagnosis and latest
 semicolon instruction are preserved in the [packet](handoffs/research-readability-2026-10-13.md),
 with private source paths retained in the ignored input record. Creator agreed to
-create a separate Fab chat with branch/worktree and transfer the task. Creation
-and recovery are pending, not yet claimed. Main owns release/install/backlog.
+create a separate Fab chat with branch/worktree and transfer the task. Actual chat "Fab — читаемость исследований",
+thread01a135d2-7e5b-7371-8a5d-4a35bb9f95be, now works at
+/Users/iamjudin/.codex/worktrees/b266/Fab on codex/fab-research-readability from
+7c4b26f. Packet/private input reads and the orientation/accepted boundaries are
+verified in its trace; main independently confirmed the actual branch/baseline.
+Context recovery succeeded, correction results are still in progress.
+Main owns release/install/backlog.
 Installed/public beta.24 remains unchanged. Preserve the unrelated pending
 external-observation record when preparing this handoff checkpoint.
 
