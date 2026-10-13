@@ -154,3 +154,17 @@ punctuation misses and substantive evidence gaps. Native layout, source facts an
 external execution configuration remain unverified. No Bookworm processing.
 The waiting prerequisite is satisfied, but task transfer remains unperformed and
 requires its own authorization. No automatic new chat or other-project edit.
+
+## V3 correction and next external test
+
+Creator authorized updating the rules from the raw comparison and another test.
+A new bundled output-review reference is routed through Research, Deep Research
+and the reader contract. It requires coverage or named gaps, claim support and
+conditional numerical consistency. Multi-field items use separate lines and full
+profiles are not repeated around comparison tables.
+
+The new private prompt asks for independent topic research, retains relevant
+conditions and defers project application. [V3 contract](v3-contract.md) records
+the practical comparison, checks and creator-run boundary. Package guard and 50
+regressions pass. External Deep Research run remains pending. No install/release,
+Bookworm transfer or broader validation is inferred from local checks.

@@ -4,7 +4,10 @@ Apply the [reader contract](reader-contract.md) when preparing the assignment.
 State the decision or knowledge question, required evidence, transfer boundaries,
 stop condition and unknowns. Add a topic-specific presentation plan: what the
 reader needs to compare, scan and understand causally. Keep the full evidence
-scope, but separate detailed records from the main reading path.
+scope, but separate detailed records from the main reading path. Apply
+[evidence review](evidence-review.md): require coverage or a named gap, supporting
+links and coherent numerical scenarios where relevant. Model the compared option,
+not an unrelated option with more convenient available numbers.
 Apply [independent research and application](reuse.md). Formulate a standalone
 research question with relevant topic conditions instead of the consuming project
 name. Request independent findings, then prepare local application separately.
@@ -19,6 +22,9 @@ it faithfully when needed. The former verbatim Russian tail is superseded.
 > or useful orientation, evidence status and the main limitation. Use compact
 > tables for comparisons and repeated short fields, lists for independent items,
 > numbered steps for procedures and short paragraphs for causal explanation.
+> For multi-field items put fields on separate lines, not inside a long numbered
+> paragraph. Keep each detailed profile once instead of repeating it before and
+> after a comparison table.
 > Avoid long prose inside table cells and repeated summary layers. Preserve
 > counterevidence, conditions, uncertainty and source traceability. Keep detailed
 > evidence in a separate linked appendix or full packet rather than crowding the
@@ -30,7 +36,10 @@ it faithfully when needed. The former verbatim Russian tail is superseded.
 > the intended note width. TD/TB alone does not ensure this. Use a table or list
 > instead when it explains the relationship more clearly. Before delivery review
 > the opening and a dense section for scanning, reasoning and evidence fidelity.
-> State any unverified rendering or unresolved source limitation.
+> Check that each required question is answered or has an explicit evidence gap.
+> Reconcile numerical formulas, assumptions and tables with the compared options.
+> Link material empirical claims to actual supporting evidence and state the
+> report date. State any unverified rendering or unresolved source limitation.
 
 This tail does not replace the topic-specific evidence and presentation plan.
 A requested prompt is a delivered assignment, not a completed investigation.

@@ -18,7 +18,9 @@ For reusable knowledge choose only the relevant [method](../../shared/methods/in
 If deeper needed, use scripts/research_packet.py read <full.json> --index, then
 --section <ID>. No full-library reading or Brain dependency.
 For actual research reach the promised evidence threshold with available tools;
-otherwise prepare the brief/prompt and name what remains unperformed. Verify
+otherwise prepare the brief/prompt and name what remains unperformed. Apply
+[output evidence review](references/evidence-review.md) to assignment coverage
+and actual returned results. Layout compliance does not establish evidence quality. Verify
 unstable consequential facts through current primary sources.
 When ingesting read [ingestion contract](references/ingestion.md); original,
 brief and compatible indexed full retain qualifications and provenance.

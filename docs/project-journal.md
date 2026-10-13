@@ -16,6 +16,21 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-13 — Correct observed research misses and prepare standalone V3 test
+
+- Context/decision: creator asks to update Fab rules from the raw result and test
+  the approved independent-research boundary. Keep relevant topic conditions and
+  separate project application rather than merely removing the project name.
+- Result: output-review contract covers explicit gaps, empirical support and
+  conditional numerical consistency. Reader rules strengthen separate experiment
+  fields and nonduplicated profile/detail presentation. V3 prompt is retained
+  privately with a review contract, ready for the creator's external run.
+- Evidence: package guard and 50 regressions PASS, prompt reviewed for scope,
+  independent identity, structure and punctuation. No external behavior yet.
+  [V3 test contract](../experiments/maintenance/research-readability-20261013/v3-contract.md).
+- Boundary/next: await raw V3 and assess it before project application or Bookworm.
+  No installation, release, task transfer or native layout claim.
+
 ## 2026-10-13 — Raw research comparison shows partial compliance
 
 - Context: creator supplied the second raw report before Bookworm processing.

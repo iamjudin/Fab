@@ -34,7 +34,9 @@ by reader questions rather than a fixed universal outline.
 - Use tables for genuine comparison. Keep cells short and columns few enough
   to scan in an ordinary note pane. Move long explanations into linked detail
   or a nearby paragraph. A paragraph pasted into a cell is still dense prose.
-- Use lists for independent items and inline enumerations. Preserve whether
+- Use lists for independent items and inline enumerations. For experiments or
+  other multi-field items, put fields on separate lines under a short heading.
+  Numbering a dense paragraph does not make its fields scannable. Preserve whether
   items are alternatives, cumulative conditions or ordered steps.
 - Keep causal arguments in short paragraphs, each developing one point.
   Preserve connecting reasoning, counterevidence and qualifications. Do not
@@ -44,7 +46,8 @@ by reader questions rather than a fixed universal outline.
   arguments into short sentences. Preserve code and exact source quotations.
 - Keep evidence, interpretation, hypothesis and accepted decisions distinct.
   Attach the relevant source and uncertainty to the claim they qualify.
-- Avoid duplicated overview and detail records. A brief may select what serves
+- Avoid duplicated overview and detail records. Do not write full prose profiles
+  and then reproduce them in a comparison table. A brief may select what serves
   the question, but its exclusions must remain accessible in the full material.
 
 ## Diagrams and sources
@@ -72,3 +75,6 @@ claims, numbers, negations, conditions, uncertainty and sources to full material
 Inspect table and diagram rendering at the intended width when available.
 Otherwise name layout verification as unobserved. Markdown validity, word counts,
 table counts and compression ratios do not establish readability or human value.
+
+Apply [evidence review](evidence-review.md) separately from the reader review.
+Name required questions left unanswered and inconsistent or unsupported claims.
