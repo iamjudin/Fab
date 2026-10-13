@@ -1,0 +1,29 @@
+[
+  {
+    "id": "simplify",
+    "entry": "cowork",
+    "initial": "I am designing a personal field-notes app. Our small pilot had eight participants: capture was used briefly several times a day, while reviewing notes happened roughly once a week. I want to combine capture and review into one daily form so the app has fewer screens. Let us think about that.",
+    "followup": "The goal is fewer choices at the moment of capture. I do not care how many screens exist overall. I still want people to review when it is useful. What would you change?"
+  },
+  {
+    "id": "open",
+    "entry": "cowork",
+    "initial": "I enjoy making sound recordings on walks and want to make a tiny app around that, but I have no clear concept. Give me some directions to explore. I am not choosing one today.",
+    "followup": "Listening again is the part I care about. I have plenty of recordings, but after a month I cannot remember why each mattered to me. I do not want AI or a daily habit. Keep exploring."
+  },
+  {
+    "id": "sound",
+    "entry": "brainstorm",
+    "initial": "I am making an offline recipe notebook for myself. I cook from the same twelve recipes and keep losing my handwritten substitutions. My idea is to attach one short substitution note to a recipe, save it automatically, and show it next time. What is your take? No accounts or social features."
+  },
+  {
+    "id": "accepted",
+    "entry": "cowork",
+    "initial": "For a private event album we already accepted a fixed 48-hour upload window. Participants consented and we are keeping this decision. Brainstorm what a person arriving after the window should see and be able to do. Reading the album remains available; do not redesign the upload rule."
+  },
+  {
+    "id": "evidence",
+    "entry": "brainstorm",
+    "initial": "Five friends said they liked my prototype of a desk tidying app. I think this proves people need it, so I want to build a full feature set. What else could I add? The current prototype only stores before/after photos and a self-written next step."
+  }
+]

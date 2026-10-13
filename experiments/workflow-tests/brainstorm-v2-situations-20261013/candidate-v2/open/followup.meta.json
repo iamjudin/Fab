@@ -1,0 +1,38 @@
+{
+  "variant": "candidate-v2",
+  "case": "open",
+  "turn": "followup",
+  "exitCode": 0,
+  "timeout": false,
+  "seconds": 30.78,
+  "threadId": "01a1358b-02c2-71b1-af77-bb240517c948",
+  "actualRuntime": {
+    "model": "gpt-6.1-sol",
+    "effort": "medium"
+  },
+  "usage": {
+    "input_tokens": 104610,
+    "cached_input_tokens": 85248,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1333,
+    "reasoning_output_tokens": 47
+  },
+  "workspaceUnchanged": true,
+  "workspaceChanges": [],
+  "command": [
+    "codex",
+    "exec",
+    "-C",
+    "/private/tmp/fab-brainstorm-v2-situations-20261013-vodr1jya/candidate-v2",
+    "-s",
+    "read-only",
+    "resume",
+    "--json",
+    "--skip-git-repo-check",
+    "01a1358b-02c2-71b1-af77-bb240517c948",
+    "-o",
+    "/Users/iamjudin/.codex/worktrees/fab-brainstorm-dialogue/Fab/experiments/workflow-tests/brainstorm-v2-situations-20261013/candidate-v2/open/followup.md",
+    "-"
+  ],
+  "errors": []
+}

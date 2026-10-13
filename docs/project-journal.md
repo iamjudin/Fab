@@ -16,6 +16,15 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-13 — V2 receives varied virtual dialogue coverage
+
+- Type: bounded behavioral validation
+- Area: Brainstorm and Cowork entry
+- Evidence: [five situations/seven turns](../experiments/workflow-tests/brainstorm-v2-situations-20261013/results.md).
+- Result: v2 demonstrates critique, agreement, material contribution, feedback uptake, open exploration and accepted-constraint preservation. No framework mask or questionnaire. A copy example assumes an unspecified timing anchor; retain that caveat.
+- Limits: synthetic source-snapshot probes, unblinded root review, no statistical superiority, installed behavior or human acceptance. Target unchanged at e7d94f8.
+- Recommendation: limited everyday trial after explicit experimental-branch promotion authority. No install, merge, publication or private-product change. Temporary fixtures removed after evidence retention.
+
 ## 2026-10-13 — Contextual depth corrective isolates knowledge application
 
 - Type: experimental corrective checkpoint
