@@ -1,5 +1,21 @@
 # Рабочее состояние Fab
 
+## 2026-10-14 — Observation accumulates actionable maintenance scope
+
+Creator authorizes the active observer to write concise deduplicated findings into
+the owning backlog, plus its sanitized report/private state. The observed product
+stays read-only. Small findings accumulate quietly, a coherent actionable batch
+or recurring issue triggers a concrete improvement proposal. Last proposal state
+prevents repeated unchanged pings. Material failures/required choices stay timely.
+
+An explicit stop request here triggers main review and bounded handling of the
+accumulated Fab scope without a second generic approval. Explain scope, implement
+clear grounded repairs, verify and checkpoint. Consequential choices still need
+discussion. No runtime edits/tests/commits/releases during observation. Release
+remains explicitly scoped, and disabling in UI alone does not schedule a final
+processing turn. Native automation update/persistence checked, hourly delivery
+preserved. No runtime package change or observation stop in this iteration.
+
 ## 2026-10-14 — Knowledge cleanup completed in source
 
 Creator approved cleanup of retained knowledge before commissioning more research.

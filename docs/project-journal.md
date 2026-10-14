@@ -16,6 +16,26 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-14 — Accumulate observations into coherent improvement batches
+
+- Creator refined the operating model: active observation may write the backlog,
+  and accumulated small fixes should prompt a scoped improvement proposal. Stopping
+  observation here should trigger processing of the retained maintenance scope.
+- Existing heartbeat updated through the native automation tool. Exact saved prompt,
+  active status, hourly schedule, identity and delivery chat were verified. The
+  observed project remains read-only, and original target history/cursor is preserved.
+- Authorized source scope on a main-chat stop request: freeze and deduplicate,
+  explain the package, implement clear grounded Fab repairs, verify and checkpoint
+  without another generic approval. Actual tradeoffs and explicit release scope
+  remain human-owned. Monitor wakes do not implement, test, commit or publish.
+- Judgment: related causes/verification define a useful batch. Approximately three
+  small actionable findings or recurrence is a signal, not a quota. Old unresolved
+  findings can join without being presented as new. Unchanged proposals are not
+  repeatedly announced, while material failures remain timely.
+- Evidence/limits: [operating agreement](backlog.md#observation-accumulation-and-batch-processing--2026-10-14).
+  Native update/persistence checked, no new monitor, runtime change or stopped
+  observation. UI disable alone does not create a guaranteed final processing run.
+
 ## 2026-10-14 — Give an observed method deviation an execution disposition
 
 - Creator asked when monitored defects become implemented improvements rather

@@ -71,6 +71,17 @@ This rule does not authorize an immediate new chat, hidden delegation, a merge,
 runtime installation or publication. Keep main ownership and return criteria clear.
 
 ## Current boundary
+Creator2026-10-14 authorized active observation to triage meaningful findings in
+docs/backlog.md as well as sanitized report/private state. Reuse owners/IDs,
+record next/closure/disposition, stay read-only toward the observed product.
+Proactively propose coherent batches of accumulated small findings, ordinarily
+around three or a recurrent problem, not a quota or duplicate notification.
+An explicit stop-observation request here also authorizes main to process the
+accumulated Fab scope: deduplicate, explain the package, implement clear grounded
+repairs, verify and checkpoint without a second generic approval. Discuss actual
+consequential choices. Runtime edits/tests/commits remain outside monitor wakes,
+and release still requires explicit scope. Disabling in UI alone does not promise
+a later main-chat processing run. Existing hourly monitor updated, no stop now.
 Creator2026-10-14 approved existing-knowledge cleanup after the library audit.
 Unreleased source72files/a4ce6f41d9bc1d71: nine briefs separate knowledge/current
 Fab application, all437original packet sections retain exact content with reading

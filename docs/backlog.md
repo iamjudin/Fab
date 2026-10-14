@@ -43,6 +43,37 @@ public tag/Release, anonymous assets и exact-tag install в отдельный 
 README имеет явно исправленную erratum; tag/archive не переписывались. [Отчёт](../experiments/releases/public-beta22-20261012/report.md).
 Это новый distribution outcome в FAB-13; Canvas/continuity/open behavior не закрывает.
 
+## Observation accumulation and batch processing — 2026-10-14
+
+Creator authorizes the active observer to accumulate actionable Fab improvements
+in this canonical backlog while retaining sanitized evidence and private state.
+The observed product remains read-only. Match the existing owner/ID first and
+retain expected versus observed, surface/version, limits, next, closure and a
+clear disposition. A report without a next step is not an implementation queue.
+
+- Accumulation: meaningful small findings can be recorded quietly during work.
+  Routine progress, unchanged state or waiting needs no new entry or notification.
+- Batch signal: propose a coherent scope when roughly three related actionable
+  small findings accumulate or a recurring problem warrants focused repair.
+  This is judgment, not a quota. Unresolved older findings can join the scope,
+  but do not become new discoveries. Already fixed findings are not active work.
+- Proposal: state the grouped problem, expected benefit, selected scope and checks.
+  Record the last proposal/disposition privately and do not repeat an unchanged
+  batch. Main owns implementation. Material failures or real needed choices can
+  be raised immediately rather than waiting for a batch.
+- Stop-and-process: a creator request here to stop observation also authorizes
+  main to freeze/deduplicate accumulated findings, describe a bounded package,
+  implement clear evidence-backed Fab repairs, verify and checkpoint. No second
+  generic approval for this processing. Raise actual consequential choices.
+  A UI toggle alone cannot promise a processing turn after the monitor is disabled.
+- Boundaries: the monitor writes only this backlog, its sanitized report and
+  private state. No observed-product edits, runtime changes/tests/commits or public
+  publication during a wake. Implementation and release are separate main-owned
+  actions under actual creator scope. A proactive proposal is not a release request.
+
+The existing hourly observer is updated and remains active, with the same target
+and delivery chat. No new monitor, schedule change, runtime update or stop now.
+
 ## Observation triage — selected research method, 2026-10-14
 
 **Owner:** main Fab maintenance, Research with shared collaboration/authority.
@@ -82,8 +113,8 @@ It is not a blanket blocker for unrelated package surfaces.
 
 Meaningful observations should receive an explicit disposition: next verification,
 next update, deferred with a concrete trigger, or no change with a reason. Routine
-unchanged monitoring stays quiet. This triage is made in the main chat, not an
-expansion of the read-only observer's authority to patch runtime or manage products.
+unchanged monitoring stays quiet. The creator subsequently authorized backlog triage during observation as
+described above. Runtime repairs and product management remain outside a monitor wake.
 
 ## Knowledge cleanup — 2026-10-14
 
@@ -125,8 +156,9 @@ Library migration or runtime repair has been performed by this clarification.
 extends FAB-03/FAB-11/FAB-12 evidence: useful contextual jobs and editable review
 transfer, but reading ability from supplied research needed creator prompting.
 Correction and initial omission remain distinct. Native board QA and full semantic
-coverage were not independently verified. Hourly monitoring now records meaningful
-changes; repairs are deferred for discussion, not automatic product interventions.
+coverage were not independently verified. Hourly monitoring records meaningful changes and deduplicated backlog triage.
+Related improvements accumulate toward a concrete main-owned maintenance proposal.
+Runtime repairs and product interventions do not run automatically during a wake.
 
 Один ID, один владелец и статус. Запись содержит ожидаемое → наблюдаемое, версию/evidence, следующий проверяемый шаг и границу закрытия. Дедуплицировать с прежними WF-ID; локальные продуктовые неизвестные остаются в проекте. Отложенный пункт имеет триггер. Закрытие не означает универсальную зрелость.
 

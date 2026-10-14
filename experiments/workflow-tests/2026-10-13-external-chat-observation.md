@@ -1,5 +1,117 @@
 # External Fab chat observation
 
+## 2026-10-14 — Unagreed method substitution, retained result and manual handoff
+
+- Requested outcome: complete six commissioned investigations through the selected
+  external research method, then preserve reports, refine reader presentation,
+  transfer to the library and apply findings separately in the consuming project.
+- Original failure: after native result access remained unreliable, the assistant
+  announced that it would conduct an ordinary web evidence review for one topic.
+  It disclosed the method difference but did not obtain agreement to this change
+  before producing, refining and ingesting the substitute. The creator subsequently
+  asked what the distinction meant and why the agreed method had not been used.
+- Correction: the assistant acknowledged the unagreed substitution and classified
+  the web review as preliminary rather than completed commissioned research.
+  The creator then explicitly took ownership of all six external investigations.
+  The assistant delivered a single copyable prompt bundle and advised keeping the
+  new comparison independent of the earlier review.
+- Useful retained outcome: a topic-level web review has an original, refined view,
+  compatible indexed packet, local provenance and separate project application.
+  Artifact inspection corroborates method labeling, all 33 original sections,
+  exact original/packet correspondence and matching source hash. Original and
+  refined files each contain 36 Markdown source links. Link retention establishes
+  neither claim support nor research completeness. Library transfer and reader
+  audit are reported in the trace/records, not independently rendered here.
+- Execution boundary: the ledger preserves the initial starting/access failure
+  and later observed execution states rather than overwriting them. Four provider
+  conversations exist without complete reports obtained. Another returned ordinary
+  report is truncated. The substitute review remains separately labeled. Provider
+  UI/status assertions are trace/self-report evidence, not this observer's live audit.
+- Handoff boundary: the six complete prompt bodies are reported byte-identical
+  to their individual files and committed after a trailing-blank-line correction.
+  This is a ready manual handoff, not completed investigation or historical-source
+  reconciliation. Routine waiting for creator-owned results is not a defect.
+- Interpretation for Fab: extends FAB-15 and collaboration/authority evidence in
+  FAB-11. Honest labeling is useful but does not authorize changing an explicitly
+  selected research method. Library refinement cannot promote a substitute into
+  fulfillment of that commission. The source knowledge-cleanup candidate is not
+  installed here and does not explain or correct this observed beta.27 episode.
+- Deferred repair discussion: assess a bounded blocked-method case that preserves
+  the goal, offers the concrete viable alternative before dependent dispatch and
+  continues unrelated authorized preparation. Do not add a universal research-tool
+  preference or infer that one provider always produces better evidence.
+- Limits: actual model/effort unknown, no independent scientific fact-check,
+  semantic Refine preservation audit, native rendering, remote commit verification
+  or new test. No product edit, message, repair, commit or publication by the monitor.
+
+## 2026-10-14 — Quota interruption and explicit current-package resumption
+
+- Request: complete the authorized chain from external research through readable
+  library notes to separately attributed project application.
+- Terminal attempt: the previously active launch turn ended with an account usage
+  limit. Before interruption, the assistant reported research progress and further
+  submissions, consulted Bookworm Refine and its reader contract, and attempted
+  provider UI inspection. The observed trace establishes those actions and the
+  quota error, not independently verified provider execution or finished reports.
+- Retained record: the local execution ledger still describes the earlier launch
+  checkpoint. It is a useful historical record, but cannot substantiate the later
+  reported launches. No completed library processing or project ingestion is
+  established by this observation. Preserve the interruption rather than replacing
+  it with later success claims.
+- Resumption snapshot: a new turn is active after a creator continuation request.
+  It explicitly reads installed beta.27 Cowork/Research, shared core/project
+  contract and current research references. A comparison against an absent older
+  cache fails, followed by direct current-reference reads. This corroborates
+  explicit instruction refresh, not automatic chat reload or general efficacy.
+- The active turn reports that one output used ordinary web research rather than
+  the commissioned mode and proposes preserving that distinction. This is a
+  pending self-report, not an independently reviewed result or completed repair.
+  The active turn is not marked assessed.
+- Interpretation: extends existing FAB-02/FAB-15 evidence. The account limit is an
+  execution interruption, not a plugin behavior failure. The next useful boundary
+  is an actual returned report with its execution provenance, coverage, source
+  support and readable output checked. Further rule changes are premature here.
+- Limits: original model/effort unknown, no provider UI or scientific-source audit,
+  no completed output review, no messages, product changes, tests or publication.
+
+## 2026-10-14 — Destination recovery, foundation preparation and honest launch state
+
+- Request: recover the authorized research handoff, prepare a broad programme and
+  assignments, preserve accepted product decisions, then try assistant-operated
+  external research after explicit creator authorization.
+- Recovery: the initial destination turn reads current beta.26 Cowork/Research and
+  shared/research references, verifies the canonical checkout, reads the packet and
+  restates six domains and accepted boundaries. An incorrect top-level backlog
+  lookup fails, followed by the actual project backlog read. Existing pending
+  handoff edits are acknowledged and left intact during orientation.
+- Preparation: relevant existing material is selectively consulted. Programme
+  profiles separate questions, evidence expectations, reader outputs and stopping
+  criteria. Age/capability/support grouping and relevant variability are added
+  after creator feedback. Accepted product decisions and old evidence remain.
+- Original conversational miss: scope correction ends without returning to the
+  remaining task/choice. Creator already raised this here and FAB-11's focused
+  source correction is recorded separately. Do not report this as a new finding
+  or attribute the original beta.26 turn to the upcoming release.
+- Launch: six assignments and versioned execution records are prepared. Explicit
+  creator authorization precedes the browser launch trial. The first plan is sent,
+  but execution is unconfirmed after a disabled starting control/accessibility
+  error. The assistant distinguishes a saved plan and chat acknowledgment from
+  actual research progress and preserves usable unsubmitted assignments.
+- Supporting artifact: local execution record corroborates submitted/plan-created/
+  unconfirmed status, per-assignment revisions and the need to inspect the existing
+  plan before resubmitting. This is not independent provider execution or source
+  quality verification. Original failures and corrected record preparation remain
+  alongside the successfully saved documents.
+- Snapshot boundary: a later turn is in progress and reports renewed launch
+  activity. Its outcome is not assessed or marked completed. Do not present the
+  earlier blocker as necessarily current or the newer self-report as success.
+- Interpretation: bounded actual destination recovery and evidence-aware readiness
+  extend FAB-02/FAB-13/FAB-15. Creator initiated the handoff, so the proactive
+  separation failure remains open. A useful plan is not a completed study.
+- Limits: model/effort unknown, no provider UI audit, returned report, scientific
+  source check, full requirement audit or new model test. No observation repair,
+  message, product edit, commit/publication or automatic workflow management.
+
 ## 2026-10-14 — Creator-authorized observer retarget
 
 Creator explicitly approved moving the existing observer to the new research
@@ -89,8 +201,15 @@ Record meaningful changes, original defects, corrections and limits. Reuse the
 previous cursor; unchanged state needs no entry. Keep private project identifiers,
 exact turn references and observation state in ignored `external-chat-observation/raw/`.
 Do not copy the private project's research or complete conversation into Fab.
-No messages to the observed chat, product edits, new tests, commits or publication
-are authorized by a monitor run. Main-chat work may commit this sanitized record.
+Creator expanded recording authority on 2026-10-14: monitor wakes may also
+triage meaningful findings into the canonical Fab backlog, with existing owners,
+evidence, next/closure and disposition. Related small findings accumulate quietly
+and can trigger a scoped main-chat improvement proposal without repeated unchanged
+pings. The observed product stays read-only. No runtime edits, messages to the
+observed chat, new tests, commits or publication during monitoring. Main-chat work
+may commit this sanitized record. An explicit creator stop request here triggers
+main review and bounded processing of accumulated Fab scope under the operating
+agreement in the backlog, not an implementation job performed by the monitor.
 
 ## 2026-10-13 — Existing chat rereads beta.24 and continues useful work
 
