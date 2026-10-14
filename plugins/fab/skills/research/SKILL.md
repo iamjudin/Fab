@@ -18,11 +18,19 @@ For research assignments, synthesis and human briefs read the
 [reader contract](references/reader-contract.md). Plan evidence and its reader
 presentation together, without reducing the evidence scope to fit the layout.
 For reusable knowledge choose only the relevant [method](../../shared/methods/index.md).
-If deeper needed, use scripts/research_packet.py read <full.json> --index, then
---section <ID>. No full-library reading or Brain dependency.
+If deeper needed, resolve the [bundled reader](scripts/research_packet.py) from
+this skill's directory, then use `read <full.json> --index` and `--section <ID>`.
+Do not assume a script under the package root or current workspace. No full-library
+reading or Brain dependency.
 For actual research reach the promised evidence threshold with available tools;
-otherwise prepare the brief/prompt and name what remains unperformed. Apply
-[output evidence review](references/evidence-review.md) to assignment coverage
+otherwise prepare the brief/prompt and name what remains unperformed.
+Honor the agreed method as well as the evidence threshold. A blocked explicitly selected
+research mode is not permission to dispatch a substitute. Offer the concrete
+alternative before dependent execution. Use an already authorized fallback without
+another generic approval. When means are open, choose suitable available tools.
+Read the [method boundary](references/deep-research.md#selected-method-and-access-failure)
+for a commissioned Deep Research route.
+Apply [output evidence review](references/evidence-review.md) to assignment coverage
 and actual returned results. Layout compliance does not establish evidence quality. Verify
 unstable consequential facts through current primary sources.
 When ingesting read [ingestion contract](references/ingestion.md); original,

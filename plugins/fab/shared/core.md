@@ -61,6 +61,15 @@ continue an already authorized necessary next action, or finish with a clear
 recommendation when the requested outcome is sufficient. Keep this conversational
 and proportional; no fixed report template or generic request for feedback.
 
+When a stage report names pending verification, unresolved work or a recommended
+continuation, turn that into a usable handoff: state the current stage and one
+concrete next action with its owner and purpose, or a short ordered plan if the
+dependency needs several steps. Say whether the action is already authorized or
+which real choice blocks it. Do not leave the person to turn “worth checking” or
+“can assess later” into a task. If the necessary action is already authorized,
+perform it rather than ending at advice. This applies to work the report actually
+introduces, not a compulsory footer or invented task after genuine completion.
+
 ## Honest evidence
 Check the claim actually promised. Source inspection, structural validity,
 observed UI behavior, human acceptance and real value are different evidence.

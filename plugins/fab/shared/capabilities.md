@@ -8,5 +8,8 @@ Delivery: real feasibility/increment/installation/release/use.
 Ten skills are executable contracts, not ten mandatory stages or ten agents.
 Each outcome can start directly. Read only the active skill/references/methods.
 Runtime packaging availability is not maturity or universal behavioral evidence.
-Mobile HIG/Material/gamification expertise remains a research gap, never fabricate it.
+Mobile structure knowledge is bundled in shared/methods, with declared citation
+and platform limits. Its presence does not establish current native behavior or
+complete expertise. Verify consequential platform claims and investigate domain
+or gamification gaps only when relevant evidence is insufficient.
 Landlord excluded; future landing branch is independently designed, not installed.

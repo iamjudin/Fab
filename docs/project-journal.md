@@ -16,6 +16,29 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-14 — Test the handoff and knowledge boundaries before claiming repair
+
+- Creator authorized autonomous work on current dead ends and retained knowledge,
+  with additional studies prepared for creator-run Deep Research rather than launched.
+- Diagnosis: general principles already existed. The handoff baseline is useful
+  but leaves next ownership implicit, while blocked-method and historical-policy
+  baselines pass. Preserve that evidence rather than claiming a reproduced universal
+  failure or comparative superiority. The native misses remain recorded.
+- Source: specify stage/action/owner/purpose and authority in reporting, expose the
+  selected-method boundary at Research, repair ambiguous reader resolution and
+  correct the stale claim that included mobile structure knowledge is absent.
+  Keep historical knowledge qualified and current accepted behavior authoritative.
+- Validation: [ten fresh GPT-6.1 Sol/Medium turns](../experiments/workflow-tests/knowledge-dialogue-20261014/results.md),
+  seven candidate situations pass, 54 regressions/package pass. Final72files/
+  6b0b0537851e5a1c differs from frozen probe target only by a recorded punctuation
+  repair. Owned temporary fixtures preserved exactly and cleaned.
+- Judgment/limits: source is ready for a separately authorized release, installed/
+  public beta.27 unchanged. Useful long-dialogue behavior needs real-use evidence,
+  not another statistics-only pipeline run. Two independent assignments prepare
+  initiative and evaluation knowledge without replacing the nine retained studies.
+  Main owns candidate/review, creator owns study launch and release decision.
+  No provider launch, other-project changes, Canvas promotion or Bookworm edits.
+
 ## 2026-10-14 — Creator reports another unclear stage handoff
 
 Creator flags the cleanup final response as a conversational dead end: a useful

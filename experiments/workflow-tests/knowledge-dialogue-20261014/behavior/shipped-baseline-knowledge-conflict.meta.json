@@ -1,0 +1,33 @@
+{
+  "case": "shipped-baseline-knowledge-conflict",
+  "exitCode": 0,
+  "timeout": false,
+  "threadId": "01a13b7f-7e8c-7430-b0b5-1e0e33d38200",
+  "actualRuntime": {
+    "model": "gpt-6.1-sol",
+    "effort": "medium"
+  },
+  "seconds": 48.16,
+  "usage": {
+    "input_tokens": 163358,
+    "cached_input_tokens": 142464,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 845,
+    "reasoning_output_tokens": 11
+  },
+  "workspaceUnchanged": true,
+  "command": [
+    "codex",
+    "exec",
+    "--json",
+    "--skip-git-repo-check",
+    "-s",
+    "read-only",
+    "-C",
+    "/private/tmp/fab-knowledge-dialogue-47s8djyi/shipped-baseline-knowledge-conflict",
+    "-o",
+    "/Users/iamjudin/Desktop/Lab/Fab/experiments/workflow-tests/knowledge-dialogue-20261014/behavior/shipped-baseline-knowledge-conflict.md",
+    "-"
+  ],
+  "errors": []
+}

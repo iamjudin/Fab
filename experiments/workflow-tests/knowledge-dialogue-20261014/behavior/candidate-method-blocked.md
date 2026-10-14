@@ -1,0 +1,7 @@
+The agreed research is blocked at complete-result retrieval. The snapshot contains two saved plans, prepared assignments and a versioned execution ledger, but no completed reports. There is therefore no research result yet to review, format or apply to the project.
+
+I recommend preserving the existing Deep Research runs and recovering their complete reports. If retrieval remains unavailable, the next concrete handoff is for you to export the complete reports from the selected surface when accessible. After recovery, I can review coverage and evidence, retain the originals, prepare the Bookworm-style reader views and develop project application separately.
+
+Ordinary web research is an available alternative, but it would be a new investigation with its own coverage and limitations. It would not recover or complete the commissioned runs. Do you want to retain the Deep Research route, as I recommend, or authorize that replacement method?
+
+The supplied [Research skill](fab/skills/research/SKILL.md) explicitly says: “A blocked explicitly selected research mode is not permission to dispatch a substitute.” Your instruction to continue grants autonomy within the agreement, but does not resolve that method change. This probe only reviewed the supplied guidance and snapshot. No research was dispatched or files changed.

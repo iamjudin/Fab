@@ -1,5 +1,29 @@
 # Рабочее состояние Fab
 
+## 2026-10-14 — Autonomous knowledge and dialogue batch verified in source
+
+Creator authorized current maintenance scope, final results and preparation of
+additional Deep Research assignments. [Results](../experiments/workflow-tests/knowledge-dialogue-20261014/results.md)
+own source72files/6b0b0537851e5a1c, 54 regressions/package PASS. Five runtime files
+clarify useful stage handoff and selected-method boundaries, resolve reader links,
+and correct stale capability guidance about bundled mobile knowledge. Earlier
+nine-brief/437-section cleanup is retained without rewriting source evidence.
+
+Ten GPT-6.1 Sol/Medium CLI turns: handoff baseline PARTIAL, two other baselines
+already PASS, seven candidate situations PASS. 818678 input/680832 cached/5175
+output tokens, 476.35 summed seconds. Read-only fixtures unchanged. Frozen probe
+target0e156076b0ccb663 differs from final only by one sentence punctuation repair,
+recorded explicitly. Owned scratch retained/hash-verified and removed.
+
+Installed/public beta.27 remains72files/b6a149b9ebfa968f. No installed/native or
+long-context repair claim, no release/install/push. Main owns the reviewed source
+candidate for the next separately authorized release and subsequent real-use checks.
+Creator-run assignments: [initiative](research-briefs/collaborative-initiative-deep-research.md)
+first, [evaluation](research-briefs/multi-turn-collaboration-evaluation-deep-research.md)
+second. Main reviews returned complete evidence before ingestion/application.
+No new studies dispatched. Citation gaps stay conditional, Canvas and Bookworm
+stay separate, active observer remains restricted to its observation authority.
+
 ## 2026-10-14 — Observation accumulates actionable maintenance scope
 
 Creator authorizes the active observer to write concise deduplicated findings into

@@ -71,6 +71,24 @@ This rule does not authorize an immediate new chat, hidden delegation, a merge,
 runtime installation or publication. Keep main ownership and return criteria clear.
 
 ## Current boundary
+Creator2026-10-14 authorized autonomous current dead-end/knowledge maintenance,
+with complete additional Deep Research assignments for creator-run execution.
+Reviewed source72files/6b0b0537851e5a1c,54regressions/package PASS. Reporting names
+stage/action/owner/purpose under actual authority, Research preserves explicitly
+selected method while retaining open-means/pre-authorized fallback autonomy,
+reader links resolve from their actual directory, capability inventory recognizes
+bundled mobile structure with limits. Earlier437-section cleanup stays intact.
+Ten GPT-6.1 Sol/Medium fresh CLI turns: handoff baseline PARTIAL, two other
+baselines PASS, seven candidate situations PASS. Frozen behavior target0e156076b0ccb663
+has a documented punctuation-only difference from final.818678input/680832cached/
+5175output,476.35summed seconds. Fixtures unchanged, scratch retained/cleaned.
+Evidence: experiments/workflow-tests/knowledge-dialogue-20261014/results.md.
+Installed/public beta.27 unchanged72files/b6a149b9ebfa968f. No release/install/push,
+provider launch, native or long-context repair claim. Main owns candidate and
+returned research review, creator owns study launch and separate release decision.
+Independent initiative/evaluation assignments in docs/research-briefs are prepared,
+not completed knowledge. Citation/domain gaps remain conditional. Active monitor,
+Canvas and creator-owned Bookworm retain their separate boundaries.
 Creator2026-10-14 authorized active observation to triage meaningful findings in
 docs/backlog.md as well as sanitized report/private state. Reuse owners/IDs,
 record next/closure/disposition, stay read-only toward the observed product.

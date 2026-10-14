@@ -25,10 +25,10 @@ Installed/public beta.27: ten independent skills,72files/fingerprint `b6a149b9eb
 | FAB-08 | Закрыто | Доступное восстановление в тестовом UI | Однократная имитация beta8; root браузером подтвердил draft → retry → сохранение без фонового контрола, готовность/история сохранены. Cache intervention отдельно; не универсальная гарантия recovery хранилища. |
 | FAB-09 | Повторный FAIL; правка ждёт проверки | Уборка временной работы и наследование правила новыми плагинами | Beta.10 lifecycle/inheritance contract и root retention63files PASS. Partial beta.16 Wireframe оставил внешний SVG в общем tmp после final. Root сохранил SHA и убрал точный файл; [receipt](../experiments/workflow-tests/partial-routes-20261012/external-preview-cleanup.json). Beta.18 явно маршрутизирует transient renders в lifecycle: лимит deliverables не оправдывает tmp parking. Next: в следующем preview наблюдать фактическую уборку; generated-plugin inheritance отдельно ещё не проверен. |
 | FAB-10 | Исправлено, ждёт проверки | Маркировка исследований и связи с проектами | Beta.11 eight-note migration PASS; beta.12 additive labels/usage revision contract. 2026-10-12 mobile ingestion: вопрос после ready pair → явное согласие → Fab:/tags/usage, body SHA сохранён; [receipt](../experiments/maintenance/mobile-ingestion-20261012/source-usage.json). Root workflow evidence, не independent model smoke. Отказ/второе имя/changed-source across projects ещё не наблюдались. |
-| FAB-11 | Continuation correction released in beta.27; native consistency open | Соавторская оценка до работы и содержательные выводы после | Partial beta.15 дала мнение/реальное возражение/варианты/диалог, но Product final остался file-status-only. Beta.16 улучшение неполное; beta.17 fresh same-input corrective даёт рекомендацию, пользу и trip/reload компромисс, новые правила не объявлены принятыми. [Evidence](../experiments/workflow-tests/2026-10-12-partial-routes-results.md). Это developer/synthetic bounded evidence; next — сохранять такой вывод в обычной работе, не повторять ради статистики.2026-10-14: creator reports a correct scope acknowledgment with no continuation of the active goal. [Four source turns](../experiments/workflow-tests/dialogue-continuation-20261014/results.md), GPT-6.1 Sol/Medium: fresh beta.26 baseline already asks a concrete blocked choice. Shared-core/Brainstorm correction passes blocked choice, actual authorized output and completed-thanks controls. Source72files/fe44274906582314 and50regressions pass. Native original miss preserved, no comparative superiority or long-context closure. Creator approved local/public beta.27, [distribution](../experiments/releases/continuation-beta27-20261014/report.md) passes CI/assets/exact-tag clean-primary parity. Next: actual post-feedback continuation under real scope/choice constraints, native consistency remains open. |
+| FAB-11 | Beta.27 shipped, stage-handoff candidate verified in source, native consistency open | Соавторская оценка до работы и содержательные выводы после | Partial beta.15 дала мнение/реальное возражение/варианты/диалог, но Product final остался file-status-only. Beta.16 улучшение неполное; beta.17 fresh same-input corrective даёт рекомендацию, пользу и trip/reload компромисс, новые правила не объявлены принятыми. [Evidence](../experiments/workflow-tests/2026-10-12-partial-routes-results.md). Это developer/synthetic bounded evidence; next — сохранять такой вывод в обычной работе, не повторять ради статистики.2026-10-14: creator reports a correct scope acknowledgment with no continuation of the active goal. [Four source turns](../experiments/workflow-tests/dialogue-continuation-20261014/results.md), GPT-6.1 Sol/Medium: fresh beta.26 baseline already asks a concrete blocked choice. Shared-core/Brainstorm correction passes blocked choice, actual authorized output and completed-thanks controls. Source72files/fe44274906582314 and50regressions pass. Native original miss preserved, no comparative superiority or long-context closure. Creator approved local/public beta.27, [distribution](../experiments/releases/continuation-beta27-20261014/report.md) passes CI/assets/exact-tag clean-primary parity. Next: actual post-feedback continuation under real scope/choice constraints, native consistency remains open. |
 | FAB-12 | Проверено ограниченно | Частичные задачи и короткие связки | 7primary + dialogue + natural-entry diagnostic: мнение, идеи, source-only audit, analysis→options, bounded Product, existing Wireframe, evidence→slice. Частичные дефекты и correctives различены; 12turns, input2073222/output30703. [Report](../experiments/workflow-tests/2026-10-12-partial-routes-results.md). Next: реальные короткие задачи/новые seams только по конкретной неопределённости; не обязательный full process. |
 | FAB-14 | Released in beta.24; real-use stability open | Useful Brainstorm dialogue and optional techniques | Creator wants new thinking, grounded critique and useful questions, without a framework mask. [16 generic v1 turns](../experiments/workflow-tests/brainstorm-dialogue-20261013/results.md) were inconclusive; [6 contextual turns](../experiments/workflow-tests/brainstorm-context-20261013/results.md) preserve v1's depth miss and separate v2 corrective. [Five virtual situations/seven new v2 turns](../experiments/workflow-tests/brainstorm-v2-situations-20261013/results.md), GPT-6.1 Sol/Medium, satisfy bounded contribution, critique/agreement, feedback, exploration and accepted-scope checks; copy-anchor caveat retained. Source e7d94f8/evidence a572d3e; creator authorized promotion and public/local beta.24 release on 2026-10-13, integrated via 10ba4e6. [Release checks](../experiments/releases/dialogue-beta24-20261013/report.md) confirm beta.24 public/local parity and bounded installed behavior. Next: ordinary-use stability and actual creator usefulness; native desktop reread remains unobserved. Observed beta.23 project is separate; not a prerequisite for v2 testing. Complements FAB-11/FAB-12. |
-| FAB-15 | Foundation correction released in beta.26; ordinary-use calibration open | Readable and reusable research | Creator authorized integration/local-public release in the feature chat on2026-10-13. [Return packet](handoffs/research-readability-return-2026-10-13.md): reader contract, localized presentation plan, independent topic/application, optional additive usage tags without new filename prefixes, output coverage/source/numeric review. [V3](../experiments/maintenance/research-readability-20261013/v3-results.md) is PARTIAL with source/arithmetic/layout failures retained.50regressions pass. Two source GPT-6.1 Sol/Medium turns preserve legacy host conflict and host-only corrective. [Distribution](../experiments/releases/research-beta25-20261013/report.md) verified: CI, anonymous assets, clean/primary exact-tag parity. No installed-model or native-render claim. Bookworm task prepared, not implemented/transferred. No automatic source migration or Canvas promotion. Creator-approved2026-10-14 foundation correction8145814 is integrated in main source: existing knowledge first, context without current-feature filtering, bounded foundation/focused uncertainty.72files/37cbf14af3e5a51b and50regressions pass. At source integration installed/public beta.25 remained unchanged. [Two fresh GPT-6.1 Sol/Medium source cases](../experiments/workflow-tests/research-foundation-20261014/results.md) satisfy bounded foundation/covered-question checks. Unspecified age-scope assumption retained, no baseline comparison or installed efficacy. Creator authorized beta.26 release, [exact distribution](../experiments/releases/foundation-beta26-20261014/report.md) passes CI/assets/clean-primary parity. Ordinary-use calibration and installed-model behavior remain open. |
+| FAB-15 | Foundation shipped, cleaned knowledge/method-boundary candidate verified in source, ordinary-use calibration open | Readable and reusable research | Creator authorized integration/local-public release in the feature chat on2026-10-13. [Return packet](handoffs/research-readability-return-2026-10-13.md): reader contract, localized presentation plan, independent topic/application, optional additive usage tags without new filename prefixes, output coverage/source/numeric review. [V3](../experiments/maintenance/research-readability-20261013/v3-results.md) is PARTIAL with source/arithmetic/layout failures retained.50regressions pass. Two source GPT-6.1 Sol/Medium turns preserve legacy host conflict and host-only corrective. [Distribution](../experiments/releases/research-beta25-20261013/report.md) verified: CI, anonymous assets, clean/primary exact-tag parity. No installed-model or native-render claim. Bookworm task prepared, not implemented/transferred. No automatic source migration or Canvas promotion. Creator-approved2026-10-14 foundation correction8145814 is integrated in main source: existing knowledge first, context without current-feature filtering, bounded foundation/focused uncertainty.72files/37cbf14af3e5a51b and50regressions pass. At source integration installed/public beta.25 remained unchanged. [Two fresh GPT-6.1 Sol/Medium source cases](../experiments/workflow-tests/research-foundation-20261014/results.md) satisfy bounded foundation/covered-question checks. Unspecified age-scope assumption retained, no baseline comparison or installed efficacy. Creator authorized beta.26 release, [exact distribution](../experiments/releases/foundation-beta26-20261014/report.md) passes CI/assets/clean-primary parity. Ordinary-use calibration and installed-model behavior remain open. |
 | WF-01 | Адресный PASS | Физическое владение в IA | Partial beta.15 и beta.16 corrective вложили поездки/вещи в collections/items, сохранив исходные IDs/model; root JSON/guards/PNG проверены. Original full-route пропуск остаётся историческим FAIL, semantic preservation отдельно FAB-03. Next: применять смысловой review всех повторяемых owners в реальных изменениях, не только механический guard. |
 | WF-17 | Исправлено, ждёт проверки | Содержательные gates и глубина | Partial/full и beta.14 mobile route без approval-пауз; model/blocks до кода. Semantic review карты всё ещё пропустил WF-01/FAB-03. Реальные спорные creator decisions/другие контексты не обобщены; глубина проверяется смыслом, не именами этапов. |
 | FAB-13 | Proactive trigger failed; bounded recovery PASS | Готовность по поверхностям и изоляция переработок | [Политика](release-policy.md): beta.20 включает разрешённое создание/context transfer/recovery check. [Git smoke](../experiments/workflow-tests/2026-10-12-canvas-branch-smoke.md) PASS. [Chat receipt](../experiments/maintenance/chat-handoff-20261012/receipt.json): packet byte-equal, checkout чист, actual recovery pending; не создавать дубль. [Git workflow proposal](research/git-workflow-options-2026-10-12.md): main отсутствует, remote default bootstrap; рекомендована одна main/task branches/tags с conditional hotfix. Принятие/migration не авторизованы этим research. Native Obsidian/fresh routing открыты; Canvas FAIL не блокирует Prototype. 2026-10-13: main failed to propose separation before substantial research despite existing guidance. Creator sarcasm triggered the proposal, then approved transfer. [Actual handoff](handoffs/research-readability-2026-10-13.md) confirms chat/branch/context recovery, not proactive initiation. Canvas recovery remains separately unobserved. Next: assess the first workflow decision on substantial requests without a creator reminder, including a small-task control. Do not add duplicate wording or close this from creation success alone. |
@@ -43,9 +43,36 @@ public tag/Release, anonymous assets и exact-tag install в отдельный 
 README имеет явно исправленную erratum; tag/archive не переписывались. [Отчёт](../experiments/releases/public-beta22-20261012/report.md).
 Это новый distribution outcome в FAB-13; Canvas/continuity/open behavior не закрывает.
 
+## Knowledge and dialogue batch — verified source, 2026-10-14
+
+Creator authorized autonomous handling of the current dead-end/knowledge package.
+[Results](../experiments/workflow-tests/knowledge-dialogue-20261014/results.md):
+72-file source `6b0b0537851e5a1c`, 54 regressions/package PASS. Ten fresh
+GPT-6.1 Sol/Medium turns include three baselines and seven candidate situations.
+Handoff baseline PARTIAL, method/table baselines already PASS. Candidate checks
+pass with concrete handoff, preserved research method, appropriate fallback
+initiative, qualified historical knowledge and natural social completion.
+
+- FAB-11: reporting now exposes current stage and action/owner/purpose or a short
+  plan under actual authority. Source fixed-awaiting-ordinary-use, not native closure.
+- FAB-15: active Research resolves its reader from actual relative links and makes
+  selected method versus open means/pre-authorized fallback explicit. Capability
+  guidance no longer falsely calls included mobile structure knowledge absent.
+  Earlier knowledge cleanup remains retained. No citation/full-study rewrite.
+- Main next: candidate can enter the next explicitly authorized local/public
+  release. Installed/public beta.27 is unchanged, no publication from this task.
+- Creator next: run [collaborative initiative](research-briefs/collaborative-initiative-deep-research.md)
+  first, [sustained evaluation](research-briefs/multi-turn-collaboration-evaluation-deep-research.md)
+  second if proceeding with both. Main reviews complete returns before ingestion.
+  Prepared prompts are not dispatched/completed studies or blockers to source fixes.
+- Deferred with trigger: unresolved source bindings and domain completeness are
+  reviewed when a consequential application needs them or a contradiction appears.
+  No automatic nine-study replacement. Long-context usefulness remains an actual-
+  use question. Canvas/Bookworm remain separate, active observation continues.
+
 ## FAB-11 recurrence — unclear continuation after cleanup, 2026-10-14
 
-- Status: observed recurrence, next behavioral verification. Owner: main Fab,
+- Status: bounded source correction verified, native recurrence remains open. Owner: main Fab,
   shared reporting/continuation with the active capability. No duplicate ID.
 - Expected: after a meaningful stage, make the current stage and recommended
   action/owner clear. Continue already authorized necessary work or give a concrete
@@ -56,13 +83,16 @@ README имеет явно исправленную erratum; tag/archive не п
 - Evidence: source checkpoint c5c0771 and creator screenshot retained privately in
   `experiments/maintenance/continuation-followup-20261014/raw/`. Original model/effort
   unknown. This is a reporting/handoff miss, not failed source-integrity checks.
-- Next package: verify cleaned knowledge on a partial request and historical/current
-  policy conflict. Include this completed-stage handoff case and the selected-method
-  boundary already owned by FAB-15. Use specific controls for autonomy/natural endings.
-  Diagnose before changing instructions, retain original misses and passing baselines.
+- Completed package: cleaned knowledge checked on a partial request and historical/
+  current policy conflict, with this handoff case and FAB-15's method boundary.
+  Specific controls retain autonomy/natural endings. Original misses and passing
+  baselines remain recorded. Main next owns separately authorized distribution
+  followed by real-use calibration, not another statistics-only model suite.
 - Closure: report or actual action exposes a usable next step under real authority,
   no invented task, generic approval or release claim. Bounded success does not close
-  native/long-context consistency. No new model turn or runtime repair yet.
+  native/long-context consistency. [Completed source verification](../experiments/workflow-tests/knowledge-dialogue-20261014/results.md)
+  retains a PARTIAL clean baseline and passing candidate handoff, with autonomy
+  and natural-completion controls. Awaiting separately authorized distribution.
 
 ## Observation accumulation and batch processing — 2026-10-14
 
@@ -99,9 +129,13 @@ and delivery chat. No new monitor, schedule change, runtime update or stop now.
 
 **Owner:** main Fab maintenance, Research with shared collaboration/authority.
 **Canonical item:** FAB-15, supported by FAB-11. No duplicate finding ID.
-**Status:** next behavioral verification, not implemented or released.
-**Priority/trigger:** next behavioral iteration after completed knowledge cleanup.
-Assess this before claiming that a future candidate corrects the observed problem.
+**Status:** source boundary correction verified, not installed or released.
+[Completed verification](../experiments/workflow-tests/knowledge-dialogue-20261014/results.md) retains a passing blocked-method
+baseline and candidate blocked/open-means/pre-authorized-fallback checks.
+The original observed deviation stays open for ordinary-use calibration.
+**Priority/trigger:** source verification complete, include this candidate in the
+next explicitly authorized release and assess subsequent ordinary-use behavior.
+Do not claim that passing focused probes establish repair of the native episode.
 It is not a blanket blocker for unrelated package surfaces.
 
 - Evidence: [observed failure and correction](../experiments/workflow-tests/2026-10-13-external-chat-observation.md#2026-10-14--unagreed-method-substitution-retained-result-and-manual-handoff).

@@ -1,0 +1,23 @@
+{
+  "model": "gpt-6.1-sol",
+  "effort": "medium",
+  "turns": 10,
+  "totals": {
+    "input_tokens": 818678,
+    "cached_input_tokens": 680832,
+    "output_tokens": 5175,
+    "reasoning_output_tokens": 642
+  },
+  "sumTurnSeconds": 476.35,
+  "rootUsage": "not measured",
+  "accountWindows": "not inferred from cached tokens",
+  "fixtureIntegrity": true,
+  "timeouts": 0,
+  "errors": 0,
+  "limits": {
+    "turns": 10,
+    "inputTokens": 1000000,
+    "secondsPerTurn": 240,
+    "sumTurnSeconds": 2700
+  }
+}

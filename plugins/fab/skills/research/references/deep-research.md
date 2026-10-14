@@ -1,5 +1,22 @@
 # Deep Research assignment and output
 
+## Selected method and access failure
+
+An explicitly commissioned Deep Research investigation includes its chosen mode,
+not only its topic. If that surface is blocked, preserve saved plans and observed
+execution state. Distinguish restoration of the existing run, waiting for its
+complete result, a creator-operated handoff and a different research method.
+Recommend a concrete viable option and explain how its evidence/output boundary
+changes before executing an unagreed substitute. A disclosed change is not consent.
+
+Continue independent authorized preparation. A pre-authorized fallback can be
+executed without asking again, with its limits retained. When the person leaves
+research means open, choose appropriate tools autonomously. Partial material may
+remain useful but cannot fulfill the original commission by being renamed,
+formatted, ingested or marked complete. Do not resend an existing plan blindly.
+
+## Assignment and output
+
 Apply the [reader contract](reader-contract.md) when preparing the assignment.
 Choose the domain-foundation or focused-gap purpose before writing the question.
 State the decision or knowledge question, required evidence, transfer boundaries,

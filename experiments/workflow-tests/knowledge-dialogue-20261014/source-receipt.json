@@ -1,0 +1,19 @@
+{
+  "behaviorTarget": {
+    "files": 72,
+    "fingerprint": "0e156076b0ccb663"
+  },
+  "finalSource": {
+    "files": 72,
+    "fingerprint": "6b0b0537851e5a1c"
+  },
+  "postProbeDelta": {
+    "file": "skills/research/references/ingestion.md",
+    "description": "Remove a full stop that incorrectly split the reader instruction sentence. No behavioral instruction change. No model rerun."
+  },
+  "installedUnchanged": {
+    "files": 72,
+    "fingerprint": "b6a149b9ebfa968f"
+  },
+  "finalStructuralChecks": "54 unittest regressions and package guard pass"
+}
