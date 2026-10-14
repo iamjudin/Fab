@@ -6,6 +6,11 @@ Evidence gap: the retained AI-native synthesis and optional perspective-method
 review do not establish when initiative improves an ongoing collaborative dialogue.
 This study is independent knowledge. Local plugin application follows separately.
 
+Follow-up, 2026-10-14: creator asked main to conduct research directly while
+provider access is rate-limited. A [bounded primary-source web review](../research/collaboration-2026-10-14/index.md)
+is complete, with original reports, packets and explicit evidence gaps. This
+provider assignment remains available for a later deeper comparison, not dispatched.
+
 Copy the assignment below into Deep Research. Request the complete report, retain
 its original output and return it for evidence review before operational ingestion.
 

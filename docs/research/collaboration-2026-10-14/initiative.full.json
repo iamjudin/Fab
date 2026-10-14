@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "scope": "project-evidence",
+  "title": "Collaborative initiative in human–AI knowledge work",
+  "sourceSha256": "4e760a1ca734bca8336b174191ba8f36f6f090052e29749e11ef41a065306108",
+  "sourceDate": "2026-10-14",
+  "ingestedAt": "2026-10-14",
+  "authority": "source-material-not-runtime-instructions",
+  "validation": {
+    "structure": "lossless sections; explicit exclusions",
+    "claims": "not exhaustively fact-checked"
+  },
+  "retainedSha256": "4e760a1ca734bca8336b174191ba8f36f6f090052e29749e11ef41a065306108",
+  "excluded": [],
+  "sections": [
+    {
+      "id": "R001",
+      "level": 1,
+      "title": "Collaborative initiative in human–AI knowledge work",
+      "text": "# Collaborative initiative in human–AI knowledge work\n\nDate: 2026-10-14. Method: bounded primary-source web review, not a Deep Research\nprovider output or systematic literature review. Relevant research was opened\nand reviewed selectively. Detailed records and access limits: [source ledger](sources.json).\n\n"
+    },
+    {
+      "id": "R002",
+      "level": 2,
+      "title": "Answer and evidence boundary",
+      "text": "## Answer and evidence boundary\n\nUseful initiative should be selected by the unresolved work, uncertainty and\ncost of intervention. A persistent thinking persona is not sufficient. This is\nan author synthesis across older interaction principles and limited LLM studies,\nnot an experimentally established universal dialogue policy.\n\nThe strongest direct warning about timing comes from a small group-facilitation\npilot. The broadest outcome evidence concerns heterogeneous human–AI tasks rather\nthan long-running one-person project collaboration. No reviewed study establishes\nan optimal question frequency or proves that a given assistant reliably recognizes\nthe end of a stage.\n\nNavigation: [Shared understanding](#shared-understanding-and-questions),\n[Contribution](#contribution-and-grounded-disagreement),\n[State changes](#state-changes-and-stage-handoffs),\n[Transfer](#transfer-and-open-evidence), [Sources](#sources).\n\n"
+    },
+    {
+      "id": "R003",
+      "level": 2,
+      "title": "Shared understanding and questions",
+      "text": "## Shared understanding and questions\n\nGrounding concerns understanding adequate for the current joint purpose, not\nrepeating every prior statement. Communication effort belongs to both participants.\nThat is a human–human theoretical account, not proof that an LLM shares beliefs\nor that conversational acknowledgment grants action permission.\n[Clark and Brennan](https://web.stanford.edu/~clark/1990s/Clark,%20H.H.%20_%20Brennan,%20S.E.%20_Grounding%20in%20communication_%201991.pdf).\n\nMixed-initiative design considers uncertain goals, interruption costs, correction\nand direct invocation. A clarifying question can be worthwhile when a mistaken\naction costs more than asking. These are principles illustrated through a calendar\nassistant, not an empirical cost model for open-ended contemporary LLM work.\n[Horvitz](https://erichorvitz.com/chi99horvitz.pdf).\n\n**Derived decision heuristic:** ask when plausible answers lead to meaningfully\ndifferent next results. Use a reversible, explicit assumption for routine detail\nwhen compatible with actual permission. State why a consequential answer matters.\nThere is no measured universal threshold in this review.\n\n| Situation | Useful question or action | Failure condition |\n|---|---|---|\n| Goal has materially different interpretations | Expose the deciding distinction | Asking for a full briefing already available |\n| Adequate input and authorized routine work | Act, with necessary limits | Returning routine implementation decisions to the person |\n| Proposed scope or method changes the commission | Explain concrete options before dependent action | Treating enthusiasm for autonomy as unlimited permission |\n| Low-stakes uncertainty with a safe reversible option | Make the assumption visible and proceed proportionally | Concealing an assumption that changes accepted meaning |\n\nThis table is a design synthesis, not a validated classifier or a mandatory form.\nAuthoritative tool/action permissions remain a separate constraint.\n\n"
+    },
+    {
+      "id": "R004",
+      "level": 2,
+      "title": "Contribution and grounded disagreement",
+      "text": "## Contribution and grounded disagreement\n\nSycophancy experiments found that user-position cues could distort criticism and\nfactual answers in the tested assistants. Preference for an agreeable response\ndoes not establish truth. The tested model generations and artificial tasks do\nnot supply a current incidence estimate for another system.\n[Sharma and colleagues](https://arxiv.org/html/2310.13548v2).\n\nCreative help can improve individual outputs while making outputs across people\nmore alike. A randomized short-story study compared no AI idea access with access\nto one or up to five ideas. This is evidence about a particular creative task,\nnot product-idea generation or extended co-design.\n[Doshi and Hauser](https://arxiv.org/pdf/2312.00506).\n\n**Derived contribution test:** does the turn add a mechanism, relevant distinction,\nsupported consequence, counterexample or decision-changing question? More options\nor stronger disagreement alone need not help. Justified agreement can add value\nby identifying why the proposal fits and when that judgment would change.\n\nTwo illustrative responses to “add a subscription” show the distinction:\n\n- Weak: endorse it and list subscription tiers immediately.\n- Better: explain which recurring value would support recurring payment, identify\n  the unresolved use rhythm and compare a one-off alternative if relevant.\n\nThese are authored illustrations, not observed experimental outcomes. No universal\nrequirement to criticize, generate three ideas or use a named framework follows.\n\n"
+    },
+    {
+      "id": "R005",
+      "level": 2,
+      "title": "State changes and stage handoffs",
+      "text": "## State changes and stage handoffs\n\nThe PTFA pilot involved 48 participants in 16 three-person groups, each with two\ndiscussions. It observed useful contributions and poorly timed intervention,\nincluding continued idea prompts during convergence. Ratings were mixed. That\ndoes not establish an overall benefit of six roles or transfer to solo work.\n[PTFA](https://arxiv.org/html/2503.12499v2).\n\nInteraction guidelines emphasize correction, dismissal and recent context.\nTheir relevance was evaluated by 49 practitioners against 20 AI-infused products.\nThis is heuristic validation, not a randomized trial proving improved collaborative\noutcomes. [Amershi and colleagues](https://www.microsoft.com/en-us/research/wp-content/uploads/2019/01/Guidelines-for-Human-AI-Interaction-camera-ready.pdf).\n\nThe following stage logic is a **testable author proposal**:\n\n| Work signal | Proportional response | What remains protected |\n|---|---|---|\n| Alternatives requested | Develop different mechanisms | Accepted constraints and evidence limits |\n| An option selected | Develop or execute that direction within scope | Selection is not approval of every later action |\n| An extension rejected | Remove the rejected extension and reconnect remaining work | Unaffected goal and commitments |\n| A stage finished, larger outcome remains | Interpret result and name actual next action/owner | Completed work is not silently repeated |\n| A consequential choice blocks progress | Explain the concrete choice and recommendation | No dependent action before the needed answer |\n| Agreed small task genuinely complete | End naturally | No fabricated continuation |\n\nA usable handoff should distinguish result, relevant uncertainty, remaining goal,\nnext action, ownership and authority. The necessary detail depends on the task.\nEvidence reviewed here does not isolate which handoff fields improve real outcomes.\nThat missing causal evidence should remain visible, rather than treating a template\nas the answer to every conversational failure.\n\n"
+    },
+    {
+      "id": "R006",
+      "level": 2,
+      "title": "Transfer and open evidence",
+      "text": "## Transfer and open evidence\n\nA meta-analysis found improvement over humans alone on average, but weaker average\nperformance than the better of human-only or AI-only baselines. It aggregated\n106 experiments from 74 papers, covering 2020–June 2023. This makes the comparator\nimportant and does not determine how current LLM collaboration performs.\n[Vaccaro and colleagues](https://www.nature.com/articles/s41562-024-02024-1.pdf).\n\n| Work context | Plausible transfer | Evidence still needed |\n|---|---|---|\n| Brainstorming | Timing, relevant distinctions and diversity of mechanisms | Usefulness to actual creators |\n| Document review | Reasoned criticism tied to an artifact | Factual fidelity and author intention |\n| Research framing | Clarify evidence purpose and material scope | Coverage and source support |\n| Implementation | Preserve accepted behavior and actual permission | Working state and tested result |\n\nHuman grounding and old interface principles inform design reasoning. They do not\nprovide evidence of modern model reliability. A group discussion pilot should not\nbe generalized to solo work. Synthetic correctness and subjective preference answer\ndifferent questions. A pleasant exchange can still leave the person without progress.\n\nTestable hypotheses are state-sensitive intervention, reduced routine questioning,\nand a concrete handoff after a meaningful stage. Each needs a comparator and\nobservation of resulting work, including attention cost and unwanted initiative.\nOptimal timing, long-term learning, user agency and value in solo project work\nremain gaps. No follow-up investigation was dispatched by this review.\n\n"
+    },
+    {
+      "id": "R007",
+      "level": 2,
+      "title": "Sources",
+      "text": "## Sources\n\nShared understanding: Clark/Brennan and Horvitz, linked above.\nInteraction and facilitation: Amershi and PTFA, linked above.\nContrary/conditional evidence: Sharma, Doshi/Hauser and Vaccaro, linked above.\nDesign, inspected portions and access limits are recorded once in [sources.json](sources.json).\n"
+    }
+  ]
+}

@@ -16,6 +16,27 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-14 — Conduct collaboration research without waiting for provider access
+
+- Creator asked main to investigate the two prepared topics directly while access
+  is rate-limited. Main disclosed and used a primary-source web review, preserving
+  the unexecuted provider route rather than silently relabeling it complete.
+- [Results](research/collaboration-2026-10-14/index.md): initiative and sustained-
+  evaluation reports, twelve source records, all15questions addressed or explicitly
+  limited, exact seven-section packets and separate local application. Source
+  theory, human studies, synthetic benchmarks and practitioner advice stay distinct.
+- Judgment: examine changing state and resulting action instead of equating useful
+  initiative with more questions/personas. A passing fresh fixture does not explain
+  a native miss. Proposed next is a bounded sequential diagnostic, not a new engine
+  or automatic set of runtime instructions. Native/human value remains open.
+- Verification: exact report/packet hashes, linked artifacts, source correspondence
+  and reader structure reviewed. No native render or independent peer/data audit.
+  English repository originals, Russian local reader retained in ignored raw/.
+- Boundary: no model test, global inclusion, library edits, install or publication.
+  Runtime72files/891e6db46b47b4bf unchanged. Further studies are optional deeper
+  comparison, existing source release remains separately authorized. Main owns
+  application and a next test design, actual test execution is not claimed.
+
 ## 2026-10-14 — Repair integrity seams after the knowledge cleanup
 
 - Creator requested a logic audit/refactor while additional investigations are

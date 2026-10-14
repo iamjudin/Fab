@@ -71,6 +71,19 @@ This rule does not authorize an immediate new chat, hidden delegation, a merge,
 runtime installation or publication. Keep main ownership and return criteria clear.
 
 ## Current boundary
+Creator2026-10-14 asked main to conduct the two prepared collaboration topics
+while provider research access is rate-limited. Disclosed primary-source web
+review complete:12source records, independent initiative/evaluation reports,
+15questions answered or qualified, exact7-section project-evidence packets and
+separate application. Evidence: docs/research/collaboration-2026-10-14/index.md.
+No Deep Research provider run, systematic census, replication or independent
+peer review. English repo, Russian local reader retained in ignored research raw/.
+Main proposes bounded sequential state/action verification, not new personas or
+automatic runtime policy. No model test, global inclusion, source annotation,
+install/push/release. Source891e6db46b47b4bf and installed/public beta.27 unchanged.
+Provider assignments remain available for later comparison, not prerequisites.
+Native/long-term human value and old-source attribution remain open. Main owns
+application/test proposal under actual next authority, other workstreams unchanged.
 Creator2026-10-14 authorized post-cleanup logic audit/refactoring while additional
 research is rate-limited. Reviewed source72files/891e6db46b47b4bf,66regressions/
 package PASS. Reader protects original identity/UTF-8 line endings, exclusion

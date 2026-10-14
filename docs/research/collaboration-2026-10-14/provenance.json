@@ -1,0 +1,53 @@
+{
+  "method": "creator-authorized authored primary-source web review",
+  "records": [
+    {
+      "topic": "initiative",
+      "original": "initiative-original.md",
+      "packet": "initiative.full.json",
+      "brief": "application.md",
+      "sourceSha256": "4e760a1ca734bca8336b174191ba8f36f6f090052e29749e11ef41a065306108",
+      "packetSha256": "8febf13ff714267ed7b720686317a42edf79b050148dbf869b3028be2b67f3db",
+      "sections": 7,
+      "sectionIndex": {
+        "R001": "Collaborative initiative in human–AI knowledge work",
+        "R002": "Answer and evidence boundary",
+        "R003": "Shared understanding and questions",
+        "R004": "Contribution and grounded disagreement",
+        "R005": "State changes and stage handoffs",
+        "R006": "Transfer and open evidence",
+        "R007": "Sources"
+      },
+      "excluded": 0,
+      "date": "2026-10-14",
+      "verification": "exact authored-report/packet correspondence, primary-source correspondence reviewed selectively, not empirical replication"
+    },
+    {
+      "topic": "evaluation",
+      "original": "evaluation-original.md",
+      "packet": "evaluation.full.json",
+      "brief": "application.md",
+      "sourceSha256": "4b8d351deb99c4a33eee9f95bfe1066e20f38797eeec09e1d1bfa38c0103ad12",
+      "packetSha256": "72f42ae7753479aef21313c8ea50473557e4d7895c12e5fa69349095a5aaaecb",
+      "sections": 7,
+      "sectionIndex": {
+        "R001": "Evaluating sustained human–AI collaboration",
+        "R002": "Answer and evidence boundary",
+        "R003": "What the context method measures",
+        "R004": "Outcomes, judges and human value",
+        "R005": "Passing baselines and causal diagnosis",
+        "R006": "Economical protocol and release decisions",
+        "R007": "Sources"
+      },
+      "excluded": 0,
+      "date": "2026-10-14",
+      "verification": "exact authored-report/packet correspondence, primary-source correspondence reviewed selectively, not empirical replication"
+    }
+  ],
+  "thirdPartyOriginals": "external links, no paper bodies copied",
+  "runtimePromotion": false,
+  "nativeRender": "unobserved",
+  "modelExperiment": "not performed",
+  "repositoryLanguage": "English",
+  "localRussianReader": "raw/reader-ru.md"
+}

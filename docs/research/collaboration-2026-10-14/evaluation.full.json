@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "scope": "project-evidence",
+  "title": "Evaluating sustained human–AI collaboration",
+  "sourceSha256": "4b8d351deb99c4a33eee9f95bfe1066e20f38797eeec09e1d1bfa38c0103ad12",
+  "sourceDate": "2026-10-14",
+  "ingestedAt": "2026-10-14",
+  "authority": "source-material-not-runtime-instructions",
+  "validation": {
+    "structure": "lossless sections; explicit exclusions",
+    "claims": "not exhaustively fact-checked"
+  },
+  "retainedSha256": "4b8d351deb99c4a33eee9f95bfe1066e20f38797eeec09e1d1bfa38c0103ad12",
+  "excluded": [],
+  "sections": [
+    {
+      "id": "R001",
+      "level": 1,
+      "title": "Evaluating sustained human–AI collaboration",
+      "text": "# Evaluating sustained human–AI collaboration\n\nDate: 2026-10-14. Method: bounded primary-source web review, not a Deep Research\nprovider output, independent experiment or systematic literature census.\nSource records and limitations: [source ledger](sources.json).\n\n"
+    },
+    {
+      "id": "R002",
+      "level": 2,
+      "title": "Answer and evidence boundary",
+      "text": "## Answer and evidence boundary\n\nEvaluate evolving work and its outcome alongside individual answers. A clean\nsnapshot can establish a narrow capability without exposing loss of commitments\nacross a conversation. A synthetic failure can reveal a mechanism without measuring\nhuman usefulness. Use both deliberately, rather than deriving a universal quality\nclaim from either.\n\nThis is an author-designed evaluation approach informed by publications. It has\nnot itself been validated across long-running creator projects. No reviewed paper\nestablishes a universal minimum number of turns, trials or release threshold.\n\nNavigation: [Context methods](#what-the-context-method-measures),\n[Outcomes](#outcomes-judges-and-human-value),\n[Diagnosis](#passing-baselines-and-causal-diagnosis),\n[Protocol](#economical-protocol-and-release-decisions), [Sources](#sources).\n\n"
+    },
+    {
+      "id": "R003",
+      "level": 2,
+      "title": "What the context method measures",
+      "text": "## What the context method measures\n\nThe 2025 Lost-in-Conversation study distributes static tasks across simulated\nturns. It reports weaker reliability and premature assumptions. Its narrow simulator\nreveals information until the task becomes sufficient, so it is not representative\nof all human interaction. Do not transfer its performance drop to an untested model.\n[Laban and colleagues](https://arxiv.org/html/2505.06120v1).\n\nA 2026 preprint adds disclosure, revision and task switching while retaining an\noriginal final verifier. Its principal setup uses six transitions. Memory recaps\nhelped selected tests but did not eliminate the gap. Synthetic intent transitions\nstill omit substantial variation in real user behavior.\n[Tack and colleagues](https://arxiv.org/html/2607.20734v1).\n\n| Evaluation context | Best question answered | Main blind spot |\n|---|---|---|\n| Fresh state snapshot | Can the system act with sufficient current input? | How that state was acquired or lost |\n| Historical transcript supplied at once | Does inherited context distort a response? | Live tools, memory updates and actual sequence |\n| Sequential resumed dialogue | Does behavior survive disclosure, correction and stage changes? | Synthetic users and controlled environment |\n| Read-only ordinary-use observation | Where does actual work fail or help? | Confounded causes and weak comparability |\n| Controlled human task comparison | Does the intervention improve a chosen human outcome? | Cost and limited transfer across contexts |\n\nThe table is a methodological synthesis, not a ranking. Select context for the\nuncertainty. A stage or decision is often the smallest useful outcome unit. A\nresponse diagnoses a local error, a session tests cumulative effects, and a\nlongitudinal study tests recurring value. No single unit subsumes the others.\n\n"
+    },
+    {
+      "id": "R004",
+      "level": 2,
+      "title": "Outcomes, judges and human value",
+      "text": "## Outcomes, judges and human value\n\nThe original τ-bench verifies simulated customer-service outcomes against database\nstate and distinguishes repeat reliability from finding one successful attempt.\nIts simulated users and airline/retail policies do not establish real satisfaction\nor a general knowledge-work benchmark.\n[τ-bench](https://arxiv.org/html/2406.12045v1).\n\nMT-Bench examines conversational grading and reports position, verbosity and\ncapability-related judge limitations. It does not establish that an arbitrary\nmodel judge can measure long-project value. Its self-preference evidence is\nexplicitly limited, so do not assert a universal judge self-favoring effect.\n[Zheng and colleagues](https://arxiv.org/html/2306.05685v4).\n\nAn industry protocol separates traces from resulting state, combines different\ngraders and recommends balanced trigger/non-trigger tasks. These are practitioner\nrecommendations, not an independent causal study of the protocol.\n[Anthropic's evaluation guidance](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents).\n\n| Dimension | Appropriate evidence | Insufficient substitute |\n|---|---|---|\n| Accepted meaning preserved | Artifact/state checks and relevant history | Polite agreement |\n| Useful contribution | Specific new distinction or consequence, contextual review | Word/idea counts |\n| Actual execution | Observed tool result or resulting artifact/state | A future-work promise |\n| Appropriate initiative | Goal, scope and authority at that point | Always acting or always asking |\n| Human usefulness/agency | Actual experience and observed work | A simulated user's praise |\n| Evidence honesty | Claim-to-support correspondence | Long source lists |\n\nUse rule checks for deterministic properties, calibrated judgment for open quality,\nand human observation for experienced value. In comparisons blind version labels,\nswap answer order where relevant and retain disagreements or unknowns. These\ncontrols are a proposed evaluation design, not a guaranteed bias removal technique.\n\nComparator choice changes the claim. A human–AI meta-analysis distinguishes\naugmentation over humans alone from synergy over the better standalone performer.\nFor assistance products both can matter, alongside costs and agency.\n[Vaccaro and colleagues](https://www.nature.com/articles/s41562-024-02024-1.pdf).\n\n"
+    },
+    {
+      "id": "R005",
+      "level": 2,
+      "title": "Passing baselines and causal diagnosis",
+      "text": "## Passing baselines and causal diagnosis\n\nA real failure followed by a passing focused baseline has not been reproduced.\nPossible explanations include simplified context, explicit cues, different runtime,\nsampling and a criterion that missed the original defect. The correct conclusion\nis limited fixture sensitivity, not demonstrated repair or a harmless original miss.\nThis is methodological reasoning, not an empirical result from this review.\n\nAn illustrative case, with no invented data:\n\n1. Ordinary work ends with acknowledged scope feedback but no usable continuation.\n2. A fresh fixture supplies current state explicitly and both versions continue.\n3. A sequential reconstruction includes the earlier proposal, rejection and remaining\n   goal. Evaluate accepted scope and next action at each affected point.\n4. If a failure appears, introduce one identified correction, retain the original\n   run and assess the corrective separately. Use an unseen related situation.\n\nSeparate tracking from acting: a system can state the current intention and still\nperform the wrong action. Useful diagnostic controls compare unchanged history,\nan explicit correct-state reminder and the actual resulting behavior. A supplied\nreminder can bypass a tracking problem and does not prove autonomous recovery.\nThe distinction is informed by the [2026 evolving-intent analysis](https://arxiv.org/html/2607.20734v1),\nbut this proposed control has not been run for another system here.\n\n"
+    },
+    {
+      "id": "R006",
+      "level": 2,
+      "title": "Economical protocol and release decisions",
+      "text": "## Economical protocol and release decisions\n\nThe following is a **proposed small-team protocol**, not a prescribed new harness:\n\n1. State the decision, failure signature, current permission and forbidden effects.\n2. Freeze package, input/history, actual runtime, environment and criterion. Retain\n   accepted constraints without including the evaluator's desired answer.\n3. Check deterministic causes first. Choose the smallest contextual comparison\n   capable of distinguishing the remaining explanations.\n4. Include a matching non-trigger control and an unexposed related situation.\n   Inspect both outcome and trace, with original failures kept alongside corrections.\n5. Count unresolved cases and disagreement separately. Repeated trials can test\n   variation, but one best attempt does not establish reliability.\n6. Report input/output/cached tokens, wall time and human effort when measured.\n   Use actual pilot cost to bound continuation. Unmeasured costs stay unknown.\n7. Stop once the question is answered, on substantive defeat of the hypothesis,\n   budget/access exhaustion or repetition without signal. Release only claims\n   supported on the actual distribution/runtime surface.\n\nFor a reversible narrow improvement, bounded regressions can support a limited\nrelease with monitoring and a rollback path. Repeated ordinary work and eventual\nhuman comparison are needed for claims about sustained usefulness. There is no\nevidence-based universal test quota in the reviewed material.\n\nRollback/escalation signals are loss of accepted meaning, unagreed consequential\naction, false completion or repeated human effort to restore the task. Thresholds\nare local decisions. A source-only pass does not establish installed behavior, and\ninfrastructure errors should remain separate from behavioral defects.\n\n"
+    },
+    {
+      "id": "R007",
+      "level": 2,
+      "title": "Sources",
+      "text": "## Sources\n\nContext dynamics: Laban and Tack, linked above.\nOutcomes/reliability: τ-bench and Vaccaro, linked above.\nJudging/practice: Zheng and Anthropic, linked above.\nDetailed source design/access records: [sources.json](sources.json).\n"
+    }
+  ]
+}

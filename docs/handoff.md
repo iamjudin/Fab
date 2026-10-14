@@ -1,5 +1,23 @@
 # Рабочее состояние Fab
 
+## 2026-10-14 — Two collaboration reviews completed through an authorized method
+
+Creator asked main to conduct the prepared topics directly while creator research
+access is rate-limited. Disclosed authored primary-source web review completed,
+not a provider Deep Research run. [Index](research/collaboration-2026-10-14/index.md)
+links independent initiative/evaluation reports, twelve source/design/access
+records, question coverage, exact project-evidence packets and separate application.
+Repository English, Russian local reader retained in ignored research raw/.
+
+Main recommendation: one bounded sequential state/action diagnostic of the native
+handoff seam, with changing scope/stage and genuine-completion control, before
+adding generic instructions or a mediator architecture. Proposed design only.
+No model test, global method/runtime change, original-source annotation or release.
+Source72files/891e6db46b47b4bf and installed/public beta.27 unchanged. Review is
+selective/non-systematic, not statistical replication or native usefulness proof.
+The provider assignments remain available for later comparison, not a blocked
+prerequisite. Main owns further application/test design under actual authorization.
+
 ## 2026-10-14 — Post-cleanup knowledge integrity verified in source
 
 Creator authorized audit/refactoring while additional Deep Research is rate-limited.

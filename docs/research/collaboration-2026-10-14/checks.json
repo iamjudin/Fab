@@ -1,0 +1,22 @@
+{
+  "initiative": {
+    "exactPreservation": true,
+    "sections": 7,
+    "exclusions": 0
+  },
+  "evaluation": {
+    "exactPreservation": true,
+    "sections": 7,
+    "exclusions": 0
+  },
+  "primarySourceRecords": 12,
+  "requiredQuestions": {
+    "initiative": 7,
+    "evaluation": 8
+  },
+  "claimReview": "root source-correspondence/limits review, not independent peer review",
+  "readerReview": "openings and dense sections inspected, no native render",
+  "runtimeChanged": false,
+  "modelTests": 0,
+  "providerDispatch": 0
+}

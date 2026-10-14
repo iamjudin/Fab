@@ -6,6 +6,12 @@ Evidence gap: focused source probes can pass while ordinary dialogue still fails
 The existing workflow synthesis leaves long-dialogue outcome evaluation open.
 Do not replace the first assignment with a broad agent benchmark survey.
 
+Follow-up, 2026-10-14: creator authorized main to conduct the topics directly.
+The [bounded primary-source web review](../research/collaboration-2026-10-14/index.md)
+addresses this assignment with explicit transfer/coverage gaps. No Deep Research
+provider run or new behavioral experiment is claimed. Retain this assignment for
+a later deeper/independent comparison rather than marking its provider route complete.
+
 Copy the assignment below into Deep Research. Return its complete original report
 for review. Local evaluation design and plugin changes are separate later work.
 

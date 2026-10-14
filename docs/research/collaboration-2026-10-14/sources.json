@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "method": "creator-authorized authored primary-source web review",
+  "systematicCoverage": false,
+  "thirdPartyTextsRedistributed": false,
+  "records": [
+    {
+      "id": "grounding",
+      "title": "Grounding in communication",
+      "authors": "Clark and Brennan",
+      "year": 1991,
+      "url": "https://web.stanford.edu/~clark/1990s/Clark,%20H.H.%20_%20Brennan,%20S.E.%20_Grounding%20in%20communication_%201991.pdf",
+      "accessedAt": "2026-10-14",
+      "access": "opened primary full text, selected relevant sections reviewed",
+      "type": "human communication theory",
+      "reviewed": "Grounding criterion, collaborative effort, purpose and repair",
+      "design": "Theoretical chapter, not a controlled LLM study",
+      "finding": "Shared understanding and total interaction effort matter",
+      "limits": "Not evidence of model beliefs or action permission"
+    },
+    {
+      "id": "mixed-initiative",
+      "title": "Principles of Mixed-Initiative User Interfaces",
+      "authors": "Horvitz",
+      "year": 1999,
+      "url": "https://erichorvitz.com/chi99horvitz.pdf",
+      "accessedAt": "2026-10-14",
+      "access": "opened primary full text, selected relevant sections reviewed",
+      "type": "design principles and implemented testbed",
+      "reviewed": "Principles, uncertainty, intervention cost, correction and LookOut",
+      "design": "Calendar-assistance testbed, no current LLM outcome comparator",
+      "finding": "Action and clarification can be selected under uncertainty and attention cost",
+      "limits": "No universal question threshold or contemporary dialogue guarantee"
+    },
+    {
+      "id": "interaction-guidelines",
+      "title": "Guidelines for Human-AI Interaction",
+      "authors": "Amershi et al.",
+      "year": 2019,
+      "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2019/01/Guidelines-for-Human-AI-Interaction-camera-ready.pdf",
+      "accessedAt": "2026-10-14",
+      "access": "opened primary full text, selected relevant sections reviewed",
+      "type": "heuristic validation",
+      "reviewed": "Guidelines 7–18, four-phase method, practitioner study",
+      "design": "49 practitioners, 20 AI-infused products",
+      "finding": "Correction, dismissal, recent context and cautious adaptation are relevant design concerns",
+      "limits": "Relevance/clarity validation, not causal product-benefit evidence"
+    },
+    {
+      "id": "facilitation",
+      "title": "PTFA: An LLM-based Agent that Facilitates Online Consensus Building through Parallel Thinking",
+      "authors": "Gu et al.",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2503.12499v2",
+      "accessedAt": "2026-10-14",
+      "access": "opened primary full text, selected relevant sections reviewed",
+      "type": "human pilot and qualitative analysis",
+      "reviewed": "Sections 3–4, useful/problematic facilitation patterns",
+      "design": "48 people, 16 three-person groups, 32 discussions, baseline facilitation comparison",
+      "finding": "Useful contributions coexist with mixed ratings and poorly timed interventions",
+      "limits": "Small group discussions, not solo long-running project outcomes"
+    },
+    {
+      "id": "sycophancy",
+      "title": "Towards Understanding Sycophancy in Language Models",
+      "authors": "Sharma et al.",
+      "year": 2023,
+      "url": "https://arxiv.org/html/2310.13548v2",
+      "accessedAt": "2026-10-14",
+      "access": "opened primary full text, selected relevant sections reviewed",
+      "type": "model experiments and preference analysis",
+      "reviewed": "Sections 3–4, response challenge and preference design",
+      "design": "Five tested assistants, varied generation tasks and preference records",
+      "finding": "User-position cues can distort feedback and factual response",
+      "limits": "Older models and experimental settings, no current incidence estimate"
+    },
+    {
+      "id": "creative-assistance",
+      "title": "Generative artificial intelligence enhances creativity but reduces the diversity of novel content",
+      "authors": "Doshi and Hauser",
+      "year": 2024,
+      "url": "https://arxiv.org/pdf/2312.00506",
+      "accessedAt": "2026-10-14",
+      "access": "opened primary full text, selected relevant sections reviewed",
+      "type": "randomized human experiment, accessed manuscript",
+      "reviewed": "Main study design/outcomes, supplement evaluator methods",
+      "design": "293 analyzed stories, 600 evaluators, no/one/up-to-five AI ideas",
+      "finding": "Improved individual ratings can coexist with reduced cross-output diversity",
+      "limits": "Short-story assistance, not product ideation or sustained dialogue, manuscript PDF accessed",
+      "version": "arXiv v3, 2024-03-14, unversioned PDF accessed, version established from abstract history"
+    },
+    {
+      "id": "collaboration-outcomes",
+      "title": "When combinations of humans and AI are useful: A systematic review and meta-analysis",
+      "authors": "Vaccaro et al.",
+      "year": 2024,
+      "url": "https://www.nature.com/articles/s41562-024-02024-1.pdf",
+      "accessedAt": "2026-10-14",
+      "access": "opened primary full text, selected relevant sections reviewed",
+      "type": "original systematic review/meta-analysis",
+      "reviewed": "Introduction, results, comparator definitions, study selection",
+      "design": "74 papers, 106 experiments, 370 effect sizes, studies from 2020–June 2023",
+      "finding": "Average augmentation over human-only differs from synergy against the better standalone performer",
+      "limits": "Heterogeneous largely pre-current-LLM tasks, no Fab outcome estimate"
+    },
+    {
+      "id": "sharded-conversation",
+      "title": "LLMs Get Lost In Multi-Turn Conversation",
+      "authors": "Laban et al.",
+      "year": 2025,
+      "url": "https://arxiv.org/html/2505.06120v1",
+      "accessedAt": "2026-10-14",
+      "access": "opened primary full text, selected relevant sections reviewed",
+      "type": "large-scale synthetic experiment",
+      "reviewed": "Simulation design, results, premature answers, limitations",
+      "design": "Six generation task families, full versus sharded instructions",
+      "finding": "Strong static results can coexist with multi-turn unreliability",
+      "limits": "Idealized simulated disclosure, not representative human conversation or current-model estimate"
+    },
+    {
+      "id": "evolving-intent",
+      "title": "LLMs Get Lost in Evolving User Intent",
+      "authors": "Tack et al.",
+      "year": 2026,
+      "url": "https://arxiv.org/html/2607.20734v1",
+      "accessedAt": "2026-10-14",
+      "access": "opened primary full text, selected relevant sections reviewed",
+      "type": "preprint with synthetic experiments",
+      "reviewed": "Intent transitions, Sections 5.3/limitations, prompt/oracle recap",
+      "design": "Reveal/revision/switch framework, six transitions in principal setting",
+      "finding": "Intent tracking and acting under inherited context can fail separately, recaps do not remove every gap",
+      "limits": "Synthetic anchor construction, limited style/multi-intent realism, no solo-creator efficacy"
+    },
+    {
+      "id": "judges",
+      "title": "Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena",
+      "authors": "Zheng et al.",
+      "year": 2023,
+      "url": "https://arxiv.org/html/2306.05685v4",
+      "accessedAt": "2026-10-14",
+      "access": "opened primary full text, selected relevant sections reviewed",
+      "type": "benchmark and judge analysis",
+      "reviewed": "MT-Bench design, Section 3.3 and position/verbosity controls",
+      "design": "80 multi-turn questions plus crowdsourced preference comparisons",
+      "finding": "Position/verbosity/capability limitations constrain automated judgment",
+      "limits": "Not long-project utility, self-enhancement conclusions limited"
+    },
+    {
+      "id": "tool-agent-outcomes",
+      "title": "tau-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
+      "authors": "Yao et al.",
+      "year": 2024,
+      "url": "https://arxiv.org/html/2406.12045v1",
+      "accessedAt": "2026-10-14",
+      "access": "opened primary full text, selected relevant sections reviewed",
+      "type": "simulated interaction benchmark",
+      "reviewed": "Task/outcome design and pass-at-k/pass-hat-k definitions",
+      "design": "Simulated users, retail/airline APIs, policy and database outcomes",
+      "finding": "Finding a successful attempt differs from repeat reliability",
+      "limits": "No real human satisfaction, consistency results do not transfer directly to open knowledge work"
+    },
+    {
+      "id": "evaluation-practice",
+      "title": "Demystifying evals for AI agents",
+      "authors": "Anthropic Engineering",
+      "year": 2026,
+      "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+      "accessedAt": "2026-10-14",
+      "access": "opened primary full text, selected relevant sections reviewed",
+      "type": "primary practitioner guidance",
+      "reviewed": "Outcome/trace definitions, balanced tasks, harness isolation and graders",
+      "design": "Industry experience, not a controlled comparative experiment",
+      "finding": "Use outcome/trace distinction, balanced controls and calibrated judgment",
+      "limits": "Vendor-authored protocol, not an independently proven universal process"
+    }
+  ],
+  "accessFailures": [
+    {
+      "url": "https://www.nature.com/articles/s41562-024-02024-1",
+      "result": "direct HTML open failed, primary PDF reviewed"
+    },
+    {
+      "url": "https://arxiv.org/html/2312.00506v3",
+      "result": "HTML open failed, unversioned primary manuscript PDF reviewed"
+    }
+  ],
+  "screenedButNotSynthesized": [
+    "https://arxiv.org/abs/2602.07338",
+    "https://arxiv.org/abs/2604.08782",
+    "https://arxiv.org/abs/2608.02620",
+    "https://arxiv.org/abs/2407.19098"
+  ],
+  "limits": [
+    "No exhaustive search census or citation-chain audit",
+    "No data/statistical result reproduction",
+    "No experimental current Fab model or human outcome proof"
+  ]
+}

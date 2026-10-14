@@ -43,6 +43,26 @@ public tag/Release, anonymous assets и exact-tag install в отдельный 
 README имеет явно исправленную erratum; tag/archive не переписывались. [Отчёт](../experiments/releases/public-beta22-20261012/report.md).
 Это новый distribution outcome в FAB-13; Canvas/continuity/open behavior не закрывает.
 
+## Collaboration studies — bounded web review complete, 2026-10-14
+
+FAB-15 with FAB-02/FAB-11/FAB-14 application. Creator asked main to conduct both
+prepared topics directly while provider access is rate-limited. Main disclosed
+and completed an authored primary-source web review, not a Deep Research provider
+run. [Research packet](research/collaboration-2026-10-14/index.md): twelve primary
+source records, two independent reports/exact project-evidence packets, seven and
+eight questions addressed with named gaps. [Application](research/collaboration-2026-10-14/application.md)
+recommends a bounded sequential state/action diagnostic before more generic rules.
+
+Disposition: evidence work complete within bounded review scope, proposed local
+application awaiting a next test commission. Main owns the proposed fixture and
+assessment. Preserve evolving goal/scope/authority and test actual action, with a
+snapshot diagnostic and genuine-completion control. No new model test, global
+module, runtime edit, installation or release. Source72files/891e6db46b47b4bf and
+installed/public beta.27 remain unchanged. Native/long-term human usefulness,
+optimal initiative thresholds and older-source attribution remain open. Provider
+assignments stay available for a later deeper comparison, not a dependency on
+these completed reviews or the already prepared source release.
+
 ## Knowledge integrity refactor — verified source, 2026-10-14
 
 FAB-15, main owns Research reader/package integrity. Creator authorized refactoring
