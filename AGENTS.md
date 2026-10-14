@@ -71,6 +71,14 @@ This rule does not authorize an immediate new chat, hidden delegation, a merge,
 runtime installation or publication. Keep main ownership and return criteria clear.
 
 ## Current boundary
+Creator2026-10-14 explicitly approved the proposed source candidate release with
+“go”: versioned local update and public GitHub beta.28. Prepared72files/
+3edcbb74228d3b48 differs from reviewed source891e6db46b47b4bf only in manifest
+version.66regressions/package/scope pass. Actual tag/CI/assets/clean-primary
+installation are pending in experiments/releases/knowledge-beta28-20261014.
+Main owns completion, no further generic release approval. Previous tags remain
+immutable, rollback beta.27. No new model suite, native/long-context closure,
+provider dispatch or Canvas/Bookworm promotion. Older records below are dated.
 Creator2026-10-14 authorized current backlog execution/retirement and leaves test
 selection to main, with Canvas/Obsidian untouched. Maintenance complete:11GPT-6.1
 Sol/Medium invocations,1275778input/1143168cached/15677output,566.21summed seconds.

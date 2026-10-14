@@ -16,6 +16,21 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-14 — Promote the verified knowledge and handoff candidate as beta.28
+
+- Creator approves the recommended candidate locally and publicly with “go”. Main
+  owns full distribution, not just a commit/push. Version0.1.0-beta.28 retains the
+  reviewed current-source payload except manifest version:72files/3edcbb74228d3b48.
+- Knowledge/application separation, reader/registry integrity, selected-method
+  boundaries and concrete stage handoffs are included. Existing failures and
+  passing baselines remain; no new model suite or native/long-context proof.
+- Local verification:66regressions, package and scoped release gate pass. Separate
+  exact-source CI, assets and clean/primary installs remain pending in the
+  [release report](../experiments/releases/knowledge-beta28-20261014/report.md).
+- Previous tags stay immutable; rollback beta.27. Canvas/Bookworm and external
+  observation scope unchanged. Main completes publication/install checks before
+  reporting success; creator does not need to repeat generic approval.
+
 ## 2026-10-14 — Close bounded backlog tasks without erasing native failures
 
 - Creator asked main to work the relevant backlog and choose tests independently,

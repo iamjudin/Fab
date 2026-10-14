@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "version": "0.1.0-beta.27",
-  "fingerprint": "b6a149b9ebfa968f",
+  "version": "0.1.0-beta.28",
+  "fingerprint": "3edcbb74228d3b48",
   "channel": "beta",
   "surfaces": [
     {
@@ -13,7 +13,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/continuation-beta27-20261014/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/knowledge-beta28-20261014/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -26,12 +26,12 @@
       "id": "brainstorm",
       "default": true,
       "status": "limited",
-      "limitations": "Bounded contextual and varied virtual v2 evidence on GPT-6.1 Sol/Medium; exact Brainstorm files retained. Shared instructions changed separately. No statistical superiority, long-context stability, taste or universal maturity claim; illustrative copy-anchor assumption retained. Progressive stopping reference updated with shared continuation boundary, structurally reviewed but not directly exercised by a fresh Brainstorm turn.",
+      "limitations": "Retained contextual/varied V2 evidence plus one short current-source sequential discussion/action/completion test on GPT-6.1 Sol/Medium. The shipped-identical baseline also passes; no comparative superiority, native consistency, long-context stability or creator usefulness claim. Earlier copy-anchor caveat retained.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/continuation-beta27-20261014/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/knowledge-beta28-20261014/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -42,6 +42,11 @@
           "name": "contextual v2 correction and varied virtual situations",
           "result": "pass",
           "evidence": "experiments/workflow-tests/brainstorm-context-20261013/results.md; experiments/workflow-tests/brainstorm-v2-situations-20261013/results.md"
+        },
+        {
+          "name": "bounded sequential discussion and actual continuation",
+          "result": "pass",
+          "evidence": "experiments/workflow-tests/backlog-closure-20261014/results.md"
         }
       ]
     },
@@ -49,12 +54,12 @@
       "id": "cowork",
       "default": true,
       "status": "limited",
-      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Three candidate continuation boundaries pass in focused source contexts. Baseline also passes the choice fixture. No long-context efficacy or installed-model claim.",
+      "limitations": "Bounded project orientation/continuation and concrete workstream proposal. Current-source stage-handoff and growth fixture pass; native recurrence is retained. Short baseline sequence also passes. No ordinary-use trigger consistency, general recovery, installed-model or long-context guarantee.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/continuation-beta27-20261014/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/knowledge-beta28-20261014/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -65,6 +70,11 @@
           "name": "bounded feedback continuation in source",
           "result": "pass",
           "evidence": "experiments/workflow-tests/dialogue-continuation-20261014/results.md"
+        },
+        {
+          "name": "bounded current-source stage handoff and workstream proposal",
+          "result": "pass",
+          "evidence": "experiments/workflow-tests/knowledge-dialogue-20261014/results.md; experiments/workflow-tests/backlog-closure-20261014/results.md"
         }
       ]
     },
@@ -77,7 +87,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/continuation-beta27-20261014/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/knowledge-beta28-20261014/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -90,17 +100,22 @@
       "id": "plugin",
       "default": true,
       "status": "limited",
-      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee.",
+      "limitations": "Retained bounded plugin engineering outcomes, plus generated self-contained cleanup inheritance and local helper checks after a retained Python3.9 harness correction. Fresh generated-only model cleanup, host discovery, UI and production readiness remain unobserved.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/continuation-beta27-20261014/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/knowledge-beta28-20261014/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
           "result": "pass",
           "evidence": "experiments/workflow-tests/2026-10-11-plugin-smokes-results.md"
+        },
+        {
+          "name": "generated independent runtime rules and local helper checks",
+          "result": "pass",
+          "evidence": "experiments/workflow-tests/backlog-closure-20261014/results.md"
         }
       ]
     },
@@ -113,7 +128,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/continuation-beta27-20261014/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/knowledge-beta28-20261014/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -131,7 +146,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/continuation-beta27-20261014/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/knowledge-beta28-20261014/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -144,12 +159,12 @@
       "id": "research",
       "default": true,
       "status": "limited",
-      "limitations": "Framing/readability/reuse/output-review contract with bounded evidence. External V2/V3 compliance PARTIAL with source/numeric/layout failures retained. No decision-grade, native render, cross-project transfer or Bookworm behavior guarantee. Foundation/covered-question source evidence is bounded, with an unspecified age-scope assumption retained. No installed-model execution or causal comparison. Three candidate continuation boundaries pass in focused source contexts. Baseline also passes the choice fixture. No long-context efficacy or installed-model claim.",
+      "limitations": "Cleaned briefs separate knowledge/application; all437original packet sections preserved. Reader/registry integrity and bounded knowledge/method/marking source cases pass. External source/arithmetic/layout compliance remains PARTIAL. No scientific revalidation, native rendering, general applicability, cross-project efficacy, installed-model behavior or long-context repair guarantee.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/continuation-beta27-20261014/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/knowledge-beta28-20261014/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -170,6 +185,21 @@
           "name": "bounded feedback continuation in source",
           "result": "pass",
           "evidence": "experiments/workflow-tests/dialogue-continuation-20261014/results.md"
+        },
+        {
+          "name": "knowledge retention and reader registry integrity",
+          "result": "pass",
+          "evidence": "experiments/maintenance/knowledge-integrity-20261014/results.md; experiments/maintenance/knowledge-cleanup-20261014/results.md"
+        },
+        {
+          "name": "selected-method controls and qualified knowledge application",
+          "result": "pass",
+          "evidence": "experiments/workflow-tests/knowledge-dialogue-20261014/results.md"
+        },
+        {
+          "name": "source refusal additive use and revision correspondence",
+          "result": "pass",
+          "evidence": "experiments/workflow-tests/backlog-closure-20261014/results.md"
         }
       ]
     },
@@ -182,7 +212,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/continuation-beta27-20261014/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/knowledge-beta28-20261014/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -200,7 +230,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/continuation-beta27-20261014/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/knowledge-beta28-20261014/report.md"
         },
         {
           "name": "retained bounded baseline evidence",

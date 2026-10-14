@@ -13,18 +13,18 @@ and shipped baseline pass the short dialogue; native dead ends remain unresolved
 A generated plugin inherits self-contained cleanup rules, but its fresh model
 execution is unobserved. No new Fab runtime correction is warranted by this suite.
 
-**Main recommendation:** promote the already verified knowledge/reader/handoff
-candidate at the next explicit release request, then assess ordinary use rather
-than repeat passing synthetic situations. Creator owns that release choice.
+**Current action:** creator approved beta.28 locally and on GitHub. Main is
+completing distribution checks, then assesses ordinary use rather than repeating
+passing synthetic situations. [Release progress](../experiments/releases/knowledge-beta28-20261014/report.md).
 Prepared Deep Research is optional deeper evidence, not a dependency or a claim
 of completed provider work. Canvas remains outside current work.
 
-## Ready source, awaiting release authorization
+## Authorized beta.28 distribution in progress
 
-Source: 72 files / `891e6db46b47b4bf`, manifest beta.27. Installed/public beta.27
-remains 72 files / `b6a149b9ebfa968f`. Local source and installed payload differ;
-commit/push is not a release. Main owns the next versioned local update plus public
-GitHub tag/Release and separate distribution checks when explicitly requested.
+Prepared beta.28: 72 files / `3edcbb74228d3b48`, only manifest version changed
+from tested source `891e6db46b47b4bf`. Installed/public beta.27 remains the baseline
+until actual distribution is verified. Main owns the authorized local update plus
+public GitHub tag/Release and separate checks; commit/push alone is insufficient.
 
 | Owner | Completed candidate | Evidence / limits |
 |---|---|---|
@@ -34,7 +34,8 @@ GitHub tag/Release and separate distribution checks when explicitly requested.
 The [two primary-source collaboration reviews](research/collaboration-2026-10-14/index.md)
 are complete project evidence with separate application, not automatic runtime
 instructions. Their proposed sequential test is now completed, not waiting for
-another commission. No release, installation or push occurred in this batch.
+another commission. No release, installation or push occurred in the completed backlog-test batch.
+The separately authorized beta.28 distribution now owns those actions.
 
 ## Remaining verification, with an actual trigger
 

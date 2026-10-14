@@ -1,5 +1,15 @@
 # Рабочее состояние Fab
 
+## 2026-10-14 — Beta.28 distribution authorized and prepared
+
+Creator approves the recommended source candidate locally and publicly. Release
+payload72files/3edcbb74228d3b48 changes only manifest version from source891e6db46b47b4bf.
+66regressions/package/scope pass. [Distribution](../experiments/releases/knowledge-beta28-20261014/report.md)
+will record actual tag/CI/assets/clean-primary installs. Main owns completion
+without another generic approval; beta.27 remains installed until the update passes.
+Prior tags immutable, rollback beta.27. No new model/native/long-context proof,
+provider launch, Canvas/Bookworm promotion or observed-product changes.
+
 ## 2026-10-14 — Current backlog maintenance completed
 
 Creator authorizes relevant backlog work, bounded closure of obsolete items and

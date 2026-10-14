@@ -1,0 +1,26 @@
+{
+  "version": "0.1.0-beta.28",
+  "files": 72,
+  "fingerprint": "3edcbb74228d3b48",
+  "sourceCandidateFingerprint": "891e6db46b47b4bf",
+  "sourceCommit": null,
+  "tag": "v0.1.0-beta.28",
+  "checks": {
+    "package": "pass: exact72-file payload",
+    "regressions": 66,
+    "scope": "pass",
+    "sourceBehavior": "retained current-source bounded tests, no additional model turn",
+    "remoteCI": "pending",
+    "assets": "pending",
+    "cleanInstall": "pending",
+    "primaryInstall": "pending",
+    "installedModelBehavior": "unobserved"
+  },
+  "limits": [
+    "Native ordinary-use dead ends retained",
+    "Short source and shipped baseline both pass",
+    "No generated-only model cleanup claim",
+    "No scientific source revalidation or general domain completeness",
+    "No automatic existing-chat reload, native rendering, Bookworm or Canvas promotion"
+  ]
+}
