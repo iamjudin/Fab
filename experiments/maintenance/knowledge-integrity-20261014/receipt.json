@@ -1,0 +1,38 @@
+{
+  "baselineSource": {
+    "files": 72,
+    "fingerprint": "6b0b0537851e5a1c"
+  },
+  "finalSource": {
+    "files": 72,
+    "fingerprint": "891e6db46b47b4bf"
+  },
+  "changedRuntimeFiles": [
+    "shared/methods/index.md",
+    "skills/research/references/ingestion.md",
+    "skills/research/scripts/research_packet.py"
+  ],
+  "historicalPackets": {
+    "count": 9,
+    "sections": 437,
+    "allBytesIdentical": true,
+    "readerValidatesAll": {
+      "shared/methods/ai-native.full.json": "Packet structure: OK (42 sections); claim verification separate",
+      "shared/methods/monetization.full.json": "Packet structure: OK (68 sections); claim verification separate",
+      "shared/methods/slice-completeness.full.json": "Packet structure: OK (77 sections); claim verification separate",
+      "shared/methods/product-structure.full.json": "Packet structure: OK (44 sections); claim verification separate",
+      "shared/methods/design-systems.full.json": "Packet structure: OK (42 sections); claim verification separate",
+      "shared/methods/first-value.full.json": "Packet structure: OK (32 sections); claim verification separate",
+      "shared/methods/mobile-structure.full.json": "Packet structure: OK (49 sections); claim verification separate",
+      "shared/methods/jtbd.full.json": "Packet structure: OK (20 sections); claim verification separate",
+      "shared/methods/technical-ux-dependencies.full.json": "Packet structure: OK (63 sections); claim verification separate"
+    }
+  },
+  "selectedHistoricalRead": "R027 exposes historical-application and retained text",
+  "baselineFrozen": true,
+  "finalFrozen": true,
+  "modelTurns": 0,
+  "externalInvestigations": 0,
+  "temporaryChecks": "context-managed directories removed",
+  "installedOrReleased": false
+}

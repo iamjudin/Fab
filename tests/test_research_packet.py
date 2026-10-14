@@ -1,5 +1,6 @@
 import importlib.util
 import json
+import os
 import subprocess
 import sys
 import tempfile
@@ -14,6 +15,81 @@ spec.loader.exec_module(module)
 
 
 class ResearchPacketTests(unittest.TestCase):
+    def test_build_refuses_source_identity_even_through_aliases(self):
+        for kind in ('same-path', 'symlink', 'hardlink'):
+            with self.subTest(kind=kind), tempfile.TemporaryDirectory() as temp:
+                source = Path(temp) / 'original.md'
+                content = b'## Method\nOriginal evidence.\n'
+                source.write_bytes(content)
+                output = source if kind == 'same-path' else Path(temp) / 'output.json'
+                if kind == 'symlink':output.symlink_to(source)
+                elif kind == 'hardlink':os.link(source, output)
+                result = subprocess.run([sys.executable, module.__file__, 'build', str(source), str(output), '--title', 'Protected'], capture_output=True, text=True)
+                self.assertNotEqual(result.returncode, 0)
+                self.assertIn('must not overwrite', result.stderr)
+                self.assertEqual(source.read_bytes(), content)
+
+    def test_unknown_exclusion_fails_before_creating_packet(self):
+        with tempfile.TemporaryDirectory() as temp:
+            source, output = Path(temp) / 'original.md', Path(temp) / 'output.json'
+            content = b'## Method\nOriginal evidence.\n'
+            source.write_bytes(content)
+            result = subprocess.run([sys.executable, module.__file__, 'build', str(source), str(output), '--title', 'Test', '--exclude-title', 'Absent section'], capture_output=True, text=True)
+            self.assertNotEqual(result.returncode, 0)
+            self.assertIn('Unknown exclusion titles', result.stderr)
+            self.assertFalse(output.exists())
+            self.assertEqual(source.read_bytes(), content)
+
+    def test_cli_preserves_utf8_bytes_and_line_endings(self):
+        for ending in ('\n', '\r\n', '\r'):
+            with self.subTest(ending=repr(ending)), tempfile.TemporaryDirectory() as temp:
+                source = ('Intro' + ending + '## Method' + ending + 'Keep this condition ✓.' + ending).encode('utf-8')
+                path, output = Path(temp) / 'original.md', Path(temp) / 'packet.json'
+                path.write_bytes(source)
+                subprocess.check_output([sys.executable, module.__file__, 'build', str(path), str(output), '--title', 'Exact source'])
+                data = json.loads(output.read_text())
+                self.assertEqual(''.join(s['text'] for s in data['sections']).encode('utf-8'), source)
+                self.assertEqual(data['sourceSha256'], module.digest(source.decode('utf-8')))
+
+    def test_code_fence_matching_preserves_section_boundaries(self):
+        for opening, inner, closing in [('````text', '```', '`````'),
+                                        ('~~~text', '```', '~~~'),
+                                        ('```text', '```not-a-close', '```')]:
+            with self.subTest(opening=opening, inner=inner):
+                source = f'## Method\n{opening}\n{inner}\n## Still code\n{closing}\n## Limits\nUnknown\n'
+                data = module.packet(source, 'Fence')
+                self.assertEqual([s['title'] for s in data['sections']], ['Method', 'Limits'])
+                self.assertEqual(''.join(s['text'] for s in data['sections']), source)
+
+    def test_unclosed_fence_keeps_heading_in_code(self):
+        source = '## Method\n```text\n## Still code\n'
+        data = module.packet(source, 'Fence')
+        self.assertEqual(len(data['sections']), 1)
+        self.assertEqual(data['sections'][0]['text'], source)
+
+    def test_source_authority_and_unexcluded_hash_cannot_drift(self):
+        for key, value in [('schemaVersion', 2), ('authority', 'current-runtime-instructions'),
+                           ('sourceSha256', '0' * 64)]:
+            with self.subTest(key=key):
+                data = module.packet('## Method\nText\n', 'Test')
+                data[key] = value
+                with self.assertRaises(AssertionError):
+                    module.validate(data)
+
+    def test_exclusion_cannot_hide_a_retained_section(self):
+        data = module.packet('## Method\nText\n## Example\nCase\n', 'Test', excluded_titles=('Example',))
+        module.validate(data)
+        data['excluded'][0]['id'] = data['sections'][0]['id']
+        with self.assertRaises(AssertionError):
+            module.validate(data)
+
+    def test_excluding_preamble_does_not_exclude_the_report(self):
+        source = 'Technical preamble\n## Method\nKeep the condition.\n## Limits\nUnknown\n'
+        data = module.packet(source, 'Test', excluded_titles=('Preamble',))
+        self.assertEqual([s['title'] for s in data['sections']], ['Method', 'Limits'])
+        self.assertEqual([s['title'] for s in data['excluded']], ['Preamble'])
+        module.validate(data)
+
     def test_lossless_and_code_headings(self):
         source = 'Intro\n## Method\n```text\n## not a heading\n```\nClaim [source](https://example.com)\n## Limits\nUnknown\n'
         data = module.packet(source, 'Test', 'project-evidence')

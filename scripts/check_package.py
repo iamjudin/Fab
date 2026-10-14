@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Validate package references, methods and optional installed parity."""
 import argparse, hashlib, importlib.util, json, re, struct, zlib
+from collections import Counter
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1] / 'plugins/fab'
 reader_spec = importlib.util.spec_from_file_location(
@@ -48,6 +49,54 @@ def validate_branding(root, manifest):
             offset = end
         assert chunks[0] == b'IHDR' and b'IDAT' in chunks and chunks[-1] == b'IEND', key
 
+def validate_methods(root):
+    """Verify the registry against actual pairs, not just self-consistent packets."""
+    methods = root / 'shared/methods'
+    registry = json.loads((methods / 'registry.json').read_text())
+    assert registry.get('schemaVersion') == 1, 'Unsupported method registry'
+    modules = registry.get('modules')
+    assert isinstance(modules, list), 'Missing method modules'
+    ids, pairs = set(), {'brief': set(), 'full': set()}
+    for module in modules:
+        module_id = module.get('id')
+        assert isinstance(module_id, str) and module_id.strip() and module_id not in ids, 'Duplicate/missing method ID'
+        ids.add(module_id)
+        paths = {}
+        for field, suffix in [('brief', '.md'), ('full', '.full.json')]:
+            value = module.get(field)
+            assert isinstance(value, str) and value.strip(), (module_id, field, 'missing path')
+            path = (methods / value).resolve()
+            assert path.is_relative_to(methods.resolve()) and path.is_file(), (module_id, field, 'invalid path')
+            assert path.name.endswith(suffix) and path not in pairs[field], (module_id, field, 'invalid/duplicate pair')
+            pairs[field].add(path)
+            paths[field] = path
+        data = json.loads(paths['full'].read_text())
+        reader.validate(data)
+        assert data['scope'] == 'global-method', (module_id, 'wrong bundled scope')
+        assert module.get('sourceSha256') == data['sourceSha256'], (module_id, 'registry source mismatch')
+        assert module.get('sourceTitle') == data['title'], (module_id, 'registry title mismatch')
+        links = re.findall(r'\]\(([^)]+)\)', paths['brief'].read_text())
+        assert paths['full'] in {(paths['brief'].parent / t.split('#')[0]).resolve()
+                                 for t in links if '://' not in t}, (module_id, 'brief does not link its packet')
+        context = module.get('readingContext')
+        if context is not None:
+            counts = dict(Counter(s['readingContext']['kind'] for s in data['sections'] if s.get('readingContext') is not None))
+            assert isinstance(context, dict) and context.get('sectionKinds') == counts, (module_id, 'registry context drift')
+            assert isinstance(context.get('boundary'), str) and context['boundary'].strip(), (module_id, 'missing context boundary')
+    actual = {p.resolve() for p in methods.rglob('*.full.json')}
+    assert pairs['full'] == actual, 'Unregistered method packet'
+    table_links, in_table = set(), False
+    for line in (methods / 'index.md').read_text().splitlines():
+        if re.fullmatch(r'\|(?:\s*:?-+:?\s*\|)+\s*', line):
+            in_table = True
+        elif not line.startswith('|'):
+            in_table = False
+        elif in_table:
+            table_links.update((methods / target.split('#')[0]).resolve()
+                               for target in re.findall(r'\]\(([^)]+)\)', line)
+                               if '://' not in target)
+    assert pairs['brief'] <= table_links, 'Method missing from the index decision table'
+
 def validate(root):
     manifest=json.loads((root/'plugin.json').read_text())
     assert manifest['name']=='fab'
@@ -65,11 +114,7 @@ def validate(root):
         head=p.read_text().split('---',2)[1]
         assert f'name: {p.parent.name}\n' in head
         assert 'description: ' in head
-    for p in (root/'shared/methods').glob('*.full.json'):
-        d=json.loads(p.read_text());assert d['scope']=='global-method'
-        reader.validate(d)
-        content=''.join(s['text'] for s in d['sections'])
-        assert hashlib.sha256(content.encode()).hexdigest()==d['retainedSha256']
+    validate_methods(root)
     return manifest
 if __name__=='__main__':
     parser=argparse.ArgumentParser();parser.add_argument('--installed-root',type=Path);args=parser.parse_args()

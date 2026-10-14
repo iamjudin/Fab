@@ -3,17 +3,18 @@ Design v0.2 accepted for bounded autonomous beta implementation on 2026-10-10.
 Target owners: cowork, research, product, wireframe, prototype, analysis,
 brainstorm, testing, plugin, delivery. Historical beta.1 had five skills:
 cowork/research/analysis/brainstorm/testing plus shared core.
-All ten skill contracts are now installed in beta.23. Meaning/behavior maturity
+All ten skill contracts are installed in beta.27. Meaning/behavior maturity
 is bounded by concrete smoke evidence, not availability. Product/Wireframe use
 compatible graph adapter; Prototype/Plugin/Delivery have independent modes.
 Cowork maintains collaboration/intent/continuity; direct invocation bypasses it.
 Research acquires/synthesizes evidence; analysis evaluates existing material;
 brainstorm explores alternatives; testing produces experimental evidence.
-Delivery future owner of public release; plugin owns packaging/runtime criteria.
+Delivery owns public release organization, plugin owns packaging/runtime criteria.
 Common Git culture is not a separate skill. No orchestrator/MCP/queue/hidden swarm.
 
 New repo with independent history, package plugins/fab, portable package-root plugin.json.
-Old repositories remain untouched source/recovery. Selected reusable knowledge
+Legacy local folders and historical records are recovery material, not runtime
+or Git dependencies. Selected reusable knowledge
 pairs copied with hashes/limits; project reports/test products excluded.
 Mobile method now has brief/full and conditional app routes; native/device
 behaviour and gamification remain separate evidence gaps. Landlord excluded.
@@ -21,6 +22,32 @@ behaviour and gamification remain separate evidence gaps. Landlord excluded.
 Shared artifact lifecycle covers task-owned scratch, verified retention and
 bounded cleanup. Plugin exports an equivalent self-contained rule to generated
 packages; this is a runtime responsibility, not a new mandatory workflow stage.
+
+## Current knowledge architecture
+
+Nine bundled methods have an operational brief, preserved full packet and one
+registry. Briefs separate reusable knowledge from current Fab application.
+Optional section context qualifies historical, mixed, dated and example material
+without turning it into current policy or an evidence grade. Runtime reads a
+relevant brief, then selected packet sections when needed. Original library copies
+are not runtime dependencies. Independent research findings and project decisions
+retain separate ownership, applicability and processed revision.
+
+The source reader preserves UTF-8 line endings and original-file identity, checks
+packet hashes/authority and declared exclusions, and keeps fenced examples out
+of the heading index. Package checks tie registry identity, pairs/context counts,
+brief links and index discoverability to actual bundled files. These are structural
+checks, not scientific verification or completeness proof. Historical packets are
+not regenerated after a parser fix. Unresolved attribution and domain breadth stay
+qualified, and a changed source only triggers review of affected conclusions.
+
+These integrity improvements and the earlier cleaned-source handoff/method
+corrections are unreleased. Installed/public beta.27 is unchanged. Current source
+evidence and promotion boundaries belong to [handoff](../handoff.md) and
+[backlog](../backlog.md), rather than being inferred from this availability list.
+
+## Historical implementation checkpoints
+
 Beta.10 installed parity/local regression checked; fresh generated-rule behavior
 not yet observed (FAB-09).
 Beta.11 makes maintainer research labels explicit: `Fab:` filename prefix and

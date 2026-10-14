@@ -20,11 +20,18 @@ def digest(text):
 
 def packet(text, title, scope='global-method', excluded_titles=()):
     lines = text.splitlines(keepends=True)
-    sections, current, fence = [], None, False
+    sections, current, fence = [], None, None
     for line in lines:
-        if line.lstrip().startswith(('```', '~~~')):
-            fence = not fence
-        match = None if fence else re.match(r'^(#{1,6})\s+(.+?)\s*\n?$', line)
+        marker = re.match(r'^ {0,3}(`{3,}|~{3,})([^\r\n]*)[\r\n]*$', line)
+        in_code = fence is not None
+        if fence is not None:
+            if (marker and marker[1][0] == fence[0]
+                    and len(marker[1]) >= fence[1] and not marker[2].strip(' \t')):
+                fence = None
+        elif marker and (marker[1][0] != '`' or '`' not in marker[2]):
+            fence = (marker[1][0], len(marker[1]))
+            in_code = True
+        match = None if in_code else re.match(r'^(#{1,6})\s+(.+?)\s*\n?$', line)
         if match or current is None:
             current = {'id': f'R{len(sections)+1:03}',
                        'level': len(match[1]) if match else 0,
@@ -32,9 +39,13 @@ def packet(text, title, scope='global-method', excluded_titles=()):
             sections.append(current)
         current['text'] += line
     assert ''.join(s['text'] for s in sections) == text
+    missing = set(excluded_titles) - {s['title'] for s in sections}
+    if missing:
+        raise ValueError(f'Unknown exclusion titles: {sorted(missing)}')
     retained, excluded, skip_level = [], [], None
     for section in sections:
-        if skip_level is not None and section['level'] and section['level'] <= skip_level:
+        if (skip_level is not None and section['level']
+                and (skip_level == 0 or section['level'] <= skip_level)):
             skip_level = None
         if section['title'] in excluded_titles:
             skip_level = section['level']
@@ -52,11 +63,33 @@ def packet(text, title, scope='global-method', excluded_titles=()):
 
 
 def validate(data):
+    assert data.get('schemaVersion') == 1, 'Unsupported packet schema'
+    assert data.get('authority') == 'source-material-not-runtime-instructions', 'Invalid source authority'
+    assert data.get('scope') in ('global-method', 'project-evidence'), 'Invalid packet scope'
+    assert isinstance(data.get('title'), str) and data['title'].strip(), 'Missing source title'
+    for field in ('sourceSha256', 'retainedSha256'):
+        assert isinstance(data.get(field), str) and re.fullmatch(r'[0-9a-f]{64}', data[field]), f'Invalid {field}'
     sections = data['sections']
+    assert isinstance(sections, list), 'Invalid sections'
+    for section in sections:
+        assert isinstance(section, dict), 'Invalid section'
+        assert isinstance(section.get('id'), str) and section['id'].strip(), 'Missing section ID'
+        assert isinstance(section.get('title'), str) and section['title'].strip(), 'Missing section title'
+        assert isinstance(section.get('text'), str), 'Invalid section text'
     ids = [s['id'] for s in sections]
     assert len(ids) == len(set(ids)), 'Duplicate section IDs'
     assert digest(''.join(s['text'] for s in sections)) == data['retainedSha256'], 'Content mismatch'
-    assert data['scope'] in ('global-method', 'project-evidence')
+    excluded = data.get('excluded', [])
+    assert isinstance(excluded, list), 'Invalid exclusions'
+    excluded_ids = []
+    for section in excluded:
+        assert isinstance(section, dict), 'Invalid exclusion'
+        assert isinstance(section.get('id'), str) and section['id'].strip(), 'Missing excluded ID'
+        assert isinstance(section.get('sha256'), str) and re.fullmatch(r'[0-9a-f]{64}', section['sha256']), 'Invalid excluded hash'
+        excluded_ids.append(section['id'])
+    assert len(excluded_ids) == len(set(excluded_ids)) and not set(ids) & set(excluded_ids), 'Overlapping or duplicate exclusions'
+    if not excluded:
+        assert data['sourceSha256'] == data['retainedSha256'], 'Source/content mismatch without exclusions'
     for section in sections:
         context = section.get('readingContext')
         if context is not None:
@@ -94,7 +127,15 @@ def main():
             choice.add_argument('--section', action='append')
     args = parser.parse_args()
     if args.command == 'build':
-        data = packet(args.source.read_text(encoding='utf-8'), args.title, args.scope, args.exclude_title)
+        if (args.output.resolve() == args.source.resolve()
+                or (args.output.exists() and args.source.samefile(args.output))):
+            parser.error('Packet output must not overwrite the source original')
+        # Universal-newline decoding would silently alter original bytes/hashes.
+        with args.source.open(encoding='utf-8', newline='') as source:
+            try:
+                data = packet(source.read(), args.title, args.scope, args.exclude_title)
+            except ValueError as error:
+                parser.error(str(error))
         validate(data)
         args.output.parent.mkdir(parents=True, exist_ok=True)
         args.output.write_text(json.dumps(data, ensure_ascii=False, indent=2)+'\n', encoding='utf-8')

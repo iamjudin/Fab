@@ -1,5 +1,23 @@
 # Рабочее состояние Fab
 
+## 2026-10-14 — Post-cleanup knowledge integrity verified in source
+
+Creator authorized audit/refactoring while additional Deep Research is rate-limited.
+[Results](../experiments/maintenance/knowledge-integrity-20261014/results.md):
+66 regressions/package PASS,72files/891e6db46b47b4bf. Reader protects original-file
+identity and UTF-8 line endings, handles declared exclusions/fence boundaries and
+validates source authority/hash. Guard ties registry identity/context/pairs and
+brief/index discovery to actual files. All nine full packets/437sections are
+byte-identical to baseline6b0b0537851e5a1c, not rebuilt by the new parser.
+
+Runtime delta: method index, ingestion reference and reader. Maintainer guard,
+regressions and architecture reflect those boundaries. No full Markdown parser,
+scientific/citation validation, model/native/long-context repair or study launch.
+Installed/public beta.27 remains72files/b6a149b9ebfa968f. No install/push/release.
+Main owns this candidate plus prior knowledge/handoff corrections for separately
+requested distribution and real-use calibration. Creator-run initiative/evaluation
+studies remain prepared, no reset-time guess or unagreed method substitution.
+
 ## 2026-10-14 — Autonomous knowledge and dialogue batch verified in source
 
 Creator authorized current maintenance scope, final results and preparation of

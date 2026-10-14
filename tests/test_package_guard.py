@@ -38,6 +38,29 @@ class GuardTests(unittest.TestCase):
         d['sections'][0]['readingContext']={'kind':'current-policy','note':'Wrong authority'}
         p.write_text(json.dumps(d))
         with self.assertRaises(AssertionError):guard.validate(self.root)
+    def test_registry_rejects_drift_and_omissions(self):
+        p=self.root/'shared/methods/registry.json';original=p.read_text()
+        for change in ('hash', 'title', 'context', 'duplicate', 'missing'):
+            with self.subTest(change=change):
+                d=json.loads(original)
+                if change=='hash':d['modules'][0]['sourceSha256']='0'*64
+                elif change=='title':d['modules'][0]['sourceTitle']='Another source'
+                elif change=='context':d['modules'][0]['readingContext']['sectionKinds']['mixed']+=1
+                elif change=='duplicate':d['modules'].append(d['modules'][0])
+                else:d['modules'].pop()
+                p.write_text(json.dumps(d))
+                with self.assertRaises(AssertionError):guard.validate(self.root)
+    def test_registered_brief_must_link_its_actual_packet(self):
+        p=self.root/'shared/methods/jtbd.md';p.write_text(p.read_text().replace('jtbd.full.json','first-value.full.json'))
+        with self.assertRaises(AssertionError):guard.validate(self.root)
+    def test_registry_pair_cannot_escape_methods(self):
+        p=self.root/'shared/methods/registry.json';d=json.loads(p.read_text())
+        d['modules'][0]['brief']='../core.md';p.write_text(json.dumps(d))
+        with self.assertRaises(AssertionError):guard.validate(self.root)
+    def test_split_method_table_is_rejected(self):
+        p=self.root/'shared/methods/index.md'
+        p.write_text(p.read_text().replace('\n| Technical uncertainty', '\n\n| Technical uncertainty'))
+        with self.assertRaises(AssertionError):guard.validate(self.root)
     def test_parity_detects_shared_file_drift(self):
         before=guard.payload(self.root);p=self.root/'shared/core.md'
         p.write_text(p.read_text()+'changed')

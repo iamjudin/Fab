@@ -26,7 +26,6 @@ Follow the active capability contracts linked from each brief for Fab policy.
 | Selected slice coverage, state/data/failure gaps and prototype readiness | [Slice completeness](slice-completeness.md) | Sparse coverage, applicability, fixtures, finding classification and stop rules |
 | Paid value, model, trial/paywall or entitlement lifecycle | [Monetization](monetization.md) | Economic alternatives, paid boundary, payment/access states; fresh platform/legal checks |
 | First use, deep link, setup/identity/permission and activation | [First value](first-value.md) | Entry contexts, dependencies, skip/resume and evidence of value |
-
 | Technical uncertainty changes UX, async truth or prototype simulation | [Technical dependencies](technical-ux-dependencies.md) | Promise/evidence boundary, storage/network, recovery and appropriate probes |
 | Mobile application surfaces, return context, input and platform boundaries | [Mobile structure](mobile-structure.md) | iOS/Android/mobile web triggers, current platform guidance, native/device evidence limits |
 

@@ -93,6 +93,21 @@ pair is usable. Content correspondence and reader compatibility are separate
 checks: a custom JSON index can preserve paragraphs yet fail the runtime reader.
 Read relevant sections when the decision needs their detail, as described above.
 
+The builder refuses output that is the original itself, including filesystem
+aliases, and rejects unknown exclusion titles before creating the packet.
+It reads UTF-8 without normalizing line endings. With no exclusions,
+the source and retained content hashes must match. Validation also preserves the
+source-material authority boundary and disjoint retained/excluded IDs. For an
+excluded packet the retained text alone cannot prove the complete source hash:
+compare against the preserved original separately. Existing packets are not
+regenerated merely because the sectioner changes. It indexes ATX headings outside
+supported top-level fenced code, not every possible Markdown container/heading.
+
+For bundled methods keep the registry's source identity, brief/full paths and
+reading-context counts consistent with the actual pair. Link the matching packet
+from its brief and keep the method visible in the index decision table. Package
+checks verify those relationships, not source truth or semantic completeness.
+
 ## Optional source marking after processing
 
 After the original, brief and indexed packet are processed and checked, offer

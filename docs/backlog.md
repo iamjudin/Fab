@@ -43,6 +43,22 @@ public tag/Release, anonymous assets и exact-tag install в отдельный 
 README имеет явно исправленную erratum; tag/archive не переписывались. [Отчёт](../experiments/releases/public-beta22-20261012/report.md).
 Это новый distribution outcome в FAB-13; Canvas/continuity/open behavior не закрывает.
 
+## Knowledge integrity refactor — verified source, 2026-10-14
+
+FAB-15, main owns Research reader/package integrity. Creator authorized refactoring
+while additional Deep Research is rate-limited. [Results](../experiments/maintenance/knowledge-integrity-20261014/results.md):
+66 regressions/package PASS, source72files/891e6db46b47b4bf. Confirmed and corrected
+source-original overwrite, newline normalization, ignored/preamble exclusions,
+fence sectioning, source hash/authority drift, registry detachment and broken
+method-index discovery. All nine full packets/437sections remain byte-identical.
+
+Disposition: structural defects fixed in source, awaiting separately authorized
+release. No citation/domain-completeness or native/long-context closure. No model
+turn, provider dispatch, install or push. Main next owns release checks when
+explicitly requested, then actual-use calibration. Prepared independent studies
+stay deferred until creator research access/launch, with no substitute or reset-time
+claim. Canvas/Bookworm and monitor authority remain separate.
+
 ## Knowledge and dialogue batch — verified source, 2026-10-14
 
 Creator authorized autonomous handling of the current dead-end/knowledge package.

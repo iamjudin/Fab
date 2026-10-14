@@ -16,6 +16,29 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-14 — Repair integrity seams after the knowledge cleanup
+
+- Creator requested a logic audit/refactor while additional investigations are
+  rate-limited. Main inspected active skill/core/method/application boundaries,
+  preserving source-only scope and existing separate workstream ownership.
+- Confirmed failures: packet building could overwrite its original or normalize
+  line endings, ignore an exclusion, misindex fenced examples and lose an entire
+  report after preamble exclusion. Validation could accept changed authority/source
+  identity and registry drift. Two methods were outside the index table.
+- Corrected owning mechanisms: safe source identity, exact UTF-8 input, matched
+  fences and explicit exclusion handling, reusable packet validation, coupled
+  registry/brief/index checks. Current architecture is separate from historical
+  implementation checkpoints. No additional universal workflow rules.
+- [Evidence](../experiments/maintenance/knowledge-integrity-20261014/results.md):
+  baseline counterexamples retained,66regressions/package PASS, source72files/
+  891e6db46b47b4bf. Nine full packets and437sections byte-identical, old packets not
+  regenerated. Zero model turns/provider investigations, no install/push/release.
+- Judgment: the research-base seams are structurally safer, not scientifically
+  revalidated. Citation breadth and ordinary dialogue usefulness remain open.
+  Main recommends the combined source candidate for the next explicit release
+  and actual-use checks. Prepared studies wait for creator-run access, no silent
+  fallback or account-reset claim. Canvas/Bookworm stay outside this repair scope.
+
 ## 2026-10-14 — Test the handoff and knowledge boundaries before claiming repair
 
 - Creator authorized autonomous work on current dead ends and retained knowledge,

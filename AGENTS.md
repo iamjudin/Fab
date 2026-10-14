@@ -71,6 +71,19 @@ This rule does not authorize an immediate new chat, hidden delegation, a merge,
 runtime installation or publication. Keep main ownership and return criteria clear.
 
 ## Current boundary
+Creator2026-10-14 authorized post-cleanup logic audit/refactoring while additional
+research is rate-limited. Reviewed source72files/891e6db46b47b4bf,66regressions/
+package PASS. Reader protects original identity/UTF-8 line endings, exclusion
+intent/preamble boundaries and fenced sectioning, validates source authority/hash.
+Guard verifies registry identity, actual pairs/context counts and brief/index
+links. All nine full packets/437sections remain byte-identical, not regenerated.
+Runtime delta: index, ingestion reference, reader. Architecture/guard/checks updated.
+Evidence: experiments/maintenance/knowledge-integrity-20261014/results.md.
+Zero model turns/provider studies, no citation/domain or native/long-context
+closure. Installed/public beta.27 unchanged72files/b6a149b9ebfa968f. No release/
+install/push. Main owns source candidate plus prior repairs for separately
+requested distribution/real-use checks. Prepared research waits for creator-run
+access without a reset-time claim, Canvas/Bookworm/monitor boundaries preserved.
 Creator2026-10-14 authorized autonomous current dead-end/knowledge maintenance,
 with complete additional Deep Research assignments for creator-run execution.
 Reviewed source72files/6b0b0537851e5a1c,54regressions/package PASS. Reporting names
