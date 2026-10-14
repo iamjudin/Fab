@@ -16,6 +16,23 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-14 — Give an observed method deviation an execution disposition
+
+- Creator asked when monitored defects become implemented improvements rather
+  than accumulating as observations. The selected-method deviation had evidence
+  and an owning backlog area, but no explicit scheduled next step or closure test.
+- Main triage now assigns the case to existing FAB-15/FAB-11 with a next-behavioral-
+  verification priority after knowledge cleanup, three discriminating boundaries,
+  and a conditional repair/release path. No new duplicate ID or automated patching.
+- Judgment: the relevant principle already exists. Determine why it was not applied
+  before adding generic instructions that could reduce useful autonomy.
+- Limits: task/disposition prepared, no model test, runtime fix, installation or
+  publication. Original failure and correction remain preserved in the observation
+  record, whose pending changes stay outside this task checkpoint.
+- Evidence/next: [owning backlog](backlog.md#observation-triage--selected-research-method-2026-10-14).
+  Check blocked required method, open means and pre-authorized alternative before
+  deciding what source change is warranted.
+
 ## 2026-10-14 — Separate knowledge from historical process prescriptions
 
 - Creator approved cleanup of existing sources before considering new studies.

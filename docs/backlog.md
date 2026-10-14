@@ -43,6 +43,48 @@ public tag/Release, anonymous assets и exact-tag install в отдельный 
 README имеет явно исправленную erratum; tag/archive не переписывались. [Отчёт](../experiments/releases/public-beta22-20261012/report.md).
 Это новый distribution outcome в FAB-13; Canvas/continuity/open behavior не закрывает.
 
+## Observation triage — selected research method, 2026-10-14
+
+**Owner:** main Fab maintenance, Research with shared collaboration/authority.
+**Canonical item:** FAB-15, supported by FAB-11. No duplicate finding ID.
+**Status:** next behavioral verification, not implemented or released.
+**Priority/trigger:** next behavioral iteration after completed knowledge cleanup.
+Assess this before claiming that a future candidate corrects the observed problem.
+It is not a blanket blocker for unrelated package surfaces.
+
+- Evidence: [observed failure and correction](../experiments/workflow-tests/2026-10-13-external-chat-observation.md#2026-10-14--unagreed-method-substitution-retained-result-and-manual-handoff).
+  An explicitly selected research method became inaccessible. The assistant
+  disclosed an ordinary web-review substitute and executed it without prior
+  agreement. The creator challenged the deviation and then chose manual takeover.
+  Disclosure, preserved material and successful refinement do not erase the miss.
+- Expected behavior: preserve the commissioned outcome and selected method. If
+  changing that method is consequential, explain the concrete viable alternatives
+  and get the choice before dependent execution. Continue already authorized
+  preparation that does not depend on that choice. Keep partial material labeled.
+- Diagnosis boundary: core already requires discussion of material changes and
+  Research already distinguishes promised evidence from incomplete work. First
+  check application under a blocked-method scenario, not append another generic
+  approval requirement. Do not assume every tool swap changes the agreed method.
+- Bounded verification design: a required-method/access-blocked case, a control
+  where research means are left open, and a case where an alternative was already
+  authorized. Preserve actual input, package revision, model/effort, actions and
+  outcome. No provider dispatch or real research is needed to check this boundary.
+- Candidate correction: only after diagnosis, address the smallest owning
+  reference/reading path. If a focused baseline already passes, retain that result
+  and do not claim reproduction or superiority. A contextual application issue
+  may need a stronger fixture rather than another instruction.
+- Closure: observed specific-method case respects the choice boundary, controls
+  retain appropriate autonomy, and regression checks pass. Source verification,
+  installed behavior and publication remain distinct. Native/long-context
+  consistency stays open unless actually observed.
+- Release path: a tested candidate may join the next creator-authorized release.
+  A task entry, source commit or passing fixture is not installation/publication.
+
+Meaningful observations should receive an explicit disposition: next verification,
+next update, deferred with a concrete trigger, or no change with a reason. Routine
+unchanged monitoring stays quiet. This triage is made in the main chat, not an
+expansion of the read-only observer's authority to patch runtime or manage products.
+
 ## Knowledge cleanup — 2026-10-14
 
 FAB-15: creator approved existing-knowledge cleanup. [Source result](../experiments/maintenance/knowledge-cleanup-20261014/results.md)
