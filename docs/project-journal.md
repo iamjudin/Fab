@@ -16,6 +16,23 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-14 — Source behavior supports the foundation correction
+
+- Context: creator requested the two proposed behavior checks after integration.
+- Result: fresh foundation and covered-question cases apply the principle without
+  current-feature filtering or redundant broad research. Existing evidence is read,
+  synthetic observations stay qualified, accepted choices are preserved.
+- Evidence: two read-only GPT-6.1 Sol/Medium turns on source02169a3,
+  72files/37cbf14af3e5a51b. [Results](../experiments/workflow-tests/research-foundation-20261014/results.md)
+  retain actual156,446input/116,608cached/3,436output,161.25seconds excluding root.
+- Limits: unrequested ages3–12 working assumption is explicit but needs scope
+  calibration. No baseline comparison, external research, native reload or real
+  creator-value claim. Sandbox launch failure preceded any model turn and is
+  preserved separately from approved recovery.
+- Next: the correction is a bounded tested source candidate for the next authorized
+  release. Installed/public beta.25 unchanged. Fixture hashes and preservation
+  verified before exact owned scratch removal, unrelated observation edits retained.
+
 ## 2026-10-14 — Project context guides a reusable research foundation
 
 - Context: creator clarifies that anonymization alone can leave a research scope

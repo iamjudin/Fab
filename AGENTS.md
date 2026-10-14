@@ -77,7 +77,10 @@ project context sets priorities without filtering knowledge through current
 features. Consult existing knowledge, distinguish bounded foundation from focused
 consequential uncertainty. Source72files/37cbf14af3e5a51b,50regressions/package pass.
 Installed/public beta.25 remains72files/fdc8e22c01e7957c, immutable tag unchanged.
-No fresh-model efficacy, runtime update or public release for this delta.
+Two fresh source GPT-6.1 Sol/Medium cases show bounded foundation/focused-question
+application, with a creator-unspecified ages3–12 scope assumption retained as a
+caveat. Evidence: experiments/workflow-tests/research-foundation-20261014/results.md.
+No general efficacy, installed behavior, runtime update or public release for this delta.
 FAB-15 returned candidate df664b6 and creator explicitly authorized integration,
 local update and public GitHub release on2026-10-13. Integrated via2526511.
 Released/installed beta.25:72files/fdc8e22c01e7957c, framing/readability/independent

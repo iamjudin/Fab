@@ -1,5 +1,23 @@
 # Рабочее состояние Fab
 
+## 2026-10-14 — Foundation source behavior checked
+
+Creator requested the proposed two tests. Fresh read-only GPT-6.1 Sol/Medium
+turns use frozen main source02169a3,72files/37cbf14af3e5a51b. Foundation assignment
+reads existing limited evidence and covers surrounding knowledge beyond current
+features. Covered question uses existing material and recommends bounded flow
+validation without redundant broad research. Both distinguishing checks pass.
+An assumed ages3–12 commissioning scope is explicitly qualified, not creator
+accepted. Initial environment launch failure is preserved alongside recovery.
+
+[Results](../experiments/workflow-tests/research-foundation-20261014/results.md):
+156,446input/116,608cached/3,436output,161.25seconds excluding root. Full frozen
+fixture unchanged/retained, owned scratch cleaned. No installed behavior or
+external research claim. Installed/public beta.25 remains unchanged. Next is an
+explicitly authorized versioned release and ordinary-use calibration, not another
+full suite. Pending observation edits are preserved separately.
+
+
 ## 2026-10-14 — Research foundation correction integrated in source
 
 Creator clarified and approved returning the focused8145814 delta from the

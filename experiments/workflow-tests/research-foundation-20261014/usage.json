@@ -1,0 +1,22 @@
+{
+  "modelTurns": 2,
+  "actualRuntime": [
+    {
+      "model": "gpt-6.1-sol",
+      "effort": "medium"
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "effort": "medium"
+    }
+  ],
+  "input_tokens": 156446,
+  "cached_input_tokens": 116608,
+  "output_tokens": 3436,
+  "seconds": 161.25,
+  "root_overhead": "excluded",
+  "accountWindowUse": "unknown",
+  "resetCount": 0,
+  "purchaseCount": 0,
+  "initialLaunchFailure": "before model turn: sandbox denied local app-server initialization; retained separately"
+}
