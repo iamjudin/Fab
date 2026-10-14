@@ -1,77 +1,45 @@
-# Мобильная структура и взаимодействие
+# Mobile structure and interaction — knowledge brief
 
-Читайте при переходе от сценариев/правил к поверхностям, навигации, вводу и
-проверкам мобильного приложения. Метод для Product/Wireframe/Prototype/Delivery,
-не новый обязательный этап или каталог компонентов. [Полный материал](mobile-structure.full.json):
-49 разделов; выборочное чтение по ID через Research reader. Источник:
-«Мобильная структура и взаимодействие для Fab», ingested 2026-10-12.
-Human original не runtime dependency.
+Read for mobile surface ownership, navigation, return context, input, lifecycle
+or platform boundaries. [Preserved source](mobile-structure.full.json).
 
-## Общее ядро и платформенные ветви
-Intent, Jobs/UC, доменные правила, состояния и срез — общая продуктовая основа.
-Уточните iOS/Android/mobile web или иной app context только когда выбор меняет
-следующее решение; запишите его в существующую model/review note без новой анкеты.
-Мобильный фокус — глубина первой ветки, не запрет иных интерфейсов.
+## Knowledge and limits
 
-Поверхности, возврат, keyboard/permissions/lifecycle и критерии исполнения
-принадлежат выбранной платформе. Для будущего web сохраняйте смысл/правила,
-заново оцените URL/history, desktop input, browser permissions, responsive layout
-и web accessibility по актуальным первоисточникам. Browser как среда прототипа
-не означает web как целевой продукт. Если платформа меняет само обещанное
-поведение, верните эту зависимость в Product; не пересобирайте неизменившуюся модель.
+- Separate shared behavior from platform presentation. App context matters when
+  it changes the decision. A browser prototype does not make the target a web app.
+- Choose structure from the actual scenario, owner, transition and retained context.
+  One main context need not have a dashboard or tabs. Top-level places, commands,
+  temporary tasks and short blocking decisions have different purposes.
+- Collection/object drill-down, stack, modal task or dialog are alternatives whose
+  suitability depends on the task. A name or fixed number of levels is not proof.
+- Back, Close, Cancel, commit and dismissal have different meaning. Explicitly
+  define draft behavior and autosave rather than silently treating Close as Save.
+- Preserve ownership, context and applicable failure/recovery paths. Do not add
+  fake loading, offline or network states to satisfy a checklist.
+- Consider long text, window size, increased text size, focus and relevant keyboard
+  behavior. Hit regions, semantics and focus order matter beyond appearance.
+  Platform units and numerical thresholds are not interchangeable.
+- Preserve semantic intent when moving to another platform, then reassess URL/history,
+  input, permissions, responsive layout and accessibility under its actual conditions.
 
-## Выбор структуры
-Из активного сценария возьмите вход, владельца действия, результат перехода и
-сохраняемый контекст возврата (R002–R005). Выберите минимальную достаточную topology:
-- Один главный контекст не требует dashboard/tab bar по умолчанию.
-- Коллекция → объект → часть объекта проверяется как drill-down/stack.
-- Top-level navigation связывает постоянные равноправные места, не команды.
-- Поиск может быть устойчивой поверхностью либо действием; определяйте роль,
-  а не классифицируйте по одному названию (Apple допускает dedicated search tab).
-- Modal — временная задача с родителем/выходом; не каждая форма обязана быть sheet.
-- Dialog — короткое решение, не вложенное приложение.
-- Настройки/контролы принадлежат минимальному объекту, который они изменяют.
+## Application in current Fab
 
-Это авторский методологический синтез, не доказательство единственно верной IA.
-Количество вкладок/уровней не заменяет оценку важности/независимости контекстов.
-Structure Canvas физически показывает владельцев/вложенность, как требует
-Wireframe; подпись `screen/item` не заменяет группы.
+[Navigation and IA](../../skills/wireframe/references/navigation-ia.md),
+[table view](../../skills/wireframe/references/table-view.md) and
+[prototype](../../skills/prototype/references/interaction-prototype.md) own current
+outputs. Mobile focus supplies depth, not a ban on web or a new mandatory stage.
+Canvas remains optional. Source-local Canvas or briefing prescriptions in marked
+mixed sections and R043 do not override those contracts.
 
-## Поведение и проверка
-Определите родителя, Back, Close, Cancel, commit и результат ухода (R006–R009).
-Не смешивайте навигацию, dismissal и rollback. Autosave допустим как явная
-политика, не скрытый смысл Close. Create/edit/detail/history имеют разные роли.
-Проверьте применимые success/cancel/validation/failure/interruption/retry paths
-среза (R011, R038–R040); не добавляйте fake loading/offline/network ради checklist.
-Draft, подтверждённые данные и navigation context различаются. Локальная
-сохранность browser prototype не доказывает native process restoration.
+## Deeper reading and freshness
 
-Проверяйте длинный текст, узкое/широкое окно, увеличенный текст, focus/validation
-и применимую клавиатуру. Hit region, semantics и порядок focus важнее иконки.
-Не переносите dp/pt/CSS px и числовые пороги между платформами как эквивалентные.
+R002–R009 cover structure/returns/input, R010–R021 lifecycle/platform boundaries,
+R022–R042 contextual decisions and checks. R043 is historical packet-application
+advice. R044–R049 preserve sources. Read the packet's context before adopting detail.
 
-## Триггеры чтения платформы
-- iOS: tabs, modality/dismissal с draft, Dynamic Type/VoiceOver, настройки,
-  notifications/widgets/permissions или resizing — R018 и актуальная Apple guidance.
-- Android: Back/predictive back, destinations, adaptive windows, IME,
-  capabilities/custom accessibility — R019 и актуальная Android/Material guidance.
-- Mobile web: session history/URL/deep links, keyboard/viewport, permissions,
-  WCAG — R020/R035 и первоисточники. Desktop web требует собственных условий;
-  мобильное исследование не доказывает полноту desktop-ветки.
-
-Источники — R045–R049. Guidance — сильный default для поведения, принадлежащего
-платформе. Различайте ограничение ОС, рекомендацию, стандарт и авторский синтез.
-Текущие версии/API/числовые пороги читаются только по активному вопросу.
-
-## Evidence и достаточность
-Browser проверяет выбранные UI-пути/возврат в своей среде, не system Back/gestures,
-native keyboard, Dynamic Type, screen reader, permissions, background restoration,
-widgets или hardware (R021/R041). Эти риски получают отдельные native/device
-checks в Delivery, не обязательную имитацию каждой возможности в прототипе.
-Достаточно знать owner/surface активного сценария, согласовать возврат и выделить
-платформенные неизвестности, меняющие topology, из рисков дальнейшей реализации (R042).
-
-Полный исходник сохранён losslessly, но это не полный фактчек. Отчёт указывает
-7 неразрешённых привязок источников. Partial primary verification фиксируется
-в registry/audit. Неподтверждённые даты/версии/пороги не становятся вечными правилами.
-Обновляйте при изменении платформы, противоречии в реальном сценарии или пробеле основания.
+Open current primary iOS/Android/web guidance for the platform decision at issue.
+Seven citation bindings are unresolved, with partial primary verification only.
+General synthesis is not a uniquely correct IA, exhaustive platform audit or native
+proof. Browser evidence cannot establish system gestures, process restoration,
+native keyboard, assistive technology, permissions, widgets or hardware behavior.
+Revisit a platform change, real-path contradiction or missing decision basis.

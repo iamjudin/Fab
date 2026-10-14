@@ -16,6 +16,25 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-14 — Separate knowledge from historical process prescriptions
+
+- Creator approved cleanup of existing sources before considering new studies.
+  Nine redundant active Library copies are archived with their file hashes intact.
+- Root cause: full-source reading did not expose local application versus general
+  reasoning, while some briefs still called former-project choices current policy.
+- Source correction: nine knowledge briefs link current Fab contracts separately.
+  The compatible packet reader exposes annotated context for all437preserved
+  sections.51historical-application and40mixed sections remain qualified rather
+  than becoming mandatory process or being erased from provenance.
+- Verification:54regressions, package/source integrity and three real reader probes
+  pass. Original texts, IDs, hashes and archive files remain exact. No disposable
+  scratch or private source body is added to tracked artifacts.
+- Limits: source72files/a4ce6f41d9bc1d71 is unreleased, installed/public beta.27
+  remains72files/b6a149b9ebfa968f. No fresh model/native claim, independent foundation
+  rebuild, citation repair or new investigation. Other-project observation stays separate.
+- Evidence/next: [result](../experiments/maintenance/knowledge-cleanup-20261014/results.md).
+  Identify a concrete missing knowledge area before replacing entire studies.
+
 ## 2026-10-14 — Retain useful research, archive retired architecture
 
 - Context: creator requested cleanup of obsolete Fab library research and advice

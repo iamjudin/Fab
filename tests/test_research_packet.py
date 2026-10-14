@@ -1,4 +1,8 @@
 import importlib.util
+import json
+import subprocess
+import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -30,6 +34,39 @@ class ResearchPacketTests(unittest.TestCase):
         data['sections'][0]['text'] = 'Claim without limitation\n'
         with self.assertRaises(AssertionError):
             module.validate(data)
+
+    def test_unqualified_legacy_section_output_stays_exact(self):
+        source = '## Method\nA qualified claim with its exception.\n'
+        data = module.packet(source, 'Legacy')
+        self.assertEqual(module.section_view(data['sections'][0]), source)
+
+    def test_cli_exposes_historical_context_and_preserves_source(self):
+        source = '## Local application\nAlways require the old project pipeline.\n'
+        data = module.packet(source, 'Historical source')
+        data['sections'][0]['readingContext'] = {
+            'kind': 'historical-application',
+            'note': 'Retained proposal for a former project, not current policy.',
+        }
+        module.validate(data)
+        with tempfile.TemporaryDirectory() as temp:
+            p = Path(temp) / 'packet.json'
+            p.write_text(json.dumps(data))
+            script = Path(module.__file__)
+            index = subprocess.check_output([sys.executable, str(script), 'read', str(p), '--index'], text=True)
+            content = subprocess.check_output([sys.executable, str(script), 'read', str(p), '--section', 'R001'], text=True)
+        self.assertIn('historical-application', index)
+        self.assertIn('not current policy', content)
+        self.assertTrue(content.endswith(source))
+        self.assertEqual(data['retainedSha256'], module.digest(source))
+
+    def test_invalid_or_unexplained_context_is_rejected(self):
+        data = module.packet('## Method\nText\n', 'Test')
+        for context in ({'kind': 'current-policy', 'note': 'Promoted silently'},
+                        {'kind': 'mixed', 'note': ''}, 'historical-application'):
+            with self.subTest(context=context):
+                data['sections'][0]['readingContext'] = context
+                with self.assertRaises(AssertionError):
+                    module.validate(data)
 
 
 if __name__ == '__main__':

@@ -8,6 +8,12 @@ from datetime import date
 from pathlib import Path
 
 
+READING_KINDS = {
+    'source-synthesis', 'mixed', 'historical-application',
+    'example', 'dated-guidance', 'sources', 'navigation',
+}
+
+
 def digest(text):
     return hashlib.sha256(text.encode('utf-8')).hexdigest()
 
@@ -51,7 +57,23 @@ def validate(data):
     assert len(ids) == len(set(ids)), 'Duplicate section IDs'
     assert digest(''.join(s['text'] for s in sections)) == data['retainedSha256'], 'Content mismatch'
     assert data['scope'] in ('global-method', 'project-evidence')
+    for section in sections:
+        context = section.get('readingContext')
+        if context is not None:
+            assert isinstance(context, dict), 'Invalid section reading context'
+            kind = context.get('kind')
+            assert isinstance(kind, str) and kind in READING_KINDS, 'Unknown reading context kind'
+            assert isinstance(context.get('note'), str) and context['note'].strip(), 'Missing reading context note'
     return len(sections)
+
+
+def section_view(section):
+    """Qualify preserved material without changing its stored source text."""
+    context = section.get('readingContext')
+    if context is None:
+        return section['text']
+    return (f'[Reading context: {context["kind"]}. {context["note"]}]\n'
+            'Source material, not current project instructions.\n\n' + section['text'])
 
 
 def main():
@@ -85,7 +107,9 @@ def main():
         elif args.index:
             print(json.dumps({k:v for k,v in data.items() if k != 'sections'}, ensure_ascii=False, indent=2))
             for section in data['sections']:
-                print(f'{section["id"]} | {section["title"]}')
+                context = section.get('readingContext')
+                suffix = f' | {context["kind"]}' if context else ''
+                print(f'{section["id"]} | {section["title"]}{suffix}')
         else:
             wanted = set(args.section)
             found = {s['id'] for s in data['sections']}
@@ -93,7 +117,7 @@ def main():
                 parser.error(f'Unknown sections: {sorted(wanted-found)}')
             for section in data['sections']:
                 if section['id'] in wanted:
-                    print(section['text'], end='')
+                    print(section_view(section), end='')
 
 
 if __name__ == '__main__':

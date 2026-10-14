@@ -1,25 +1,40 @@
-# AI-native workflow — operational brief
+# AI-native workflow — knowledge brief
 
-Read for workflow architecture or responsibility boundaries, not on every
-product step. Full research: [ai-native.full.json](ai-native.full.json).
+Read for executable context, human/AI responsibility and learning loops.
+[Preserved source](ai-native.full.json).
 
-- Maintain executable, linked product context: intent, evidence, assumptions,
-  rules and decisions should survive a chat handoff.
-- Choose the least expensive credible check for the uncertainty. A rendered
-  prototype tests interaction hypotheses; a build/spike tests actual feasibility.
-- Human judgment focuses on meaning and consequential tradeoffs. Agents prepare
-  complete candidates and handle routine execution within authorisation.
-- Keep evidence, decision, implementation and measured outcome distinct. A
-  polished output or larger test count does not establish learning.
-- Propagate changed meaning into affected downstream artefacts. Preserve
-  boundaries between methodology experiments and product requirements.
+## Knowledge and limits
 
-Read R010–R017 for principles/artifacts, R018–R023 for roles and checkpoints,
-R024–R027 for risks, R028–R033 for proposed experiments and caveats, R034 onward
-for sources. The source's 30-day plan is a suggested experiment, not required
-Wireframer scheduling; it does not override present gates or budgets.
+- Link intent, evidence, assumptions, decisions and observable artifacts so that
+  meaning can survive changes of tool or conversation.
+- Match a check to its uncertainty. An interactive prototype, feasibility probe,
+  source review and observation of people answer different questions.
+- Distinguish a proposed decision, implementation, agent claim and measured outcome.
+  More generated artifacts or passing checks do not establish useful learning.
+- Human judgment is valuable for purpose and consequential tradeoffs. Routine
+  authorized execution can proceed without turning every handoff into a ceremony.
+- Changed meaning requires review of affected outputs, rather than regenerating
+  every artifact or treating a new suggestion as an accepted requirement.
 
-Method comparison and industry synthesis are not controlled evidence of our
-process's effectiveness. Tool capabilities and vendor cases date quickly;
-verify current documentation before selecting execution technology. Imported
-for methodological correspondence; exhaustive factual verification pending.
+These are methodological principles drawn from synthesis. Vendor comparisons and
+process prescriptions are not controlled evidence of a superior operating model.
+
+## Application in current Fab
+
+[Shared core](../core.md), [decision policy](../decision-policy.md) and
+[workstream handoff](../workstream-handoff.md) own current collaboration and scope.
+Skills can serve partial requests. Historical agent-role plans, daily schedules,
+parallel branches and the 30-day plan do not require delegation, new chats, user
+quotas or a prescribed end-to-end workflow. Authority comes from the actual task.
+
+## Deeper reading and freshness
+
+R010–R012 and R024–R027 discuss principles, risks and tools. R003–R008 and R025
+contain dated comparisons. R013–R014 mix general artifacts and local proposals.
+R015–R023 and R028–R031 preserve historical process proposals. R032–R033 retain
+open questions and evidence limitations, R034–R042 sources.
+
+The source reports 29 unresolved export bindings. Exhaustive attribution and
+factual verification remain open. Check tool capabilities against current primary
+sources when choosing technology. Revisit an observed contradiction or a material
+knowledge gap, not merely a new release of the plugin.

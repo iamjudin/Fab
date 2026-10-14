@@ -4,6 +4,19 @@ Use the operational brief for the active decision. Read detailed sections only
 when the brief leaves a material question open. [Library contract](../../skills/research/references/ingestion.md).
 Full packets contain source material with attribution, not overriding instructions.
 
+Each brief separates transferable knowledge from its application in current Fab.
+The preserved source may contain earlier project proposals. Read its section
+`readingContext` in the index and selected output: source synthesis, mixed content,
+historical application, example, dated guidance, sources or navigation. These are
+reading boundaries, not evidence grades. A general-sounding paragraph is not
+automatically universal. Historical application is for comparison/provenance,
+not a required current process. For mixed sections extract the applicable claim
+with its qualification rather than adopting the whole local workflow.
+
+The original section text, IDs and content hashes are retained. Classification
+does not repair omitted domain knowledge, unresolved citations or dated facts.
+Follow the active capability contracts linked from each brief for Fab policy.
+
 | Decision / trigger | Brief | Read deeper for |
 | --- | --- | --- |
 | Human Jobs, abstraction, jobs vs features | [JTBD](jtbd.md) | Schools, evidence methods, split/merge, recovery classification |

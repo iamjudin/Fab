@@ -33,6 +33,11 @@ class GuardTests(unittest.TestCase):
         p=self.root/'shared/methods/jtbd.full.json';d=json.loads(p.read_text())
         d['sections'][0]['text']+='changed';p.write_text(json.dumps(d))
         with self.assertRaises(AssertionError):guard.validate(self.root)
+    def test_invalid_research_context_is_rejected(self):
+        p=self.root/'shared/methods/jtbd.full.json';d=json.loads(p.read_text())
+        d['sections'][0]['readingContext']={'kind':'current-policy','note':'Wrong authority'}
+        p.write_text(json.dumps(d))
+        with self.assertRaises(AssertionError):guard.validate(self.root)
     def test_parity_detects_shared_file_drift(self):
         before=guard.payload(self.root);p=self.root/'shared/core.md'
         p.write_text(p.read_text()+'changed')

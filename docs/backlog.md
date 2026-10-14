@@ -43,6 +43,19 @@ public tag/Release, anonymous assets и exact-tag install в отдельный 
 README имеет явно исправленную erratum; tag/archive не переписывались. [Отчёт](../experiments/releases/public-beta22-20261012/report.md).
 Это новый distribution outcome в FAB-13; Canvas/continuity/open behavior не закрывает.
 
+## Knowledge cleanup — 2026-10-14
+
+FAB-15: creator approved existing-knowledge cleanup. [Source result](../experiments/maintenance/knowledge-cleanup-20261014/results.md)
+separates nine briefs into knowledge/current Fab application and qualifies all437
+preserved source sections in the actual reader.54regressions/package and three
+reader probes pass, source72files/a4ce6f41d9bc1d71. Nine reader copies are archived
+with unchanged full-file hashes, not required as runtime resources. Historical
+source text, IDs/hashes and citations remain unchanged. Installed/public beta.27
+stays72files/b6a149b9ebfa968f. No new study, fresh model trial, install or release.
+The interpretation boundary is corrected in source. Independent completeness,
+source-binding repair and ordinary-use model effect remain open. Do not call the
+classification an independently rebuilt foundation or blanket fact-check.
+
 ## Research-library audit — 2026-10-14
 
 FAB-15: [library audit](research-audits/library-2026-10-14.md) retains nine active

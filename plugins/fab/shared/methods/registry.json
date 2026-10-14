@@ -12,7 +12,18 @@
         "structure": "lossless sections; explicit exclusions",
         "claims": "Core premises spot-checked against primary sources on 2026-10-08"
       },
-      "refreshTrigger": "contradiction, source update, or decision requiring current external evidence"
+      "refreshTrigger": "contradiction, source update, or decision requiring current external evidence",
+      "readingContext": {
+        "sectionKinds": {
+          "navigation": 1,
+          "mixed": 2,
+          "source-synthesis": 14,
+          "historical-application": 1,
+          "example": 1,
+          "sources": 1
+        },
+        "boundary": "Qualified preserved source, not an independently rebuilt foundation. General knowledge, local application, examples and dated evidence remain distinct. Current Fab policy is linked separately from the brief."
+      }
     },
     {
       "id": "product-structure",
@@ -25,7 +36,18 @@
         "structure": "lossless sections; explicit exclusions",
         "claims": "Method correspondence reviewed; full citation and current-example verification pending"
       },
-      "refreshTrigger": "contradiction, source update, or decision requiring current external evidence"
+      "refreshTrigger": "contradiction, source update, or decision requiring current external evidence",
+      "readingContext": {
+        "sectionKinds": {
+          "navigation": 1,
+          "mixed": 16,
+          "source-synthesis": 12,
+          "historical-application": 7,
+          "example": 7,
+          "sources": 1
+        },
+        "boundary": "Qualified preserved source, not an independently rebuilt foundation. General knowledge, local application, examples and dated evidence remain distinct. Current Fab policy is linked separately from the brief."
+      }
     },
     {
       "id": "ai-native",
@@ -38,7 +60,18 @@
         "structure": "lossless sections; explicit exclusions",
         "claims": "Method correspondence reviewed; full citation and current-example verification pending"
       },
-      "refreshTrigger": "contradiction, source update, or decision requiring current external evidence"
+      "refreshTrigger": "contradiction, source update, or decision requiring current external evidence",
+      "readingContext": {
+        "sectionKinds": {
+          "navigation": 1,
+          "mixed": 3,
+          "dated-guidance": 7,
+          "source-synthesis": 10,
+          "historical-application": 12,
+          "sources": 9
+        },
+        "boundary": "Qualified preserved source, not an independently rebuilt foundation. General knowledge, local application, examples and dated evidence remain distinct. Current Fab policy is linked separately from the brief."
+      }
     },
     {
       "id": "design-systems",
@@ -51,7 +84,17 @@
         "structure": "lossless sections; explicit exclusions",
         "claims": "Method correspondence reviewed; full citation and current-example verification pending"
       },
-      "refreshTrigger": "contradiction, source update, or decision requiring current external evidence"
+      "refreshTrigger": "contradiction, source update, or decision requiring current external evidence",
+      "readingContext": {
+        "sectionKinds": {
+          "navigation": 1,
+          "source-synthesis": 22,
+          "dated-guidance": 6,
+          "example": 7,
+          "sources": 6
+        },
+        "boundary": "Qualified preserved source, not an independently rebuilt foundation. General knowledge, local application, examples and dated evidence remain distinct. Current Fab policy is linked separately from the brief."
+      }
     },
     {
       "id": "slice-completeness",
@@ -64,7 +107,18 @@
         "structure": "All supplied sections retained and indexed; source SHA verified",
         "claims": "Risk-based coverage is methodological synthesis. Source completeness checked structurally; primary spot-check only; no universal pairwise guarantee or mandatory job for contractual rules."
       },
-      "refreshTrigger": "change of slice/context/platform rules, contradiction or insufficient evidence for the active decision"
+      "refreshTrigger": "change of slice/context/platform rules, contradiction or insufficient evidence for the active decision",
+      "readingContext": {
+        "sectionKinds": {
+          "navigation": 1,
+          "mixed": 2,
+          "source-synthesis": 44,
+          "historical-application": 17,
+          "example": 12,
+          "sources": 1
+        },
+        "boundary": "Qualified preserved source, not an independently rebuilt foundation. General knowledge, local application, examples and dated evidence remain distinct. Current Fab policy is linked separately from the brief."
+      }
     },
     {
       "id": "monetization",
@@ -77,7 +131,18 @@
         "structure": "All supplied sections retained and indexed; source SHA verified",
         "claims": "Source reports four unresolved citation markers (EUR-Lex). Economic method reviewed; full legal/platform layer not validated. Require fresh jurisdiction/storefront/processor evidence."
       },
-      "refreshTrigger": "change of slice/context/platform rules, contradiction or insufficient evidence for the active decision"
+      "refreshTrigger": "change of slice/context/platform rules, contradiction or insufficient evidence for the active decision",
+      "readingContext": {
+        "sectionKinds": {
+          "navigation": 1,
+          "mixed": 4,
+          "source-synthesis": 35,
+          "dated-guidance": 14,
+          "historical-application": 6,
+          "sources": 8
+        },
+        "boundary": "Qualified preserved source, not an independently rebuilt foundation. General knowledge, local application, examples and dated evidence remain distinct. Current Fab policy is linked separately from the brief."
+      }
     },
     {
       "id": "first-value",
@@ -90,7 +155,18 @@
         "structure": "All supplied sections retained and indexed; source SHA verified",
         "claims": "Source reports four unresolved citation markers. Definition/method reviewed; primary spot-check only. No blanket empirical proof; technical dependencies are routed through their separate brief."
       },
-      "refreshTrigger": "change of slice/context/platform rules, contradiction or insufficient evidence for the active decision"
+      "refreshTrigger": "change of slice/context/platform rules, contradiction or insufficient evidence for the active decision",
+      "readingContext": {
+        "sectionKinds": {
+          "navigation": 1,
+          "mixed": 5,
+          "source-synthesis": 15,
+          "example": 9,
+          "historical-application": 1,
+          "sources": 1
+        },
+        "boundary": "Qualified preserved source, not an independently rebuilt foundation. General knowledge, local application, examples and dated evidence remain distinct. Current Fab policy is linked separately from the brief."
+      }
     },
     {
       "id": "technical-ux-dependencies",
@@ -103,7 +179,19 @@
         "structure": "lossless sections; explicit exclusions",
         "claims": "Source reports 23 unresolved citation bindings. Method reviewed; AWS timeout/retry and Android offline-first source distinctions spot-checked. Platform/version claims require fresh primary verification; not exhaustive fact-check."
       },
-      "refreshTrigger": "implementation environment changes, contradictory probe, changed primary source conditions or unresolved active risk"
+      "refreshTrigger": "implementation environment changes, contradictory probe, changed primary source conditions or unresolved active risk",
+      "readingContext": {
+        "sectionKinds": {
+          "navigation": 1,
+          "mixed": 5,
+          "source-synthesis": 22,
+          "example": 8,
+          "dated-guidance": 13,
+          "historical-application": 6,
+          "sources": 8
+        },
+        "boundary": "Qualified preserved source, not an independently rebuilt foundation. General knowledge, local application, examples and dated evidence remain distinct. Current Fab policy is linked separately from the brief."
+      }
     },
     {
       "id": "mobile-structure",
@@ -116,7 +204,18 @@
         "structure": "lossless sections; explicit exclusions",
         "claims": "Source declares 7 unresolved citation bindings; platform guidance and author synthesis remain distinct. Partial primary verification recorded in registry/audit; not exhaustive fact-check or native evidence."
       },
-      "refreshTrigger": "platform change, contradiction in an active app flow or insufficient evidence for structure/input/native claim"
+      "refreshTrigger": "platform change, contradiction in an active app flow or insufficient evidence for structure/input/native claim",
+      "readingContext": {
+        "sectionKinds": {
+          "navigation": 1,
+          "source-synthesis": 25,
+          "mixed": 3,
+          "dated-guidance": 13,
+          "historical-application": 1,
+          "sources": 6
+        },
+        "boundary": "Qualified preserved source, not an independently rebuilt foundation. General knowledge, local application, examples and dated evidence remain distinct. Current Fab policy is linked separately from the brief."
+      }
     }
   ]
 }

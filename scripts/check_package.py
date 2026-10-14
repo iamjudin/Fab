@@ -1,8 +1,12 @@
 #!/usr/bin/env python3
 """Validate package references, methods and optional installed parity."""
-import argparse, hashlib, json, re, struct, zlib
+import argparse, hashlib, importlib.util, json, re, struct, zlib
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1] / 'plugins/fab'
+reader_spec = importlib.util.spec_from_file_location(
+    'fab_research_reader', ROOT / 'skills/research/scripts/research_packet.py')
+reader = importlib.util.module_from_spec(reader_spec)
+reader_spec.loader.exec_module(reader)
 def payload(root):
     return {str(p.relative_to(root)):p.read_bytes() for p in root.rglob('*')
             if p.is_file() and '__pycache__' not in p.parts and not p.name.endswith('.pyc')}
@@ -63,6 +67,7 @@ def validate(root):
         assert 'description: ' in head
     for p in (root/'shared/methods').glob('*.full.json'):
         d=json.loads(p.read_text());assert d['scope']=='global-method'
+        reader.validate(d)
         content=''.join(s['text'] for s in d['sections'])
         assert hashlib.sha256(content.encode()).hexdigest()==d['retainedSha256']
     return manifest

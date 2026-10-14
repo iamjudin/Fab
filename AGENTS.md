@@ -71,6 +71,15 @@ This rule does not authorize an immediate new chat, hidden delegation, a merge,
 runtime installation or publication. Keep main ownership and return criteria clear.
 
 ## Current boundary
+Creator2026-10-14 approved existing-knowledge cleanup after the library audit.
+Unreleased source72files/a4ce6f41d9bc1d71: nine briefs separate knowledge/current
+Fab application, all437original packet sections retain exact content with reading
+context metadata. Compatible reader exposes mixed/historical/dated/example use,
+guard and54regressions pass. Nine external reader copies archived with unchanged
+file hashes, earlier retired architecture preserved. No new research, fresh model
+turn, install or release. Installed/public beta.27 remains72files/b6a149b9ebfa968f.
+Evidence: experiments/maintenance/knowledge-cleanup-20261014/results.md.
+Independence, missing domain knowledge and unresolved citations remain open.
 Creator2026-10-14 explicitly approved local/public beta.27 for the tested
 continuation correction. Released/installed/enabled beta.27:72files/b6a149b9ebfa968f,
 immutable v0.1.0-beta.27/6f97db2.50regressions, scope, exact-source CI, anonymous

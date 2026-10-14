@@ -1,72 +1,43 @@
-# Полнота выбранного среза
+# Slice completeness — knowledge brief
 
-Читай при выборе покрытия состояний/данных/ошибок, перед критическими
-сценариями или прототипом, либо при finding о «пропущенной функции».
-Полный источник: [slice-completeness.full.json](slice-completeness.full.json).
-Метод — синтез исследования, не доказательство поведения Wireframer.
+Read when deciding whether a bounded result covers its promised behavior, states,
+data and material risks. [Preserved source](slice-completeness.full.json).
 
-## Решение и граница
+## Knowledge and limits
 
-Полнота означает замкнутость относительно выбранного scope, поведения и рисков,
-а не все возможные состояния каждого экрана. Для значимых входных элементов
-сохрани in / out / unresolved и причину. Это смысловые статусы текущего среза,
-не новая schema и не замена priority core/supporting/later. Пользуйся имеющимися
-SIG/UC/DR/CAP/S-ID и workspace, не заводи второй обязательный реестр требований.
-Требование закона/контракта может существовать без выдуманной Human Job.
+- Completeness is relative to agreed scope, behavior and risks, not every possible
+  state or screen. Distinguish included, excluded, unresolved and newly requested work.
+- Trace promised behavior to evidence and added behavior back to its basis.
+  Legal or contractual requirements need not be forced into a fabricated user job.
+- Keep domain state, attempted action, plan, known result and UI representation
+  separate. An unknown outcome is neither a confirmed rejection nor a safe retry.
+- Choose coverage around meaningful scenarios. Add roles, data, environment or
+  surfaces only when they change an action, result, recovery or understanding.
+- Use equivalence classes, boundaries, transitions and decision tables where
+  appropriate. Pairwise/t-way coverage is not universally sufficient.
+- Distinguish fixtures from simulated conditions. Select failures and display
+  stress by risk rather than a fixed count. Review format, domain validity,
+  dependencies and preserved input separately for forms.
+- Stop when evidence is adequate for the next promised decision, important unknowns
+  have a disposition and residual risk is visible. No universal coverage percentage.
 
-## Проверка покрытия
+## Application in current Fab
 
-1. Для in: пройди от источника до поведения и способа проверки; от добавленного
-   элемента — обратно к основанию. Out не появляется в accepted UI случайно;
-   существенный unresolved имеет owner, последствия и следующий способ evidence.
-2. Разделяй доменный статус, действие/попытку, план, известный результат и UI
-   projection. Не своди их в один enum ради простой реализации. Неизвестный
-   итог не равен отказу и не гарантирует безопасный retry.
-3. Строй разреженное покрытие вокруг UC: добавляй роль, состояние, данные,
-   окружение или поверхность только когда это меняет действие, переход,
-   результат, feedback, сохранность или восстановление.
-4. Выбирай классы эквивалентности и значимые границы; decision table — для
-   зависимых условий, state transitions — для lifecycle. Pairwise/t-way может
-   сократить комбинации, но не гарантирует универсальную достаточность.
-5. Fixture фиксирует данные/доменное состояние; condition toggle задаёт
-   окружение или исход операции. Baseline, применимый класс/граница, значимая
-   failure/recovery и display stress выбираются по риску, без фиксированного числа.
+[Product slice](../../skills/product/references/product-slice.md),
+[critical scenarios](../../skills/wireframe/references/critical-scenarios.md) and
+[prototype](../../skills/prototype/references/interaction-prototype.md) own current
+artifacts and readiness. Use their existing IDs and records, not a second mandatory
+requirements registry. Historical stage-ownership tables do not force all skills
+into a partial task or imply approval after each stage. Return an error to the
+first affected assumption and preserve unrelated accepted behavior.
 
-## Ответственность этапов
+## Deeper reading and freshness
 
-| Контракт | Его проверка |
-| --- | --- |
-| UC/правила | Цель/исход, состояния, invariants, права, валидация и неизвестные policies |
-| Slice | In/out/unresolved, зависимости и минимальный usable outcome |
-| Structure | Ownership, достижимость функций/результата, вход и возврат |
-| Critical scenarios | Значимые переходы, необратимость, отказ/восстановление |
-| Block screens | Репрезентативные данные, плотность, понятное представление состояний |
-| Prototype | Реальная интерактивность выбранных проверок, feedback/сохранность, понятность результата; имитации отдельно |
-| Implementation | Реальные storage/network/OS/security/duplicate side effects |
+R003–R009 cover scope and findings, R010–R039 coverage and techniques,
+R053–R060 applicability and adequate evidence. R040–R052/R073–R076 preserve
+historical process application. R061–R072 are a worked example, R077 sources.
 
-Формы: отдельно синтаксис, доменная валидность, зависимости полей и сохранность
-ввода. Regex — только подходящий инструмент формата, не универсальная проверка
-даты, адреса, авторизации или бизнес-правила. Не придумывай лимит длины без основания.
-
-## Findings и достаточность
-
-Классифицируй: потерянное согласованное in-требование; известное out;
-невыясненное решение; новое пожелание/review. У них разные действия. Новое
-не включается автоматически, out не «восстанавливается» как пропуск.
-
-Достаточно для следующего решения, когда trace покрывает обещанное in,
-высокие риски имеют адекватный способ проверки, критические зависимости
-разрешены или явно блокируют только зависимую часть, имитации названы,
-findings получили disposition. Остаточный риск видим; универсального процента нет.
-Возвращай finding к самому раннему неверному предположению, а не добавляй экран
-для ремонта доменной модели. Обратимые grounded решения принимает агент;
-creator оценивает его смысл/существенный компромисс, не каждый технический пункт.
-
-## Читать глубже
-
-`R004–R009` — finding/scope; `R011–R039` — оси/состояния/формы/техники;
-`R048–R060` — stage ownership, fixtures, достаточность; `R062–R076` — пример,
-evidence и предлагаемые автоматические проверки. Пример не требования проекта.
-Метод рассмотрен, перенос/ссылки проверяются локально; автономное покрытие ещё
-не подтверждено. Обновить при новой семантической дыре, ложном pass или смене
-среза/риска. Не включать все предложенные автоматизации до проверки схемы/пользы.
+The method is synthesis, not proof of reliable autonomous coverage. Source review
+and structural preservation are not exhaustive verification. Revisit a semantic
+omission, false pass, changed scope or risk. Proposed automation is not implemented
+merely because it appears in the report.

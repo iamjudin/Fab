@@ -1,28 +1,38 @@
-# Product structure — operational brief
+# Product structure — knowledge brief
 
-Read at the selected-slice → structure decision; use the maintained
-[navigation-ia contract](../../skills/wireframe/references/navigation-ia.md). Detailed research:
-[product-structure.full.json](product-structure.full.json).
+Read when organizing content, actions, ownership, navigation and return context
+from known behavior. [Preserved source](product-structure.full.json).
 
-- Reconstruct composition and navigation separately. A surface owns its content
-  and controls; a particular action opens a surface with context and return.
-- Organise access using frequency, importance, urgency and context. Inferred
-  frequency is a hypothesis. Several UC can share a surface; screen-per-UC is
-  not a default. Use current domain objects, rules and chosen slice.
-- Review overall structure before detailing critical scenario paths. New goals
-  require scope and upstream review; arranging rectangles cannot repair missing
-  semantics. A technical diagram pass is not product or usability approval.
-- Keep surface IDs across structure and scenario views. Test main routes,
-  alternatives, result, cancellation and return against the proposed structure.
-  A changed structural choice returns to review.
+## Knowledge and limits
 
-Read full packet index for R003–R011 (artifact boundaries), R012–R021 (derivation),
-R022–R028 (surface/navigation types), R029–R033 (validation), R041–R044 (contract,
-limits, sources). R034–R040 is a worked habit-tracker example, not universal scope.
+- Information organization, surface ownership, navigation and task sequence are
+  different views. Several tasks can share a surface, and one task can cross many.
+- Organize access using frequency, importance, urgency and context. Inferred
+  frequency remains a hypothesis. Screen-per-use-case is not a general default.
+- Distinguish composition from navigation. A surface contains information and
+  controls, while an action opens a context with an outcome and a return path.
+- Test significant task paths against an early structural hypothesis. Include
+  relevant cancellation, alternate entry and unfinished work before committing
+  to detailed presentation. Structure and scenarios constrain each other.
+- Keep identity and meaning consistent across views. A changed structural choice
+  needs affected-path review. Valid geometry does not prove usability or completeness.
 
-Research inspired the current contract, but later creator feedback changed its
-notation and small-project Canvas organisation. Follow maintained contracts;
-earlier two-map recommendations in the source are historical alternatives.
-Citation/current-platform verification is incomplete. Refresh when a structure
-decision depends on a particular platform pattern or when a product contradicts
-the method. Do not infer prototype completeness from structure coverage alone.
+## Application in current Fab
+
+[Navigation and IA](../../skills/wireframe/references/navigation-ia.md) owns the
+current Wireframe contract. [Table view](../../skills/wireframe/references/table-view.md)
+is the default presentation. Historical two-map and Canvas proposals do not
+require a map, creator approval after every artifact or a full pipeline.
+Use current accepted behavior and IDs. A missing domain rule belongs with its
+behavior owner rather than being invented by the layout step.
+
+## Deeper reading and freshness
+
+R004/R006/R008 explain artifact distinctions. R012–R026 and R029–R033 include
+methodology with source-local prescriptions in marked mixed sections. R005/R007,
+R010, R027–R028 and R041–R042 are historical application. R034–R040 are a worked
+habit-tracker example, not requirements. R043 retains open questions, R044 sources.
+
+The source reports 31 unresolved citation bindings. Current platform examples and
+full claim support are not verified. Refresh important source bindings and inspect
+current platform evidence only when the active decision depends on it.

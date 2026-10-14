@@ -1,5 +1,22 @@
 # Рабочее состояние Fab
 
+## 2026-10-14 — Knowledge cleanup completed in source
+
+Creator approved cleanup of retained knowledge before commissioning more research.
+Nine reader copies are archived outside active Library with exact file hashes.
+Nine bundled briefs separate transferable knowledge from current Fab application.
+All437original source sections retain their content and IDs, with reading context
+for synthesis, mixed material, historical proposals, examples and dated guidance.
+Reader index/section output exposes the boundary, legacy packets remain supported.
+
+[Result](../experiments/maintenance/knowledge-cleanup-20261014/results.md):54regressions,
+package checks and three actual reader probes pass. Source72files/a4ce6f41d9bc1d71
+is unreleased, installed/public beta.27 stays72files/b6a149b9ebfa968f. No new
+research/model trial/install/publication. Interpretation cleanup is not a rebuilt
+independent foundation or repaired citations. Next: assess concrete missing
+knowledge from the corrected source boundary before commissioning replacements.
+
+
 ## 2026-10-14 — Beta.27 published, installed and enabled
 
 Current0.1.0-beta.27,72files/b6a149b9ebfa968f. Immutable tagv0.1.0-beta.27 at

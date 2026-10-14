@@ -1,59 +1,44 @@
-# Первый вход и первая ценность
+# First use and first value — knowledge brief
 
-Читай, когда slice/UC включает новый или возвращающийся вход, deep link,
-setup/account/permissions/import/демоданные либо неопределённую активацию.
-Источник: [first-value.full.json](first-value.full.json). Область — разные
-цифровые инструменты, не рецепт мобильных слайдов и не кейс Ujitsu.
+Read for initial or returning entry, setup, identity, permissions, import, demo
+material or uncertainty about activation. [Preserved source](first-value.full.json).
 
-## Результат
+## Knowledge and limits
 
-Различай объяснение, обучение интерфейсу, setup, identity, permission, activation,
-первый полезный outcome и дальнейшее освоение. FVE — наблюдаемый результат по
-Human Job для роли/намерения/контекста, не завершённая регистрация или просмотр
-слайдов. Для накопительной ценности различай первый полезный результат,
-evidence повторяемой пользы и зрелый outcome; proxy и demo названы честно.
-Используй существующий success signal slice, не создавай вторую обязательную
-метрику/сущность. Формулировка FVE пока гипотеза, если польза не наблюдалась.
+- Explanation, interface learning, setup, identity, permission, activation and a
+  meaningful outcome are different. Registration or slide completion alone does
+  not prove useful value.
+- The source's First Value Event is an author-defined synthesis, not a universal
+  industry definition. Accumulating value may require repeated use. Label demos,
+  proxies and unobserved value honestly.
+- Entry intention, role, experience, target, data and environment can change the
+  path. Consider only dimensions that change the decision, not a compulsory form.
+- Ask what fails if a pre-value step is removed or deferred. An account or profile
+  is not necessary merely because it is a familiar onboarding convention.
+- Compare direct entry, explanation, guided task, contextual help, sample material,
+  setup and progressive disclosure for the actual situation. No universal slides.
+- Preserve applicable context and work through denial, skip, interruption or later
+  return. A real required dependency can block a result. Do not invent a successful
+  fallback where the dependency is unresolved.
+- Match goals, signals and metrics. Completion and activation/retention correlation
+  do not establish causal value. Choose the smallest credible evidence for the risk.
 
-## Выбор пути
+## Application in current Fab
 
-1. Возьми значимые entry source, intent, роль, опыт, identity/data state,
-   connectivity и target object. Не заполняй восемь полей для каждого проекта,
-   если они не меняют маршрут. Новичок, возврат к draft и приглашение могут
-   требовать разных веток; общий onboarding не перехватывает их автоматически.
-2. Назови результат и необходимые зависимости. Для каждого pre-value шага
-   спроси: что сломается, если убрать или отложить? Различай требуется для
-   корректного результата / улучшает / полезно позже. Аккаунт/профиль/разрешения
-   не становятся prerequisite только из-за привычки дизайнера.
-3. Выбери подходящее вмешательство: прямой вход, короткое объяснение, guided task,
-   контекстная помощь, sample, setup, progressive disclosure. Нет обязательных
-   стартовых слайдов; demo не равно результату на собственных данных.
-4. Сохрани целевой объект и сделанную работу при отказе, skip, прерывании,
-   re-auth и позднем возврате, когда это применимо. Если зависимость действительно
-   обязательна, покажи блокировку/возобновление, не выдумывай fallback успех.
+[Startup decisions](../../skills/product/references/startup-gates.md) and
+[critical scenarios](../../skills/wireframe/references/critical-scenarios.md) own
+current entry behavior. Reuse an existing success signal and accepted model.
+No separate onboarding stage or second required metric follows from this study.
+Paid boundaries use the monetization method only when relevant. R031 preserves
+historical process integration, not current instructions.
 
-## Отражение в процессе
+## Deeper reading and freshness
 
-FVE/зависимости уточняют slice, UC/правила; entry/ownership/return — структуру;
-ветки skip/denial/resume — критические сценарии; данные и подсказки — блоки;
-выполнение и понимание — прототип. Не добавляй отдельный обязательный этап
-onboarding. Paywall пересекается с этим путём, его модель определяется
-[методом монетизации](monetization.md), не новым правилом «сначала value всегда».
+R003–R012 cover definitions/method, R013–R028 paths and contexts, R029 dependencies
+and recovery, R030 metrics, R032 sources. Marked mixed sections include source-local
+terminology. Contextual patterns are examples, not assumed requirements.
 
-Offline, sync, widget, permission или security guarantees требуют конкретной
-технической проверки. Этот отчёт не заменяет отдельного исследования technical
-UX dependencies и не выбирает architecture за создателя.
-
-## Evidence, пределы и углубление
-
-Цель → сигнал → метрика: время/усилия до результата, качество результата,
-успешное действие и возврат. Completion слайдов и корреляция activation/retention
-не доказывают причинную ценность. Минимальную проверку выбирай по вопросу/риску.
-
-`R003–R012` — определения/FVE/метод; `R013–R028` — варианты и контексты;
-`R029` — зависимости, состояние/возврат; `R030–R031` — метрики и применение.
-Исходник сообщает о 4 невосстановленных маркерах; утверждения сохранены,
-не получили evidence от структурного импорта. Выборочно проверены HEART goal→
-metric и Apple account/permission guidance; не вся evidence база или каждый кейс.
-Датированные platform/legal claims и аудиторию проверяй заново, если решение
-зависит от них. Обновить при новой entry source/роли/ценности или ложной активации.
+Four citation markers remain unresolved. Goal-to-metric and account/permission
+premises were spot-checked, not the full evidence base. Fresh technical and
+platform evidence is necessary for real offline, sync or permission promises.
+Refresh for a new entry context, changed value, false activation or important gap.
