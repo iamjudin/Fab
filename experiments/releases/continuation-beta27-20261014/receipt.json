@@ -1,0 +1,38 @@
+{
+  "version": "0.1.0-beta.27",
+  "files": 72,
+  "fingerprint": "b6a149b9ebfa968f",
+  "sourceCommit": "6f97db29debc910161fddb0745818ef45881d992",
+  "tag": "v0.1.0-beta.27",
+  "checks": {
+    "package": "pass",
+    "regressions": 50,
+    "scope": "pass",
+    "sourceBehavior": "one passing baseline, three bounded candidate GPT-6.1 Sol/Medium cases",
+    "remoteCI": "pass",
+    "assets": "pass: anonymous hashes, full72-file ZIP/source and scope parity",
+    "cleanInstall": "pass: exact tag and full72-file parity",
+    "primaryInstall": "pass: exact tag and full72-file parity",
+    "installedModelBehavior": "unobserved"
+  },
+  "assetsSha256": {
+    "fab-0.1.0-beta.27.zip": "e29d773ef4f8cc49361a79165accc11b8882ba170a45c91206b70810bc5a9a82",
+    "release-scope.json": "4a3a3b2c20ba12f4f9b3e9870ac97bc994f0c0f5a72cea95edfe602e10fcb1ea",
+    "SHA256SUMS.txt": "95e5800567da976af36d25f4b3028608e452c09fb759657fe0c4c9d6e8d372b3"
+  },
+  "limits": [
+    "Native ordinary-use continuation miss retained",
+    "No comparative superiority or long-context repair proof",
+    "No installed-model or automatic reload claim",
+    "No Bookworm or Canvas promotion"
+  ],
+  "cleanup": "complete: isolated cache matched retained72-file ZIP and evidence, exact owned scratch root removed; primary cache retained",
+  "ci": "https://github.com/iamjudin/Fab/actions/runs/38567918451",
+  "publication": {
+    "url": "https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.27",
+    "isDraft": false,
+    "isPrerelease": true
+  },
+  "installedPath": "/Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.27",
+  "enabled": true
+}

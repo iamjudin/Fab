@@ -72,8 +72,11 @@ runtime installation or publication. Keep main ownership and return criteria cle
 
 ## Current boundary
 Creator2026-10-14 explicitly approved local/public beta.27 for the tested
-continuation correction. Candidate72files/b6a149b9ebfa968f, manifest-only change
-from the tested source. Distribution/install pending until actual receipt.
+continuation correction. Released/installed/enabled beta.27:72files/b6a149b9ebfa968f,
+immutable v0.1.0-beta.27/6f97db2.50regressions, scope, exact-source CI, anonymous
+assets and clean/primary exact-tag installs with full parity pass. No added model
+turn, installed-model execution or long-context repair claim. Evidence:
+experiments/releases/continuation-beta27-20261014. Manifest-only release delta.
 Creator2026-10-14 reports dead ends after scope feedback during active work.
 Bounded source correction in shared/core and Brainstorm dialogue reconnects
 feedback to remaining goal/authority, concrete choice or actual authorized work,
@@ -82,7 +85,8 @@ with natural completion for social replies. Source72files/fe44274906582314,
 already passes the focused choice fixture, three candidate boundaries pass.
 Original native miss preserved, superiority/long-context repair unproved.
 Evidence: experiments/workflow-tests/dialogue-continuation-20261014/results.md.
-Installed/public beta.26 remains72files/772681e0da09331f, no promotion for this delta.
+At source checkpoint2111ae5, installed/public beta.26 stayed72files/772681e0da09331f.
+Later promotion is recorded above, native consistency remains open.
 Creator2026-10-14 explicitly authorized local/public release of the tested
 foundation correction. Released/installed beta.26:72files/772681e0da09331f,
 immutable v0.1.0-beta.26/2001053.50regressions, scope, exact-source CI, anonymous
@@ -127,14 +131,15 @@ the gap was visible application. No forced Six Hats mask. Long-context stability
 creator usefulness and native chat recovery remain open. One copy timing-anchor
 assumption is retained as a caveat. New chat creation requires explicit agreement
 to its concrete scope; this release authorization does not itself create a chat.
-Installed Fab0.1.0-beta.26,72files/772681e0da09331f. All ten independent contracts.
+Installed Fab0.1.0-beta.27,72files/b6a149b9ebfa968f. All ten independent contracts.
 50local regressions, bounded outcome/domain/UI/maintenance smokes; not universal
 maturity. Current detailed state in docs/handoff.md and docs/backlog.md. Continue
 across checkpoints when authorized; user explicitly rejected artificial pauses.
 Creator 2026-10-12 authorized public GitHub release of current iamjudin/Fab,
 MIT for original material and retention of history including author email/paths.
-Current public beta.26 at v0.1.0-beta.26/2001053: creator icon, English use-case
+Current public beta.27 at v0.1.0-beta.27/6f97db2: creator icon, English use-case
 copy,50tests, remote CI, anonymous assets and isolated exact-tag install PASS.
+Historical beta.26 remains immutable at v0.1.0-beta.26/2001053.
 Historical beta.25 remains immutable at v0.1.0-beta.25/edf938d.
 Historical beta.24 remains immutable at v0.1.0-beta.24/e4b49aa.
 Historical beta.23 remains immutable at v0.1.0-beta.23/c97c29d.

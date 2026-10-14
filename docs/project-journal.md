@@ -16,6 +16,20 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-14 — Beta.27 ships bounded active-dialogue continuation
+
+- Outcome: [beta.27](https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.27)
+  public/installed/enabled,72files/b6a149b9ebfa968f. Exact source6f97db2, CI,
+  anonymous assets and clean/primary complete parity pass,50regressions pass.
+- Meaning: feedback reconnects to remaining goal and authority, with concrete
+  choices or actual authorized output. Completed social turns remain short.
+- Limits: native original miss and passing fresh baseline retained. No comparative
+  superiority, long-context repair, new model turn or automatic reload claim.
+- Evidence/next: [receipt](../experiments/releases/continuation-beta27-20261014/report.md).
+  Existing project needs explicit reread before attributing replies to beta.27.
+  Observe actual feedback continuation. Old tags kept, owned scratch cleaned after
+  retention, pending observation report excluded from release commits.
+
 ## 2026-10-14 — Creator authorizes beta.27 continuation promotion
 
 - Creator explicitly approved local/public beta.27 after the bounded source checks.

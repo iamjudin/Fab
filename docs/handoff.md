@@ -1,5 +1,22 @@
 # Рабочее состояние Fab
 
+## 2026-10-14 — Beta.27 published, installed and enabled
+
+Current0.1.0-beta.27,72files/b6a149b9ebfa968f. Immutable tagv0.1.0-beta.27 at
+6f97db29debc910161fddb0745818ef45881d992.
+[Release](https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.27),
+[CI](https://github.com/iamjudin/Fab/actions/runs/38567918451),
+[receipt](../experiments/releases/continuation-beta27-20261014/report.md):50regressions,
+scope, anonymous assets and clean/primary exact-tag parity pass. Old tags unchanged.
+
+Continuation after scope feedback now ships. Four source GPT-6.1 Sol/Medium turns
+retain a passing old baseline and three candidate controls, no long-context fix or
+installed-model claim. Current chat refresh remains unobserved. Next explicit
+current-core/relevant-skills reread in the existing project, then ordinary-use
+continuation checks. Owned scratch cleaned, primary cache retained. Other-project
+observation record changes remain separate. Bookworm/Canvas remain separate.
+
+
 ## 2026-10-14 — Beta.27 release explicitly authorized
 
 Creator approved the reviewed active-dialogue continuation correction locally and
