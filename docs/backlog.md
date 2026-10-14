@@ -43,6 +43,27 @@ public tag/Release, anonymous assets и exact-tag install в отдельный 
 README имеет явно исправленную erratum; tag/archive не переписывались. [Отчёт](../experiments/releases/public-beta22-20261012/report.md).
 Это новый distribution outcome в FAB-13; Canvas/continuity/open behavior не закрывает.
 
+## FAB-11 recurrence — unclear continuation after cleanup, 2026-10-14
+
+- Status: observed recurrence, next behavioral verification. Owner: main Fab,
+  shared reporting/continuation with the active capability. No duplicate ID.
+- Expected: after a meaningful stage, make the current stage and recommended
+  action/owner clear. Continue already authorized necessary work or give a concrete
+  bounded plan when requested. Completed small/social exchanges can still end.
+- Observed: the cleanup report names preserved sections/tests and says a dialogue
+  check would be useful, leaving the creator to reconstruct what happens next.
+  The creator reports this as another dead end despite prior discussion.
+- Evidence: source checkpoint c5c0771 and creator screenshot retained privately in
+  `experiments/maintenance/continuation-followup-20261014/raw/`. Original model/effort
+  unknown. This is a reporting/handoff miss, not failed source-integrity checks.
+- Next package: verify cleaned knowledge on a partial request and historical/current
+  policy conflict. Include this completed-stage handoff case and the selected-method
+  boundary already owned by FAB-15. Use specific controls for autonomy/natural endings.
+  Diagnose before changing instructions, retain original misses and passing baselines.
+- Closure: report or actual action exposes a usable next step under real authority,
+  no invented task, generic approval or release claim. Bounded success does not close
+  native/long-context consistency. No new model turn or runtime repair yet.
+
 ## Observation accumulation and batch processing — 2026-10-14
 
 Creator authorizes the active observer to accumulate actionable Fab improvements

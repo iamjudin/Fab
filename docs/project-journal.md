@@ -16,6 +16,16 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-14 — Creator reports another unclear stage handoff
+
+Creator flags the cleanup final response as a conversational dead end: a useful
+future check was suggested without an explicit action/owner/plan. Recorded as a
+FAB-11 recurrence, with the supplied screenshot retained only in ignored evidence.
+Cleanup integrity remains verified, continuation reliability remains open.
+Next bounded package covers cleaned-knowledge application, this handoff boundary
+and the already recorded selected-method boundary. No runtime change or test is
+claimed from recording the recurrence. [Finding](backlog.md#fab-11-recurrence--unclear-continuation-after-cleanup-2026-10-14).
+
 ## 2026-10-14 — Accumulate observations into coherent improvement batches
 
 - Creator refined the operating model: active observation may write the backlog,
