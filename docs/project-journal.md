@@ -16,6 +16,23 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-14 — Retain useful research, archive retired architecture
+
+- Context: creator requested cleanup of obsolete Fab library research and advice
+  on replacements or knowledge needed for current work.
+- Outcome: nine distinct active sources still serve the nine bundled methods.
+  All 437 packet section texts are present in their library notes. One retired
+  architecture note is archived outside active Library with its file hash intact.
+- Judgment: source originals remain useful even after package ingestion. The main
+  gaps are attribution and application quality, not blanket topic obsolescence.
+  Proposed research priorities are evaluation of evolving collaborative tasks and
+  shared human–AI initiative. No new research commission is implied.
+- Limits: selected content review and exact section correspondence, not exhaustive
+  citation/scientific validation or native rendering. Eight legacy service tags
+  remain. Sources, runtime and unrelated observation changes are preserved.
+- Evidence: [audit](research-audits/library-2026-10-14.md). Private paths/hashes and
+  archive receipt are retained only in ignored audit evidence.
+
 ## 2026-10-14 — Beta.27 ships bounded active-dialogue continuation
 
 - Outcome: [beta.27](https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.27)

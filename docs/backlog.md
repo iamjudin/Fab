@@ -43,6 +43,21 @@ public tag/Release, anonymous assets и exact-tag install в отдельный 
 README имеет явно исправленную erratum; tag/archive не переписывались. [Отчёт](../experiments/releases/public-beta22-20261012/report.md).
 Это новый distribution outcome в FAB-13; Canvas/continuity/open behavior не закрывает.
 
+## Research-library audit — 2026-10-14
+
+FAB-15: [library audit](research-audits/library-2026-10-14.md) retains nine active
+method sources and verifies that all 437 packet section texts remain present in
+the corresponding library notes. One retired architecture note is moved out of
+active Library into a recoverable historical archive with an unchanged file hash.
+No permanent deletion, source rewrite, runtime change or new investigation.
+Important attribution gaps remain in product structure, AI-native workflow and
+technical UX dependencies. Eight source notes still have legacy service tags.
+Proposed next knowledge work: evaluation of collaborative agents across evolving
+multi-turn tasks, then shared initiative in human–AI problem solving. These
+extend FAB-02/FAB-11/FAB-13/FAB-14 evidence needs, not new completed capabilities.
+Readability and Canvas already have relevant knowledge. Native/UI/source validity
+and real human value are not established by section retention.
+
 ## Правила
 
 2026-10-13: [natural-use observation](../experiments/workflow-tests/2026-10-13-external-chat-observation.md)
