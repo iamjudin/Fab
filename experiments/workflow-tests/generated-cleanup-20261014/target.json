@@ -1,0 +1,20 @@
+{
+  "generatedVersion": "0.1.0-beta.1",
+  "files": 5,
+  "fingerprint": "e28337653c4e1fe8",
+  "origin": "prior generated candidate retained under backlog-closure-20261014/raw",
+  "sourceFab": "beta.28 remains unchanged; not supplied as fixture dependency",
+  "suppliedInventory": {
+    "input.csv": "36664d731da3afa37cce2f1d06e222478eb8459c948680b7cf5d22e0ffc482f6",
+    "job-state.json": "a311006ed46e92f1ef2d3468bf7e2c0ae262573fd8c6b5677c6b739c5b97c63d",
+    "neighbor-sentinel.txt": "c6307a7002efdc164114345f8f2a9909ce25d6b0a30d6ae6f3994edb44f6665a",
+    "plugin/plugin.json": "8ab2cb920da900d07fc421233cef40ec1354097ba02d19ba59a2c78194f67168",
+    "plugin/README.md": "1bb9e75fed47236b1eed8afe7396824f1f2f04c16161bd089b541e02489abd7c",
+    "plugin/shared/runtime.md": "565513c0c95c28504b54ac71a7f845f669fa9a97cec9e9b2433572e9a1fe23c7",
+    "plugin/skills/summarize-csv/SKILL.md": "fbc22b9a79a6163090d9bc1d65f14af75216cffc5f223069f93ea4ab75060d16",
+    "plugin/skills/summarize-csv/scripts/summarize_csv.py": "66779a525f500c4c26e3ab581a93b13569f15280e0086da99d9b86fcb8a44e04",
+    "work/job-01/input-copy.csv": "36664d731da3afa37cce2f1d06e222478eb8459c948680b7cf5d22e0ffc482f6",
+    "work/job-01/observations.md": "562c8b1d9ace290f037a4305d268802bc68ea66ba3d937e9c80ad8805c7a7eec",
+    "work/other-job/keep.txt": "d53cf546145b5818ba00d1d0acdbae80400406280b2756429c9c877f012ed610"
+  }
+}

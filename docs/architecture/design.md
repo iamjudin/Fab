@@ -57,6 +57,12 @@ cleanup remains unobserved. Both source and shipped package pass the short resum
 continuation sequence; native trigger/long-context consistency is still open.
 Historical availability and unobserved states below describe those earlier dates.
 
+2026-10-14 [fresh generated-only cleanup](../../experiments/workflow-tests/generated-cleanup-20261014/results.md)
+now verifies the child rule's actual retention/disposal and protected hashes.
+The previously unobserved generated-only surface above is superseded by this
+bounded action evidence. External preview disposal and native behavior stay open;
+no runtime change or general arbitrary-scratch ownership guarantee follows.
+
 ## Historical implementation checkpoints
 
 Beta.10 installed parity/local regression checked; fresh generated-rule behavior

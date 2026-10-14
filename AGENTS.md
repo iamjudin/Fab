@@ -71,6 +71,18 @@ This rule does not authorize an immediate new chat, hidden delegation, a merge,
 runtime installation or publication. Keep main ownership and return criteria clear.
 
 ## Current boundary
+Creator2026-10-14 approved the outstanding generated-only cleanup check with “go”.
+One fresh GPT-6.1 Sol/Medium CLI invocation of the unchanged5-file generated CSV
+package/e28337653c4e1fe8 passes actual report/notes retention before exact owned
+scratch disposal. Eight protected files preserve hashes, no Fab files read in
+commands; primary host guidance/metadata remains available, not a blank runtime.
+84653input/61568cached/1124output,44.28seconds, no corrective. FAB-09 generated
+execution surface verified; earlier external SVG/preview disposal remains open.
+Evidence: experiments/workflow-tests/generated-cleanup-20261014/results.md.
+No Fab runtime edit/install/push/release, beta.28 unchanged. Owned fixtures
+retained/hash-verified before scoped cleanup, no Canvas/Bookworm/observer change.
+Next main checks actual transient preview disposal when that surface is requested,
+not another successful CSV or forced Canvas task. Older unknowns below are dated.
 Creator2026-10-14 approved and main completed local/public beta.28. Installed,
 enabled,72files/3edcbb74228d3b48; immutable v0.1.0-beta.28/f04b7c8.66regressions,
 package/scope, exact-source CI, anonymous assets and clean/primary exact-tag full

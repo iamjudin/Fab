@@ -16,6 +16,26 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-14 — Observe cleanup through the generated plugin's own rule
+
+- Creator authorizes the previously unrun generated-only execution, not another
+  Fab release. One fresh context receives the retained child package and exact
+  interrupted-job ownership, with no supplied Fab package.
+- [Observed outcome](../experiments/workflow-tests/generated-cleanup-20261014/results.md):
+  report and useful notes retained/verified before two exact scratch files and
+  the empty owned directory are removed. All eight protected hashes pass. Root
+  reviews actions and output, not the actor's cleanup self-report alone.
+- Actual GPT-6.1 Sol/Medium,84653input/61568cached/1124output,44.28seconds, one
+  unchanged-target invocation. No correction or extra repetition. Global host
+  guidance/metadata may exist; no Fab file read is observed in command evidence.
+- Decision: mark FAB-09's generated-only surface verified, preserve the earlier
+  external-preview failure and next actual-preview trigger. A CSV continuation
+  cannot prove arbitrary ownership discovery, adversarial paths or SVG disposal.
+- Boundary: no runtime edit/installation/publication, current beta.28 unchanged.
+  Report/fixtures retained and hash-verified before own temporary root cleanup.
+  Main next assesses exact disposal on an authorized preview; Canvas/Bookworm and
+  observer ownership remain unchanged. No forced new preview just for statistics.
+
 ## 2026-10-14 — Verify beta.28 through the public and primary install routes
 
 - Confirmed: creator-approved knowledge/reader/handoff candidate ships as

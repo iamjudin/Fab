@@ -1,0 +1,50 @@
+{
+  "case": "generated-only",
+  "target": "generated-only",
+  "threadId": "01a13c34-e290-7582-bceb-544025f1566f",
+  "resumeFrom": null,
+  "actualRuntime": {
+    "model": "gpt-6.1-sol",
+    "effort": "medium"
+  },
+  "exitCode": 0,
+  "timeout": false,
+  "seconds": 44.28,
+  "usage": {
+    "input_tokens": 84653,
+    "cached_input_tokens": 61568,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1124,
+    "reasoning_output_tokens": 74,
+    "total_tokens": 85777
+  },
+  "usageScope": "rollout cumulative-counter difference for this invocation",
+  "eventReportedUsage": {
+    "input_tokens": 84653,
+    "cached_input_tokens": 61568,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1124,
+    "reasoning_output_tokens": 74
+  },
+  "changedFiles": [
+    "result.md",
+    "work/job-01/input-copy.csv",
+    "work/job-01/observations.md"
+  ],
+  "suppliedPackageUnchanged": true,
+  "sentinelUnchanged": true,
+  "command": [
+    "codex",
+    "exec",
+    "--json",
+    "--skip-git-repo-check",
+    "-s",
+    "workspace-write",
+    "-C",
+    "/var/folders/s5/ndr2tg0d2d91ngg2txtxncgr0000gp/T/fab-generated-cleanup-g27d7iuv/fixture",
+    "-o",
+    "/Users/iamjudin/Desktop/Lab/Fab/experiments/workflow-tests/generated-cleanup-20261014/behavior/generated-only.md",
+    "-"
+  ],
+  "errors": []
+}

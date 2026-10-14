@@ -1,5 +1,21 @@
 # Рабочее состояние Fab
 
+## 2026-10-14 — Generated-only cleanup execution verified
+
+Creator approves the outstanding check. [One fresh GPT-6.1 Sol/Medium invocation](../experiments/workflow-tests/generated-cleanup-20261014/results.md)
+uses the unchanged generated5-file CSV package/e28337653c4e1fe8, reads its own rule,
+retains report/useful findings before unlinking two exact disposable files and
+removing the empty owned directory. Original/package/neighbor hashes pass. No Fab
+file is read in the three-command log; primary host context is not a blank runtime.
+84653input/61568cached/1124output,44.28seconds; no corrective or repeat needed.
+
+FAB-09's generated-only surface is verified. The earlier external-preview SVG
+failure stays open; main checks exact disposal on the next authorized transient
+preview. No forced Canvas task, universal cleanup or installed child-plugin claim.
+Fab installed/public beta.28 and72files/3edcbb74228d3b48 unchanged. No source edit,
+install/push/release or other-project operation. Useful fixtures retained and
+hash-verified before owned scratch removal; observer/Bookworm/Canvas unchanged.
+
 ## 2026-10-14 — Beta.28 published, installed and enabled
 
 Current0.1.0-beta.28,72files/3edcbb74228d3b48, immutable tagv0.1.0-beta.28 at

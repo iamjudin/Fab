@@ -1,0 +1,8 @@
+{
+  "generated-only": {
+    "fixture": "fixture",
+    "target": "generated-only",
+    "resumeFrom": null,
+    "prompt": "This is a fresh isolated continuation of a fictional local CSV-summary job. Use only the supplied ./plugin skill package and its runtime references, not Fab or another plugin. Do not inspect unrelated directories, dispatch network/research, create agents/chats, install, commit, publish or operate real products. Work only in this fixture and respond in English. Preserve the supplied package, input and neighboring user files. Actual requested file work must be performed.\n\nCreator message: Read plugin/skills/summarize-csv/SKILL.md and job-state.json. Finish this CSV-summary job, save result.md and tell me what the supplied data shows and its limits.\n"
+  }
+}

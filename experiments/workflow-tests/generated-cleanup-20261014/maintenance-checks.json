@@ -1,0 +1,10 @@
+{
+  "afterRetentionExact": true,
+  "durableReportExact": true,
+  "actorScratchAbsent": true,
+  "rootScratchAbsent": true,
+  "linksExist": true,
+  "FabPayloadUnchanged": "3edcbb74228d3b48",
+  "runtimeRegressions": "not rerun: no runtime changes",
+  "actionLogSha256": "451865fae1ee44c39dba68d31fab771e46391fc972e5193f6d478733c138a94a"
+}
