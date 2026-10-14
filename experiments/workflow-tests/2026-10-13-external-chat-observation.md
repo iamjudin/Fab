@@ -1,5 +1,82 @@
 # External Fab chat observation
 
+## 2026-10-14 — Creator-authorized observer retarget
+
+Creator explicitly approved moving the existing observer to the new research
+chat while retaining read-only limits and this main Fab chat as the reporting
+owner. The existing heartbeat is updated, with its hourly schedule and status
+preserved. No duplicate monitor or product-management authority is created.
+
+The original target's assessed turns, cursor, baseline and findings remain in
+private migration history and this sanitized report. Destination assessment starts
+separately after handoff. A compact snapshot establishes its current cursor but
+is not a quality assessment, so lastAssessedTurn is null and assessment pending.
+This avoids silently dropping completed destination turns during the migration.
+
+No messages, product edits, research/test execution, installation or publication
+are part of retargeting. Meaningful findings continue to be retained for later
+improvement discussion, routine unchanged state stays quiet.
+
+## 2026-10-14 — Beta.26 reread and creator-requested research handoff
+
+- Request: explicitly check/reread beta.26 and move the research discussion to a
+  new project chat, transferring accumulated work and including current Fab.
+- Observed: outgoing chat commands read installed beta.26 Research, Cowork, root
+  manifest, shared core/project/handoff rules and Research references. It explains
+  the foundation/focused-gap distinction without claiming automatic hot reload.
+- Handoff: creator authorization precedes native creation and waits. A durable
+  packet preserves six domains, accepted product decisions, hypotheses, source
+  locations, the paused narrow assignment and research/design boundaries.
+  It keeps existing research rather than silently migrating or deleting it.
+- Path recovery: the outgoing chat notices a stale saved-project directory and
+  puts the actual canonical repository path in both packet and creation prompt.
+  Its trace shows scoped commit/push completion. Remote history not independently
+  fetched, and the entire original decision set is not exhaustively audited.
+- Readiness: creation/wait calls, local packet and outgoing reply report destination
+  recovery. A later destination sample finds subsequent activity, rather than the
+  initial recovery turn. Do not describe that sample as an independent full initial
+  recovery check or say the destination is still waiting for the creator.
+- Interpretation: meaningful existing-chat beta.26 adoption and a concrete
+  creator-requested transfer extend FAB-02/FAB-13/FAB-15. This does not close the
+  earlier proactive-separation failure: the creator initiated this handoff.
+  It also does not establish quality of future research or automatic version reload.
+- Observer scope: the configured target remains the outgoing chat. Monitoring the
+  new research owner requires an explicit scoped retarget decision, not a silent
+  expansion from this handoff. Proposed here for creator discussion.
+- Limits: observed model/effort unknown. No new model test, research dispatch,
+  product edit, message, commit, publication or automation change by this observer.
+
+## 2026-10-14 — Explicit beta.25 reread and foundation-scope correction
+
+- Request: inspect updated Research, then replace narrow project studies with a
+  reusable knowledge foundation across related domains. Creator explicitly waits
+  for the next plugin update before commissioning the program.
+- Observed version adoption: existing chat commands read the installed beta.25
+  root manifest, Research entry and new reader/reuse/evidence-review references,
+  compare old/new release files and inspect the current pending assignment.
+  Trace records a successful scoped backlog commit/push, not independently audited
+  remote history. This corroborates explicit rereading, not automatic live reload.
+- Useful contribution: distinguishes broad domain knowledge from local application,
+  identifies linked areas and conditions, and avoids converting illustrative
+  developmental observations into universal eligibility cutoffs.
+- Original boundary miss: proposes an obligatory cross-cutting research section
+  assigning participation, creation, payment and access roles. Creator says that
+  allocating this experience belongs to joint product design.
+- Correction: reply acknowledges mixing research and design. It retains empirical
+  questions about support, development and interface constraints while returning
+  local role/account allocation to product decisions. No new foundation study or
+  implemented product change is demonstrated by these conversational turns.
+- Interpretation: extends existing FAB-15 and FAB-11/FAB-12 evidence. The shipped
+  beta.25 contract was read, but the later foundation correction was not yet in
+  that installed package. Do not attribute its behavior to beta.26 or call an
+  ordinary wait for creator-authorized updating a failure.
+- Deferred: discuss the boundary between empirical knowledge of participation and
+  local allocation of roles. Inspect application before adding duplicate wording.
+  No monitor repair, test or message to the observed chat is performed.
+- Limits: model/effort unknown, no independent scientific-source, returned-report,
+  native layout or implementation verification. Preserve original miss alongside
+  corrected scope rather than reporting a clean first pass.
+
 ## Contract
 
 The creator requested periodic observation of a real application project, then
@@ -14,6 +91,63 @@ exact turn references and observation state in ignored `external-chat-observatio
 Do not copy the private project's research or complete conversation into Fab.
 No messages to the observed chat, product edits, new tests, commits or publication
 are authorized by a monitor run. Main-chat work may commit this sanitized record.
+
+## 2026-10-13 — Existing chat rereads beta.24 and continues useful work
+
+- Request: after the local/public update, the creator explicitly asked the existing
+  project chat to check beta.24, reread Cowork/Brainstorm and continue with accepted
+  decisions intact. This is a real existing-chat transition, not another fresh CLI
+  test or proof of automatic refresh.
+- Observed evidence: commands read beta.24 Cowork, Brainstorm, shared instructions,
+  dialogue moves and the root manifest. The manifest output identifies beta.24;
+  a later synthesis task also reads beta.24 Research. The continuation retains
+  previously accepted participant/support constraints and supplies a useful new
+  distinction between a stable process and a fixed set of inputs. Alternatives
+  remain proposals; no new product rule is declared accepted.
+- Imperfections preserved: the chat first attempts a nonexistent legacy manifest,
+  then locates root plugin.json. A separate search also targets a missing legacy
+  installed-plugin registry and exits with an error. The manifest reread succeeds,
+  but the answer's broader settings-confirmation claim is not fully established
+  by the inspected output. Do not turn these probes into a clean lookup pass.
+- Interpretation: explicit rereading in an existing desktop-owned chat works in
+  this bounded observation. It extends FAB-02/FAB-14; automatic refresh, general
+  long-context stability, creator usefulness and native UI display are not proved.
+  The legacy-path discovery weakness was already retained in beta.24 release
+  evidence; investigate actual host discovery before adding generic instructions.
+
+## 2026-10-13 — Backlog recovery and a decision-oriented synthesis
+
+- Requests: capture a new optional idea; recover details from the original plan
+  and later discussions into the project backlog; then shorten an integrated
+  report and reorganize competitor analysis using a supplied structural reference.
+  The creator explicitly reverses the earlier no-shortening preference, so the
+  compression is authorized rather than a preservation failure by itself.
+- Original seam/correction: some ideas were already retained, while omitted
+  original-plan details and later mechanics proposals were added after another
+  creator prompt. Local backlog entries distinguish accepted requirements,
+  creator ideas, assistant proposals and research findings, with unresolved rules
+  kept open. Existing entries are refined rather than silently made implementation
+  commitments. This is further bounded continuity evidence, not universal closure
+  of the earlier retention gap.
+- Useful outcome: the trace reports a roughly88% reduction of the integrated
+  report, keeping the full studies separately and reorganizing competitors around
+  user scenarios and occupied value. The final reply connects observed feature
+  overlap to a recommendation to test the combined experience, instead of merely
+  reporting a saved document. New competitive questions appear in the local backlog.
+- Observer checks: the local overview manifest describes an editorial synthesis
+  and records3,887words. All eight listed originals are present and match the
+  manifest hashes. This confirms source retention, not lossless semantic coverage
+  of the shortened report. Its structure/topic checks are weaker than a full
+  semantic preservation review; competitor claims and cited official pages were
+  not independently verified by this monitor. Commit/push is evidenced in the
+  chat trace, not an independent remote fetch.
+- Interpretation: useful bounded Research-to-Analysis-to-recommendation output
+  adds FAB-11/FAB-12 evidence and keeps source versus summary distinct. Follow-up
+  capture still needed creator direction; no rule repair is made by observation.
+- Limits/deferred: model/effort unknown. No product pilot, implementation, demand
+  proof or complete report audit. Discuss proportional evidence/backlog capture
+  and reliable installed-version discovery later; no monitor-driven test or patch.
+  Exact temporary helpers used for backlog/report work were removed in the trace.
 
 ## 2026-10-13 — Approved source annotations completed
 
