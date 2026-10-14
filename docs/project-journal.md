@@ -32,6 +32,11 @@ Backfill выполнен по текущему чату и проектным �
   remain. Sources, runtime and unrelated observation changes are preserved.
 - Evidence: [audit](research-audits/library-2026-10-14.md). Private paths/hashes and
   archive receipt are retained only in ignored audit evidence.
+- Creator feedback corrects the retention criterion: bundled methodological value
+  does not require active Library copies. Further inspection confirms historical
+  project-application sections remain inside global-method packets and some briefs.
+  Independent knowledge and local policy are not fully separated. The audit records
+  this gap without claiming a measured cause of dialogue failures or changing runtime.
 
 ## 2026-10-14 — Beta.27 ships bounded active-dialogue continuation
 

@@ -57,6 +57,12 @@ multi-turn tasks, then shared initiative in human–AI problem solving. These
 extend FAB-02/FAB-11/FAB-13/FAB-14 evidence needs, not new completed capabilities.
 Readability and Canvas already have relevant knowledge. Native/UI/source validity
 and real human value are not established by section retention.
+Creator feedback separates runtime usefulness from active Library need. All nine
+methods are bundled and external originals are not runtime prerequisites. Follow-up
+inspection confirms historical project-application proposals remain in global-method
+full packets and some operational briefs. FAB-15 retains a knowledge/policy separation
+gap. Review active content before requesting blanket replacement research. No further
+Library migration or runtime repair has been performed by this clarification.
 
 ## Правила
 
