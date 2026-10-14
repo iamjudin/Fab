@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "version": "0.1.0-beta.25",
-  "fingerprint": "fdc8e22c01e7957c",
+  "version": "0.1.0-beta.26",
+  "fingerprint": "772681e0da09331f",
   "channel": "beta",
   "surfaces": [
     {
@@ -13,7 +13,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/research-beta25-20261013/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/foundation-beta26-20261014/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -31,7 +31,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/research-beta25-20261013/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/foundation-beta26-20261014/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -54,7 +54,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/research-beta25-20261013/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/foundation-beta26-20261014/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -72,7 +72,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/research-beta25-20261013/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/foundation-beta26-20261014/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -90,7 +90,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/research-beta25-20261013/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/foundation-beta26-20261014/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -108,7 +108,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/research-beta25-20261013/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/foundation-beta26-20261014/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -126,7 +126,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/research-beta25-20261013/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/foundation-beta26-20261014/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -139,12 +139,12 @@
       "id": "research",
       "default": true,
       "status": "limited",
-      "limitations": "Framing/readability/reuse/output-review contract with bounded evidence. External V2/V3 compliance PARTIAL with source/numeric/layout failures retained. No decision-grade, native render, cross-project transfer or Bookworm behavior guarantee.",
+      "limitations": "Framing/readability/reuse/output-review contract with bounded evidence. External V2/V3 compliance PARTIAL with source/numeric/layout failures retained. No decision-grade, native render, cross-project transfer or Bookworm behavior guarantee. Foundation/covered-question source evidence is bounded, with an unspecified age-scope assumption retained. No installed-model execution or causal comparison.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/research-beta25-20261013/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/foundation-beta26-20261014/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -155,6 +155,11 @@
           "name": "reviewed source contracts and external failure retention",
           "result": "pass",
           "evidence": "experiments/maintenance/research-readability-20261013/results.md; experiments/maintenance/research-readability-20261013/v3-results.md"
+        },
+        {
+          "name": "foundation and covered-question source application",
+          "result": "pass",
+          "evidence": "experiments/workflow-tests/research-foundation-20261014/results.md"
         }
       ]
     },
@@ -167,7 +172,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/research-beta25-20261013/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/foundation-beta26-20261014/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -185,7 +190,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/research-beta25-20261013/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/foundation-beta26-20261014/report.md"
         },
         {
           "name": "retained bounded baseline evidence",

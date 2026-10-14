@@ -7,7 +7,7 @@ plugin selector is `fab@fab-local`.
 ## First install
 
 ```sh
-codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.25
+codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.26
 codex plugin add fab@fab-local
 ```
 
@@ -18,7 +18,7 @@ add the desired published tag, then reinstall:
 
 ```sh
 codex plugin marketplace remove fab-local
-codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.25
+codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.26
 codex plugin add fab@fab-local
 ```
 
@@ -36,7 +36,7 @@ Codex detects skill changes automatically; restart Codex if the updated skill is
 not available. Desktop continuation and resumed CLI behavior are separate checks.
 See [official skill guidance](https://learn.chatgpt.com/docs/build-skills).
 
-For rollback, repeat the version-change commands with `v0.1.0-beta.24`.
+For rollback, repeat the version-change commands with `v0.1.0-beta.25`.
 
 If older global or project instructions mandate a literal research footer,
 resolve that conflict with the owner. Keep general routing in host guidance and

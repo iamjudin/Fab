@@ -16,6 +16,16 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-14 — Foundation correction promoted for beta.26 release
+
+- Creator explicitly requested release after two bounded source behavior checks.
+- Versioned candidate72files/772681e0da09331f differs only by manifest version
+  from the frozen tested payload. Public notes disclose the age-scope assumption,
+  external research failures and absence of installed-model/native evidence.
+- [Distribution report](../experiments/releases/foundation-beta26-20261014/report.md)
+  records exact-tag publication, CI, assets and local installation as they complete.
+  No automatic Bookworm/Canvas promotion or extra statistical model suite.
+
 ## 2026-10-14 — Source behavior supports the foundation correction
 
 - Context: creator requested the two proposed behavior checks after integration.

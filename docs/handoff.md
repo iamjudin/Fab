@@ -1,5 +1,15 @@
 # Рабочее состояние Fab
 
+## 2026-10-14 — Beta.26 release authorized
+
+Creator explicitly requested local/public release of the tested foundation
+principle. Versioned source72files/772681e0da09331f differs from the tested snapshot
+only in plugin.json. [Distribution receipt](../experiments/releases/foundation-beta26-20261014/report.md)
+owns publication/installation completion. Installed/public beta.25 is the preceding
+baseline until actual update checks finish. No Bookworm/Canvas or private-source
+promotion, no new model run or installed-model claim.
+
+
 ## 2026-10-14 — Foundation source behavior checked
 
 Creator requested the proposed two tests. Fresh read-only GPT-6.1 Sol/Medium

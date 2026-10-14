@@ -71,6 +71,9 @@ This rule does not authorize an immediate new chat, hidden delegation, a merge,
 runtime installation or publication. Keep main ownership and return criteria clear.
 
 ## Current boundary
+Creator2026-10-14 explicitly authorized local/public release of the tested
+foundation correction. Beta.26 candidate72files/772681e0da09331f, manifest-only
+change from tested source. Installation/publication pending until receipt confirms.
 Creator 2026-10-14 approved returning the research-foundation correction from
 "Fab — читаемость исследований" to main. Focused source delta8145814 integrated:
 project context sets priorities without filtering knowledge through current
