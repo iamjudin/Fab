@@ -1,0 +1,3 @@
+Agreed. Working out usage contexts during design will give us concrete questions; if a gap blocks progress, we can investigate that specific gap. I’ll drop the proposed cross-cutting study and keep the six-domain programme and existing product choices intact.
+
+Before drafting the assignments, we still need to agree the working age scope. Ages 3–14 was my suggestion, not an accepted decision. What age range should the programme cover?

@@ -1,0 +1,33 @@
+{
+  "case": "baseline",
+  "exitCode": 0,
+  "timeout": false,
+  "threadId": "01a13a5b-d097-7e10-aaf6-be5c28182b0c",
+  "actualRuntime": {
+    "model": "gpt-6.1-sol",
+    "effort": "medium"
+  },
+  "seconds": 26.46,
+  "usage": {
+    "input_tokens": 63348,
+    "cached_input_tokens": 52864,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 363,
+    "reasoning_output_tokens": 0
+  },
+  "workspaceUnchanged": true,
+  "command": [
+    "codex",
+    "exec",
+    "--json",
+    "--skip-git-repo-check",
+    "-s",
+    "read-only",
+    "-C",
+    "/var/folders/s5/ndr2tg0d2d91ngg2txtxncgr0000gp/T/fab-dialogue-continuation-20261014-b2skzqhc/cases/baseline",
+    "-o",
+    "/Users/iamjudin/Desktop/Lab/Fab/experiments/workflow-tests/dialogue-continuation-20261014/behavior/baseline.md",
+    "-"
+  ],
+  "errors": []
+}

@@ -1,0 +1,30 @@
+{
+  "modelTurns": 4,
+  "candidateTurns": 3,
+  "actualRuntime": [
+    {
+      "model": "gpt-6.1-sol",
+      "effort": "medium"
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "effort": "medium"
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "effort": "medium"
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "effort": "medium"
+    }
+  ],
+  "input_tokens": 294363,
+  "cached_input_tokens": 234496,
+  "output_tokens": 2635,
+  "seconds": 135.29,
+  "root_overhead": "excluded",
+  "accountWindowUse": "unknown",
+  "resetCount": 0,
+  "purchaseCount": 0
+}

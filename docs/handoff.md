@@ -1,5 +1,23 @@
 # Рабочее состояние Fab
 
+## 2026-10-14 — Active-dialogue continuation source correction
+
+Creator reports a dead end after rejecting extra scope. Existing rules already
+require continuation. The real reply preserves scope but does not surface the
+remaining task/choice. Source shared/core and Brainstorm dialogue now reconnect
+feedback to the active goal and actual authority, while respecting completed
+social exchanges and real blocking choices.
+
+[Results](../experiments/workflow-tests/dialogue-continuation-20261014/results.md):
+source72files/fe44274906582314,50regressions/package pass. Four fresh GPT-6.1
+Sol/Medium turns,294,363input/234,496cached/2,635output,135.29seconds excluding
+root. Baseline already passes a focused blocked-choice fixture, so no superiority
+or native long-context repair claimed. Three candidate boundaries pass, actual
+assigned output is delivered rather than promised. Owned scratch retained/cleaned.
+Installed/public beta.26 remains72files/772681e0da09331f. Promotion is a separate
+creator decision, ordinary-use defect remains open. No other-project writes/messages.
+
+
 ## 2026-10-14 — Beta.26 published and installed
 
 Installed/public0.1.0-beta.26,72files/772681e0da09331f. Immutable source tag

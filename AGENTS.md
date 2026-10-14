@@ -71,6 +71,15 @@ This rule does not authorize an immediate new chat, hidden delegation, a merge,
 runtime installation or publication. Keep main ownership and return criteria clear.
 
 ## Current boundary
+Creator2026-10-14 reports dead ends after scope feedback during active work.
+Bounded source correction in shared/core and Brainstorm dialogue reconnects
+feedback to remaining goal/authority, concrete choice or actual authorized work,
+with natural completion for social replies. Source72files/fe44274906582314,
+50regressions/package pass. Four GPT-6.1 Sol/Medium turns: shipped-beta.26 baseline
+already passes the focused choice fixture, three candidate boundaries pass.
+Original native miss preserved, superiority/long-context repair unproved.
+Evidence: experiments/workflow-tests/dialogue-continuation-20261014/results.md.
+Installed/public beta.26 remains72files/772681e0da09331f, no promotion for this delta.
 Creator2026-10-14 explicitly authorized local/public release of the tested
 foundation correction. Released/installed beta.26:72files/772681e0da09331f,
 immutable v0.1.0-beta.26/2001053.50regressions, scope, exact-source CI, anonymous

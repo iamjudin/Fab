@@ -16,6 +16,23 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-14 — Correct scope feedback should preserve active dialogue
+
+- Context: creator reports replies that acknowledge feedback and stop despite an
+  ongoing project goal. A completed thanks exchange should remain naturally short.
+- Diagnosis: existing continuation wording is present, fresh beta.26 already passes
+  a focused choice fixture. The native miss is an application/stability symptom,
+  not evidence that continuation is wholly absent or a missing named technique.
+- Source correction: shared ending boundary reconnects scope feedback to remaining
+  goal and authority. Execute authorized work, develop the discussion or ask the
+  concrete blocking question. Brainstorm keeps the same proportional stopping rule.
+- Evidence: [four source turns](../experiments/workflow-tests/dialogue-continuation-20261014/results.md),
+  GPT-6.1 Sol/Medium, three candidate boundaries pass.50regressions/package pass,
+  72files/fe44274906582314. Original real failure and non-reproducing baseline kept.
+- Limits/next: no superiority, native long-context repair or installed behavior
+  claim. Installed/public beta.26 unchanged. Limited promotion decision and actual
+  post-feedback use are next. No required questions after genuine completion.
+
 ## 2026-10-14 — Beta.26 completes public and local distribution
 
 - Outcome: [beta.26](https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.26)
