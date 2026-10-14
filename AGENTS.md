@@ -71,6 +71,9 @@ This rule does not authorize an immediate new chat, hidden delegation, a merge,
 runtime installation or publication. Keep main ownership and return criteria clear.
 
 ## Current boundary
+Creator2026-10-14 explicitly approved local/public beta.27 for the tested
+continuation correction. Candidate72files/b6a149b9ebfa968f, manifest-only change
+from the tested source. Distribution/install pending until actual receipt.
 Creator2026-10-14 reports dead ends after scope feedback during active work.
 Bounded source correction in shared/core and Brainstorm dialogue reconnects
 feedback to remaining goal/authority, concrete choice or actual authorized work,

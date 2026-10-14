@@ -1,5 +1,14 @@
 # Рабочее состояние Fab
 
+## 2026-10-14 — Beta.27 release explicitly authorized
+
+Creator approved the reviewed active-dialogue continuation correction locally and
+on GitHub. Candidate72files/b6a149b9ebfa968f differs from tested source only in the
+manifest version. [Distribution report](../experiments/releases/continuation-beta27-20261014/report.md)
+owns actual tag/CI/assets/install completion. Installed/public beta.26 remains
+baseline until update checks finish. No new model suite or native/long-context claim.
+
+
 ## 2026-10-14 — Active-dialogue continuation source correction
 
 Creator reports a dead end after rejecting extra scope. Existing rules already

@@ -16,6 +16,15 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-14 — Creator authorizes beta.27 continuation promotion
+
+- Creator explicitly approved local/public beta.27 after the bounded source checks.
+- Candidate72files/b6a149b9ebfa968f differs only by manifest version from the
+  frozen source. Original native miss and non-reproducing baseline remain visible.
+- [Distribution report](../experiments/releases/continuation-beta27-20261014/report.md)
+  owns source CI, public assets and exact-tag clean/primary installation. No extra
+  model suite, source-project writes/messages or unrelated workstream promotion.
+
 ## 2026-10-14 — Correct scope feedback should preserve active dialogue
 
 - Context: creator reports replies that acknowledge feedback and stop despite an
