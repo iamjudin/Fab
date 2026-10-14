@@ -16,6 +16,26 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-14 — Project context guides a reusable research foundation
+
+- Context: creator clarifies that anonymization alone can leave a research scope
+  narrowly filtered through current product features. Research should instead
+  provide surrounding knowledge for ideation and later decisions.
+- Decision/result: shared canonical principle, beacon pointer and Research routes
+  distinguish bounded domain foundation from focused consequential uncertainty.
+  Consult existing knowledge first, explain missing evidence before proposing
+  focused work. Keep independent findings separate from project application.
+- Evidence: package guard and 50 regressions PASS, synthetic boundary cases and
+  definition/application/review links inspected. No new model behavior test.
+  [Correction](../experiments/maintenance/research-readability-20261013/foundation-principle-20261014.md).
+- Main integration: creator explicitly requested return to main in the feature
+  chat. Focused8145814 delta retained, old feature manifest excluded. Both sides
+  of the journal conflict preserved. Main package72files/37cbf14af3e5a51b and
+  50regressions PASS, unrelated observation edits kept separate.
+- Limits/next: installed/public beta.25 remains72files/fdc8e22c01e7957c. No fresh
+  model behavior, runtime update or publication for this delta. Before promotion,
+  check actual foundation/focused-gap application with existing-knowledge controls.
+
 ## 2026-10-13 — Beta.25 reaches exact-tag public and local installation
 
 - Result: [beta.25](https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.25)

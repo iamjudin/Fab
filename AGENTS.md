@@ -71,6 +71,13 @@ This rule does not authorize an immediate new chat, hidden delegation, a merge,
 runtime installation or publication. Keep main ownership and return criteria clear.
 
 ## Current boundary
+Creator 2026-10-14 approved returning the research-foundation correction from
+"Fab — читаемость исследований" to main. Focused source delta8145814 integrated:
+project context sets priorities without filtering knowledge through current
+features. Consult existing knowledge, distinguish bounded foundation from focused
+consequential uncertainty. Source72files/37cbf14af3e5a51b,50regressions/package pass.
+Installed/public beta.25 remains72files/fdc8e22c01e7957c, immutable tag unchanged.
+No fresh-model efficacy, runtime update or public release for this delta.
 FAB-15 returned candidate df664b6 and creator explicitly authorized integration,
 local update and public GitHub release on2026-10-13. Integrated via2526511.
 Released/installed beta.25:72files/fdc8e22c01e7957c, framing/readability/independent

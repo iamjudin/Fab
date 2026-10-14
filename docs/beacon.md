@@ -18,6 +18,14 @@
 
 Детали и границы: [decision policy](../plugins/fab/shared/decision-policy.md), [архитектура](architecture/design.md), соответствующий SKILL и reference. Новое исследование уточняет метод, не создаёт обязательный дополнительный этап.
 
+## Research foundation
+
+The project supplies context and priorities, not a filter for the knowledge base.
+Research supports reusable understanding and joint ideation. Consult existing
+knowledge before proposing a focused investigation of consequential uncertainty.
+Canonical principle: [research as reusable knowledge](../plugins/fab/shared/core.md#research-as-reusable-knowledge).
+Operational scope: [foundation and focused investigation](../plugins/fab/skills/research/references/reuse.md).
+
 ## Актуальность
 
 Новый устойчивый принцип проверяем по core → skill → check → evidence. Инцидент или конкретная ошибка сначала попадают в backlog, а не раздувают Маяк. Автотесты не доказывают реальную ценность и принятие создателем. Текущая проверенная граница — [handoff](handoff.md) и [backlog](backlog.md).

@@ -1,6 +1,7 @@
 # Deep Research assignment and output
 
 Apply the [reader contract](reader-contract.md) when preparing the assignment.
+Choose the domain-foundation or focused-gap purpose before writing the question.
 State the decision or knowledge question, required evidence, transfer boundaries,
 stop condition and unknowns. Add a topic-specific presentation plan: what the
 reader needs to compare, scan and understand causally. Keep the full evidence
@@ -10,7 +11,10 @@ links and coherent numerical scenarios where relevant. Model the compared option
 not an unrelated option with more convenient available numbers.
 Apply [independent research and application](reuse.md). Formulate a standalone
 research question with relevant topic conditions instead of the consuming project
-name. Request independent findings, then prepare local application separately.
+name. For foundation work include relevant domain mechanisms and adjacent options
+beyond current features. For focused work state the consequential uncertainty
+and existing-evidence gap. Request independent findings, then prepare local
+application separately.
 Add this topic-specific instruction to the assignment, not merely to its format
 footer. Preserve source names and named studied cases when they are evidence.
 

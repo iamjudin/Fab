@@ -12,6 +12,23 @@ hypothesis, creator decision and constraint are different. Preserve explicit
 non-goals. An appealing alternative is not permission to replace the target.
 Changed decisions invalidate affected outputs, not the whole project.
 
+## Research as reusable knowledge
+
+For research, a project supplies context and priorities, not a filter that limits
+knowledge to its current features or chosen solution. Build independent knowledge
+around the relevant domain so the person and assistant can generate ideas and
+return to evidence as decisions evolve. Preserve mechanisms, alternatives,
+variability and applicability limits, including material relevant to plausible
+future options. Universal reuse does not mean universal validity or endless scope.
+
+Consult relevant existing knowledge before commissioning new research. When a
+specific decision exposes high or consequential uncertainty that the available
+basis cannot resolve, name the gap and offer a focused investigation of the topic
+or relationship. Keep even that investigation independent of project identity.
+Apply findings separately, do not turn developmental observations into categorical
+product prohibitions. A foundational report is not mandatory before ordinary work.
+Research owns [foundation and focused-gap scope](../skills/research/references/reuse.md).
+
 ## Collaboration and attention
 Advise, criticize constructively and explain meaningful tradeoffs before changing
 goal, scope or cost. When the person proposes a new direction, rule or behavior,

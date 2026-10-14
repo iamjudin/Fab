@@ -4,6 +4,40 @@ Read when preparing research assignments, synthesizing results or ingesting
 research for project use. A reusable report is independent of a consuming project's
 identity, not independent of the conditions that make its findings useful.
 
+## Foundation and focused investigation
+
+The project is context for selecting relevant fields, questions and priorities.
+Its current features and accepted solution must not become a hidden relevance
+filter. A reusable knowledge foundation covers the surrounding domain, mechanisms,
+alternatives, evidence strength, disagreements, variation and limits. It should
+support new ideas jointly developed by the person and assistant, including useful
+options not yet planned by the current project.
+
+Choose scope for the requested knowledge purpose:
+
+| Research purpose | Scope and useful stopping boundary |
+|---|---|
+| Domain foundation | Bounded map of relevant knowledge and evidence, with major mechanisms, adjacent options and known gaps accessible for later decisions |
+| Focused uncertainty | A precise unresolved question or relationship, enough evidence to distinguish explanations or state what remains unknown |
+
+Consult the existing relevant library and available project evidence first.
+Inspect their coverage, freshness and applicability rather than merely whether a
+file exists. Do not order new research for every design change. A useful existing
+foundation may already answer the question, or support ideation with explicit
+uncertainty. It is not an exhaustive mandatory prerequisite for project work.
+
+If a concrete task reveals high uncertainty that matters to the decision, explain
+what is unknown, which existing evidence falls short, what decision may change and
+what a focused investigation could resolve. Offer the focused investigation without
+pretending it can settle an empirical question from desk research alone. Continue
+work that does not depend on the unresolved question. Do not commission expensive
+or external work merely because a possible gap exists without the required scope.
+
+Both purposes yield independent topic knowledge. A focused question is narrow in
+subject, not an answer written specifically to justify one project's solution.
+Keep project application separate. Broad foundation does not mean an unbounded
+encyclopedia, and naming a project less often does not remove a hidden scope filter.
+
 ## Two content layers
 
 | Layer | Contents |
@@ -13,8 +47,12 @@ identity, not independent of the conditions that make its findings useful.
 
 For new assignments formulate a standalone topic question first. Keep the project
 name and advice specifically for it out of the research title and authored research
-body. Translate relevant project context into explicit topic conditions: audience,
-age, language, region, use situation, intervention and economic unit. Do not remove
+body. Use relevant project context to identify topic conditions: audience, age,
+language, region, use situation, intervention and economic unit. Separate essential
+evidence boundaries from contingent design choices. In foundation mode include
+related alternatives and future uses instead of filtering everything through the
+current feature set. For a focused question retain only conditions necessary to
+resolve it. Do not remove
 conditions just to sound universal. Mark untested design conditions as assumptions,
 not typical behavior or established demand.
 
@@ -66,6 +104,11 @@ Renaming an existing source requires explicit rename scope and link/collision ch
 ## Review
 
 Check whether the research stands on its own without knowing the consuming project.
+Check that its breadth matches the foundation or focused-gap purpose and that the
+current product has not silently excluded relevant domain knowledge. Keep age and
+developmental findings probabilistic or qualified as their evidence requires, not
+rigid eligibility rules. Check evidence strength before using knowledge to constrain
+ideas. Constraints require applicable support, not a convenient isolated statement.
 Can another project determine whether the evidence applies from the preserved
 conditions? Check for leaked local decisions, product recommendations or projections.
 Then verify the application against the exact source revision and accepted context.

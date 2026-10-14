@@ -6,8 +6,11 @@ description: Frame a decision-changing research question, synthesize evidence or
 Read [shared core](../../shared/core.md). For existing/durable project work read [project contract](../../shared/project-contract.md). Other skills are conditional dependencies, not obligatory gates.
 
 # Research
-Identify what decision the evidence can change, sources/method, sufficient scope,
-stop and limits. Use existing context without a mandatory product frame/graph.
+Identify the knowledge purpose or decision the evidence can change, sources/method,
+sufficient scope, stop and limits. Consult existing relevant knowledge first.
+Distinguish a reusable domain foundation from a focused high-uncertainty question,
+with project context setting priorities rather than restricting coverage to current
+features. Use existing context without a mandatory product frame/graph.
 Read [independent research and application](references/reuse.md): keep new topic
 research separate from consuming-project identity and local decisions, while
 retaining the conditions needed for useful transfer.

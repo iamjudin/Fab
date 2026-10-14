@@ -1,5 +1,25 @@
 # Рабочее состояние Fab
 
+## 2026-10-14 — Research foundation correction integrated in source
+
+Creator clarified and approved returning the focused8145814 delta from the
+Research feature chat to main. The project supplies research context/priorities,
+without limiting knowledge to current features or an accepted solution. Research
+checks existing coverage, freshness and applicability before proposing bounded
+foundation work or a focused investigation of consequential uncertainty. Topic
+findings remain separate from local application, with qualified evidence limits.
+
+Main source:72files/37cbf14af3e5a51b, package guard and50regressions PASS.
+The journal conflict preserved both the feature decision and release history.
+Installed/public beta.25 remains72files/fdc8e22c01e7957c. This correction is source
+only, not a new release or installed-model behavior claim. Old feature manifest
+was not imported. Pending external-observation edits are preserved separately.
+[Principle/evidence](../experiments/maintenance/research-readability-20261013/foundation-principle-20261014.md).
+Next useful check before promotion: actual application on a foundation question
+and a focused question already covered by available knowledge, rather than another
+full external research run. Bookworm remains creator-owned and Canvas parked.
+
+
 ## 2026-10-13 — Beta.25 release completed
 
 Installed/public0.1.0-beta.25,72files/fdc8e22c01e7957c, immutable source tag at
