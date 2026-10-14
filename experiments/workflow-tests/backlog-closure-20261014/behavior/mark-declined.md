@@ -1,0 +1,3 @@
+Beta’s ingestion stage is closed. Completion and your declined annotation are recorded in [Beta’s provenance](Beta/research/provenance.json). The original Library note and all other files remain unchanged.
+
+The useful result: preserve entered text when validation fails. Beta’s validated packet matches the source body exactly. This supports a design recommendation, with the explicit limit that it is a local observation—not population evidence or an accepted product rule.

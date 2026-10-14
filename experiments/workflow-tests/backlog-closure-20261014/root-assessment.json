@@ -1,0 +1,41 @@
+{
+  "checks": {
+    "all_invocations_completed": true,
+    "all_package_and_sentinel_preserved": true,
+    "mark-declined_protected_hashes": true,
+    "mark-declined_body_pair_hash": true,
+    "mark-declined_source_exact": true,
+    "mark-additive_protected_hashes": true,
+    "mark-additive_body_pair_hash": true,
+    "mark-additive_alpha_entry_exact": true,
+    "mark-additive_one_beta_entry_tag": true,
+    "mark-additive_beta_revision_links": true,
+    "mark-additive_body_preserved": true,
+    "mark-revision_protected_hashes": true,
+    "mark-revision_body_pair_hash": true,
+    "mark-revision_alpha_entry_exact": true,
+    "mark-revision_one_beta_entry_tag": true,
+    "mark-revision_beta_revision_links": true,
+    "mark-revision_body_preserved": true,
+    "mark-revision_other_consumer_named": true,
+    "sequence-source_actual_outputs": true,
+    "sequence-source_social_no_mutation": true,
+    "sequence-shipped_actual_outputs": true,
+    "sequence-shipped_social_no_mutation": true,
+    "generated_runtime_self_contained": true,
+    "generated_scratch_removed": true,
+    "root_generated_checks": true
+  },
+  "allChecksPass": true,
+  "invocations": 11,
+  "usage": {
+    "input_tokens": 1275778,
+    "cached_input_tokens": 1143168,
+    "output_tokens": 15677,
+    "reasoning_output_tokens": 834
+  },
+  "seconds": 566.21,
+  "remainingInputBudget": 24222,
+  "generatedOnlyModelExecution": "NOT RUN: remaining input budget below observed per-turn costs",
+  "reviewer": "root; unblinded; synthetic operator fixtures"
+}

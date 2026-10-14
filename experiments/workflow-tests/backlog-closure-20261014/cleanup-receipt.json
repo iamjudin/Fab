@@ -1,0 +1,14 @@
+{
+  "owner": "backlog-closure-20261014",
+  "scratchBasename": "fab-backlog-closure-ndk4gy35",
+  "retainedIn": "raw/fixtures",
+  "files": 564,
+  "bytes": 8797812,
+  "hashComparison": "all files byte-identical before cleanup",
+  "removedOwnedWorkspace": true,
+  "retainedRootHelperExact": true,
+  "removedOwnedRootHelper": true,
+  "neighboringTasks": "not traversed or deleted",
+  "usefulGeneratedPackage": "retained in ignored raw/fixtures/generated-plugin/generated",
+  "finalLinks": "durable project evidence only"
+}

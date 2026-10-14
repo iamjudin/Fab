@@ -1,0 +1,3 @@
+Added `#Beta` and Beta’s technical usage entry to [Alpha: Queue design.md](Library/Alpha:%20Queue%20design.md), recording processing date `2026-10-14` and the verified body revision `2f8cc38d…89cb56`. Also recorded the date in Beta’s local provenance.
+
+The packet passed validation and matched the research body exactly. Alpha’s usage, the filename, research body, and all other supplied files were preserved.

@@ -71,6 +71,25 @@ This rule does not authorize an immediate new chat, hidden delegation, a merge,
 runtime installation or publication. Keep main ownership and return criteria clear.
 
 ## Current boundary
+Creator2026-10-14 authorized current backlog execution/retirement and leaves test
+selection to main, with Canvas/Obsidian untouched. Maintenance complete:11GPT-6.1
+Sol/Medium invocations,1275778input/1143168cached/15677output,566.21summed seconds.
+Source/shipped three-turn sequences both perform accepted work and end naturally;
+no native failure reproduction or superiority. Three marking cases/root review
+pass, FAB-10 bounded closure. Generated plugin inherits independent cleanup rules,
+final7helper checks pass after retained Python3.9 harness failure/correction;
+generated-only model cleanup unobserved, budget stops further launches.
+Canonical backlog is current English scope, ready source, explicit triggers and
+closures; exact prior record docs/backlog-history-2026-10-14.md is history only.
+FAB-05/12 intake goals close, WF-01/17 duplicate follow-up retires into current
+owners. FAB-09/02/03/11/13/14/15 retain verification boundaries, not eternal generic
+reruns. Evidence: experiments/workflow-tests/backlog-closure-20261014/results.md.
+Source72files/891e6db46b47b4bf unchanged, prior66regressions/package PASS. Installed/
+public beta.27 unchanged. No runtime edit/install/push/release or provider launch.
+Main recommends separately requested candidate release then actual-use assessment;
+creator owns release choice. No additional research needed for this maintenance.
+Active observer unchanged, Canvas parked, Bookworm creator-owned. Useful fixtures
+retained/hash-verified before scoped cleanup. Dated boundaries below are history.
 Creator2026-10-14 asked main to conduct the two prepared collaboration topics
 while provider research access is rate-limited. Disclosed primary-source web
 review complete:12source records, independent initiative/evaluation reports,

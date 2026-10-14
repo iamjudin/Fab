@@ -1,0 +1,68 @@
+{
+  "sequence-source-1": {
+    "fixture": "sequence-source",
+    "target": "source",
+    "resumeFrom": null,
+    "prompt": "This is an isolated fictional Fab behavior test. Use only the provided ./fab package, required shared guidance and relevant references. Read state.md. Work only inside this fixture, preserve supplied package/input/other-consumer files. Do not dispatch external research, contact people, create chats/agents, install, commit, publish or operate real products. Respond in English. File work, when requested, must actually be performed rather than described.\n\nCreator message: Read the Brainstorm skill for the discussion. Help me choose how to improve this registration form. I want your assessment before we settle the direction. Once we settle it, prepare implementation-brief.md and checklist.txt. Start with the discussion, hold file work until my feedback."
+  },
+  "sequence-source-2": {
+    "fixture": "sequence-source",
+    "target": "source",
+    "resumeFrom": "sequence-source-1",
+    "prompt": "This is an isolated fictional Fab behavior test. Use only the provided ./fab package, required shared guidance and relevant references. Read state.md. Work only inside this fixture, preserve supplied package/input/other-consumer files. Do not dispatch external research, contact people, create chats/agents, install, commit, publish or operate real products. Respond in English. File work, when requested, must actually be performed rather than described.\n\nCreator message: Keep it to the form itself. No accounts, profiles or additional research. Preserve entered text when validation fails and explain what to fix. Keep the required fields as they are. That settles the direction."
+  },
+  "sequence-source-3": {
+    "fixture": "sequence-source",
+    "target": "source",
+    "resumeFrom": "sequence-source-2",
+    "prompt": "This is an isolated fictional Fab behavior test. Use only the provided ./fab package, required shared guidance and relevant references. Read state.md. Work only inside this fixture, preserve supplied package/input/other-consumer files. Do not dispatch external research, contact people, create chats/agents, install, commit, publish or operate real products. Respond in English. File work, when requested, must actually be performed rather than described.\n\nCreator message: Thanks, that is all I needed."
+  },
+  "sequence-shipped-1": {
+    "fixture": "sequence-shipped",
+    "target": "shipped",
+    "resumeFrom": null,
+    "prompt": "This is an isolated fictional Fab behavior test. Use only the provided ./fab package, required shared guidance and relevant references. Read state.md. Work only inside this fixture, preserve supplied package/input/other-consumer files. Do not dispatch external research, contact people, create chats/agents, install, commit, publish or operate real products. Respond in English. File work, when requested, must actually be performed rather than described.\n\nCreator message: Read the Brainstorm skill for the discussion. Help me choose how to improve this registration form. I want your assessment before we settle the direction. Once we settle it, prepare implementation-brief.md and checklist.txt. Start with the discussion, hold file work until my feedback."
+  },
+  "sequence-shipped-2": {
+    "fixture": "sequence-shipped",
+    "target": "shipped",
+    "resumeFrom": "sequence-shipped-1",
+    "prompt": "This is an isolated fictional Fab behavior test. Use only the provided ./fab package, required shared guidance and relevant references. Read state.md. Work only inside this fixture, preserve supplied package/input/other-consumer files. Do not dispatch external research, contact people, create chats/agents, install, commit, publish or operate real products. Respond in English. File work, when requested, must actually be performed rather than described.\n\nCreator message: Keep it to the form itself. No accounts, profiles or additional research. Preserve entered text when validation fails and explain what to fix. Keep the required fields as they are. That settles the direction."
+  },
+  "sequence-shipped-3": {
+    "fixture": "sequence-shipped",
+    "target": "shipped",
+    "resumeFrom": "sequence-shipped-2",
+    "prompt": "This is an isolated fictional Fab behavior test. Use only the provided ./fab package, required shared guidance and relevant references. Read state.md. Work only inside this fixture, preserve supplied package/input/other-consumer files. Do not dispatch external research, contact people, create chats/agents, install, commit, publish or operate real products. Respond in English. File work, when requested, must actually be performed rather than described.\n\nCreator message: Thanks, that is all I needed."
+  },
+  "mark-declined": {
+    "fixture": "mark-declined",
+    "target": "source",
+    "resumeFrom": null,
+    "prompt": "This is an isolated fictional Fab behavior test. Use only the provided ./fab package, required shared guidance and relevant references. Read state.md. Work only inside this fixture, preserve supplied package/input/other-consumer files. Do not dispatch external research, contact people, create chats/agents, install, commit, publish or operate real products. Respond in English. File work, when requested, must actually be performed rather than described.\n\nCreator message: Read the Research skill and its ingestion contract for this task. The Beta research pair is already processed. I decline adding any tags or usage annotation to the supplied Library/Alpha: Queue design.md. Close this ingestion stage and tell me the useful result. Do not edit the original source."
+  },
+  "mark-additive": {
+    "fixture": "mark-additive",
+    "target": "source",
+    "resumeFrom": null,
+    "prompt": "This is an isolated fictional Fab behavior test. Use only the provided ./fab package, required shared guidance and relevant references. Read state.md. Work only inside this fixture, preserve supplied package/input/other-consumer files. Do not dispatch external research, contact people, create chats/agents, install, commit, publish or operate real products. Respond in English. File work, when requested, must actually be performed rather than described.\n\nCreator message: Read the Research skill and its ingestion contract for this task. Use this processed research for Beta as well. I approve adding #Beta and Beta's technical usage entry to Library/Alpha: Queue design.md. Preserve Alpha's usage, the filename and research body. Record the actual current Beta processing revision and finish."
+  },
+  "mark-revision": {
+    "fixture": "mark-revision",
+    "target": "source",
+    "resumeFrom": null,
+    "prompt": "This is an isolated fictional Fab behavior test. Use only the provided ./fab package, required shared guidance and relevant references. Read state.md. Work only inside this fixture, preserve supplied package/input/other-consumer files. Do not dispatch external research, contact people, create chats/agents, install, commit, publish or operate real products. Respond in English. File work, when requested, must actually be performed rather than described.\n\nCreator message: Read the Research skill and its ingestion contract for this task. Refresh Beta's research pair from the updated Library/Alpha: Queue design.md and apply it to Beta's operational brief. I authorize updating Beta's usage entry in that source. Tell me which other consumer needs review and where its artifacts are. Preserve Alpha's entry and files, and leave accepted product decisions unchanged."
+  },
+  "generated-plugin": {
+    "fixture": "generated-plugin",
+    "target": "source",
+    "resumeFrom": null,
+    "prompt": "This is an isolated fictional Fab behavior test. Use only the provided ./fab package, required shared guidance and relevant references. Read state.md. Work only inside this fixture, preserve supplied package/input/other-consumer files. Do not dispatch external research, contact people, create chats/agents, install, commit, publish or operate real products. Respond in English. File work, when requested, must actually be performed rather than described.\n\nCreator message: Read the Plugin skill and relevant references. Build a small local plugin candidate in generated/ for summarizing supplied CSV tables into readable Markdown. Include enough instructions to execute the skill independently. Run a meaningful local helper check if a helper is used. Keep the task limited to this package."
+  },
+  "growing-work": {
+    "fixture": "growing-work",
+    "target": "source",
+    "resumeFrom": null,
+    "prompt": "This is an isolated fictional Fab behavior test. Use only the provided ./fab package, required shared guidance and relevant references. Read state.md. Work only inside this fixture, preserve supplied package/input/other-consumer files. Do not dispatch external research, contact people, create chats/agents, install, commit, publish or operate real products. Respond in English. File work, when requested, must actually be performed rather than described.\n\nCreator message: Read the Cowork skill. Help me take on the desktop viewer redesign alongside the regular plugin maintenance. Think through how we should organize the work before implementation."
+  }
+}

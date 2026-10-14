@@ -1,0 +1,49 @@
+{
+  "case": "mark-additive",
+  "target": "source",
+  "threadId": "01a13c1e-59a7-76e1-acdf-e955759abc80",
+  "resumeFrom": null,
+  "actualRuntime": {
+    "model": "gpt-6.1-sol",
+    "effort": "medium"
+  },
+  "exitCode": 0,
+  "timeout": false,
+  "seconds": 51.7,
+  "usage": {
+    "input_tokens": 172039,
+    "cached_input_tokens": 155136,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1452,
+    "reasoning_output_tokens": 104,
+    "total_tokens": 173491
+  },
+  "usageScope": "rollout cumulative-counter difference for this invocation",
+  "eventReportedUsage": {
+    "input_tokens": 172039,
+    "cached_input_tokens": 155136,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1452,
+    "reasoning_output_tokens": 104
+  },
+  "changedFiles": [
+    "Beta/research/provenance.json",
+    "Library/Alpha: Queue design.md"
+  ],
+  "suppliedPackageUnchanged": true,
+  "sentinelUnchanged": true,
+  "command": [
+    "codex",
+    "exec",
+    "--json",
+    "--skip-git-repo-check",
+    "-s",
+    "workspace-write",
+    "-C",
+    "/var/folders/s5/ndr2tg0d2d91ngg2txtxncgr0000gp/T/fab-backlog-closure-ndk4gy35/mark-additive",
+    "-o",
+    "/Users/iamjudin/Desktop/Lab/Fab/experiments/workflow-tests/backlog-closure-20261014/behavior/mark-additive.md",
+    "-"
+  ],
+  "errors": []
+}

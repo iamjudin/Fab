@@ -46,6 +46,16 @@ corrections are unreleased. Installed/public beta.27 is unchanged. Current sourc
 evidence and promotion boundaries belong to [handoff](../handoff.md) and
 [backlog](../backlog.md), rather than being inferred from this availability list.
 
+## Current bounded behavior checks
+
+2026-10-14 [backlog maintenance](../../experiments/workflow-tests/backlog-closure-20261014/results.md)
+observes research refusal/additive/revision writes and generated self-contained
+cleanup inheritance. Other consumers/accepted decisions are preserved. Generated
+helper checks pass after a retained harness correction; fresh generated-only model
+cleanup remains unobserved. Both source and shipped package pass the short resumed
+continuation sequence; native trigger/long-context consistency is still open.
+Historical availability and unobserved states below describe those earlier dates.
+
 ## Historical implementation checkpoints
 
 Beta.10 installed parity/local regression checked; fresh generated-rule behavior

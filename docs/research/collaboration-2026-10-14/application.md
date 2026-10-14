@@ -7,6 +7,17 @@ These are project evidence and selected author synthesis, not a new global modul
 Selected source sections: initiative R003–R006 and evaluation R003–R006.
 Exact report revisions and the complete ID/title index live in provenance.json.
 
+## Application disposition — 2026-10-14
+
+Creator authorized test selection and execution. The proposed state/action seam
+has now been checked in [two exact-session three-turn sequences](../../../experiments/workflow-tests/backlog-closure-20261014/results.md):
+source and shipped-identical baseline both act correctly after scope feedback and
+finish naturally. No baseline failure occurred, so snapshot/reminder diagnostics
+are not added. This does not explain the native recurrence or validate broader
+initiative thresholds. No automatic runtime change follows this research; main
+owns actual-use calibration under the canonical backlog. The original proposed
+validation design below is retained as the prior recommendation.
+
 ## Judgment for the current problem
 
 Recommend testing the state/action seam before adding another generic instruction,

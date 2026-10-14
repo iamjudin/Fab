@@ -16,6 +16,31 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-14 — Close bounded backlog tasks without erasing native failures
+
+- Creator asked main to work the relevant backlog and choose tests independently,
+  leaving the Obsidian scheme parked. Main checked actions through two sequential
+  sessions, three source-usage scenarios, plugin generation and a growing scope.
+- [Evidence](../experiments/workflow-tests/backlog-closure-20261014/results.md):
+  eleven GPT-6.1 Sol/Medium invocations, 1,275,778 input/1,143,168 cached/15,677
+  output tokens, 566.21 summed seconds. Baseline and candidate both complete the
+  short accepted-scope sequence. Research marking protects bodies and other
+  consumers. Generated cleanup rules are self-contained; final helper checks pass
+  after a retained Python 3.9 harness failure. Budget prevents a generated-only
+  model execution, so that behavior remains unknown.
+- Decision: no new generic runtime rules. Close FAB-10's tested marking checks
+  and FAB-05/12 completed intake/suite goals. Retire WF-01/17 duplicate follow-up
+  into actual preservation/dialogue owners. Preserve native misses and concrete
+  next triggers; do not confuse a passing synthetic test with ordinary-use repair.
+- Canonical backlog now distinguishes current verification, ready source and
+  deferred scope. The old record is retained byte-for-byte as dated evidence,
+  not another active queue. All18original IDs receive a disposition.
+- Boundary: source72files/891e6db46b47b4bf and installed/public beta.27 unchanged.
+  No install/publication or other-project writes. Main recommends next explicit
+  candidate release plus ordinary-use checks; additional research is not a blocker.
+  Canvas parked, Bookworm creator-owned, active observer unchanged. Owned scratch
+  retained and verified before cleanup, final links use durable result paths.
+
 ## 2026-10-14 — Conduct collaboration research without waiting for provider access
 
 - Creator asked main to investigate the two prepared topics directly while access

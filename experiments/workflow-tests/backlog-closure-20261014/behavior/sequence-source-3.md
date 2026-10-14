@@ -1,0 +1,1 @@
+You’re welcome. The brief and checklist are ready.

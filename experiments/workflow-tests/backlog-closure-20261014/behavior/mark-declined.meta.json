@@ -1,0 +1,48 @@
+{
+  "case": "mark-declined",
+  "target": "source",
+  "threadId": "01a13c1c-3f38-7061-bf04-e6f1edec64fe",
+  "resumeFrom": null,
+  "actualRuntime": {
+    "model": "gpt-6.1-sol",
+    "effort": "medium"
+  },
+  "exitCode": 0,
+  "timeout": false,
+  "seconds": 49.22,
+  "usage": {
+    "input_tokens": 173899,
+    "cached_input_tokens": 156160,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1258,
+    "reasoning_output_tokens": 101,
+    "total_tokens": 175157
+  },
+  "usageScope": "rollout cumulative-counter difference for this invocation",
+  "eventReportedUsage": {
+    "input_tokens": 173899,
+    "cached_input_tokens": 156160,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1258,
+    "reasoning_output_tokens": 101
+  },
+  "changedFiles": [
+    "Beta/research/provenance.json"
+  ],
+  "suppliedPackageUnchanged": true,
+  "sentinelUnchanged": true,
+  "command": [
+    "codex",
+    "exec",
+    "--json",
+    "--skip-git-repo-check",
+    "-s",
+    "workspace-write",
+    "-C",
+    "/var/folders/s5/ndr2tg0d2d91ngg2txtxncgr0000gp/T/fab-backlog-closure-ndk4gy35/mark-declined",
+    "-o",
+    "/Users/iamjudin/Desktop/Lab/Fab/experiments/workflow-tests/backlog-closure-20261014/behavior/mark-declined.md",
+    "-"
+  ],
+  "errors": []
+}

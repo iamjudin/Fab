@@ -1,5 +1,34 @@
 # Рабочее состояние Fab
 
+## 2026-10-14 — Current backlog maintenance completed
+
+Creator authorizes relevant backlog work, bounded closure of obsolete items and
+main's test selection; Obsidian/Canvas remains untouched. [Results](../experiments/workflow-tests/backlog-closure-20261014/results.md):
+eleven GPT-6.1 Sol/Medium invocations, including two exact-session three-turn
+sequences. Shipped baseline and current source both perform accepted work and
+finish naturally; no native dead-end explanation or comparative superiority.
+Three marking cases and root hash/action review pass. FAB-10 closes these bounded
+checks. Generated package inherits its own cleanup rule and final seven helper
+checks pass after a retained Python 3.9 harness failure/correction. Fresh generated-
+only model cleanup is unobserved: stop at 1,275,778 measured input tokens within
+the frozen 1.3million budget, not another invocation for statistics.
+
+Canonical [backlog](backlog.md) is now current English scope, ready source,
+triggered verification, deferrals and bounded closures. Previous record is frozen
+byte-for-byte in [history](backlog-history-2026-10-14.md), not another queue.
+FAB-05/12 original intake/suite goals close; WF-01/17 remaining meaning/depth
+questions reuse FAB-03/11/14. FAB-09/02/03/11/13/14/15 keep explicit limits/triggers.
+Active observation continues; Bookworm stays creator-owned and Canvas parked.
+
+Source72files/891e6db46b47b4bf unchanged; prior66regressions/package remain its
+verification. Installed/public beta.27 stays72files/b6a149b9ebfa968f. No runtime
+edit/install/push/release, new provider launch or native/long-context repair claim.
+Main recommends the verified knowledge/reader/handoff candidate for the next
+explicit release, then ordinary-use assessment. Creator owns release choice;
+additional research is not required to finish this maintenance. Owned evidence
+retained/hash-verified before scoped scratch cleanup, receipt in the result packet.
+Older sections below are dated history and do not override this current boundary.
+
 ## 2026-10-14 — Two collaboration reviews completed through an authorized method
 
 Creator asked main to conduct the prepared topics directly while creator research

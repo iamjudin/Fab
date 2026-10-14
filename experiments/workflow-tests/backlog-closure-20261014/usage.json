@@ -1,0 +1,266 @@
+{
+  "turns": [
+    {
+      "case": "generated-plugin",
+      "target": "source",
+      "actualRuntime": {
+        "model": "gpt-6.1-sol",
+        "effort": "medium"
+      },
+      "resumeFrom": null,
+      "exitCode": 0,
+      "timeout": false,
+      "seconds": 176.3,
+      "usage": {
+        "input_tokens": 239165,
+        "cached_input_tokens": 216704,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6354,
+        "reasoning_output_tokens": 275,
+        "total_tokens": 245519
+      },
+      "usageScope": "rollout cumulative-counter difference for this invocation",
+      "suppliedPackageUnchanged": true,
+      "sentinelUnchanged": true
+    },
+    {
+      "case": "growing-work",
+      "target": "source",
+      "actualRuntime": {
+        "model": "gpt-6.1-sol",
+        "effort": "medium"
+      },
+      "resumeFrom": null,
+      "exitCode": 0,
+      "timeout": false,
+      "seconds": 38.12,
+      "usage": {
+        "input_tokens": 107563,
+        "cached_input_tokens": 95616,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 486,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 108049
+      },
+      "usageScope": "rollout cumulative-counter difference for this invocation",
+      "suppliedPackageUnchanged": true,
+      "sentinelUnchanged": true
+    },
+    {
+      "case": "mark-additive",
+      "target": "source",
+      "actualRuntime": {
+        "model": "gpt-6.1-sol",
+        "effort": "medium"
+      },
+      "resumeFrom": null,
+      "exitCode": 0,
+      "timeout": false,
+      "seconds": 51.7,
+      "usage": {
+        "input_tokens": 172039,
+        "cached_input_tokens": 155136,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1452,
+        "reasoning_output_tokens": 104,
+        "total_tokens": 173491
+      },
+      "usageScope": "rollout cumulative-counter difference for this invocation",
+      "suppliedPackageUnchanged": true,
+      "sentinelUnchanged": true
+    },
+    {
+      "case": "mark-declined",
+      "target": "source",
+      "actualRuntime": {
+        "model": "gpt-6.1-sol",
+        "effort": "medium"
+      },
+      "resumeFrom": null,
+      "exitCode": 0,
+      "timeout": false,
+      "seconds": 49.22,
+      "usage": {
+        "input_tokens": 173899,
+        "cached_input_tokens": 156160,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1258,
+        "reasoning_output_tokens": 101,
+        "total_tokens": 175157
+      },
+      "usageScope": "rollout cumulative-counter difference for this invocation",
+      "suppliedPackageUnchanged": true,
+      "sentinelUnchanged": true
+    },
+    {
+      "case": "mark-revision",
+      "target": "source",
+      "actualRuntime": {
+        "model": "gpt-6.1-sol",
+        "effort": "medium"
+      },
+      "resumeFrom": null,
+      "exitCode": 0,
+      "timeout": false,
+      "seconds": 95.44,
+      "usage": {
+        "input_tokens": 222920,
+        "cached_input_tokens": 199424,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3074,
+        "reasoning_output_tokens": 269,
+        "total_tokens": 225994
+      },
+      "usageScope": "rollout cumulative-counter difference for this invocation",
+      "suppliedPackageUnchanged": true,
+      "sentinelUnchanged": true
+    },
+    {
+      "case": "sequence-shipped-1",
+      "target": "shipped",
+      "actualRuntime": {
+        "model": "gpt-6.1-sol",
+        "effort": "medium"
+      },
+      "resumeFrom": null,
+      "exitCode": 0,
+      "timeout": false,
+      "seconds": 28.63,
+      "usage": {
+        "input_tokens": 81623,
+        "cached_input_tokens": 65280,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 478,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 82101
+      },
+      "usageScope": "rollout cumulative-counter difference for this invocation",
+      "suppliedPackageUnchanged": true,
+      "sentinelUnchanged": true
+    },
+    {
+      "case": "sequence-shipped-2",
+      "target": "shipped",
+      "actualRuntime": {
+        "model": "gpt-6.1-sol",
+        "effort": "medium"
+      },
+      "resumeFrom": "sequence-shipped-1",
+      "exitCode": 0,
+      "timeout": false,
+      "seconds": 40.22,
+      "usage": {
+        "input_tokens": 72968,
+        "cached_input_tokens": 69760,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1065,
+        "reasoning_output_tokens": 35,
+        "total_tokens": 74033
+      },
+      "usageScope": "rollout cumulative-counter difference for this invocation",
+      "suppliedPackageUnchanged": true,
+      "sentinelUnchanged": true
+    },
+    {
+      "case": "sequence-shipped-3",
+      "target": "shipped",
+      "actualRuntime": {
+        "model": "gpt-6.1-sol",
+        "effort": "medium"
+      },
+      "resumeFrom": "sequence-shipped-2",
+      "exitCode": 0,
+      "timeout": false,
+      "seconds": 8.89,
+      "usage": {
+        "input_tokens": 25766,
+        "cached_input_tokens": 25472,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 15,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 25781
+      },
+      "usageScope": "rollout cumulative-counter difference for this invocation",
+      "suppliedPackageUnchanged": true,
+      "sentinelUnchanged": true
+    },
+    {
+      "case": "sequence-source-1",
+      "target": "source",
+      "actualRuntime": {
+        "model": "gpt-6.1-sol",
+        "effort": "medium"
+      },
+      "resumeFrom": null,
+      "exitCode": 0,
+      "timeout": false,
+      "seconds": 28.07,
+      "usage": {
+        "input_tokens": 81735,
+        "cached_input_tokens": 64512,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 514,
+        "reasoning_output_tokens": 50,
+        "total_tokens": 82249
+      },
+      "usageScope": "rollout cumulative-counter difference for this invocation",
+      "suppliedPackageUnchanged": true,
+      "sentinelUnchanged": true
+    },
+    {
+      "case": "sequence-source-2",
+      "target": "source",
+      "actualRuntime": {
+        "model": "gpt-6.1-sol",
+        "effort": "medium"
+      },
+      "resumeFrom": "sequence-source-1",
+      "exitCode": 0,
+      "timeout": false,
+      "seconds": 41.11,
+      "usage": {
+        "input_tokens": 72647,
+        "cached_input_tokens": 70016,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 966,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 73613
+      },
+      "usageScope": "rollout cumulative-counter difference for this invocation",
+      "suppliedPackageUnchanged": true,
+      "sentinelUnchanged": true
+    },
+    {
+      "case": "sequence-source-3",
+      "target": "source",
+      "actualRuntime": {
+        "model": "gpt-6.1-sol",
+        "effort": "medium"
+      },
+      "resumeFrom": "sequence-source-2",
+      "exitCode": 0,
+      "timeout": false,
+      "seconds": 8.51,
+      "usage": {
+        "input_tokens": 25453,
+        "cached_input_tokens": 25088,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 15,
+        "reasoning_output_tokens": 0,
+        "total_tokens": 25468
+      },
+      "usageScope": "rollout cumulative-counter difference for this invocation",
+      "suppliedPackageUnchanged": true,
+      "sentinelUnchanged": true
+    }
+  ],
+  "totals": {
+    "input_tokens": 1275778,
+    "cached_input_tokens": 1143168,
+    "output_tokens": 15677,
+    "reasoning_output_tokens": 834
+  },
+  "summedSeconds": 566.21,
+  "rootUsage": "unmeasured",
+  "stop": "24222 input tokens remain; no further model invocation"
+}

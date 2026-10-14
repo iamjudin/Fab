@@ -1,0 +1,34 @@
+{
+  "source": {
+    "files": 72,
+    "fingerprint": "891e6db46b47b4bf",
+    "changed": false
+  },
+  "backlogHistoryExact": true,
+  "originalIdsCovered": [
+    "FAB-01",
+    "FAB-02",
+    "FAB-03",
+    "FAB-04",
+    "FAB-05",
+    "FAB-06",
+    "FAB-07",
+    "FAB-08",
+    "FAB-09",
+    "FAB-10",
+    "FAB-11",
+    "FAB-12",
+    "FAB-13",
+    "FAB-14",
+    "FAB-15",
+    "WF-01",
+    "WF-17",
+    "WF-20"
+  ],
+  "ids": 18,
+  "newLocalLinksExist": true,
+  "artifactJsonValid": 16,
+  "priorRegressions": "66 PASS at unchanged source; not rerun for statistics",
+  "sourceRuntimeFilesChanged": [],
+  "rootValidatorCorrection": "Initial ID check considered table rows only, omitting prose-parked WF-20. Corrected to include explicit parked dispositions; no product change."
+}
