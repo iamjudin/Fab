@@ -45,7 +45,7 @@ ID, владельцев, UC, ветки результата/ошибки/во�
 
 Beta.18 сохранена как исторический checkpoint с известным Canvas FAIL. Её tag
 checkpoint-beta18-2026-10-12 на10e44cf неизменен. Beta.19 сохранена checkpoint3e53097.
-Installed/public beta.25:72files/fdc8e22c01e7957c; [release verification](../experiments/releases/research-beta25-20261013/report.md) confirms exact-source CI, anonymous assets, clean/primary installs and bounded source corrective evidence. No installed-model or reliable external research claim; version changes do not make
+Installed/public beta.26:72files/772681e0da09331f; [release verification](../experiments/releases/foundation-beta26-20261014/report.md) confirms exact-source CI, anonymous assets, clean/primary installs and bounded source corrective evidence. No installed-model or reliable external research claim; version changes do not make
 experimental behavior mature. English Git artifacts and creator-approved public
 branding are required; see [presentation verification](../experiments/releases/branding-beta23-20261012/report.md).
 

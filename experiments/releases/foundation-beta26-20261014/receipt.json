@@ -1,0 +1,39 @@
+{
+  "version": "0.1.0-beta.26",
+  "files": 72,
+  "fingerprint": "772681e0da09331f",
+  "sourceCommit": "20010537f72288b3bb7afc722344298aa417eacf",
+  "tag": "v0.1.0-beta.26",
+  "checks": {
+    "package": "pass",
+    "regressions": 50,
+    "scope": "pass",
+    "sourceBehavior": "two bounded GPT-6.1 Sol/Medium cases, retained age-scope caveat",
+    "remoteCI": "pass",
+    "assets": "pass: anonymous downloads, SHA256, full72-file ZIP/source and exact scope correspondence",
+    "cleanInstall": "pass: exact tag and full72-file parity",
+    "primaryInstall": "pass: exact tag and full72-file parity",
+    "installedModelBehavior": "unobserved"
+  },
+  "assetsSha256": {
+    "fab-0.1.0-beta.26.zip": "64deb3b3987b280b549ad28c681a21dc050f6cb20beefd7eba0042bffeba4090",
+    "release-scope.json": "33ade9e98887afddb9569542eda3add726fe63cb5eea847633090de0e3ba8c28",
+    "SHA256SUMS.txt": "98e210b0c3811540ca1746b13ba1444afaf85c7daf05bfcfb224a4b184542e31"
+  },
+  "limits": [
+    "External research compliance remains PARTIAL",
+    "No native or long-context guarantee",
+    "No Bookworm or Canvas promotion"
+  ],
+  "cleanup": "complete: isolated cache matched retained72-file ZIP, installation/tag/log evidence preserved, exact owned scratch root removed; primary cache retained",
+  "ci": "https://github.com/iamjudin/Fab/actions/runs/38553571349",
+  "initialFailures": [
+    "Clean install preparation first omitted the empty home directory; CLI rejected before catalog registration. Directory creation added, original logs retained."
+  ],
+  "publication": {
+    "url": "https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.26",
+    "isDraft": false,
+    "isPrerelease": true
+  },
+  "installedPath": "/Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.26"
+}

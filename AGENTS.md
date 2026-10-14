@@ -72,8 +72,11 @@ runtime installation or publication. Keep main ownership and return criteria cle
 
 ## Current boundary
 Creator2026-10-14 explicitly authorized local/public release of the tested
-foundation correction. Beta.26 candidate72files/772681e0da09331f, manifest-only
-change from tested source. Installation/publication pending until receipt confirms.
+foundation correction. Released/installed beta.26:72files/772681e0da09331f,
+immutable v0.1.0-beta.26/2001053.50regressions, scope, exact-source CI, anonymous
+assets and clean/primary exact-tag installation pass. Payload differs from the
+frozen behavior target only by manifest version. No installed-model execution,
+native reload or general efficacy claim. Evidence: experiments/releases/foundation-beta26-20261014.
 Creator 2026-10-14 approved returning the research-foundation correction from
 "Fab — читаемость исследований" to main. Focused source delta8145814 integrated:
 project context sets priorities without filtering knowledge through current
@@ -83,7 +86,8 @@ Installed/public beta.25 remains72files/fdc8e22c01e7957c, immutable tag unchange
 Two fresh source GPT-6.1 Sol/Medium cases show bounded foundation/focused-question
 application, with a creator-unspecified ages3–12 scope assumption retained as a
 caveat. Evidence: experiments/workflow-tests/research-foundation-20261014/results.md.
-No general efficacy, installed behavior, runtime update or public release for this delta.
+The source-test checkpoint did not establish general efficacy or installed behavior.
+Its later release/install is recorded above.
 FAB-15 returned candidate df664b6 and creator explicitly authorized integration,
 local update and public GitHub release on2026-10-13. Integrated via2526511.
 Released/installed beta.25:72files/fdc8e22c01e7957c, framing/readability/independent
@@ -111,14 +115,15 @@ the gap was visible application. No forced Six Hats mask. Long-context stability
 creator usefulness and native chat recovery remain open. One copy timing-anchor
 assumption is retained as a caveat. New chat creation requires explicit agreement
 to its concrete scope; this release authorization does not itself create a chat.
-Installed Fab0.1.0-beta.25,72files/fdc8e22c01e7957c. All ten independent contracts.
+Installed Fab0.1.0-beta.26,72files/772681e0da09331f. All ten independent contracts.
 50local regressions, bounded outcome/domain/UI/maintenance smokes; not universal
 maturity. Current detailed state in docs/handoff.md and docs/backlog.md. Continue
 across checkpoints when authorized; user explicitly rejected artificial pauses.
 Creator 2026-10-12 authorized public GitHub release of current iamjudin/Fab,
 MIT for original material and retention of history including author email/paths.
-Current public beta.25 at v0.1.0-beta.25/edf938d: creator icon, English use-case
+Current public beta.26 at v0.1.0-beta.26/2001053: creator icon, English use-case
 copy,50tests, remote CI, anonymous assets and isolated exact-tag install PASS.
+Historical beta.25 remains immutable at v0.1.0-beta.25/edf938d.
 Historical beta.24 remains immutable at v0.1.0-beta.24/e4b49aa.
 Historical beta.23 remains immutable at v0.1.0-beta.23/c97c29d.
 Native card display and fresh language-rule behavior remain unobserved.

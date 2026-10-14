@@ -16,6 +16,22 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-14 — Beta.26 completes public and local distribution
+
+- Outcome: [beta.26](https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.26)
+  published/installed,72files/772681e0da09331f. Immutable source2001053, exact CI,
+  anonymous assets and clean/primary installation parity PASS,50regressions PASS.
+- Meaning: reusable foundation and focused-gap scope now ship without current-
+  feature filtering. Existing-knowledge reuse is supported by two bounded source
+  turns. Version bump is the only payload delta from their frozen target.
+- Failure/limits: clean installation initially lacked an empty home directory,
+  failed before registration, then passed after preparation repair. No installed
+  model/native reload or reliable external research claim. Age-scope assumption
+  and earlier source failures retained. Bookworm/Canvas remain separate.
+- Evidence/next: [receipt/report](../experiments/releases/foundation-beta26-20261014/report.md).
+  Old tags preserved, owned scratch cleaned after full retention/parity. Existing
+  project chat should reread current Research before the next real assignment.
+
 ## 2026-10-14 — Foundation correction promoted for beta.26 release
 
 - Creator explicitly requested release after two bounded source behavior checks.

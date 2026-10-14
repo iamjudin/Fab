@@ -1,5 +1,24 @@
 # Рабочее состояние Fab
 
+## 2026-10-14 — Beta.26 published and installed
+
+Installed/public0.1.0-beta.26,72files/772681e0da09331f. Immutable source tag
+v0.1.0-beta.26 resolves to20010537f72288b3bb7afc722344298aa417eacf.
+[Release](https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.26),
+[CI](https://github.com/iamjudin/Fab/actions/runs/38553571349) and
+[receipt](../experiments/releases/foundation-beta26-20261014/report.md):50regressions,
+scope, anonymous assets and exact-tag clean/primary installation with complete
+ZIP/cache parity pass. Old tags unchanged. Owned scratch removed after retention.
+
+The foundation correction is now shipped. Retained source cases are GPT-6.1
+Sol/Medium, not installed-model or native reload evidence. The assumed ages3–12
+scope remains a caveat, external source/numeric/layout findings remain PARTIAL.
+Clean-profile preparation failure and corrected installation are preserved.
+Next: explicit current-Research reread before real project commissioning, then
+ordinary-use calibration. Bookworm is creator-owned, Canvas parked. Pending
+observer evidence remains separate from release commits.
+
+
 ## 2026-10-14 — Beta.26 release authorized
 
 Creator explicitly requested local/public release of the tested foundation
