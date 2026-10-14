@@ -41,10 +41,11 @@ checks, not scientific verification or completeness proof. Historical packets ar
 not regenerated after a parser fix. Unresolved attribution and domain breadth stay
 qualified, and a changed source only triggers review of affected conclusions.
 
-These integrity improvements and the earlier cleaned-source handoff/method
-corrections are unreleased. Installed/public beta.27 is unchanged. Current source
-evidence and promotion boundaries belong to [handoff](../handoff.md) and
-[backlog](../backlog.md), rather than being inferred from this availability list.
+These integrity improvements and the cleaned-source handoff/method corrections
+ship in installed/public beta.28. [Distribution verification](../../experiments/releases/knowledge-beta28-20261014/report.md)
+confirms exact payload and installation, not native/long-context efficacy. Current
+evidence and boundaries belong to [handoff](../handoff.md) and [backlog](../backlog.md),
+rather than being inferred from this availability list.
 
 ## Current bounded behavior checks
 

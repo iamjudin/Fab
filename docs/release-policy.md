@@ -1,5 +1,15 @@
 # Политика выпуска и изоляции Fab
 
+## Current distribution — 2026-10-14
+
+Installed/public beta.28:72files/3edcbb74228d3b48, immutable v0.1.0-beta.28/f04b7c8.
+[Distribution](../experiments/releases/knowledge-beta28-20261014/report.md) verifies
+66regressions/package/scope, exact-source CI, anonymous assets and clean/primary
+exact-tag full parity. Prior tags remain unchanged, rollback beta.27. Source
+knowledge/reader/handoff repairs are shipped; actual-use consistency and evidence
+quality remain bounded. Canvas/Bookworm and opt-in surfaces retain their limits.
+No new model/native reload or long-context claim. Earlier entries are dated history.
+
 ## Решение
 Релиз фиксирует точный пакет и обещанный набор результатов, а не универсальную
 готовность всех навыков. Каноническое runtime-правило —

@@ -16,6 +16,26 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-14 — Verify beta.28 through the public and primary install routes
+
+- Confirmed: creator-approved knowledge/reader/handoff candidate ships as
+  0.1.0-beta.28,72files/3edcbb74228d3b48. Immutable tagf04b7c8 retains exact source;
+  previous six public tags unchanged. Other plugin settings remain unchanged.
+- [Distribution evidence](../experiments/releases/knowledge-beta28-20261014/report.md):
+  66regressions/package/scope, exact-source GitHub CI, anonymous asset hashes and
+  complete ZIP/scope correspondence, empty-home Git install and primary update
+  with full cache parity/enabled state pass.
+- Original route failure: explicit latest/prerelease combination receives HTTP422.
+  Removing latest permits publication with the same tag/assets. Preserve failure
+  and correction, do not convert this into an unrelated runtime backlog item.
+- Judgment: source corrections now reach the installed/public package. Distribution
+  proof is not native dialogue efficacy or scientific revalidation. No additional
+  model turn, automatic existing-chat reload or generalized generated-cleanup claim.
+- Next: explicit relevant-contract reread in continuing project chats, then actual
+  handoff/research-use observation. Installed Cowork/Research reread here; no messages
+  to other products. Canvas parked, Bookworm creator-owned, observer unchanged.
+  Useful release evidence retained/hash-verified before owned scratch cleanup.
+
 ## 2026-10-14 — Promote the verified knowledge and handoff candidate as beta.28
 
 - Creator approves the recommended candidate locally and publicly with “go”. Main

@@ -1,5 +1,24 @@
 # Рабочее состояние Fab
 
+## 2026-10-14 — Beta.28 published, installed and enabled
+
+Current0.1.0-beta.28,72files/3edcbb74228d3b48, immutable tagv0.1.0-beta.28 at
+f04b7c8ffe1ea912b16bd290f16f1315f50c54ed. [Release](https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.28)
+and [report](../experiments/releases/knowledge-beta28-20261014/report.md) confirm
+66regressions/package/scope, exact-source CI, anonymous ZIP/scope/checksum assets
+and clean/primary exact-tag full parity. Fab enabled; other plugin settings and
+previous six public version tags unchanged. Initial prerelease/latest command
+fails HTTP422; corrected publication retains the same tag and assets.
+
+Knowledge/reader/stage-handoff candidate is now shipped. Version-only delta from
+tested source891e6db46b47b4bf. No added model turn, installed-model execution,
+automatic native reload, scientific source revalidation or long-context closure.
+Installed Cowork/Research reread here. Main next assesses actual-use continuation
+and research application under the canonical backlog, not a statistics-only suite.
+Other project chats should explicitly reread their installed relevant contracts
+before continuing. No messages sent to observed products. Canvas/Bookworm and
+observer boundaries remain unchanged; owned release scratch retained and cleaned.
+
 ## 2026-10-14 — Beta.28 distribution authorized and prepared
 
 Creator approves the recommended source candidate locally and publicly. Release

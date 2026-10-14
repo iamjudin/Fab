@@ -3,18 +3,20 @@
   "files": 72,
   "fingerprint": "3edcbb74228d3b48",
   "sourceCandidateFingerprint": "891e6db46b47b4bf",
-  "sourceCommit": null,
+  "sourceCommit": "f04b7c8ffe1ea912b16bd290f16f1315f50c54ed",
   "tag": "v0.1.0-beta.28",
   "checks": {
     "package": "pass: exact72-file payload",
     "regressions": 66,
     "scope": "pass",
     "sourceBehavior": "retained current-source bounded tests, no additional model turn",
-    "remoteCI": "pending",
-    "assets": "pending",
-    "cleanInstall": "pending",
-    "primaryInstall": "pending",
-    "installedModelBehavior": "unobserved"
+    "remoteCI": "pass",
+    "assets": "pass: anonymous hashes, full72-file ZIP/source and scope parity",
+    "cleanInstall": "pass: exact tag and full72-file parity",
+    "primaryInstall": "pass: exact tag and full72-file parity",
+    "installedModelBehavior": "unobserved",
+    "immutableTags": "pass: new source SHA and all previous peeled SHAs preserved",
+    "otherPluginSettings": "pass: unchanged"
   },
   "limits": [
     "Native ordinary-use dead ends retained",
@@ -22,5 +24,20 @@
     "No generated-only model cleanup claim",
     "No scientific source revalidation or general domain completeness",
     "No automatic existing-chat reload, native rendering, Bookworm or Canvas promotion"
-  ]
+  ],
+  "assetsSha256": {
+    "fab-0.1.0-beta.28.zip": "86af995c85adf595c7cd461d282e92f4fd8998551f17ce5e52d7c50c32a3de3a",
+    "release-scope.json": "44982f8c0e7906ead6cfcb2f76d8e1f85c0ca3e72e48ed1b2f9d6ff7232411af",
+    "SHA256SUMS.txt": "0fb560b46f13cdcb4b2aeb5713e832324b05689c196d6cbd71336d29a9284604"
+  },
+  "ci": "https://github.com/iamjudin/Fab/actions/runs/38635053085",
+  "publication": {
+    "url": "https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.28",
+    "isDraft": false,
+    "isPrerelease": true
+  },
+  "publicationCorrection": "Initial --prerelease --latest rejected HTTP422; same tag published after removing --latest",
+  "installedPath": "/Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.28",
+  "enabled": true,
+  "cleanup": "complete: isolated cache matched retained72-file ZIP; assets/logs/metadata retained and hash-verified, exact owned scratch root removed; primary cache retained"
 }

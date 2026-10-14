@@ -13,20 +13,21 @@ and shipped baseline pass the short dialogue; native dead ends remain unresolved
 A generated plugin inherits self-contained cleanup rules, but its fresh model
 execution is unobserved. No new Fab runtime correction is warranted by this suite.
 
-**Current action:** creator approved beta.28 locally and on GitHub. Main is
-completing distribution checks, then assesses ordinary use rather than repeating
-passing synthetic situations. [Release progress](../experiments/releases/knowledge-beta28-20261014/report.md).
+**Current result:** beta.28 is published, installed and enabled. [Distribution](../experiments/releases/knowledge-beta28-20261014/report.md)
+passes exact-source CI/assets/clean-primary checks. Main next assesses actual
+continuation and research application under the concrete triggers below; there
+is no pending generic approval or need to repeat passing synthetic situations.
 Prepared Deep Research is optional deeper evidence, not a dependency or a claim
 of completed provider work. Canvas remains outside current work.
 
-## Authorized beta.28 distribution in progress
+## Shipped beta.28
 
-Prepared beta.28: 72 files / `3edcbb74228d3b48`, only manifest version changed
-from tested source `891e6db46b47b4bf`. Installed/public beta.27 remains the baseline
-until actual distribution is verified. Main owns the authorized local update plus
-public GitHub tag/Release and separate checks; commit/push alone is insufficient.
+Installed/public beta.28: 72 files / `3edcbb74228d3b48`, immutable tag `f04b7c8`.
+Only manifest version changed from tested source `891e6db46b47b4bf`.66regressions,
+package/scope, exact-source CI, anonymous assets and clean/primary parity pass.
+Prior tags remain immutable; rollback beta.27. No added model/native reload claim.
 
-| Owner | Completed candidate | Evidence / limits |
+| Owner | Shipped candidate | Evidence / limits |
 |---|---|---|
 | FAB-15 | Nine briefs distinguish knowledge/application; 437 packet sections preserved; reader and registry integrity hardened | [Cleanup](../experiments/maintenance/knowledge-cleanup-20261014/results.md), [66 regressions/package](../experiments/maintenance/knowledge-integrity-20261014/results.md); structural safety, not scientific revalidation |
 | FAB-11 / FAB-15 | Concrete stage/action/owner handoff; selected method versus open means/fallback; correct reader links and mobile inventory | [Ten source/baseline turns](../experiments/workflow-tests/knowledge-dialogue-20261014/results.md); passing controls and initial PARTIAL retained; no installed/native repair claim |
@@ -35,16 +36,16 @@ The [two primary-source collaboration reviews](research/collaboration-2026-10-14
 are complete project evidence with separate application, not automatic runtime
 instructions. Their proposed sequential test is now completed, not waiting for
 another commission. No release, installation or push occurred in the completed backlog-test batch.
-The separately authorized beta.28 distribution now owns those actions.
+The separately authorized beta.28 distribution completed those actions.
 
 ## Remaining verification, with an actual trigger
 
 | ID | Expected versus observed / disposition | Main's next action and closure boundary |
 |---|---|---|
 | FAB-09 | **Verify.** Earlier preview left an external SVG in shared temp. Generated candidate now contains routed, independent cleanup rules; final seven helper checks and actual scratch removal pass after a harness correction. Fresh generated-only model cleanup remains unobserved. | At the next generated-plugin execution or transient preview, verify retained result/input/sentinel and disposal of the exact owned scratch. Close each surface only from its actions, not a README. [New evidence](../experiments/workflow-tests/backlog-closure-20261014/results.md), [original cleanup receipt](../experiments/workflow-tests/partial-routes-20261012/external-preview-cleanup.json). No further model run in the exhausted bounded budget. |
-| FAB-11 | **Fixed in source; ordinary-use verification open.** Reports should make useful continuation concrete and execute already authorized work. Native file-status-only and dead-end misses recur; focused and sequential baseline/candidate cases pass. Confidence in the reported miss is high, causal explanation and general efficacy are unknown. | After an actual scope correction/stage report, assess goal, remaining action/owner and actual authority. Repair a reproduced owning mechanism, not another generic footer. Evidence and closure details below. No compulsory work after genuine completion. |
+| FAB-11 | **Shipped in beta.28; ordinary-use verification open.** Reports should make useful continuation concrete and execute already authorized work. Native file-status-only and dead-end misses recur; focused and sequential baseline/candidate cases pass. Confidence in the reported miss is high, causal explanation and general efficacy are unknown. | After an actual scope correction/stage report, assess goal, remaining action/owner and actual authority. Repair a reproduced owning mechanism, not another generic footer. Evidence and closure details below. No compulsory work after genuine completion. |
 | FAB-13 | **Verify native initiation.** Substantial work should prompt a concrete separation proposal before creator reminders. Earlier main missed this; an approved research handoff recovered, and a fresh growth fixture now proposes isolation. Proposal success is not native trigger stability. | On the next substantial independent workstream, assess initiation before a reminder. After concrete creator agreement, main creates/transfers/verifies recovery. Small completed work is the control. [Handoff](handoffs/research-readability-2026-10-13.md), [new proposal](../experiments/workflow-tests/backlog-closure-20261014/results.md). Canvas recovery stays parked. |
-| FAB-15 | **Fixed structural source; returned-output/use calibration open.** Reusable knowledge must stay separate from local decisions, readable and faithful to sources/method. V3 source/arithmetic/layout failures and an unagreed method substitution remain recorded; later corrections do not erase them. | At the next real research return/application, check coverage, source/number correspondence, reader structure and method boundary. Update only affected conclusions; source refinement is not source verification. [V3](../experiments/maintenance/research-readability-20261013/v3-results.md), [observation](../experiments/workflow-tests/2026-10-13-external-chat-observation.md), method disposition below. |
+| FAB-15 | **Structural fixes shipped in beta.28; output/use calibration open.** Reusable knowledge must stay separate from local decisions, readable and faithful to sources/method. V3 source/arithmetic/layout failures and an unagreed method substitution remain recorded; later corrections do not erase them. | At the next real research return/application, check coverage, source/number correspondence, reader structure and method boundary. Update only affected conclusions; source refinement is not source verification. [V3](../experiments/maintenance/research-readability-20261013/v3-results.md), [observation](../experiments/workflow-tests/2026-10-13-external-chat-observation.md), method disposition below. |
 | FAB-02 | **Deferred to actual continuity.** First recovery succeeded; the short resumed sequence preserves accepted scope and executes work. Sustained native context/recovery remains unproved. | At the next real recovery or long collaboration boundary, check accepted decisions, authority, current state and next action without a second briefing. Retain any regression under this ID. Synthetic three-turn PASS does not close continuity. |
 | FAB-14 | **Deferred to actual dialogue.** V2 adds grounded ideas/critique/questions without a Six Hats mask; focused varied tests pass and early depth failures remain. Creator usefulness and ordinary-use stability remain open. | Assess the next real ambiguous Brainstorm decision for new contribution, warranted critique and useful depth. Only a concrete miss justifies another corrective fixture. [Contextual results](../experiments/workflow-tests/brainstorm-context-20261013/results.md), [varied V2 cases](../experiments/workflow-tests/brainstorm-v2-situations-20261013/results.md). |
 | FAB-03 | **Deferred to a concrete interface change.** Product/Wireframe must preserve compatible feedback, branch-specific commit/cancel, ownership and IDs. Initial full/partial misses remain; narrow corrective passes. | On the next requested interface revision, review meaning across artifacts and actual negative/return paths. WF-01/17 semantic follow-up belongs here, not a parallel queue. [Partial-route evidence](../experiments/workflow-tests/2026-10-12-partial-routes-results.md). No new Canvas work. |
@@ -97,7 +98,7 @@ without turning it into a concrete next action/owner. Original native model/effo
 is unknown. The [source correction](../experiments/workflow-tests/knowledge-dialogue-20261014/results.md)
 passes a handoff case, preserving its PARTIAL baseline. The new sequential test
 passes on both shipped/source targets; it cannot attribute the native miss or
-establish comparative superiority. Disposition: source ready for requested release,
+establish comparative superiority. Disposition: source correction shipped in beta.28,
 actual-use verification remains open. Closure requires a usable next action under
 real authority, without an invented task or generic permission gate.
 
@@ -107,7 +108,7 @@ FAB-15 owns the observed selected-method/access-blocked miss. A disclosed web
 substitute was executed before agreement; subsequent manual takeover/correction
 preserves the failure. [Method/control source checks](../experiments/workflow-tests/knowledge-dialogue-20261014/results.md)
 now pass, including open means and pre-authorized fallback. Disposition: tested
-source ready for requested release, native application unproved. On the next
+source correction shipped in beta.28, native application unproved. On the next
 blocked-method boundary preserve the commissioned method, explain the actual
 choice and continue unaffected authorized preparation. Do not turn every tool
 swap into an approval ritual. Observation is sanitized in the linked report.

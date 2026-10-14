@@ -71,6 +71,19 @@ This rule does not authorize an immediate new chat, hidden delegation, a merge,
 runtime installation or publication. Keep main ownership and return criteria clear.
 
 ## Current boundary
+Creator2026-10-14 approved and main completed local/public beta.28. Installed,
+enabled,72files/3edcbb74228d3b48; immutable v0.1.0-beta.28/f04b7c8.66regressions,
+package/scope, exact-source CI, anonymous assets and clean/primary exact-tag full
+parity pass; other plugin settings unchanged, previous six tags immutable.
+Initial --prerelease --latest API request rejected HTTP422; same tag published
+successfully after removing --latest. Failure/correction retained.
+Evidence: experiments/releases/knowledge-beta28-20261014/report.md. Manifest-only
+delta from reviewed source891e6db46b47b4bf. No added model turn, native reload,
+scientific/domain or long-context closure. Installed Cowork/Research reread here;
+other chats need explicit current relevant instructions reread, no messages sent.
+Source fixes now shipped; ordinary-use verification and generated-only model
+cleanup stay open. Canvas parked, Bookworm creator-owned, observer unchanged.
+Owned release scratch retained/hash-verified before cleanup; primary cache kept.
 Creator2026-10-14 explicitly approved the proposed source candidate release with
 “go”: versioned local update and public GitHub beta.28. Prepared72files/
 3edcbb74228d3b48 differs from reviewed source891e6db46b47b4bf only in manifest
