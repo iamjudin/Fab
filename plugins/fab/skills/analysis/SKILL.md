@@ -27,3 +27,7 @@ of understanding. Preserved source numbers do not establish universal defects.
 For an existing reward, progression or participation design read
 [motivation and gamification](../../shared/methods/gamification.md). Separate
 observed consequences from motivational hypotheses and historical book examples.
+
+For an onboarding or wizard review read
+[first value](../../shared/methods/first-value.md). Inspect the current artifact,
+distinguish value, demonstration and setup, and qualify effect claims where made.

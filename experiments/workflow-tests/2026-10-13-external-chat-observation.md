@@ -1,5 +1,108 @@
 # External Fab chat observation
 
+## 2026-10-16 — Wizard review as an onboarding learning case
+
+- Requested outcome: the creator asks main to inspect the active wizard discussion
+  and retain its useful lessons for Fab onboarding. This is an explicit positive
+  creator signal about the collaboration, not a claim of end-user success.
+- Observed process: the completed review reads installed beta.29 Analysis and the
+  existing question-purpose foundation, inspects a board through the connector,
+  and explains the gap between collecting profiles/payment details and reaching
+  a first meaningful experience. A field-to-purpose comparison recommends keeping,
+  deferring or making inputs optional according to their actual consequence.
+- Useful judgment: the assistant challenges a demographic shortcut instead of
+  requesting more diagnostic data indiscriminately. It preserves different user,
+  helper and account roles. Recording visibility, paid access and interrupted or
+  returning entry are connected to their actual decision points rather than
+  expanded into a complete product redesign.
+- Iteration: the creator updates the draft. The assistant rereads the board and
+  selected existing research sections, recognizes the added practical experience
+  before account/payment in the diagram, and narrows the remaining task to value
+  communication. It does not claim to have implemented or validated that route.
+- Original miss and correction: early slide copy explains the activity more than
+  the decision maker's desired outcome. The creator explicitly distinguishes an
+  action from value in that person's world. The next reply acknowledges this and
+  develops outcome-led copy with a mechanism/visual bridge. This correction is
+  valuable evidence and must remain alongside the positive review.
+- Fab interpretation: retain an onboarding sequence of reasoning, not a screen
+  template: whose desired outcome matters, why it matters, how the experience
+  makes it tangible, and what input or commitment is actually needed when. Keep
+  value explanation, mechanism demonstration and setup as distinct jobs. Missing
+  causal proof should qualify the product-effect claim, not erase the user's
+  desired value or force every message back to describing mechanics.
+- Evidence boundary: observed assistant commands and a supporting review artifact
+  substantiate the reasoning/recording process. Main did not independently inspect
+  the live board, run the product, verify research claims or observe participants.
+  The review artifact predates the final creator clarification, so the later
+  dialogue remains necessary evidence for the value/mechanism correction.
+- Retained limits: outcome-led wording can still imply an achieved product effect.
+  A closing caveat does not by itself validate that promise. The proposed slide
+  count, profile sequence, payment placement and copy are contextual candidates,
+  not proven onboarding optima, accepted universal rules or conversion findings.
+- Owner/disposition: FAB-15 owns the qualified first-value/onboarding application,
+  with supporting dialogue evidence for FAB-14. **Deferred to the next requested
+  onboarding-method revision or actual first-use task.** Reuse this case to check
+  both outcome-led value and honest effect wording. Close only the observed
+  surface. No new ID, model test, runtime repair, research dispatch or automatic
+  release is warranted merely to save the finding.
+- Actions here: retained this sanitized finding and private turn/artifact references,
+  updated the canonical backlog and assessment cursor. No message, board/product
+  edit or management action in the observed chat.
+
+
+## 2026-10-15 — Returned foundations, qualified migration and current-package use
+
+- Requested outcome: ingest six supplied investigations under updated plugin rules,
+  add project tags, remove superseded reader notes and refactor the knowledge base
+  while retaining accepted decisions and project-specific knowledge.
+- Observed authority and adoption: the creator explicitly requests source marking
+  and retirement. The completed trace reads installed Fab beta.29 Research,
+  shared library-use/core/project contracts and current Bookworm instructions.
+  This establishes explicit adoption in this chat, not automatic host refresh.
+- Returned-source limitation: the earlier refinement trace reports no working
+  hyperlinks in any of the six supplied exports, restores thirteen bibliography
+  links and retains incomplete attribution. The observer independently reads all
+  six preserved originals and confirms zero Markdown HTTP links. That does not
+  prove there are no bibliographic clues or that all claims are false. Selected
+  link repair does not establish claim-level support or scientific validity.
+- Useful result: six current foundation entries have originals, processed sources,
+  operational briefs and full packets. Independent artifact inspection confirms
+  both recorded file hashes for all six originals/processed sources, packet/brief
+  presence, retained context indexes and the recorded recovery-snapshot hash.
+  The migration trace reports nine readable packets, additive tags on six notes,
+  eleven explicitly retired sources and 225 local links without broken targets.
+  Those execution checks are not rerun or silently promoted into an independent
+  semantic, native rendering or source-validity audit by this observer.
+- Knowledge boundaries: source-audit and comparison documents visibly retain
+  attribution gaps, disputed quantitative claims and distinctions between the
+  independently commissioned report and the earlier web baseline. Dated market,
+  alternatives and validation plans remain project context. A newer research mode
+  is not treated as inherently stronger evidence or as creator acceptance.
+- Original failures retained: the unagreed earlier method substitution remains in
+  history. A migration finishing command fails, then a scoped resume succeeds.
+  A staged whitespace check also fails, followed by authored-file correction and
+  a check that excludes frozen source snapshots. Later completion does not turn
+  these attempts into uninterrupted passes or authorize rewriting originals.
+- Preservation boundary: the trace reports accepted decisions unchanged and a
+  local checkpoint. The observer sees retained context files and a hash-matching
+  recovery snapshot, but has not exhaustively compared all decisions, source-body
+  tags or packet sections and has not independently fetched the remote checkpoint.
+  No blanket claim of complete semantic preservation follows.
+- Fab interpretation: bounded positive ordinary-use evidence for FAB-10/FAB-02
+  and evidence qualification under FAB-15. Missing attribution is an external
+  report-quality limitation, not a demonstrated new Fab beta.29 mechanism defect.
+  General long-context, refusal persistence and proactive handoff remain open.
+- Owner/disposition: main, next verification under FAB-15. At the first actual
+  consequential application, require a specific supported finding or an explicit
+  unknown before it becomes a binding rule. Do not launch a whole-library rerun,
+  new study or runtime repair merely because the exports have sparse citations.
+  No coherent new repair batch is proposed from these already-owned boundaries.
+- Limits: original model/effort unknown, no provider execution audit, empirical
+  claim verification, full semantic preservation audit or native layout review.
+  No observed-product edit, message, new test, runtime edit, commit or publication
+  is performed by this monitor.
+
+
 ## 2026-10-14 — Unagreed method substitution, retained result and manual handoff
 
 - Requested outcome: complete six commissioned investigations through the selected

@@ -10,3 +10,8 @@ interrogation. Preserve unusual input signals and their reasons before narrowing
 For new durable model save frame/signals/state in isolated product workspace;
 existing task uses current accepted context. Default status doesn't erase explicit
 constraints. No unsolicited monetization or account/sync guarantees.
+
+For an actual first-use/onboarding decision read
+[first value](../../../shared/methods/first-value.md). Separate the intended
+person's value, its concrete demonstration and needed setup. Justify input or
+commitment at its actual point of use, without a compulsory wizard template.

@@ -175,6 +175,52 @@ blocked-method boundary preserve the commissioned method, explain the actual
 choice and continue unaffected authorized preparation. Do not turn every tool
 swap into an approval ritual. Observation is sanitized in the linked report.
 
+## FAB-15 observation — returned evidence and qualified reuse, 2026-10-15
+
+- Expected: reusable findings remain attributable and separate from accepted
+  decisions when a research foundation is replaced. Newness or refinement alone
+  must not grant evidence status.
+- Observed: six supplied exports have no working Markdown HTTP links. The later
+  source audit retains repaired bibliography and unresolved claim support, with
+  disputed numerical conclusions kept nonbinding. Originals/processed-source
+  hashes and recovery-snapshot hash independently match the stored records.
+  Full semantic preservation and scientific support remain unverified.
+- Affected surface: external research return and Research reuse, explicitly read
+  Fab beta.29. High confidence in the observed source/link and byte-retention
+  boundary, unknown general efficacy. No new demonstrated runtime defect.
+- Evidence: [sanitized observation](../experiments/workflow-tests/2026-10-13-external-chat-observation.md#2026-10-15--returned-foundations-qualified-migration-and-current-package-use).
+  The earlier selected-method failure remains preserved, not closed by ingestion.
+- Owner: main. Disposition: **next verification**, triggered by the first actual
+  consequential application of an unresolved finding. Verify that specific claim
+  or retain it as unknown before turning it into a rule. Close only that reviewed
+  binding, not all research quality. No new study, runtime repair or generic rerun
+  is warranted from citation sparsity alone. FAB-10 receives bounded ordinary-use
+  adoption evidence without closing native refusal/session persistence.
+
+## FAB-15 observation — onboarding value and wizard purpose, 2026-10-16
+
+- Expected: use the intended person's desired outcome to explain onboarding value,
+  connect the mechanism and first experience to it, and justify each collected
+  field or commitment by an actual consequence. Qualify unproved product effects.
+- Observed: useful beta.29 Analysis review connects field purposes, roles, first
+  experience and recovery. After creator revision, the assistant recognizes the
+  changed diagram and develops value copy. The creator then corrects activity-led
+  messaging to outcome-led value. Preserve that original miss and correction.
+- Interpretation: a positive creator signal and reusable first-value learning case,
+  not measured comprehension, activation, conversion or developmental efficacy.
+  Avoid both unsupported benefit promises and an evidence caveat that collapses
+  meaningful value into a feature/mechanic description. No universal slide count
+  or account/paywall order follows. Actual model/effort and native use are unknown.
+- Evidence: [sanitized wizard observation](../experiments/workflow-tests/2026-10-13-external-chat-observation.md#2026-10-16--wizard-review-as-an-onboarding-learning-case).
+  Private trace references remain in ignored observer state. Main inspected the
+  review artifact, not the live board. The last value correction is in dialogue.
+- Owner: main, FAB-15 first-value application. FAB-14 receives supporting dialogue
+  evidence without a separate queue. Disposition: **deferred** until an explicitly
+  requested onboarding-method revision or actual first-use task. Compare value,
+  mechanism, needed input and claim support then. Close only that application,
+  without treating discussion quality as product validation. No immediate runtime
+  edit, generic test campaign or automatic research/release follows.
+
 ## Observation accumulation and batch processing — 2026-10-14
 
 The active observer remains read-only toward the observed product. It writes only

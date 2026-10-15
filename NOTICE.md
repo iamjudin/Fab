@@ -17,3 +17,10 @@ to redistribute a third-party book or publication is implied by a research link.
 Research packets explicitly identify partial citation verification and unresolved
 bindings. Package integrity checks preserve their text; they do not fact-check
 every claim or establish native-platform compatibility.
+
+The gamification module selectively paraphrases Kevin Werbach and Dan Hunter's
+*For the Win: How Game Thinking Can Revolutionize Your Business* (2012), using
+the supplied Russian edition (2015, translated by A. Kardash). Its packet
+preserves an original attributed synthesis, not the book or private digest.
+The book's illustrations and verbatim prose are not included. Referenced theory
+and historical cases retain the validation limits stated in the module.

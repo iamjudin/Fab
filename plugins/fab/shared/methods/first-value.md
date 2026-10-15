@@ -32,6 +32,31 @@ No separate onboarding stage or second required metric follows from this study.
 Paid boundaries use the monetization method only when relevant. R031 preserves
 historical process integration, not current instructions.
 
+### Value, demonstration and setup
+
+The following is Fab application learning from an observed onboarding discussion,
+not an additional finding from the preserved report or a measured conversion gain.
+
+| Question | Decision it supports |
+| --- | --- |
+| Whose desired progress matters? | Distinguish the participant, helper, buyer and account owner when their roles change the experience. |
+| Why does that progress matter to this person? | Explain the intended value in their world, rather than only naming the activity or feature. |
+| How can the first experience make it tangible? | Connect value to a concrete action and understandable feedback. A demonstration can illustrate a mechanism without proving a lasting effect. |
+| Why is this input or commitment needed now? | Connect each field, permission or paid boundary to its actual consequence. Keep, defer or make optional accordingly. |
+
+Value explanation, mechanism demonstration and setup serve different purposes.
+Do not substitute one for another. A missing causal study qualifies the claimed
+product effect, but does not erase the person's desired outcome. Conversely,
+outcome-led copy must not promise an achieved learning, health or other lasting
+benefit without support. Keep the aspiration and the demonstrated result distinct
+where the claim is made, not only in a distant disclaimer.
+
+Read the creator's current artifact after revisions before judging the remaining
+gap. No universal slide count, mandatory wizard, profile collection or fixed
+account/payment order follows from this learning. Use only questions that change
+the active decision. For incentives or progression, consult
+[motivation and gamification](gamification.md) without assuming a reward layer.
+
 ## Deeper reading and freshness
 
 R003–R012 cover definitions/method, R013–R028 paths and contexts, R029 dependencies
