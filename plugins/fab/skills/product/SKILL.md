@@ -27,6 +27,9 @@ by active question. Keep intent personal/commercial/client distinct.
 For application platform choices that affect behaviour, read
 [mobile structure](../../shared/methods/mobile-structure.md). Keep domain intent/
 rules separate from platform surfaces; don't make a browser prototype a web target.
+For willingness, repeat participation, feedback, progression or reward decisions,
+read [motivation and gamification](../../shared/methods/gamification.md).
+Distinguish participant value from activity metrics. No compulsory game layer.
 Finish requested model/change with sufficient behavior, source coverage, unknowns
 and honest acceptance state. In the user-facing conclusion recommend the bounded
 design with its reason, identify the meaningful remaining tradeoff/check and

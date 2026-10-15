@@ -62,6 +62,26 @@ repository rewrite, license decision, synthetic rerun or new study. Additive sou
 project/fab preserves the note's name/body/prior tags. Installed/public beta.29 stays
 unchanged; promotion of this and the typography candidate requires release scope.
 
+## FAB-15 source intake — motivation and gamification, 2026-10-16
+
+Creator-supplied For the Win note is accepted through an original attributed
+synthesis, brief and exact 13-section synthesis packet. The private digest,
+EPUB prose and illustrations are not bundled. Conditional Product/Analysis
+routes serve motivation, feedback and incentives. Twelve pairs / 572 sections,
+eleven previous packets unchanged. [Audit](research-audits/gamification-2026-10-16.md)
+and [verification](../experiments/maintenance/gamification-ingestion-20261016/report.md)
+record 77 regressions, source correspondence, package and scope checks at
+80 files / 972d822401ccf4fb. Selected EPUB checks are not a complete book or
+empirical evidence audit. Standing project/fab marking preserves the Library
+note's name, reader body and prior tags. Installed/public beta.29 stays unchanged.
+
+Owner main, FAB-15. Disposition: **next verification**, on an actual authorized
+motivation/incentive decision. Check participant benefit, actual obstacle and
+whether the proposed mechanism's effects have adequate evidence. Intake closes
+the missing-method surface only. Durable effects, population applicability and
+current consequential rules remain conditional gaps. No mandatory gamification,
+new study or model rerun. Candidate promotion requires a separate release request.
+
 ## Shipped beta.28
 
 Installed/public beta.28: 72 files / `3edcbb74228d3b48`, immutable tag `f04b7c8`.

@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "scope": "global-method",
+  "title": "Motivation and gamification — book-derived synthesis of For the Win",
+  "sourceSha256": "5badfa819f6e5e62bcac9fdccb9f8c0ef53741edc120f0152c39596cf2978160",
+  "sourceDate": null,
+  "ingestedAt": "2026-10-16",
+  "authority": "source-material-not-runtime-instructions",
+  "validation": {
+    "structure": "lossless sections; explicit exclusions",
+    "claims": "not exhaustively fact-checked"
+  },
+  "retainedSha256": "5badfa819f6e5e62bcac9fdccb9f8c0ef53741edc120f0152c39596cf2978160",
+  "excluded": [],
+  "sections": [
+    {
+      "id": "R001",
+      "level": 1,
+      "title": "Motivation and gamification — a book-derived synthesis",
+      "text": "# Motivation and gamification — a book-derived synthesis\n\n",
+      "readingContext": {
+        "kind": "navigation",
+        "note": "Title of the authored synthesis, not a full-book preservation claim."
+      }
+    },
+    {
+      "id": "R002",
+      "level": 2,
+      "title": "Source and evidence boundary",
+      "text": "## Source and evidence boundary\n\nPrepared 2026-10-16 from the creator's working digest of Kevin Werbach and\nDan Hunter, *For the Win: How Game Thinking Can Revolutionize Your Business*\n(2012), using the Russian translation by A. Kardash, *Вовлекай и властвуй.\nИгровое мышление на службе бизнеса* (Mann, Ivanov and Ferber, 2015,\nISBN 978-5-00057-344-0). Bibliography and selected passages on motivation,\nthe six design questions and coercion were checked against the supplied EPUB.\n\nThis is an original, selective synthesis with chapter-level attribution. It is\nnot the complete book, a lossless copy of the private digest, an independent\nliterature review or a validation of the authors' empirical claims. The book's\nillustrations, verbatim prose and numerical case results are not reproduced.\nIts bibliography names further work, not additional sources independently read\nfor this synthesis. Detailed research and current rules need separate evidence.\n\n",
+      "readingContext": {
+        "kind": "sources",
+        "note": "Bibliography, selective coverage and limits of the actual processed synthesis."
+      }
+    },
+    {
+      "id": "R003",
+      "level": 2,
+      "title": "What game thinking contributes",
+      "text": "## What game thinking contributes\n\nIn the introduction and Levels 1–2, the authors describe using elements and\ndesign techniques from games in contexts whose purpose is outside the game.\nA full fictional world or complete videogame is unnecessary. Mathematical game\ntheory is a different subject.\n\nThe contribution is a design question: why would someone willingly perform the\nvaluable activity, understand its consequences and choose to continue? The\norganization's outcome and the participant's immediate goal can differ. A\ndesign has to explain their connection rather than assume that more activity\nbenefits both. Engagement is a signal, not a synonym for value.\n\nInternal programs, customer-facing experiences and behavior-change programs\nbring different relationships and existing incentives. These contexts can\noverlap. An employee's apparent participation is not evidence of voluntary play.\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Selective attributed book-derived reasoning, not independently validated effects."
+      }
+    },
+    {
+      "id": "R004",
+      "level": 2,
+      "title": "Decide whether motivation is the relevant problem",
+      "text": "## Decide whether motivation is the relevant problem\n\nLevel 2 offers four connected suitability questions. They help reject an\nunsuitable intervention before selecting visible game elements.\n\n| Question | Useful distinction |\n| --- | --- |\n| Would greater willingness address the problem? | Motivation cannot by itself supply missing skills, access or an acceptable price. |\n| Are there meaningful choices? | A different route, challenge or social contribution can matter. Repetition under instruction may offer little agency. |\n| Can actions and responses be structured? | Observable actions make feedback possible, but measurable volume is not necessarily useful quality. |\n| What existing incentives or promises conflict? | A competition can undermine cooperation. Extra play can contradict a promise to save time. |\n\nThese are connected questions, not four independent checkboxes. A system can be\neasy to measure and still create harmful pressure or an unwanted experience.\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Selective attributed book-derived reasoning, not independently validated effects."
+      }
+    },
+    {
+      "id": "R005",
+      "level": 2,
+      "title": "Motivation is interpreted by the participant",
+      "text": "## Motivation is interpreted by the participant\n\nLevel 3 draws on self-determination theory. In the book's account, competence,\nautonomy and relatedness help explain why an experience matters. They are\npsychological needs, not a three-widget interface specification.\n\n- Competence: feedback helps someone understand progress and attempt a suitable\n  challenge. A larger score is not automatically evidence of increased ability.\n- Autonomy: choices and their consequences feel meaningful. Selecting a cosmetic\n  avatar does not by itself establish control over participation.\n- Relatedness: support, recognition and shared purpose can matter without a\n  public contest. People need not share one appetite for competition.\n\nIntrinsic motivation concerns the activity itself. Extrinsic motivation concerns\na separable result, including money, recognition or an outcome the participant\npersonally values. The same action or reward can have different meanings for\ndifferent people and at different times. An external goal can become personally\nimportant without making every associated exercise intrinsically enjoyable.\n\nThe book warns that expected, contingent rewards can redirect attention from\nexisting interest toward obtaining the reward. It also describes circumstances\nwhere external recognition supports routine activity. Neither observation\njustifies a universal rule that all rewards help or all rewards harm. Ask what\nthe feedback communicates and whether it increases pressure or understanding.\nClaims about effects in a particular population need evidence beyond this book.\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Selective attributed book-derived reasoning, not independently validated effects."
+      }
+    },
+    {
+      "id": "R006",
+      "level": 2,
+      "title": "Distinguish experience, interaction and component",
+      "text": "## Distinguish experience, interaction and component\n\nLevel 4 separates three levels of design. Their relationships are many-to-many.\n\n| Level | Concern | Examples from the book |\n| --- | --- | --- |\n| Dynamics | Overall qualities of the experience | Progression, relationships, narrative, constraints, emotions |\n| Mechanics | Processes that shape interaction | Challenge, cooperation, competition, feedback, rewards, exchange |\n| Components | Concrete implementations | Quests, teams, levels, badges, points, leaderboards, collections |\n\nA quest can implement challenge and feedback in support of progression.\nCopying the quest component does not reproduce the experience. The taxonomy is\na vocabulary of alternatives, not an obligation to implement its whole inventory.\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Selective attributed book-derived reasoning, not independently validated effects."
+      }
+    },
+    {
+      "id": "R007",
+      "level": 3,
+      "title": "Points, badges and comparison have different functions",
+      "text": "### Points, badges and comparison have different functions\n\nThe authors describe points as potentially serving scorekeeping, a win condition,\nreward exchange, feedback, status or designer analytics. Internal analytical\nweights do not have to become a visible currency. Select the purpose before\ndeciding whether points are useful.\n\nBadges can signal a possible goal, explain available activities, communicate\nreputation or experience, and express belonging. A credible skill credential\nrequires trusted criteria and an issuer. A decorative award does not establish\nthe skill it names.\n\nLeaderboards emphasize relative standing. That can appeal to some participants\nwhile discouraging others or displacing cooperation. Contextual comparison,\npersonal progress and collective achievement are alternatives. None is a\nmandatory replacement for every ranking.\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Selective attributed book-derived reasoning, not independently validated effects."
+      }
+    },
+    {
+      "id": "R008",
+      "level": 2,
+      "title": "Six design questions before choosing tools",
+      "text": "## Six design questions before choosing tools\n\nLevel 5 presents the 6D method. The questions below paraphrase it as reusable\nreasoning support. They do not require six separate meetings or documents.\n\n| Source step | Decision to resolve | Useful output |\n| --- | --- | --- |\n| Define objectives | Which real outcome matters, why, and whose interests does it serve? Remove means disguised as goals. | Prioritized outcomes with reasons |\n| Delineate behavior | Which observable actions plausibly contribute to those outcomes? How will quality and unintended effects be recognized? | Actions, outcome links and qualified measures |\n| Describe players | What do participants want, what blocks them, and how do their experience and relationships differ? | Relevant differences and explicit unknowns |\n| Devise activity cycles | What starts action, provides feedback and changes after mastery? | A short loop and a longer progression model |\n| Do not forget fun | Where does voluntary interest come from: challenge, exploration, relaxation or social experience? | An experience hypothesis to try |\n| Deploy suitable tools | Which mechanics, components and implementation fit the preceding answers? | A testable, revisable design |\n\nThe authors' player discussion includes Bartle's achievers, explorers, socializers\nand killers, a model originating in multiplayer text games. Use it as a prompt\nabout motives, not a universal personality diagnosis. The book recognizes mixed\nmotives and change over time. Newcomers, regular participants and experts can\nneed different support without becoming permanent demographic labels.\n\nThe pleasure question is diagnostic. Necessary routine is not automatically a\ndesign failure because someone would not do it without an external purpose.\nNor can enjoyable experience be inferred from a list of components.\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Selective attributed book-derived reasoning, not independently validated effects."
+      }
+    },
+    {
+      "id": "R009",
+      "level": 2,
+      "title": "Two timescales of activity",
+      "text": "## Two timescales of activity\n\nLevel 5 distinguishes a short engagement loop from longer progression.\n\nThe short loop connects motivation, action and feedback. Feedback should make\nthe result understandable and provide a reason to act again. Receiving a token\nonly explains continuation if the token or activity has meaning for that person.\n\nProgression asks how experience changes after learning and repeated use.\nAccessible beginnings, growing capability, occasional larger challenges and\nperiods of relative ease can support a varied experience. A continuously rising\ncounter does not itself show new mastery. These are design possibilities, not a\nfixed difficulty curve or mandatory boss encounter.\n\nAn endpoint also has consequences. Winning can end participation and make\nothers losers. Decide whether a finite achievement or an ongoing practice\nserves the actual purpose rather than treating endless return as the default.\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Selective attributed book-derived reasoning, not independently validated effects."
+      }
+    },
+    {
+      "id": "R010",
+      "level": 2,
+      "title": "Cases illustrate tensions, not effect forecasts",
+      "text": "## Cases illustrate tensions, not effect forecasts\n\nThe following are historical stories reported by the authors. Their current\nproducts, causal explanations and results were not independently verified here.\n\n| Book case | Tension worth examining |\n| --- | --- |\n| Microsoft localization review, Level 1 | Recognition and group identity supported a useful task, with checks against careless clicking. Activity needed a quality safeguard. |\n| Record Searchlight, Level 4 | Recognition accompanied community participation, but rewarding an unwanted subscription did not make that action desirable. |\n| DevHub, Level 5 | Activity in the game layer could diverge from the intended business outcome and audience. |\n| Lift, Level 5 | Simplifying an elaborate reward system toward recognition and personal feedback could better fit the intended experience. |\n| Disneyland workplace ranking, Level 6 | Performance comparison could operate as coercion within employment relationships. |\n| Seriosity, conclusion | An ingenious attention-currency model could add a burden people did not accept. |\n\nThese examples support questions and competing explanations. They do not\nestablish expected conversion, retention, learning or health effects elsewhere.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Historical book reports, not independent case verification or causal forecasts."
+      }
+    },
+    {
+      "id": "R011",
+      "level": 2,
+      "title": "Anticipate optimization, coercion and conflicts",
+      "text": "## Anticipate optimization, coercion and conflicts\n\nLevel 6 cautions against reducing game design to collecting tokens. Participants\nrespond to the rules actually implemented. Ask what becomes advantageous even\nwhen it damages quality, trust, collaboration or the participant's real goal.\nUnexpected behavior may also support the intended outcome. Evaluate consequences\nrather than banning every unplanned action simply because it is unplanned.\n\nVoluntariness depends on power and consequences, not a playful visual treatment.\nA ranking connected to pay or employment has different stakes from an optional\nchallenge. The authors' generally optimistic view of gamification is not proof\nof harmlessness. Particular ages, vulnerabilities and real-world harms require\ntheir own assessment.\n\nThe book's legal discussion is a historical map of possible issues: data,\nintellectual property, virtual goods, prizes, employment and currency. It is not\ncurrent legal advice. A user agreement does not resolve every issue. Use current\nprimary evidence for an actual consequential legal or platform decision.\n\n",
+      "readingContext": {
+        "kind": "mixed",
+        "note": "Book-derived incentive risks and historical legal topics. Current consequential rules need fresh evidence."
+      }
+    },
+    {
+      "id": "R012",
+      "level": 2,
+      "title": "What an early test can and cannot establish",
+      "text": "## What an early test can and cannot establish\n\nLevel 5 recommends iteration through use, observation, analytics and participant\nfeedback. A paper description can expose confusing rules before expensive\nimplementation. An executable trial can reveal actual choices and incentives.\nNeither automatically establishes durable benefit.\n\nFor application, distinguish at least the intended outcome, the proposed\nbehavior, the motivational explanation and the observable evidence. A short\nsession can support a conclusion about comprehension or immediate preference.\nLonger use and appropriate comparison are needed for claims about persistence\nor changed capability. This distinction is an application inference, not a\ncomplete experimental protocol supplied by the book.\n\n",
+      "readingContext": {
+        "kind": "mixed",
+        "note": "Book iteration premise with explicitly separated application inference about evidence strength."
+      }
+    },
+    {
+      "id": "R013",
+      "level": 2,
+      "title": "Coverage, omissions and refresh trigger",
+      "text": "## Coverage, omissions and refresh trigger\n\nThis synthesis selects the definition, suitability questions, motivation account,\nelement hierarchy, 6D method, activity cycles and failure boundaries. It omits\nmost case narratives and numerical results, the exhaustive component catalogue,\nillustrations and historical vendor recommendations. Omission is explicit, not\na claim to preserve the whole book in fewer words.\n\nChapter labels refer to the supplied Russian edition's Levels 1–6 and conclusion.\nBefore relying on a disputed theoretical or empirical claim, consult its original\nresearch. Revisit this synthesis when a real design exposes a contradiction,\nnew evidence changes a consequential premise, or the active question needs detail\nnot represented here. It supplies useful design reasoning, not proof that a\nproduct needs gamification or that a selected intervention will work.\n",
+      "readingContext": {
+        "kind": "sources",
+        "note": "Bibliography, selective coverage and limits of the actual processed synthesis."
+      }
+    }
+  ]
+}

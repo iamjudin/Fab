@@ -16,6 +16,30 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-16 — Add game thinking without importing the whole book
+
+**Context:** The creator supplied a working digest of Werbach and Hunter's
+For the Win. Gamification was a named knowledge gap, but an illustrated personal
+digest is not automatically a public runtime asset.
+
+**Decision:** Author a selective attributed synthesis. Keep the exact synthesis
+in the packet, with a distinct identity from the private source. Route Product
+and Analysis only when motivation, feedback or incentive design is at issue.
+Keep the source's conditions and failure cases, not just its visible mechanics.
+
+**Confirmed:** Twelve pairs / 572 sections, prior eleven packets unchanged.
+77 regressions and structural/package/scope checks pass. Library project tag is
+additive and preserves the reader body. Installed/public beta.29 stays unchanged.
+
+**Limits and interpretation:** Selected EPUB correspondence is not independent
+empirical evidence or complete book fidelity. The method now supports a better
+question about participant benefit, but does not prove lasting behavior change.
+Next useful evidence comes from an actual authorized incentive decision, not a
+compulsory new feature or generic rerun. Promotion is a separate release scope.
+
+**Evidence:** [Source audit](research-audits/gamification-2026-10-16.md),
+[intake](../experiments/maintenance/gamification-ingestion-20261016/report.md).
+
 ## 2026-10-16 — Accept delivery knowledge while retaining source contradictions
 
 - Creator supplies the refined repository/distribution report. Existing Delivery

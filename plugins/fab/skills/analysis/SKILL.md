@@ -23,3 +23,7 @@ For a requested layout, typography or interface-text review read the qualified
 [layout and typography brief](../../shared/methods/typography-layout.md).
 Separate semantic belonging, token consistency, actual rendering and evidence
 of understanding. Preserved source numbers do not establish universal defects.
+
+For an existing reward, progression or participation design read
+[motivation and gamification](../../shared/methods/gamification.md). Separate
+observed consequences from motivational hypotheses and historical book examples.

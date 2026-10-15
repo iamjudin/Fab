@@ -262,6 +262,29 @@
         },
         "boundary": "All supplied source text retained. Case analyses, dated tools/legal assertions and bibliography remain qualified. Brief separates reusable practice, current Fab application and independent intake checks."
       }
+    },
+    {
+      "id": "gamification",
+      "sourceTitle": "Motivation and gamification — book-derived synthesis of For the Win",
+      "brief": "gamification.md",
+      "full": "gamification.full.json",
+      "sourceSha256": "5badfa819f6e5e62bcac9fdccb9f8c0ef53741edc120f0152c39596cf2978160",
+      "ingestedAt": "2026-10-16",
+      "validation": {
+        "structure": "Exact authored synthesis preserved in 13 sections, no exclusions. Not a lossless book or private-digest import.",
+        "claims": "Selective book-derived method mediated by the supplied digest. Bibliography and selected motivation/6D/coercion passages checked against EPUB. No independent empirical review or current legal/vendor validation."
+      },
+      "refreshTrigger": "Concrete motivation/incentive contradiction, changed evidence, or an active decision requiring missing detail or population-specific effects",
+      "readingContext": {
+        "sectionKinds": {
+          "navigation": 1,
+          "sources": 2,
+          "source-synthesis": 7,
+          "example": 1,
+          "mixed": 2
+        },
+        "boundary": "Original selective synthesis with book attribution, not the whole book. Private digest and licensed images are not bundled. Historical examples and application inferences are qualified."
+      }
     }
   ]
 }

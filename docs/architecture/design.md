@@ -17,11 +17,23 @@ Legacy local folders and historical records are recovery material, not runtime
 or Git dependencies. Selected reusable knowledge
 pairs copied with hashes/limits; project reports/test products excluded.
 Mobile method now has brief/full and conditional app routes; native/device
-behaviour and gamification remain separate evidence gaps. Landlord excluded.
+behaviour and empirical motivation effects remain separate evidence gaps. Landlord excluded.
 
 Shared artifact lifecycle covers task-owned scratch, verified retention and
 bounded cleanup. Plugin exports an equivalent self-contained rule to generated
 packages; this is a runtime responsibility, not a new mandatory workflow stage.
+
+## Current gamification knowledge source — 2026-10-16
+
+A twelfth method adds a selective attributed synthesis of For the Win with a
+brief, 13-section packet and conditional Product/Analysis read routes. The packet
+preserves the authored synthesis, not the book or private digest. Eleven prior
+packets stay unchanged, 572 sections overall. [Audit](../research-audits/gamification-2026-10-16.md)
+records chapter coverage, selected EPUB checks and unverified empirical effects.
+No compulsory game layer, 6D pipeline or population-specific effect follows.
+Source 80 files / 972d822401ccf4fb is not installed or released. The preceding
+intakes remain included. Current distribution beta.29 stays 74 files. Earlier
+source counts below are dated history.
 
 ## Current repository/distribution knowledge source — 2026-10-16
 

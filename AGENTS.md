@@ -71,6 +71,21 @@ This rule does not authorize an immediate new chat, hidden delegation, a merge,
 runtime installation or publication. Keep main ownership and return criteria clear.
 
 ## Current boundary
+Creator2026-10-16 asks Fab to accept the For the Win book note. Source80files/
+972d822401ccf4fb adds selective attributed synthesis, brief and13section packet
+of that synthesis, not the full book/private digest. Twelve methods/572sections,
+eleven previous packets unchanged.77regressions/reader/package/scope pass.
+Selected EPUB/bibliographic checks, no independent empirical or full-book audit.
+Product/Analysis routes conditional on motivation/incentives, no compulsory6D.
+Private illustrations stay outside package. Single Library note gains project/fab
+under standing consent, preserving body/name/bookworm/book and original book.
+Hidden provenance distinguishes private digest and packet-source identities.
+Installed/public beta.29 remains74files/3641a8b84e7fb8cd. No model/native/lasting
+behavior evidence or install/push/release. Next actual authorized incentive task
+checks participant benefit and mechanism evidence. Prior source intakes remain
+included for a separately requested release. Observer/Canvas/Bookworm unchanged,
+pre-existing observer edits excluded. Evidence:
+experiments/maintenance/gamification-ingestion-20261016/report.md.
 Creator2026-10-16 returns the refined repository/distribution report for Fab.
 Source78files/08eb39052f779298 adds qualified brief/full65sections and a conditional
 Delivery route, eleven methods/559sections. Ten prior packets remain byte-identical.
