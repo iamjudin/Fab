@@ -1,24 +1,29 @@
 {
   "schema": 1,
-  "version": "0.1.0-beta.28",
-  "fingerprint": "3edcbb74228d3b48",
+  "version": "0.1.0-beta.29",
+  "fingerprint": "3641a8b84e7fb8cd",
   "channel": "beta",
   "surfaces": [
     {
       "id": "analysis",
       "default": true,
       "status": "limited",
-      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee.",
+      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Source marking uses project/<slug> without renaming, preserves all tags and hides bounded technical usage data at EOF. Common YAML only, no native Obsidian render claim. Two fresh source cases pass; root aggregate input-budget overrun is retained as process failure, not budget-compliant evidence.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/knowledge-beta28-20261014/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/project-tags-beta29-20261015/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
           "result": "pass",
           "evidence": "experiments/workflow-tests/2026-10-12-partial-routes-results.md"
+        },
+        {
+          "name": "additive project tags and reader-body/name preservation",
+          "result": "pass",
+          "evidence": "tests/test_source_usage.py; experiments/workflow-tests/project-tags-20261015/results.md"
         }
       ]
     },
@@ -31,7 +36,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/knowledge-beta28-20261014/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/project-tags-beta29-20261015/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -59,7 +64,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/knowledge-beta28-20261014/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/project-tags-beta29-20261015/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -87,7 +92,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/knowledge-beta28-20261014/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/project-tags-beta29-20261015/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -105,7 +110,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/knowledge-beta28-20261014/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/project-tags-beta29-20261015/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -128,7 +133,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/knowledge-beta28-20261014/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/project-tags-beta29-20261015/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -146,7 +151,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/knowledge-beta28-20261014/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/project-tags-beta29-20261015/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -159,12 +164,12 @@
       "id": "research",
       "default": true,
       "status": "limited",
-      "limitations": "Cleaned briefs separate knowledge/application; all437original packet sections preserved. Reader/registry integrity and bounded knowledge/method/marking source cases pass. External source/arithmetic/layout compliance remains PARTIAL. No scientific revalidation, native rendering, general applicability, cross-project efficacy, installed-model behavior or long-context repair guarantee.",
+      "limitations": "Cleaned briefs separate knowledge/application; all437original packet sections preserved. Reader/registry integrity and bounded knowledge/method/marking source cases pass. External source/arithmetic/layout compliance remains PARTIAL. No scientific revalidation, native rendering, general applicability, cross-project efficacy, installed-model behavior or long-context repair guarantee. Source marking uses project/<slug> without renaming, preserves all tags and hides bounded technical usage data at EOF. Common YAML only, no native Obsidian render claim. Two fresh source cases pass; root aggregate input-budget overrun is retained as process failure, not budget-compliant evidence.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/knowledge-beta28-20261014/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/project-tags-beta29-20261015/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -200,6 +205,11 @@
           "name": "source refusal additive use and revision correspondence",
           "result": "pass",
           "evidence": "experiments/workflow-tests/backlog-closure-20261014/results.md"
+        },
+        {
+          "name": "additive project tags and reader-body/name preservation",
+          "result": "pass",
+          "evidence": "tests/test_source_usage.py; experiments/workflow-tests/project-tags-20261015/results.md"
         }
       ]
     },
@@ -207,12 +217,12 @@
       "id": "testing",
       "default": true,
       "status": "limited",
-      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee.",
+      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Project-tag source tests retain a root parallel-run forecast overrun (427288input versus300k plan); no clean-budget claim or runtime-causal attribution.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/knowledge-beta28-20261014/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/project-tags-beta29-20261015/report.md"
         },
         {
           "name": "retained bounded baseline evidence",
@@ -230,7 +240,7 @@
         {
           "name": "bundled contract/reference integrity",
           "result": "pass",
-          "evidence": "scripts/check_package.py; experiments/releases/knowledge-beta28-20261014/report.md"
+          "evidence": "scripts/check_package.py; experiments/releases/project-tags-beta29-20261015/report.md"
         },
         {
           "name": "retained bounded baseline evidence",

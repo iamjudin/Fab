@@ -35,9 +35,10 @@ and actual returned results. Layout compliance does not establish evidence quali
 unstable consequential facts through current primary sources.
 When ingesting read [ingestion contract](references/ingestion.md); original,
 brief and compatible indexed full retain qualifications and provenance.
-After completing ingestion, offer optional project-usage tags/annotation as
-defined there. Preserve prior project labels; modify the source only after the
-person's answer. This optional choice never blocks completed research artifacts.
+After completing ingestion, follow [additive project tags](../../shared/library-usage.md).
+Use existing source-write authorization or offer the exact tag once. Keep all tags
+and filenames, with technical metadata only in a hidden EOF footer. Declining
+never blocks the completed research result.
 Project evidence stays in project; global promotion requires a reusable gap and
 explicit applicability, not a market report becoming universal knowledge.
 Research findings are not creator acceptance or proof of demand. Update affected

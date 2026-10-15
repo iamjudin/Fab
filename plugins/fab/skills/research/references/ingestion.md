@@ -108,54 +108,32 @@ reading-context counts consistent with the actual pair. Link the matching packet
 from its brief and keep the method visible in the index decision table. Package
 checks verify those relationships, not source truth or semantic completeness.
 
-## Optional source marking after processing
+## Optional project tags after processing
 
-After the original, brief and indexed packet are processed and checked, offer
-once to record the current project's accepted tag and usage entry in the source.
-Keep a new independent report's topic title and filename unchanged. The person's
-agreement is required before source annotation. This optional choice never blocks
-usable research artifacts or project-local provenance. If already authorized for
-this source/project, honor that answer. Silence is not consent.
+After the original, brief and indexed packet are ready, apply the shared
+[project-tag/source-usage contract](../../../shared/library-usage.md). It also
+covers books, articles and other library material used by any capability.
+Use `project/<accepted-slug>`; preserve all existing tags and filenames.
+Honor standing source-write permission or ask once for the exact tag. Declining
+never blocks completed research artifacts or project-local provenance.
 
-Show the concrete tag and usage change. Use the accepted project name and a simple
-tag such as `#Fab` or `#Murmur`, not an invented test ID or namespace. Preserve
-existing tags and entries and do not duplicate them. For names with spaces or
-punctuation show the proposed safe tag. If marking is declined, retain the source
-untouched and keep the completed project artifacts.
+No visible usage section or service catalogue belongs above the research. Keep
+actual processing records locally, with optional cross-project metadata in one
+hidden EOF comment. The bundled helper migrates only explicitly bounded old
+managed blocks, retaining their contents as hidden history. Tag migration does
+not refresh research, timestamps or another project's processed revision.
 
-Older sources may already have project-name filename prefixes. Preserve them as
-historical labels. Do not offer a filename prefix as the default for new research.
-An explicit rename request may change existing labels after collision and link
-checks, but policy acceptance is not permission for a migration.
-Do not expose bundle inclusion as a second `#fab/imported` tag. Store that status
-in the machine-readable `<!-- fab-import:<module-id> -->` metadata marker and
-usage/provenance record; inclusion is distinct from use by a project running Fab.
-Existing legacy tags are not permission for a bulk migration: update only the
-source/tag scheme the person authorized, preserving other projects' tags.
-
-On agreement, add/update a small delimited technical block at the top of the
-original, leaving the research body intact. Use
-`<!-- fab-research-usage:start -->` and `<!-- fab-research-usage:end -->`.
-For each project retain its accepted name, project tag, project location or stable
-identifier, processing date, body fingerprint/version and links/paths to the
-original copy, brief and full packet. Keep all other project entries unchanged.
-Record only observed destinations/revisions; mark inaccessible or unknown ones
-explicitly. No Brain dependency: the block lives wherever the supplied editable
-original lives. If the original is read-only or unavailable, offer the annotation
-but report that it cannot be applied there; do not silently mark an unrelated copy.
-
-Before renaming, check exact source/target identity, avoid symlinks and collisions,
-preserve a recoverable original and update affected exact links in the authorized
-project/vault. Preserve prior provenance and research titles. Follow
-[artifact lifecycle](../../../shared/artifact-lifecycle.md) for helper cleanup.
-This policy does not authorize retroactive marking of every old document.
+Bundle inclusion is separate from project use. If an existing `fab-import` marker
+is present, preserve its known meaning/history without adding another visible
+service tag. Do not remove any existing tag as a side effect of this policy.
+No automatic retagging of unrelated notes or changes to historical packets.
 
 ## Source revisions and affected projects
 
 Each project keeps local provenance even if source marking is declined: original
 identity/path, processed content fingerprint/version, processing date and its
 brief/full locations, in its existing research index or alongside the pair.
-The optional original block is a cross-project usage directory, not the only copy
+The optional hidden source footer is a cross-project usage directory, not the only copy
 of provenance and not proof that every listed project is currently up to date.
 
 Keep the packet's source/retained hashes for the exact material actually processed.
@@ -177,28 +155,13 @@ findings/artifacts; it does not make every earlier conclusion false.
 
 ## Maintenance
 
-An imported original may receive a tag and pointer only after the pair is
-available in the intended location and source annotation is authorized. Keep the
-topic title and filename unchanged by default. Preserve older filename labels and
-historical technical headings. Keep marker `<!-- fab-import:<module-id> -->`,
-project tag and provenance entry only for actual inclusion/use, with validated
-brief/full links, revision/date and verification limits. Do not add a project
-prefix just because a report is bundled or reused. These are usage annotations,
-not changes to the research body or evidence scope.
-
-Only when an existing label migration is explicitly requested, for example
-a `Wireframer:` label, replace the prefix once. Never
-stack prefixes. Preserve the research body byte-for-byte and retain old inclusion
-dates/versions as history. Verify the module is actually included, refuse target
-collisions/symlinks, and update exact affected wiki/Markdown links within the
-authorized vault/project. Do not globally replace the word Wireframer in source
-text or rewrite historical packets/checkpoints. Repeated marking is idempotent.
-If a module is withdrawn, remove its current bundle-import marker, preserving
-historical provenance and project usage labels/entries. Remove a legacy imported
-tag if still present; do not erase the `#Fab` usage
-label merely because bundle inclusion ended. Otherwise keep the body intact. Version the pair
-together and preserve source fingerprints when updating it. For the maintainer,
-the import marker means included, not universally validated.
+Keep source titles, filenames, body and provenance intact when adding project
+usage. Apply the shared additive-tag/hidden-footer contract after actual use and
+source authorization. Preserve historical technical records and every existing
+tag; do not add filename prefixes or perform an old-label migration by default.
+When a module is withdrawn, update actual inclusion status in local provenance,
+not project usage tags: past use is still past use. Version original/brief/packet
+changes together and retain processed revisions and applicability limits.
 
 Revisit a module when primary sources change, a product exposes a contradiction,
 or a decision needs detail absent from the brief. Update the brief, packet audit,

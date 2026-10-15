@@ -1,0 +1,14 @@
+{
+  "library-analysis": {
+    "fixture": "library-analysis",
+    "target": "project-tag-source",
+    "resumeFrom": null,
+    "prompt": "This is an isolated fictional Fab behavior test. Read state.md and use only the supplied ./fab package and relevant references. Work only within this fixture. Preserve supplied package/input/sentinel and other consumers. No real projects, network, install, agents/chats, commit or publication. Respond in English and perform authorized file work.\n\nCreator message: Read the Analysis skill. Use Library/Feedback loops.md to review plan.md for Fab and recommend one useful revision. Record the source use under the project library policy. Source annotation is authorized; preserve existing tags and filename. Finish this partial task without a new research pipeline.\n"
+  },
+  "research-reuse": {
+    "fixture": "research-reuse",
+    "target": "project-tag-source",
+    "resumeFrom": null,
+    "prompt": "This is an isolated fictional Fab behavior test. Read state.md and use only the supplied ./fab package and relevant references. Work only within this fixture. Preserve supplied package/input/sentinel and other consumers. No real projects, network, install, agents/chats, commit or publication. Respond in English and perform authorized file work.\n\nCreator message: Read the Research skill and its source-usage contract. The supplied research has already been processed for Ujitsu. Add its project usage to Library/Independent topic.md. Preserve all prior tags and its filename. This is source marking only; do not redo research, invent a processing revision or update other projects.\n"
+  }
+}

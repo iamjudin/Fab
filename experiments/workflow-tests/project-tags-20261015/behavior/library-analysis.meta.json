@@ -1,0 +1,51 @@
+{
+  "case": "library-analysis",
+  "target": "project-tag-source",
+  "threadId": "01a13fa6-9efd-76c3-80be-dc4546a276d3",
+  "resumeFrom": null,
+  "actualRuntime": {
+    "model": "gpt-6.1-sol",
+    "effort": "medium"
+  },
+  "exitCode": 0,
+  "timeout": false,
+  "seconds": 68.32,
+  "usage": {
+    "input_tokens": 204552,
+    "cached_input_tokens": 168448,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1989,
+    "reasoning_output_tokens": 83,
+    "total_tokens": 206541
+  },
+  "usageScope": "rollout cumulative-counter difference for this invocation",
+  "eventReportedUsage": {
+    "input_tokens": 204552,
+    "cached_input_tokens": 168448,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1989,
+    "reasoning_output_tokens": 83
+  },
+  "changedFiles": [
+    ".fab/evidence/plan-review/Feedback loops.original.md",
+    ".fab/evidence/plan-review/protected-sha256.json",
+    ".fab/plan-review.md",
+    "Library/Feedback loops.md"
+  ],
+  "suppliedPackageUnchanged": true,
+  "sentinelUnchanged": true,
+  "command": [
+    "codex",
+    "exec",
+    "--json",
+    "--skip-git-repo-check",
+    "-s",
+    "workspace-write",
+    "-C",
+    "/var/folders/s5/ndr2tg0d2d91ngg2txtxncgr0000gp/T/fab-project-tags-pfvnnam_/library-analysis",
+    "-o",
+    "/Users/iamjudin/Desktop/Lab/Fab/experiments/workflow-tests/project-tags-20261015/behavior/library-analysis.md",
+    "-"
+  ],
+  "errors": []
+}

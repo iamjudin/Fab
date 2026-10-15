@@ -1,5 +1,26 @@
 # Рабочее состояние Fab
 
+## 2026-10-15 — Project tags and hidden metadata approved for beta.29
+
+Creator replaces filename labels with additive project/fab,project/ujitsu and
+project/once across library research/books/articles. Existing tags/names/body
+preserved. Shared contract plus source helper routes general library use, protects
+actual authorization and hides technical usage metadata at EOF. No new full
+research pipeline or cosmetic processing-revision refresh.
+
+[Source results](../experiments/workflow-tests/project-tags-20261015/results.md):
+77regressions/package/scope, two fresh GPT-6.1 Sol/Medium cases pass; root input
+forecast/budget overrun preserved as process failure, no additional model launch.
+Initial external10-note migration rejected; creator explicitly approves prepared
+batch, then all10apply with exact body/name/tags/history and private backups.
+No Bookworm change. Owned test scratch retained/hash-verified and removed.
+
+Creator explicitly authorizes local/public beta.29. Prepared74files/3641a8b84e7fb8cd
+changes only manifest version from tested1dd7ee79cf901133. Main completes
+[distribution](../experiments/releases/project-tags-beta29-20261015/report.md).
+Installed/public beta.28 remains baseline until checks pass. Prior tags immutable,
+rollback beta.28. Canvas/observer/other product ownership unchanged; no native proof.
+
 ## 2026-10-14 — Generated-only cleanup execution verified
 
 Creator approves the outstanding check. [One fresh GPT-6.1 Sol/Medium invocation](../experiments/workflow-tests/generated-cleanup-20261014/results.md)

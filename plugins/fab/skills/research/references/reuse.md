@@ -89,17 +89,20 @@ that brief's contract. Do not create duplicate obligatory artifacts. The packet
 scope describes its existing storage/use boundary, not universal validity. Continue
 using supported `project-evidence` or `global-method` scopes as appropriate.
 
-## Usage labels and existing sources
+## Project tags and existing sources
 
-Use optional project tags or the existing usage directory to identify consumers.
-Keep a new report's topic-based title and filename independent of consumers.
-Source annotation still requires the person's authorization. Agreeing to this
-policy does not authorize bulk retagging, renaming or editing existing sources.
+Follow [additive project tags and hidden source metadata](../../../shared/library-usage.md)
+for actually consumed editable library material. Use `project/<accepted-slug>`,
+preserve every existing tag and keep filenames/headings unchanged. This applies
+to research, books and articles without making all of them new research tasks.
+Standing source-write permission is sufficient; otherwise offer the exact tag.
+No visible usage block belongs in the reader's introduction. Preserve technical
+history only in the optional hidden EOF footer and project-local provenance.
 
-Do not rewrite supplied or historical project-named research to fit this rule.
-Preserve it and create a clearly attributed independent synthesis only when that
-is in scope, with exclusions and transfer limits. Keep previous labels/provenance.
-Renaming an existing source requires explicit rename scope and link/collision checks.
+Do not rewrite historical/project-named research to fit a new naming style.
+Preserve original evidence, scope and qualifications. An independently attributed
+synthesis is a separate authorized outcome. No automatic vault-wide migration,
+renaming, acceptance of findings or refresh of another consumer's revision.
 
 ## Review
 

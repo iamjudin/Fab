@@ -1,0 +1,49 @@
+{
+  "case": "research-reuse",
+  "target": "project-tag-source",
+  "threadId": "01a13fa6-848e-7862-b0ab-4af76bc71e60",
+  "resumeFrom": null,
+  "actualRuntime": {
+    "model": "gpt-6.1-sol",
+    "effort": "medium"
+  },
+  "exitCode": 0,
+  "timeout": false,
+  "seconds": 53.63,
+  "usage": {
+    "input_tokens": 222736,
+    "cached_input_tokens": 186624,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1343,
+    "reasoning_output_tokens": 141,
+    "total_tokens": 224079
+  },
+  "usageScope": "rollout cumulative-counter difference for this invocation",
+  "eventReportedUsage": {
+    "input_tokens": 222736,
+    "cached_input_tokens": 186624,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1343,
+    "reasoning_output_tokens": 141
+  },
+  "changedFiles": [
+    ".fab/evidence/source-usage/Independent topic.md.before",
+    "Library/Independent topic.md"
+  ],
+  "suppliedPackageUnchanged": true,
+  "sentinelUnchanged": true,
+  "command": [
+    "codex",
+    "exec",
+    "--json",
+    "--skip-git-repo-check",
+    "-s",
+    "workspace-write",
+    "-C",
+    "/var/folders/s5/ndr2tg0d2d91ngg2txtxncgr0000gp/T/fab-project-tags-pfvnnam_/research-reuse",
+    "-o",
+    "/Users/iamjudin/Desktop/Lab/Fab/experiments/workflow-tests/project-tags-20261015/behavior/research-reuse.md",
+    "-"
+  ],
+  "errors": []
+}

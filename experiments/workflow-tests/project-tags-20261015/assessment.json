@@ -1,0 +1,54 @@
+{
+  "cases": {
+    "library-analysis": {
+      "bodyExact": true,
+      "tagsPreserved": true,
+      "newTag": "project/fab",
+      "nameUnchanged": true,
+      "idempotent": true,
+      "legacyRetained": true,
+      "newProcessingAssertion": false,
+      "packageAndSentinelPreserved": true,
+      "helperExecuted": true,
+      "verdict": "bounded PASS"
+    },
+    "research-reuse": {
+      "bodyExact": true,
+      "tagsPreserved": true,
+      "newTag": "project/ujitsu",
+      "nameUnchanged": true,
+      "idempotent": true,
+      "legacyRetained": false,
+      "newProcessingAssertion": false,
+      "packageAndSentinelPreserved": true,
+      "helperExecuted": true,
+      "verdict": "bounded PASS"
+    }
+  },
+  "actualRuntime": [
+    {
+      "model": "gpt-6.1-sol",
+      "effort": "medium"
+    },
+    {
+      "model": "gpt-6.1-sol",
+      "effort": "medium"
+    }
+  ],
+  "usage": {
+    "input_tokens": 427288,
+    "cached_input_tokens": 355072,
+    "output_tokens": 3332
+  },
+  "seconds": 121.95,
+  "budget": {
+    "plannedInput": 300000,
+    "actualInput": 427288,
+    "exceededBy": 127288,
+    "verdict": "FAIL: root forecast/scheduling, parallel invocations already in flight; no further model launch",
+    "notRuntimeFailure": true
+  },
+  "regressions": 77,
+  "sourceFingerprint": "1dd7ee79cf901133",
+  "reviewer": "root, unblinded"
+}

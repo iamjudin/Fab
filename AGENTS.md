@@ -71,6 +71,23 @@ This rule does not authorize an immediate new chat, hidden delegation, a merge,
 runtime installation or publication. Keep main ownership and return criteria clear.
 
 ## Current boundary
+Creator2026-10-15 replaces source renaming/visible usage sections with additive
+project/fab,project/ujitsu,project/once tags for all consumed library material.
+Preserve every old tag, filename and reader body. Shared library-usage contract
+and self-contained source_usage.py implement safe common-YAML/idempotent changes,
+with technical history only in hidden EOF metadata. Actual source authorization
+still applies; no automatic rename or whole-vault migration.77regressions/package/
+scope pass, two fresh GPT-6.1 Sol/Medium partial cases pass at74files/1dd7ee79cf901133.
+Root forecast failed:427288input/355072cached/3332output,121.95seconds versus300k
+planned input; retain process failure, no further model launch or budget-compliance
+claim. Initial10-note external migration rejected by automatic review, then creator
+explicitly approved those10prepared notes. Applied exact body/name/prior-tag/history
+preservation with private backups, no fabricated processing revision or Bookworm edit.
+Creator explicitly authorizes immediate local/public beta.29. Prepared74files/
+3641a8b84e7fb8cd differs only in manifest version; distribution in progress at
+experiments/releases/project-tags-beta29-20261015. Main owns finish without generic
+reapproval, rollback beta.28, prior tags immutable. No native/long-context closure,
+Canvas promotion or observed-product operation. Older records below are history.
 Creator2026-10-14 approved the outstanding generated-only cleanup check with “go”.
 One fresh GPT-6.1 Sol/Medium CLI invocation of the unchanged5-file generated CSV
 package/e28337653c4e1fe8 passes actual report/notes retention before exact owned

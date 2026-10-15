@@ -1,0 +1,27 @@
+{
+  "version": "0.1.0-beta.29",
+  "files": 74,
+  "fingerprint": "3641a8b84e7fb8cd",
+  "sourceCandidateFingerprint": "1dd7ee79cf901133",
+  "sourceCommit": null,
+  "tag": "v0.1.0-beta.29",
+  "checks": {
+    "package": "pass: exact74-file payload",
+    "regressions": 77,
+    "scope": "pass",
+    "sourceBehavior": "two bounded GPT-6.1 Sol/Medium cases pass; root input-budget overrun retained",
+    "remoteCI": "pending",
+    "assets": "pending",
+    "cleanInstall": "pending",
+    "primaryInstall": "pending",
+    "installedModelBehavior": "unobserved"
+  },
+  "libraryMigration": "10 explicitly approved managed sources migrated; body/name/prior tags/history preserved; private evidence not published",
+  "limits": [
+    "No source renaming or universal YAML support",
+    "No native UI/render or automatic existing-chat reload proof",
+    "No full long-context or general cross-project efficacy claim",
+    "Root input budget427288 versus300000 planned, no additional model launch",
+    "No Bookworm runtime or Canvas change"
+  ]
+}

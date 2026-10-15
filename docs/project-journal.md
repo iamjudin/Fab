@@ -16,6 +16,26 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-15 — Replace project filename labels with additive source tags
+
+- Creator chooses project/fab,project/ujitsu,project/once, retaining every prior
+  tag and source name. Visible usage catalogues are removed from introductions;
+  useful technical history stays hidden at EOF. Scope includes books/articles,
+  not only Research ingestion, with no Bookworm dependency or body rewrite.
+- Source: shared library-use contract, routed direct capabilities and deterministic
+  source helper.77regressions cover common YAML, source identity, exact body,
+  tags/idempotence and metadata boundaries. Two fresh partial behavior cases pass.
+- [Evidence](../experiments/workflow-tests/project-tags-20261015/results.md) retains
+  a root parallel-run forecast failure:427288input versus300k plan,355072cached/
+  3332output,121.95seconds. No further model run or budget-compliance claim.
+- Initial external10-note edit rejected by automatic review. Creator then approves
+  the exact prepared batch; application preserves bodies/names/tags/history with
+  private backups. No processing revision fabricated. No private notes published.
+- Creator authorizes immediate beta.29 locally/publicly. Prepared74files/
+  3641a8b84e7fb8cd differs from tested source only in manifest version. Main owns
+  actual CI/tag/assets/clean-primary checks in the release report; no premature
+  installed/native claim. Canvas/Bookworm/observer ownership stays unchanged.
+
 ## 2026-10-14 — Observe cleanup through the generated plugin's own rule
 
 - Creator authorizes the previously unrun generated-only execution, not another

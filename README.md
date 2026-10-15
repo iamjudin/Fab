@@ -32,7 +32,7 @@ for the agreed channel. Each skill also works independently.
 Use a Codex client with plugin marketplace support:
 
 ```sh
-codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.28
+codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.29
 codex plugin add fab@fab-local
 ```
 
@@ -45,15 +45,17 @@ chat and transfers context after your agreement, subject to host support.
 
 ## Beta status
 
-**0.1.0-beta.28** focuses on mobile apps. Structure and scenarios use Markdown
+**0.1.0-beta.29** focuses on mobile apps. Structure and scenarios use Markdown
 tables; Canvas remains experimental. Browser prototypes have bounded checks.
 Research now plans evidence and reader presentation together, separates reusable
 findings from project application and reviews returned coverage, links and numbers.
 Knowledge briefs now distinguish findings from current Fab policy. The reader protects
 originals and checks packet integrity. Stage reports make the next action and owner
 concrete; ordinary-use dialogue consistency remains open. External Deep Research
-compliance remains partial.
-Read [known limits](docs/limitations.md) and [release notes](docs/releases/0.1.0-beta.28.md).
+compliance remains partial. Library use adds `project/fab`, `project/ujitsu` or
+`project/once` tags while preserving existing tags and filenames. Technical usage
+history stays in an optional hidden footer, outside the reader introduction.
+Read [known limits](docs/limitations.md) and [release notes](docs/releases/0.1.0-beta.29.md).
 
 ## Development and license
 
