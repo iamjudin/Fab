@@ -3,7 +3,7 @@ Design v0.2 accepted for bounded autonomous beta implementation on 2026-10-10.
 Target owners: cowork, research, product, wireframe, prototype, analysis,
 brainstorm, testing, plugin, delivery. Historical beta.1 had five skills:
 cowork/research/analysis/brainstorm/testing plus shared core.
-All ten skill contracts are installed in beta.27. Meaning/behavior maturity
+All ten skill contracts are installed in beta.29. Meaning/behavior maturity
 is bounded by concrete smoke evidence, not availability. Product/Wireframe use
 compatible graph adapter; Prototype/Plugin/Delivery have independent modes.
 Cowork maintains collaboration/intent/continuity; direct invocation bypasses it.
@@ -46,6 +46,23 @@ ship in installed/public beta.28. [Distribution verification](../../experiments/
 confirms exact payload and installation, not native/long-context efficacy. Current
 evidence and boundaries belong to [handoff](../handoff.md) and [backlog](../backlog.md),
 rather than being inferred from this availability list.
+
+## Shared library use — beta.29
+
+[Shared library use](../../plugins/fab/shared/library-usage.md) owns additive
+project/<accepted-slug> tags across research, books and articles. Core/project
+contracts route it without requiring Research ingestion for ordinary source use.
+The bundled deterministic helper preserves source identity/body/prior tags and
+moves explicitly managed legacy usage history to hidden EOF metadata. No
+Bookworm dependency or filename-prefix rollback is introduced. Source-write
+consent is project-scoped; offer a concrete tag once and retain the choice under
+the existing durable project contract. Reading is not permission to mutate.
+
+[Source evidence](../../experiments/workflow-tests/project-tags-20261015/results.md)
+records77regressions/two authorized-write cases and a root input-budget overrun.
+[Distribution](../../experiments/releases/project-tags-beta29-20261015/report.md)
+verifies74-file public/clean-primary parity, not native rendering or repeated-refusal
+persistence. Existing method packets remain unchanged.
 
 ## Current bounded behavior checks
 

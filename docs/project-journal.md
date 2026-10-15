@@ -16,6 +16,24 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-15 — Beta.29 distributed with project-scoped source consent
+
+- Creator explicitly confirms beta.29 after automatic review requires the exact
+  public version. New tag/Release published only after that confirmation; the
+  earlier external-migration rejection and exact10-note approval remain recorded.
+- [Distribution](../experiments/releases/project-tags-beta29-20261015/report.md):
+  74files/3641a8b84e7fb8cd at immutable7a59b06.77regressions/package/scope,
+  exact-source CI, anonymous ZIP/scope/checksums and clean/primary full parity pass.
+  Fab enabled; all17other plugin settings and seven previous tags unchanged.
+- Creator clarifies the public behavior: offer a concrete project tag once, save
+  yes/no in the existing project agreement, then reuse it across notes. Processing
+  does not imply consent; refusal neither blocks useful results nor invites
+  repeated questions. This uses the shipped shared library/project contracts.
+- Authorized-write behavior was observed; native repeated-refusal persistence,
+  rendering, automatic chat reload and long-context efficacy were not. Root model
+  input-budget overrun remains a process failure. Rollback beta.28, no additional
+  model launch, Bookworm/Canvas work or observed-project message.
+
 ## 2026-10-15 — Replace project filename labels with additive source tags
 
 - Creator chooses project/fab,project/ujitsu,project/once, retaining every prior

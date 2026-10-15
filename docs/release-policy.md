@@ -1,14 +1,15 @@
 # Политика выпуска и изоляции Fab
 
-## Current distribution — 2026-10-14
+## Current distribution — 2026-10-15
 
-Installed/public beta.28:72files/3edcbb74228d3b48, immutable v0.1.0-beta.28/f04b7c8.
-[Distribution](../experiments/releases/knowledge-beta28-20261014/report.md) verifies
-66regressions/package/scope, exact-source CI, anonymous assets and clean/primary
-exact-tag full parity. Prior tags remain unchanged, rollback beta.27. Source
-knowledge/reader/handoff repairs are shipped; actual-use consistency and evidence
-quality remain bounded. Canvas/Bookworm and opt-in surfaces retain their limits.
-No new model/native reload or long-context claim. Earlier entries are dated history.
+Installed/public beta.29:74files/3641a8b84e7fb8cd, immutable v0.1.0-beta.29/7a59b06.
+[Distribution](../experiments/releases/project-tags-beta29-20261015/report.md) verifies
+77regressions/package/scope, exact-source CI, anonymous assets and clean/primary
+exact-tag full parity. Seven prior version tags unchanged; rollback beta.28. Source
+names/body/prior tags are preserved, project tags additive, technical usage hidden
+at EOF. One exact-tag consent decision per project; source writes are not inferred
+from reading/processing. No new native reload, refusal persistence or long-context
+claim. Earlier entries remain dated history, with Canvas/Bookworm limits unchanged.
 
 ## Решение
 Релиз фиксирует точный пакет и обещанный набор результатов, а не универсальную

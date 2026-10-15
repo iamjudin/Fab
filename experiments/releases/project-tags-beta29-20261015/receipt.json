@@ -3,18 +3,21 @@
   "files": 74,
   "fingerprint": "3641a8b84e7fb8cd",
   "sourceCandidateFingerprint": "1dd7ee79cf901133",
-  "sourceCommit": null,
+  "sourceCommit": "7a59b06e7363f47a836970396340bb6b8dec907d",
   "tag": "v0.1.0-beta.29",
   "checks": {
     "package": "pass: exact74-file payload",
     "regressions": 77,
     "scope": "pass",
     "sourceBehavior": "two bounded GPT-6.1 Sol/Medium cases pass; root input-budget overrun retained",
-    "remoteCI": "pending",
-    "assets": "pending",
-    "cleanInstall": "pending",
-    "primaryInstall": "pending",
-    "installedModelBehavior": "unobserved"
+    "remoteCI": "pass",
+    "assets": "pass: anonymous hashes, full74-file ZIP/source and scope parity",
+    "cleanInstall": "pass: exact tag and full74-file parity",
+    "primaryInstall": "pass: exact tag and full74-file parity",
+    "installedModelBehavior": "unobserved",
+    "immutableTags": "pass: new source SHA and all previous peeled SHAs preserved",
+    "settings": "pass: Fab enabled, all17 other plugin settings unchanged",
+    "cleanup": "pass: exact owned scratch removed after retained hashes/cache parity; primary cache kept"
   },
   "libraryMigration": "10 explicitly approved managed sources migrated; body/name/prior tags/history preserved; private evidence not published",
   "limits": [
@@ -23,5 +26,22 @@
     "No full long-context or general cross-project efficacy claim",
     "Root input budget427288 versus300000 planned, no additional model launch",
     "No Bookworm runtime or Canvas change"
-  ]
+  ],
+  "assetsSha256": {
+    "fab-0.1.0-beta.29.zip": "d83381b83ef57051082f1bc81f74c9073b96dd4e0bb75e6273de09fcbe7f2c9a",
+    "release-scope.json": "f445c54555005f0897876331c2251e7c6290d783f9dbea4c01e21ce5a1b81e96",
+    "SHA256SUMS.txt": "853b5eadb17c67622a6a2eaae57bc7ae8d7d46d21c1473105ea912393f9c184e"
+  },
+  "ci": "https://github.com/iamjudin/Fab/actions/runs/38739941073",
+  "publication": {
+    "url": "https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.29",
+    "isDraft": false,
+    "isPrerelease": true
+  },
+  "installedPath": "/Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.29",
+  "authorization": {
+    "libraryMigration": "Explicit creator approval of exact10-note batch after automatic review rejection",
+    "publication": "Automatic review initially required exact beta number; creator explicitly confirmed beta.29 locally and on GitHub before new tag/Release",
+    "projectConsent": "Creator reiterates one project-scoped exact-tag offer, persist yes/no in existing project agreement; no per-source repeated question or implicit opt-in from reading/processing"
+  }
 }

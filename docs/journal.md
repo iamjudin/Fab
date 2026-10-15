@@ -269,3 +269,14 @@ develop/release bureaucracy for one beta line. Proposal includes task/spike/fix/
 hotfix/release cases, chat/worktree/runtime boundaries, review/cleanup and migration.
 No refs/settings/runtime changes; proposal not accepted by creator yet.
 Report docs/research/git-workflow-options-2026-10-12.md; related FAB-13 updated.
+
+## 2026-10-15 — Beta.29 public/local distribution
+
+Source7a59b06,74files/3641a8b84e7fb8cd, manifest-only tested delta.77regressions,
+package/scope/exact-source CI and anonymous ZIP/scope/checksum parity pass. Clean
+and primary CLI installations match all74files and tag SHA. Fab enabled,17other
+plugin settings unchanged, previous seven public version tags immutable. Exact
+creator beta.29 approval resolves automatic publication rejection before tag/Release.
+Project-scoped one-time exact-tag consent retained in the existing agreement;
+no native refusal persistence, renderer, model reload or long-context claim.
+Evidence: experiments/releases/project-tags-beta29-20261015/report.md.

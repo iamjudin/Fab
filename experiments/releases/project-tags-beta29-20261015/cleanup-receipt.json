@@ -1,0 +1,8 @@
+{
+  "retainedAssetFiles": 6,
+  "cleanCacheFilesVerifiedBeforeDisposal": 74,
+  "usefulEvidence": "ignored raw/retention.json plus install/publication/settings logs",
+  "disposal": "exact task-owned release root removed after verified retention",
+  "primaryCache": "kept",
+  "status": "pass"
+}

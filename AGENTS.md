@@ -83,11 +83,20 @@ planned input; retain process failure, no further model launch or budget-complia
 claim. Initial10-note external migration rejected by automatic review, then creator
 explicitly approved those10prepared notes. Applied exact body/name/prior-tag/history
 preservation with private backups, no fabricated processing revision or Bookworm edit.
-Creator explicitly authorizes immediate local/public beta.29. Prepared74files/
-3641a8b84e7fb8cd differs only in manifest version; distribution in progress at
-experiments/releases/project-tags-beta29-20261015. Main owns finish without generic
-reapproval, rollback beta.28, prior tags immutable. No native/long-context closure,
-Canvas promotion or observed-product operation. Older records below are history.
+Creator explicitly confirmed beta.29 locally/publicly after automatic publication
+review required the exact number. Released/installed/enabled74files/3641a8b84e7fb8cd,
+immutable v0.1.0-beta.29/7a59b06.77regressions/package/scope, exact-source CI,
+anonymous assets and clean/primary exact-tag full parity pass; all17other plugin
+settings and seven previous version tags unchanged. Manifest-only tested delta.
+Evidence: experiments/releases/project-tags-beta29-20261015/report.md.
+Creator reiterates public consent: propose the exact project tag once per project,
+retain yes/no in the existing project agreement, reuse that decision across notes.
+Reading/processing is not tag consent. A refusal does not block useful work or
+permit repeated offers; only an actual creator change reopens that preference.
+Shipped shared library-use/project contracts own this; authorized-write tests do
+not prove native repeated-refusal/session persistence. Rollback beta.28; no new
+model/native/long-context, Canvas, Bookworm or observer adoption claim.
+Older records below are history.
 Creator2026-10-14 approved the outstanding generated-only cleanup check with “go”.
 One fresh GPT-6.1 Sol/Medium CLI invocation of the unchanged5-file generated CSV
 package/e28337653c4e1fe8 passes actual report/notes retention before exact owned

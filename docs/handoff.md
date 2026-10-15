@@ -1,6 +1,6 @@
 # Рабочее состояние Fab
 
-## 2026-10-15 — Project tags and hidden metadata approved for beta.29
+## 2026-10-15 — Project tags and hidden metadata shipped in beta.29
 
 Creator replaces filename labels with additive project/fab,project/ujitsu and
 project/once across library research/books/articles. Existing tags/names/body
@@ -15,11 +15,20 @@ Initial external10-note migration rejected; creator explicitly approves prepared
 batch, then all10apply with exact body/name/tags/history and private backups.
 No Bookworm change. Owned test scratch retained/hash-verified and removed.
 
-Creator explicitly authorizes local/public beta.29. Prepared74files/3641a8b84e7fb8cd
-changes only manifest version from tested1dd7ee79cf901133. Main completes
-[distribution](../experiments/releases/project-tags-beta29-20261015/report.md).
-Installed/public beta.28 remains baseline until checks pass. Prior tags immutable,
-rollback beta.28. Canvas/observer/other product ownership unchanged; no native proof.
+Creator explicitly confirms local/public beta.29 after automatic review required
+the exact number. [Distribution](../experiments/releases/project-tags-beta29-20261015/report.md)
+complete: installed/enabled/public74files/3641a8b84e7fb8cd, immutable7a59b06,
+manifest-only delta from tested1dd7ee79cf901133.77regressions/package/scope,
+exact-source CI, anonymous assets and clean/primary full parity pass. All17other
+plugin settings and seven prior version tags unchanged; rollback beta.28.
+
+Public consent is project-scoped: propose the exact tag once and retain yes/no in
+the existing project agreement. Reuse permission/refusal across notes, with no
+implicit opt-in from research processing and no repeated offer after refusal.
+The shipped contracts cover this; fresh cases verify authorized mutation, not a
+native multi-turn refusal/session-persistence guarantee. Next assess actual use
+when requested, without another synthetic suite. Canvas/Bookworm/observer ownership
+unchanged; other chats need actual relevant-instruction rereading, no message sent.
 
 ## 2026-10-14 — Generated-only cleanup execution verified
 

@@ -1,6 +1,6 @@
 # Fab backlog
 
-Updated 2026-10-14. This is the only active Fab queue. Main Fab owns every entry
+Updated 2026-10-15. This is the only active Fab queue. Main Fab owns every entry
 unless another owner is named. [Frozen previous record](backlog-history-2026-10-14.md)
 retains original failures, corrections and dated states; it is historical evidence,
 not a second queue. Closing a bounded task does not assert universal maturity.
@@ -15,12 +15,16 @@ A generated plugin inherits self-contained cleanup rules. A separately authorize
 now verifies actual retention/disposal; the external-preview surface remains open.
 No new Fab runtime correction is warranted by these passing cases.
 
-**Current result:** beta.28 is published, installed and enabled. [Distribution](../experiments/releases/knowledge-beta28-20261014/report.md)
-passes exact-source CI/assets/clean-primary checks. Main next assesses actual
-continuation and research application under the concrete triggers below; there
-is no pending generic approval or need to repeat passing synthetic situations.
-Prepared Deep Research is optional deeper evidence, not a dependency or a claim
-of completed provider work. Canvas remains outside current work.
+**Current result:** beta.29 is published, installed and enabled. [Distribution](../experiments/releases/project-tags-beta29-20261015/report.md)
+verifies74files/3641a8b84e7fb8cd,77regressions, exact-source CI/assets and
+clean-primary parity. FAB-10 now uses additive project tags with names/body/old
+tags preserved and hidden technical metadata. Creator confirms a single exact-tag
+choice per project, retained in the existing agreement; refusal does not cause
+repeated prompts or block useful work. No automatic source-write permission from
+reading/processing, and no native persistence guarantee from authorized-write tests.
+Main next assesses actual use under the concrete triggers below; no pending
+generic approval or need to repeat passing synthetic situations. Prepared Deep
+Research is optional deeper evidence. Canvas remains outside current work.
 
 ## Shipped beta.28
 
@@ -84,7 +88,7 @@ The separately authorized beta.28 distribution completed those actions.
 | FAB-06 | Closed, retained | Creator Intent and separate HJ/BJ assessment corrective pass; original partial failure preserved |
 | FAB-07 | Closed, retained | Local preview run/reload and lifetime contract verified; not guaranteed background hosting |
 | FAB-08 | Closed, retained | Browser draft/retry/save recovery verified after separate cache intervention; not universal storage recovery |
-| FAB-10 | **Tag-only contract verified; beta.29 release in progress** | [New source checks](../experiments/workflow-tests/project-tags-20261015/results.md): additive project/<slug> across research/books/articles, all old tags/names/body preserved, hidden EOF history,77regressions and two fresh cases pass. Root budget overrun retained.10existing notes migrated after explicit batch approval; no native/universal YAML claim. [Distribution](../experiments/releases/project-tags-beta29-20261015/report.md) owns actual public/local completion. Prior three-case closure is historical. |
+| FAB-10 | **Tag-only contract shipped in beta.29** | [New source checks](../experiments/workflow-tests/project-tags-20261015/results.md): additive project/<slug> across research/books/articles, all old tags/names/body preserved, hidden EOF history,77regressions and two fresh cases pass. Root budget overrun retained.10existing notes migrated after explicit batch approval; no native/universal YAML claim. [Distribution](../experiments/releases/project-tags-beta29-20261015/report.md) verifies public/local completion. One project-scoped offer and durable yes/no choice remain the consent contract; native refusal/recovery is unobserved. Prior three-case closure is historical. |
 | FAB-12 | **Close original partial-route suite task** | [Twelve-turn partial pack](../experiments/workflow-tests/2026-10-12-partial-routes-results.md) complete with failures/corrections. New specific seams reuse FAB-03/11/14 instead of rerunning a full pipeline |
 | WF-01 | **Retire duplicate follow-up into FAB-03** | Physical-owner projection corrective passed with original IDs/model. Full-route miss stays historical; general semantic preservation remains FAB-03 |
 | WF-17 | **Close obsolete approval-gate follow-up; retire semantic duplicate** | Partial/full/mobile work proceeds without artificial approval stops. Broader depth/preservation uncertainty belongs to FAB-03/11/14; original missed semantics preserved |

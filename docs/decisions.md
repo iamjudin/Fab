@@ -67,3 +67,13 @@
   lengthy technical detail moves to linked docs. New authored Git/GitHub artifacts
   are English regardless of chat language; source research and frozen evidence
   keep their recorded language. Resolve missing public branding before publication.
+
+- 2026-10-15: additive project/<accepted-slug> tags supersede filename prefixes,
+  simple project-only tags and visible usage introductions for new source marking.
+  Preserve every old tag/name/body; retain useful legacy provenance only in hidden
+  EOF metadata. Public consent is one exact-tag choice per project, stored in its
+  existing agreement. Reuse yes/no across sources; reading/processing alone never
+  grants write consent. Refusal does not cause repeated prompts or block results.
+  The creator may later change that preference. No automatic whole-vault migration.
+  Beta.29 distribution and10explicitly approved migrations are recorded separately
+  in the release report; immutable previous tags remain untouched.
