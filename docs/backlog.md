@@ -44,6 +44,24 @@ is unchanged; source promotion requires a separately requested release. A focuse
 practitioner comparison is deferred to a commissioned study or a specific decision
 that needs it. No Canvas work, model rerun or blanket research replacement.
 
+## FAB-15 source intake — repository presentation and distribution, 2026-10-16
+
+Creator-returned report is accepted as qualified source: one brief, lossless65-section
+packet and conditional Delivery route. Eleven methods/559sections, previous ten
+packets unchanged. [Audit](research-audits/github-delivery-2026-10-16.md) and
+[verification](../experiments/maintenance/github-delivery-ingestion-20261016/report.md)
+record77regressions/package/scope and source78files/08eb39052f779298. Selective
+primary checks qualify tag/archive stability, immutable-release protection and
+two archived Actions. Source cases, legal assertions and missing plugin comparison
+remain limited. Intake is complete, documentation/distribution efficacy unproved.
+
+Owner main. Disposition: **next verification**, on an actual requested repository
+presentation or distribution task. Check the intended visitor's first-use path and
+current channel/tool evidence. Close only that observed binding. No compulsory
+repository rewrite, license decision, synthetic rerun or new study. Additive source
+project/fab preserves the note's name/body/prior tags. Installed/public beta.29 stays
+unchanged; promotion of this and the typography candidate requires release scope.
+
 ## Shipped beta.28
 
 Installed/public beta.28: 72 files / `3edcbb74228d3b48`, immutable tag `f04b7c8`.

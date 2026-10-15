@@ -29,6 +29,7 @@ Follow the active capability contracts linked from each brief for Fab policy.
 | Technical uncertainty changes UX, async truth or prototype simulation | [Technical dependencies](technical-ux-dependencies.md) | Promise/evidence boundary, storage/network, recovery and appropriate probes |
 | Mobile application surfaces, return context, input and platform boundaries | [Mobile structure](mobile-structure.md) | iOS/Android/mobile web triggers, current platform guidance, native/device evidence limits |
 | Visible grouping, hierarchy, Russian interface text and content adaptation | [Layout and typography](typography-layout.md) | Qualified source examples, source-support limits and structure/render/understanding boundaries |
+| Repository/README first use, distribution documentation and proportionate release setup | [Repository presentation and distribution](github-delivery.md) | Visitor roles, artifact/channel identities, dated tools, source gaps and independent intake checks |
 
 [Registry](registry.json) records provenance and audit limits. Inclusion does not
 mean every source link or claim has been verified. Current platform/product

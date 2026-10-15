@@ -18,3 +18,7 @@ Qualified layout/typography knowledge is bundled for visible grouping, interface
 text and relevant content adaptation. Its read trigger is an actual layout/text
 question. Source numerical/native claims remain qualified, not universal tokens
 or proof of improved generated layouts. No compulsory styling stage is added.
+
+Qualified repository/distribution knowledge is bundled for README first use and
+proportionate delivery setup. Dated tool/legal assertions and unverified examples
+remain source material. Delivery retains release authority and channel checks.

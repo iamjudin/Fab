@@ -1,4 +1,9 @@
 # Release mode: scope and honest readiness
+For repository/README presentation, first-use documentation or proportionate
+distribution setup, consult [repository presentation and distribution](../../../shared/methods/github-delivery.md).
+Its source cases and tool/legal claims are qualified. It does not replace release
+authority, actual channel checks or the policy below.
+
 Resolve release object, canonical source, requested version/channel/audience,
 rollback and authorization. Local install, repository visibility, push, tag,
 GitHub Release and marketplace publication are distinct outputs; no implicit

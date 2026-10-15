@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "version": "0.1.0-beta.29",
-  "fingerprint": "7469149fcb66391a",
+  "fingerprint": "08eb39052f779298",
   "channel": "beta",
   "surfaces": [
     {
@@ -92,7 +92,7 @@
       "id": "delivery",
       "default": true,
       "status": "limited",
-      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee.",
+      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Qualified repository/distribution method source added2026-10-16. Source preservation and conditional routes are structurally checked. Selected primary corrections do not validate all legal/case claims or prove documentation usefulness and distribution behavior.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
@@ -103,6 +103,11 @@
           "name": "retained bounded baseline evidence",
           "result": "pass",
           "evidence": "experiments/workflow-tests/2026-10-10-autonomous-beta-results.md"
+        },
+        {
+          "name": "qualified repository distribution source and conditional route integrity",
+          "result": "pass",
+          "evidence": "docs/research-audits/github-delivery-2026-10-16.md; experiments/maintenance/github-delivery-ingestion-20261016/report.md"
         }
       ]
     },
@@ -174,7 +179,7 @@
       "id": "research",
       "default": true,
       "status": "limited",
-      "limitations": "Cleaned briefs separate knowledge/application; all437original packet sections preserved. Reader/registry integrity and bounded knowledge/method/marking source cases pass. External source/arithmetic/layout compliance remains PARTIAL. No scientific revalidation, native rendering, general applicability, cross-project efficacy, installed-model behavior or long-context repair guarantee. Source marking uses project/<slug> without renaming, preserves all tags and hides bounded technical usage data at EOF. Common YAML only, no native Obsidian render claim. Two fresh source cases pass; root aggregate input-budget overrun is retained as process failure, not budget-compliant evidence. Qualified typography knowledge source added2026-10-16. Full source/registry/routes are structurally checked; new layout generation, native behavior and general efficacy are unobserved. Exact source numerical claims are not universal standards.",
+      "limitations": "Cleaned briefs separate knowledge/application; all437original packet sections preserved. Reader/registry integrity and bounded knowledge/method/marking source cases pass. External source/arithmetic/layout compliance remains PARTIAL. No scientific revalidation, native rendering, general applicability, cross-project efficacy, installed-model behavior or long-context repair guarantee. Source marking uses project/<slug> without renaming, preserves all tags and hides bounded technical usage data at EOF. Common YAML only, no native Obsidian render claim. Two fresh source cases pass; root aggregate input-budget overrun is retained as process failure, not budget-compliant evidence. Qualified typography knowledge source added2026-10-16. Full source/registry/routes are structurally checked; new layout generation, native behavior and general efficacy are unobserved. Exact source numerical claims are not universal standards. Qualified repository/distribution method source added2026-10-16. Source preservation and conditional routes are structurally checked. Selected primary corrections do not validate all legal/case claims or prove documentation usefulness and distribution behavior.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
@@ -225,6 +230,11 @@
           "name": "qualified typography source and conditional route integrity",
           "result": "pass",
           "evidence": "docs/research-audits/typography-2026-10-16.md; experiments/maintenance/typography-ingestion-20261016/report.md"
+        },
+        {
+          "name": "qualified repository distribution source and conditional route integrity",
+          "result": "pass",
+          "evidence": "docs/research-audits/github-delivery-2026-10-16.md; experiments/maintenance/github-delivery-ingestion-20261016/report.md"
         }
       ]
     },

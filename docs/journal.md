@@ -292,3 +292,13 @@ not a full source/native audit. Missing Birman coverage retained. No model turn,
 install, push, release, Canvas or observed-product edit. Installed/public beta.29
 remains74files/3641a8b84e7fb8cd. Evidence: research-audits/typography-2026-10-16.md
 and experiments/maintenance/typography-ingestion-20261016/report.md.
+
+## 2026-10-16 — Qualified repository/distribution research intake
+
+Creator-returned report accepted in source with brief/full65sections, conditional
+Delivery route and registry/index. Eleven methods/559sections, ten prior packets
+unchanged.77regressions/package/scope pass at78files/08eb39052f779298. Primary
+checks qualify tag/archive stability, immutable-release protection and two archived
+Actions. Source legal/case gaps retained. Single additive project/fab annotation
+preserves name/body/prior tags. No install/push/release or new model/native proof.
+Installed/public beta.29 remains74files/3641a8b84e7fb8cd. [Evidence](../experiments/maintenance/github-delivery-ingestion-20261016/report.md).

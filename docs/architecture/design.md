@@ -23,6 +23,17 @@ Shared artifact lifecycle covers task-owned scratch, verified retention and
 bounded cleanup. Plugin exports an equivalent self-contained rule to generated
 packages; this is a runtime responsibility, not a new mandatory workflow stage.
 
+## Current repository/distribution knowledge source — 2026-10-16
+
+A qualified eleventh method adds visitor-to-first-use and proportionate repository
+presentation/distribution knowledge, with65preserved sections and a conditional
+Delivery reference. Ten prior packets stay unchanged. [Audit](../research-audits/github-delivery-2026-10-16.md)
+separates source claims and selective primary corrections for archive/ref stability,
+immutable releases and archived Actions. No mandatory file template, license advice
+or automatic release follows. Source78files/08eb39052f779298 is not installed or
+released. The typography candidate remains included, current distribution beta.29
+remains74files. Earlier architecture counts below are dated history.
+
 ## Current knowledge source — 2026-10-16
 
 Qualified typography/layout intake adds a tenth method, with57preserved sections,

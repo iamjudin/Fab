@@ -1,0 +1,36 @@
+{
+  "sourceSha256": "87a5c374fcb8fafec87a26728cacaf22d028116365a456785bfcaac5799a677d",
+  "sourceBodySha256": "5eebe1c201916c25b508f4495df4db74fe274c08d005d2b608ddcf4c84d9b212",
+  "annotatedSourceSha256": "9356a0e625eab60de475ff66c45098ab622dbceead6b32b415254685d2d74131",
+  "packetSections": 65,
+  "excluded": 0,
+  "fullSourceByteCorrespondence": true,
+  "previous10PacketHashesUnchanged": true,
+  "sourceBodyNamePriorTagsPreserved": true,
+  "additiveProjectFabTag": true,
+  "idempotentSourceRecord": true,
+  "methods": 11,
+  "totalSections": 559,
+  "sourceFiles": 78,
+  "sourceFingerprint": "08eb39052f779298",
+  "regressions": {
+    "tests": 77,
+    "status": "pass",
+    "scope": "existing local unittest suite, no fresh model behavior test"
+  },
+  "package": "pass",
+  "releaseScopeGate": "pass, qualified beta source only",
+  "independentPrimaryChecks": [
+    "tag/archive stability",
+    "immutable-release protection boundaries",
+    "two named archived/unmaintained Actions"
+  ],
+  "sourceClaimVerification": "selective correctness only, not full legal/case/empirical audit",
+  "nativeRendering": "unobserved",
+  "modelBehavior": "not run",
+  "installedFiles": 74,
+  "installedFingerprint": "3641a8b84e7fb8cd",
+  "releaseInstallPush": "not performed",
+  "priorObserverFiles": "preserved, excluded from this checkpoint",
+  "harnessCorrection": "Initial verification expected an unquoted project/fab YAML item. The helper correctly quoted it. Corrected the harness expectation, no source/runtime fix required."
+}

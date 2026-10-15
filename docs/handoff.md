@@ -1,5 +1,24 @@
 # Рабочее состояние Fab
 
+## 2026-10-16 — Qualified repository/distribution knowledge accepted into source
+
+Creator returns the refined Library report for Fab. Added a qualified brief and
+lossless65-section packet, conditional Delivery release read route and index/registry.
+Eleven methods/559sections, ten prior packets unchanged.77regressions/package/scope
+pass at source78files/08eb39052f779298. No fresh model/native/first-use efficacy
+claim. Independent primary checks distinguish actual tag/archive stability,
+immutable-release protection and two archived Actions from preserved source advice.
+Unpinned cases, missing plugin comparison and legal assertions remain qualified.
+[Audit](research-audits/github-delivery-2026-10-16.md),
+[result](../experiments/maintenance/github-delivery-ingestion-20261016/report.md).
+
+Single consumed source marked project/fab under standing project permission,
+with name/body/prior tags and export preserved, hidden processing record explicitly
+source-only. Installed/public beta.29 remains74files/3641a8b84e7fb8cd. No install,
+push or release. Main next applies the brief on an actual requested repository or
+channel task. This and the typography candidate await explicit release scope.
+Pre-existing observer edits remain outside the intake checkpoint.
+
 ## 2026-10-16 — Qualified typography knowledge accepted into source
 
 Creator supplied the returned Library report for Fab. Added one operational brief

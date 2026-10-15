@@ -239,6 +239,29 @@
         },
         "boundary": "All original claims remain preserved. Source advice, examples, platform assertions and bibliography are qualified, not automatic runtime rules. Brief separates current application and one independent primary-source interpretation check."
       }
+    },
+    {
+      "id": "github-delivery",
+      "sourceTitle": "Представление и выпуск инди-продукта через GitHub",
+      "brief": "github-delivery.md",
+      "full": "github-delivery.full.json",
+      "sourceSha256": "87a5c374fcb8fafec87a26728cacaf22d028116365a456785bfcaac5799a677d",
+      "ingestedAt": "2026-10-16",
+      "validation": {
+        "structure": "lossless sections; explicit exclusions",
+        "claims": "Qualified supplied report. All source claims retained, including dated/unsupported advice. Independent intake checks cover tag/archive stability, immutable-release protection boundaries and two archived Actions. No full factual/legal/case audit or efficacy evidence."
+      },
+      "refreshTrigger": "Actual repository/distribution task exposes a contradiction, current channel/tool changes, or a consequential decision depends on an unresolved claim",
+      "readingContext": {
+        "sectionKinds": {
+          "navigation": 2,
+          "source-synthesis": 33,
+          "dated-guidance": 19,
+          "example": 4,
+          "sources": 7
+        },
+        "boundary": "All supplied source text retained. Case analyses, dated tools/legal assertions and bibliography remain qualified. Brief separates reusable practice, current Fab application and independent intake checks."
+      }
     }
   ]
 }

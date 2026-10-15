@@ -71,6 +71,20 @@ This rule does not authorize an immediate new chat, hidden delegation, a merge,
 runtime installation or publication. Keep main ownership and return criteria clear.
 
 ## Current boundary
+Creator2026-10-16 returns the refined repository/distribution report for Fab.
+Source78files/08eb39052f779298 adds qualified brief/full65sections and a conditional
+Delivery route, eleven methods/559sections. Ten prior packets remain byte-identical.
+77regressions/package/scope pass. Primary checks qualify tag/archive stability,
+immutable-release protection boundaries and two archived Actions. Unpinned cases,
+missing plugin comparison and legal claims remain nonbinding source assertions.
+Single Library source gains project/fab under standing consent, preserving name,
+body and old tags, with source-only hidden provenance. Installed/public beta.29
+stays74files/3641a8b84e7fb8cd. No fresh model/native/usability proof or install/push/
+release. Intake complete. Next actual repository/channel task assesses the relevant
+visitor path and current evidence, not a forced cleanup or generic rerun. Promotion
+of this and prior typography source remains separately requested release work.
+Evidence: experiments/maintenance/github-delivery-ingestion-20261016/report.md.
+Prior observer modifications stay outside this focused checkpoint.
 Creator2026-10-16 supplied the returned layout/typography research for Fab.
 Source intake adds qualified brief/full57sections plus conditional Wireframe,
 Prototype/Analysis routes. Ten methods/494sections, nine previous packets unchanged.

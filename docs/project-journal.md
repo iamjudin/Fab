@@ -16,6 +16,24 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-16 — Accept delivery knowledge while retaining source contradictions
+
+- Creator supplies the refined repository/distribution report. Existing Delivery
+  already owns release authority, so the useful addition is the visitor's README
+  to first-use path and proportionate support/contribution setup.
+- Added qualified brief/full65sections and a conditional Delivery route. Eleven
+  methods/559sections, ten earlier packets unchanged. Source claims remain exact.
+- Selective primary checks reject unconditional tag/archive stability, distinguish
+  immutable-release fields/protections and identify two archived Actions. Legal
+  and case-study gaps remain explicit rather than being accepted as project rules.
+- 77local regressions/package/scope pass at78files/08eb39052f779298. Single source
+  marking preserves name/body/prior tags, with a hidden source-only record. A quoted
+  YAML assertion mismatch was corrected in verification, no runtime repair needed.
+- Value: reusable distribution knowledge without inheriting outdated recipes.
+  No model/native/usefulness proof, install/push/release or other-project change.
+  Installed/public beta.29 unchanged. Main next verifies the applicable visitor
+  path and channel on actual authorized work. [Evidence](../experiments/maintenance/github-delivery-ingestion-20261016/report.md).
+
 ## 2026-10-16 — Accept layout knowledge without importing unsupported recipes
 
 - Creator returns the refined typography report for Fab. Its useful role is
