@@ -3,7 +3,7 @@ Design v0.2 accepted for bounded autonomous beta implementation on 2026-10-10.
 Target owners: cowork, research, product, wireframe, prototype, analysis,
 brainstorm, testing, plugin, delivery. Historical beta.1 had five skills:
 cowork/research/analysis/brainstorm/testing plus shared core.
-All ten skill contracts are installed in beta.29. Meaning/behavior maturity
+All ten skill contracts are installed in beta.30. Meaning/behavior maturity
 is bounded by concrete smoke evidence, not availability. Product/Wireframe use
 compatible graph adapter; Prototype/Plugin/Delivery have independent modes.
 Cowork maintains collaboration/intent/continuity; direct invocation bypasses it.
@@ -22,6 +22,15 @@ behaviour and empirical motivation effects remain separate evidence gaps. Landlo
 Shared artifact lifecycle covers task-owned scratch, verified retention and
 bounded cleanup. Plugin exports an equivalent self-contained rule to generated
 packages; this is a runtime responsibility, not a new mandatory workflow stage.
+
+## Current distribution — beta.30, 2026-10-16
+
+All three source intakes below are now published and installed, with the retained
+onboarding learning applied to first-value and conditional Product/Analysis routes.
+Twelve method pairs / 572 indexed sections, all full packets unchanged by release.
+80 files / f520267c25a53b17, exact-source CI and public/clean/primary parity pass.
+No new model/native/participant or general outcome claim. [Distribution](../../experiments/releases/knowledge-beta30-20261016/report.md).
+Earlier source-only counts/status below describe their original checkpoints.
 
 ## Current gamification knowledge source — 2026-10-16
 

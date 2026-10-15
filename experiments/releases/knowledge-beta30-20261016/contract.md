@@ -22,3 +22,7 @@ required. Retain useful assets/logs before disposing of the exact owned scratch.
 Do not send instructions to the observed product chat without explicit messaging
 authorization. Give the creator a precise rereading instruction after actual
 installation, without promising automatic host refresh.
+
+Run asset and installation probes sequentially because they update one receipt.
+If summaries conflict, reconcile retained per-probe evidence rather than rerun
+successful actions or infer a pass from the overwritten summary.

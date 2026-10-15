@@ -1,0 +1,7 @@
+{
+  "ownedScratchRemoved": true,
+  "retainedAssetsHashVerified": true,
+  "cleanCacheParityBeforeRemoval": 80,
+  "primaryCacheRetained": true,
+  "scope": "Exact task-owned release scratch only, retained evidence untouched"
+}

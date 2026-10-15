@@ -1,5 +1,28 @@
 # Рабочее состояние Fab
 
+## 2026-10-16 — Beta.30 released locally and publicly
+
+Creator requests ready knowledge and retained onboarding learning for upcoming
+first-use/incentive work. Released/installed/enabled 80 files / f520267c25a53b17,
+immutable v0.1.0-beta.30 at da2346185b11de2aa2384084fd8e3c58c930e0e5.
+Twelve brief/packet pairs / 572 sections, all full packets unchanged by release.
+Three intakes plus qualified first-value application and Product/Analysis routes.
+77 regressions/package/scope, exact-source CI, anonymous assets, clean/primary
+exact-tag full parity and settings checks pass. Eight earlier tags and all 17
+other plugin settings unchanged. Rollback beta.29.
+[Distribution](../experiments/releases/knowledge-beta30-20261016/report.md).
+
+No added model/native/participant evidence, automatic other-chat adoption or
+conversion/long-term effect claim. Original activity-led value miss/correction
+and source limits remain. Asset/clean probes both pass, receipt aggregation
+initially overwrote one summary and was reconciled from retained probe records.
+Scratch removed after retained asset/cache hash checks, primary cache kept.
+Main reread installed Cowork/first-value/gamification here. Creator can ask the
+existing product chat to verify beta.30 and reread Product/Analysis plus these
+methods while preserving accepted decisions. No message or product edit sent.
+Main next observes that actual use, not another synthetic rerun. Canvas, Bookworm
+and observer schedule unchanged.
+
 ## 2026-10-16 — Accept a bounded gamification foundation
 
 Creator asks Fab to accept the completed For the Win working note. Added an

@@ -15,16 +15,17 @@ A generated plugin inherits self-contained cleanup rules. A separately authorize
 now verifies actual retention/disposal; the external-preview surface remains open.
 No new Fab runtime correction is warranted by these passing cases.
 
-**Current result:** beta.29 is published, installed and enabled. [Distribution](../experiments/releases/project-tags-beta29-20261015/report.md)
-verifies74files/3641a8b84e7fb8cd,77regressions, exact-source CI/assets and
-clean-primary parity. FAB-10 now uses additive project tags with names/body/old
-tags preserved and hidden technical metadata. Creator confirms a single exact-tag
-choice per project, retained in the existing agreement; refusal does not cause
-repeated prompts or block useful work. No automatic source-write permission from
-reading/processing, and no native persistence guarantee from authorized-write tests.
-Main next assesses actual use under the concrete triggers below; no pending
-generic approval or need to repeat passing synthetic situations. Prepared Deep
-Research is optional deeper evidence. Canvas remains outside current work.
+**Current result:** beta.30 is published, installed and enabled:
+80 files / f520267c25a53b17, immutable v0.1.0-beta.30/da23461.
+[Distribution](../experiments/releases/knowledge-beta30-20261016/report.md)
+verifies 77 regressions/package/scope, exact-source CI, anonymous assets,
+clean/primary full parity and all 17 other plugin settings unchanged. Rollback
+beta.29. The three completed knowledge intakes below and the retained onboarding
+learning are shipped. Twelve pairs / 572 sections. No new model/native/participant
+or general efficacy claim. FAB-10 additive project tags and project-scoped consent
+remain intact. Main next assesses actual onboarding/incentive use after relevant
+installed instructions are reread, without another generic test campaign.
+Canvas stays parked and Bookworm remains creator-owned.
 
 ## FAB-15 source intake — layout and typography, 2026-10-16
 
@@ -39,8 +40,8 @@ are preserved. This extends FAB-15, not a competing typography queue.
 Owner main. Disposition: **next verification**, on actual authorized layout/text
 work. Check semantic grouping and whether a claimed defect depends on a verified
 rule, not a fixed source recipe. Close only that observed surface. The intake
-is complete, general layout improvement remains unproved. Installed/public beta.29
-is unchanged; source promotion requires a separately requested release. A focused
+is complete, general layout improvement remains unproved. The source candidate
+is now shipped in beta.30, with the same evidence limits. A focused
 practitioner comparison is deferred to a commissioned study or a specific decision
 that needs it. No Canvas work, model rerun or blanket research replacement.
 
@@ -59,8 +60,8 @@ Owner main. Disposition: **next verification**, on an actual requested repositor
 presentation or distribution task. Check the intended visitor's first-use path and
 current channel/tool evidence. Close only that observed binding. No compulsory
 repository rewrite, license decision, synthetic rerun or new study. Additive source
-project/fab preserves the note's name/body/prior tags. Installed/public beta.29 stays
-unchanged; promotion of this and the typography candidate requires release scope.
+project/fab preserves the note's name/body/prior tags. This and the typography
+candidate are now shipped in beta.30, without an efficacy claim.
 
 ## FAB-15 source intake — motivation and gamification, 2026-10-16
 
@@ -73,14 +74,14 @@ and [verification](../experiments/maintenance/gamification-ingestion-20261016/re
 record 77 regressions, source correspondence, package and scope checks at
 80 files / 972d822401ccf4fb. Selected EPUB checks are not a complete book or
 empirical evidence audit. Standing project/fab marking preserves the Library
-note's name, reader body and prior tags. Installed/public beta.29 stays unchanged.
+note's name, reader body and prior tags. The candidate is now shipped in beta.30.
 
 Owner main, FAB-15. Disposition: **next verification**, on an actual authorized
 motivation/incentive decision. Check participant benefit, actual obstacle and
 whether the proposed mechanism's effects have adequate evidence. Intake closes
 the missing-method surface only. Durable effects, population applicability and
 current consequential rules remain conditional gaps. No mandatory gamification,
-new study or model rerun. Candidate promotion requires a separate release request.
+new study or model rerun. Local/public promotion completed in beta.30.
 
 ## Shipped beta.28
 
@@ -215,11 +216,12 @@ swap into an approval ritual. Observation is sanitized in the linked report.
   Private trace references remain in ignored observer state. Main inspected the
   review artifact, not the live board. The last value correction is in dialogue.
 - Owner: main, FAB-15 first-value application. FAB-14 receives supporting dialogue
-  evidence without a separate queue. Disposition: **deferred** until an explicitly
-  requested onboarding-method revision or actual first-use task. Compare value,
-  mechanism, needed input and claim support then. Close only that application,
-  without treating discussion quality as product validation. No immediate runtime
-  edit, generic test campaign or automatic research/release follows.
+  evidence without a separate queue. Disposition: **source application shipped in
+  beta.30, next verification in actual use.** Creator explicitly requested this
+  revision/release. [Application](../experiments/maintenance/onboarding-learning-20261016/report.md)
+  adds the qualified first-value learning and conditional routes. Compare value,
+  mechanism, needed input and claim support on the next real task. Close only that
+  application, without treating discussion quality as product validation.
 
 ## Observation accumulation and batch processing — 2026-10-14
 

@@ -71,6 +71,22 @@ This rule does not authorize an immediate new chat, hidden delegation, a merge,
 runtime installation or publication. Keep main ownership and return criteria clear.
 
 ## Current boundary
+Creator2026-10-16 explicitly requests release of gamification, prior onboarding
+finding and other ready work. Released/installed/enabled beta.30:80files/
+f520267c25a53b17, immutable v0.1.0-beta.30/da23461. Three knowledge intakes and
+first-value learning/conditional Product+Analysis routes ship, twelve pairs/
+572sections.77regressions/package/scope, exact-source CI, anonymous assets,
+clean-primary exact-tag full parity pass. Eight previous tags and all17other
+plugin settings unchanged. Rollback beta.29. Installed Cowork/first-value/
+gamification reread here, no automatic observed-chat adoption or model/native/
+participant/conversion/lasting-effect claim. Receipt concurrent-summary overwrite
+corrected serially from retained successful per-probe records. Retained asset/
+cache hashes checked before exact scratch cleanup, primary cache kept. No source
+migration, Canvas/Bookworm/observer change or message/product edit in other chat.
+Next creator product work rereads actual installed beta.30 and relevant methods,
+preserving accepted decisions. Main observes actual use, no generic extra test.
+Evidence: experiments/releases/knowledge-beta30-20261016/report.md.
+Older source-only intake records below are dated history, now promoted as above.
 Creator2026-10-16 asks Fab to accept the For the Win book note. Source80files/
 972d822401ccf4fb adds selective attributed synthesis, brief and13section packet
 of that synthesis, not the full book/private digest. Twelve methods/572sections,

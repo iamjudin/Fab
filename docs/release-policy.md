@@ -1,5 +1,16 @@
 # Политика выпуска и изоляции Fab
 
+## Current distribution — 2026-10-16
+
+Installed/public beta.30: 80 files / f520267c25a53b17, immutable
+v0.1.0-beta.30/da23461. [Distribution](../experiments/releases/knowledge-beta30-20261016/report.md)
+verifies 77 regressions/package/scope, exact-source CI, anonymous assets and
+clean/primary exact-tag full parity. Eight prior version tags and all 17 other
+plugin settings unchanged. Rollback beta.29. Three knowledge modules and bounded
+onboarding application shipped. Source evidence is not empirical efficacy,
+native/long-context closure or automatic adoption by another chat. Earlier
+entries below are dated history, with Canvas/Bookworm limits unchanged.
+
 ## Current distribution — 2026-10-15
 
 Installed/public beta.29:74files/3641a8b84e7fb8cd, immutable v0.1.0-beta.29/7a59b06.

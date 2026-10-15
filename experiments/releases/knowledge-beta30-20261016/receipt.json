@@ -4,20 +4,20 @@
   "files": 80,
   "fingerprint": "f520267c25a53b17",
   "sourceCandidateFingerprint": "7c3671ceceb53767",
-  "sourceCommit": null,
+  "sourceCommit": "da2346185b11de2aa2384084fd8e3c58c930e0e5",
   "checks": {
     "regressions": 77,
     "package": "pass",
     "scope": "pass",
     "twelvePacketsUnchanged": "pass",
-    "remoteCI": "pending",
-    "assets": "pending",
-    "cleanInstall": "pending",
-    "primaryInstall": "pending",
-    "settings": "pending",
-    "immutableTags": "pending",
+    "remoteCI": "pass",
+    "assets": "pass: anonymous hashes, full80-file ZIP/source and scope parity",
+    "cleanInstall": "pass: exact tag and full80-file parity, restored from retained clean-install record after receipt aggregation overwrite",
+    "primaryInstall": "pass: exact tag and full80-file parity",
+    "settings": "pass: Fab enabled, all17 other plugin sections unchanged",
+    "immutableTags": "pass: new source SHA and all previous peeled SHAs preserved",
     "installedModelBehavior": "unobserved",
-    "cleanup": "pending"
+    "cleanup": "pass: assets/logs retained and hash-verified before exact owned scratch disposal, primary cache kept"
   },
   "limits": [
     "No new model execution or native reload claim",
@@ -30,5 +30,13 @@
     "fab-0.1.0-beta.30.zip": "3d11aab5fdaef44573be1648e2ee8ec1b6517733769a9c4c5c3d055fadeff52d",
     "release-scope.json": "6b51d48b89ee7c749fb7cd8cc21d12b92f37df2124559fadacc997e11e41b8c3",
     "SHA256SUMS.txt": "c7896deb09e176e05ebab0c9317e293bdcc1c0017a43ad07ff4b24783b99c1df"
-  }
+  },
+  "ci": "https://github.com/iamjudin/Fab/actions/runs/38821286349",
+  "publication": {
+    "url": "https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.30",
+    "isDraft": false,
+    "isPrerelease": true
+  },
+  "installedPath": "/Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.30",
+  "processCorrection": "Asset and clean-install probes both passed, but concurrent receipt writes overwrote the cleanInstall summary as pending. Main reconciled retained per-probe records serially. No install/check was fabricated or repeated."
 }

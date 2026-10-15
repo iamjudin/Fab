@@ -16,6 +16,34 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-16 — Ship knowledge where the next real task needs it
+
+**Context:** The creator's upcoming onboarding/incentive work supplies a concrete
+use for the completed book and research intakes. They request release of those
+additions and the retained wizard learning together.
+
+**Decision:** Ship beta.30 locally/publicly with three qualified knowledge modules
+and first-value application that separates desired value, demonstration and setup.
+Use conditional read routes. Preserve original observed failures and empirical
+limits rather than turning useful discussion into a proven screen template.
+
+**Confirmed:** 80 files / f520267c25a53b17, tag da23461. 77 regressions, exact-source
+CI, public asset hashes and clean/primary exact-tag full parity pass. Twelve
+packets remain unchanged. Fab enabled, all 17 other plugin settings and eight
+older tags unchanged. Source/installation/publication are independently checked.
+
+**Limits:** No new model/native/participant or lasting effect evidence. Receipt
+aggregation temporarily lost one successful summary, corrected from retained
+per-probe records. Primary runtime retained, exact owned scratch disposed after
+hash checks. No observed-product edit or message, Canvas/Bookworm unchanged.
+
+**Next useful evidence:** Actual onboarding/incentive work after that chat
+rereads installed beta.30, preserving accepted decisions. No automatic adoption
+or generic test campaign. Rollback beta.29.
+
+**Evidence:** [Distribution](../experiments/releases/knowledge-beta30-20261016/report.md),
+[onboarding application](../experiments/maintenance/onboarding-learning-20261016/report.md).
+
 ## 2026-10-16 — Add game thinking without importing the whole book
 
 **Context:** The creator supplied a working digest of Werbach and Hunter's
