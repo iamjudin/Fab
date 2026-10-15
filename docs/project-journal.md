@@ -16,6 +16,25 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-16 — Accept layout knowledge without importing unsupported recipes
+
+- Creator returns the refined typography report for Fab. Its useful role is
+  semantic grouping, visible hierarchy, Russian interface text and adaptation,
+  beyond existing mobile topology and component-governance briefs.
+- Added qualified brief/full packet with57exact source sections and conditional
+  Wireframe/Prototype/Analysis read routes. Nine earlier packets remain unchanged.
+  No research prescription becomes policy merely by being bundled.
+- Intake finds missing requested Birman coverage and incomplete claim bindings.
+  A specific W3C check separates user-spacing resilience from an authored1.5line
+  height mandate. The preserved source retains its original assertions and gaps.
+- 77regressions/package/scope pass at source76files/7469149fcb66391a. Source tag
+  project/fab is additive, technical history hidden, body/name/old tags preserved.
+  [Audit](research-audits/typography-2026-10-16.md) and
+  [result](../experiments/maintenance/typography-ingestion-20261016/report.md).
+- Installed/public beta.29 is unchanged. No fresh model, native screen proof,
+  automatic release, Canvas or observed-product edit. Next evidence comes from
+  actual authorized layout/text use, with exact consequential claims checked then.
+
 ## 2026-10-15 — Beta.29 distributed with project-scoped source consent
 
 - Creator explicitly confirms beta.29 after automatic review requires the exact

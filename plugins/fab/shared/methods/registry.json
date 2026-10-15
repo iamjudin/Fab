@@ -216,6 +216,29 @@
         },
         "boundary": "Qualified preserved source, not an independently rebuilt foundation. General knowledge, local application, examples and dated evidence remain distinct. Current Fab policy is linked separately from the brief."
       }
+    },
+    {
+      "id": "typography-layout",
+      "sourceTitle": "Вёрстка и типографика мобильных интерфейсов",
+      "brief": "typography-layout.md",
+      "full": "typography-layout.full.json",
+      "sourceSha256": "8434e28b2700736a782103ee636e6acb08335a622966192f30d85c26e59fb037",
+      "ingestedAt": "2026-10-16",
+      "validation": {
+        "structure": "lossless sections; explicit exclusions",
+        "claims": "Qualified supplied report. Exact source is preserved, including unsupported numerical/native claims and bibliography limitations. One independent W3C text-spacing interpretation check on2026-10-16 is documented in the brief, not a full fact-check or native behavior audit."
+      },
+      "refreshTrigger": "Actual layout/text contradiction, changed source/platform guidance, or a consequential decision depending on unresolved typography evidence",
+      "readingContext": {
+        "sectionKinds": {
+          "navigation": 2,
+          "source-synthesis": 25,
+          "dated-guidance": 16,
+          "example": 7,
+          "sources": 7
+        },
+        "boundary": "All original claims remain preserved. Source advice, examples, platform assertions and bibliography are qualified, not automatic runtime rules. Brief separates current application and one independent primary-source interpretation check."
+      }
     }
   ]
 }

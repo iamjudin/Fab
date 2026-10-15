@@ -28,6 +28,7 @@ Follow the active capability contracts linked from each brief for Fab policy.
 | First use, deep link, setup/identity/permission and activation | [First value](first-value.md) | Entry contexts, dependencies, skip/resume and evidence of value |
 | Technical uncertainty changes UX, async truth or prototype simulation | [Technical dependencies](technical-ux-dependencies.md) | Promise/evidence boundary, storage/network, recovery and appropriate probes |
 | Mobile application surfaces, return context, input and platform boundaries | [Mobile structure](mobile-structure.md) | iOS/Android/mobile web triggers, current platform guidance, native/device evidence limits |
+| Visible grouping, hierarchy, Russian interface text and content adaptation | [Layout and typography](typography-layout.md) | Qualified source examples, source-support limits and structure/render/understanding boundaries |
 
 [Registry](registry.json) records provenance and audit limits. Inclusion does not
 mean every source link or claim has been verified. Current platform/product

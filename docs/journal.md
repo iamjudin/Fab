@@ -280,3 +280,15 @@ creator beta.29 approval resolves automatic publication rejection before tag/Rel
 Project-scoped one-time exact-tag consent retained in the existing agreement;
 no native refusal persistence, renderer, model reload or long-context claim.
 Evidence: experiments/releases/project-tags-beta29-20261015/report.md.
+
+## 2026-10-16 — Qualified typography knowledge source checkpoint
+
+Creator-returned report accepted as a reusable method with qualified applicability.
+Brief/full57sections and conditional Wireframe/Prototype/Analysis read triggers
+added. Original source body/name/prior tags preserved with additive project/fab.
+Ten methods/494sections, old nine packets unchanged.77regressions, package and
+scope pass at source76files/7469149fcb66391a. One targeted W3C interpretation check,
+not a full source/native audit. Missing Birman coverage retained. No model turn,
+install, push, release, Canvas or observed-product edit. Installed/public beta.29
+remains74files/3641a8b84e7fb8cd. Evidence: research-audits/typography-2026-10-16.md
+and experiments/maintenance/typography-ingestion-20261016/report.md.

@@ -1,0 +1,30 @@
+{
+  "sourceSha256": "8434e28b2700736a782103ee636e6acb08335a622966192f30d85c26e59fb037",
+  "sourceBodySha256": "ef5d49d2c61be979781332e109ac491026ca52a280d904ef11d35c7bf223721b",
+  "annotatedSourceSha256": "43322fcc32d8f28c74108ebbb3b9ae780758ed0686f0a7b86864f134b67bb00b",
+  "packetSections": 57,
+  "excluded": 0,
+  "fullSourceByteCorrespondence": true,
+  "previous9PacketHashesUnchanged": true,
+  "sourceBodyNamePriorTagsPreserved": true,
+  "additiveProjectFabTag": true,
+  "idempotentSourceRecord": true,
+  "nativeRendering": "unobserved",
+  "modelBehavior": "not run",
+  "sourceClaimVerification": "one W3C interpretation only, not full validation",
+  "originalExport": "retained separately in ignored evidence",
+  "installsOrReleases": "none",
+  "sourceFiles": 76,
+  "sourceFingerprint": "7469149fcb66391a",
+  "methods": 10,
+  "totalSections": 494,
+  "regressions": {
+    "tests": 77,
+    "status": "pass",
+    "scope": "actual local existing unittest invocation in this intake; no model behavior test"
+  },
+  "package": "pass",
+  "releaseScopeGate": "pass, qualified beta source only",
+  "installedFingerprint": "3641a8b84e7fb8cd",
+  "releaseInstallPush": "not performed"
+}

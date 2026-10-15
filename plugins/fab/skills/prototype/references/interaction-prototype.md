@@ -52,6 +52,15 @@ data when repairing presentation, without inventing domain length limits.
 These are checks of selected behaviour, not a requirement to test every input
 modality, string or screen size.
 
+## Relevant text and layout adaptation
+
+When the selected interaction or revision exposes grouping, wrapping or text-size
+risk, read [layout and typography](../../../shared/methods/typography-layout.md).
+Use actual representative content and inspect the relevant rendered state. Keep
+semantic grouping, optical review and native scaling evidence distinct. Do not
+turn source numerical recipes into a universal style specification or add a
+mandatory visual-polish pass outside the requested prototype question.
+
 ## Boundaries and review
 
 Record the entry/run instructions, test conditions, actual versus simulated

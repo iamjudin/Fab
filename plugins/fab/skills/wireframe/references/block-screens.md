@@ -17,6 +17,14 @@ Ask for judgement of the perceivable candidate and substantive design choices.
 Do not force final styling before testing interaction. Keep criteria linked to
 the slice/jobs/constraints and record candidate status separately from approval.
 
+## Layout and text evidence
+
+For an actual grouping, hierarchy, typography or interface-text question read
+[layout and typography](../../../shared/methods/typography-layout.md). Relate
+spacing and text roles to meaning before choosing numbers. Preserve compatible
+content and interactions. Qualified source recipes are not mandatory native
+thresholds, and a structural check does not prove readable rendered output.
+
 ## Organisation
 
 Retain the navigational overview as the entry point while composing block

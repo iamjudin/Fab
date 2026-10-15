@@ -23,6 +23,17 @@ Shared artifact lifecycle covers task-owned scratch, verified retention and
 bounded cleanup. Plugin exports an equivalent self-contained rule to generated
 packages; this is a runtime responsibility, not a new mandatory workflow stage.
 
+## Current knowledge source — 2026-10-16
+
+Qualified typography/layout intake adds a tenth method, with57preserved sections,
+conditional Wireframe/Prototype/Analysis read triggers and a brief separating
+source practice from numerical/native claims. The prior nine packets are unchanged.
+[Audit](../research-audits/typography-2026-10-16.md) records coverage limits and a
+targeted independent W3C interpretation check. Source76files/7469149fcb66391a is
+not installed or released; current distribution remains beta.29/74files.
+No new mandatory styling stage, native guarantee or proven layout improvement.
+The previous nine-method architecture below describes that retained base.
+
 ## Current knowledge architecture
 
 Nine bundled methods have an operational brief, preserved full packet and one

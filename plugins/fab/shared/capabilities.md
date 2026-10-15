@@ -13,3 +13,8 @@ and platform limits. Its presence does not establish current native behavior or
 complete expertise. Verify consequential platform claims and investigate domain
 or gamification gaps only when relevant evidence is insufficient.
 Landlord excluded; future landing branch is independently designed, not installed.
+
+Qualified layout/typography knowledge is bundled for visible grouping, interface
+text and relevant content adaptation. Its read trigger is an actual layout/text
+question. Source numerical/native claims remain qualified, not universal tokens
+or proof of improved generated layouts. No compulsory styling stage is added.

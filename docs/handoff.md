@@ -1,5 +1,24 @@
 # Рабочее состояние Fab
 
+## 2026-10-16 — Qualified typography knowledge accepted into source
+
+Creator supplied the returned Library report for Fab. Added one operational brief
+and lossless57-section packet, conditional Wireframe/Prototype/Analysis read routes
+and method registry/index. Ten methods/494sections, other nine packets unchanged.
+77regressions/package/scope pass; source76files/7469149fcb66391a. No fresh model,
+native or general layout-quality evidence. Fixed recipes stay qualified, W3C
+text-spacing interpretation is checked separately, and missing Birman coverage
+is explicit. [Audit](research-audits/typography-2026-10-16.md),
+[result](../experiments/maintenance/typography-ingestion-20261016/report.md).
+
+Single source marked project/fab under standing consent. Name/body/prior tags
+preserved, technical record hidden at EOF and explicitly source-only. Original
+export and source revisions retained privately. No external product/Canvas edit.
+Installed/public beta.29 remains74files/3641a8b84e7fb8cd, immutable tag unchanged.
+No push/install/release request inferred. Main next uses this qualified knowledge
+on actual layout/text work, with candidate promotion only under release scope.
+Pre-existing observer changes remain outside the intake checkpoint.
+
 ## 2026-10-15 — Project tags and hidden metadata shipped in beta.29
 
 Creator replaces filename labels with additive project/fab,project/ujitsu and

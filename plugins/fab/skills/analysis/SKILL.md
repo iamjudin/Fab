@@ -18,3 +18,8 @@ network, persistence or native behavior. Don't perform redesign from read-only a
 Recommend research for missing evidence, brainstorm for alternatives, testing for
 a discriminating observable hypothesis. Don't launch these automatically.
 Stop at requested evaluation; correction is a separately authorized outcome.
+
+For a requested layout, typography or interface-text review read the qualified
+[layout and typography brief](../../shared/methods/typography-layout.md).
+Separate semantic belonging, token consistency, actual rendering and evidence
+of understanding. Preserved source numbers do not establish universal defects.

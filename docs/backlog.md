@@ -1,6 +1,6 @@
 # Fab backlog
 
-Updated 2026-10-15. This is the only active Fab queue. Main Fab owns every entry
+Updated 2026-10-16. This is the only active Fab queue. Main Fab owns every entry
 unless another owner is named. [Frozen previous record](backlog-history-2026-10-14.md)
 retains original failures, corrections and dated states; it is historical evidence,
 not a second queue. Closing a bounded task does not assert universal maturity.
@@ -25,6 +25,24 @@ reading/processing, and no native persistence guarantee from authorized-write te
 Main next assesses actual use under the concrete triggers below; no pending
 generic approval or need to repeat passing synthetic situations. Prepared Deep
 Research is optional deeper evidence. Canvas remains outside current work.
+
+## FAB-15 source intake — layout and typography, 2026-10-16
+
+Creator-returned typography knowledge is accepted in source: qualified brief,
+full57-section packet, conditional Wireframe/Prototype/Analysis routes and additive
+source marking. Nine previous packets stay unchanged. [Audit](research-audits/typography-2026-10-16.md)
+and [verification](../experiments/maintenance/typography-ingestion-20261016/report.md)
+record77regressions/package/scope, source76files/7469149fcb66391a and one targeted
+W3C interpretation check. Missing Birman coverage and numerical/native claim gaps
+are preserved. This extends FAB-15, not a competing typography queue.
+
+Owner main. Disposition: **next verification**, on actual authorized layout/text
+work. Check semantic grouping and whether a claimed defect depends on a verified
+rule, not a fixed source recipe. Close only that observed surface. The intake
+is complete, general layout improvement remains unproved. Installed/public beta.29
+is unchanged; source promotion requires a separately requested release. A focused
+practitioner comparison is deferred to a commissioned study or a specific decision
+that needs it. No Canvas work, model rerun or blanket research replacement.
 
 ## Shipped beta.28
 

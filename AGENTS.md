@@ -71,6 +71,18 @@ This rule does not authorize an immediate new chat, hidden delegation, a merge,
 runtime installation or publication. Keep main ownership and return criteria clear.
 
 ## Current boundary
+Creator2026-10-16 supplied the returned layout/typography research for Fab.
+Source intake adds qualified brief/full57sections plus conditional Wireframe,
+Prototype/Analysis routes. Ten methods/494sections, nine previous packets unchanged.
+77regressions/package/scope pass; source76files/7469149fcb66391a. No new model or
+native/layout-improvement proof. Numerical recipes stay qualified; W3C spacing
+interpretation independently checked. Missing requested Birman coverage retained.
+Source project/fab added under standing consent, name/body/prior tags preserved,
+technical EOF record source-only. Evidence: docs/research-audits/typography-2026-10-16.md
+and experiments/maintenance/typography-ingestion-20261016/report.md. Installed/public
+beta.29 remains74files/3641a8b84e7fb8cd; no install/push/release inferred. Actual
+layout/text use is the next verification trigger; Canvas remains parked. Earlier
+observer changes preserved separately. Dated records below retain prior states.
 Creator2026-10-15 replaces source renaming/visible usage sections with additive
 project/fab,project/ujitsu,project/once tags for all consumed library material.
 Preserve every old tag, filename and reader body. Shared library-usage contract
