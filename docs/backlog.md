@@ -27,6 +27,28 @@ remain intact. Main next assesses actual onboarding/incentive use after relevant
 installed instructions are reread, without another generic test campaign.
 Canvas stays parked and Bookworm remains creator-owned.
 
+## FAB-15 research refresh — agent-assisted design systems, 2026-10-16
+
+Creator requests a new independent foundation for modern design systems from a
+concept, with agent/Figma operations, atomic/compositional principles, code,
+naming and minimal sufficient scope. Existing brief is useful but lacks the
+agent operation/recovery architecture. R007 assumes separate professional roles.
+R036 dimension examples conflict with the explicitly cited DTCG2025.10 format.
+[Framing audit](research-audits/design-systems-framing-2026-10-16.md) preserves
+those specific gaps without dismissing or rewriting the prior source.
+
+Owner: the creator-approved research chat for discussion/research, main for
+canonical intake/runtime/release. [Handoff](handoffs/design-systems-research-2026-10-16.md)
+records actual thread and verified recovery, including both creator images.
+[Assignment](research-briefs/agent-design-systems-foundation.md) is prepared,
+not a completed investigation. Disposition: **next update** in the new chat on
+minimum working-system criteria and the cross-artifact research example. Later
+return requires coverage/support limits and a separate application/test proposal.
+No provider run, Figma write, runtime install or release is implied. Existing
+source/beta.30 unchanged. Do not reuse R036 as conformant2025.10 without validation.
+No independent Git work in the shared checkout until its environment/scope is
+resolved. No competing backlog or new global skill is introduced.
+
 ## FAB-15 source intake — layout and typography, 2026-10-16
 
 Creator-returned typography knowledge is accepted in source: qualified brief,

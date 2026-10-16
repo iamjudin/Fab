@@ -1,5 +1,25 @@
 # Рабочее состояние Fab
 
+## 2026-10-16 — Design-system research discussion transferred
+
+Creator requests a new independent domain foundation for agent-assisted design
+systems, concepts, atomic/compositional methods, naming, code and Figma, with
+minimal sufficient complexity. Explicitly approves separate chat/context transfer.
+Created Fab — дизайн-системы и агент, local thread
+01a14479-35aa-7b61-b852-3036552a8927 in the existing Fab project checkout.
+[Packet](handoffs/design-systems-research-2026-10-16.md),
+[assignment](research-briefs/agent-design-systems-foundation.md) and
+[selected source audit](research-audits/design-systems-framing-2026-10-16.md).
+
+Recovery turn completed, beta.30/relevant source reads and both image views
+visible, substantive understanding confirmed. Not an isolated worktree or full
+research result. Child performs no recovery edits, provider/model test or Figma
+mutation. Naming tables stay candidates, exact color/opacity values unknown.
+R036 dimension example/spec mismatch and role assumptions are retained as
+specific research gaps, not a whole-library failure. Main owns FAB-15 canonical
+intake/runtime/release. Discussion continues there around sufficient output and
+a small cross-artifact example. Source/runtime/beta.30 and Canvas remain unchanged.
+
 ## 2026-10-16 — Beta.30 released locally and publicly
 
 Creator requests ready knowledge and retained onboarding learning for upcoming

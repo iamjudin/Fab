@@ -16,6 +16,33 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-16 — Separate the new design-system foundation from release work
+
+**Context:** The creator wants a modern foundation for a concept-to-system
+workflow with AI, Figma and code. Existing research has useful general principles
+but assumes separate professional roles and lacks an agent update/recovery
+contract. A DTCG2025.10 dimension example mismatch is a concrete source gap.
+
+**Decision:** Prepare an independent assignment and selected framing audit,
+retain the creator's naming/color references privately, and propose a separate
+research discussion. The creator explicitly accepts. No architecture or naming
+migration is preselected, and atomic design is not a mandatory pipeline.
+
+**Confirmed:** Project chat Fab — дизайн-системы и агент created at local thread
+01a14479-35aa-7b61-b852-3036552a8927. Completed recovery includes actual relevant
+beta.30/packet reads and two image views, with substantive scope understanding.
+Brief/handoff links and private input hashes checked. No runtime/package delta.
+
+**Limits and next:** The assignment and recovery are not completed research,
+agent efficacy or a Figma build. This is the existing local checkout, not an
+isolated worktree. No recovery writes or independent Git work. Discuss minimum
+working-system criteria and a cross-artifact example there, returning evidence
+and application proposals to main. Main retains intake/runtime/release authority.
+
+**Evidence:** [Packet](handoffs/design-systems-research-2026-10-16.md),
+[assignment](research-briefs/agent-design-systems-foundation.md),
+[framing checks](research-audits/design-systems-framing-2026-10-16.md).
+
 ## 2026-10-16 — Ship knowledge where the next real task needs it
 
 **Context:** The creator's upcoming onboarding/incentive work supplies a concrete
