@@ -1,5 +1,25 @@
 # Рабочее состояние Fab
 
+## 2026-10-16 — Active discussion stops after an authorized relay
+
+Creator reports another dead end in the design-system chat. Initial recovery
+and requested relay succeeded, but the later substantive correction ended at
+acknowledgment instead of developing the research criterion/proposal. FAB-11
+retains the actual failure. Core already requires continuation. Main's explicit
+recovery-only first-response instruction is a possible contribution, not proof
+of internal cause or a reason to erase the valid recovery stopping boundary.
+
+Source Cowork/workstream-handoff distinguish completed subtasks from active
+work and expiration of temporary recovery restrictions. The research packet
+marks the old first-turn scope historical. The assignment now supplies an actual
+proposed working-system criterion, rather than promising to formulate one.
+[Evidence](../experiments/maintenance/handoff-continuation-20261016/report.md):
+77 regressions/package/scope and reference checks pass, 80 files /887a85ba622fd721.
+The prior product-scale correction remains included. No fresh model/native replay
+or verified repair. Installed/public beta.30 stays f520267c25a53b17. No message,
+provider launch, install/push/release. Main owns source promotion separately and
+checks actual later correction/continuation with explicit completion preserved.
+
 ## 2026-10-16 — Product scale is not limited by current examples
 
 Creator explicitly asks the design-system chat to transfer this general Fab

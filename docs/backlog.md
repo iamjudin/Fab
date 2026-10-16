@@ -138,7 +138,7 @@ The separately authorized beta.28 distribution completed those actions.
 | ID | Expected versus observed / disposition | Main's next action and closure boundary |
 |---|---|---|
 | FAB-09 | **Generated-only surface verified; preview disposal still open.** Fresh generated-package execution retains the report and useful findings before removing its exact owned scratch. Source/package/neighbor hashes pass. Earlier external SVG was left in shared temp; that failure is not closed by a CSV case. | Main verifies exact retained-output/sentinel preservation and disposal on the next authorized transient preview. No forced Canvas task or repeated passing CSV suite. [New action evidence](../experiments/workflow-tests/generated-cleanup-20261014/results.md), [original external-preview failure](../experiments/workflow-tests/partial-routes-20261012/external-preview-cleanup.json). Close only the surface actually observed. |
-| FAB-11 | **Shipped in beta.28; ordinary-use verification open.** Reports should make useful continuation concrete and execute already authorized work. Native file-status-only and dead-end misses recur; focused and sequential baseline/candidate cases pass. Confidence in the reported miss is high, causal explanation and general efficacy are unknown. | After an actual scope correction/stage report, assess goal, remaining action/owner and actual authority. Repair a reproduced owning mechanism, not another generic footer. Evidence and closure details below. No compulsory work after genuine completion. |
+| FAB-11 | **Shipped in beta.28; ordinary-use verification open.** Reports should make useful continuation concrete and execute already authorized work. Native file-status-only and dead-end misses recur; focused and sequential baseline/candidate cases pass. Confidence in the reported miss is high, causal explanation and general efficacy are unknown. | After an actual scope correction/stage report, assess goal, remaining action/owner and actual authority. Repair a reproduced owning mechanism, not another generic footer. The2026-10-16 relay recurrence and source-candidate boundary below are retained. No compulsory work after genuine completion. |
 | FAB-13 | **Verify native initiation.** Substantial work should prompt a concrete separation proposal before creator reminders. Earlier main missed this; an approved research handoff recovered, and a fresh growth fixture now proposes isolation. Proposal success is not native trigger stability. | On the next substantial independent workstream, assess initiation before a reminder. After concrete creator agreement, main creates/transfers/verifies recovery. Small completed work is the control. [Handoff](handoffs/research-readability-2026-10-13.md), [new proposal](../experiments/workflow-tests/backlog-closure-20261014/results.md). Canvas recovery stays parked. |
 | FAB-15 | **Structural fixes shipped in beta.28; output/use calibration open.** Reusable knowledge must stay separate from local decisions, readable and faithful to sources/method. V3 source/arithmetic/layout failures and an unagreed method substitution remain recorded; later corrections do not erase them. | At the next real research return/application, check coverage, source/number correspondence, reader structure and method boundary. Update only affected conclusions; source refinement is not source verification. [V3](../experiments/maintenance/research-readability-20261013/v3-results.md), [observation](../experiments/workflow-tests/2026-10-13-external-chat-observation.md), method disposition below. |
 | FAB-02 | **Deferred to actual continuity.** First recovery succeeded; the short resumed sequence preserves accepted scope and executes work. Sustained native context/recovery remains unproved. | At the next real recovery or long collaboration boundary, check accepted decisions, authority, current state and next action without a second briefing. Retain any regression under this ID. Synthetic three-turn PASS does not close continuity. |
@@ -196,6 +196,29 @@ passes on both shipped/source targets; it cannot attribute the native miss or
 establish comparative superiority. Disposition: source correction shipped in beta.28,
 actual-use verification remains open. Closure requires a usable next action under
 real authority, without an invented task or generic permission gate.
+
+## FAB-11 recurrence — relay completion ends active research discussion, 2026-10-16
+
+- Expected: substantive scope feedback and an authorized relay preserve the active
+  research goal and produce a revised criterion/proposal within discussion scope.
+- Observed: initial beta.30 recovery succeeds and the relay is executed, but the
+  correction reply ends at acknowledgment. The creator supplies a screenshot and
+  explicitly reports another dead end. Exact model/effort unknown. The completed
+  dialogue corroborates this bounded failure, not its internal cause.
+- Interpretation: core already requires continuation. Main's first-response
+  recovery-only framing may contribute to confusing a completed subtask with the
+  workstream. This remains a hypothesis, not a demonstrated causal diagnosis.
+- Repair/evidence: [source correction](../experiments/maintenance/handoff-continuation-20261016/report.md)
+  distinguishes expiring recovery boundaries and actual discussion contribution.
+  Cowork routes it. The active assignment contains the proposed working-system
+  criterion itself. Original recovery and failure both remain recorded.
+- Owner main, FAB-11. Disposition: **source candidate ready, next verification**
+  after an actual substantive correction following handoff, with genuine stop/
+  completion as the control. 77 local regressions/package/scope/reference checks
+  pass at 80 files / 887a85ba622fd721. No new model/native replay or efficacy claim.
+  Installed/public beta.30 stays unchanged. Do not close this recurrence from
+  another generic synthetic PASS or from a written rule. No message to the
+  research chat, install or public release is implied by saving the correction.
 
 ## Observation triage — selected research method, 2026-10-14
 

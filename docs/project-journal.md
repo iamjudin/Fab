@@ -16,6 +16,30 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-16 — A successful relay can still strand the workstream
+
+**Context:** After the successful research handoff, the creator corrected the
+small-product framing and requested relay to main. The actor relayed and agreed,
+then stopped without developing the remaining research discussion. The creator
+reports the dead end. Prior synthetic continuation passes did not prevent it.
+
+**Decision:** Preserve this as a FAB-11 recurrence. Inspect the concrete handoff,
+not only the generic core rule. Main's initial recovery-only instruction is valid
+for that first response, but may contribute to treating subtask completion as a
+workstream stopping point. Causality remains unproved. Clarify that boundary in
+Cowork/handoff guidance and put the missing proposed criterion in the assignment.
+
+**Confirmed:** The relay/recovery succeeded, the continued research contribution
+was absent in the reported reply. 77 regressions/package/scope/reference checks
+pass for80files/887a85ba622fd721. Original failure remains alongside correction.
+
+**Limits and next:** No fresh model/native replay or ordinary-use repair proof.
+Installed/public beta.30 unchanged. No message to the other chat, provider run,
+installation or release. Verify actual useful continuation after substantive
+feedback, preserving explicit wait/stop and genuine completed replies.
+
+**Evidence:** [Case and source correction](../experiments/maintenance/handoff-continuation-20261016/report.md).
+
 ## 2026-10-16 — Separate a bounded increment from the product-size ceiling
 
 **Context:** The design-system assignment and recovery framed the target as a

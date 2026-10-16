@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "version": "0.1.0-beta.30",
-  "fingerprint": "1f609f0e6037d74b",
+  "fingerprint": "887a85ba622fd721",
   "channel": "beta",
   "surfaces": [
     {
@@ -84,7 +84,7 @@
       "id": "cowork",
       "default": true,
       "status": "limited",
-      "limitations": "Bounded project orientation/continuation and concrete workstream proposal. Current-source stage-handoff and growth fixture pass; native recurrence is retained. Short baseline sequence also passes. No ordinary-use trigger consistency, general recovery, installed-model or long-context guarantee. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change.",
+      "limitations": "Bounded project orientation/continuation and concrete workstream proposal. Current-source stage-handoff and growth fixture pass; native recurrence is retained. Short baseline sequence also passes. No ordinary-use trigger consistency, general recovery, installed-model or long-context guarantee. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Ordinary beta.30 research correction/relay dead end recurred. Source handoff now separates recovery/subtask completion from ongoing discussion, but no fresh model/native behavior proof is added. FAB-11 remains open.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
@@ -110,6 +110,11 @@
           "name": "product-scale guidance and independent foundation scope correspondence",
           "result": "pass",
           "evidence": "experiments/maintenance/product-scale-20261016/report.md"
+        },
+        {
+          "name": "recovery boundary and active discussion source correspondence",
+          "result": "pass",
+          "evidence": "experiments/maintenance/handoff-continuation-20261016/report.md"
         }
       ]
     },

@@ -25,6 +25,27 @@ concept-to-system method and an executable validation plan. Desk research alone
 cannot establish that an agent actually built and maintained a working system.
 Label documented, inferred, locally observed and untested capabilities separately.
 
+### Proposed working-system criterion to examine
+
+Use the following as a provisional criterion to challenge through research,
+not an accepted architecture or evidence that a system has been built:
+
+- A representative interface uses linked shared definitions rather than a
+  collection of visually similar copies.
+- Tokens, component API and relevant behavior/state rules have explicit ownership
+  and a traceable relationship between Figma and implementation.
+- Relevant context, content and theme changes preserve intended semantics and
+  readable, accessible interaction instead of only changing swatches.
+- A new product area or pattern can reuse or extend the foundation coherently.
+  A bounded example does not demonstrate arbitrary product scale.
+- The agent can identify what already exists, make a bounded update and expose
+  conflicts or partial failure without silently duplicating or losing work.
+
+Compare candidate architectures against this criterion, refine it when evidence
+shows a missing or unnecessary condition, and distinguish a proposed check from
+its actual execution. The worked example serves inspection, not a product-size
+ceiling or a requirement to build an entire future system before research.
+
 ## Required research questions
 
 ### 1. What system is actually needed?

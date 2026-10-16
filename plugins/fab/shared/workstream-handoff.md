@@ -40,6 +40,16 @@ Don't call setup complete from a queued client ID. Record the actual chat/branch
 checkout and recovery result in the main project's canonical handoff/backlog;
 the feature stores only scoped evidence, not a competing global register.
 
+Distinguish a recovery-only first response from the ongoing workstream. State
+when that temporary restriction ends and which discussion or preparation remains
+authorized afterward. A completed recovery or requested relay can satisfy one
+subtask while the agreed work remains active. After substantive creator feedback,
+apply the correction and develop the next useful piece within that scope, such
+as a revised criterion or proposal for a research assignment. Naming that future
+piece is not delivering it. Keep provider dispatch, implementation and publication
+within their separate authority. An explicit wait/stop still governs, and a
+completed social exchange does not require inventing more work.
+
 The main chat retains overall goal/release ownership. The feature must not start
 implementation while its agreed input is missing, invent creator acceptance,
 message other chats without human authorization, or install/merge/publish itself.

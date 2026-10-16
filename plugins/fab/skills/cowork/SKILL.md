@@ -39,3 +39,6 @@ can skip cowork. Preserve authorized scope on handoff; unavailable routes must b
 named, not silently sent through old Wireframer/Fabricator/Landlord.
 Stop at agreed orientation/plan/handoff, or continue the authorized result with
 the relevant installed skill. Keep the creator's collaborative role/tempo intact.
+A finished relay or recovery is not by itself completion of an active discussion.
+After a substantive correction, deliver the next useful reasoning or proposal
+within its agreed scope. Respect an actual wait/stop and genuine completion.

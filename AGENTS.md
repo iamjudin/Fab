@@ -79,6 +79,16 @@ This rule does not authorize an immediate new chat, hidden delegation, a merge,
 runtime installation or publication. Keep main ownership and return criteria clear.
 
 ## Current boundary
+Creator2026-10-16 reports another FAB-11 dead end after design-system correction/
+relay. Relay and initial recovery succeed, substantive research continuation is
+absent. Shared core already requires it. Source Cowork/handoff now distinguish
+completed subtasks and expiration of recovery-only restrictions, without relaxing
+actual wait/stop or provider authority. Assignment contains actual proposed
+working-system criterion.80files/887a85ba622fd721,77regressions/package/scope pass.
+No fresh model/native repair proof. Installed/public beta.30 staysf520267c25a53b17.
+Earlier product-scale candidate retained. No message/install/push/release. Next
+actual post-handoff correction verifies useful contribution, not a generic footer.
+Evidence: experiments/maintenance/handoff-continuation-20261016/report.md.
 Creator2026-10-16 corrects the small-system research framing. General Fab scope
 is not capped by product size. Source80files/1f609f0e6037d74b changes shared/core
 only, updates design-system assignment/guidance,77regressions/package/scope pass.

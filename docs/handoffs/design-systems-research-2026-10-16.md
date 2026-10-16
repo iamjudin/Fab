@@ -70,6 +70,14 @@ before those operations. Do not claim one already exists.
 
 ## First action and return condition
 
+The recovery-only response below has already completed. It is historical scope
+for that first turn, not a standing instruction to end later discussion after
+acknowledging feedback. Current authorized work is research framing/discussion.
+Apply substantive corrections and develop a concrete criterion or assignment
+proposal in the same turn. The assignment now includes a provisional working-
+system criterion for that discussion. Provider launch, Figma mutation and runtime
+work remain outside this authority. Respect a later explicit stop or completion.
+
 Read this packet, the assignment, relevant current Research/Cowork contracts and
 the two creator images. Recover accepted direction, then give your own concise
 assessment of the research scope and the concrete next action. The user should
@@ -98,4 +106,7 @@ Recovery is complete. Research/provider execution, a practical build and
 publication remain unperformed. No new model/effort setting was selected by main,
 and no test/efficacy claim follows from this recovery. Continue the discussion
 there around a minimal working-system criterion and a small cross-artifact
-example. Main retains integration/release ownership.
+example. Main retains integration/release ownership. A later correction/relay
+turn ended after acknowledgment without developing that research work. The
+creator reports it as a new dead end under FAB-11. Preserve that failure alongside
+the successful initial recovery, with the exact causal mechanism still unproved.
