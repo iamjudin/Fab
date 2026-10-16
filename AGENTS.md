@@ -11,6 +11,14 @@
 Актуальная цель — самостоятельные полезные навыки и optional routes для
 инди-создателя; mobile focus, не обязательный greenfield pipeline.
 
+Creator clarification2026-10-16: indie is the creator context, not a product-size
+ceiling. Current small one-pass projects are examples, not the limit of Fab.
+Keep starting scope, foundation extensibility and demonstrated scale separate.
+Design-system foundations must support coherent growth from the start without
+requiring the whole future product to be implemented. Partition larger products
+when an actual case requires it and refine the workflow then. No large-product
+execution or design-system scalability is claimed validated by this clarification.
+
 ## Git/GitHub language and approved presentation
 Authored repository text, examples, new journal/handoff entries, metadata,
 commit/tag messages, PRs, issues and release notes are English. Conversation stays
@@ -71,6 +79,13 @@ This rule does not authorize an immediate new chat, hidden delegation, a merge,
 runtime installation or publication. Keep main ownership and return criteria clear.
 
 ## Current boundary
+Creator2026-10-16 corrects the small-system research framing. General Fab scope
+is not capped by product size. Source80files/1f609f0e6037d74b changes shared/core
+only, updates design-system assignment/guidance,77regressions/package/scope pass.
+Installed/public beta.30 staysf520267c25a53b17. No model/large-product/scalability
+validation or install/push/release. Main owns general boundary, existing research
+chat owns the extensible foundation. Initial scope, extensibility and demonstrated
+scale stay separate. Evidence: experiments/maintenance/product-scale-20261016/report.md.
 Creator2026-10-16 explicitly requests release of gamification, prior onboarding
 finding and other ready work. Released/installed/enabled beta.30:80files/
 f520267c25a53b17, immutable v0.1.0-beta.30/da23461. Three knowledge intakes and

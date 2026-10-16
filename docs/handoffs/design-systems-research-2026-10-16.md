@@ -17,6 +17,16 @@ The creator supplies two old naming/color tables as candidates and is open to a
 better approach. Full research must remain independent of Fab's current skills.
 Fab application and promotion happen separately after evidence review.
 
+Creator correction after recovery: small current projects and a bounded first
+implementation do not limit product size. The foundation must support coherent
+growth from the start. Keep starting scope, extensibility and demonstrated scale
+distinct. Decompose larger products when a concrete case arises and refine that
+workflow from evidence then. Do not pre-build every future feature or claim
+large-product/scalability validation. Main independently read the creator's
+clarification in completed turn `01a1448f-228b-7063-9080-24e923169794` and retained
+it in owning guidance. The draft assignment's earlier small-system framing was
+too restrictive and is corrected. The original recovery wording remains history.
+
 ## Inputs and existing knowledge
 
 - [Prepared assignment](../research-briefs/agent-design-systems-foundation.md).

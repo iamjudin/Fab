@@ -1,5 +1,24 @@
 # Рабочее состояние Fab
 
+## 2026-10-16 — Product scale is not limited by current examples
+
+Creator explicitly asks the design-system chat to transfer this general Fab
+correction. Main reads the original completed clarification. Indie describes the
+creator context, not a product-size ceiling. A bounded initial implementation,
+extensibility of its foundations and demonstrated scale are separate. Larger
+products will be partitioned and their workflow refined when a concrete case
+requires it. No mandatory enterprise process or whole-future-product build.
+
+Shared core and project guidance retain the boundary, research assignment/handoff
+remove the small-system target and include proposed growth probes. The original
+narrowing/recovery wording remains history. [Correction evidence](../experiments/maintenance/product-scale-20261016/report.md):
+77 regressions/package/scope and reference checks pass, 80-file source candidate
+1f609f0e6037d74b. Only shared/core.md changes in runtime, all method packets
+unchanged. Installed/public beta.30 stays f520267c25a53b17. No fresh model,
+large-product/scalability evidence, install/push/release or reply message to the
+research chat. Main owns source promotion on separate authority. The existing
+research chat continues its foundation discussion with this retained boundary.
+
 ## 2026-10-16 — Design-system research discussion transferred
 
 Creator requests a new independent domain foundation for agent-assisted design

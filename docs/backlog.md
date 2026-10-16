@@ -49,6 +49,16 @@ source/beta.30 unchanged. Do not reuse R036 as conformant2025.10 without validat
 No independent Git work in the shared checkout until its environment/scope is
 resolved. No competing backlog or new global skill is introduced.
 
+Creator subsequently rejects a small-product ceiling. Main corroborates the
+explicit clarification in the research chat and corrects the assignment/shared
+core. Current delivery scope, foundation extensibility and demonstrated scale
+are separate. A bounded first implementation remains valid. [Source correction](../experiments/maintenance/product-scale-20261016/report.md)
+passes 77 regressions/package/scope at 80 files / 1f609f0e6037d74b, source-only.
+Installed/public beta.30 is unchanged. Disposition: **next update** through the
+extensible foundation report, and **next verification** on an actual product
+partition/growth case. No large-product or design-system scale claim is closed.
+Main owns general guidance, the existing research chat owns that investigation.
+
 ## FAB-15 source intake — layout and typography, 2026-10-16
 
 Creator-returned typography knowledge is accepted in source: qualified brief,

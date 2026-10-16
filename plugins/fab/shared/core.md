@@ -6,6 +6,13 @@ Deliver the requested result for this person/project. A partial task can finish
 without a product pipeline. Existing accepted material is valid input. Choose
 minimum sufficient work; no ritual artifacts or mandatory sequence of skills.
 
+Indie describes the creator context, not a product-size ceiling. Keep the current
+delivery scope, foundation extensibility and demonstrated scale distinct. Start
+with a sufficient increment while preserving coherent growth of shared rules
+and systems. Partition larger products when the actual case requires it and
+refine that workflow from evidence, without imposing a premature enterprise
+process. Small examples do not validate large-product execution or scalability.
+
 ## Preserve meaning and cause
 Keep source, authority, uncertainty and acceptance distinct. An observation,
 hypothesis, creator decision and constraint are different. Preserve explicit

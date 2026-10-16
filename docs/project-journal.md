@@ -16,6 +16,31 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-16 — Separate a bounded increment from the product-size ceiling
+
+**Context:** The design-system assignment and recovery framed the target as a
+small system. The creator challenges that restriction and explicitly asks the
+research chat to transfer the correction to main. Current one-pass examples
+should not define the limit of Fab or its design-system foundation.
+
+**Decision:** Indie is creator context. Retain distinct starting scope, coherent
+foundation extensibility and demonstrated scale. Correct shared core and durable
+project guidance, plus the active assignment/handoff. Investigate growth from the
+start while partitioning larger products when the concrete case arises. Preserve
+the original framing miss and avoid a premature mandatory enterprise process.
+
+**Confirmed:** Main independently reads the creator clarification. 77 regressions,
+package/scope and affected reference checks pass. Source candidate 80 files /
+1f609f0e6037d74b, runtime delta only shared/core.md, all packets unchanged.
+
+**Limits and next:** No model/large-product/scalability test, installation, push
+or release. Installed/public beta.30 remains f520267c25a53b17. The research chat
+continues the extensible foundation work. Main verifies actual partition/growth
+behavior on a real case, with no claim of demonstrated scale from this wording.
+
+**Evidence:** [Source correction](../experiments/maintenance/product-scale-20261016/report.md),
+[research handoff](handoffs/design-systems-research-2026-10-16.md).
+
 ## 2026-10-16 — Separate the new design-system foundation from release work
 
 **Context:** The creator wants a modern foundation for a concept-to-system

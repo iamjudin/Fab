@@ -6,15 +6,19 @@ This is an independent domain foundation, not a design-system build request.
 ## Purpose and sufficient outcome
 
 Investigate how an individual creator working with an AI agent can turn a visual
-concept and product context into a small, usable and maintainable design system
-in Figma and implementation code. Cover contemporary methods, atomic design,
+concept and product context into a usable, extensible and maintainable design
+system in Figma and implementation code. Product size is not capped by the
+creator's team size or the first implementation scope. Cover contemporary methods, atomic design,
 tokens, components, platform conventions, accessibility and agent interaction.
 Do not filter the knowledge through one consuming project's current skills.
 
 Recommend a minimal sufficient approach and explain when a different architecture
 becomes preferable. Occam's razor means removing unjustified machinery while
 preserving real requirements, not omitting states, semantics or accessibility.
-The objective is reliable reuse and change, not the largest component inventory.
+The objective is reliable reuse, change and coherent growth. An initially bounded
+implementation must not impose a small-product architecture limit. Distinguish
+initial scope, designed extensibility and demonstrated scale. Investigate growth
+boundaries without assuming a whole enterprise process is required at the start.
 
 Success is a decision framework, grounded architecture comparisons, a concrete
 concept-to-system method and an executable validation plan. Desk research alone
@@ -30,8 +34,12 @@ Label documented, inferred, locally observed and untested capabilities separatel
 - Assess atomic design as a mental model. Compare useful alternatives, composition
   and feature-local patterns. Do not make atoms/molecules/organisms a compulsory
   directory structure or linear delivery pipeline.
-- Define a sufficient first system for one creator and one product. Explain
-  triggers for a shared core, extensions, multiple brands or larger governance.
+- Define a sufficient first implementation for an individual creator, including
+  a foundation that can extend to a larger product. Explain boundaries and
+  triggers for a shared core, extensions, multiple domains/brands or governance.
+- Explain how larger products can be partitioned while keeping shared semantics,
+  identities and dependencies coherent. Separate documented scaling patterns
+  from the large-product execution evidence still needed in an actual case.
 - Explain when adapting platform or existing component foundations beats
   generating a new library, and when that would erase the concept's intent.
 
@@ -146,6 +154,9 @@ creator's live file or publish a library.
 - Design bounded probes for first creation, repeated creation without duplicates,
   theme/context change, long/large text, a new component, a token rename,
   interrupted write and conflicting manual edits.
+- Include proposed growth probes such as adding a product area or shared pattern,
+  revising a shared definition across consumers and identifying when to split a
+  library. State what each actually demonstrates and where scale remains untested.
 - Define what can be checked mechanically and what needs visual or human
   judgment. Separate representative coverage from universal maturity.
 - Measure useful maintenance cost and failure recovery where evidence exists.
