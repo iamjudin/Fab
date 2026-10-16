@@ -69,3 +69,33 @@ handoff: inspect whether the actor contributes the authorized reasoning/action,
 with explicit-stop completion as the boundary. Do not call another generic
 passing fixture or a saved instruction an ordinary-use repair. Promotion and
 adoption of the source candidate require their actual scope and evidence.
+
+## Additional ordinary-use case — platform scope stops at description
+
+A later completed turn usefully distinguishes shared design-system foundations
+from web and native platform depth. It reflects the creator's equal web/mobile
+scope and retains iOS/Android differences. It ends by restating the intended
+research task, without producing the assignment, proposing an actionable
+continuation or naming a real blocking choice. The creator supplies another
+screenshot and explicitly identifies the stalled work.
+
+The creator then separately commands preparation of the requests. The actor
+starts three drafts: shared foundation, web application and native iOS/Android
+application. At inspection this action is in progress, not complete. That is a
+creator-triggered recovery, not autonomous continuation and not proof the source
+candidate fixed the issue. Exact model/effort and current candidate adoption
+remain unestablished. Installed/public beta.30 is still unchanged.
+
+This second case is not a relay-only failure. It weakens a narrow explanation
+based solely on recovery/relay framing. Keep the earlier hypothesis as partial
+and unproved. Do not label another generic instruction edit or the77technical
+regressions as behavioral repair. The material regression input is now a
+substantive platform-scope clarification in an active research discussion, with
+no new recovery/relay request. A useful response must contribute the authorized
+assignment work or expose a consequential choice, while preserving separate
+provider/implementation authority. No new model replay is launched here.
+
+The active research chat owns the already requested prompt drafting. Main does
+not create a second competing draft, edit its in-progress outputs or message it.
+Main retains the additional failure/recovery evidence under FAB-11 and checks
+completion/readiness through status tools without turning progress into a PASS.

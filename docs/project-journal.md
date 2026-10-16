@@ -16,6 +16,24 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-16 — Scope discussion stalls without a relay subtask
+
+**Observed:** Another creator-reported research turn usefully separates shared,
+web and native concerns, then stops at the task description. The creator must
+explicitly request prompt preparation before drafting starts. The initial scope
+contribution is useful, but it does not erase the continuation failure.
+
+**Interpretation:** This extends FAB-11 beyond relay completion. The first-response
+recovery restriction is an insufficient general explanation. Source-only fixes
+have not been adopted or behaviorally verified in that chat. Current beta.30
+and previous synthetic successes do not establish the desired behavior here.
+
+**Action and next:** Retain the original failure and creator-triggered recovery.
+The research chat is already drafting its three requests and owns those outputs.
+Main avoids duplicate drafts/concurrent edits, checks the actual result and
+retains the new contextual regression boundary. No new runtime rule, model launch,
+77-test rerun, installation or release. [Evidence](../experiments/maintenance/handoff-continuation-20261016/report.md#additional-ordinary-use-case--platform-scope-stops-at-description).
+
 ## 2026-10-16 — A successful relay can still strand the workstream
 
 **Context:** After the successful research handoff, the creator corrected the

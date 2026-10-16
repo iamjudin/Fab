@@ -220,6 +220,16 @@ real authority, without an invented task or generic permission gate.
   another generic synthetic PASS or from a written rule. No message to the
   research chat, install or public release is implied by saving the correction.
 
+Additional creator-reported platform-scope case: a later beta.30 discussion gives
+useful shared/web/native framing but ends by restating the research task, with no
+concrete next action or blocking choice. The creator's separate prepare-requests
+command starts drafting. This is intervention/recovery, not verified autonomous
+continuation or source-candidate adoption. [Same evidence owner](../experiments/maintenance/handoff-continuation-20261016/report.md#additional-ordinary-use-case--platform-scope-stops-at-description).
+The failure is broader than relay completion, so recovery-only framing is not a
+sufficient general diagnosis. The existing research chat owns its now-active
+three-request drafting. Main retains the failure and reviews actual readiness,
+without a duplicate draft, new generic rule, model launch or technical-test rerun.
+
 ## Observation triage — selected research method, 2026-10-14
 
 FAB-15 owns the observed selected-method/access-blocked miss. A disclosed web
