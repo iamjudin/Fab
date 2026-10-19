@@ -1,6 +1,6 @@
 # Fab backlog
 
-Updated 2026-10-16. This is the only active Fab queue. Main Fab owns every entry
+Updated 2026-10-19. This is the only active Fab queue. Main Fab owns every entry
 unless another owner is named. [Frozen previous record](backlog-history-2026-10-14.md)
 retains original failures, corrections and dated states; it is historical evidence,
 not a second queue. Closing a bounded task does not assert universal maturity.
@@ -26,6 +26,25 @@ or general efficacy claim. FAB-10 additive project tags and project-scoped conse
 remain intact. Main next assesses actual onboarding/incentive use after relevant
 installed instructions are reread, without another generic test campaign.
 Canvas stays parked and Bookworm remains creator-owned.
+
+## Landing-page capability — separate workstream, 2026-10-19
+
+Creator explicitly requests a neighboring chat and a separate branch for landing
+pages within Fab. Selected historical Landlord knowledge/assets may be assessed
+as a base. This supersedes the blanket archive prohibition for this bounded
+purpose, without adopting its workflow, mandatory stages, gates or plugin identity.
+The archive remains read-only. This is new capability exploration, not a revival
+of the retired runtime or an automatic eleventh skill.
+
+Owner: **Fab — лендинги** for the scoped assessment/proposal and later agreed
+branch work. Main owns canonical scope, shared architecture, integration and
+release. [Handoff](handoffs/landing-pages-2026-10-19.md) records sources, actual
+environment and recovery. Disposition: **next update**, a concrete reuse/adapt/
+reject/investigate map and a recommended useful increment with acceptance checks.
+Close the handoff only after real context recovery and useful contribution.
+Implementation acceptance and actual landing quality remain separate boundaries.
+No site/hosting platform, Figma write, merge, installation or release is inferred.
+Design-system research remains independent and Canvas stays parked.
 
 ## FAB-15 research refresh — agent-assisted design systems, 2026-10-16
 

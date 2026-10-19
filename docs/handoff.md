@@ -1,5 +1,29 @@
 # Рабочее состояние Fab
 
+## 2026-10-19 — Landing workstream created in an isolated branch
+
+Creator explicitly requests a neighboring landing-page chat and separate branch.
+Historical Landlord knowledge/assets may now be selectively assessed as a base.
+The new instruction overrides the blanket archive prohibition for this bounded
+purpose, while Fab principles govern the work and no old workflow/gates become
+active. AGENTS and the [packet](handoffs/landing-pages-2026-10-19.md) retain this
+scope. The archive stays read-only.
+
+Created **Fab — лендинги**, local thread `01a15396-8257-77a1-bb95-18263270b42b`,
+isolated checkout `/Users/iamjudin/.codex/worktrees/4c7e/Fab`, branch
+`codex/fab-landing-pages`, starting at `3ecbbd4`. Actual Git and visible recovery
+confirm the environment and substantive reuse assessment, not just a reading
+receipt. The first proposal is a landing profile across existing skills, with
+content preservation/quality criteria reused selectively and the rigid template
+workflow rejected. Architecture acceptance and implementation remain open there.
+Main owns canonical backlog, shared integration, installation and release.
+
+No runtime change, merge, installation or publication. Installed/public beta.30
+and the unpublished 80-file source candidate remain unchanged. Design-system
+research files are preserved, Canvas stays parked and the observer is untouched.
+Next useful work is the bounded capability proposal in the new chat, followed by
+creator discussion of any consequential scope choice.
+
 ## 2026-10-16 — Active discussion stops after an authorized relay
 
 Creator reports another dead end in the design-system chat. Initial recovery

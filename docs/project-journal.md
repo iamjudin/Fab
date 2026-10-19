@@ -16,6 +16,28 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-19 — Reuse legacy landing knowledge without reviving its workflow
+
+**Context:** Creator requests a separate landing-page branch/chat within Fab and
+explicitly permits using historical Landlord work as a base, while rejecting
+workflow transplantation. That instruction supersedes the old blanket archive
+ban only for this bounded assessment.
+
+**Decision:** Retain Fab ownership/principles and read-only archive status. Pass
+located sources, exact main/runtime distinction, accepted boundaries and a first
+useful assessment goal to an isolated user-owned chat. Require an actual reuse
+proposal rather than ending the first turn at recovery acknowledgment.
+
+**Observed result:** **Fab — лендинги** is created in its own checkout and
+`codex/fab-landing-pages` branch from `3ecbbd4`. Visible recovery develops a
+content-preservation/quality reuse proposal and rejects wholesale template and
+workflow adoption. This is initial substantive recovery, not implementation,
+accepted architecture or evidence of general handoff reliability. Main retains
+integration/release ownership. [Packet and evidence references](handoffs/landing-pages-2026-10-19.md).
+
+**Next:** Discuss the concrete landing capability proposal in that chat. Runtime,
+installed/public beta.30, other research and parked Canvas remain unchanged.
+
 ## 2026-10-16 — Scope discussion stalls without a relay subtask
 
 **Observed:** Another creator-reported research turn usefully separates shared,

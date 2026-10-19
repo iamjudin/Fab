@@ -54,7 +54,13 @@ tool call, полный чат или копия backlog. Publicator story packe
 Experimental branch codex/; не merge/main/public release без явного scope.
 Runtime package plugins/fab, docs не скрытый обязательный runtime источник.
 Устанавливаемая beta самодостаточна, Brain/old cache не prerequisites.
-Старый Landlord исключён. Не читать/использовать его. Старые тестовые продукты
+Creator2026-10-19 authorizes a separate landing-page workstream to inspect and
+selectively reuse historical Landlord material as evidence/assets. This replaces
+the earlier blanket no-read/no-use rule for that bounded purpose. Landlord is
+not an active Fab route. Do not import its mandatory workflow, lifecycle hooks,
+approval gates or plugin identity. Archived sources stay read-only. Build the
+landing capability under Fab principles in its separate chat/branch, with main
+owning integration and release. Старые тестовые продукты
 не становятся целью Fab. Старый paused sprng heartbeat не возобновлять.
 Основной рабочий чат — текущий чат в Lab/Fab с 2026-10-11; дальше работаем здесь.
 FAB-02: первое восстановление контекста успешно; устойчивая непрерывность открыта.
