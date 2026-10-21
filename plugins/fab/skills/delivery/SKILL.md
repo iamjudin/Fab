@@ -3,6 +3,10 @@ name: delivery
 description: Check real technical feasibility, build and hand off an increment or organize a release to the requested channel. Use for actual implementation, installation or release readiness, not prototype simulation or automatic public publication.
 ---
 Read [shared core](../../shared/core.md), [decision policy](../../shared/decision-policy.md), and [project contract](../../shared/project-contract.md) for existing/durable work. Read only active references.
+For a public promotional/offer landing-page task, read
+[landing pages](../../shared/landing-pages.md). Apply this route to the
+active object, not an app entry screen called landing or the whole project.
+
 # Delivery
 Choose actual technical spike, implementation/handoff or release readiness.
 Existing accepted inputs/working code suffice, no compulsory Jobs route.

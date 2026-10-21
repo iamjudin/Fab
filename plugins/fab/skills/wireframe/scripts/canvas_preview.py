@@ -43,15 +43,40 @@ def label_lines(node: dict) -> list[str]:
              else node.get('text') or ('↗ ' + str(node.get('file', ''))))
     if node.get('type') == 'group':
         return [textwrap.shorten(value, width=max(12, int(float(node['width']) / 13)), placeholder='…')] if value else []
-    lines: list[str] = []
-    max_chars = max(12, int(float(node['width']) / 13))
+    return [row['text'] for row in text_layout(node) if row['kind'] != 'divider']
+
+
+def text_layout(node: dict) -> list[dict]:
+    """Small Markdown fallback, not an Obsidian renderer or font-fit proof."""
+    value = node.get('text') or ('↗ ' + str(node.get('file', '')))
+    rows, y, after_heading = [], 0, False
     for raw in value.splitlines():
-        clean = raw.lstrip('# ').strip()
+        clean = raw.strip()
         if not clean:
+            y += 6
             continue
-        lines.extend(textwrap.wrap(clean, width=max_chars, break_long_words=True)
-                     or [clean])
-    return lines
+        if re.fullmatch(r'(?:-{3,}|\*{3,}|_{3,})', clean):
+            y += 8; rows.append(dict(kind='divider', text='', y=y, size=0, indent=0)); y += 6
+            after_heading = False
+            continue
+        heading = bool(re.match(r'^#{1,6}\s+', clean))
+        clean = re.sub(r'^#{1,6}\s+', '', clean)
+        clean = re.sub(r'!\[\[[^\]]+\]\]', '■', clean)
+        clean = re.sub(r'\[\[([^\]|]+)(?:\|([^\]]+))?\]\]', lambda m: m[2] or m[1], clean)
+        clean = re.sub(r'\[([^\]]+)\]\([^\)]+\)', r'\1', clean)
+        clean = clean.replace('**', '').replace('`', '')
+        bullet = bool(re.match(r'^[-*+]\s+', clean))
+        if bullet: clean = '• ' + re.sub(r'^[-*+]\s+', '', clean)
+        metadata = after_heading and (' · ' in clean or bool(re.match(r'^[A-Z]+[-\d]', clean)))
+        size = 24 if heading else 14 if metadata else 18
+        kind = 'heading' if heading else 'metadata' if metadata else 'body'
+        columns = max(8, int((float(node['width']) - 32 - (14 if bullet else 0)) / (size * .6)))
+        wrapped = textwrap.wrap(clean, width=columns, break_long_words=True) or [clean]
+        for i, line in enumerate(wrapped):
+            y += size + 4
+            rows.append(dict(kind=kind, text=line, y=y, size=size, indent=14 if bullet and i else 0))
+        after_heading = heading
+    return rows
 
 
 def contains(group: dict, child: dict) -> bool:
@@ -76,8 +101,8 @@ def layout_warnings(canvas: dict) -> list[str]:
             if right > left and bottom > top:
                 if not contains(a, b) and not contains(b, a):
                     warnings.append(f'overlapping nodes: {a["id"]}, {b["id"]}')
-        if a.get('type') != 'group' and (node_lines := label_lines(a)):
-            if 32 + 25 * (len(node_lines) - 1) > float(a['height']) - 10:
+        if a.get('type') != 'group' and (rows := text_layout(a)):
+            if rows[-1]['y'] + 8 > float(a['height']) - 10:
                 warnings.append(f'text may overflow node: {a["id"]}')
     # Obsidian places group titles above the frame, not inside it.
     for group in nodes:
@@ -228,13 +253,15 @@ def render(canvas: dict) -> str:
         fill = node_fill(node, '#f1f1f3' if is_file else '#fff')
         parts.append(f'<rect x="{x:g}" y="{y:g}" width="{w:g}" height="{h:g}" '
                      f'rx="12" fill="{fill}" stroke="#59616d" stroke-width="3"/>')
-        for index, line in enumerate(label_lines(node)):
-            text_y = y + 32 + index * 25
-            if text_y > y + h - 10:
-                break
-            parts.append(f'<text x="{x+16:g}" y="{text_y:g}" font-size="21" '
+        for row in text_layout(node):
+            text_y = y + 8 + row['y']
+            if row['kind'] == 'divider':
+                parts.append(f'<line x1="{x+16:g}" y1="{text_y:g}" x2="{x+w-16:g}" y2="{text_y:g}" stroke="#a4a9b0"/>')
+                continue
+            weight = 'bold' if row['kind'] == 'heading' else 'normal'
+            parts.append(f'<text x="{x+16+row["indent"]:g}" y="{text_y:g}" font-size="{row["size"]}" font-weight="{weight}" '
                          f'font-family="Arial, sans-serif" fill="#1d2227">'
-                         f'{html.escape(line)}</text>')
+                         f'{html.escape(row["text"])}</text>')
     parts.append('</svg>')
     return '\n'.join(parts) + '\n'
 
@@ -311,12 +338,14 @@ def render_png(canvas: dict, output: Path) -> None:
         fill = node_fill(node, '#f1f1f3' if node.get('type') == 'file' else '#fff')
         draw.rounded_rectangle((p1, p2), radius=14, fill=fill,
                                outline='#59616d', width=4)
-        for index, line in enumerate(label_lines(node)):
-            text_y = p1[1] + round((23 + 25 * index) * scale)
-            if text_y > p2[1] - round(12 * scale):
-                break
-            draw.text((p1[0]+round(15*scale), text_y), line,
-                      font=font, fill='#1d2227')
+        for row in text_layout(node):
+            text_y = p1[1] + round((8 + row['y']) * scale)
+            if row['kind'] == 'divider':
+                draw.line([(p1[0]+round(16*scale), text_y), (p2[0]-round(16*scale), text_y)], fill='#a4a9b0', width=1)
+                continue
+            sized_font = ImageFont.truetype(str(font_path), round(row['size'] * scale)) if font_path.exists() else font
+            draw.text((p1[0]+round((16+row['indent'])*scale), text_y), row['text'],
+                      font=sized_font, fill='#1d2227', anchor='ls')
     image.save(output)
 
 

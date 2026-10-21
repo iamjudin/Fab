@@ -85,6 +85,124 @@ This rule does not authorize an immediate new chat, hidden delegation, a merge,
 runtime installation or publication. Keep main ownership and return criteria clear.
 
 ## Current boundary
+Creator2026-10-21 explicitly requests integrating the current ready package into
+one new version and publishing it without waiting for organic tests. This lifts
+the previous no-Git/install/publication boundary for integrated beta.31 only:
+landing, opt-in Canvas and prior core/Cowork corrections. No whole experimental
+branch merge, separate research or observer edit promotion. Prepared89files/
+f3e103bee3d92c90,91regressions/package/scope pass; version and stale capability inventory
+are the only release-preparation runtime deltas. Exact local landing rollback
+retained. Main owns Git checkpoint, CI, public tag/Release and clean/primary
+versioned install verification. These distribution steps are pending until
+recorded in experiments/releases/integrated-beta31-20261021/report.md. Earlier
+source failures/timeouts/overruns and native/organic limits remain; no new model
+suite or universal core readiness claim. Dated restrictions below are history.
+Creator2026-10-21 approves the isolated actual artifact workflow. One configured
+GPT-6.1 Sol/Medium turn on unchanged source89/b782cf208ae92998 creates five maps /
+entry, validates and fixes missing extensions/unsafe cleanup metadata, preserving
+initial failures. Actual two-caller client creation, returns, child Save/parent
+cancel, selector continuation and retries pass root artifact review. Root fallback
+overviews/details have no observed clipping/card collisions; actor missing Pillow /
+SVG viewing disclosed. No native/storage/user or general reliability proof.
+537435input/501376cached/12861output,409.87seconds.400kinput forecast exceeded137435;
+retain planning overrun, no second model launch. Sandbox sentinel/source/input/
+installed/config/HEAD/index checks pass.58files/seven revisions retained; exact
+scratch removed. Source/installed landing81/ffc900d30331279b/public unchanged.
+Main next proposes supported local integrated snapshot with landing/rollback;
+installation scope still needed. No source edits/install/Git/publication. Old
+misses/timeout/unrun DV04 retained. Evidence:
+experiments/maintenance/canvas-artifact-workflow-20261021/report.md.
+Creator2026-10-21 explicitly approves the up-to-four diverse read-only tests.
+Three configured GPT-6.1 Sol/Medium invocations execute on source89/b782cf208ae92998:
+DV01 Product framing PASS; DV02 one-screen timer PARTIAL (behavior/actual reset
+path/short actions pass, original reset-result text overflows in fallback);
+DV03 workshop180-second timeout, no complete bundle/usage. No reuse/commit verdict.
+Campaign stops per timeout/unknown-usage rule; DV04 not run, no retry/fourth launch.
+Two completed-turn subtotal202825input/160384cached/3644output, full tokens unknown;
+307.81summed seconds. Original failures/refusal/all91inputs per case retained and
+hash-verified; three exact scratch directories removed. Source/installed landing
+81/ffc900d30331279b/HEAD/index unchanged. Read-only source selection/first output
+does not test the actual writable file/check/correction loop. Main proposes that
+isolated workflow before adding source policy; new execution/budget scope needed,
+no reuse of unused slot. No source edits/install/Git/publication. Evidence:
+experiments/maintenance/canvas-entry-transfer-20261021/report.md; next-step.md there.
+Earlier pending/blocked records below preserve dated history, not current asks.
+Creator2026-10-21 asks for varied inputs through integrated Fab, challenging the
+reused messenger scenario. Main verifies former eight cases are authored tabletop,
+not fresh runtime. Prepared matrix/four fresh contexts: raw plant idea, one-screen
+timer, multi-root workshop/actual client reuse, exact jewelry-map scoped patch.
+Actual skill-description discovery, no forced Cowork/Wireframe preload. Source89/
+b782cf208ae92998 frozen. First read-only GPT-6.1 Sol/Medium launch rejected before
+execution: exact new campaign/source-transfer consent needed, former one-test
+consents consumed. No bypass/new model usage/workspace. Next obtain one up-to-four
+case consent,180seconds per case,320kinput/30koutput summed forecast, review after
+each case. No source repair/install/Git/publication inferred. Known failures stay.
+Installed landing81/ffc900d30331279b and HEAD/index unchanged. Evidence:
+experiments/maintenance/canvas-entry-transfer-20261021/report.md.
+Creator2026-10-21 explicitly approves the new requirements-only generation test.
+One configured GPT-6.1 Sol/Medium turn generates10nodes/9edges, actual method
+discovery, accepted behavior and inspected fallback fit pass. Overall PARTIAL:
+local recovery ends at a documentary A28 reference without edge/native binding
+to actual A28; action A28 adds a body despite compact-action rule. Behavior stays
+in text. Existing method already requires both; no general repair proof claimed.
+55,917input/45,056cached/3,297output,71.81seconds within160k/8kforecast/180seconds.
+One consent consumed; no second launch/source edits/install/Git/publication.
+Original failure/rejection and91inputs retained/hash-checked, exact scratch gone.
+Source89/b782cf208ae92998 and installed landing81/ffc900d30331279b unchanged.
+Main next proposes focused preflight repair before installation; actual repair /
+installation scope remains to obtain. Native/sustained quality stays open.
+Evidence: experiments/maintenance/canvas-generation-20261021/report.md.
+Prior blocked-state and next-install records below retain dated original scope.
+Creator2026-10-21 asks for useful extra testing before real use. Main prepares
+one requirements-only Canvas generation check using the same local-search
+behavior, not the already-conformant map. Source89/b782cf208ae92998 unchanged.
+Automatic review blocks launch before execution: prior one-test consent consumed,
+exact new source/requirements transfer consent to GPT-6.1 Sol/Medium required.
+No bypass, model usage or temporary workspace. Next obtain exact consent, run
+one read-only turn/max180seconds and inspect unmodified generation/paths/preview.
+No installation/Git/publication scope. Installed landing81/ffc900d30331279b intact.
+Evidence: experiments/maintenance/canvas-generation-20261021/report.md.
+Earlier next-install statements below are superseded by this generation check.
+Creator2026-10-21 approves the specified one-turn read-only CLI source/map test.
+One configured GPT-6.1 Sol/Medium turn reads the actual Wireframe/screen-flow/helper
+and returns a valid seven-ID presentation spec. Root application to a retained
+copy is byte-identical: the input already conforms. Source discovery/idempotent
+spec validity verified, no fresh-generation/native/installed proof. Source89files/
+b782cf208ae92998 unchanged.111037input/95232cached/650output,23.24seconds exceeds
+90000input forecast; retain overrun and original rejection, no second launch.
+Latest scope explicitly excludes installation/Git/publication. Main next proposes
+a supported local snapshot update retaining landing and exact rollback; actual
+installation scope remains to obtain. Installed landing81/ffc900d30331279b intact.
+Evidence: experiments/maintenance/canvas-integration-20261020/report.md.
+Prior blocked-state record below is history, not an unresolved transfer approval.
+Creator2026-10-20 sends the accepted Canvas method for main integration, lifting
+the parked condition for this bounded source task. Wireframe/ref conflicts are
+reconciled with optional NAV/SC/MOD, actual functional reuse and distinct
+composition/flow palettes. Bounded reversible helper, six swatches and fallback
+text fixes: source89files/b782cf208ae92998,91regressions/package pass. Existing
+map semantics/geometry preserved; initial preview failures and corrections
+retained. No native/fresh-model/old-eight-module reuse proof. Automatic review
+rejects the planned single read-only CLI model check before execution, requiring
+explicit source/map transfer permission to that named recipient. No bypass or
+model usage. Next ask for that exact scope, then check actual discovery/edit if
+approved. Installed local landing81files/ffc900d30331279b unchanged. No new
+install, Git staging/commit/merge/push or public release authorized by this
+transfer. Observer/research/landing source preserved, main retains ownership.
+Evidence: experiments/maintenance/canvas-integration-20261020/report.md.
+Creator2026-10-19 requests local landing-profile use and transfer from the landing
+chat, explicitly withholding Git publication. Main applies exact7-path patch,
+source81files/bf03e852ec3f6831, and installs/enables frozen local identity
+0.1.0-beta.30+local.landing.20261019,81files/ffc900d30331279b. Supported CLI,
+77regressions, full snapshot/installed parity and17other plugin settings pass.
+Installer prunes old cache; retained offline rollback matches public beta.30
+80files/f520267c25a53b17. Public release unchanged, gate ineligible. No staging,
+commit/push/tag/Git merge/Release until creator changes this boundary. Prior
+unpublished core/handoff corrections are included in the baseline. Installed
+routes/reference reread here, no fresh model/native discovery or real landing
+proof. No actual target project/code yet; verify appropriate profile discovery,
+simple stack, fidelity and rendered quality on the next real creator project.
+Evidence: experiments/maintenance/landing-local-20261019/report.md.
+Older source-only/install statements below retain their dated boundaries.
 Creator2026-10-16 reports another FAB-11 dead end after design-system correction/
 relay. Relay and initial recovery succeed, substantive research continuation is
 absent. Shared core already requires it. Source Cowork/handoff now distinguish

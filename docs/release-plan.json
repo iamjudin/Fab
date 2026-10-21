@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "version": "0.1.0-beta.30",
-  "fingerprint": "887a85ba622fd721",
+  "version": "0.1.0-beta.31",
+  "fingerprint": "f3e103bee3d92c90",
   "channel": "beta",
   "surfaces": [
     {
       "id": "analysis",
       "default": true,
       "status": "limited",
-      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Source marking uses project/<slug> without renaming, preserves all tags and hides bounded technical usage data at EOF. Common YAML only, no native Obsidian render claim. Two fresh source cases pass; root aggregate input-budget overrun is retained as process failure, not budget-compliant evidence. Qualified typography knowledge source added2026-10-16. Full source/registry/routes are structurally checked; new layout generation, native behavior and general efficacy are unobserved. Exact source numerical claims are not universal standards. Selective attributed For the Win synthesis added 2026-10-16. Packet preserves the authored synthesis, not the full book/private digest. Structural/source checks only, no empirical motivation or longitudinal effect validation. Beta.30 first-value application learning separates value, demonstration and setup, with conditional Product/Analysis routes. Source/package review only, no new model/native/conversion evidence. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change.",
+      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Source marking uses project/<slug> without renaming, preserves all tags and hides bounded technical usage data at EOF. Common YAML only, no native Obsidian render claim. Two fresh source cases pass; root aggregate input-budget overrun is retained as process failure, not budget-compliant evidence. Qualified typography knowledge source added2026-10-16. Full source/registry/routes are structurally checked; new layout generation, native behavior and general efficacy are unobserved. Exact source numerical claims are not universal standards. Selective attributed For the Win synthesis added 2026-10-16. Packet preserves the authored synthesis, not the full book/private digest. Structural/source checks only, no empirical motivation or longitudinal effect validation. Beta.30 first-value application learning separates value, demonstration and setup, with conditional Product/Analysis routes. Source/package review only, no new model/native/conversion evidence. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Conditional landing profile is bundled; exact final profile has structural/local-install evidence only. Real project discovery, narrow/wide visual quality and conversion remain unverified.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
@@ -44,6 +44,16 @@
           "name": "product-scale guidance and independent foundation scope correspondence",
           "result": "pass",
           "evidence": "experiments/maintenance/product-scale-20261016/report.md"
+        },
+        {
+          "name": "beta.31 exact package regression and reference integrity",
+          "result": "pass",
+          "evidence": "experiments/releases/integrated-beta31-20261021/report.md; scripts/check_package.py; tests/"
+        },
+        {
+          "name": "conditional landing routes and profile correspondence",
+          "result": "pass",
+          "evidence": "experiments/maintenance/landing-local-20261019/report.md"
         }
       ]
     },
@@ -77,6 +87,11 @@
           "name": "product-scale guidance and independent foundation scope correspondence",
           "result": "pass",
           "evidence": "experiments/maintenance/product-scale-20261016/report.md"
+        },
+        {
+          "name": "beta.31 exact package regression and reference integrity",
+          "result": "pass",
+          "evidence": "experiments/releases/integrated-beta31-20261021/report.md; scripts/check_package.py; tests/"
         }
       ]
     },
@@ -84,7 +99,7 @@
       "id": "cowork",
       "default": true,
       "status": "limited",
-      "limitations": "Bounded project orientation/continuation and concrete workstream proposal. Current-source stage-handoff and growth fixture pass; native recurrence is retained. Short baseline sequence also passes. No ordinary-use trigger consistency, general recovery, installed-model or long-context guarantee. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Ordinary beta.30 research correction/relay dead end recurred. Source handoff now separates recovery/subtask completion from ongoing discussion, but no fresh model/native behavior proof is added. FAB-11 remains open.",
+      "limitations": "Bounded project orientation/continuation and concrete workstream proposal. Current-source stage-handoff and growth fixture pass; native recurrence is retained. Short baseline sequence also passes. No ordinary-use trigger consistency, general recovery, installed-model or long-context guarantee. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Ordinary beta.30 research correction/relay dead end recurred. Source handoff now separates recovery/subtask completion from ongoing discussion, but no fresh model/native behavior proof is added. FAB-11 remains open. Conditional landing profile is bundled; exact final profile has structural/local-install evidence only. Real project discovery, narrow/wide visual quality and conversion remain unverified.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
@@ -115,6 +130,16 @@
           "name": "recovery boundary and active discussion source correspondence",
           "result": "pass",
           "evidence": "experiments/maintenance/handoff-continuation-20261016/report.md"
+        },
+        {
+          "name": "beta.31 exact package regression and reference integrity",
+          "result": "pass",
+          "evidence": "experiments/releases/integrated-beta31-20261021/report.md; scripts/check_package.py; tests/"
+        },
+        {
+          "name": "conditional landing routes and profile correspondence",
+          "result": "pass",
+          "evidence": "experiments/maintenance/landing-local-20261019/report.md"
         }
       ]
     },
@@ -122,7 +147,7 @@
       "id": "delivery",
       "default": true,
       "status": "limited",
-      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Qualified repository/distribution method source added2026-10-16. Source preservation and conditional routes are structurally checked. Selected primary corrections do not validate all legal/case claims or prove documentation usefulness and distribution behavior. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change.",
+      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Qualified repository/distribution method source added2026-10-16. Source preservation and conditional routes are structurally checked. Selected primary corrections do not validate all legal/case claims or prove documentation usefulness and distribution behavior. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Conditional landing profile is bundled; exact final profile has structural/local-install evidence only. Real project discovery, narrow/wide visual quality and conversion remain unverified.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
@@ -143,6 +168,16 @@
           "name": "product-scale guidance and independent foundation scope correspondence",
           "result": "pass",
           "evidence": "experiments/maintenance/product-scale-20261016/report.md"
+        },
+        {
+          "name": "beta.31 exact package regression and reference integrity",
+          "result": "pass",
+          "evidence": "experiments/releases/integrated-beta31-20261021/report.md; scripts/check_package.py; tests/"
+        },
+        {
+          "name": "conditional landing routes and profile correspondence",
+          "result": "pass",
+          "evidence": "experiments/maintenance/landing-local-20261019/report.md"
         }
       ]
     },
@@ -171,6 +206,11 @@
           "name": "product-scale guidance and independent foundation scope correspondence",
           "result": "pass",
           "evidence": "experiments/maintenance/product-scale-20261016/report.md"
+        },
+        {
+          "name": "beta.31 exact package regression and reference integrity",
+          "result": "pass",
+          "evidence": "experiments/releases/integrated-beta31-20261021/report.md; scripts/check_package.py; tests/"
         }
       ]
     },
@@ -178,7 +218,7 @@
       "id": "product",
       "default": true,
       "status": "limited",
-      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Selective attributed For the Win synthesis added 2026-10-16. Packet preserves the authored synthesis, not the full book/private digest. Structural/source checks only, no empirical motivation or longitudinal effect validation. Beta.30 first-value application learning separates value, demonstration and setup, with conditional Product/Analysis routes. Source/package review only, no new model/native/conversion evidence. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change.",
+      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Selective attributed For the Win synthesis added 2026-10-16. Packet preserves the authored synthesis, not the full book/private digest. Structural/source checks only, no empirical motivation or longitudinal effect validation. Beta.30 first-value application learning separates value, demonstration and setup, with conditional Product/Analysis routes. Source/package review only, no new model/native/conversion evidence. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Conditional landing profile is bundled; exact final profile has structural/local-install evidence only. Real project discovery, narrow/wide visual quality and conversion remain unverified.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
@@ -204,6 +244,16 @@
           "name": "product-scale guidance and independent foundation scope correspondence",
           "result": "pass",
           "evidence": "experiments/maintenance/product-scale-20261016/report.md"
+        },
+        {
+          "name": "beta.31 exact package regression and reference integrity",
+          "result": "pass",
+          "evidence": "experiments/releases/integrated-beta31-20261021/report.md; scripts/check_package.py; tests/"
+        },
+        {
+          "name": "conditional landing routes and profile correspondence",
+          "result": "pass",
+          "evidence": "experiments/maintenance/landing-local-20261019/report.md"
         }
       ]
     },
@@ -211,7 +261,7 @@
       "id": "prototype",
       "default": true,
       "status": "limited",
-      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Qualified typography knowledge source added2026-10-16. Full source/registry/routes are structurally checked; new layout generation, native behavior and general efficacy are unobserved. Exact source numerical claims are not universal standards. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change.",
+      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Qualified typography knowledge source added2026-10-16. Full source/registry/routes are structurally checked; new layout generation, native behavior and general efficacy are unobserved. Exact source numerical claims are not universal standards. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Conditional landing profile is bundled; exact final profile has structural/local-install evidence only. Real project discovery, narrow/wide visual quality and conversion remain unverified.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
@@ -232,6 +282,16 @@
           "name": "product-scale guidance and independent foundation scope correspondence",
           "result": "pass",
           "evidence": "experiments/maintenance/product-scale-20261016/report.md"
+        },
+        {
+          "name": "beta.31 exact package regression and reference integrity",
+          "result": "pass",
+          "evidence": "experiments/releases/integrated-beta31-20261021/report.md; scripts/check_package.py; tests/"
+        },
+        {
+          "name": "conditional landing routes and profile correspondence",
+          "result": "pass",
+          "evidence": "experiments/maintenance/landing-local-20261019/report.md"
         }
       ]
     },
@@ -310,6 +370,11 @@
           "name": "product-scale guidance and independent foundation scope correspondence",
           "result": "pass",
           "evidence": "experiments/maintenance/product-scale-20261016/report.md"
+        },
+        {
+          "name": "beta.31 exact package regression and reference integrity",
+          "result": "pass",
+          "evidence": "experiments/releases/integrated-beta31-20261021/report.md; scripts/check_package.py; tests/"
         }
       ]
     },
@@ -333,6 +398,11 @@
           "name": "product-scale guidance and independent foundation scope correspondence",
           "result": "pass",
           "evidence": "experiments/maintenance/product-scale-20261016/report.md"
+        },
+        {
+          "name": "beta.31 exact package regression and reference integrity",
+          "result": "pass",
+          "evidence": "experiments/releases/integrated-beta31-20261021/report.md; scripts/check_package.py; tests/"
         }
       ]
     },
@@ -340,7 +410,7 @@
       "id": "wireframe",
       "default": true,
       "status": "limited",
-      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Qualified typography source is routed for visible block composition only. No new generated-layout/native behavior verification or fixed spacing threshold is claimed. Beta.30 first-value application learning separates value, demonstration and setup, with conditional Product/Analysis routes. Source/package review only, no new model/native/conversion evidence. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change.",
+      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Qualified typography source is routed for visible block composition only. No new generated-layout/native behavior verification or fixed spacing threshold is claimed. Beta.30 first-value application learning separates value, demonstration and setup, with conditional Product/Analysis routes. Source/package review only, no new model/native/conversion evidence. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Conditional landing profile is bundled; exact final profile has structural/local-install evidence only. Real project discovery, narrow/wide visual quality and conversion remain unverified. Opt-in screen flows have bounded fresh routing and one completed file/check/correction case on the reviewed pre-release source. Search/timer output misses, prior timeout and unrun scoped edit remain; native/installed behavior is unobserved.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
@@ -366,6 +436,21 @@
           "name": "product-scale guidance and independent foundation scope correspondence",
           "result": "pass",
           "evidence": "experiments/maintenance/product-scale-20261016/report.md"
+        },
+        {
+          "name": "beta.31 exact package regression and reference integrity",
+          "result": "pass",
+          "evidence": "experiments/releases/integrated-beta31-20261021/report.md; scripts/check_package.py; tests/"
+        },
+        {
+          "name": "conditional landing routes and profile correspondence",
+          "result": "pass",
+          "evidence": "experiments/maintenance/landing-local-20261019/report.md"
+        },
+        {
+          "name": "bounded source routing and actual artifact workflow",
+          "result": "pass",
+          "evidence": "experiments/maintenance/canvas-artifact-workflow-20261021/report.md; experiments/maintenance/canvas-entry-transfer-20261021/report.md"
         }
       ]
     },
@@ -379,19 +464,34 @@
           "name": "conversion preservation and invalid-link rejection",
           "result": "pass",
           "evidence": "tests/test_release_policy.py + experiments/maintenance/release-policy-20261012/verification.json"
+        },
+        {
+          "name": "beta.31 exact package regression and reference integrity",
+          "result": "pass",
+          "evidence": "experiments/releases/integrated-beta31-20261021/report.md; scripts/check_package.py; tests/"
         }
       ]
     },
     {
       "id": "wireframe.canvas-preview",
       "default": false,
-      "status": "blocked",
-      "limitations": "Known label overlap despite empty warnings; experimental only on explicit request. WF-20 open. Replacement layout parked pending creator prototype.",
+      "status": "experimental",
+      "limitations": "Opt-in only. Updated Markdown/wiki fallback and one completed artifact workflow have inspected fit evidence. Original label-overlap and timer overflow failures remain; no universal readability or native Obsidian proof. Tables remain default.",
       "checks": [
         {
           "name": "readability",
           "result": "fail",
           "evidence": "experiments/analysis/canvas-layout-20261012/reproduction.json"
+        },
+        {
+          "name": "beta.31 exact package regression and reference integrity",
+          "result": "pass",
+          "evidence": "experiments/releases/integrated-beta31-20261021/report.md; scripts/check_package.py; tests/"
+        },
+        {
+          "name": "bounded fallback checks and inspected artifact workflow",
+          "result": "pass",
+          "evidence": "experiments/maintenance/canvas-integration-20261020/report.md; experiments/maintenance/canvas-artifact-workflow-20261021/report.md"
         }
       ]
     },
@@ -405,6 +505,11 @@
           "name": "native host render",
           "result": "unknown",
           "evidence": "docs/research/canvas-layout-options-2026-10-12.md"
+        },
+        {
+          "name": "beta.31 exact package regression and reference integrity",
+          "result": "pass",
+          "evidence": "experiments/releases/integrated-beta31-20261021/report.md; scripts/check_package.py; tests/"
         }
       ]
     },
@@ -423,6 +528,11 @@
           "name": "actual thread creation and recovery",
           "result": "unknown",
           "evidence": "experiments/maintenance/chat-handoff-20261012/receipt.json"
+        },
+        {
+          "name": "beta.31 exact package regression and reference integrity",
+          "result": "pass",
+          "evidence": "experiments/releases/integrated-beta31-20261021/report.md; scripts/check_package.py; tests/"
         }
       ]
     },
@@ -441,6 +551,42 @@
           "name": "listing fields and included PNG container/dimensions",
           "result": "pass",
           "evidence": "scripts/check_package.py; tests/test_package_guard.py; experiments/releases/branding-beta23-20261012/report.md"
+        },
+        {
+          "name": "beta.31 exact package regression and reference integrity",
+          "result": "pass",
+          "evidence": "experiments/releases/integrated-beta31-20261021/report.md; scripts/check_package.py; tests/"
+        }
+      ]
+    },
+    {
+      "id": "landing-pages",
+      "default": false,
+      "status": "experimental",
+      "limitations": "Conditional profile in six existing skills, not an automatic new skill or project-wide mode. Source/local install integrity only; no real landing or final-profile model behavior proof. No inherited Landlord workflow.",
+      "checks": [
+        {
+          "name": "profile and conditional route package integrity",
+          "result": "pass",
+          "evidence": "experiments/maintenance/landing-local-20261019/report.md; experiments/releases/integrated-beta31-20261021/report.md"
+        }
+      ]
+    },
+    {
+      "id": "wireframe.screen-flow",
+      "default": false,
+      "status": "experimental",
+      "limitations": "Explicit screen-flow/Canvas request only. Actual functional reuse and child/parent commits passed one source artifact workflow. First-output misses, unknown-cost timeout, unrun scoped edit and native rendering remain open. No universal correctness or scale proof.",
+      "checks": [
+        {
+          "name": "bounded actual artifact creation/check/correction",
+          "result": "pass",
+          "evidence": "experiments/maintenance/canvas-artifact-workflow-20261021/report.md"
+        },
+        {
+          "name": "helper reversibility and Markdown fallback regressions",
+          "result": "pass",
+          "evidence": "tests/test_screen_flow.py; tests/test_canvas_markdown_preview.py"
         }
       ]
     }

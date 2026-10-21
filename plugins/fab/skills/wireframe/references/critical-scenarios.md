@@ -1,20 +1,29 @@
 # Critical scenarios
 
-Read after sufficient structure under shared decision policy when steps, states, branches or returns need
-inspection. Use [structure/access](navigation-ia.md) and current slice/UC/rules;
+Read when enough behavior/access is known to inspect steps, states, branches
+or returns. Existing accepted requirements/artifacts may suffice without a new
+structure document. Use relevant [structure/access](navigation-ia.md) and current slice/UC/rules;
 use [scenario tables](table-view.md) by default. Only for explicitly requested
-experimental Canvas use the [Canvas adapter](canvas-adapter.md).
+experimental Canvas use the [Canvas adapter](canvas-adapter.md). For screen-flow
+maps read [screen flows](screen-flow.md): SC may stand alone; MOD needs actual
+functional reuse; NAV is optional, not a prerequisite to every scenario.
 
 ## Second decision: critical scenarios
 
 After sufficient structure under shared decision policy, map only the scenarios whose steps, branches,
 temporal rules, unusual entries or risk need inspection. Reuse S-IDs and
-link scenario rows to the overview by IDs. In opt-in Canvas, place details in
-a distinct area or link from the overview. Trace entry, actions, meaningful states,
+link scenario rows to any existing useful overview by IDs. In opt-in Canvas,
+choose sufficient areas/maps, without manufacturing an overview. Trace entry, actions, meaningful states,
 observable result, safe exit and later return. Make Back, Close, Cancel and
 Undo distinct where their semantics affect the path. If a scenario needs a
 new surface or opening relationship, revise the structure and expose the
 material change for review rather than silently adding a screen.
+
+Preserve source owners and each actual caller's retained context. A selector
+returns its selection; a separate next task owns downstream conditions. A shared
+definition does not turn cancellation into successful continuation. Distinguish
+a nested entity's commit from cancelling its parent task, using actual product
+rules rather than an assumed global persistence policy.
 
 For an unavailable dependency, show what remains usable without false success.
 An unknown recovery stays open with the required technical evidence; never

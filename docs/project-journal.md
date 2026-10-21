@@ -16,6 +16,207 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-21 — Promote integrated work to a bounded beta without organic-test delay
+
+**Decision:** Creator explicitly requests a new local/public version now. Main
+selects beta.31 with integrated landing, opt-in screen-flow and earlier core /
+Cowork fixes. This changes the prior no-Git/install boundary for that package;
+independent research and observer edits remain out of the release checkpoint.
+
+**Prepared evidence:**89files/f3e103bee3d92c90,91regressions/package/scope pass. Version and
+stale capability inventory are the only preparation runtime changes. Current
+landing runtime is retained byte-for-byte for rollback; public rollback beta.30.
+
+**Meaning / limit / next:** Availability is useful without an additional artificial
+model campaign. One actual artifact/check/correction case passes, while earlier
+output misses, timeout/unknown usage and forecast overruns remain. No native,
+organic landing or universal continuity claim. Main completes separate public
+and local distribution checks and records actual results in the
+[release receipt](../experiments/releases/integrated-beta31-20261021/report.md).
+
+## 2026-10-21 — Actual artifact workflow succeeds without changing Fab source
+
+**Context / decision:** Creator approves testing the real isolated file/check/
+correction loop, after read-only output tests left source attribution unresolved.
+Current89-file package and workshop requirements stay frozen outside writable cwd.
+
+**Observed result:** One configured GPT-6.1 Sol/Medium turn creates five maps and
+entry, catches missing file extensions and unsafe cleanup metadata, corrects them
+and reruns actual bundled checks. Shared creation has two real callers; origin
+returns, independent child Save/parent cancel and retries are retained. Root
+inspects original final files/overviews/details; bounded workflow PASS. Initial
+errors and seven revisions remain. Missing Pillow/unsupported actor SVG viewing
+are honestly disclosed; native/user/storage behavior and minor wording stay open.
+
+**Cost / limits:**537435input/501376cached/12861output,409.87seconds. Input forecast
+400k exceeded137435, retained as planning failure; no repeated model launch or
+budget-compliance claim. Root review is not independent; changed harness does
+not retroactively close the prior search/timer misses or unknown-cost timeout.
+
+**Meaning / next:** Source already supports this concrete workflow; another policy
+layer is unwarranted. Recommend a supported local integrated snapshot preserving
+landing/rollback, then actual native/project use after installation scope. Source,
+installed/config/HEAD/index unchanged;58final files/revisions retained before exact
+scratch removal. No install/Git/publication. [Evidence](../experiments/maintenance/canvas-artifact-workflow-20261021/report.md).
+
+## 2026-10-21 — Diverse inputs reveal both output and test-workflow limits
+
+**Context / execution:** Exact creator consent resolves the campaign block.
+Three fresh configured GPT-6.1 Sol/Medium read-only invocations use unchanged
+89-file source and choose skills from the actual catalog. No forced Wireframe
+entry or old desired answers. Four was a maximum, not a quota.
+
+**Results:** Raw-idea Product framing passes its boundary. The one-screen timer
+preserves behavior, proportionality and real reset return, with short actions;
+its reset-result text visibly overflows in fallback, so PARTIAL. The workshop
+returns no complete bundle before the180-second stop. Its semantic correctness
+is unknown. Missing token usage triggers the defined campaign stop; the scoped
+edit case remains unrun, with no retry or extra launch.
+
+**Meaning / next:** Diverse inputs improve evidence, but the read-only envelope
+still tests routing/first output rather than the actual file/check/correction
+loop. Existing source already requires fit/path checks. Main prepares a bounded
+isolated writable-output workflow before inferring which source rules to change.
+That next execution needs new scope/budget; no use of an unspent slot after stop.
+
+**Cost / protection:**202825input/160384cached/3644output known for two completed
+turns only; total tokens unknown because DV03 has no usage.307.81summed seconds.
+Original outputs/refusal, failures and exact inputs retained; all three owned
+scratch workspaces removed after hash verification. Source/installed/HEAD/index
+unchanged; no Git/install/publication. [Evidence](../experiments/maintenance/canvas-entry-transfer-20261021/report.md).
+
+## 2026-10-21 — Creator corrects the test-diversity axis
+
+**Context:** Two main checks change operation while retaining the same local
+search domain. Creator asks for varied requests like the Canvas-workstream work,
+now through integrated Fab. Main verifies the original clarification and evidence:
+eight feature cases were authored tabletop, not fresh model generation.
+
+**Decision / prepared result:** Preserve prior bounded results; select four
+distinct fresh inputs across readiness, topology, actual reuse and edit authority.
+Use the actual skill-description catalog without a forced Cowork/Wireframe start.
+The matrix retains all eight original classes and honest unexecuted boundaries.
+Current source is frozen; no edits tailored to the messenger fixture.
+
+**Limit / next:** Automatic review rejects the first campaign launch before
+execution, requiring exact new source/recipient consent because previous one-test
+consents are consumed. No retry, model usage or scratch workspace. One bounded
+campaign approval is the next concrete dependency. Source, installed landing,
+HEAD/index and publication boundary remain unchanged; known failures stay open.
+[Evidence](../experiments/maintenance/canvas-entry-transfer-20261021/report.md).
+
+## 2026-10-21 — Requirements-only generation exposes a bounded presentation gap
+
+**Context / decision:** Exact creator consent resolves the generation-test launch
+block. Main runs the unchanged requirements-only target once, with no old Canvas,
+on configured GPT-6.1 Sol/Medium. It discovers the actual method and returns a new
+10-node/9-edge flow. Source and installed runtime remain unchanged.
+
+**Result:** Accepted behavior, three outcomes, same-surface binding, retained
+query/draft/scroll and no unsupported modules are visible. Structure/palette and
+inspected fallback fit pass. Overall **PARTIAL**: local recovery ends at an
+unbound prose continuation instead of the existing action node; A28 has a body
+despite the short-action rule. Those behaviors are present in text. Existing
+rules already address both; no new engine or policy stack is justified.
+
+**Limits / next:** Main recommends a focused output-preflight repair before
+installation, keeping original output/failures. Current read-only consent is
+consumed; source repair/install remain to authorize, no automatic fresh rerun.
+55,917input/45,056cached/3,297output,71.81seconds within this run's forecast/limits.
+Original refusal and all evidence retained; exact scratch removed after hash
+verification. No native, reuse, installed or sustained-quality claim; no Git.
+[Evidence](../experiments/maintenance/canvas-generation-20261021/report.md).
+
+## 2026-10-21 — Distinguish generation readiness from an idempotent smoke
+
+**Context:** The creator questions whether existing tests justify real use. The
+prior fresh map/spec smoke passed but did not generate a new flow. Main selects
+one requirements-only local-search generation check instead of repeating passes.
+
+**Result:** Contract, accepted behavior and guarded runner prepared on unchanged
+89-file source. Automatic review rejects launch because the earlier one-test
+consent is consumed and the new source/requirements transfer needs exact recipient
+consent. No execution, retry or model usage. Original failure retained.
+
+**Meaning / next:** Generation readiness stays unknown. Main requests exact
+GPT-6.1 Sol/Medium consent, then evaluates one actual new map and its alternate /
+return paths. Native rendering, local installation and publication remain outside
+this check. No-Git boundary and current installed landing build are preserved.
+[Evidence](../experiments/maintenance/canvas-generation-20261021/report.md).
+
+## 2026-10-21 — Close the bounded source smoke after explicit data-transfer consent
+
+**Context:** Automatic review initially blocks the one-turn source/map test. The
+creator then explicitly approves that exact transfer to the configured model,
+keeping the read-only, one-turn/180-second and no-install/Git/publication limits.
+
+**Result:** The actual trace reads Wireframe and the new method/helper. The model
+produces a valid existing-ID spec and recognizes that the map already conforms.
+Root applies it separately; output is byte-identical and the source/test workspace
+remain unchanged. This supports source discovery/idempotent spec validity in one
+case, not fresh map generation or native/installed success. [Evidence](../experiments/maintenance/canvas-integration-20261020/report.md).
+
+**Cost and failure retained:** 23.24seconds,111037input/95232cached/650output,
+configured GPT-6.1 Sol/Medium. The90000input forecast is exceeded. No repeat,
+no budget-compliance claim, original rejection preserved beside the authorized
+successful run. No independent backend identity is exposed by the ephemeral CLI.
+
+**Next:** Main proposes local installation with landing retained and exact rollback.
+That action is outside the latest test-only approval. Installed landing build,
+uncommitted source, research and observation scope remain unchanged.
+
+## 2026-10-20 — Connect the accepted Canvas method without merging its history
+
+**Context:** The creator wants the accepted screen-flow method usable through
+Fab and asks the feature chat to prepare a transfer. The feature changes no
+runtime files. Main must adapt current instructions while preserving uncommitted
+landing integration and the no-Git boundary.
+
+**Decision:** Extract the method, narrow presentation helper and generic swatches.
+Keep SC sufficient when it explains the task, MOD conditional on actual reuse and
+NAV conditional on architectural value. Scope old palette/containment rules to
+their proper representations. No new skill or whole-fixture generator.
+
+**Result:** Source89files/b782cf208ae92998,91regressions/package pass. Existing-map
+checks preserve exact relations/fields and demonstrate bounded palette repair.
+Visual fallback inspection exposes raw-link/Markdown/clipping problems; the
+correction preserves source content and final preview warnings clear in the two
+inspected outputs. Earlier failures remain retained. No native proof follows.
+[Report](../experiments/maintenance/canvas-integration-20261020/report.md).
+
+**Limit/next:** Automatic review rejects the proposed one-turn fresh CLI check
+before execution for missing explicit recipient-specific source/map permission.
+No bypass, model turn, install, commit or publication. Ask for that specific
+authorization. Then assess actual discovery/application before a separately
+authorized local update. Static success does not erase the original native
+failure or validate the old eight-module decomposition. The installed landing
+build and independent work remain unchanged.
+
+## 2026-10-19 — Make the landing candidate available without publishing it
+
+**Context:** The creator wants to use Fab on an upcoming real landing project,
+with HTML/CSS and only necessary vanilla JavaScript. They request transfer to
+main and explicitly prohibit putting the current work in Git.
+
+**Decision:** Integrate the exact seven-path profile patch as uncommitted source
+and install a separate, frozen local identity through the supported marketplace
+CLI. Preserve the public beta and future rollback rather than overwriting cache
+contents or representing the candidate as a public release.
+
+**Result:** Installed/enabled `0.1.0-beta.30+local.landing.20261019`, 81 files /
+ffc900d30331279b. Full installed parity and 77 regressions pass; all 17 other
+plugin settings remain unchanged. The installer removes the old cache, so rollback
+uses the independently retained exact public package or its published tag.
+No staging/commit, Git merge, push, tag or Release. Earlier observer/research work
+is preserved. [Report](../experiments/maintenance/landing-local-20261019/report.md).
+
+**Limits and next:** File identity and an explicit installed-reference reread do
+not establish native discovery or final profile behavior. Earlier architecture
+tests cover a narrower candidate. Check the next real landing task for discovery,
+simple-stack selection, retained copy and actual output quality. There is no
+existing target project to execute now. The public release gate remains
+ineligible; no generic test suite or publication is authorized by local use.
+
 ## 2026-10-19 — Reuse legacy landing knowledge without reviving its workflow
 
 **Context:** Creator requests a separate landing-page branch/chat within Fab and

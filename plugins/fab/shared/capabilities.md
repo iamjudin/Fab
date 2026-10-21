@@ -12,7 +12,15 @@ Mobile structure knowledge is bundled in shared/methods, with declared citation
 and platform limits. Its presence does not establish current native behavior or
 complete expertise. Verify consequential platform claims and investigate domain
 gaps only when relevant evidence is insufficient.
-Landlord excluded; future landing branch is independently designed, not installed.
+A conditional landing-page profile is bundled for promotional/offer pages through
+six existing skills. New pages without a chosen stack start with HTML/CSS and
+necessary vanilla JavaScript; explicit/existing stacks remain valid. Landlord is
+not an active route or runtime dependency. Package availability does not prove
+landing discovery, visual quality or conversion effects.
+
+Wireframe bundles an opt-in screen-flow method and reversible presentation helper
+with optional NAV/SC/MOD and actual functional reuse. Tables remain the default.
+Bounded artifact/check/correction evidence is not native Obsidian verification.
 
 Qualified layout/typography knowledge is bundled for visible grouping, interface
 text and relevant content adaptation. Its read trigger is an actual layout/text

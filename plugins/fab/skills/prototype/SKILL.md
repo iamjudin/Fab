@@ -3,6 +3,10 @@ name: prototype
 description: Build or revise an executable prototype to check selected interactions from sufficient behavior and interface inputs. Use for functional interaction candidates before production, not static diagrams or claims of native platform readiness.
 ---
 Read [shared core](../../shared/core.md), [decision policy](../../shared/decision-policy.md), and [project contract](../../shared/project-contract.md) for existing/durable work. Read only active references.
+For a public promotional/offer landing-page task, read
+[landing pages](../../shared/landing-pages.md). Apply this route to the
+active object, not an app entry screen called landing or the whole project.
+
 # Prototype
 Read [interactive prototype contract](references/interaction-prototype.md).
 Select question, applicable UC/rules/surfaces and minimum executable paths.

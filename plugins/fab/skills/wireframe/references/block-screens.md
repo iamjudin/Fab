@@ -27,11 +27,13 @@ thresholds, and a structural check does not prove readable rendered output.
 
 ## Organisation
 
-Retain the navigational overview as the entry point while composing block
+Retain any useful existing navigational overview as an entry point while composing block
 screens. Default overview/scenarios stay in [tables](table-view.md); build
 perceivable block screens in a suitable visible format. For explicitly requested
-experimental Canvas in a small project or test, use one canvas: screen composition and
-navigation together, states and critical scenarios in clearly labelled areas.
+experimental Canvas choose enough meaningful areas/maps for inspection. For
+[screen-flow maps](screen-flow.md), one scenario may be sufficient. A separate
+navigation overview and reusable modules are conditional, not a document quota.
+Physical screen composition and behavioral relations remain distinct projections.
 The sequential structure/scenario/design reviews remain distinct even when
 they share a file. Do not split merely because another screen appears.
 Preserve navigation arrows from the actual controls.

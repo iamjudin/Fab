@@ -57,6 +57,11 @@ invent subscription policy, accounts or technical guarantees from their labels.
 
 ## Overview notation
 
+First choose the representation: the following notation is for a physical
+composition/control overview. A screen-flow or optional NAV relation map follows
+[screen flows](screen-flow.md), including its distinct palette and framed
+transition meanings. NAV does not imply physical containment or mandatory tabs.
+
 Default to [structure/access tables](table-view.md) with stable surface IDs,
 explicit parent/item owners and a short rationale. The following graphical
 notation applies only to an explicitly requested experimental Canvas overview. Start with top-level areas and screens, then show
@@ -73,7 +78,7 @@ return after successful saving is the result, not the colour of the Save
 control. A check that immediately saves a fact is green; a draft checkbox is
 light blue. Retry of a mutation is green; checking its uncertain outcome is
 local interaction. Split them if their effects differ.
-Apply this notation to the overview and detailed scenarios. Do not prefix
+Apply this notation to composition/control overviews, not screen-flow cards. Do not prefix
 rows with I/A/N letters.
 Distinguish on-the-spot actions from navigation through wording and edges.
 Keep a short legend. Split mixed information/action or local/navigation rows
@@ -138,7 +143,7 @@ operator's choices as simulated assumptions, never as creator approval.
 аккаунт, синхронизацию или paywall. Детальные ветки остаются в сценариях.
 
 ## Physical projection check
-When controls are separate coloured Canvas nodes, their surface must be a real
+For physical composition/control overviews, when controls are separate coloured Canvas nodes, their surface must be a real
 group, with collections/items nested where meaningful. S-ID text and a written
 access table cannot substitute for this physical ownership. Run the structure
 guard for included surfaces; it's a narrow projection check, not semantic proof.

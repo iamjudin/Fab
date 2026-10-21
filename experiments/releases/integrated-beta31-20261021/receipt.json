@@ -1,0 +1,35 @@
+{
+  "version": "0.1.0-beta.31",
+  "tag": "v0.1.0-beta.31",
+  "files": 89,
+  "fingerprint": "f3e103bee3d92c90",
+  "sourceCandidateFingerprint": "b782cf208ae92998",
+  "sourceCommit": null,
+  "authorization": "Creator explicitly requests integrating current ready package into a new version, local update and public GitHub release on 2026-10-21; supersedes prior no-Git/install/publication boundary for this package only.",
+  "checks": {
+    "regressions": 91,
+    "package": "pass",
+    "scope": "pass",
+    "diff": "pass",
+    "newModelInvocations": 0,
+    "twelvePacketsAndIconUnchanged": "pass: full byte comparison to public beta.30"
+  },
+  "rollback": {
+    "public": "0.1.0-beta.30",
+    "local": "0.1.0-beta.30+local.landing.20261019",
+    "localFiles": 81,
+    "localFingerprint": "ffc900d30331279b",
+    "offlineSnapshot": "raw/rollback-marketplace"
+  },
+  "limits": [
+    "No new model execution during release preparation",
+    "Canvas remains opt-in experimental; prior failures/timeouts and unrun scoped edit retained",
+    "Native Obsidian, installed model behavior, organic landing and sustained continuity unverified",
+    "Separate design-system research and observer edits excluded"
+  ],
+  "assetsSha256": {
+    "SHA256SUMS.txt": "21dbc91a6da7c61c895b0008776d89e5f57e8809c87aefd525925f519bd5690a",
+    "fab-0.1.0-beta.31.zip": "c87c6bbd023f4efe3ddd6382a79b81eb5a2234eed92f6dadf9639faf33372b76",
+    "release-scope.json": "cb500cef1d58c55802544548d5516565d00c69890cbbfbd4b81ad2710b4de783"
+  }
+}

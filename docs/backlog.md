@@ -1,6 +1,6 @@
 # Fab backlog
 
-Updated 2026-10-19. This is the only active Fab queue. Main Fab owns every entry
+Updated 2026-10-21. This is the only active Fab queue. Main Fab owns every entry
 unless another owner is named. [Frozen previous record](backlog-history-2026-10-14.md)
 retains original failures, corrections and dated states; it is historical evidence,
 not a second queue. Closing a bounded task does not assert universal maturity.
@@ -15,17 +15,24 @@ A generated plugin inherits self-contained cleanup rules. A separately authorize
 now verifies actual retention/disposal; the external-preview surface remains open.
 No new Fab runtime correction is warranted by these passing cases.
 
-**Current result:** beta.30 is published, installed and enabled:
-80 files / f520267c25a53b17, immutable v0.1.0-beta.30/da23461.
-[Distribution](../experiments/releases/knowledge-beta30-20261016/report.md)
-verifies 77 regressions/package/scope, exact-source CI, anonymous assets,
-clean/primary full parity and all 17 other plugin settings unchanged. Rollback
-beta.29. The three completed knowledge intakes below and the retained onboarding
-learning are shipped. Twelve pairs / 572 sections. No new model/native/participant
-or general efficacy claim. FAB-10 additive project tags and project-scoped consent
-remain intact. Main next assesses actual onboarding/incentive use after relevant
-installed instructions are reread, without another generic test campaign.
-Canvas stays parked and Bookworm remains creator-owned.
+**Current release stage:** creator explicitly authorizes beta.31 local/public
+promotion of current integrated landing, opt-in screen-flow and earlier core /
+Cowork fixes. Prepared89files/f3e103bee3d92c90;91regressions/package/scope pass. Exact local
+landing rollback retained; public rollback beta.30. Main completes source
+checkpoint, exact-source CI, public tag/Release/assets and clean/primary installs
+in [distribution receipt](../experiments/releases/integrated-beta31-20261021/report.md).
+Until those checks finish, published beta.30 and installed local landing remain
+the actual distributed baseline. This supersedes earlier no-Git/install/publication
+statements below only for the integrated release. Independent research, observer
+pending edits and other products are excluded. No additional model series.
+
+Canvas remains opt-in experimental. A bounded actual file/check/correction
+workflow passes; search/timer misses, timeout/unknown usage, unrun scoped edit,
+native/installed adoption and sustained behavior remain **next verification**
+on relevant actual work. Landing discovery/copy fidelity/responsive quality
+likewise needs a real project, not a generic rerun. FAB-11 is not closed by
+publication. All twelve knowledge pairs/572sections, additive tags and consent
+remain intact. Bookworm and the active observer retain their own scope.
 
 ## Landing-page capability — separate workstream, 2026-10-19
 
@@ -39,12 +46,109 @@ of the retired runtime or an automatic eleventh skill.
 Owner: **Fab — лендинги** for the scoped assessment/proposal and later agreed
 branch work. Main owns canonical scope, shared architecture, integration and
 release. [Handoff](handoffs/landing-pages-2026-10-19.md) records sources, actual
-environment and recovery. Disposition: **next update**, a concrete reuse/adapt/
-reject/investigate map and a recommended useful increment with acceptance checks.
-Close the handoff only after real context recovery and useful contribution.
-Implementation acceptance and actual landing quality remain separate boundaries.
-No site/hosting platform, Figma write, merge, installation or release is inferred.
-Design-system research remains independent and Canvas stays parked.
+environment and recovery. The initial handoff and scoped assessment are complete.
+Creator subsequently requests local use without putting the work in Git. Main
+applies the exact seven-path runtime patch and installs a frozen local build:
+`0.1.0-beta.30+local.landing.20261019`, 81 files / `ffc900d30331279b`.
+[Local integration evidence](../experiments/maintenance/landing-local-20261019/report.md)
+records 77 regressions, full source/snapshot/installed identity, preserved other
+plugin settings and exact rollback content. Source remains uncommitted, with no
+Git merge, push, public tag or Release. The public beta.30 is unchanged.
+
+Disposition: **next verification**, on the first actual creator landing project.
+Assess appropriate profile discovery, HTML/CSS/necessary-JS default, retained
+approved copy and actual requested output quality. Existing/chosen stacks remain
+valid. Close only the observed binding, not general discovery, native dialogue
+or conversion efficacy. No real project/code exists yet and no generic model
+suite is queued. Implementation availability is verified, real landing quality
+is not. Main owns integration/runtime and the feature chat owns further scoped
+development. Design-system research and Canvas integration retain separate scope.
+
+## WF-20 screen-flow integration — 2026-10-20
+
+Creator requests transfer of the accepted Canvas method for main integration.
+Main independently verifies the human request, 53 incoming hashes and the current
+uncommitted landing boundary. The source now routes explicit screen flows through
+Wireframe, with optional NAV/SC/MOD, actual functional reuse, semantic colors,
+framed relation meanings and source/return preservation. A bounded reversible
+presentation helper and six generic swatches are bundled. No product-specific
+builder, old workflow, mandatory document quota or new layout engine.
+
+[Source integration and limits](../experiments/maintenance/canvas-integration-20261020/report.md):
+89 files / b782cf208ae92998; 91 regressions and package checks pass. Existing-map
+helper checks preserve exact semantics/fields, and fallback inspection reveals
+and corrects raw-link/Markdown rendering and clipping. Intermediate failures
+remain retained. Native rendering, actual functional reuse of the old eight
+modules and fresh instruction following are not verified by those checks.
+
+Owner main; supporting FAB-03 for semantic preservation. A single specified fresh
+read-only CLI acceptance was initially rejected before launch. After explicit
+recipient-specific creator approval on2026-10-21, one configured GPT-6.1 Sol/Medium
+turn reads the actual reference and returns an executable bounded spec. Root
+execution reproduces the already-conformant input exactly. This closes only
+source discovery/idempotent spec validity for this map, not fresh generation or
+native quality. 23.24seconds,111037input/95232cached/650output; the90000input
+forecast was exceeded. Preserve that planning overrun; no second model run.
+
+Creator then requests useful further testing before real use. Main prepares one
+requirements-only generation check from the same accepted local-search behavior,
+without the old map/layout/decomposition. Automatic review rejects its launch
+before execution: the earlier one-test consent is consumed and exact new payload /
+recipient consent is required. No model invocation, retry or temporary workspace.
+[Prepared check and original block](../experiments/maintenance/canvas-generation-20261021/report.md).
+
+Creator subsequently explicitly approves this exact new test. One configured
+GPT-6.1 Sol/Medium turn generates10nodes/9edges from requirements, discovers the
+method, retains all accepted behavior and avoids unsupported MOD/NAV. Static
+structure/palette and inspected fallback fit pass. **PARTIAL:** empty/error
+recovery ends at a prose-only local continuation rather than the actual action
+node; the action card also violates the existing compact-card rule. Behavior is
+present in text, not lost. Root retains the untouched candidate and original
+rejection; no corrective run. Actual55,917input/45,056cached/3,297output,71.81seconds
+within the new160k/8kforecast andone-turn/180-second boundary. High confidence in
+these artifact observations; one-case output miss, not general source failure.
+
+Creator challenges the reused scenario and asks to assess varied inputs as in the
+Canvas workstream, now through integrated Fab. Main verifies that the earlier
+eight-case work was authored tabletop, not fresh runtime. Current source addresses
+the old conditional-taxonomy/child-commit clauses; this is source evidence only.
+[Varied-input matrix and prepared campaign](../experiments/maintenance/canvas-entry-transfer-20261021/report.md)
+select four distinct fresh contexts: raw idea, one-screen timer, multi-root actual
+reuse, and scoped jewelry-map patch. Actor chooses from actual skill descriptions,
+not a forced Wireframe gateway. First launch is initially rejected before
+execution; exact campaign consent subsequently resolves that block. The original
+rejection is retained, with no bypass before approval.
+
+Three approved invocations execute: **DV01 PASS** for Product framing of the raw
+idea; **DV02 PARTIAL**, direct Wireframe/one-screen timer preserves behavior and
+actual reset path, but reset-result text visibly overflows in the bundled
+fallback; **DV03 INCOMPLETE**, no workshop bundle before180seconds, usage unknown.
+The last result cannot establish incorrect reuse/commit logic. **DV04 not run**:
+timeout/unknown usage stops the campaign, no retry or fourth launch. Known usage
+for the two completed turns only:202825input/160384cached/3644output; full token
+total unknown.307.81summed seconds, three invocations/two completed turns. Source
+selection/first output is tested, not the complete writable self-check workflow.
+
+Creator then approves the isolated writable-output workflow. [Actual workflow
+acceptance](../experiments/maintenance/canvas-artifact-workflow-20261021/report.md)
+on unchanged source passes one bounded file/check/correction case: five maps,
+actual shared client creation with two callers, retained caller context, separate
+selector/job continuation, independent child commit/parent cancel and real Save
+retry paths. Initial missing suffixes and unsafe cleanup metadata are caught,
+corrected and retained. Actor SVG/validators pass; missing Pillow/unsupported SVG
+view is disclosed. Root inspects unchanged fallback overviews/details with no
+clipping/card collisions. Low-impact Russian wording remains. One configured
+GPT-6.1 Sol/Medium turn,409.87seconds;537435input/501376cached/12861output. Input
+forecast400k exceeded137435; planning failure retained, no further model launch.
+
+Disposition: **next update**, main recommends a supported local integrated
+snapshot retaining landing and exact rollback, after actual installation scope,
+then native/real use. No new policy layer or generic model suite justified by
+this case. Prior search/timer misses remain evidence, not retroactively fixed;
+actual file-loop success qualifies their source attribution. Native rendering,
+scoped-edit DV04 and sustained behavior stay **next verification** at relevant
+use, not universal closure. No install/Git/publication authorized. Installed
+landing81/ffc900d30331279b and source89/b782cf208ae92998 stay unchanged.
 
 ## FAB-15 research refresh — agent-assisted design systems, 2026-10-16
 
@@ -166,10 +270,11 @@ The separately authorized beta.28 distribution completed those actions.
 
 ## Parked and conditional scope
 
-- **WF-20 — creator-parked, still open.** Canvas labels overlap despite no automatic
-  warning. Default is tables; experimental `codex/fab-map-view` waits for creator's
-  prototype/request. No renderer, scheme, viewer or Obsidian changes/tests in this
-  maintenance. [Options/history](research/canvas-layout-options-2026-10-12.md).
+- **WF-20 — active source integration, installed/native verification open.** The
+  2026-10-20 creator transfer supersedes the earlier parked condition. Default
+  remains tables. See the owning integration entry above; native label-overlap
+  failures are not closed by source/static or fallback success.
+  [Original options/history](research/canvas-layout-options-2026-10-12.md).
 - **Citation/domain gaps — FAB-15, conditional.** Review a specific binding when a
   consequential application depends on it, a contradiction appears or new evidence
   arrives. Do not replace all nine studies to satisfy an abstract completeness goal.
@@ -306,6 +411,23 @@ swap into an approval ritual. Observation is sanitized in the linked report.
   adds the qualified first-value learning and conditional routes. Compare value,
   mechanism, needed input and claim support on the next real task. Close only that
   application, without treating discussion quality as product validation.
+
+Follow-through assessed 2026-10-19: completed commands explicitly reread installed
+beta.30 Product/Analysis and first-value/gamification, followed by a saved proposal
+that distinguishes desired value, recognizable result, collection history and
+material access. Accepted requirements remain distinct from proposed rules. A
+later competitor audit retains useful history while qualifying unsupported
+uniqueness/status conclusions, broadens comparison by use situation and produces
+a project-independent digital research assignment on creator request. No provider
+run, real substitution behavior or developmental effect is established.
+[Actual-use observation](../experiments/workflow-tests/2026-10-13-external-chat-observation.md#2026-10-19--explicit-beta30-adoption-and-bounded-method-application)
+corroborates explicit adoption and local artifact contents with high confidence
+within that scope. Actor source checks and remote checkpoints are not independently
+verified. Owner remains main, FAB-15, with supporting FAB-14/FAB-11 evidence.
+Disposition: **next verification** on the returned study or actual chosen
+onboarding/incentive rule. Check support, accepted/proposed status and retained
+requirements. Close only that binding. Prior activity/value and continuation
+misses remain retained. No demonstrated new runtime defect or repair batch.
 
 ## Observation accumulation and batch processing — 2026-10-14
 

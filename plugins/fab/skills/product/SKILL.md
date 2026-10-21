@@ -3,6 +3,10 @@ name: product
 description: Define a product model, use cases, rules or a bounded change in an existing product from intent, requirements and evidence. Use for deciding product behavior or a slice, not for research-only, artifact audit or drawing screens.
 ---
 Read [shared core](../../shared/core.md), [decision policy](../../shared/decision-policy.md), and [project contract](../../shared/project-contract.md) for existing/durable work. Choose only relevant references.
+For a public promotional/offer landing-page task, read
+[landing pages](../../shared/landing-pages.md). Apply this route to the
+active object, not an app entry screen called landing or the whole project.
+
 # Product
 Find new/existing/limited-change and requested stopping outcome. Preserve explicit
 requirements/non-goals/authority; accepted input is usable without full discovery.

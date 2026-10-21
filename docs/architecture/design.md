@@ -23,7 +23,47 @@ Shared artifact lifecycle covers task-owned scratch, verified retention and
 bounded cleanup. Plugin exports an equivalent self-contained rule to generated
 packages; this is a runtime responsibility, not a new mandatory workflow stage.
 
-## Current distribution — beta.30, 2026-10-16
+## Integrated beta.31 release candidate — 2026-10-21
+
+Current89-file package/f3e103bee3d92c90 includes the landing profile, experimental screen
+flows and previous shared/core/Cowork fixes. Creator explicitly authorizes local
+and public release;91regressions/package/scope pass. Tables remain default;
+landing and screen-flow profiles are conditional, not new skills. Capability
+inventory now matches bundled availability. Distribution verification is recorded
+separately in the [release receipt](../../experiments/releases/integrated-beta31-20261021/report.md).
+Historical distribution states below retain their dates and evidence limits.
+
+## Screen-flow source integration — 2026-10-20
+
+Wireframe conditionally reads a self-contained screen-flow reference, with
+optional SC/MOD/NAV, actual functional reuse and a palette distinct from physical
+composition. A narrow reversible presentation helper and generic color assets
+are bundled; product fixtures and old builders are not dependencies. Tables stay
+default and the structure guard retains its physical-containment scope.
+
+Source89files/b782cf208ae92998,91regressions/package pass. Existing-map helper
+and inspected fallback output are bounded technical evidence. Fresh discovery
+check was initially blocked, then explicitly authorized and completed on2026-10-21:
+actual reference read and executable idempotent spec for one existing map pass.
+This is not new-map generation, native or installed proof. The input forecast
+overrun remains in evidence. Installed81-file local landing build stays unchanged. No Git
+write/merge/install/publication. [Integration evidence](../../experiments/maintenance/canvas-integration-20261020/report.md).
+
+## Local landing candidate — 2026-10-19
+
+An optional shared landing profile conditionally serves Cowork/Product/Wireframe/
+Prototype/Delivery/Analysis. Active marketing-page purpose selects it, not a
+keyword or the entire project. New pages without a chosen stack start with
+HTML/CSS and necessary vanilla JS; existing/explicit stacks remain valid.
+No new skill, mandatory sequence or historical Landlord runtime dependency.
+
+Installed local candidate: `0.1.0-beta.30+local.landing.20261019`, 81 files /
+ffc900d30331279b, through a frozen local marketplace. Exact package/installed
+parity and 77 regressions pass. This is uncommitted local-use work, not a public
+release or demonstrated native/landing behavior. Public beta.30 below remains
+unchanged. [Scope, verification and rollback](../../experiments/maintenance/landing-local-20261019/report.md).
+
+## Current public distribution — beta.30, 2026-10-16
 
 All three source intakes below are now published and installed, with the retained
 onboarding learning applied to first-value and conditional Product/Analysis routes.

@@ -5,6 +5,10 @@ description: Assess an existing artifact, project state, document, interface or 
 
 Read [shared core](../../shared/core.md). For existing/durable project work read [project contract](../../shared/project-contract.md). Other skills are conditional dependencies, not obligatory gates.
 
+For a public promotional/offer landing-page task, read
+[landing pages](../../shared/landing-pages.md). Apply this route to the
+active object, not an app entry screen called landing or the whole project.
+
 # Analysis
 Inspect the actual target/version and relevant accepted requirements. Criteria
 come from the request, sources and applicable [methods](../../shared/methods/index.md),
