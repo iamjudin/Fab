@@ -45,9 +45,10 @@ installed behavior, autonomous file writes, real participant value or scalabilit
 
 ## Preparation and attempted execution
 
-[Contract](contract.md), immutable requests/oracles in `cases/`, frozen89-file
-source inventory/package, historical map hashes and a guarded [runner](run_case.py)
-are retained. DV02/DV03 add explicit controlled policies to the earlier ambiguous
+[Contract](contract.md) is public. Immutable requests/oracles and the guarded
+runner are retained privately under `raw/retained-support/`, alongside the
+frozen89-file source inventory/package and historical map hashes in `raw/`.
+DV02/DV03 add explicit controlled policies to the earlier ambiguous
 inputs; they are not represented as exact repeats of the old prompts. Oracles
 stay outside actor inputs. Prior failures remain unmodified controls.
 
@@ -161,3 +162,20 @@ No failed model result is repaired or replaced. Prepared source/cases remain
 useful experiment evidence, not runtime dependencies or a competing backlog.
 The campaign is stopped/consumed under its conditions. Broadening the inputs does
 not close earlier failures or authorize source repair, installation or publication.
+
+## Maintenance note — 2026-10-21, after beta.32
+
+The result, original failures, cost and authority above describe this dated
+experiment. Later [beta.31 distribution](../../releases/integrated-beta31-20261021/report.md)
+and [beta.32 distribution](../../releases/learning-beta32-20261021/report.md)
+supersede its install/release-pending recommendation, without closing the recorded
+behavioral limits or authorizing a rerun. Current work belongs to the
+[canonical backlog](../../../docs/backlog.md).
+
+This public packet contains the contract, available input description and result;
+exact machine-specific runners, private fixtures and detailed traces are retained
+locally in ignored `raw/`, with original support under `raw/retained-support/`.
+It is not a self-contained public reproduction kit. Useful support is preserved,
+not called disposable junk or represented as shipped runtime. The
+[housekeeping receipt](../evidence-housekeeping-20261021/report.md) records retention
+and link boundaries; no historical model or generated code was executed again.

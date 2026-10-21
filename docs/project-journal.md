@@ -16,6 +16,32 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-21 — Retire stale statuses and keep experiment evidence explicit
+
+**Context / cause:** Creator accepts current-status/evidence maintenance and asks
+to remove unnecessary test residue. The active backlog mixed past source/install
+states with live tasks; limits missed an already-passing generated-only cleanup
+case. Public runner links also targeted untracked machine-specific support.
+
+**Decision / result:** Preserve the exact prior backlog in a dated history file;
+keep current owners, triggers and bounded closures in the active queue. Four Canvas
+reports distinguish public contracts/results from privately retained original
+support and later distribution.20helper/fixture files are retained byte-exact before
+working-copy removal.61bytecode files,33verified duplicate downloads and57empty
+directories are removed;5,292,954redundant bytes, not measured physical disk recovery.
+Original logs/inputs/results/failures, assets/rollback and unrelated research /
+observer edits remain. Same-release hashes retain every deduplicated download.
+
+**Verification / limit:** Offline path/anchor, retention and protected-evidence
+checks plus package validation; runtime stays beta.32,94files/d2ce2847243bc096.
+No model/generation/native test, installation, public release or chat/worktree
+cleanup. Public evidence is not a self-contained reproduction kit. No behavioral
+or scientific gap closes through administrative cleanup.
+
+**Next:** Main retains one focused local checkpoint. Actual relevant creator work
+remains the next behavioral trigger; no generic model suite is queued.
+[Maintenance receipt](../experiments/maintenance/evidence-housekeeping-20261021/report.md).
+
 ## 2026-10-21 — Make the public beta.32 overview readable
 
 **Context / decision:** Creator asks what shipped and whether GitHub presentation

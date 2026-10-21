@@ -12,10 +12,13 @@
 - Sustained continuity and the last queued Canvas-chat recovery remain open.
 - Research citation coverage is partial. Recheck changing platform, legal and
   economic claims against current primary sources.
-- Research refusal/additive/revision writes pass three bounded source cases, not
-  universal cross-project efficacy. Generated cleanup rules are self-contained,
-  but fresh generated-only model cleanup and transient preview disposal still
-  require observation.
+- Research refusal/additive/revision writes pass bounded source cases; the later
+  tag-only contract preserves names/content and project-scoped consent. Native
+  refusal/session recovery and universal cross-project efficacy remain unproved.
+  Generated cleanup rules are self-contained, and the generated-only execution
+  surface [passes one bounded case](../experiments/workflow-tests/generated-cleanup-20261014/results.md).
+  The original external transient-preview disposal failure still requires its
+  own actual-use verification; the CSV result does not close that surface.
 
 Detailed evidence and historical failures remain in the [backlog](backlog.md)
 and [release policy](release-policy.md). Publication does not close those gaps.

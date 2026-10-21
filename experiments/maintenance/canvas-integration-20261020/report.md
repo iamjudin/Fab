@@ -88,7 +88,8 @@ asset resolution, participant comprehension or executable product behavior.
 The [bounded contract](contract.md) proposes one fresh read-only Codex CLI turn
 using GPT-6.1 Sol/Medium, the integrated package and the existing local-search map.
 Forecast 90,000 input and up to 8,000 output tokens, at most 180 seconds; no
-automatic second run. The [runner](run_smoke.py) freezes inputs and records actual
+automatic second run. The privately retained runner (`raw/retained-support/run_smoke.py`)
+freezes inputs and records actual
 usage/events. The actor must discover the reference from Wireframe and produce
 an executable bounded edit spec; root checks it separately.
 
@@ -164,3 +165,22 @@ creator scope: the latest approval explicitly permits the one read-only test
 without installation, Git or publication. Do not install on the strength of a
 passing test alone. Main owns the local-update proposal; real Canvas use then
 checks the relevant native surface. Public release remains unrequested.
+
+## Maintenance note — 2026-10-21, after beta.32
+
+The result, original failures, cost and authority above describe this dated
+experiment. Later [beta.31 distribution](../../releases/integrated-beta31-20261021/report.md)
+and [beta.32 distribution](../../releases/learning-beta32-20261021/report.md)
+supersede its install/release-pending recommendation, without closing the recorded
+behavioral limits or authorizing a rerun. Current work belongs to the
+[canonical backlog](../../../docs/backlog.md).
+
+This public packet contains the contract, available input description and result;
+exact machine-specific runners, private fixtures and detailed traces are retained
+locally in ignored `raw/`, with original support under `raw/retained-support/`.
+It is not a self-contained public reproduction kit. Useful support is preserved,
+not called disposable junk or represented as shipped runtime. The
+[housekeeping receipt](../evidence-housekeeping-20261021/report.md) records retention
+and link boundaries; no historical model or generated code was executed again.
+
+The [sanitized verification record](verification.json) is also included publicly.

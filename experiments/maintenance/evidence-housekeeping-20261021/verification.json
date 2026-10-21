@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-21",
+  "scope": "Offline documentation and retained-evidence housekeeping only",
+  "result": "PASS",
+  "publicPathsAndAnchors": {
+    "linksChecked": 229,
+    "missing": 0,
+    "journalCompatibilityAnchors": 3
+  },
+  "backlogHistory": {
+    "byteExact": true,
+    "sha256": "ef710685a13ce25a116182a34c6440eb4aa22e216bc46e775072e48dae1139dd",
+    "linesBefore": 500,
+    "linesCurrent": 145,
+    "allExistingOwningIDsRetained": true,
+    "observerOperatingAgreementByteExact": true
+  },
+  "preservation": {
+    "protectedTrackedAndPendingFilesUnchanged": 884,
+    "retainedExistingEvidenceFilesUnchanged": 6230,
+    "unrelatedObserverAndFourResearchFilesUnchanged": true,
+    "originalHelpersAndFixturesRetained": 20,
+    "sameReleaseDownloadCopiesRetained": 33,
+    "allRetainedHashesMatch": true
+  },
+  "cleanup": {
+    "removedBytecodeFiles": 61,
+    "removedIdenticalDownloadFiles": 33,
+    "removedEmptyDirectories": 57,
+    "redundantContentBytesRemoved": 5292954,
+    "physicalDiskRecoveryMeasured": false
+  },
+  "runtime": {
+    "unchanged": true,
+    "files": 94,
+    "fingerprint": "d2ce2847243bc096",
+    "packageValidation": "PASS: 0.1.0-beta.32; 94 files; fingerprint=d2ce2847243bc096",
+    "testsRerun": false,
+    "newModelCalls": 0,
+    "installOrPublicRelease": false
+  },
+  "limits": [
+    "Affected public path/anchor checks do not audit all historical semantics",
+    "Private exact fixtures/runners/traces are retained locally, not a self-contained public reproduction kit",
+    "Behavioral and scientific gaps remain open"
+  ]
+}

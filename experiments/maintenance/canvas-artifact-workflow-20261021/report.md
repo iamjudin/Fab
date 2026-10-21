@@ -12,7 +12,7 @@ errors and reruns checks before handing it off. Root then reviews the unchanged
 final package, declared behavior and fallback visuals. This is materially broader
 than returning a file-content JSON envelope, but not universal or native readiness.
 
-Retained entry: [Start here](<raw/final-workspace/candidate/Начни здесь.md>).
+Privately retained entry: `raw/final-workspace/candidate/Начни здесь.md`.
 The candidate directory is the declared isolated test-vault root. It contains
 NAV-01, job composition SC-01, its single-caller client-selection detail,
 Clients entry SC-02, and one actual shared client-creation MOD-01. These are
@@ -123,3 +123,20 @@ main HEAD8bd774c/empty index remain unchanged. The exact owned temporary cwd is
 removed only after final58-file and seven-revision/blob retention verification.
 Retained final outputs and previews remain available; no neighboring scratch,
 previous campaign, protected input or live project is removed.
+
+## Maintenance note — 2026-10-21, after beta.32
+
+The result, original failures, cost and authority above describe this dated
+experiment. Later [beta.31 distribution](../../releases/integrated-beta31-20261021/report.md)
+and [beta.32 distribution](../../releases/learning-beta32-20261021/report.md)
+supersede its install/release-pending recommendation, without closing the recorded
+behavioral limits or authorizing a rerun. Current work belongs to the
+[canonical backlog](../../../docs/backlog.md).
+
+This public packet contains the contract, available input description and result;
+exact machine-specific runners, private fixtures and detailed traces are retained
+locally in ignored `raw/`, with original support under `raw/retained-support/`.
+It is not a self-contained public reproduction kit. Useful support is preserved,
+not called disposable junk or represented as shipped runtime. The
+[housekeeping receipt](../evidence-housekeeping-20261021/report.md) records retention
+and link boundaries; no historical model or generated code was executed again.

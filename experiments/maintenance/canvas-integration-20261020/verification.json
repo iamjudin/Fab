@@ -1,0 +1,62 @@
+{
+  "incomingSourceFilesUnchanged": 53,
+  "existingSearchMapPaletteRepair": "exact accepted content/geometry/edges recovered; 3 explicit colors only",
+  "existingSelectorContinuation": "original relation collapses exactly; no other field/order/branch changed; documentary frame only",
+  "noHelperArchitectureQuota": "no NAV/MOD/index/legend invented for an existing task; not fresh instruction-following evidence",
+  "source": {
+    "files": 89,
+    "fingerprint": "b782cf208ae92998",
+    "version": "0.1.0-beta.30 (source only)"
+  },
+  "modelSmoke": {
+    "date": "2026-10-21",
+    "verdict": "PASS within this narrow boundary",
+    "claim": "Source discovery and executable bounded presentation spec for one existing map",
+    "modelTurns": 1,
+    "configuredModel": "gpt-6.1-sol",
+    "configuredEffort": "medium",
+    "usage": {
+      "input_tokens": 111037,
+      "cached_input_tokens": 95232,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 650,
+      "reasoning_output_tokens": 74
+    },
+    "seconds": 23.24,
+    "forecastExceeded": true,
+    "idempotentInput": true,
+    "rootSpecExecutionSeparate": true,
+    "native": false,
+    "installedRuntime": false
+  },
+  "nativeRendering": "not observed",
+  "prePreviewSource": {
+    "files": 89,
+    "fingerprint": "dd643a0999eb446a",
+    "version": "0.1.0-beta.30 (source identity only)"
+  },
+  "regressions": {
+    "count": 91,
+    "result": "pass",
+    "stderr": "raw/regressions.stderr.txt"
+  },
+  "fallbackVisualReview": {
+    "initial": [
+      "raw/local-palette-preview.png",
+      "raw/framed-detail-preview.png"
+    ],
+    "intermediate": "raw/local-palette-preview-v2.png",
+    "final": [
+      "raw/local-palette-preview-v3.png",
+      "raw/framed-detail-preview-v3.png"
+    ],
+    "finalWarnings": [],
+    "rootVisuallyInspected": true,
+    "native": false,
+    "imageEmbeds": "placeholders; not asset/theme parity"
+  },
+  "installation": "unchanged landing81/ffc900d30331279b, full snapshot/cache equality verified",
+  "protectedSourceAndIndependentEdits": "pass, only six original runtime paths changed",
+  "git": "unchanged HEAD and empty index",
+  "initialModelSmoke": "blocked before execution by automatic approval review; no model usage or token claim"
+}
