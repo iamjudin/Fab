@@ -1,6 +1,6 @@
 # Рабочее состояние Fab
 
-## 2026-10-21 — Connected knowledge/correction learning prepared for beta.32
+## 2026-10-21 — Connected knowledge/correction learning shipped in beta.32
 
 Creator asks for existing-material cohesion/decomposition and local-versus-rule
 learning, then explicitly requests release. Main audits12briefs/10skills, adds one
@@ -15,14 +15,17 @@ PASS only;277531input/242816cached(included)/3221output,102.39seconds.200kforeca
 exceeded77531; original transfer rejection and planning error retained, no retry.
 97inputs/events/reply/usage retained/hash-checked before exact scratch disposal.
 
-Prepared beta.32:94files/d2ce2847243bc096, only manifest differs from source probe
-94/f179b988fa473c34.93regressions/package/scope pass. Main completes source CI,
-public tag/Release/assets and clean/primary full-parity install; pending in the
-[release receipt](../experiments/releases/learning-beta32-20261021/report.md).
-Installed/public beta.31 stays89/f3e103bee3d92c90 until verified update. Rollback
-retained;17other plugin settings/10previous tags protected. No new model suite,
-other-product edit or unrelated research/observer promotion. Relevant actual
-use is the next behavioral trigger; no all-task/native/organic/scientific closure.
+Published/installed/enabled beta.32:94files/d2ce2847243bc096,v0.1.0-beta.32/5164625.
+Manifest-only delta from source probe94/f179b988fa473c34.93regressions/package/scope,
+exact-source CI, anonymous assets and clean/primary exact-tag/head/full94-file
+parity pass.17other settings/10previous tags and26pending independent files unchanged.
+API immutable=false; no server-lock claim. Rollback beta.31 retained offline.
+94clean files/assets/logs retained/hash-checked before exact release-scratch
+removal; primary cache kept. [Release receipt](../experiments/releases/learning-beta32-20261021/report.md).
+Actual installed learning/core/Analysis reread here; no automatic adoption in other
+chats, new model suite or native/organic/scientific closure. Relevant actual use is
+the next behavioral trigger; a finding returns to its cause/owner, not another
+universal prohibition. Root forecast issue remains deferred to a necessary test.
 
 ## 2026-10-21 — Interface foundation integrated in source, distribution unchanged
 

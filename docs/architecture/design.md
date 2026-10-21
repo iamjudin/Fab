@@ -7,12 +7,13 @@ not normal runtime dependencies. No orchestrator/MCP/queue/hidden swarm.
 
 ## Current distribution and source
 
-Installed/public beta.31 has89files/f3e103bee3d92c90. Main has prepared beta.32,
-94files/d2ce2847243bc096: prior interface-foundation integration plus correction learning,
-conditional knowledge discovery and current-owner checks. The creator explicitly
-requests release after maintenance; it remains pending until the
-[distribution receipt](../../experiments/releases/learning-beta32-20261021/report.md)
-records actual tag/assets and local install. A source commit is not distribution.
+Published, installed and enabled **beta.32**,94files/d2ce2847243bc096,
+v0.1.0-beta.32/source5164625. It includes interface foundation, correction learning,
+conditional knowledge discovery and current-owner checks.93regressions/package/
+scope, exact-source CI, anonymous assets and clean/primary exact-tag/full94-file
+parity pass.17other settings/10previous tags unchanged. Rollback beta.31.
+[Distribution receipt](../../experiments/releases/learning-beta32-20261021/report.md).
+A packaged/installed identity does not establish all-skill or native behavior.
 
 ## Capability ownership
 

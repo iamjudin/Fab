@@ -7,20 +7,21 @@ not a second queue. Closing a bounded task does not assert universal maturity.
 
 ## Current result and next action
 
-**Current distribution:** beta.31 is installed/published,89files/f3e103bee3d92c90.
-**Prepared release:** beta.32,94files/d2ce2847243bc096, with interface foundation,
-knowledge discovery/current-owner integrity and scoped correction learning.
-Creator explicitly requests release after this maintenance.93regressions/package/
-scope pass; CI/public assets and clean/primary installs remain pending in the
-[release receipt](../experiments/releases/learning-beta32-20261021/report.md).
-No additional model suite is queued. Main owns both distribution outcomes.
+**Current distribution:** beta.32 is published, installed and enabled,
+94files/d2ce2847243bc096,v0.1.0-beta.32/source5164625. It includes interface
+foundation, knowledge discovery/current-owner integrity and scoped correction
+learning.93regressions/package/scope, exact-source CI, anonymous assets and clean /
+primary exact-tag/full94-file parity pass.17other settings/10previous tags remain
+unchanged. [Release receipt](../experiments/releases/learning-beta32-20261021/report.md).
+Rollback beta.31 retained. No additional model suite is queued.
 
 Canvas stays opt-in experimental; earlier recovery/overflow misses, timeout /
 unknown usage and native/organic continuity remain next-verification triggers
-on real relevant work. FAB-11 is not closed by source changes/publication.
-Twelve original packets/572sections, additive source tags and project consent
-remain intact. Independent research/observer work stays out of this release.
-Older source/install statements below retain their dated historical boundaries.
+on real relevant work. FAB-11 is not closed by publication. Twelve original
+packets/572sections, additive source tags and project consent remain intact.
+Independent research/observer work stays out. Actual installed instructions are
+reread here; other chats need relevant current-instruction rereading. Older dated
+source/install restrictions below retain their historical evidence boundary.
 
 ## FAB-15 connected knowledge and correction scope — 2026-10-21
 
@@ -52,9 +53,9 @@ bounded scope rather than reuse200k or create a product-wide restriction. This
 runtime improvement does not close the planning error or reset its budget.
 
 Owner main, FAB-15; relevant continuation/application evidence also informs FAB-11 /
-FAB-14. Disposition: **next update**, complete the explicitly authorized beta.32
-release; **next verification**, actual discovery/application after adoption in a
-relevant real task. Close only the observed binding. Scientific source gaps,
+FAB-14. Disposition: **source and distribution update complete in beta.32**;
+**next verification**, actual discovery/application in a relevant real task after
+current-instruction rereading. Close only the observed binding. Scientific source gaps,
 native/organic usefulness and previous failures remain. No competing learning queue.
 
 ## FAB-15 interface knowledge ownership — source integrated, 2026-10-21

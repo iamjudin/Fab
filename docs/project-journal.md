@@ -40,8 +40,15 @@ No second launch. Root review unblinded; one composite source case, not native,
 installed, sustained usefulness, scalability or scientific validation.97inputs /
 logs/reply/usage retained/hash-checked before exact owned scratch removal.
 
-**Next:** Main completes the explicitly authorized local/public beta.32 release;
-then relevant real work checks discovery/application after instruction rereading.
+**Distribution confirmed:** beta.32,v0.1.0-beta.32/5164625,94files/d2ce2847243bc096.
+Exact-source CI, anonymous assets and clean/primary full94-file/tag parity pass;
+Fab enabled,17other settings/10previous tags unchanged. Beta.31 rollback retained.
+Actual installed learning/core/Analysis reread here.94clean files/assets/logs retained
+and hash-verified before exact owned release-scratch disposal; primary cache kept.
+API immutable=false; no server-enforced release lock claim.
+
+**Next:** relevant real work checks discovery/application after instruction rereading;
+no additional generic model suite or automatic other-chat adoption.
 [Audit](research-audits/knowledge-organization-2026-10-21.md) ·
 [Release](../experiments/releases/learning-beta32-20261021/report.md).
 
