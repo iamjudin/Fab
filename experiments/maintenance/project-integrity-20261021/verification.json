@@ -30,5 +30,17 @@
     "cause": "New tag zero base scanned full archive",
     "correction": "Tip-parent baseline with contrasting archived/current-document test"
   },
-  "correctedRelease": "0.1.0-beta.34"
+  "correctedRelease": "0.1.0-beta.34",
+  "finalBranchCI": {
+    "result": "success",
+    "run": 39681866137,
+    "source": "a881d567fa51bbf142a63d88facbaed5dedaa2bb"
+  },
+  "finalTagCI": {
+    "result": "success",
+    "run": 39682258957,
+    "source": "a881d567fa51bbf142a63d88facbaed5dedaa2bb"
+  },
+  "localBeta34Install": "pass: clean/primary94-file parity",
+  "publicBeta34Release": "pending actual unlock/upload/anonymous verification"
 }

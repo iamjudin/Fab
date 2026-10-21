@@ -1,5 +1,9 @@
 # Beta.33 repository integrity — superseded before Release
 
+**Historical attempt only.** Superseded by [beta.34](../housekeeping-beta34-20261021/report.md).
+Do not execute the old publication recommendation below; the original results
+and blocker are retained, not current release instructions.
+
 2026-10-21 maintenance, continued across the local date boundary. Creator requests
 prevention mechanisms and immediate local/public release. This includes repository
 checks and completed evidence housekeeping; runtime94files/4c0ef985f2312a7a differs

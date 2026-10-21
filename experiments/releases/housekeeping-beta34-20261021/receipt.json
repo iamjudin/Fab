@@ -3,7 +3,7 @@
   "tag": "v0.1.0-beta.34",
   "files": 94,
   "fingerprint": "66b2c5decf2167b8",
-  "sourceCommit": null,
+  "sourceCommit": "a881d567fa51bbf142a63d88facbaed5dedaa2bb",
   "authorization": "Creator requests implementation of repository-maintenance mechanisms and next local/public release; roll forward from unreleased beta.33 tag without moving it.",
   "checks": {
     "regressions": 105,
@@ -12,12 +12,19 @@
     "package": "pass:94files/66b2c5decf2167b8",
     "scope": "pass: exact beta.34 plan",
     "projectIntegrity": "pass: staged index/public dependencies and owned roots",
-    "branchCI": "pending",
-    "tagCI": "pending",
-    "publicRelease": "pending actual Mac unlock",
-    "assets": "pending",
-    "cleanInstall": "pending",
-    "primaryInstall": "pending"
+    "branchCI": "pass: exact source, run39681866137",
+    "tagCI": "pass: exact source new-tag event, run39682258957",
+    "publicRelease": "pending: Mac locked; exact unlock requested; direct API TLS transport times out",
+    "assets": "pending publication/anonymous download; local3asset hashes prepared",
+    "cleanInstall": "pass: exact tag and full94-file parity",
+    "primaryInstall": "pass: exact tag and full94-file parity",
+    "settings": "pass: Fab enabled;17other plugin settings unchanged",
+    "independentWork": "pass: observer and four research files hash-unchanged",
+    "runtimeDelta": "pass: manifest version only from beta.32; twelve packets/icon unchanged",
+    "installedInstructionsReread": "actual installed Cowork/version reread; no new model/native adoption claim",
+    "cleanup": "partial: clean94-file outputs/logs retained and isolated install homes removed where safe; active publication inputs intentionally kept",
+    "previousTagsPreserved": "pass: all12prior public version tags unchanged",
+    "preparedAssets": "pass:3local hashes/full94-entry ZIP/source/scope parity; anonymous download pending"
   },
   "rollback": {
     "public": "0.1.0-beta.32",
@@ -36,5 +43,18 @@
     "SHA256SUMS.txt": "c937843b2a489190d57bfbfb5f2988cd7036fffb11faf054e3703bfd6d988fde",
     "fab-0.1.0-beta.34.zip": "4324a35021e120e79c65c69c774c2b3e66d9bd422809fae7c06d9c2e38d1552a",
     "release-scope.json": "d4cb44c71d10807227370456cf52dd7e6aad831689822cad60fb2a3891e5afb3"
+  },
+  "ciURL": "https://github.com/iamjudin/Fab/actions/runs/39681866137",
+  "tagCIURL": "https://github.com/iamjudin/Fab/actions/runs/39682258957",
+  "installedVersion": "0.1.0-beta.34",
+  "installedRelativePath": "plugins/cache/fab-local/fab/0.1.0-beta.34",
+  "publicationBlock": {
+    "reason": "Locked Mac prevents browser publication; direct GitHub API TLS transport times out",
+    "creatorAction": "Unlock Mac and reply; resume with beta.34, cancel superseded beta.33 dialog",
+    "sourceTagPublic": true,
+    "branchAndTagCIPass": true,
+    "localInstallationVerified": true,
+    "releasePublished": false,
+    "noSecuritySettingsChanged": true
   }
 }

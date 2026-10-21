@@ -8,21 +8,21 @@ Closing implementation or distribution does not establish behavioral maturity.
 
 ## Current distribution
 
-**Installed and enabled: beta.33**,94files/4c0ef985f2312a7a,
-v0.1.0-beta.33/sourcecc65d59. Source branch and annotated tag are public;
-104regressions/package/scope, successful branch CI and clean/primary full94-
-file/exact-tag install parity pass.17other settings/five pending independent files
-are preserved. Repository checks and completed housekeeping are included; installed
-skill behavior is unchanged from beta.32. No new model/native test.
+**Installed and enabled: beta.34**,94files/66b2c5decf2167b8,
+v0.1.0-beta.34/sourcea881d56. Source branch and annotated tag are public;
+105regressions/package/scope, exact branch **and new-tag CI**, staged/task-root
+checks and clean/primary full94-file/exact-tag install parity pass.17other plugin
+settings and five independent pending files are preserved. Installed skill
+behavior is unchanged from beta.32; this adds repository-maintainer mechanisms.
 
-**Public Release/assets: pending for corrected beta.34.** Beta.33 tag CI exposed
-a zero-base bug after its branch checks passed. Its tag is preserved and no
-Release/assets are published for that superseded candidate. Direct API HTTPS transport times out; browser
-control reports a locked Mac. Creator unlock is requested. The latest fully
-published Release remains beta.32, retained as exact offline rollback. A public
-tag and a successful local update do not count as completed Release publication.
-[Current receipt](../experiments/releases/housekeeping-beta33-20261021/report.md).
-No new generic model suite is queued. Earlier failures retain their verdicts.
+**Public Release/assets: pending actual Mac unlock.** Direct API TLS transport
+fails and browser control reports a locked Mac; manual unlock was requested.
+Prepared ZIP/scope/checksum are retained, but no public Release or anonymous
+asset-download PASS is claimed. The latest fully published Release remains
+beta.32, retained as exact offline rollback. Beta.33 is a superseded unreleased
+public tag candidate; both its CI failures and unchanged tag are preserved.
+[Current receipt](../experiments/releases/housekeeping-beta34-20261021/report.md).
+No new model/native/organic test or generic suite is queued.
 
 ## FAB-15 prevention checks — beta.34 roll-forward in progress
 
@@ -35,8 +35,8 @@ entry points link here; dated reports remain history. The guard never deletes
 files, evaluates prose truth or treats another task's drafts as this task's junk.
 
 Creator explicitly requests release. Owner main. Disposition: **next update**,
-complete corrected beta.34 source/tag/CI and local install, then the pending
-public Release/assets after actual Mac unlock. Beta.33 remains an unreleased
+finish only pending public Release/assets after actual Mac unlock; beta.34
+source/tag/branch-and-tag CI and local installation are verified. Beta.33 remains an unreleased
 public tag candidate after its tag-triggered CI failure; do not move that tag.
 94-file runtime differs only in manifest version. No model/native
 behavior rerun or new installed policy; original behavioral/source/cost gaps stay

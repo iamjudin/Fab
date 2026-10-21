@@ -16,6 +16,22 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-21 — Verify beta.34 source/tag and local install separately from Release
+
+**Outcome:**105tests/12new controls, actual branch/tag CI and clean/primary94-file
+install parity pass for beta.34/66b2c5decf2167b8/sourcea881d56. Fab enabled;
+17other settings/five independent files preserved. Runtime version delta only;
+no new model/native/organic claim. Beta.33 remains an unreleased public tag and
+both its initial CI failures stay recorded; no retag or semantic closure.
+
+**Block / next:** GitHub Release/assets are not published. Official API TLS
+transport times out; browser reports locked Mac and manual unlock is requested.
+Main finishes beta.34 upload/publication and anonymous ZIP/hash/scope checks after
+actual unlock. Exact beta.32 rollback, clean output/logs and active publication
+inputs are retained. This is partial distribution under existing release authority,
+not a new generic approval or claim that a tag/push completes a Release.
+[Receipt](../experiments/releases/housekeeping-beta34-20261021/report.md).
+
 ## 2026-10-21 — Enforce repository integrity at the actual completion seam
 
 **Context / judgment:** Creator asks how to prevent the file/status confusion,
