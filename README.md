@@ -46,31 +46,37 @@ chat and transfers context after your agreement, subject to host support.
 
 ## Beta status
 
-**0.1.0-beta.32** focuses on mobile apps. Structure and scenarios use Markdown
-tables; Canvas remains experimental. An opt-in screen-flow method supports task
-scenarios, genuinely shared modules and caller-specific returns. One actual
-file/check/correction workflow passes; earlier output misses and native rendering
-limits remain. A conditional landing profile uses HTML/CSS and necessary JavaScript
-for new pages without a chosen stack, preserving existing or explicit stacks.
-Browser prototypes have bounded checks.
-Shared interface policy now has one owner, specialized by public-site, browser
-and implementation needs. Correction learning distinguishes local choices,
-discovery failures, application failures and real rule gaps; significant findings
-reuse the existing backlog. One fresh source-discovery review supports this bounded
-behavior, not universal adoption or native reliability.
-Research now plans evidence and reader presentation together, separates reusable
-findings from project application and reviews returned coverage, links and numbers.
-Knowledge briefs now distinguish findings from current Fab policy. The reader protects
-originals and checks packet integrity. Stage reports make the next action and owner
-concrete; ordinary-use dialogue consistency remains open. External Deep Research
-compliance remains partial. Library use adds `project/fab`, `project/ujitsu` or
-`project/once` tags while preserving existing tags and filenames. Technical usage
-history stays in an optional hidden footer, outside the reader introduction.
-The knowledge base adds qualified layout/typography, repository/distribution and
-motivation/gamification methods. Onboarding reviews distinguish desired value,
-its concrete demonstration and necessary setup. These are design aids, not
-validated promises of retention, learning or conversion.
-Read [known limits](docs/limitations.md) and [release notes](docs/releases/0.1.0-beta.32.md).
+**Current version: 0.1.0-beta.32.** Mobile apps are the current focus, not a
+product-size ceiling. Public websites and landing pages also have a conditional
+route; each skill remains usable independently.
+
+This release connects the knowledge base to the work that uses it:
+
+- **Coherent interfaces.** Shared wording, grouping and typography principles
+  have one owner, with separate public-site, browser and implementation guidance.
+  Existing or explicitly chosen stacks remain in place.
+- **Corrections at the right scope.** Fab distinguishes local choices, missed
+  instructions, failed application and actual rule gaps before proposing a reusable
+  change. Significant findings use the project's existing backlog.
+- **Relevant knowledge on demand.** Skills consult applicable method briefs;
+  source evidence, current rules and project decisions stay distinct. Package
+  checks protect the links to current rule owners and original research packets.
+
+Research also includes qualified methods for layout and typography, onboarding,
+motivation and repository delivery. Library annotation is optional: Fab proposes
+a `project/<slug>` tag once per project and remembers your decision. Accepted
+tagging preserves filenames, content and existing tags; technical history can
+stay in a hidden footer.
+
+Markdown tables remain the default for structure and scenarios. Canvas is opt-in
+and experimental. Browser prototypes check selected interactions; they do not
+establish native or production readiness. Current checks include 93 regressions
+and one fresh source review with five contrasting correction cases. Sustained
+dialogue continuity, native behavior and external Deep Research compliance remain
+open or partial; these methods do not establish retention or conversion gains.
+
+Read [known limits](docs/limitations.md) and
+[release notes](docs/releases/0.1.0-beta.32.md) for evidence and remaining gaps.
 
 ## Development and license
 

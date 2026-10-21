@@ -16,6 +16,25 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-21 — Make the public beta.32 overview readable
+
+**Context / decision:** Creator asks what shipped and whether GitHub presentation
+matches it. Direct GitHub connector reads confirm the published README, install
+pin and Release already describe beta.32. The README mixes accumulated verification
+history with the visitor overview; keep detailed receipts linked and show the
+current benefits, optional routes and limits together.
+
+**Result / boundary:** README now summarizes common interface guidance, scoped
+correction handling and selective knowledge use. Generic project tags include the
+once-per-project consent boundary. Six local documentation links and whitespace
+checks pass; runtime files and versioned release assets are unchanged. This is a
+presentation update, not another plugin version or behavioral test. Live publication
+and About metadata are verified separately from local preparation.
+
+**Evidence / next:** [Current README](../README.md),
+[versioned release notes](releases/0.1.0-beta.32.md). Relevant real work remains
+the next behavioral verification trigger; no new generic suite is needed.
+
 ## 2026-10-21 — Connect knowledge ownership to correction learning
 
 **Context / decision:** Creator asks for coherent existing material and a useful
