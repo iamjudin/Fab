@@ -1,18 +1,25 @@
 # Рабочее состояние Fab
 
-## 2026-10-21 — Integrated beta.31 release authorized and prepared
+## 2026-10-21 — Integrated beta.31 published, installed and enabled
 
-Creator explicitly requests versioning and publication now, rather than waiting
-for organic tests. This supersedes previous no-Git/install/publication restrictions
-for the current landing/Canvas/core/Cowork package only. Prepared89files/f3e103bee3d92c90;
-91regressions/package/scope pass. Only version and stale capability inventory
-change from the reviewed89-file source. Exact local landing rollback retained.
-Main owns source checkpoint, exact CI, public tag/Release/assets and clean/primary
-install verification; not complete until [distribution receipt](../experiments/releases/integrated-beta31-20261021/report.md).
-Canvas stays opt-in experimental. Prior search/timer misses, timeout/unknown
-usage, scoped edit and native/organic continuity limits remain open. No further
-model suite, independent research promotion, observer edit or other-chat message.
-Historical pending-authority statements below retain their dated scope.
+Creator explicitly requests release without waiting for organic tests. Main ships
+89files/f3e103bee3d92c90,v0.1.0-beta.31/448f5a1: conditional landing, opt-in Canvas and prior
+core/Cowork fixes.91regressions/package/scope, exact-source CI, anonymous assets,
+clean/primary exact-tag/head/full89-file parity pass. Fab enabled,17other settings
+and nine previous tags unchanged. Factory icon/twelve packets unchanged.
+
+Public rollback beta.30; exact prior local landing81/ffc900d30331279b retained
+for offline rollback.89clean files/verified assets/logs retained/hash-checked
+before exact owned scratch disposal; primary cache kept. API immutable=false;
+no server-enforced Release lock claim. [Distribution evidence](../experiments/releases/integrated-beta31-20261021/report.md).
+
+Actual installed Cowork/Wireframe/landing/capabilities reread here. No automatic
+other-chat adoption, native/organic/large-product or sustained dialogue proof.
+Prior search/timer misses, timeout/unknown usage, unrun scoped edit and forecast
+overruns remain; no new model run. Next relevant creator task uses beta.31 after
+actual installed-instruction rereading and preserves accepted inputs. Additional
+generic campaigns are unwarranted now. Independent research and observer edits
+remain excluded. Earlier pending-authority statements below are historical.
 
 ## 2026-10-21 — Actual artifact/check/correction workflow accepted in one case
 

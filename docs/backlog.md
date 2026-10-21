@@ -15,16 +15,15 @@ A generated plugin inherits self-contained cleanup rules. A separately authorize
 now verifies actual retention/disposal; the external-preview surface remains open.
 No new Fab runtime correction is warranted by these passing cases.
 
-**Current release stage:** creator explicitly authorizes beta.31 local/public
-promotion of current integrated landing, opt-in screen-flow and earlier core /
-Cowork fixes. Prepared89files/f3e103bee3d92c90;91regressions/package/scope pass. Exact local
-landing rollback retained; public rollback beta.30. Main completes source
-checkpoint, exact-source CI, public tag/Release/assets and clean/primary installs
-in [distribution receipt](../experiments/releases/integrated-beta31-20261021/report.md).
-Until those checks finish, published beta.30 and installed local landing remain
-the actual distributed baseline. This supersedes earlier no-Git/install/publication
-statements below only for the integrated release. Independent research, observer
-pending edits and other products are excluded. No additional model series.
+**Current result:** beta.31 is published, installed and enabled:
+89files/f3e103bee3d92c90,v0.1.0-beta.31/448f5a1. Integrated landing, experimental screen-flow
+and earlier core/Cowork fixes are shipped under the creator's explicit release
+request. [Distribution](../experiments/releases/integrated-beta31-20261021/report.md)
+verifies91regressions/package/scope, exact-source CI, anonymous assets, clean /
+primary exact-tag/full89-file parity, Fab enabled and17other settings preserved.
+Nine previous tags unchanged; API Release immutable=false, no server-lock claim.
+Rollback publicbeta.30 or the exact retained local landing snapshot. No whole
+feature-branch merge, separate research or observer pending edit promotion.
 
 Canvas remains opt-in experimental. A bounded actual file/check/correction
 workflow passes; search/timer misses, timeout/unknown usage, unrun scoped edit,
@@ -32,7 +31,10 @@ native/installed adoption and sustained behavior remain **next verification**
 on relevant actual work. Landing discovery/copy fidelity/responsive quality
 likewise needs a real project, not a generic rerun. FAB-11 is not closed by
 publication. All twelve knowledge pairs/572sections, additive tags and consent
-remain intact. Bookworm and the active observer retain their own scope.
+remain intact. Actual installed instructions are reread here; other chats need
+relevant current-instruction rereading, not assumed automatic adoption. Bookworm
+and the active observer retain their own scope. Dated source-only/no-publication
+statements below are history, superseded only for this integrated package.
 
 ## Landing-page capability — separate workstream, 2026-10-19
 

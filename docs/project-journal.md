@@ -16,23 +16,27 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
-## 2026-10-21 — Promote integrated work to a bounded beta without organic-test delay
+## 2026-10-21 — Integrated beta.31 ships without waiting for organic-test time
 
-**Decision:** Creator explicitly requests a new local/public version now. Main
-selects beta.31 with integrated landing, opt-in screen-flow and earlier core /
-Cowork fixes. This changes the prior no-Git/install boundary for that package;
-independent research and observer edits remain out of the release checkpoint.
+**Decision:** Creator requests the ready landing/Canvas/core/Cowork package in a
+new local/public version now. Earlier no-Git/install boundary is lifted only for
+this integrated release. Independent research and observer pending edits stay out.
 
-**Prepared evidence:**89files/f3e103bee3d92c90,91regressions/package/scope pass. Version and
-stale capability inventory are the only preparation runtime changes. Current
-landing runtime is retained byte-for-byte for rollback; public rollback beta.30.
+**Confirmed result:**beta.31,v0.1.0-beta.31/448f5a1,89files/f3e103bee3d92c90;91regressions,
+package/scope and exact-source CI pass. Public ZIP/scope/checksum bytes verify
+anonymously; clean and primary installs pin the tag and match all89files. Fab
+enabled;17other plugin settings/nine previous tags unchanged. Exact local landing
+rollback retained, public rollback beta.30.89clean files/assets/logs retained and
+hash-verified before exact scratch disposal. Factory icon/twelve packets preserved.
+API immutable=false: identity is verified without claiming a server release lock.
 
-**Meaning / limit / next:** Availability is useful without an additional artificial
-model campaign. One actual artifact/check/correction case passes, while earlier
-output misses, timeout/unknown usage and forecast overruns remain. No native,
-organic landing or universal continuity claim. Main completes separate public
-and local distribution checks and records actual results in the
-[release receipt](../experiments/releases/integrated-beta31-20261021/report.md).
+**Meaning / limits / next:** The useful integrated package is now available.
+Actual installed instructions are reread here; no new model test or automatic
+other-chat adoption. Canvas remains experimental. Previous output misses,
+timeout/unknown usage and forecast overruns remain alongside corrected workflow
+success; native/organic landing/sustained dialogue evidence stays open. Use the
+next actual creator project for relevant verification; no generic campaign now.
+[Release evidence](../experiments/releases/integrated-beta31-20261021/report.md).
 
 ## 2026-10-21 — Actual artifact workflow succeeds without changing Fab source
 

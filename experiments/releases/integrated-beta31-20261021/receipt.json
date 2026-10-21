@@ -4,7 +4,7 @@
   "files": 89,
   "fingerprint": "f3e103bee3d92c90",
   "sourceCandidateFingerprint": "b782cf208ae92998",
-  "sourceCommit": null,
+  "sourceCommit": "448f5a13cd0318c15a923ffbe022f5178a6b67e1",
   "authorization": "Creator explicitly requests integrating current ready package into a new version, local update and public GitHub release on 2026-10-21; supersedes prior no-Git/install/publication boundary for this package only.",
   "checks": {
     "regressions": 91,
@@ -12,7 +12,18 @@
     "scope": "pass",
     "diff": "pass",
     "newModelInvocations": 0,
-    "twelvePacketsAndIconUnchanged": "pass: full byte comparison to public beta.30"
+    "twelvePacketsAndIconUnchanged": "pass: full byte comparison to public beta.30",
+    "remoteCI": "pass: exact448f5a13cd0318c15a923ffbe022f5178a6b67e1, run39566571524",
+    "assets": "pass: anonymous hashes, full89-file ZIP/source and scope parity",
+    "immutableTags": "pass: new source SHA and all previous peeled SHAs preserved",
+    "cleanInstall": "pass: exact tag and full89-file parity",
+    "primaryInstall": "pass: exact tag and full89-file parity",
+    "settings": "pass: Fab enabled, all17other plugin sections unchanged",
+    "independentEdits": "pass: observer and separate research files hash-unchanged",
+    "githubReleaseImmutable": false,
+    "releaseProtectionBoundary": "GitHub API immutable=false; exact tag/asset hashes verified, no claim of server-enforced release locking",
+    "cleanup": "pass: all89clean installed files, verified anonymous assets and per-probe logs retained/hash-checked before exact owned scratch disposal; primary cache and offline rollback kept",
+    "installedInstructionsReread": "pass: actual installed Cowork, Wireframe, capability inventory and landing profile read here; not automatic adoption by another chat"
   },
   "rollback": {
     "public": "0.1.0-beta.30",
@@ -31,5 +42,13 @@
     "SHA256SUMS.txt": "21dbc91a6da7c61c895b0008776d89e5f57e8809c87aefd525925f519bd5690a",
     "fab-0.1.0-beta.31.zip": "c87c6bbd023f4efe3ddd6382a79b81eb5a2234eed92f6dadf9639faf33372b76",
     "release-scope.json": "cb500cef1d58c55802544548d5516565d00c69890cbbfbd4b81ad2710b4de783"
-  }
+  },
+  "ciURL": "https://github.com/iamjudin/Fab/actions/runs/39566571524",
+  "publication": {
+    "url": "https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.31",
+    "isDraft": false,
+    "isPrerelease": true
+  },
+  "installedVersion": "0.1.0-beta.31",
+  "installedRelativePath": "plugins/cache/fab-local/fab/0.1.0-beta.31"
 }

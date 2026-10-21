@@ -85,18 +85,25 @@ This rule does not authorize an immediate new chat, hidden delegation, a merge,
 runtime installation or publication. Keep main ownership and return criteria clear.
 
 ## Current boundary
-Creator2026-10-21 explicitly requests integrating the current ready package into
-one new version and publishing it without waiting for organic tests. This lifts
-the previous no-Git/install/publication boundary for integrated beta.31 only:
-landing, opt-in Canvas and prior core/Cowork corrections. No whole experimental
-branch merge, separate research or observer edit promotion. Prepared89files/
-f3e103bee3d92c90,91regressions/package/scope pass; version and stale capability inventory
-are the only release-preparation runtime deltas. Exact local landing rollback
-retained. Main owns Git checkpoint, CI, public tag/Release and clean/primary
-versioned install verification. These distribution steps are pending until
-recorded in experiments/releases/integrated-beta31-20261021/report.md. Earlier
-source failures/timeouts/overruns and native/organic limits remain; no new model
-suite or universal core readiness claim. Dated restrictions below are history.
+Creator2026-10-21 explicitly requests the current integrated new version locally
+and publicly without organic-test delay, superseding earlier no-Git/install scope
+for this package only. Released/installed/enabled beta.31:89files/f3e103bee3d92c90,
+v0.1.0-beta.31/448f5a1. Landing profile, opt-in Canvas and previous core/Cowork
+fixes ship; no whole experimental branch merge or separate research/observer edit.
+91regressions/package/scope, exact-source CI, anonymous assets, clean/primary
+tag/head/full89-file parity and17other plugin settings pass. Nine previous tags
+unchanged. API Release immutable=false; do not claim server-enforced release
+locking. Factory icon/twelve knowledge packets unchanged. Only version/capability
+inventory differ from reviewed source89/b782cf208ae92998. Rollback publicbeta.30
+or exact retained local landing81/ffc900d30331279b snapshot.89clean files/assets/
+logs retained/hash-checked before exact scratch disposal; primary cache kept.
+Actual installed Cowork/Wireframe/landing/capabilities reread here; no automatic
+other-chat adoption, new model/native/organic or general continuity proof. Prior
+search/timer misses, timeout/unknown usage, unrun scoped edit and budget overruns
+remain. Next relevant real creator task checks installed identity/instructions
+and output; no additional generic suite. Evidence:
+experiments/releases/integrated-beta31-20261021/report.md.
+Dated no-Git/install/publication restrictions below retain their historical scope.
 Creator2026-10-21 approves the isolated actual artifact workflow. One configured
 GPT-6.1 Sol/Medium turn on unchanged source89/b782cf208ae92998 creates five maps /
 entry, validates and fixes missing extensions/unsafe cleanup metadata, preserving

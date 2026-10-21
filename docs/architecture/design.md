@@ -23,11 +23,11 @@ Shared artifact lifecycle covers task-owned scratch, verified retention and
 bounded cleanup. Plugin exports an equivalent self-contained rule to generated
 packages; this is a runtime responsibility, not a new mandatory workflow stage.
 
-## Integrated beta.31 release candidate — 2026-10-21
+## Current integrated distribution — beta.31, 2026-10-21
 
 Current89-file package/f3e103bee3d92c90 includes the landing profile, experimental screen
-flows and previous shared/core/Cowork fixes. Creator explicitly authorizes local
-and public release;91regressions/package/scope pass. Tables remain default;
+flows and previous shared/core/Cowork fixes. Published, installed and enabled atv0.1.0-beta.31/448f5a1;91regressions/package/scope,
+exact-source CI, anonymous assets and clean/primary full89-file parity pass. Tables remain default;
 landing and screen-flow profiles are conditional, not new skills. Capability
 inventory now matches bundled availability. Distribution verification is recorded
 separately in the [release receipt](../../experiments/releases/integrated-beta31-20261021/report.md).
