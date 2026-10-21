@@ -16,6 +16,27 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-21 — Enforce repository integrity at the actual completion seam
+
+**Context / judgment:** Creator asks how to prevent the file/status confusion,
+then accepts the bounded proposal and requests release. Existing artifact policy
+was adequate; runtime-only checks and repeated current-state prose were the gap.
+Add execution checks at commit/CI rather than another global rule/lesson registry.
+
+**Implementation / evidence:** One repository checker reads prospective staged
+contents, validates maintained/changed public targets/anchors/images and install
+pins, and exposes untracked non-private files only in explicitly owned task roots.
+CI repeats committed-document checks from the push/PR base. Architecture/handoff
+entry points route current state to the existing backlog. Nine negative/control
+cases and all102regressions pass; no new model invocation.
+
+**Boundary / next:** This is maintainer tooling, not an installed skill change or
+proof of automatic tidiness/prose truth. Beta.33 changes only runtime manifest
+version from beta.32; main completes the explicitly requested local/public release
+and records actual CI/assets/install/settings/rollback outcomes in the
+[receipt](../experiments/releases/housekeeping-beta33-20261021/report.md).
+Earlier behavior failures and private-evidence boundaries remain.
+
 ## 2026-10-21 — Retire stale statuses and keep experiment evidence explicit
 
 **Context / cause:** Creator accepts current-status/evidence maintenance and asks

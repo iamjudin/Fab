@@ -33,7 +33,7 @@ for the agreed channel. Each skill also works independently.
 Use a Codex client with plugin marketplace support:
 
 ```sh
-codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.32
+codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.33
 codex plugin add fab@fab-local
 ```
 
@@ -46,11 +46,13 @@ chat and transfers context after your agreement, subject to host support.
 
 ## Beta status
 
-**Current version: 0.1.0-beta.32.** Mobile apps are the current focus, not a
+**Current version: 0.1.0-beta.33.** Mobile apps are the current focus, not a
 product-size ceiling. Public websites and landing pages also have a conditional
 route; each skill remains usable independently.
 
-This release connects the knowledge base to the work that uses it:
+This maintenance release adds repository checks for public links, installation
+pins and task-owned leftovers. These maintainer checks do not change installed
+skill behavior. Recent versions also connect knowledge to the work that uses it:
 
 - **Coherent interfaces.** Shared wording, grouping and typography principles
   have one owner, with separate public-site, browser and implementation guidance.
@@ -70,13 +72,14 @@ stay in a hidden footer.
 
 Markdown tables remain the default for structure and scenarios. Canvas is opt-in
 and experimental. Browser prototypes check selected interactions; they do not
-establish native or production readiness. Current checks include 93 regressions
-and one fresh source review with five contrasting correction cases. Sustained
+establish native or production readiness. Current checks include 102 regressions
+and the retained beta.32 source review with five contrasting correction cases.
+No additional model test was run for this maintenance release. Sustained
 dialogue continuity, native behavior and external Deep Research compliance remain
 open or partial; these methods do not establish retention or conversion gains.
 
 Read [known limits](docs/limitations.md) and
-[release notes](docs/releases/0.1.0-beta.32.md) for evidence and remaining gaps.
+[release notes](docs/releases/0.1.0-beta.33.md) for evidence and remaining gaps.
 
 ## Development and license
 

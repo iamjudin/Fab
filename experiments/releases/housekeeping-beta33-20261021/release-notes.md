@@ -1,0 +1,30 @@
+# Fab beta.33 — repository integrity and task completion
+
+This maintenance release adds checks around Fab's repository and includes the
+completed status/evidence cleanup. The installed skills retain beta.32 behavior;
+the runtime payload differs only in its version.
+
+- **One current status:** the backlog owns actual distribution and remaining work;
+  architecture/handoff entry points link there. Dated reports remain history.
+- **Public links that are actually public:** check maintained and changed Markdown
+  against Git-tracked targets, anchors, image paths and current installation pins.
+  A private local file no longer makes a missing public dependency pass.
+- **Local completion checks:** inspect the prospective commit and explicit owned
+  task roots for forgotten files, preserving unrelated work. The checker never
+  deletes files; useful evidence is retained before scoped disposal.
+- **Continuous verification:** GitHub repeats committed-document checks from the
+  push/PR base. Nine negative/control cases join the suite:102regressions pass.
+
+The earlier cleanup preserves original results/failures and removes only bytecode
+and verified duplicate downloads. Exact private runners/fixtures remain local;
+reports do not promise a self-contained public reproduction kit.
+
+These are maintainer tools, not a new installed skill or proof that an agent will
+always maintain perfect records. No new model/native/organic test; prior Canvas,
+dialogue, source and forecast limits remain. Link/pin checks do not judge prose
+truth or automatically close behavioral defects.
+
+[Development](https://github.com/iamjudin/Fab/blob/v0.1.0-beta.33/docs/development.md) ·
+[Maintenance evidence](https://github.com/iamjudin/Fab/blob/v0.1.0-beta.33/experiments/maintenance/project-integrity-20261021/report.md) ·
+[Distribution receipt](https://github.com/iamjudin/Fab/blob/codex/fab-maintenance/experiments/releases/housekeeping-beta33-20261021/report.md).
+Rollback: beta.32.

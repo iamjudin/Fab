@@ -1,0 +1,15 @@
+{
+  "result": "PASS",
+  "regressions": 102,
+  "newNegativeControlTests": 9,
+  "newModelCalls": 0,
+  "runtimeDelta": "plugin.json version only",
+  "files": 94,
+  "fingerprint": "4c0ef985f2312a7a",
+  "stageAndCI": "Exact staged and committed checks are recorded in release receipt",
+  "limits": [
+    "No semantic truth check or automatic deletion",
+    "CI cannot inspect never-committed local files",
+    "Behavior limits inherited from beta.32"
+  ]
+}

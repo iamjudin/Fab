@@ -7,12 +7,9 @@ not normal runtime dependencies. No orchestrator/MCP/queue/hidden swarm.
 
 ## Current distribution and source
 
-Published, installed and enabled **beta.32**,94files/d2ce2847243bc096,
-v0.1.0-beta.32/source5164625. It includes interface foundation, correction learning,
-conditional knowledge discovery and current-owner checks.93regressions/package/
-scope, exact-source CI, anonymous assets and clean/primary exact-tag/full94-file
-parity pass.17other settings/10previous tags unchanged. Rollback beta.31.
-[Distribution receipt](../../experiments/releases/learning-beta32-20261021/report.md).
+The [backlog's current distribution](../backlog.md#current-distribution) owns the
+actual published/installed version, receipt, rollback and remaining work. Keep
+this architecture index about owners and boundaries, not a second version log.
 A packaged/installed identity does not establish all-skill or native behavior.
 
 ## Capability ownership
@@ -52,9 +49,12 @@ owning backlog hold local decisions/findings, without another learning registry.
 
 ## What checks establish
 
-Package checks verify reference/branding/packet/registry integrity and the current
+Repository checks verify maintained/changed public-document links and install
+pins; local staged checks can flag leftovers only in explicitly owned task roots.
+They do not evaluate the truth of prose or delete files. Package checks separately
+verify reference/branding/packet/registry integrity and the current
 application-owner boundary of bundled briefs. They do not prove semantic ownership
-or agent use.93regressions include negative source-versus-policy mutations.
+or agent use. Regression coverage includes negative source-versus-policy mutations.
 One fresh configured GPT-6.1 Sol/medium source review observes Analysis discovering
 and applying correction learning to five fictional cases. Two earlier supplied-
 context interface probes qualify platform/stack separation. Native/installed

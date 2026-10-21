@@ -9,9 +9,31 @@ Run from the repository root:
 
 ```sh
 python3 -B scripts/check_package.py
+python3 -B scripts/check_project.py
 python3 -B -m unittest discover -s tests -q
 python3 -B scripts/check_fab_release.py
 ```
+
+Before a focused checkpoint, stage only its intended public files, then run:
+
+```sh
+python3 -B scripts/check_project.py --staged --task-dir experiments/maintenance/your-task
+```
+
+The local check reads the Git index: an untracked local file cannot satisfy a
+public link. It checks changed Markdown plus maintained entry documents, anchors,
+image paths and current installation pins. Explicit task roots expose forgotten
+non-private files without treating another workstream's drafts as errors. Classify
+each leftover: stage a public deliverable, retain useful private evidence in that
+experiment's ignored `raw/`, or remove exact owned disposable work after retention.
+The checker never deletes files. GitHub repeats public-document checks against the
+push/PR base; it cannot inspect files that were never committed locally.
+
+Current task/distribution state belongs to [the backlog](backlog.md). Architecture
+and handoff indexes point there; dated reports preserve what happened at the time.
+At release completion, reconcile included task dispositions with the actual
+distribution receipt. Link/version checks cannot decide whether prose is true or
+whether an unresolved behavioral defect is fixed; that review remains main's job.
 
 Bundled Fab method briefs keep their current policy owner in an explicit
 `## Application in current Fab` section. That section links a package-local

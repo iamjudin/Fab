@@ -43,6 +43,12 @@ before publication, and validate metadata/asset paths without claiming host UI Q
 6. docs/handoff.md — состояние для нового основного чата, когда подготовлено.
 
 Перед edits Git/guidance/backlog; preserve others. Commit key verified stages.
+Before a focused checkpoint, run `python3 -B scripts/check_project.py --staged`
+against its intended public files. Add `--task-dir <owned-experiment-directory>`
+for each task-owned work area; classify its unstaged leftovers as public output,
+private retained evidence or exact disposable work. Other workstreams are not
+cleanup targets. Follow docs/development.md. Current task/distribution state is
+owned by docs/backlog.md; dated handoff/release entries are historical evidence.
 Creator подтвердил 2026-10-12: проверять Git и делать локальные checkpoint-коммиты
 самостоятельно после проверки; отдельное согласие на каждый commit не требуется.
 После значимых решений/итераций/проверок поддерживать docs/project-journal.md:
@@ -85,6 +91,12 @@ This rule does not authorize an immediate new chat, hidden delegation, a merge,
 runtime installation or publication. Keep main ownership and return criteria clear.
 
 ## Current boundary
+Current tasks, distribution and rollback are owned by docs/backlog.md. Creator
+2026-10-21 authorizes project-integrity checks and the next local/public beta.
+The dated evidence below preserves prior boundaries; do not interpret an older
+install/release-pending statement as a new task or generic approval requirement.
+
+### Dated evidence retained
 Creator2026-10-21 requests knowledge/decomposition audit and scoped correction
 learning, then explicitly release afterward. Released/installed/enabled beta.32:
 94files/d2ce2847243bc096,v0.1.0-beta.32/5164625. Shared interface foundation,

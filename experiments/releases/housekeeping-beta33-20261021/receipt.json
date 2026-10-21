@@ -1,0 +1,39 @@
+{
+  "version": "0.1.0-beta.33",
+  "tag": "v0.1.0-beta.33",
+  "files": 94,
+  "fingerprint": "4c0ef985f2312a7a",
+  "sourceCommit": null,
+  "authorization": "Creator explicitly requests implementing the proposed repository-maintenance mechanisms and releasing the next version locally and on GitHub.",
+  "runtimeDeltaFromBeta32": [
+    "plugin.json version only"
+  ],
+  "checks": {
+    "regressions": 102,
+    "package": "pass: exact94-file beta.33 payload",
+    "projectIntegrity": "pass: prospective index/public links/pins and both explicit task roots",
+    "scope": "pass: declared beta.33 surfaces and fingerprint",
+    "remoteCI": "pending",
+    "assets": "pending",
+    "cleanInstall": "pending",
+    "primaryInstall": "pending",
+    "newModelCalls": 0
+  },
+  "rollback": {
+    "public": "0.1.0-beta.32",
+    "files": 94,
+    "fingerprint": "d2ce2847243bc096",
+    "offline": "raw/rollback-marketplace"
+  },
+  "limits": [
+    "Maintainer checks are not installed-skill behavior changes",
+    "No new model/native/organic verification",
+    "Index/CI checks do not establish semantic correctness of prose",
+    "All previous Canvas/continuity/source and forecast failures remain"
+  ],
+  "assetsSha256": {
+    "SHA256SUMS.txt": "f6d83801292aa720b4b7933bc49ad5694c8114590b21e67e0de7aa11d4992f2a",
+    "fab-0.1.0-beta.33.zip": "6384b8fb8848a593e79acb5f1e05101b132f7fd61e96db4ee82f7efab05310f2",
+    "release-scope.json": "ab750c6618d318883840ee9377d9479f2a023207f93af5aaea68820871a6fcb1"
+  }
+}

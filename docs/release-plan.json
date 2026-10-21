@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "version": "0.1.0-beta.32",
-  "fingerprint": "d2ce2847243bc096",
+  "version": "0.1.0-beta.33",
+  "fingerprint": "4c0ef985f2312a7a",
   "channel": "beta",
   "surfaces": [
     {
@@ -775,6 +775,24 @@
           "name": "actual appropriate source reads and cause/scope response",
           "result": "pass",
           "evidence": "experiments/maintenance/knowledge-learning-20261021/report.md"
+        }
+      ]
+    },
+    {
+      "id": "maintainer.project-integrity",
+      "default": false,
+      "status": "verified",
+      "limitations": "Repository-maintainer checks, not an installed Fab skill. Local index and explicit task roots expose untracked dependencies/leftovers; CI checks only committed materials. Link/pin checks do not establish prose truth, native behavior or automatic cleanup. All prior runtime behavior limits remain.",
+      "checks": [
+        {
+          "name": "missing public dependency, index/worktree separation, missing anchor, stale pin, owned/unrelated leftovers and symlink counterexamples",
+          "result": "pass",
+          "evidence": "tests/test_project_guard.py; experiments/maintenance/project-integrity-20261021/report.md"
+        },
+        {
+          "name": "exact beta.33 package/reference and source-only version delta",
+          "result": "pass",
+          "evidence": "experiments/releases/housekeeping-beta33-20261021/report.md; scripts/check_package.py"
         }
       ]
     }

@@ -1,5 +1,12 @@
 # Рабочее состояние Fab
 
+## Current entry point
+
+Read the [current backlog](backlog.md) for actual tasks, distribution and rollback,
+and the [architecture index](architecture/design.md) for ownership. Dated handoff
+entries below preserve the state and authority at that time; later releases can
+supersede their pending actions. Do not copy their old version into a new task.
+
 ## 2026-10-21 — Connected knowledge/correction learning shipped in beta.32
 
 Creator asks for existing-material cohesion/decomposition and local-versus-rule
