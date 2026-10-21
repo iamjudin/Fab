@@ -29,6 +29,13 @@ experiment's ignored `raw/`, or remove exact owned disposable work after retenti
 The checker never deletes files. GitHub repeats public-document checks against the
 push/PR base; it cannot inspect files that were never committed locally.
 
+With `--base-ref`, both documents and their targets are read from committed HEAD,
+so a local unstaged heading cannot conceal a broken public reference. Exact dated
+`docs/backlog-history-YYYY-MM-DD.md` and `docs/architecture/history-YYYY-MM-DD.md`
+snapshots preserve original mistakes/private references and are not maintained
+outbound-link promises. Links into their actual files/headings are still checked;
+current docs and ordinary reports do not receive that exemption.
+
 Current task/distribution state belongs to [the backlog](backlog.md). Architecture
 and handoff indexes point there; dated reports preserve what happened at the time.
 At release completion, reconcile included task dispositions with the actual

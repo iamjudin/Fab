@@ -72,7 +72,7 @@ stay in a hidden footer.
 
 Markdown tables remain the default for structure and scenarios. Canvas is opt-in
 and experimental. Browser prototypes check selected interactions; they do not
-establish native or production readiness. Current checks include 102 regressions
+establish native or production readiness. Current checks include 104 regressions
 and the retained beta.32 source review with five contrasting correction cases.
 No additional model test was run for this maintenance release. Sustained
 dialogue continuity, native behavior and external Deep Research compliance remain

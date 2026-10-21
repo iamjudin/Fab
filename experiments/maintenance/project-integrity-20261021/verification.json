@@ -1,7 +1,7 @@
 {
   "result": "PASS",
-  "regressions": 102,
-  "newNegativeControlTests": 9,
+  "regressions": 104,
+  "newNegativeControlTests": 11,
   "newModelCalls": 0,
   "runtimeDelta": "plugin.json version only",
   "files": 94,
@@ -11,5 +11,11 @@
     "No semantic truth check or automatic deletion",
     "CI cannot inspect never-committed local files",
     "Behavior limits inherited from beta.32"
-  ]
+  ],
+  "initialRemoteCI": {
+    "result": "failure",
+    "run": 39675237661,
+    "cause": "Frozen historical snapshot references an uncommitted observation heading; initial offline worktree check overstated public availability",
+    "correction": "Committed HEAD reads and explicit frozen-history boundary, with current-document negative control"
+  }
 }

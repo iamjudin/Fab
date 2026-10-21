@@ -9,7 +9,7 @@
     "plugin.json version only"
   ],
   "checks": {
-    "regressions": 102,
+    "regressions": 104,
     "package": "pass: exact94-file beta.33 payload",
     "projectIntegrity": "pass: prospective index/public links/pins and both explicit task roots",
     "scope": "pass: declared beta.33 surfaces and fingerprint",
@@ -17,7 +17,8 @@
     "assets": "pending",
     "cleanInstall": "pending",
     "primaryInstall": "pending",
-    "newModelCalls": 0
+    "newModelCalls": 0,
+    "initialRemoteCI": "fail: run39675237661, unpublished heading in frozen historical snapshot; original log retained"
   },
   "rollback": {
     "public": "0.1.0-beta.32",
@@ -32,8 +33,8 @@
     "All previous Canvas/continuity/source and forecast failures remain"
   ],
   "assetsSha256": {
-    "SHA256SUMS.txt": "f6d83801292aa720b4b7933bc49ad5694c8114590b21e67e0de7aa11d4992f2a",
+    "SHA256SUMS.txt": "2b8d5640c55b32e634078dbb529917e13c020272fc368e20b1ad873d3a4c0b8e",
     "fab-0.1.0-beta.33.zip": "6384b8fb8848a593e79acb5f1e05101b132f7fd61e96db4ee82f7efab05310f2",
-    "release-scope.json": "ab750c6618d318883840ee9377d9479f2a023207f93af5aaea68820871a6fcb1"
+    "release-scope.json": "321da0de49ed2267d298bacae7be7f01d839c81bacbde267eedd89b3c4575b45"
   }
 }

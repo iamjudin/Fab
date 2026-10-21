@@ -13,7 +13,7 @@ the runtime payload differs only in its version.
   task roots for forgotten files, preserving unrelated work. The checker never
   deletes files; useful evidence is retained before scoped disposal.
 - **Continuous verification:** GitHub repeats committed-document checks from the
-  push/PR base. Nine negative/control cases join the suite:102regressions pass.
+  push/PR base. Eleven negative/control cases join the suite:104regressions pass.
 
 The earlier cleanup preserves original results/failures and removes only bytecode
 and verified duplicate downloads. Exact private runners/fixtures remain local;

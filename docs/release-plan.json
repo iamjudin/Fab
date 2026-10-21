@@ -785,7 +785,7 @@
       "limitations": "Repository-maintainer checks, not an installed Fab skill. Local index and explicit task roots expose untracked dependencies/leftovers; CI checks only committed materials. Link/pin checks do not establish prose truth, native behavior or automatic cleanup. All prior runtime behavior limits remain.",
       "checks": [
         {
-          "name": "missing public dependency, index/worktree separation, missing anchor, stale pin, owned/unrelated leftovers and symlink counterexamples",
+          "name": "unpublished dependency, staged/committed/worktree separation, frozen-history boundary, missing anchor, stale pin, scoped leftovers and symlink counterexamples",
           "result": "pass",
           "evidence": "tests/test_project_guard.py; experiments/maintenance/project-integrity-20261021/report.md"
         },

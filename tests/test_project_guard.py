@@ -58,6 +58,22 @@ class ProjectGuardTests(unittest.TestCase):
         self.put('docs/guide.md', '# Renamed\n')
         self.assertFalse(guard.check(self.root)['eligible'])
 
+    def test_committed_check_does_not_use_uncommitted_target_heading(self):
+        base = self.git('rev-parse', 'HEAD').strip()
+        self.put('README.md', '[Future](docs/guide.md#future)\n--ref v0.1.0-beta.1\n')
+        self.git('add', 'README.md')
+        self.git('commit', '-qm', 'Unpublished heading dependency')
+        self.put('docs/guide.md', '# Future\n')
+        self.assertFalse(guard.check(self.root, base_ref=base)['eligible'])
+
+    def test_frozen_history_keeps_mistakes_but_current_documents_do_not(self):
+        self.put('docs/backlog-history-2026-10-21.md', '[Old pending evidence](unpublished.md#future)\n')
+        self.git('add', 'docs/backlog-history-2026-10-21.md')
+        self.assertTrue(guard.check(self.root, staged=True)['eligible'])
+        self.put('docs/current.md', '[Pending](unpublished.md#future)\n')
+        self.git('add', 'docs/current.md')
+        self.assertFalse(guard.check(self.root, staged=True)['eligible'])
+
     def test_frozen_example_and_external_link_are_not_local_resources(self):
         self.put('README.md', '```md\n[example](not-a-resource.md)\n```\n[Docs](https://example.invalid/x)\n--ref v0.1.0-beta.1\n')
         self.assertTrue(guard.check(self.root)['eligible'])

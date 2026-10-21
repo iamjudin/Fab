@@ -27,8 +27,8 @@ Add execution checks at commit/CI rather than another global rule/lesson registr
 contents, validates maintained/changed public targets/anchors/images and install
 pins, and exposes untracked non-private files only in explicitly owned task roots.
 CI repeats committed-document checks from the push/PR base. Architecture/handoff
-entry points route current state to the existing backlog. Nine negative/control
-cases and all102regressions pass; no new model invocation.
+entry points route current state to the existing backlog. Eleven negative/control
+cases and all104regressions pass; no new model invocation.
 
 **Boundary / next:** This is maintainer tooling, not an installed skill change or
 proof of automatic tidiness/prose truth. Beta.33 changes only runtime manifest

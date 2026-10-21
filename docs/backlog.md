@@ -28,7 +28,7 @@ Expected: one current-state owner; public links/pins match the actual prospectiv
 commit; owned task leftovers get an explicit disposition before completion.
 Observed gap: runtime-only checks missed untracked public dependencies and old
 status copies. Main adds a repository guard, staged/task-root mode, push/PR-base
-CI check and nine contrasting tests; all102regressions pass. Architecture/handoff
+CI check and eleven contrasting tests; all104regressions pass. Architecture/handoff
 entry points link here; dated reports remain history. The guard never deletes
 files, evaluates prose truth or treats another task's drafts as this task's junk.
 

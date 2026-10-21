@@ -57,14 +57,19 @@ def anchors(text):
 
 def check(root, staged=False, base_ref=None, task_dirs=()):
     root = Path(root).resolve()
-    tracked = set(git(root, 'ls-files', '-z').split('\0')) - {''}
-    symlinks = {row.split('\t', 1)[1] for row in git(root, 'ls-files', '--stage', '-z').split('\0')
+    committed = bool(base_ref) and not staged
+    tracked = set(git(root, 'ls-tree', '-r', '--name-only', '-z', 'HEAD').split('\0') if committed
+                  else git(root, 'ls-files', '-z').split('\0')) - {''}
+    modes = git(root, 'ls-tree', '-r', '-z', 'HEAD') if committed else git(root, 'ls-files', '--stage', '-z')
+    symlinks = {row.split('\t', 1)[1] for row in modes.split('\0')
                 if row.startswith('120000 ')}
     errors, checked = [], 0
 
     def read(path):
         if staged:
             return git(root, 'show', ':' + path)
+        if committed:
+            return git(root, 'show', 'HEAD:' + path)
         return (root / path).read_text()
 
     if staged:
@@ -73,10 +78,18 @@ def check(root, staged=False, base_ref=None, task_dirs=()):
         # Resolve to an object first; a ref is never interpolated into shell code.
         base = git(root, 'rev-parse', '--verify', base_ref + '^{commit}').strip()
         changed = git(root, 'diff', '--name-only', '--diff-filter=ACMR', '-z', base, 'HEAD')
+    elif committed:
+        changed = '\0'.join(tracked)  # First push, with no previous commit.
     else:
         changed = git(root, 'diff', '--name-only', '--diff-filter=ACMR', '-z', 'HEAD')
     changed = set(changed.split('\0')) - {''}
     selected = (set(CURRENT_DOCS) & tracked) | {p for p in changed if p.endswith('.md')}
+    # Frozen dated snapshots preserve original mistakes and pending/private refs.
+    # Incoming links to them still resolve; their outbound prose is historical,
+    # not a promise made by current docs. Arbitrary reports are not exempted.
+    frozen = {p for p in selected if re.fullmatch(
+        r'docs/(?:backlog-history-|architecture/history-)\d{4}-\d{2}-\d{2}\.md', p)}
+    selected -= frozen
 
     for source in sorted(selected & tracked):
         if source in symlinks:
@@ -102,12 +115,12 @@ def check(root, staged=False, base_ref=None, task_dirs=()):
             if path not in tracked:
                 errors.append(f'{source}: target is not in the Git index: {target}')
                 continue
-            if path in symlinks or (not staged and not (root / path).resolve().is_relative_to(root)):
+            if path in symlinks or (not staged and not committed and not (root / path).resolve().is_relative_to(root)):
                 errors.append(f'{source}: target must be a regular repository file: {target}')
                 continue
             try:
                 target_text = read(path) if path.endswith('.md') else None
-                if not staged and not (root / path).is_file():
+                if not staged and not committed and not (root / path).is_file():
                     raise FileNotFoundError(path)
                 if url.fragment and target_text is not None and unquote(url.fragment) not in anchors(target_text):
                     errors.append(f'{source}: missing heading/anchor: {target}')
@@ -143,7 +156,8 @@ def check(root, staged=False, base_ref=None, task_dirs=()):
     for path in sorted(set(task_leftovers)):
         errors.append(f'Task file needs a disposition (stage, retain privately or remove): {path}')
     return {'eligible': not errors, 'documents': len(selected & tracked),
-            'localLinks': checked, 'taskRoots': list(task_dirs), 'errors': errors}
+            'localLinks': checked, 'frozenSnapshots': sorted(frozen),
+            'taskRoots': list(task_dirs), 'errors': errors}
 
 
 def main():
