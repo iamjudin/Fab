@@ -27,15 +27,38 @@ Add execution checks at commit/CI rather than another global rule/lesson registr
 contents, validates maintained/changed public targets/anchors/images and install
 pins, and exposes untracked non-private files only in explicitly owned task roots.
 CI repeats committed-document checks from the push/PR base. Architecture/handoff
-entry points route current state to the existing backlog. Eleven negative/control
-cases and all104regressions pass; no new model invocation.
+entry points route current state to the existing backlog. Twelve negative/control
+cases and all105regressions pass; no new model invocation.
 
 **Boundary / next:** This is maintainer tooling, not an installed skill change or
 proof of automatic tidiness/prose truth. Beta.33 changes only runtime manifest
 version from beta.32; main completes the explicitly requested local/public release
-and records actual CI/assets/install/settings/rollback outcomes in the
+and records outcomes in the
 [receipt](../experiments/releases/housekeeping-beta33-20261021/report.md).
-Earlier behavior failures and private-evidence boundaries remain.
+
+**Distribution observed:** beta.33 source/tagcc65d59 and clean/primary94-file
+install parity pass;17other settings/five independent files preserved. Initial
+CI fails on a historical snapshot's unpublished heading; explicit frozen-history /
+committed-HEAD boundaries and two additional tests correct it.105regressions and
+corrected branch CI pass at104tests. Its later tag-triggered run exposes the
+zero-base full-archive bug. Original failures/earlier offline overstatement
+remain. GitHub Release/assets are pending: direct API DNS/TLS timeouts and a locked
+Mac block browser publication; actual unlock is requested. Exact beta.32 rollback
+and active publication inputs remain. This is partial distribution, not a completed
+Release. Earlier behavior failures and private-evidence boundaries remain.
+
+## 2026-10-21 — Preserve the failed public tag and roll forward
+
+**Observed:** beta.33 branch CI passes, then its tag event supplies a zero base
+and scans480historical documents. Original logs and unchanged tag remain. Main
+uses the actual tip parent for new tag/branch events and adds a contrasting
+archived/current-document test.105local tests/12new controls pass.
+
+**Decision / next:** Preserve public beta.33 rather than move it. Prepare beta.34
+under the existing release request; runtime delta remains version only. Main owns
+new exact branch/tag CI, clean/primary installation and Release/assets. Browser
+publication is blocked by actual Mac lock/API transport; unlock requested.
+[Corrected release](../experiments/releases/housekeeping-beta34-20261021/report.md).
 
 ## 2026-10-21 — Retire stale statuses and keep experiment evidence explicit
 

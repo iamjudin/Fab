@@ -1,7 +1,7 @@
 {
   "result": "PASS",
-  "regressions": 104,
-  "newNegativeControlTests": 11,
+  "regressions": 105,
+  "newNegativeControlTests": 12,
   "newModelCalls": 0,
   "runtimeDelta": "plugin.json version only",
   "files": 94,
@@ -17,5 +17,18 @@
     "run": 39675237661,
     "cause": "Frozen historical snapshot references an uncommitted observation heading; initial offline worktree check overstated public availability",
     "correction": "Committed HEAD reads and explicit frozen-history boundary, with current-document negative control"
-  }
+  },
+  "correctedRemoteCI": {
+    "result": "success",
+    "run": 39677093005,
+    "source": "cc65d59c5fbaf673747643470edbc0c33816d035",
+    "thenCurrentRegressions": 104
+  },
+  "initialTagCI": {
+    "result": "failure",
+    "run": 39678594551,
+    "cause": "New tag zero base scanned full archive",
+    "correction": "Tip-parent baseline with contrasting archived/current-document test"
+  },
+  "correctedRelease": "0.1.0-beta.34"
 }

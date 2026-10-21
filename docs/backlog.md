@@ -8,36 +8,40 @@ Closing implementation or distribution does not establish behavioral maturity.
 
 ## Current distribution
 
-**Beta.32 is published, installed and enabled:**94files/d2ce2847243bc096,
-v0.1.0-beta.32/source5164625. Interface foundations, conditional landing guidance,
-opt-in Canvas, knowledge discovery/current-owner checks and scoped correction
-learning are shipped.93regressions/package/scope, exact-source CI, anonymous assets
-and clean/primary full94-file/exact-tag parity pass.17other settings/10previous
-tags are preserved. API immutable=false; do not claim server-enforced release
-locking. [Distribution receipt](../experiments/releases/learning-beta32-20261021/report.md).
-Rollback beta.31 is retained. No additional generic model suite is queued.
+**Installed and enabled: beta.33**,94files/4c0ef985f2312a7a,
+v0.1.0-beta.33/sourcecc65d59. Source branch and annotated tag are public;
+104regressions/package/scope, successful branch CI and clean/primary full94-
+file/exact-tag install parity pass.17other settings/five pending independent files
+are preserved. Repository checks and completed housekeeping are included; installed
+skill behavior is unchanged from beta.32. No new model/native test.
 
-The source-only/install-pending states in earlier landing, Canvas and interface
-reports are dated history superseded by beta.31/beta.32 distribution. They are
-not requests for another install, approval or release. Earlier output failures,
-timeout/unknown usage and unrun cases retain their original verdicts.
+**Public Release/assets: pending for corrected beta.34.** Beta.33 tag CI exposed
+a zero-base bug after its branch checks passed. Its tag is preserved and no
+Release/assets are published for that superseded candidate. Direct API HTTPS transport times out; browser
+control reports a locked Mac. Creator unlock is requested. The latest fully
+published Release remains beta.32, retained as exact offline rollback. A public
+tag and a successful local update do not count as completed Release publication.
+[Current receipt](../experiments/releases/housekeeping-beta33-20261021/report.md).
+No new generic model suite is queued. Earlier failures retain their verdicts.
 
-## FAB-15 prevention checks — beta.33 release in progress
+## FAB-15 prevention checks — beta.34 roll-forward in progress
 
 Expected: one current-state owner; public links/pins match the actual prospective
 commit; owned task leftovers get an explicit disposition before completion.
 Observed gap: runtime-only checks missed untracked public dependencies and old
 status copies. Main adds a repository guard, staged/task-root mode, push/PR-base
-CI check and eleven contrasting tests; all104regressions pass. Architecture/handoff
+CI check and twelve contrasting tests; all105regressions pass. Architecture/handoff
 entry points link here; dated reports remain history. The guard never deletes
 files, evaluates prose truth or treats another task's drafts as this task's junk.
 
 Creator explicitly requests release. Owner main. Disposition: **next update**,
-finish exact beta.33 local/public distribution and reconcile this entry with the
-actual receipt.94-file runtime differs only in manifest version. No model/native
+complete corrected beta.34 source/tag/CI and local install, then the pending
+public Release/assets after actual Mac unlock. Beta.33 remains an unreleased
+public tag candidate after its tag-triggered CI failure; do not move that tag.
+94-file runtime differs only in manifest version. No model/native
 behavior rerun or new installed policy; original behavioral/source/cost gaps stay
 open. [Maintenance](../experiments/maintenance/project-integrity-20261021/report.md),
-[release](../experiments/releases/housekeeping-beta33-20261021/report.md).
+[release](../experiments/releases/housekeeping-beta34-20261021/report.md).
 
 ## Current maintenance — FAB-15 / FAB-09
 

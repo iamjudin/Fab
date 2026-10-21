@@ -66,6 +66,19 @@ class ProjectGuardTests(unittest.TestCase):
         self.put('docs/guide.md', '# Future\n')
         self.assertFalse(guard.check(self.root, base_ref=base)['eligible'])
 
+    def test_new_tag_zero_base_checks_tip_not_old_archive(self):
+        self.put('experiments/old/report.md', '[Historical local result](raw/output.md)\n')
+        self.git('add', '.')
+        self.git('commit', '-qm', 'Old report predates guard')
+        self.put('docs/current.md', '# Current\n')
+        self.git('add', 'docs/current.md')
+        self.git('commit', '-qm', 'New tagged increment')
+        self.assertTrue(guard.check(self.root, base_ref='0' * 40)['eligible'])
+        self.put('docs/current.md', '[Missing](missing.md)\n')
+        self.git('add', 'docs/current.md')
+        self.git('commit', '-qm', 'Broken tagged increment')
+        self.assertFalse(guard.check(self.root, base_ref='0' * 40)['eligible'])
+
     def test_frozen_history_keeps_mistakes_but_current_documents_do_not(self):
         self.put('docs/backlog-history-2026-10-21.md', '[Old pending evidence](unpublished.md#future)\n')
         self.git('add', 'docs/backlog-history-2026-10-21.md')

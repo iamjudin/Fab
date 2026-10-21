@@ -1,0 +1,40 @@
+{
+  "version": "0.1.0-beta.34",
+  "tag": "v0.1.0-beta.34",
+  "files": 94,
+  "fingerprint": "66b2c5decf2167b8",
+  "sourceCommit": null,
+  "authorization": "Creator requests implementation of repository-maintenance mechanisms and next local/public release; roll forward from unreleased beta.33 tag without moving it.",
+  "checks": {
+    "regressions": 105,
+    "newNegativeControls": 12,
+    "newModelCalls": 0,
+    "package": "pass:94files/66b2c5decf2167b8",
+    "scope": "pass: exact beta.34 plan",
+    "projectIntegrity": "pass: staged index/public dependencies and owned roots",
+    "branchCI": "pending",
+    "tagCI": "pending",
+    "publicRelease": "pending actual Mac unlock",
+    "assets": "pending",
+    "cleanInstall": "pending",
+    "primaryInstall": "pending"
+  },
+  "rollback": {
+    "public": "0.1.0-beta.32",
+    "files": 94,
+    "fingerprint": "d2ce2847243bc096",
+    "offline": "raw/rollback-marketplace"
+  },
+  "previousAttempt": "../housekeeping-beta33-20261021/report.md",
+  "limits": [
+    "Maintainer checks only; runtime version delta",
+    "Both beta.33 CI failures remain retained",
+    "No new model/native/organic evidence",
+    "Publication pending actual unlock; no security changes"
+  ],
+  "assetsSha256": {
+    "SHA256SUMS.txt": "c937843b2a489190d57bfbfb5f2988cd7036fffb11faf054e3703bfd6d988fde",
+    "fab-0.1.0-beta.34.zip": "4324a35021e120e79c65c69c774c2b3e66d9bd422809fae7c06d9c2e38d1552a",
+    "release-scope.json": "d4cb44c71d10807227370456cf52dd7e6aad831689822cad60fb2a3891e5afb3"
+  }
+}

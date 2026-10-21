@@ -3,7 +3,7 @@
   "tag": "v0.1.0-beta.33",
   "files": 94,
   "fingerprint": "4c0ef985f2312a7a",
-  "sourceCommit": null,
+  "sourceCommit": "cc65d59c5fbaf673747643470edbc0c33816d035",
   "authorization": "Creator explicitly requests implementing the proposed repository-maintenance mechanisms and releasing the next version locally and on GitHub.",
   "runtimeDeltaFromBeta32": [
     "plugin.json version only"
@@ -13,12 +13,19 @@
     "package": "pass: exact94-file beta.33 payload",
     "projectIntegrity": "pass: prospective index/public links/pins and both explicit task roots",
     "scope": "pass: declared beta.33 surfaces and fingerprint",
-    "remoteCI": "pending",
-    "assets": "pending",
-    "cleanInstall": "pending",
-    "primaryInstall": "pending",
+    "remoteCI": "pass: exact cc65d59c5fbaf673747643470edbc0c33816d035, run39677093005",
+    "assets": "pending: prepared and hash-checked locally, not yet uploaded",
+    "cleanInstall": "pass: exact tag and full94-file parity",
+    "primaryInstall": "pass: exact tag and full94-file parity",
     "newModelCalls": 0,
-    "initialRemoteCI": "fail: run39675237661, unpublished heading in frozen historical snapshot; original log retained"
+    "initialRemoteCI": "fail: run39675237661, unpublished heading in frozen historical snapshot; original log retained",
+    "settings": "pass: Fab enabled and17other plugin settings preserved",
+    "independentWork": "pass: observer edit and four research files hash-unchanged",
+    "publicRelease": "not published; superseded before Release to preserve existing public tag",
+    "cleanup": "partial: clean94-file installation retained/hash-checked; active publication inputs kept until release completion",
+    "previousTagsPreserved": "pass: all11prior public version tags unchanged",
+    "preparedAssets": "pass: local3hashes/full94-entry ZIP/source/scope parity; anonymous download pending",
+    "tagCI": "fail: run39678594551; all-zero new-tag base caused full-archive scan"
   },
   "rollback": {
     "public": "0.1.0-beta.32",
@@ -36,5 +43,18 @@
     "SHA256SUMS.txt": "2b8d5640c55b32e634078dbb529917e13c020272fc368e20b1ad873d3a4c0b8e",
     "fab-0.1.0-beta.33.zip": "6384b8fb8848a593e79acb5f1e05101b132f7fd61e96db4ee82f7efab05310f2",
     "release-scope.json": "321da0de49ed2267d298bacae7be7f01d839c81bacbde267eedd89b3c4575b45"
-  }
+  },
+  "ciURL": "https://github.com/iamjudin/Fab/actions/runs/39677093005",
+  "installedVersion": "0.1.0-beta.33",
+  "installedRelativePath": "plugins/cache/fab-local/fab/0.1.0-beta.33",
+  "publicationBlock": {
+    "reason": "Mac locked; browser control cannot proceed; direct GitHub API TLS handshake times out",
+    "creatorAction": "Unlock Mac and resume publication",
+    "sourceTagPublic": true,
+    "localInstallationVerified": true,
+    "releasePublished": false,
+    "noSecuritySettingsChanged": true,
+    "browserDraftAttempted": true
+  },
+  "supersededBy": "0.1.0-beta.34"
 }

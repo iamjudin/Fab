@@ -29,10 +29,10 @@ file disposition before an owned checkpoint, without an extra registry/skill.
 
 ## Verification and limits
 
-Eleven negative/control tests cover unpublished dependency, staged/worktree
+Twelve negative/control tests cover unpublished dependency, staged/worktree
 divergence, changed-report support, deleted anchor, fenced/external examples,
 owned-versus-other leftovers, stale installation pin, external symlink and task
-boundary. All104regressions pass, including all eleven. Expected diagnostics in
+boundary. All105regressions pass, including all twelve. Expected diagnostics in
 earlier negative tests remain expected failures, not hidden suite errors.
 
 The source package remains94files; only its version changes for beta.33. No
@@ -40,7 +40,7 @@ runtime instruction change, new model/native/organic test or general reliability
 claim. Link/version checks cannot decide whether a task is truly done or prose
 is truthful; main still reconciles dispositions with actual release receipts.
 CI cannot see files never committed locally. Separate research/observer work is
-preserved. [Release status](../../releases/housekeeping-beta33-20261021/report.md).
+preserved. [Release status](../../releases/housekeeping-beta34-20261021/report.md).
 
 ## Initial CI failure and correction
 
@@ -56,5 +56,17 @@ exact dated backlog/architecture snapshots as historical evidence rather than
 current outbound-link promises. Incoming paths/anchors remain checked; current
 reports still reject the same missing dependency. Two additional control tests
 cover both boundaries. The original snapshot and separate observer work remain
-unchanged. Final suite:104regressions,11new controls; corrected CI still needs its
-own exact-source result rather than treating local tests as remote proof.
+unchanged. Then-current suite:104regressions,11new controls. The
+[corrected exact-source CI](https://github.com/iamjudin/Fab/actions/runs/39677093005)
+passes independently at cc65d59. Beta.33 local install/source-tag checks complete, before its later tag-baseline
+failure; the roll-forward below owns final distribution.
+
+## New-tag baseline failure and roll-forward
+
+The beta.33 tag run exposes the all-zero baseline case: the checker scans480old
+files instead of the new increment. A new contrasting test keeps an old archived
+result outside the change scope while still rejecting a broken current document.
+For zero-base tag/branch events, use the actual tip parent; only a repository's
+first commit has no parent. Final local suite:105tests,12new controls. Preserve
+both original CI failures and beta.33's public tag; beta.34 owns corrected
+publication. No runtime policy or scientific verdict changes.

@@ -79,7 +79,12 @@ def check(root, staged=False, base_ref=None, task_dirs=()):
         base = git(root, 'rev-parse', '--verify', base_ref + '^{commit}').strip()
         changed = git(root, 'diff', '--name-only', '--diff-filter=ACMR', '-z', base, 'HEAD')
     elif committed:
-        changed = '\0'.join(tracked)  # First push, with no previous commit.
+        # A new tag/branch also has an all-zero event base. Inspect the tip's
+        # actual changes rather than retroactively validating the entire archive.
+        parent = subprocess.run(['git', '-C', str(root), 'rev-parse', '--verify', 'HEAD^'],
+                                capture_output=True, text=True)
+        changed = (git(root, 'diff', '--name-only', '--diff-filter=ACMR', '-z', parent.stdout.strip(), 'HEAD')
+                   if parent.returncode == 0 else '\0'.join(tracked))
     else:
         changed = git(root, 'diff', '--name-only', '--diff-filter=ACMR', '-z', 'HEAD')
     changed = set(changed.split('\0')) - {''}

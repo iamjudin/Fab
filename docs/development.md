@@ -55,3 +55,7 @@ host behavior before making a readiness claim.
 
 [Working index](../AGENTS.md) · [Beacon](beacon.md) · [Backlog](backlog.md) ·
 [Handoff](handoff.md) · [Project journal](project-journal.md).
+
+New tags/branches have a zero event base even with existing history. The checker
+uses the actual tip parent for that event, or the full tree only for a true first
+commit. Historical model outputs are not retroactively current-document promises.

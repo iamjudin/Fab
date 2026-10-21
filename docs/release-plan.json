@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "version": "0.1.0-beta.33",
-  "fingerprint": "4c0ef985f2312a7a",
+  "version": "0.1.0-beta.34",
+  "fingerprint": "66b2c5decf2167b8",
   "channel": "beta",
   "surfaces": [
     {
@@ -785,14 +785,14 @@
       "limitations": "Repository-maintainer checks, not an installed Fab skill. Local index and explicit task roots expose untracked dependencies/leftovers; CI checks only committed materials. Link/pin checks do not establish prose truth, native behavior or automatic cleanup. All prior runtime behavior limits remain.",
       "checks": [
         {
-          "name": "unpublished dependency, staged/committed/worktree separation, frozen-history boundary, missing anchor, stale pin, scoped leftovers and symlink counterexamples",
+          "name": "unpublished dependency, staged/committed/worktree separation, frozen-history boundary, missing anchor, stale pin, scoped leftovers and symlink counterexamples; zero-base new-tag versus true first-commit scope",
           "result": "pass",
           "evidence": "tests/test_project_guard.py; experiments/maintenance/project-integrity-20261021/report.md"
         },
         {
-          "name": "exact beta.33 package/reference and source-only version delta",
+          "name": "exact beta.34 package/reference and source-only version delta",
           "result": "pass",
-          "evidence": "experiments/releases/housekeeping-beta33-20261021/report.md; scripts/check_package.py"
+          "evidence": "experiments/releases/housekeeping-beta34-20261021/report.md; scripts/check_package.py"
         }
       ]
     }

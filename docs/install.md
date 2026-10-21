@@ -7,7 +7,7 @@ plugin selector is `fab@fab-local`.
 ## First install
 
 ```sh
-codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.33
+codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.34
 codex plugin add fab@fab-local
 ```
 
@@ -18,7 +18,7 @@ add the desired published tag, then reinstall:
 
 ```sh
 codex plugin marketplace remove fab-local
-codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.33
+codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.34
 codex plugin add fab@fab-local
 ```
 
