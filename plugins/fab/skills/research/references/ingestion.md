@@ -155,6 +155,11 @@ findings/artifacts; it does not make every earlier conclusion false.
 
 ## Maintenance
 
+For a consequential knowledge correction or promotion into instructions, use
+[learning triage](../../../shared/learning.md). A changed finding, project
+preference and missing policy condition require different updates; preserve
+original packets and update only authorized consumers.
+
 Keep source titles, filenames, body and provenance intact when adding project
 usage. Apply the shared additive-tag/hidden-footer contract after actual use and
 source authorization. Preserve historical technical records and every existing

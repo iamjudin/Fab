@@ -78,6 +78,20 @@ def validate_methods(root):
         links = re.findall(r'\]\(([^)]+)\)', paths['brief'].read_text())
         assert paths['full'] in {(paths['brief'].parent / t.split('#')[0]).resolve()
                                  for t in links if '://' not in t}, (module_id, 'brief does not link its packet')
+        # A preserved source or another brief is not the executable policy owner.
+        brief_text = paths['brief'].read_text()
+        application = re.search(r'^## Application in current Fab\s*\n(.*?)(?=^## |\Z)',
+                                brief_text, re.M | re.S)
+        assert application is not None, (module_id, 'missing current application boundary')
+        owner_links = []
+        for target in re.findall(r'\]\(([^)]+)\)', application.group(1)):
+            if '://' in target or target.startswith('#'):
+                continue
+            owner = (paths['brief'].parent / target.split('#')[0]).resolve()
+            if (owner.is_relative_to(root.resolve()) and not owner.is_relative_to(methods.resolve())
+                    and owner.is_file() and owner.suffix == '.md'):
+                owner_links.append(owner)
+        assert owner_links, (module_id, 'missing current policy owner link')
         context = module.get('readingContext')
         if context is not None:
             counts = dict(Counter(s['readingContext']['kind'] for s in data['sections'] if s.get('readingContext') is not None))

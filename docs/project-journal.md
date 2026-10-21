@@ -16,6 +16,35 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-21 — Connect knowledge ownership to correction learning
+
+**Context / decision:** Creator asks for coherent existing material and a useful
+way to learn from corrections without accumulating rules, then requests release.
+Main keeps twelve qualified brief/full pairs and the existing backlog. One
+conditional learning owner distinguishes local preference/defect, discovery,
+application, contract gap and test/environment cause; current-owner checks and
+selective method discovery make those boundaries actionable.
+
+**Observed result:** Audit covers12briefs/10skills and relevant owners.93regressions /
+package/scope pass for prepared94-file beta.32/d2ce2847243bc096, including negative
+policy-owner mutations. All original572sections/icon preserved. Active architecture
+now separates actual owners/read triggers from a verbatim historical snapshot.
+One fresh explicitly approved configured GPT-6.1 Sol/medium source probe actually
+selects Analysis, discovers the references and applies five cause/scope distinctions.
+No new rule/lesson registry or mandatory read-all-library stage.
+
+**Failure / limit:** Initial model-transfer rejection retained and resolved only
+by exact creator consent.277531input/242816cached(included)/3221output,102.39seconds;
+200kinput forecast exceeded77531. Behavioral PASS does not erase planning failure.
+No second launch. Root review unblinded; one composite source case, not native,
+installed, sustained usefulness, scalability or scientific validation.97inputs /
+logs/reply/usage retained/hash-checked before exact owned scratch removal.
+
+**Next:** Main completes the explicitly authorized local/public beta.32 release;
+then relevant real work checks discovery/application after instruction rereading.
+[Audit](research-audits/knowledge-organization-2026-10-21.md) ·
+[Release](../experiments/releases/learning-beta32-20261021/report.md).
+
 ## 2026-10-21 — Give reusable interface rules one owner before more profiles
 
 **Context / cause:** Creator asks why reusable knowledge was not organized this

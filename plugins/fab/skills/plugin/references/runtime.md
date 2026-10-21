@@ -11,7 +11,9 @@ shared refs. Docs aren't mandatory runtime unless bundled/routed. Global methods
 and user project evidence stay separate. Project tests don't prove installed behavior.
 For a cache outcome compare full executable inventory, including shared/scripts/
 assets, with SHA/fingerprint; preserve source version in experiment contract.
-Use scripts/compare_runtime.py <source-package> <installed-package> for byte parity.
+Resolve the [bundled runtime comparator](../scripts/compare_runtime.py) relative
+to this reference, then run that script with <source-package> <installed-package>
+for byte parity. Do not assume a helper under the repository root.
 Source-only requested fix can finish source-only; requested install must finish
 actual supported update and version/cache confirmation. Current CLI behavior is
 verified, not inferred from a missing skill chip or remembered paths.

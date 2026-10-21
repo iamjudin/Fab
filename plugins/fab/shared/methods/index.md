@@ -16,6 +16,10 @@ with its qualification rather than adopting the whole local workflow.
 The original section text, IDs and content hashes are retained. Classification
 does not repair omitted domain knowledge, unresolved citations or dated facts.
 Follow the active capability contracts linked from each brief for Fab policy.
+For current visible-interface policy, use [shared principles](../interface-principles.md)
+and only the applicable scenario/target guidance. For consequential corrections,
+[learning triage](../learning.md) distinguishes a local case from a rule/read/apply
+gap. These are current policy owners, not additional research reports to ingest.
 
 | Decision / trigger | Brief | Read deeper for |
 | --- | --- | --- |

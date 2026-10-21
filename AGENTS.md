@@ -85,6 +85,27 @@ This rule does not authorize an immediate new chat, hidden delegation, a merge,
 runtime installation or publication. Keep main ownership and return criteria clear.
 
 ## Current boundary
+Creator2026-10-21 requests existing knowledge/decomposition audit and scoped
+learning from corrections, then explicitly says release afterward. Main reviews
+12briefs/10skills; one conditional shared/learning owner and method discovery,
+current-policy links and negative owner-link guard preserve original12packets /
+572sections. Active architecture shortened; old17,391bytes retained verbatim in
+history-2026-10-21.md.93regressions/package/scope pass. Prepared beta.32:94files/
+d2ce2847243bc096, manifest-only delta from source94/f179b988fa473c34. Main owns
+versioned local update and public GitHub tag/Release, no second generic approval.
+Installed/public beta.31 stays89/f3e103bee3d92c90 until actual distribution checks.
+One exact-consent configured GPT-6.1 Sol/medium source probe discovers actual
+Analysis/learning/method refs and passes five cause/scope distinctions. Original
+transfer rejection retained;277531input/242816cached(included)/3221output,
+102.39seconds,200kforecast exceeded77531. Preserve root planning failure; no
+second launch/new model suite.97inputs/logs/reply/usage retained/hash-checked before
+exact scratch disposal. Not all-skill/native/installed/organic/scientific proof.
+No new skill/registry/queue, other-product or observer/research promotion. Release
+checks pending: experiments/releases/learning-beta32-20261021/report.md.
+Audit: docs/research-audits/knowledge-organization-2026-10-21.md. Next actual relevant
+use checks discovery/application; root forecasts revisit only on a new necessary
+model test, not an automatic rerun. Earlier dated source-only restrictions below
+retain history, superseded for this creator-requested release.
 Creator2026-10-21 requests the prepared interface-foundation workstream transfer
 for main source integration. Actual human message corroborated. Exact patchSHA
 e27d1294d34c889a54989a61061466d057edbdd57313f55e035e797b59b002fb reconstructs

@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "version": "0.1.0-beta.31",
-  "fingerprint": "f3e103bee3d92c90",
+  "version": "0.1.0-beta.32",
+  "fingerprint": "d2ce2847243bc096",
   "channel": "beta",
   "surfaces": [
     {
       "id": "analysis",
       "default": true,
       "status": "limited",
-      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Source marking uses project/<slug> without renaming, preserves all tags and hides bounded technical usage data at EOF. Common YAML only, no native Obsidian render claim. Two fresh source cases pass; root aggregate input-budget overrun is retained as process failure, not budget-compliant evidence. Qualified typography knowledge source added2026-10-16. Full source/registry/routes are structurally checked; new layout generation, native behavior and general efficacy are unobserved. Exact source numerical claims are not universal standards. Selective attributed For the Win synthesis added 2026-10-16. Packet preserves the authored synthesis, not the full book/private digest. Structural/source checks only, no empirical motivation or longitudinal effect validation. Beta.30 first-value application learning separates value, demonstration and setup, with conditional Product/Analysis routes. Source/package review only, no new model/native/conversion evidence. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Conditional landing profile is bundled; exact final profile has structural/local-install evidence only. Real project discovery, narrow/wide visual quality and conversion remain unverified.",
+      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Source marking uses project/<slug> without renaming, preserves all tags and hides bounded technical usage data at EOF. Common YAML only, no native Obsidian render claim. Two fresh source cases pass; root aggregate input-budget overrun is retained as process failure, not budget-compliant evidence. Qualified typography knowledge source added2026-10-16. Full source/registry/routes are structurally checked; new layout generation, native behavior and general efficacy are unobserved. Exact source numerical claims are not universal standards. Selective attributed For the Win synthesis added 2026-10-16. Packet preserves the authored synthesis, not the full book/private digest. Structural/source checks only, no empirical motivation or longitudinal effect validation. Beta.30 first-value application learning separates value, demonstration and setup, with conditional Product/Analysis routes. Source/package review only, no new model/native/conversion evidence. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Conditional landing profile is bundled; exact final profile has structural/local-install evidence only. Real project discovery, narrow/wide visual quality and conversion remain unverified. Beta.32 conditionally routes correction learning and relevant method discovery. One configured GPT-6.1 Sol/Medium composite source review observes discovery and scope/cause application; not native/installed or general reliability. Root input forecast exceeded by77531; no budget-compliance claim. Common interface foundation and conditional web concerns are integrated; supplied-context native/browser probes are bounded, with no actual site/native rendering or conversion proof. Fresh discovery is observed only through Analysis in one composite source case; other direct/native contexts remain unobserved.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
@@ -54,6 +54,21 @@
           "name": "conditional landing routes and profile correspondence",
           "result": "pass",
           "evidence": "experiments/maintenance/landing-local-20261019/report.md"
+        },
+        {
+          "name": "beta.32 exact package and current-owner boundary checks",
+          "result": "pass",
+          "evidence": "experiments/releases/learning-beta32-20261021/report.md; tests/test_package_guard.py; scripts/check_package.py"
+        },
+        {
+          "name": "bounded discovery and correction-scope application",
+          "result": "pass",
+          "evidence": "experiments/maintenance/knowledge-learning-20261021/report.md"
+        },
+        {
+          "name": "shared interface versus public-site browser and implementation ownership",
+          "result": "pass",
+          "evidence": "experiments/maintenance/interface-foundation-integration-20261021/report.md; experiments/maintenance/knowledge-learning-20261021/report.md"
         }
       ]
     },
@@ -61,7 +76,7 @@
       "id": "brainstorm",
       "default": true,
       "status": "limited",
-      "limitations": "Retained contextual/varied V2 evidence plus one short current-source sequential discussion/action/completion test on GPT-6.1 Sol/Medium. The shipped-identical baseline also passes; no comparative superiority, native consistency, long-context stability or creator usefulness claim. Earlier copy-anchor caveat retained. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change.",
+      "limitations": "Retained contextual/varied V2 evidence plus one short current-source sequential discussion/action/completion test on GPT-6.1 Sol/Medium. The shipped-identical baseline also passes; no comparative superiority, native consistency, long-context stability or creator usefulness claim. Earlier copy-anchor caveat retained. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Beta.32 conditionally routes correction learning and relevant method discovery. One configured GPT-6.1 Sol/Medium composite source review observes discovery and scope/cause application; not native/installed or general reliability. Root input forecast exceeded by77531; no budget-compliance claim. Fresh discovery is observed only through Analysis in one composite source case; other direct/native contexts remain unobserved.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
@@ -92,6 +107,16 @@
           "name": "beta.31 exact package regression and reference integrity",
           "result": "pass",
           "evidence": "experiments/releases/integrated-beta31-20261021/report.md; scripts/check_package.py; tests/"
+        },
+        {
+          "name": "beta.32 exact package and current-owner boundary checks",
+          "result": "pass",
+          "evidence": "experiments/releases/learning-beta32-20261021/report.md; tests/test_package_guard.py; scripts/check_package.py"
+        },
+        {
+          "name": "bounded discovery and correction-scope application",
+          "result": "pass",
+          "evidence": "experiments/maintenance/knowledge-learning-20261021/report.md"
         }
       ]
     },
@@ -99,7 +124,7 @@
       "id": "cowork",
       "default": true,
       "status": "limited",
-      "limitations": "Bounded project orientation/continuation and concrete workstream proposal. Current-source stage-handoff and growth fixture pass; native recurrence is retained. Short baseline sequence also passes. No ordinary-use trigger consistency, general recovery, installed-model or long-context guarantee. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Ordinary beta.30 research correction/relay dead end recurred. Source handoff now separates recovery/subtask completion from ongoing discussion, but no fresh model/native behavior proof is added. FAB-11 remains open. Conditional landing profile is bundled; exact final profile has structural/local-install evidence only. Real project discovery, narrow/wide visual quality and conversion remain unverified.",
+      "limitations": "Bounded project orientation/continuation and concrete workstream proposal. Current-source stage-handoff and growth fixture pass; native recurrence is retained. Short baseline sequence also passes. No ordinary-use trigger consistency, general recovery, installed-model or long-context guarantee. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Ordinary beta.30 research correction/relay dead end recurred. Source handoff now separates recovery/subtask completion from ongoing discussion, but no fresh model/native behavior proof is added. FAB-11 remains open. Conditional landing profile is bundled; exact final profile has structural/local-install evidence only. Real project discovery, narrow/wide visual quality and conversion remain unverified. Beta.32 conditionally routes correction learning and relevant method discovery. One configured GPT-6.1 Sol/Medium composite source review observes discovery and scope/cause application; not native/installed or general reliability. Root input forecast exceeded by77531; no budget-compliance claim. Common interface foundation and conditional web concerns are integrated; supplied-context native/browser probes are bounded, with no actual site/native rendering or conversion proof. Fresh discovery is observed only through Analysis in one composite source case; other direct/native contexts remain unobserved.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
@@ -140,6 +165,21 @@
           "name": "conditional landing routes and profile correspondence",
           "result": "pass",
           "evidence": "experiments/maintenance/landing-local-20261019/report.md"
+        },
+        {
+          "name": "beta.32 exact package and current-owner boundary checks",
+          "result": "pass",
+          "evidence": "experiments/releases/learning-beta32-20261021/report.md; tests/test_package_guard.py; scripts/check_package.py"
+        },
+        {
+          "name": "bounded discovery and correction-scope application",
+          "result": "pass",
+          "evidence": "experiments/maintenance/knowledge-learning-20261021/report.md"
+        },
+        {
+          "name": "shared interface versus public-site browser and implementation ownership",
+          "result": "pass",
+          "evidence": "experiments/maintenance/interface-foundation-integration-20261021/report.md; experiments/maintenance/knowledge-learning-20261021/report.md"
         }
       ]
     },
@@ -147,7 +187,7 @@
       "id": "delivery",
       "default": true,
       "status": "limited",
-      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Qualified repository/distribution method source added2026-10-16. Source preservation and conditional routes are structurally checked. Selected primary corrections do not validate all legal/case claims or prove documentation usefulness and distribution behavior. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Conditional landing profile is bundled; exact final profile has structural/local-install evidence only. Real project discovery, narrow/wide visual quality and conversion remain unverified.",
+      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Qualified repository/distribution method source added2026-10-16. Source preservation and conditional routes are structurally checked. Selected primary corrections do not validate all legal/case claims or prove documentation usefulness and distribution behavior. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Conditional landing profile is bundled; exact final profile has structural/local-install evidence only. Real project discovery, narrow/wide visual quality and conversion remain unverified. Beta.32 conditionally routes correction learning and relevant method discovery. One configured GPT-6.1 Sol/Medium composite source review observes discovery and scope/cause application; not native/installed or general reliability. Root input forecast exceeded by77531; no budget-compliance claim. Common interface foundation and conditional web concerns are integrated; supplied-context native/browser probes are bounded, with no actual site/native rendering or conversion proof. Fresh discovery is observed only through Analysis in one composite source case; other direct/native contexts remain unobserved.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
@@ -178,6 +218,21 @@
           "name": "conditional landing routes and profile correspondence",
           "result": "pass",
           "evidence": "experiments/maintenance/landing-local-20261019/report.md"
+        },
+        {
+          "name": "beta.32 exact package and current-owner boundary checks",
+          "result": "pass",
+          "evidence": "experiments/releases/learning-beta32-20261021/report.md; tests/test_package_guard.py; scripts/check_package.py"
+        },
+        {
+          "name": "bounded discovery and correction-scope application",
+          "result": "pass",
+          "evidence": "experiments/maintenance/knowledge-learning-20261021/report.md"
+        },
+        {
+          "name": "shared interface versus public-site browser and implementation ownership",
+          "result": "pass",
+          "evidence": "experiments/maintenance/interface-foundation-integration-20261021/report.md; experiments/maintenance/knowledge-learning-20261021/report.md"
         }
       ]
     },
@@ -185,7 +240,7 @@
       "id": "plugin",
       "default": true,
       "status": "limited",
-      "limitations": "Retained bounded plugin engineering outcomes, plus generated self-contained cleanup inheritance and local helper checks after a retained Python3.9 harness correction. Fresh generated-only model cleanup, host discovery, UI and production readiness remain unobserved. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change.",
+      "limitations": "Retained bounded plugin engineering outcomes, plus generated self-contained cleanup inheritance and local helper checks after a retained Python3.9 harness correction. Fresh generated-only model cleanup, host discovery, UI and production readiness remain unobserved. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Beta.32 conditionally routes correction learning and relevant method discovery. One configured GPT-6.1 Sol/Medium composite source review observes discovery and scope/cause application; not native/installed or general reliability. Root input forecast exceeded by77531; no budget-compliance claim. Fresh discovery is observed only through Analysis in one composite source case; other direct/native contexts remain unobserved.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
@@ -211,6 +266,16 @@
           "name": "beta.31 exact package regression and reference integrity",
           "result": "pass",
           "evidence": "experiments/releases/integrated-beta31-20261021/report.md; scripts/check_package.py; tests/"
+        },
+        {
+          "name": "beta.32 exact package and current-owner boundary checks",
+          "result": "pass",
+          "evidence": "experiments/releases/learning-beta32-20261021/report.md; tests/test_package_guard.py; scripts/check_package.py"
+        },
+        {
+          "name": "bounded discovery and correction-scope application",
+          "result": "pass",
+          "evidence": "experiments/maintenance/knowledge-learning-20261021/report.md"
         }
       ]
     },
@@ -218,7 +283,7 @@
       "id": "product",
       "default": true,
       "status": "limited",
-      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Selective attributed For the Win synthesis added 2026-10-16. Packet preserves the authored synthesis, not the full book/private digest. Structural/source checks only, no empirical motivation or longitudinal effect validation. Beta.30 first-value application learning separates value, demonstration and setup, with conditional Product/Analysis routes. Source/package review only, no new model/native/conversion evidence. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Conditional landing profile is bundled; exact final profile has structural/local-install evidence only. Real project discovery, narrow/wide visual quality and conversion remain unverified.",
+      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Selective attributed For the Win synthesis added 2026-10-16. Packet preserves the authored synthesis, not the full book/private digest. Structural/source checks only, no empirical motivation or longitudinal effect validation. Beta.30 first-value application learning separates value, demonstration and setup, with conditional Product/Analysis routes. Source/package review only, no new model/native/conversion evidence. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Conditional landing profile is bundled; exact final profile has structural/local-install evidence only. Real project discovery, narrow/wide visual quality and conversion remain unverified. Beta.32 conditionally routes correction learning and relevant method discovery. One configured GPT-6.1 Sol/Medium composite source review observes discovery and scope/cause application; not native/installed or general reliability. Root input forecast exceeded by77531; no budget-compliance claim. Common interface foundation and conditional web concerns are integrated; supplied-context native/browser probes are bounded, with no actual site/native rendering or conversion proof. Fresh discovery is observed only through Analysis in one composite source case; other direct/native contexts remain unobserved.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
@@ -254,6 +319,21 @@
           "name": "conditional landing routes and profile correspondence",
           "result": "pass",
           "evidence": "experiments/maintenance/landing-local-20261019/report.md"
+        },
+        {
+          "name": "beta.32 exact package and current-owner boundary checks",
+          "result": "pass",
+          "evidence": "experiments/releases/learning-beta32-20261021/report.md; tests/test_package_guard.py; scripts/check_package.py"
+        },
+        {
+          "name": "bounded discovery and correction-scope application",
+          "result": "pass",
+          "evidence": "experiments/maintenance/knowledge-learning-20261021/report.md"
+        },
+        {
+          "name": "shared interface versus public-site browser and implementation ownership",
+          "result": "pass",
+          "evidence": "experiments/maintenance/interface-foundation-integration-20261021/report.md; experiments/maintenance/knowledge-learning-20261021/report.md"
         }
       ]
     },
@@ -261,7 +341,7 @@
       "id": "prototype",
       "default": true,
       "status": "limited",
-      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Qualified typography knowledge source added2026-10-16. Full source/registry/routes are structurally checked; new layout generation, native behavior and general efficacy are unobserved. Exact source numerical claims are not universal standards. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Conditional landing profile is bundled; exact final profile has structural/local-install evidence only. Real project discovery, narrow/wide visual quality and conversion remain unverified.",
+      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Qualified typography knowledge source added2026-10-16. Full source/registry/routes are structurally checked; new layout generation, native behavior and general efficacy are unobserved. Exact source numerical claims are not universal standards. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Conditional landing profile is bundled; exact final profile has structural/local-install evidence only. Real project discovery, narrow/wide visual quality and conversion remain unverified. Beta.32 conditionally routes correction learning and relevant method discovery. One configured GPT-6.1 Sol/Medium composite source review observes discovery and scope/cause application; not native/installed or general reliability. Root input forecast exceeded by77531; no budget-compliance claim. Common interface foundation and conditional web concerns are integrated; supplied-context native/browser probes are bounded, with no actual site/native rendering or conversion proof. Fresh discovery is observed only through Analysis in one composite source case; other direct/native contexts remain unobserved.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
@@ -292,6 +372,21 @@
           "name": "conditional landing routes and profile correspondence",
           "result": "pass",
           "evidence": "experiments/maintenance/landing-local-20261019/report.md"
+        },
+        {
+          "name": "beta.32 exact package and current-owner boundary checks",
+          "result": "pass",
+          "evidence": "experiments/releases/learning-beta32-20261021/report.md; tests/test_package_guard.py; scripts/check_package.py"
+        },
+        {
+          "name": "bounded discovery and correction-scope application",
+          "result": "pass",
+          "evidence": "experiments/maintenance/knowledge-learning-20261021/report.md"
+        },
+        {
+          "name": "shared interface versus public-site browser and implementation ownership",
+          "result": "pass",
+          "evidence": "experiments/maintenance/interface-foundation-integration-20261021/report.md; experiments/maintenance/knowledge-learning-20261021/report.md"
         }
       ]
     },
@@ -299,7 +394,7 @@
       "id": "research",
       "default": true,
       "status": "limited",
-      "limitations": "Cleaned briefs separate knowledge/application; all437original packet sections preserved. Reader/registry integrity and bounded knowledge/method/marking source cases pass. External source/arithmetic/layout compliance remains PARTIAL. No scientific revalidation, native rendering, general applicability, cross-project efficacy, installed-model behavior or long-context repair guarantee. Source marking uses project/<slug> without renaming, preserves all tags and hides bounded technical usage data at EOF. Common YAML only, no native Obsidian render claim. Two fresh source cases pass; root aggregate input-budget overrun is retained as process failure, not budget-compliant evidence. Qualified typography knowledge source added2026-10-16. Full source/registry/routes are structurally checked; new layout generation, native behavior and general efficacy are unobserved. Exact source numerical claims are not universal standards. Qualified repository/distribution method source added2026-10-16. Source preservation and conditional routes are structurally checked. Selected primary corrections do not validate all legal/case claims or prove documentation usefulness and distribution behavior. Selective attributed For the Win synthesis added 2026-10-16. Packet preserves the authored synthesis, not the full book/private digest. Structural/source checks only, no empirical motivation or longitudinal effect validation. Beta.30 first-value application learning separates value, demonstration and setup, with conditional Product/Analysis routes. Source/package review only, no new model/native/conversion evidence. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change.",
+      "limitations": "Cleaned briefs separate knowledge/application; all437original packet sections preserved. Reader/registry integrity and bounded knowledge/method/marking source cases pass. External source/arithmetic/layout compliance remains PARTIAL. No scientific revalidation, native rendering, general applicability, cross-project efficacy, installed-model behavior or long-context repair guarantee. Source marking uses project/<slug> without renaming, preserves all tags and hides bounded technical usage data at EOF. Common YAML only, no native Obsidian render claim. Two fresh source cases pass; root aggregate input-budget overrun is retained as process failure, not budget-compliant evidence. Qualified typography knowledge source added2026-10-16. Full source/registry/routes are structurally checked; new layout generation, native behavior and general efficacy are unobserved. Exact source numerical claims are not universal standards. Qualified repository/distribution method source added2026-10-16. Source preservation and conditional routes are structurally checked. Selected primary corrections do not validate all legal/case claims or prove documentation usefulness and distribution behavior. Selective attributed For the Win synthesis added 2026-10-16. Packet preserves the authored synthesis, not the full book/private digest. Structural/source checks only, no empirical motivation or longitudinal effect validation. Beta.30 first-value application learning separates value, demonstration and setup, with conditional Product/Analysis routes. Source/package review only, no new model/native/conversion evidence. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Beta.32 conditionally routes correction learning and relevant method discovery. One configured GPT-6.1 Sol/Medium composite source review observes discovery and scope/cause application; not native/installed or general reliability. Root input forecast exceeded by77531; no budget-compliance claim. Fresh discovery is observed only through Analysis in one composite source case; other direct/native contexts remain unobserved.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
@@ -375,6 +470,16 @@
           "name": "beta.31 exact package regression and reference integrity",
           "result": "pass",
           "evidence": "experiments/releases/integrated-beta31-20261021/report.md; scripts/check_package.py; tests/"
+        },
+        {
+          "name": "beta.32 exact package and current-owner boundary checks",
+          "result": "pass",
+          "evidence": "experiments/releases/learning-beta32-20261021/report.md; tests/test_package_guard.py; scripts/check_package.py"
+        },
+        {
+          "name": "bounded discovery and correction-scope application",
+          "result": "pass",
+          "evidence": "experiments/maintenance/knowledge-learning-20261021/report.md"
         }
       ]
     },
@@ -382,7 +487,7 @@
       "id": "testing",
       "default": true,
       "status": "limited",
-      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Project-tag source tests retain a root parallel-run forecast overrun (427288input versus300k plan); no clean-budget claim or runtime-causal attribution. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change.",
+      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Project-tag source tests retain a root parallel-run forecast overrun (427288input versus300k plan); no clean-budget claim or runtime-causal attribution. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Beta.32 conditionally routes correction learning and relevant method discovery. One configured GPT-6.1 Sol/Medium composite source review observes discovery and scope/cause application; not native/installed or general reliability. Root input forecast exceeded by77531; no budget-compliance claim. Fresh discovery is observed only through Analysis in one composite source case; other direct/native contexts remain unobserved.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
@@ -403,6 +508,16 @@
           "name": "beta.31 exact package regression and reference integrity",
           "result": "pass",
           "evidence": "experiments/releases/integrated-beta31-20261021/report.md; scripts/check_package.py; tests/"
+        },
+        {
+          "name": "beta.32 exact package and current-owner boundary checks",
+          "result": "pass",
+          "evidence": "experiments/releases/learning-beta32-20261021/report.md; tests/test_package_guard.py; scripts/check_package.py"
+        },
+        {
+          "name": "bounded discovery and correction-scope application",
+          "result": "pass",
+          "evidence": "experiments/maintenance/knowledge-learning-20261021/report.md"
         }
       ]
     },
@@ -410,7 +525,7 @@
       "id": "wireframe",
       "default": true,
       "status": "limited",
-      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Qualified typography source is routed for visible block composition only. No new generated-layout/native behavior verification or fixed spacing threshold is claimed. Beta.30 first-value application learning separates value, demonstration and setup, with conditional Product/Analysis routes. Source/package review only, no new model/native/conversion evidence. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Conditional landing profile is bundled; exact final profile has structural/local-install evidence only. Real project discovery, narrow/wide visual quality and conversion remain unverified. Opt-in screen flows have bounded fresh routing and one completed file/check/correction case on the reviewed pre-release source. Search/timer output misses, prior timeout and unrun scoped edit remain; native/installed behavior is unobserved.",
+      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Qualified typography source is routed for visible block composition only. No new generated-layout/native behavior verification or fixed spacing threshold is claimed. Beta.30 first-value application learning separates value, demonstration and setup, with conditional Product/Analysis routes. Source/package review only, no new model/native/conversion evidence. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Conditional landing profile is bundled; exact final profile has structural/local-install evidence only. Real project discovery, narrow/wide visual quality and conversion remain unverified. Opt-in screen flows have bounded fresh routing and one completed file/check/correction case on the reviewed pre-release source. Search/timer output misses, prior timeout and unrun scoped edit remain; native/installed behavior is unobserved. Beta.32 conditionally routes correction learning and relevant method discovery. One configured GPT-6.1 Sol/Medium composite source review observes discovery and scope/cause application; not native/installed or general reliability. Root input forecast exceeded by77531; no budget-compliance claim. Common interface foundation and conditional web concerns are integrated; supplied-context native/browser probes are bounded, with no actual site/native rendering or conversion proof. Fresh discovery is observed only through Analysis in one composite source case; other direct/native contexts remain unobserved.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
@@ -451,6 +566,21 @@
           "name": "bounded source routing and actual artifact workflow",
           "result": "pass",
           "evidence": "experiments/maintenance/canvas-artifact-workflow-20261021/report.md; experiments/maintenance/canvas-entry-transfer-20261021/report.md"
+        },
+        {
+          "name": "beta.32 exact package and current-owner boundary checks",
+          "result": "pass",
+          "evidence": "experiments/releases/learning-beta32-20261021/report.md; tests/test_package_guard.py; scripts/check_package.py"
+        },
+        {
+          "name": "bounded discovery and correction-scope application",
+          "result": "pass",
+          "evidence": "experiments/maintenance/knowledge-learning-20261021/report.md"
+        },
+        {
+          "name": "shared interface versus public-site browser and implementation ownership",
+          "result": "pass",
+          "evidence": "experiments/maintenance/interface-foundation-integration-20261021/report.md; experiments/maintenance/knowledge-learning-20261021/report.md"
         }
       ]
     },
@@ -469,6 +599,11 @@
           "name": "beta.31 exact package regression and reference integrity",
           "result": "pass",
           "evidence": "experiments/releases/integrated-beta31-20261021/report.md; scripts/check_package.py; tests/"
+        },
+        {
+          "name": "beta.32 exact package and current-owner boundary checks",
+          "result": "pass",
+          "evidence": "experiments/releases/learning-beta32-20261021/report.md; tests/test_package_guard.py; scripts/check_package.py"
         }
       ]
     },
@@ -492,6 +627,11 @@
           "name": "bounded fallback checks and inspected artifact workflow",
           "result": "pass",
           "evidence": "experiments/maintenance/canvas-integration-20261020/report.md; experiments/maintenance/canvas-artifact-workflow-20261021/report.md"
+        },
+        {
+          "name": "beta.32 exact package and current-owner boundary checks",
+          "result": "pass",
+          "evidence": "experiments/releases/learning-beta32-20261021/report.md; tests/test_package_guard.py; scripts/check_package.py"
         }
       ]
     },
@@ -510,6 +650,11 @@
           "name": "beta.31 exact package regression and reference integrity",
           "result": "pass",
           "evidence": "experiments/releases/integrated-beta31-20261021/report.md; scripts/check_package.py; tests/"
+        },
+        {
+          "name": "beta.32 exact package and current-owner boundary checks",
+          "result": "pass",
+          "evidence": "experiments/releases/learning-beta32-20261021/report.md; tests/test_package_guard.py; scripts/check_package.py"
         }
       ]
     },
@@ -533,6 +678,11 @@
           "name": "beta.31 exact package regression and reference integrity",
           "result": "pass",
           "evidence": "experiments/releases/integrated-beta31-20261021/report.md; scripts/check_package.py; tests/"
+        },
+        {
+          "name": "beta.32 exact package and current-owner boundary checks",
+          "result": "pass",
+          "evidence": "experiments/releases/learning-beta32-20261021/report.md; tests/test_package_guard.py; scripts/check_package.py"
         }
       ]
     },
@@ -556,6 +706,11 @@
           "name": "beta.31 exact package regression and reference integrity",
           "result": "pass",
           "evidence": "experiments/releases/integrated-beta31-20261021/report.md; scripts/check_package.py; tests/"
+        },
+        {
+          "name": "beta.32 exact package and current-owner boundary checks",
+          "result": "pass",
+          "evidence": "experiments/releases/learning-beta32-20261021/report.md; tests/test_package_guard.py; scripts/check_package.py"
         }
       ]
     },
@@ -563,12 +718,22 @@
       "id": "landing-pages",
       "default": false,
       "status": "experimental",
-      "limitations": "Conditional profile in six existing skills, not an automatic new skill or project-wide mode. Source/local install integrity only; no real landing or final-profile model behavior proof. No inherited Landlord workflow.",
+      "limitations": "Conditional profile in six existing skills, not an automatic new skill or project-wide mode. Source/local install integrity only; no real landing or final-profile model behavior proof. No inherited Landlord workflow. Common interface foundation and conditional web concerns are integrated; supplied-context native/browser probes are bounded, with no actual site/native rendering or conversion proof.",
       "checks": [
         {
           "name": "profile and conditional route package integrity",
           "result": "pass",
           "evidence": "experiments/maintenance/landing-local-20261019/report.md; experiments/releases/integrated-beta31-20261021/report.md"
+        },
+        {
+          "name": "beta.32 exact package and current-owner boundary checks",
+          "result": "pass",
+          "evidence": "experiments/releases/learning-beta32-20261021/report.md; tests/test_package_guard.py; scripts/check_package.py"
+        },
+        {
+          "name": "shared interface versus public-site browser and implementation ownership",
+          "result": "pass",
+          "evidence": "experiments/maintenance/interface-foundation-integration-20261021/report.md; experiments/maintenance/knowledge-learning-20261021/report.md"
         }
       ]
     },
@@ -587,6 +752,29 @@
           "name": "helper reversibility and Markdown fallback regressions",
           "result": "pass",
           "evidence": "tests/test_screen_flow.py; tests/test_canvas_markdown_preview.py"
+        },
+        {
+          "name": "beta.32 exact package and current-owner boundary checks",
+          "result": "pass",
+          "evidence": "experiments/releases/learning-beta32-20261021/report.md; tests/test_package_guard.py; scripts/check_package.py"
+        }
+      ]
+    },
+    {
+      "id": "knowledge.correction-learning",
+      "default": true,
+      "status": "limited",
+      "limitations": "Only consequential corrections/recurrence/reusable-rule proposals trigger the shared method; small edits need no lesson ceremony. One fresh source-discovery composite case supports five cause/scope distinctions. No automatic policy self-modification, installed/native reliability, all-domain decomposition or empirical improvement claim. Root planning overrun retained.",
+      "checks": [
+        {
+          "name": "canonical owner links and source/application boundary",
+          "result": "pass",
+          "evidence": "tests/test_package_guard.py; docs/research-audits/knowledge-organization-2026-10-21.md"
+        },
+        {
+          "name": "actual appropriate source reads and cause/scope response",
+          "result": "pass",
+          "evidence": "experiments/maintenance/knowledge-learning-20261021/report.md"
         }
       ]
     }

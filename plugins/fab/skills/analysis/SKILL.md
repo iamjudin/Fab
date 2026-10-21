@@ -23,7 +23,9 @@ it doesn't block a useful bounded audit. If Figma/browser/tool isn't reachable,
 use supplied artifacts with an explicit observation boundary.
 Separate contradiction/defect, unknown, preference and implementation dependency.
 For each significant finding give evidence location, impact/confidence and next.
-Prioritize useful findings; no compulsory count. A screenshot can't prove billing,
+Prioritize useful findings; no compulsory count. For a consequential correction or
+recurring issue, use [learning triage](../../shared/learning.md): classify the
+cause/scope without turning a read-only finding into edit authority. A screenshot can't prove billing,
 network, persistence or native behavior. Don't perform redesign from read-only audit.
 Recommend research for missing evidence, brainstorm for alternatives, testing for
 a discriminating observable hypothesis. Don't launch these automatically.

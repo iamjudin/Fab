@@ -1,5 +1,16 @@
 # Решения
 
+- 2026-10-21: use one conditional correction-learning owner and the existing backlog.
+  Establish cause/scope before local repair, discovery/application repair, rule
+  clarification or bounded promotion. Recurrence is not a quota; learning grants
+  no external/global authority. Preserve original research and one current policy
+  owner, with selective discovery from direct skills. Guard current-application
+  ownership separately from source integrity. Keep active architecture distinct
+  from its verbatim dated snapshot.93regressions and one Analysis source-discovery
+  probe support bounded beta.32 preparation; root input forecast overrun remains.
+  Creator explicitly requests local/public release after this work.
+  [Audit](research-audits/knowledge-organization-2026-10-21.md).
+
 - 2026-10-21: accept the interface-foundation candidate from the landing workstream
   into main source. One common owner covers interface wording/composition; public
   content, browser adaptation and website technology hold their actual differences.

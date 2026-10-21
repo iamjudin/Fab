@@ -18,6 +18,10 @@ reuse valuable. [Preserved source](design-systems.full.json).
 
 ## Application in current Fab
 
+[Shared interface principles](../interface-principles.md) own common wording and
+composition policy. This knowledge explains reuse/tokens/components when needed;
+it does not require constructing a full library for each interface revision.
+
 [Block screens](../../skills/wireframe/references/block-screens.md) and
 [interaction prototypes](../../skills/prototype/references/interaction-prototype.md)
 set the current output boundary. Apply design-system knowledge when it helps that

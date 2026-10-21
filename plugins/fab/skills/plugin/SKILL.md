@@ -9,7 +9,9 @@ is in scope. Find actual target repo/package/runtime before interpreting symptom
 Classify plugin/project/mixed surface. Inspect guidance/Git/backlog; preserve
 edits and approved method. Existing implementation authorization persists;
 analysis-only remains read-only. No forced understanding ceremony when scope clear.
-Find root cause where behavior defined/applied/checked/documented. Make focused
+Find root cause where behavior defined/applied/checked/documented. For reusable
+instruction repairs, use [learning triage](../../shared/learning.md), change the
+canonical owner and its actual read/application seam, not every skill copy. Make focused
 skills, progressive refs and deterministic helpers for concrete errors. Don't
 expose internal ceremony in user's product. No automatic hooks/MCP/swarm.
 Use current official host docs for platform rules; don't blindly copy old manifest

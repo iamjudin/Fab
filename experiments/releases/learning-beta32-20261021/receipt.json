@@ -1,0 +1,36 @@
+{
+  "version": "0.1.0-beta.32",
+  "tag": "v0.1.0-beta.32",
+  "files": 94,
+  "fingerprint": "d2ce2847243bc096",
+  "sourceCandidateFingerprint": "f179b988fa473c34",
+  "sourceCommit": null,
+  "authorization": "Creator explicitly requests knowledge/decomposition/correction-learning maintenance and afterward release; local versioned update and public GitHub tag/Release by standing project agreement. Exact single model test separately approved.",
+  "checks": {
+    "regressions": 93,
+    "sourceKnowledgeAndDiscovery": "bounded PASS with root forecast overrun retained",
+    "nativeInstalledModelBehavior": "unobserved",
+    "newReleaseModelCalls": 0,
+    "package": "pass",
+    "scope": "pass",
+    "twelvePacketsAndIconUnchanged": "pass: full byte comparison to beta.31"
+  },
+  "rollback": {
+    "public": "0.1.0-beta.31",
+    "files": 89,
+    "fingerprint": "f3e103bee3d92c90",
+    "offline": "raw/rollback-marketplace"
+  },
+  "limits": [
+    "One composite source probe, not all-task or native adoption proof",
+    "Initial model-transfer rejection and input forecast overrun retained",
+    "Canvas remains experimental and earlier misses remain",
+    "No rewrite or scientific revalidation of original572sections",
+    "Independent observer/research work excluded"
+  ],
+  "assetsSha256": {
+    "release-scope.json": "cfc5b62211cb160d2178fc47d772d0a58ff77791f9a49378ea3da3c92e8cbc3f",
+    "fab-0.1.0-beta.32.zip": "e82f6504da856ce5a231c09a476e74ea9e2c82f014db8b78277615cce36a4907",
+    "SHA256SUMS.txt": "c65b0ffafddee54e8c03b911c2da404e503215a0a0fed64c65e4bf01d86deb69"
+  }
+}

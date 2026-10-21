@@ -16,6 +16,9 @@ can't confer real human taste/usability/market acceptance.
 Observer is a role, not an automatic second agent; delegation needs actual
 permission. No launches to fill statistics or repeat known failure without new
 signal. Persist meaningful findings in the owning backlog with evidence/next.
+Use [learning triage](../../shared/learning.md) to separate rule gaps from
+discovery/application failures and test/environment causes. Passing structure
+does not close behavior; a corrected case does not erase the original miss.
 Report verdict by claim, limits, found gaps, actual cost and next action. Stop on
 sufficient evidence, meaningful blocker, budget limit or repetition. Unknown usage
 stays unknown. No reset/credit purchase without actual user permission.

@@ -33,7 +33,7 @@ for the agreed channel. Each skill also works independently.
 Use a Codex client with plugin marketplace support:
 
 ```sh
-codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.31
+codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.32
 codex plugin add fab@fab-local
 ```
 
@@ -46,13 +46,18 @@ chat and transfers context after your agreement, subject to host support.
 
 ## Beta status
 
-**0.1.0-beta.31** focuses on mobile apps. Structure and scenarios use Markdown
+**0.1.0-beta.32** focuses on mobile apps. Structure and scenarios use Markdown
 tables; Canvas remains experimental. An opt-in screen-flow method supports task
 scenarios, genuinely shared modules and caller-specific returns. One actual
 file/check/correction workflow passes; earlier output misses and native rendering
 limits remain. A conditional landing profile uses HTML/CSS and necessary JavaScript
 for new pages without a chosen stack, preserving existing or explicit stacks.
 Browser prototypes have bounded checks.
+Shared interface policy now has one owner, specialized by public-site, browser
+and implementation needs. Correction learning distinguishes local choices,
+discovery failures, application failures and real rule gaps; significant findings
+reuse the existing backlog. One fresh source-discovery review supports this bounded
+behavior, not universal adoption or native reliability.
 Research now plans evidence and reader presentation together, separates reusable
 findings from project application and reviews returned coverage, links and numbers.
 Knowledge briefs now distinguish findings from current Fab policy. The reader protects
@@ -65,7 +70,7 @@ The knowledge base adds qualified layout/typography, repository/distribution and
 motivation/gamification methods. Onboarding reviews distinguish desired value,
 its concrete demonstration and necessary setup. These are design aids, not
 validated promises of retention, learning or conversion.
-Read [known limits](docs/limitations.md) and [release notes](docs/releases/0.1.0-beta.31.md).
+Read [known limits](docs/limitations.md) and [release notes](docs/releases/0.1.0-beta.32.md).
 
 ## Development and license
 

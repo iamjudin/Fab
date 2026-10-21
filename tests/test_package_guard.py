@@ -53,6 +53,23 @@ class GuardTests(unittest.TestCase):
     def test_registered_brief_must_link_its_actual_packet(self):
         p=self.root/'shared/methods/jtbd.md';p.write_text(p.read_text().replace('jtbd.full.json','first-value.full.json'))
         with self.assertRaises(AssertionError):guard.validate(self.root)
+    def test_brief_application_requires_executable_owner(self):
+        p=self.root/'shared/methods/jtbd.md';original=p.read_text()
+        start=original.index('## Application in current Fab')
+        end=original.index('## Deeper reading', start)
+        for replacement in ('## Application in current Fab\nNo owner reference.\n\n',
+                            '## Application in current Fab\n[Another brief](first-value.md).\n\n',
+                            '## Application in current Fab\n[Source](jtbd.full.json).\n\n'):
+            with self.subTest(replacement=replacement):
+                p.write_text(original[:start]+replacement+original[end:])
+                with self.assertRaisesRegex(AssertionError, 'missing current policy owner'):
+                    guard.validate(self.root)
+        p.write_text(original)
+    def test_brief_cannot_erase_source_application_boundary(self):
+        p=self.root/'shared/methods/jtbd.md'
+        p.write_text(p.read_text().replace('## Application in current Fab','## Source continuation'))
+        with self.assertRaisesRegex(AssertionError, 'missing current application boundary'):
+            guard.validate(self.root)
     def test_registry_pair_cannot_escape_methods(self):
         p=self.root/'shared/methods/registry.json';d=json.loads(p.read_text())
         d['modules'][0]['brief']='../core.md';p.write_text(json.dumps(d))

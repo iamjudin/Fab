@@ -61,13 +61,19 @@ Apple guidance for the actual target and inspect the resulting implementation.
 
 ## Application in current Fab
 
+[Shared interface principles](../interface-principles.md) own current reusable
+wording/composition policy. [Browser layout](../web-layout.md) adds target-specific
+adaptation; [public-site content](../web-content.md) applies only to that scenario.
+These instructions specialize the qualified knowledge, not its preserved source.
+
 [Block screens](../../skills/wireframe/references/block-screens.md) owns visible
 composition. [Interactive prototypes](../../skills/prototype/references/interaction-prototype.md)
 owns executable paths and observed adaptation. [Analysis](../../skills/analysis/SKILL.md)
 can review an existing artifact within its requested scope. Use this brief for the
 specific layout/text question, not as a compulsory visual redesign or styling
 stage. Product behavior, accepted wording and accessibility obligations retain
-their actual owners. Canvas geometry/readability is a separate parked surface.
+their actual owners. Canvas geometry/readability remains a separate opt-in experimental surface
+owned by Wireframe; source screen-flow integration does not prove native fit.
 
 For an actual finding state the visible relation, supporting artifact, impact and
 correction direction. Distinguish a confirmed mismatch, uncertain interpretation,

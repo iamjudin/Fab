@@ -1,0 +1,29 @@
+{
+  "verdict": "PASS for one source-discovery/cause-scope review; planning forecast overrun retained",
+  "observedReadCommands": 19,
+  "actualEntry": "analysis; actual SKILL/core/learning/index/appropriate interface/method and test/ingestion reads",
+  "caseJudgments": {
+    "A": "accepted local preference retained, no global size quota",
+    "B": "version/read-trigger evidence needed; existing rule not recopied to ten skills or whole library",
+    "C": "application/output preflight seam; stronger repeated instruction not treated as fix",
+    "D": "source retention differs from current-policy owner; checks actual12application sections and does not invent reproduction; source authority does not override read-only task",
+    "E": "timeout/unknown usage and different artifact schema PASS do not close semantic issue; no repeated launch"
+  },
+  "usage": {
+    "input_tokens": 277531,
+    "cached_input_tokens": 242816,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 3221,
+    "reasoning_output_tokens": 217
+  },
+  "seconds": 102.39,
+  "inputForecast": 200000,
+  "inputOverrun": 77531,
+  "countercaseSource": "five fictional cases; not live products",
+  "limits": [
+    "root unblinded review",
+    "one composite case, no baseline superiority or general reliability",
+    "source snapshot, not installed/native/automatic host reload",
+    "no actual corrective artifact execution or participant study"
+  ]
+}

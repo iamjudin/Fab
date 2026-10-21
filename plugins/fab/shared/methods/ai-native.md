@@ -21,6 +21,10 @@ process prescriptions are not controlled evidence of a superior operating model.
 
 ## Application in current Fab
 
+[Learning from corrections](../learning.md) owns the current correction-to-rule
+distinction. The source supports reasoning about learning loops; it does not
+authorize automatic self-modification, experiments or a second task registry.
+
 [Shared core](../core.md), [decision policy](../decision-policy.md) and
 [workstream handoff](../workstream-handoff.md) own current collaboration and scope.
 Skills can serve partial requests. Historical agent-role plans, daily schedules,

@@ -7,34 +7,55 @@ not a second queue. Closing a bounded task does not assert universal maturity.
 
 ## Current result and next action
 
-The authorized backlog maintenance is complete. [Eleven model invocations](../experiments/workflow-tests/backlog-closure-20261014/results.md)
-verify sequential action, research marking and a workstream proposal. Both source
-and shipped baseline pass the short dialogue; native dead ends remain unresolved.
-A generated plugin inherits self-contained cleanup rules. A separately authorized
-[fresh generated-only execution](../experiments/workflow-tests/generated-cleanup-20261014/results.md)
-now verifies actual retention/disposal; the external-preview surface remains open.
-No new Fab runtime correction is warranted by these passing cases.
+**Current distribution:** beta.31 is installed/published,89files/f3e103bee3d92c90.
+**Prepared release:** beta.32,94files/d2ce2847243bc096, with interface foundation,
+knowledge discovery/current-owner integrity and scoped correction learning.
+Creator explicitly requests release after this maintenance.93regressions/package/
+scope pass; CI/public assets and clean/primary installs remain pending in the
+[release receipt](../experiments/releases/learning-beta32-20261021/report.md).
+No additional model suite is queued. Main owns both distribution outcomes.
 
-**Current result:** beta.31 is published, installed and enabled:
-89files/f3e103bee3d92c90,v0.1.0-beta.31/448f5a1. Integrated landing, experimental screen-flow
-and earlier core/Cowork fixes are shipped under the creator's explicit release
-request. [Distribution](../experiments/releases/integrated-beta31-20261021/report.md)
-verifies91regressions/package/scope, exact-source CI, anonymous assets, clean /
-primary exact-tag/full89-file parity, Fab enabled and17other settings preserved.
-Nine previous tags unchanged; API Release immutable=false, no server-lock claim.
-Rollback publicbeta.30 or the exact retained local landing snapshot. No whole
-feature-branch merge, separate research or observer pending edit promotion.
+Canvas stays opt-in experimental; earlier recovery/overflow misses, timeout /
+unknown usage and native/organic continuity remain next-verification triggers
+on real relevant work. FAB-11 is not closed by source changes/publication.
+Twelve original packets/572sections, additive source tags and project consent
+remain intact. Independent research/observer work stays out of this release.
+Older source/install statements below retain their dated historical boundaries.
 
-Canvas remains opt-in experimental. A bounded actual file/check/correction
-workflow passes; search/timer misses, timeout/unknown usage, unrun scoped edit,
-native/installed adoption and sustained behavior remain **next verification**
-on relevant actual work. Landing discovery/copy fidelity/responsive quality
-likewise needs a real project, not a generic rerun. FAB-11 is not closed by
-publication. All twelve knowledge pairs/572sections, additive tags and consent
-remain intact. Actual installed instructions are reread here; other chats need
-relevant current-instruction rereading, not assumed automatic adoption. Bookworm
-and the active observer retain their own scope. Dated source-only/no-publication
-statements below are history, superseded only for this integrated package.
+## FAB-15 connected knowledge and correction scope — 2026-10-21
+
+Expected: a skill finds the relevant existing knowledge and distinguishes local
+correction, failed discovery/application, ambiguous/missing rule and test/setup
+failure before changing reusable policy. Observed gaps: ownership/read triggers
+were fragmented; original source integrity could pass despite losing a current
+application owner; architecture mixed active and historical current labels.
+
+Main reviews12briefs/10entry contracts and relevant owners. One conditional
+shared learning owner, direct conditional method discovery and current policy
+links preserve the source/application boundary. The existing package guard now
+rejects absent application/owner links, another brief or a source-only owner;
+negative mutations and all93regressions pass. No extra registry, skill or required
+lesson for small edits. Architecture snapshot is retained verbatim; current index
+contains actual owners/read triggers/evidence, not successive historical defaults.
+[Audit](research-audits/knowledge-organization-2026-10-21.md) and
+[maintenance evidence](../experiments/maintenance/knowledge-learning-20261021/report.md).
+
+One explicitly approved configured GPT-6.1 Sol/medium read-only source turn uses
+Analysis, discovers the actual learning/method sources and applies five contrasting
+cause/scope distinctions. PASS for this composite source review only; not all-
+skill/native/installed or sustained proof. High confidence in actual reads/output,
+causal generalization remains bounded. Original transfer rejection retained.
+277531input/242816cached(included)/3221output,102.39seconds;200kforecast exceeded
+77531. No second launch. Root forecasting is a **deferred test-planning issue**:
+next genuinely needed model run must use comparable actual trace/usage and a
+bounded scope rather than reuse200k or create a product-wide restriction. This
+runtime improvement does not close the planning error or reset its budget.
+
+Owner main, FAB-15; relevant continuation/application evidence also informs FAB-11 /
+FAB-14. Disposition: **next update**, complete the explicitly authorized beta.32
+release; **next verification**, actual discovery/application after adoption in a
+relevant real task. Close only the observed binding. Scientific source gaps,
+native/organic usefulness and previous failures remain. No competing learning queue.
 
 ## FAB-15 interface knowledge ownership — source integrated, 2026-10-21
 

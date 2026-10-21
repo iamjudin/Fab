@@ -35,6 +35,9 @@ or relationship. Keep even that investigation independent of project identity.
 Apply findings separately, do not turn developmental observations into categorical
 product prohibitions. A foundational report is not mandatory before ordinary work.
 Research owns [foundation and focused-gap scope](../skills/research/references/reuse.md).
+When existing knowledge can change the active decision, use the matching
+[method brief](methods/index.md), then only the needed source sections.
+Availability or graph reachability alone does not show that a rule was applied.
 
 ## Collaboration and attention
 Advise, criticize constructively and explain meaningful tradeoffs before changing
@@ -96,6 +99,11 @@ to create the chat, transfer context and verify recovery. Size alone does not
 require splitting routine work; a branch alone is not a chat handoff.
 
 ## Progress and learning
+For a consequential correction, recurrence or reusable-rule proposal, read
+[learning from corrections](learning.md). Distinguish a local defect/preference,
+discovery failure, application failure and actual contract gap before changing
+policy. Small completed edits need no lesson ceremony or new queue.
+
 Store durable decisions and deltas where useful; consult project guidance/Git/
 owning backlog, preserve others' edits. Commit verified significant checkpoints
 under project agreement. Experiments use a separate branch; no unsolicited merge.

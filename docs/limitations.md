@@ -36,3 +36,9 @@ and [release policy](release-policy.md). Publication does not close those gaps.
   a timed-out workshop turn with unknown usage and an unrun scoped edit. A later
   actual-file workshop succeeds after self-correction; those earlier failures
   are not retroactively closed. Installation does not prove native adoption.
+
+- Correction learning has one fresh Analysis source-discovery/cause-scope review,
+  not all-skill or installed/native reliability evidence. Original model-transfer
+  rejection and input-forecast overrun remain recorded. Rule/application integrity
+  checks do not establish semantic correctness, user value or self-modification
+  authority. Significant findings reuse the owning backlog.

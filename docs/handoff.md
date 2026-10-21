@@ -1,5 +1,29 @@
 # Рабочее состояние Fab
 
+## 2026-10-21 — Connected knowledge/correction learning prepared for beta.32
+
+Creator asks for existing-material cohesion/decomposition and local-versus-rule
+learning, then explicitly requests release. Main audits12briefs/10skills, adds one
+conditional learning owner/discovery routes, restores current interface-owner
+links and guards source-versus-policy boundaries. No new skill/registry/queue.
+Prior interface integration included; twelve packets/572sections and icon unchanged.
+Active architecture is concise; old text retained verbatim in a dated snapshot.
+
+One exactly approved configured GPT-6.1 Sol/medium read-only Analysis source probe
+actually discovers/applies the rules to five contrasting fictional cases. Bounded
+PASS only;277531input/242816cached(included)/3221output,102.39seconds.200kforecast
+exceeded77531; original transfer rejection and planning error retained, no retry.
+97inputs/events/reply/usage retained/hash-checked before exact scratch disposal.
+
+Prepared beta.32:94files/d2ce2847243bc096, only manifest differs from source probe
+94/f179b988fa473c34.93regressions/package/scope pass. Main completes source CI,
+public tag/Release/assets and clean/primary full-parity install; pending in the
+[release receipt](../experiments/releases/learning-beta32-20261021/report.md).
+Installed/public beta.31 stays89/f3e103bee3d92c90 until verified update. Rollback
+retained;17other plugin settings/10previous tags protected. No new model suite,
+other-product edit or unrelated research/observer promotion. Relevant actual
+use is the next behavioral trigger; no all-task/native/organic/scientific closure.
+
 ## 2026-10-21 — Interface foundation integrated in source, distribution unchanged
 
 Creator requests workstream preparation/transfer for integration; main reads the
