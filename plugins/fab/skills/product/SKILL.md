@@ -6,6 +6,10 @@ Read [shared core](../../shared/core.md), [decision policy](../../shared/decisio
 For a public promotional/offer landing-page task, read
 [landing pages](../../shared/landing-pages.md). Apply this route to the
 active object, not an app entry screen called landing or the whole project.
+When proposing user-facing wording, use
+[shared interface principles](../../shared/interface-principles.md).
+Public-page offers additionally use [website content](../../shared/web-content.md).
+Do not add interface work to a domain-only task.
 
 # Product
 Find new/existing/limited-change and requested stopping outcome. Preserve explicit

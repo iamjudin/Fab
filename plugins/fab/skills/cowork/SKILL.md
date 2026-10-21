@@ -8,6 +8,9 @@ Read [shared core](../../shared/core.md). For existing/durable project work read
 For a public promotional/offer landing-page task, read
 [landing pages](../../shared/landing-pages.md). Apply this route to the
 active object, not an app entry screen called landing or the whole project.
+For work on visible interface wording/composition, use
+[shared principles](../../shared/interface-principles.md). Route public-site,
+browser or mobile details by the actual task/target; no mandatory profile inventory.
 
 # Cowork
 Find intent, target, scope and current accepted boundary from the request and

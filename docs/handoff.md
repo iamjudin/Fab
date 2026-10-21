@@ -1,5 +1,28 @@
 # Рабочее состояние Fab
 
+## 2026-10-21 — Interface foundation integrated in source, distribution unchanged
+
+Creator requests workstream preparation/transfer for integration; main reads the
+actual human message. One replacement patch applied to current84826c6/beta.31,
+not the old feature branch or superseded web patch. Source93/ac5e856f94fa4a90,
+11paths,91regressions/package pass. Common wording/composition has one owner;
+public content/browser adaptation/website implementation retain local differences.
+Six conditional routes preserve original knowledge, core/manifest/mobile/Canvas.
+Architecture/decisions/backlog record owners and evidence, not only chronology.
+
+Incoming two supplied-context GPT-6.1 Sol/medium probes pass narrow native versus
+browser scope application; not automatic discovery, installed/native/render or
+organic efficacy. Main launches no new model calls. Exact packet/probes retained
+privately; other pending work/config/installed hashes unchanged. Published89-file
+release plan intentionally stays unchanged/ineligible for this source identity.
+
+Standing main guidance permits a focused local verified checkpoint. No push,
+feature merge, install, tag or public release belongs to this transfer. Installed /
+public beta.31 stays89/f3e103bee3d92c90. Main recommends this bounded change in the
+next explicitly requested beta; then use a real interface task to observe actual
+rule discovery/application rather than another generic campaign. This fixes the
+interface ownership seam, not every knowledge domain. [Evidence](../experiments/maintenance/interface-foundation-integration-20261021/report.md).
+
 ## 2026-10-21 — Integrated beta.31 published, installed and enabled
 
 Creator explicitly requests release without waiting for organic tests. Main ships

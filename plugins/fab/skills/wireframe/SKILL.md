@@ -6,6 +6,11 @@ Read [shared core](../../shared/core.md), [decision policy](../../shared/decisio
 For a public promotional/offer landing-page task, read
 [landing pages](../../shared/landing-pages.md). Apply this route to the
 active object, not an app entry screen called landing or the whole project.
+For visible interface composition/wording, read
+[shared principles](../../shared/interface-principles.md). Browser presentation uses
+[web layout](../../shared/web-layout.md); public-page meaning uses
+[website content](../../shared/web-content.md). Native mobile behavior keeps its
+existing mobile-structure route; a browser prototype does not change its target.
 
 # Wireframe
 Accept sufficient current requirements/UC/slice or an existing interface. Missing

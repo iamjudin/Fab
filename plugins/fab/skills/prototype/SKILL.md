@@ -6,6 +6,12 @@ Read [shared core](../../shared/core.md), [decision policy](../../shared/decisio
 For a public promotional/offer landing-page task, read
 [landing pages](../../shared/landing-pages.md). Apply this route to the
 active object, not an app entry screen called landing or the whole project.
+For visible interface wording/composition, read
+[shared principles](../../shared/interface-principles.md). Read
+[web layout](../../shared/web-layout.md) for an actual browser target and
+[website content](../../shared/web-content.md) for a public-page scenario.
+[Web implementation](../../shared/web-implementation.md) governs website code,
+not the production stack or platform proof of a native-app prototype.
 
 # Prototype
 Read [interactive prototype contract](references/interaction-prototype.md).

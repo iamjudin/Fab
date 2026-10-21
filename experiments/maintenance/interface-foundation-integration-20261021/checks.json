@@ -1,0 +1,47 @@
+[
+  {
+    "command": [
+      "python3",
+      "-B",
+      "scripts/check_package.py"
+    ],
+    "exitCode": 0,
+    "stdout": "PASS: 0.1.0-beta.31; 93 files; fingerprint=ac5e856f94fa4a90\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-q"
+    ],
+    "exitCode": 0,
+    "stdout": "Wireframer Canvas structure and file links: OK\nERROR: source.file does not exist: product/note.md\nWireframer Canvas structure and file links: OK\nWireframer workspace structure: OK\nWireframer Canvas structure and file links: OK\nERROR: source.file does not exist: product/reviews/missing.md\nERROR: link.toNode references missing node\nWireframer workspace structure: OK\nERROR: CAP-01.classification is required for product-capability\nWireframer workspace structure: OK\nWireframer workspace structure: OK\nERROR: path escapes workspace: ../outside.txt\nERROR: cleanup failed: path escapes workspace: ../outside.txt\nWireframer workspace structure: OK\nERROR: workspace identity does not match cleanup request\nWireframer workspace structure: OK\nWireframer managed files: cleaned\nWireframer workspace structure: OK\nWireframer managed files: cleaned\nWireframer workspace structure: OK\nWireframer workspace structure: OK\nWireframer workspace structure: OK\nERROR: HJ-01.meaning must be a non-empty string\nWireframer workspace structure: OK\nWireframer workspace structure: OK\nERROR: SIG-01.meaning must be a non-empty string\nERROR: SIG-01.authority must be one non-empty value\nERROR: SIG-01.knowledgeStatus is invalid\nERROR: SIG-01.disposition is invalid\nWireframer workspace structure: OK\nERROR: dangling link: JS-01.1 -> HJ-99\nERROR: JS-01.1 must link to exactly one human-job\nERROR: SIG-01 references missing graph node: HJ-99\n",
+    "stderr": "----------------------------------------------------------------------\nRan 91 tests in 1.225s\n\nOK\n"
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "scripts/check_fab_release.py"
+    ],
+    "exitCode": 1,
+    "stdout": "{\n  \"eligible\": false,\n  \"errors\": [\n    \"Plan does not match exact package version/fingerprint\"\n  ]\n}\n",
+    "stderr": ""
+  }
+]

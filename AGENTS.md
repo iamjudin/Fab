@@ -85,6 +85,24 @@ This rule does not authorize an immediate new chat, hidden delegation, a merge,
 runtime installation or publication. Keep main ownership and return criteria clear.
 
 ## Current boundary
+Creator2026-10-21 requests the prepared interface-foundation workstream transfer
+for main source integration. Actual human message corroborated. Exact patchSHA
+e27d1294d34c889a54989a61061466d057edbdd57313f55e035e797b59b002fb reconstructs
+93files/ac5e856f94fa4a90 from current84826c6/beta.31;11runtime paths,
+91regressions/package pass. One common interface-policy owner, scenario/browser/
+website-implementation differences and six conditional routes; no new skill,
+profile registry or mandatory pipeline. Original12packets/mobile/core/manifest/
+Canvas unchanged. Main inspects supplied-context native/browser probe outputs,
+no new model tests/discovery/native/organic efficacy claim. Exact incoming evidence
+retained privately; observer/research/experiment pending files/config/installed
+hashes unchanged. Source-only release gate deliberately ineligible against pinned
+published plan. Current installed/public beta.31 remains89/f3e103bee3d92c90.
+Standing main AGENTS permits focused local checkpoint after verification; this
+transfer does not authorize push, old feature merge, install/tag/public release.
+Architecture/decisions/backlog/handoff/journal record owners and scope. Recommend
+this bounded change in the next explicitly requested beta, then relevant actual
+interface work tests discovery/application. No entire-knowledge-base audit closure.
+Evidence: experiments/maintenance/interface-foundation-integration-20261021/report.md.
 Creator2026-10-21 explicitly requests the current integrated new version locally
 and publicly without organic-test delay, superseding earlier no-Git/install scope
 for this package only. Released/installed/enabled beta.31:89files/f3e103bee3d92c90,

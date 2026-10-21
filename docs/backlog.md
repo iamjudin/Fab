@@ -36,6 +36,35 @@ relevant current-instruction rereading, not assumed automatic adoption. Bookworm
 and the active observer retain their own scope. Dated source-only/no-publication
 statements below are history, superseded only for this integrated package.
 
+## FAB-15 interface knowledge ownership — source integrated, 2026-10-21
+
+Expected: relevant skills find one common wording/composition owner, then only
+needed scenario/target/implementation differences. Observed gap: earlier source
+preserved qualified mobile research but did not fully extract common current
+interface policy; the first web candidate repeated parts of it. Index and packet
+integrity did not establish actual application. Earlier source/application cleanup
+is retained as a different completed boundary, not universal organization proof.
+
+Main independently checks the actual creator transfer request and integrates the
+single replacement interface-foundation patch against beta.31. Source93files/
+ac5e856f94fa4a90,11paths;91regressions/package pass. Four shared references plus a
+smaller landing coordinator and six conditional routes retain Product/mobile
+owners, core/manifest/Canvas and all12research packets. No profile framework,
+all-platform catalogue, new skill or entire-library rewrite. Installed/public
+beta.31 remains89/f3e103bee3d92c90. Release gate remains deliberately ineligible
+for the changed source until an actual versioned distribution decision.
+
+Confidence: high for main patch identity, preservation and structural boundaries;
+bounded for incoming two supplied-context GPT-6.1 Sol/medium source probes.
+Automatic discovery, installed adoption, native/browser rendering and sustained
+use are unverified. [Evidence](../experiments/maintenance/interface-foundation-integration-20261021/report.md).
+Owner main, supporting landing workstream; no separate competing ID or queue.
+Disposition: **next update**, include in the next explicitly requested beta release;
+**next verification**, observe discovery/application in the next actual interface
+task after adoption. Close only the observed binding. A missing rule and a failure
+to discover/apply an existing rule require different repairs. Earlier source gaps,
+probe limits and broader FAB-15 research/source-support issues remain.
+
 ## Landing-page capability — separate workstream, 2026-10-19
 
 Creator explicitly requests a neighboring chat and a separate branch for landing

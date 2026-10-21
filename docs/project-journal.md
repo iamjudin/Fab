@@ -16,6 +16,34 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-21 — Give reusable interface rules one owner before more profiles
+
+**Context / cause:** Creator asks why reusable knowledge was not organized this
+way earlier. Incremental report intake/source preservation and qualified briefs
+were useful, but did not fully separate common interface policy from scenario,
+platform and implementation details. The first web candidate also repeated common
+rules. File/index correctness was not proof of timely application by an agent.
+
+**Decision / result:** Creator requests the landing workstream transfer for source
+integration. Main checks actual authority/base/patch and reconstructs exact93-file/
+ac5e856f94fa4a90 candidate from beta.31. A common interface-principles owner, local
+web concerns and six conditional skill routes replace duplication, without new
+skills, registries, speculative adapters or a forced all-layer workflow.
+91regressions/package pass; original12packets/core/manifest/mobile/Canvas remain.
+Architecture and backlog now state actual owners, read triggers and verification.
+
+**Evidence / limits:** Incoming two supplied-context GPT-6.1 Sol/medium probes
+support bounded native/HTML-prototype and browser/React separation. Main inspects
+retained replies, performs no new model call, and does not infer automatic
+reference discovery or native/render/organic efficacy. Entire-library organization
+is not claimed complete. Installed/public beta.31 stays89/f3e103bee3d92c90;
+published release scope remains pinned and ineligible for this different source.
+
+**Next:** Main retains a focused local verified checkpoint under standing guidance,
+without remote publication/installation. Recommend inclusion in the next explicitly
+requested beta, then actual interface work checks discovery and application.
+[Integration evidence](../experiments/maintenance/interface-foundation-integration-20261021/report.md).
+
 ## 2026-10-21 — Integrated beta.31 ships without waiting for organic-test time
 
 **Decision:** Creator requests the ready landing/Canvas/core/Cowork package in a

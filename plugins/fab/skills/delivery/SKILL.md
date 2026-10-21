@@ -6,6 +6,12 @@ Read [shared core](../../shared/core.md), [decision policy](../../shared/decisio
 For a public promotional/offer landing-page task, read
 [landing pages](../../shared/landing-pages.md). Apply this route to the
 active object, not an app entry screen called landing or the whole project.
+When implementing visible interface wording/composition, use
+[shared principles](../../shared/interface-principles.md). For actual website work,
+read [web implementation](../../shared/web-implementation.md), plus
+[content](../../shared/web-content.md) for public pages or
+[browser layout](../../shared/web-layout.md) for browser presentation as applicable.
+These do not add a visual stage to backend/package work or select a native stack.
 
 # Delivery
 Choose actual technical spike, implementation/handoff or release readiness.

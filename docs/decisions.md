@@ -1,4 +1,14 @@
 # Решения
+
+- 2026-10-21: accept the interface-foundation candidate from the landing workstream
+  into main source. One common owner covers interface wording/composition; public
+  content, browser adaptation and website technology hold their actual differences.
+  Existing Product/mobile owners and original research stay intact. Six skills
+  use conditional routes; no profile framework, mandatory pipeline or new skill.
+  Source93/ac5e856f94fa4a90 passes91regressions/package; published/installed beta.31
+  stays89/f3e103bee3d92c90. Supplied-context probes do not prove automatic discovery.
+  Local checkpoint uses standing main authority; no install/push/merge/release.
+  [Evidence](../experiments/maintenance/interface-foundation-integration-20261021/report.md).
 - 2026-10-10: отдельный Fab repo; один bundle с независимыми outcomes.
 - Shared core — canonical; краткий человеческий Маяк ссылается на него.
 - Beta: cowork/research/analysis, затем brainstorm/testing; остальные owners

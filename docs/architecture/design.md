@@ -3,7 +3,7 @@ Design v0.2 accepted for bounded autonomous beta implementation on 2026-10-10.
 Target owners: cowork, research, product, wireframe, prototype, analysis,
 brainstorm, testing, plugin, delivery. Historical beta.1 had five skills:
 cowork/research/analysis/brainstorm/testing plus shared core.
-All ten skill contracts are installed in beta.30. Meaning/behavior maturity
+All ten skills are available in installed beta.31; the source candidate below changes six contracts. Meaning/behavior maturity
 is bounded by concrete smoke evidence, not availability. Product/Wireframe use
 compatible graph adapter; Prototype/Plugin/Delivery have independent modes.
 Cowork maintains collaboration/intent/continuity; direct invocation bypasses it.
@@ -23,9 +23,34 @@ Shared artifact lifecycle covers task-owned scratch, verified retention and
 bounded cleanup. Plugin exports an equivalent self-contained rule to generated
 packages; this is a runtime responsibility, not a new mandatory workflow stage.
 
+## Integrated source candidate — interface foundation, 2026-10-21
+
+Main source contains the93-file/ac5e856f94fa4a90 candidate, reconstructed exactly
+from published beta.31 after the creator-authorized workstream transfer. This
+source is not installed or public.91regressions/package pass; the released89-file
+plan intentionally remains ineligible for this different source identity.
+
+| Concern | Canonical owner | Read boundary |
+| --- | --- | --- |
+| Shared collaboration, authority and evidence | `shared/core.md`, decision/project policies | Every relevant Fab capability; no new interface workflow |
+| Product meaning, state and ownership | Product and existing Wireframe contracts | Actual behavior/model work; preserved across visual revisions |
+| Common interface wording/composition | [interface-principles](../../plugins/fab/shared/interface-principles.md) | Visible wording/composition through six conditional skill routes |
+| Public-site task and content | [landing coordinator](../../plugins/fab/shared/landing-pages.md), [web content](../../plugins/fab/shared/web-content.md) | Actual public-offer/informational site; not every app screen |
+| Browser presentation | [web layout](../../plugins/fab/shared/web-layout.md) | Browser layout/review, including web apps; viewport width is not native identity |
+| Native mobile behavior | Existing [mobile structure](../../plugins/fab/shared/methods/mobile-structure.md) and current target context | Actual mobile behavior; no inherited Apple units or HTML-native equivalence |
+| Website implementation | [web implementation](../../plugins/fab/shared/web-implementation.md) | Actual site code/technical review; accepted stack retained |
+| Preserved knowledge and provenance | Method brief/full pairs and one registry | Relevant decision first, deeper sections conditionally; sources do not override current policy |
+
+No new skill, profile registry, speculative adapter or mandatory all-layer read.
+Common policy is distinct from qualified findings, local scenario choices and
+observed implementation evidence. Original typography/mobile/full packets,
+manifest/core and Canvas remain unchanged. This addresses interface ownership,
+not a completed organization or efficacy audit of the entire knowledge base.
+[Integration and limits](../../experiments/maintenance/interface-foundation-integration-20261021/report.md).
+
 ## Current integrated distribution — beta.31, 2026-10-21
 
-Current89-file package/f3e103bee3d92c90 includes the landing profile, experimental screen
+Installed/public89-file package/f3e103bee3d92c90 includes the landing profile, experimental screen
 flows and previous shared/core/Cowork fixes. Published, installed and enabled atv0.1.0-beta.31/448f5a1;91regressions/package/scope,
 exact-source CI, anonymous assets and clean/primary full89-file parity pass. Tables remain default;
 landing and screen-flow profiles are conditional, not new skills. Capability
@@ -108,8 +133,9 @@ The previous nine-method architecture below describes that retained base.
 
 ## Current knowledge architecture
 
-Nine bundled methods have an operational brief, preserved full packet and one
-registry. Briefs separate reusable knowledge from current Fab application.
+Twelve bundled methods have an operational brief, preserved full packet and one
+registry, with572indexed sections. Current source interface policy above specializes
+this knowledge without duplicating or rewriting its source packets. Briefs separate reusable knowledge from current Fab application.
 Optional section context qualifies historical, mixed, dated and example material
 without turning it into current policy or an evidence grade. Runtime reads a
 relevant brief, then selected packet sections when needed. Original library copies
