@@ -42,5 +42,6 @@
     "source": "a881d567fa51bbf142a63d88facbaed5dedaa2bb"
   },
   "localBeta34Install": "pass: clean/primary94-file parity",
-  "publicBeta34Release": "pending actual unlock/upload/anonymous verification"
+  "publicBeta34Release": "pass: published prerelease, three anonymous asset hashes, full94-file ZIP/scope/source parity",
+  "finalFingerprint": "66b2c5decf2167b8"
 }

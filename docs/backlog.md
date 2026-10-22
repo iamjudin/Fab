@@ -1,6 +1,6 @@
 # Fab backlog
 
-Updated 2026-10-21. This is the only active Fab queue. Main owns entries unless
+Updated 2026-10-22. This is the only active Fab queue. Main owns entries unless
 another owner is named. The exact [pre-maintenance record](backlog-history-2026-10-21.md)
 and [earlier frozen record](backlog-history-2026-10-14.md) preserve original failures,
 corrections, proposals and dated authority. They are history, not current tasks.
@@ -15,16 +15,18 @@ checks and clean/primary full94-file/exact-tag install parity pass.17other plugi
 settings and five independent pending files are preserved. Installed skill
 behavior is unchanged from beta.32; this adds repository-maintainer mechanisms.
 
-**Public Release/assets: pending actual Mac unlock.** Direct API TLS transport
-fails and browser control reports a locked Mac; manual unlock was requested.
-Prepared ZIP/scope/checksum are retained, but no public Release or anonymous
-asset-download PASS is claimed. The latest fully published Release remains
-beta.32, retained as exact offline rollback. Beta.33 is a superseded unreleased
-public tag candidate; both its CI failures and unchanged tag are preserved.
+**Public Release/assets: complete.** The actual GitHub prerelease contains all
+three prepared files. Anonymous asset hashes, full94-file ZIP/source/scope parity
+and all12prior public tag identities pass. API `immutable=false`; no server-enforced
+release locking is claimed. The original lock/API-transport blocker is preserved
+with its resolution. Fully published beta.32 remains exact offline rollback.
+Both owned publication scratch roots are removed after verified retention;
+the installed cache, rollback and independent files stay. Beta.33 is a superseded
+unreleased public tag candidate; both its CI failures and unchanged tag remain.
 [Current receipt](../experiments/releases/housekeeping-beta34-20261021/report.md).
 No new model/native/organic test or generic suite is queued.
 
-## FAB-15 prevention checks — beta.34 roll-forward in progress
+## FAB-15 prevention checks — shipped in beta.34
 
 Expected: one current-state owner; public links/pins match the actual prospective
 commit; owned task leftovers get an explicit disposition before completion.
@@ -34,9 +36,11 @@ CI check and twelve contrasting tests; all105regressions pass. Architecture/hand
 entry points link here; dated reports remain history. The guard never deletes
 files, evaluates prose truth or treats another task's drafts as this task's junk.
 
-Creator explicitly requests release. Owner main. Disposition: **next update**,
-finish only pending public Release/assets after actual Mac unlock; beta.34
-source/tag/branch-and-tag CI and local installation are verified. Beta.33 remains an unreleased
+Creator explicitly requests release. Owner main. Disposition: **complete within
+the maintainer/distribution boundary**: beta.34 source/tag, exact branch-and-tag CI,
+clean/primary local installation and public Release/assets are verified.
+Next verification is the next actual maintainer edit/checkpoint using the guard;
+no synthetic suite is queued. Beta.33 remains an unreleased
 public tag candidate after its tag-triggered CI failure; do not move that tag.
 94-file runtime differs only in manifest version. No model/native
 behavior rerun or new installed policy; original behavioral/source/cost gaps stay

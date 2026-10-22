@@ -14,17 +14,19 @@
     "projectIntegrity": "pass: staged index/public dependencies and owned roots",
     "branchCI": "pass: exact source, run39681866137",
     "tagCI": "pass: exact source new-tag event, run39682258957",
-    "publicRelease": "pending: Mac locked; exact unlock requested; direct API TLS transport times out",
-    "assets": "pending publication/anonymous download; local3asset hashes prepared",
+    "publicRelease": "pass: actual published GitHub prerelease with three uploaded assets",
+    "assets": "pass: anonymous hashes, full94-file ZIP/source and scope parity",
     "cleanInstall": "pass: exact tag and full94-file parity",
     "primaryInstall": "pass: exact tag and full94-file parity",
     "settings": "pass: Fab enabled;17other plugin settings unchanged",
     "independentWork": "pass: observer and four research files hash-unchanged",
     "runtimeDelta": "pass: manifest version only from beta.32; twelve packets/icon unchanged",
     "installedInstructionsReread": "actual installed Cowork/version reread; no new model/native adoption claim",
-    "cleanup": "partial: clean94-file outputs/logs retained and isolated install homes removed where safe; active publication inputs intentionally kept",
+    "cleanup": "pass: verified assets/clean outputs/logs/rollback retained; both exact task scratch roots removed; primary cache preserved",
     "previousTagsPreserved": "pass: all12prior public version tags unchanged",
-    "preparedAssets": "pass:3local hashes/full94-entry ZIP/source/scope parity; anonymous download pending"
+    "preparedAssets": "pass: local and anonymous asset hashes/full94-entry ZIP/source/scope parity",
+    "immutableTags": "pass: new source SHA and all previous peeled SHAs preserved",
+    "releaseLocking": "API immutable=false; no server-enforced release locking claimed"
   },
   "rollback": {
     "public": "0.1.0-beta.32",
@@ -37,7 +39,7 @@
     "Maintainer checks only; runtime version delta",
     "Both beta.33 CI failures remain retained",
     "No new model/native/organic evidence",
-    "Publication pending actual unlock; no security changes"
+    "API immutable=false; previous tag SHA preservation observed, not server-enforced locking"
   ],
   "assetsSha256": {
     "SHA256SUMS.txt": "c937843b2a489190d57bfbfb5f2988cd7036fffb11faf054e3703bfd6d988fde",
@@ -48,13 +50,25 @@
   "tagCIURL": "https://github.com/iamjudin/Fab/actions/runs/39682258957",
   "installedVersion": "0.1.0-beta.34",
   "installedRelativePath": "plugins/cache/fab-local/fab/0.1.0-beta.34",
-  "publicationBlock": {
+  "publication": {
+    "url": "https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.34",
+    "isDraft": false,
+    "isPrerelease": true,
+    "immutable": false,
+    "releaseId": 420474492,
+    "publishedAt": "2026-10-22T08:30:16Z"
+  },
+  "resolvedPublicationBlock": {
     "reason": "Locked Mac prevents browser publication; direct GitHub API TLS transport times out",
     "creatorAction": "Unlock Mac and reply; resume with beta.34, cancel superseded beta.33 dialog",
     "sourceTagPublic": true,
     "branchAndTagCIPass": true,
     "localInstallationVerified": true,
-    "releasePublished": false,
-    "noSecuritySettingsChanged": true
+    "releasePublished": true,
+    "noSecuritySettingsChanged": true,
+    "resolved": true,
+    "creatorUnlocked": true,
+    "transportRecovered": true,
+    "resolution": "Cancelled stale beta.33 dialog; official CLI transport recovered and published beta.34. Actual API and anonymous assets verified."
   }
 }

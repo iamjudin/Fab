@@ -16,6 +16,28 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-22 — Complete beta.34 public distribution after the access blocker
+
+**Outcome / evidence:** Public beta.34 prerelease contains the three prepared
+assets. Actual API state and anonymous downloads verify every asset hash,
+full94-file ZIP/source/scope parity and all12prior public tag identities. Exact
+source/tag CI and clean/primary installation had already passed105regressions.
+Both owned distribution scratch roots were removed only after nine retained-file
+comparisons; the installed cache, rollback and five independent files stay intact.
+
+**Original failure / correction:** API transport and a locked Mac first blocked
+publication. After creator unlock, the stale beta.33 dialog was cancelled; native
+coordinate input still failed, but official CLI transport recovered and published
+the correct beta.34 tag. The earlier failures are retained, not recast as success.
+API `immutable=false`; preserved SHAs do not imply server-enforced release locking.
+
+**Judgment / next:** Maintainer completion now checks actual prospective files,
+public dependencies and owned leftovers. This reduces the concrete status/file
+confusion without a new runtime workflow. Distribution is complete; use the guard
+at the next real edit/checkpoint. No new model/native/organic result or general
+semantic-truth guarantee is inferred.
+[Receipt](../experiments/releases/housekeeping-beta34-20261021/report.md).
+
 ## 2026-10-21 — Verify beta.34 source/tag and local install separately from Release
 
 **Outcome:**105tests/12new controls, actual branch/tag CI and clean/primary94-file
