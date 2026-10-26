@@ -90,6 +90,27 @@ queued setup is complete. A branch alone does not complete the chat handoff.
 This rule does not authorize an immediate new chat, hidden delegation, a merge,
 runtime installation or publication. Keep main ownership and return criteria clear.
 
+## System work and test fixtures
+When repairing Fab, the deliverable is the reusable capability, not completion or
+decoration of a test product. Locate the producer/application mechanism, repair
+it and check transfer on a different relevant case. Preserve original failures.
+Even a concrete product needs coherent behavior, shared rules and interface
+structure; do not universalize legitimate local rules or preferences.
+Creator 2026-10-26 designates `/Users/iamjudin/Desktop/Test` for generated Canvas
+test products and heavy raw runs. Keep source/tests and compact sanitized receipts
+in Fab. Relocate valuable evidence with verified hashes before exact cleanup;
+never delete unrelated work, accepted fixtures or active runtime inputs.
+Creator 2026-10-26 requests searchable IDs for human-reviewed tests. Use
+`FAB-TYYYYMMDD-NN-RNN`: date plus an unused case ordinal, then a distinct artifact
+revision. Keep the case ID stable; never repoint an old revision ID. Before
+allocation check the designated test workspace and the case's existing metadata
+for collisions. Put one review-entry note named exactly `<ID>.md` beside that
+revision's artifacts, with vault-relative links to its actual files and a readable
+purpose/status. Include the copyable ID in delivery replies. Keep identity in
+the existing case metadata; no new backlog/registry or IDs for every unit test.
+This is the Fab maintainer's review convention, not a mandatory product workflow.
+
+
 ## Current boundary
 Current tasks, distribution and rollback are owned by docs/backlog.md. Creator
 2026-10-21 authorizes project-integrity checks and the next local/public beta.

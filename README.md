@@ -33,7 +33,7 @@ for the agreed channel. Each skill also works independently.
 Use a Codex client with plugin marketplace support:
 
 ```sh
-codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.34
+codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.35
 codex plugin add fab@fab-local
 ```
 
@@ -46,40 +46,29 @@ chat and transfers context after your agreement, subject to host support.
 
 ## Beta status
 
-**Current version: 0.1.0-beta.34.** Mobile apps are the current focus, not a
-product-size ceiling. Public websites and landing pages also have a conditional
-route; each skill remains usable independently.
+**Current version: 0.1.0-beta.35.** Mobile apps are the current focus, not a
+product-size ceiling. Skills work independently; websites and landing pages have
+conditional routes.
 
-This maintenance release adds repository checks for public links, installation
-pins and task-owned leftovers. These maintainer checks do not change installed
-skill behavior. Recent versions also connect knowledge to the work that uses it:
+This release improves opt-in Canvas flows: visible screen content and context,
+stable reader numbers, consistent project legends, current-map navigation and
+forward column layout. Commands require their own action/outcome; reused module
+calls require connected caller continuations. Existing research, correction
+learning and interface principles remain available without a compulsory pipeline.
 
-- **Coherent interfaces.** Shared wording, grouping and typography principles
-  have one owner, with separate public-site, browser and implementation guidance.
-  Existing or explicitly chosen stacks remain in place.
-- **Corrections at the right scope.** Fab distinguishes local choices, missed
-  instructions, failed application and actual rule gaps before proposing a reusable
-  change. Significant findings use the project's existing backlog.
-- **Relevant knowledge on demand.** Skills consult applicable method briefs;
-  source evidence, current rules and project decisions stay distinct. Package
-  checks protect the links to current rule owners and original research packets.
+A corrected raw-input-to-Canvas candidate is accepted as a working foundation.
+A selected path also runs as a checked browser prototype. Original failures and
+corrections remain recorded; this is not a clean-first-pass or general reliability
+claim. Canvas remains experimental and tables remain the default. Browser evidence
+does not establish native or production readiness. Further quality assessment
+comes from actual project work; no automatic model suite is implied.
 
-Research also includes qualified methods for layout and typography, onboarding,
-motivation and repository delivery. Library annotation is optional: Fab proposes
-a `project/<slug>` tag once per project and remembers your decision. Accepted
-tagging preserves filenames, content and existing tags; technical history can
-stay in a hidden footer.
+The deferred knowledge-base migration and test products are excluded from this
+release. Library tags remain optional and additive, with one project-level choice;
+source names, content and existing tags are preserved.
 
-Markdown tables remain the default for structure and scenarios. Canvas is opt-in
-and experimental. Browser prototypes check selected interactions; they do not
-establish native or production readiness. Current checks include 105 regressions
-and the retained beta.32 source review with five contrasting correction cases.
-No additional model test was run for this maintenance release. Sustained
-dialogue continuity, native behavior and external Deep Research compliance remain
-open or partial; these methods do not establish retention or conversion gains.
-
-Read [known limits](docs/limitations.md) and
-[release notes](docs/releases/0.1.0-beta.34.md) for evidence and remaining gaps.
+Read [known limits](docs/limitations.md), [release notes](docs/releases/0.1.0-beta.35.md)
+and [validation evidence](experiments/releases/canvas-beta35-20261026/report.md).
 
 ## Development and license
 

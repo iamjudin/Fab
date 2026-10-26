@@ -6,7 +6,10 @@ Read [shared core](../../shared/core.md), [decision policy](../../shared/decisio
 # Plugin engineering
 Read [runtime boundary](references/runtime.md) when packaging/install/runtime
 is in scope. Find actual target repo/package/runtime before interpreting symptom.
-Classify plugin/project/mixed surface. Inspect guidance/Git/backlog; preserve
+Classify plugin/project/mixed surface. For system repair, name the reusable
+mechanism and the distinguishing transfer check. Keep fixture-specific edits as
+labelled evidence; another polished fixture does not close a producer defect.
+Do not replace the system task with product completion or decorative revisions. Inspect guidance/Git/backlog; preserve
 edits and approved method. Existing implementation authorization persists;
 analysis-only remains read-only. No forced understanding ceremony when scope clear.
 Find root cause where behavior defined/applied/checked/documented. For reusable

@@ -46,11 +46,36 @@ def label_lines(node: dict) -> list[str]:
     return [row['text'] for row in text_layout(node) if row['kind'] != 'divider']
 
 
+def setext_lines(value: str) -> tuple[set[int], set[int]]:
+    """Recognize paragraph underlines relevant to card hierarchy; not a full parser."""
+    lines = value.splitlines(); headings, underlines = set(), set()
+    fenced = False
+    for i, raw in enumerate(lines):
+        clean = raw.strip()
+        if clean.startswith(('```', '~~~')):
+            fenced = not fenced
+            continue
+        if fenced or not re.fullmatch(r'(?:-{3,}|={3,})', clean) or not i:
+            continue
+        j = i - 1; paragraph = []
+        while j >= 0 and lines[j].strip():
+            prior = lines[j].strip()
+            if re.match(r'^(?:#{1,6}\s|[-*+>]\s|\d+[.)]\s|[-=]{3,}$|```|~~~)', prior):
+                break
+            paragraph.append(j); j -= 1
+        if paragraph:
+            headings.update(paragraph); underlines.add(i)
+    return headings, underlines
+
+
 def text_layout(node: dict) -> list[dict]:
     """Small Markdown fallback, not an Obsidian renderer or font-fit proof."""
     value = node.get('text') or ('↗ ' + str(node.get('file', '')))
     rows, y, after_heading = [], 0, False
-    for raw in value.splitlines():
+    setext, underlines = setext_lines(value)
+    for index, raw in enumerate(value.splitlines()):
+        if index in underlines:
+            continue
         clean = raw.strip()
         if not clean:
             y += 6
@@ -59,7 +84,7 @@ def text_layout(node: dict) -> list[dict]:
             y += 8; rows.append(dict(kind='divider', text='', y=y, size=0, indent=0)); y += 6
             after_heading = False
             continue
-        heading = bool(re.match(r'^#{1,6}\s+', clean))
+        heading = index in setext or bool(re.match(r'^#{1,6}\s+', clean))
         clean = re.sub(r'^#{1,6}\s+', '', clean)
         clean = re.sub(r'!\[\[[^\]]+\]\]', '■', clean)
         clean = re.sub(r'\[\[([^\]|]+)(?:\|([^\]]+))?\]\]', lambda m: m[2] or m[1], clean)
@@ -68,7 +93,7 @@ def text_layout(node: dict) -> list[dict]:
         bullet = bool(re.match(r'^[-*+]\s+', clean))
         if bullet: clean = '• ' + re.sub(r'^[-*+]\s+', '', clean)
         metadata = after_heading and (' · ' in clean or bool(re.match(r'^[A-Z]+[-\d]', clean)))
-        size = 24 if heading else 14 if metadata else 18
+        size = 24 if heading else 18  # Plain Markdown captions have no guaranteed smaller native font.
         kind = 'heading' if heading else 'metadata' if metadata else 'body'
         columns = max(8, int((float(node['width']) - 32 - (14 if bullet else 0)) / (size * .6)))
         wrapped = textwrap.wrap(clean, width=columns, break_long_words=True) or [clean]
@@ -91,6 +116,8 @@ def layout_warnings(canvas: dict) -> list[str]:
     nodes = canvas.get('nodes', [])
     warnings: list[str] = []
     for index, a in enumerate(nodes):
+        if setext_lines(a.get('text', ''))[0]:
+            warnings.append(f'setext heading changes card hierarchy: {a["id"]}')
         for b in nodes[index + 1:]:
             left = max(float(a['x']), float(b['x']))
             top = max(float(a['y']), float(b['y']))

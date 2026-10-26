@@ -25,6 +25,17 @@ definition does not turn cancellation into successful continuation. Distinguish
 a nested entity's commit from cancelling its parent task, using actual product
 rules rather than an assumed global persistence policy.
 
+For a consequential operation, test its entry conditions as well as its recovery
+branch. Start an explicit walkthrough at each relevant entry with an existing
+pending, unknown or confirmed operation when the source supports those states;
+do not start all recovery checks after a failure has already been selected.
+Retain the same object/attempt. Show the source-required status/authority check
+before offering another mutation, and contrast a legitimate new operation after
+confirmed refusal (or no prior operation). This applies to payments, submissions
+and similar consequential effects only where their actual rules require it;
+a read-only lookup needs no invented mutation gate. Conditions and supported
+states come from the model, not a universal state-matrix quota.
+
 For an unavailable dependency, show what remains usable without false success.
 An unknown recovery stays open with the required technical evidence; never
 invent a successful retry or restoration. A diagram approval is not evidence

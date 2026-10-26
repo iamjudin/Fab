@@ -1,0 +1,21 @@
+{
+  "version": "0.1.0-beta.35",
+  "tag": "v0.1.0-beta.35",
+  "fingerprint": "e0b9d19a255b78d9",
+  "files": 95,
+  "baseCommit": "91f94d21d431054bb901843238ea68086b47b34e",
+  "testedLocal": "0.1.0-beta.34+local.canvas.20261026.12",
+  "testedFingerprint": "fb1853d690e0d558",
+  "checks": {
+    "regressions": "pass: 138 on isolated public-release source; deferred knowledge tests excluded",
+    "package": "pass:95files/e0b9d19a255b78d9",
+    "scope": "pass:beta gate, optional Canvas remains experimental",
+    "testedDelta": "manifest version only; all other95-file payload bytes match .12"
+  },
+  "state": "preparation",
+  "assetsSha256": {
+    "release-scope.json": "fd6d455eaaf2e34fd9bf7ef78cc7e8a63ec0b9ccbd62a24b6b9fd586ba98fbbf",
+    "SHA256SUMS.txt": "969d858708158dd9dd1cd5352f4104c17a1156b01aa571bcc73c37414d7f7c81",
+    "fab-0.1.0-beta.35.zip": "b9e2098f2e4ce8913168dc363c263797dabce26ca09c902bbdfd34a941570323"
+  }
+}

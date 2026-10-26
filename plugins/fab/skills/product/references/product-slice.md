@@ -23,6 +23,23 @@ before building it.
 - `Action contract`: apply shared decision policy; a new consequential slice
   choice belongs to the creator, an already chosen slice needs no repeated approval.
 
+## Explain delivery stages by useful outcomes
+
+When extending the first experience into later delivery stages, keep each stage
+coherent from a triggering situation to a useful observable outcome for a person
+or the creator's aim. One stage may close several related stories; a list of
+technical layers or unrelated features is not sufficient. Identify dependencies,
+essential negative/recovery behavior, exclusions and unresolved decisions. A
+necessary technical preparation can be a separate enabling task without claiming
+that it already delivers the product outcome. Do not manufacture a business job
+or metric to fill a template.
+
+Use familiar stage names in the person's language; for Russian prefer «Первый
+этап», «Второй этап» with a short outcome. MVP describes a release/learning choice,
+not every first stage. Keep implementation stages separate from scenario order,
+method workflow stages and priority. A visualization preserves agreed membership;
+it must not invent or reorder the roadmap from its layout.
+
 ## Choose The Uncertainty Before The Option
 
 Classify the questions that could change the slice:

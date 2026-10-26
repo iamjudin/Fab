@@ -8,23 +8,22 @@ Closing implementation or distribution does not establish behavioral maturity.
 
 ## Current distribution
 
-**Installed and enabled: beta.34**,94files/66b2c5decf2167b8,
-v0.1.0-beta.34/sourcea881d56. Source branch and annotated tag are public;
-105regressions/package/scope, exact branch **and new-tag CI**, staged/task-root
-checks and clean/primary full94-file/exact-tag install parity pass.17other plugin
-settings and five independent pending files are preserved. Installed skill
-behavior is unchanged from beta.32; this adds repository-maintainer mechanisms.
+**Beta.35 release in preparation:**95files / e0b9d19a255b78d9. The scoped package matches
+tested local .20261026.12 except manifest version. Canvas repairs, system/fixture
+boundaries and selected executable handoff are included. Deferred knowledge-base
+migration and its source-only pilot are excluded. Original failures and unknown
+usage remain. Local/public distribution checks are pending in the release receipt.
 
-**Public Release/assets: complete.** The actual GitHub prerelease contains all
-three prepared files. Anonymous asset hashes, full94-file ZIP/source/scope parity
-and all12prior public tag identities pass. API `immutable=false`; no server-enforced
-release locking is claimed. The original lock/API-transport blocker is preserved
-with its resolution. Fully published beta.32 remains exact offline rollback.
-Both owned publication scratch roots are removed after verified retention;
-the installed cache, rollback and independent files stay. Beta.33 is a superseded
-unreleased public tag candidate; both its CI failures and unchanged tag remain.
-[Current receipt](../experiments/releases/housekeeping-beta34-20261021/report.md).
-No new model/native/organic test or generic suite is queued.
+Creator accepts corrected R05 and the bounded map-to-prototype transfer as a
+working foundation, then explicitly requests release and real-use observation.
+Owner main; **next verification** is actual relevant project work. No new model
+suite, automation, whole-product/native/backend certification or test-fixture
+completion. Independent knowledge work stays deferred until separately resumed.
+[Release evidence](../experiments/releases/canvas-beta35-20261026/report.md),
+[system validation](../experiments/maintenance/canvas-system-validation-20261026/report.md),
+[prototype transfer](../experiments/maintenance/canvas-prototype-transfer-20261026/report.md).
+
+Published beta.34 remains exact rollback. Existing version tags are preserved.
 
 ## FAB-15 prevention checks — shipped in beta.34
 

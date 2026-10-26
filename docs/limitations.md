@@ -45,3 +45,13 @@ and [release policy](release-policy.md). Publication does not close those gaps.
   rejection and input-forecast overrun remain recorded. Rule/application integrity
   checks do not establish semantic correctness, user value or self-modification
   authority. Significant findings reuse the owning backlog.
+
+## Beta.35 Canvas observation boundary
+
+The creator accepts corrected R05 as a working foundation; a selected browser
+prototype path is observed. This does not erase initial numbering, input/command,
+module-continuation or fit failures. The producer enforces explicit structural
+relations, while main/creator still assess meaning and native readability. Shared
+modules may remain dense. No new automatic monitor or generic model suite is
+scheduled; actual project feedback is the next verification trigger. Deferred
+knowledge migration is outside this release.

@@ -16,6 +16,15 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-26 - Release the accepted Canvas foundation within scoped beta limits
+
+Creator accepts the corrected schema and selected executable transfer, switches
+the workstream to actual-use observation and requests a local/public beta. The
+release is reconstructed from public ancestry plus the tested95-file runtime,
+excluding deferred knowledge work. Commands and module exits gain executable
+structural guards; native/general behavior and original failures remain open.
+[Release](../experiments/releases/canvas-beta35-20261026/report.md).
+
 ## 2026-10-22 — Complete beta.34 public distribution after the access blocker
 
 **Outcome / evidence:** Public beta.34 prerelease contains the three prepared

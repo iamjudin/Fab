@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "version": "0.1.0-beta.34",
-  "fingerprint": "66b2c5decf2167b8",
+  "version": "0.1.0-beta.35",
+  "fingerprint": "e0b9d19a255b78d9",
   "channel": "beta",
   "surfaces": [
     {
@@ -240,7 +240,7 @@
       "id": "plugin",
       "default": true,
       "status": "limited",
-      "limitations": "Retained bounded plugin engineering outcomes, plus generated self-contained cleanup inheritance and local helper checks after a retained Python3.9 harness correction. Fresh generated-only model cleanup, host discovery, UI and production readiness remain unobserved. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Beta.32 conditionally routes correction learning and relevant method discovery. One configured GPT-6.1 Sol/Medium composite source review observes discovery and scope/cause application; not native/installed or general reliability. Root input forecast exceeded by77531; no budget-compliance claim. Fresh discovery is observed only through Analysis in one composite source case; other direct/native contexts remain unobserved.",
+      "limitations": "Retained bounded plugin engineering outcomes, plus generated self-contained cleanup inheritance and local helper checks after a retained Python3.9 harness correction. Fresh generated-only model cleanup, host discovery, UI and production readiness remain unobserved. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Beta.32 conditionally routes correction learning and relevant method discovery. One configured GPT-6.1 Sol/Medium composite source review observes discovery and scope/cause application; not native/installed or general reliability. Root input forecast exceeded by77531; no budget-compliance claim. Fresh discovery is observed only through Analysis in one composite source case; other direct/native contexts remain unobserved. Beta.35: explicit interface/control/module continuation checks and creator-accepted corrected R05 foundation. Main observes one selected map-to-browser path; no new business policy. Original authoring failures, one 360-second timeout and unknown token usage remain. General/native reliability stays open. Real-use observation is the next trigger; no generic test suite or automatic monitoring authority.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
@@ -276,6 +276,11 @@
           "name": "bounded discovery and correction-scope application",
           "result": "pass",
           "evidence": "experiments/maintenance/knowledge-learning-20261021/report.md"
+        },
+        {
+          "name": "beta.35 scoped Canvas integrity and retained corrective transfer",
+          "result": "pass",
+          "evidence": "experiments/maintenance/canvas-system-validation-20261026/report.md; experiments/maintenance/canvas-prototype-transfer-20261026/report.md; tests/test_screen_flow.py"
         }
       ]
     },
@@ -341,7 +346,7 @@
       "id": "prototype",
       "default": true,
       "status": "limited",
-      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Qualified typography knowledge source added2026-10-16. Full source/registry/routes are structurally checked; new layout generation, native behavior and general efficacy are unobserved. Exact source numerical claims are not universal standards. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Conditional landing profile is bundled; exact final profile has structural/local-install evidence only. Real project discovery, narrow/wide visual quality and conversion remain unverified. Beta.32 conditionally routes correction learning and relevant method discovery. One configured GPT-6.1 Sol/Medium composite source review observes discovery and scope/cause application; not native/installed or general reliability. Root input forecast exceeded by77531; no budget-compliance claim. Common interface foundation and conditional web concerns are integrated; supplied-context native/browser probes are bounded, with no actual site/native rendering or conversion proof. Fresh discovery is observed only through Analysis in one composite source case; other direct/native contexts remain unobserved.",
+      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Qualified typography knowledge source added2026-10-16. Full source/registry/routes are structurally checked; new layout generation, native behavior and general efficacy are unobserved. Exact source numerical claims are not universal standards. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Conditional landing profile is bundled; exact final profile has structural/local-install evidence only. Real project discovery, narrow/wide visual quality and conversion remain unverified. Beta.32 conditionally routes correction learning and relevant method discovery. One configured GPT-6.1 Sol/Medium composite source review observes discovery and scope/cause application; not native/installed or general reliability. Root input forecast exceeded by77531; no budget-compliance claim. Common interface foundation and conditional web concerns are integrated; supplied-context native/browser probes are bounded, with no actual site/native rendering or conversion proof. Fresh discovery is observed only through Analysis in one composite source case; other direct/native contexts remain unobserved. Beta.35: explicit interface/control/module continuation checks and creator-accepted corrected R05 foundation. Main observes one selected map-to-browser path; no new business policy. Original authoring failures, one 360-second timeout and unknown token usage remain. General/native reliability stays open. Real-use observation is the next trigger; no generic test suite or automatic monitoring authority.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
@@ -387,6 +392,11 @@
           "name": "shared interface versus public-site browser and implementation ownership",
           "result": "pass",
           "evidence": "experiments/maintenance/interface-foundation-integration-20261021/report.md; experiments/maintenance/knowledge-learning-20261021/report.md"
+        },
+        {
+          "name": "beta.35 scoped Canvas integrity and retained corrective transfer",
+          "result": "pass",
+          "evidence": "experiments/maintenance/canvas-system-validation-20261026/report.md; experiments/maintenance/canvas-prototype-transfer-20261026/report.md; tests/test_screen_flow.py"
         }
       ]
     },
@@ -487,7 +497,7 @@
       "id": "testing",
       "default": true,
       "status": "limited",
-      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Project-tag source tests retain a root parallel-run forecast overrun (427288input versus300k plan); no clean-budget claim or runtime-causal attribution. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Beta.32 conditionally routes correction learning and relevant method discovery. One configured GPT-6.1 Sol/Medium composite source review observes discovery and scope/cause application; not native/installed or general reliability. Root input forecast exceeded by77531; no budget-compliance claim. Fresh discovery is observed only through Analysis in one composite source case; other direct/native contexts remain unobserved.",
+      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Project-tag source tests retain a root parallel-run forecast overrun (427288input versus300k plan); no clean-budget claim or runtime-causal attribution. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Beta.32 conditionally routes correction learning and relevant method discovery. One configured GPT-6.1 Sol/Medium composite source review observes discovery and scope/cause application; not native/installed or general reliability. Root input forecast exceeded by77531; no budget-compliance claim. Fresh discovery is observed only through Analysis in one composite source case; other direct/native contexts remain unobserved. Beta.35: explicit interface/control/module continuation checks and creator-accepted corrected R05 foundation. Main observes one selected map-to-browser path; no new business policy. Original authoring failures, one 360-second timeout and unknown token usage remain. General/native reliability stays open. Real-use observation is the next trigger; no generic test suite or automatic monitoring authority.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
@@ -518,6 +528,11 @@
           "name": "bounded discovery and correction-scope application",
           "result": "pass",
           "evidence": "experiments/maintenance/knowledge-learning-20261021/report.md"
+        },
+        {
+          "name": "beta.35 scoped Canvas integrity and retained corrective transfer",
+          "result": "pass",
+          "evidence": "experiments/maintenance/canvas-system-validation-20261026/report.md; experiments/maintenance/canvas-prototype-transfer-20261026/report.md; tests/test_screen_flow.py"
         }
       ]
     },
@@ -525,7 +540,7 @@
       "id": "wireframe",
       "default": true,
       "status": "limited",
-      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Qualified typography source is routed for visible block composition only. No new generated-layout/native behavior verification or fixed spacing threshold is claimed. Beta.30 first-value application learning separates value, demonstration and setup, with conditional Product/Analysis routes. Source/package review only, no new model/native/conversion evidence. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Conditional landing profile is bundled; exact final profile has structural/local-install evidence only. Real project discovery, narrow/wide visual quality and conversion remain unverified. Opt-in screen flows have bounded fresh routing and one completed file/check/correction case on the reviewed pre-release source. Search/timer output misses, prior timeout and unrun scoped edit remain; native/installed behavior is unobserved. Beta.32 conditionally routes correction learning and relevant method discovery. One configured GPT-6.1 Sol/Medium composite source review observes discovery and scope/cause application; not native/installed or general reliability. Root input forecast exceeded by77531; no budget-compliance claim. Common interface foundation and conditional web concerns are integrated; supplied-context native/browser probes are bounded, with no actual site/native rendering or conversion proof. Fresh discovery is observed only through Analysis in one composite source case; other direct/native contexts remain unobserved.",
+      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Qualified typography source is routed for visible block composition only. No new generated-layout/native behavior verification or fixed spacing threshold is claimed. Beta.30 first-value application learning separates value, demonstration and setup, with conditional Product/Analysis routes. Source/package review only, no new model/native/conversion evidence. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Conditional landing profile is bundled; exact final profile has structural/local-install evidence only. Real project discovery, narrow/wide visual quality and conversion remain unverified. Opt-in screen flows have bounded fresh routing and one completed file/check/correction case on the reviewed pre-release source. Search/timer output misses, prior timeout and unrun scoped edit remain; native/installed behavior is unobserved. Beta.32 conditionally routes correction learning and relevant method discovery. One configured GPT-6.1 Sol/Medium composite source review observes discovery and scope/cause application; not native/installed or general reliability. Root input forecast exceeded by77531; no budget-compliance claim. Common interface foundation and conditional web concerns are integrated; supplied-context native/browser probes are bounded, with no actual site/native rendering or conversion proof. Fresh discovery is observed only through Analysis in one composite source case; other direct/native contexts remain unobserved. Beta.35: explicit interface/control/module continuation checks and creator-accepted corrected R05 foundation. Main observes one selected map-to-browser path; no new business policy. Original authoring failures, one 360-second timeout and unknown token usage remain. General/native reliability stays open. Real-use observation is the next trigger; no generic test suite or automatic monitoring authority.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
@@ -581,6 +596,11 @@
           "name": "shared interface versus public-site browser and implementation ownership",
           "result": "pass",
           "evidence": "experiments/maintenance/interface-foundation-integration-20261021/report.md; experiments/maintenance/knowledge-learning-20261021/report.md"
+        },
+        {
+          "name": "beta.35 scoped Canvas integrity and retained corrective transfer",
+          "result": "pass",
+          "evidence": "experiments/maintenance/canvas-system-validation-20261026/report.md; experiments/maintenance/canvas-prototype-transfer-20261026/report.md; tests/test_screen_flow.py"
         }
       ]
     },
@@ -611,7 +631,7 @@
       "id": "wireframe.canvas-preview",
       "default": false,
       "status": "experimental",
-      "limitations": "Opt-in only. Updated Markdown/wiki fallback and one completed artifact workflow have inspected fit evidence. Original label-overlap and timer overflow failures remain; no universal readability or native Obsidian proof. Tables remain default.",
+      "limitations": "Opt-in only. Updated Markdown/wiki fallback and one completed artifact workflow have inspected fit evidence. Original label-overlap and timer overflow failures remain; no universal readability or native Obsidian proof. Tables remain default. Beta.35: explicit interface/control/module continuation checks and creator-accepted corrected R05 foundation. Main observes one selected map-to-browser path; no new business policy. Original authoring failures, one 360-second timeout and unknown token usage remain. General/native reliability stays open. Real-use observation is the next trigger; no generic test suite or automatic monitoring authority.",
       "checks": [
         {
           "name": "readability",
@@ -632,6 +652,11 @@
           "name": "beta.32 exact package and current-owner boundary checks",
           "result": "pass",
           "evidence": "experiments/releases/learning-beta32-20261021/report.md; tests/test_package_guard.py; scripts/check_package.py"
+        },
+        {
+          "name": "beta.35 scoped Canvas integrity and retained corrective transfer",
+          "result": "pass",
+          "evidence": "experiments/maintenance/canvas-system-validation-20261026/report.md; experiments/maintenance/canvas-prototype-transfer-20261026/report.md; tests/test_screen_flow.py"
         }
       ]
     },
@@ -639,7 +664,7 @@
       "id": "wireframe.native-canvas",
       "default": false,
       "status": "unknown",
-      "limitations": "Native Obsidian UI not observed. JSON and preview geometry do not prove host rendering.",
+      "limitations": "Creator accepts corrected R05 as a working foundation after reviewing artifacts. Main checks fallback images and one browser-prototype path; exhaustive native fit, actual clicks and general first-pass quality are not certified.",
       "checks": [
         {
           "name": "native host render",
@@ -741,7 +766,7 @@
       "id": "wireframe.screen-flow",
       "default": false,
       "status": "experimental",
-      "limitations": "Explicit screen-flow/Canvas request only. Actual functional reuse and child/parent commits passed one source artifact workflow. First-output misses, unknown-cost timeout, unrun scoped edit and native rendering remain open. No universal correctness or scale proof.",
+      "limitations": "Explicit screen-flow/Canvas request only. Actual functional reuse and child/parent commits passed one source artifact workflow. First-output misses, unknown-cost timeout, unrun scoped edit and native rendering remain open. No universal correctness or scale proof. Beta.35: explicit interface/control/module continuation checks and creator-accepted corrected R05 foundation. Main observes one selected map-to-browser path; no new business policy. Original authoring failures, one 360-second timeout and unknown token usage remain. General/native reliability stays open. Real-use observation is the next trigger; no generic test suite or automatic monitoring authority.",
       "checks": [
         {
           "name": "bounded actual artifact creation/check/correction",
@@ -757,6 +782,11 @@
           "name": "beta.32 exact package and current-owner boundary checks",
           "result": "pass",
           "evidence": "experiments/releases/learning-beta32-20261021/report.md; tests/test_package_guard.py; scripts/check_package.py"
+        },
+        {
+          "name": "beta.35 scoped Canvas integrity and retained corrective transfer",
+          "result": "pass",
+          "evidence": "experiments/maintenance/canvas-system-validation-20261026/report.md; experiments/maintenance/canvas-prototype-transfer-20261026/report.md; tests/test_screen_flow.py"
         }
       ]
     },

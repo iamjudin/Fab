@@ -10,6 +10,12 @@ Read [experiment policy](references/experiment-policy.md) before a model or exte
 run. Define claim/target, runtime/environment, distinguishing signal, budget/stop.
 Choose deterministic check, focused behavioral smoke, end-to-end or real use
 according to the question. They are alternatives, not mandatory sequential stages.
+For a plugin/system claim, separate the mechanism under test from fixture business
+completeness. Use a materially different input to test portability after a repair,
+not another decorative pass on the same product. Keep generated test products
+and raw runs in the creator-designated test workspace when supplied; retain only
+compact sanitized findings in the plugin repository. Do not move/delete unrelated
+work or active runtime dependencies as housekeeping.
 Preserve immutable baseline while observing. Fixes belong to authorized domain
 work; correction and regression have separate evidence. A simulated test operator
 can't confer real human taste/usability/market acceptance.

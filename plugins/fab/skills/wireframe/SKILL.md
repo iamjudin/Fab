@@ -22,7 +22,12 @@ existing accepted inputs count. Default structure/scenario representation is
 [Markdown tables](references/table-view.md); preserve owners, IDs and all relevant
 branches. This fallback does not replace perceivable block screens or executable
 prototypes. Canvas is opt-in experimental while readability is unresolved.
-For requested screen-flow maps, read [screen flows](references/screen-flow.md).
+For explicitly requested Canvas or screen-flow maps, read
+[screen flows](references/screen-flow.md) before choosing overview versus detail.
+Match the creator's intended visual review and any accepted reference format;
+check representation coverage before declaring the requested map set complete.
+For a linked set, apply its local-orientation/return-composition contract and
+inspect the actual paths, not only START, counts or overlap warnings.
 One scenario may suffice; modules need actual functional reuse, and NAV is
 optional when an architectural overview helps. These are not mandatory layers.
 Read [Canvas adapter](references/canvas-adapter.md)

@@ -87,3 +87,29 @@ class EdgeRoutingTests(unittest.TestCase):
     def test_overflow_check_does_not_hide_ninth_line(self):
         a=node('small','text',0,0,200,210,text='\n'.join(['line']*12))
         self.assertTrue(any('overflow' in w for w in MODULE.layout_warnings({'nodes':[a],'edges':[]})))
+
+
+class MarkdownHierarchyTests(unittest.TestCase):
+    def test_native_metadata_setext_is_heading_and_not_divider(self):
+        card = node('cancel', 'text', 0, 0, 360, 120,
+                    text='## Return after cancellation\ncaller-register-cancel · result\n---\nReturn without creating a request')
+        rows = MODULE.text_layout(card)
+        self.assertTrue(any(r['kind'] == 'heading' and 'caller-register' in r['text'] for r in rows))
+        self.assertFalse(any(r['kind'] == 'divider' for r in rows))
+        warnings = MODULE.layout_warnings({'nodes': [card], 'edges': []})
+        self.assertIn('setext heading changes card hierarchy: cancel', warnings)
+        self.assertIn('text may overflow node: cancel', warnings)
+
+    def test_blank_line_preserves_thematic_break_and_plain_caption(self):
+        card = node('safe', 'text', 0, 0, 400, 400,
+                    text='## Continue editing\n\nResult\n\n---\n\nSame form and entered values')
+        rows = MODULE.text_layout(card)
+        self.assertEqual(sum(r['kind'] == 'divider' for r in rows), 1)
+        self.assertEqual(MODULE.layout_warnings({'nodes': [card], 'edges': []}), [])
+
+    def test_multiline_setext_and_equals_underlines(self):
+        headings, underlines = MODULE.setext_lines('First line\nSecond line\n===\n\nBody')
+        self.assertEqual(headings, {0, 1})
+        self.assertEqual(underlines, {2})
+        self.assertEqual(MODULE.setext_lines('## Explicit heading\n---')[0], set())
+        self.assertEqual(MODULE.setext_lines('```\ncode\n---\n```')[0], set())

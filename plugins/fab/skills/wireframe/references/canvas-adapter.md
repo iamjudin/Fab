@@ -32,8 +32,43 @@ adjacent frame. Fix concrete overlap/overflow/label defects and recheck only cha
 Use the documented SVG fallback if PNG dependencies are unavailable; avoid
 renderer experiments. Keep explanation outside the diagram and route returns
 away from cards. Structural validation cannot establish visual readiness.
+The fallback recognizes setext headings and flags their effect on card hierarchy.
+It does not assume a plain metadata paragraph has a smaller native font. Repair
+ambiguous card Markdown at authoring, then resize/reflow affected cards; enlarging
+one clipped box alone leaves the shared cause. A warning-free approximation still
+needs actual Obsidian inspection, especially after native counterevidence.
+
+## Independent fit evidence
+
+Sizing a card from the fallback layout and checking it with that same layout is
+one estimate, not independent fit verification. Its zero warnings must not be
+reported as readable native output. Reflow after final wording; reserve room for
+actual heading/list/paragraph spacing without shortening away required meaning.
+No fixed padding multiplier establishes fit across themes or text settings.
+
+For actual-app inspection include dense navigation/legend cards, long headings,
+multiline lists and caller continuations at readable scale, including lower lines.
+Record the map revision and inspected cards/settings with the observed result in
+existing task evidence. Any clipped native card is a failed observation even if
+the fallback is clean. A stale screenshot or changed window title is not evidence
+of the selected revision. If native inspection fails, return a candidate with
+native fit unverified; do not repeat the fallback as a stronger acceptance claim.
+Complete text extraction for the editorial pass is documented in
+[reader acceptance](screen-flow.md#reader-pass-and-transfer-acceptance).
 
 ## Choose the projection contract
+
+First check [visual-review coverage](screen-flow.md#match-the-requested-visual-review)
+against the requested result and any accepted reference format. Decide which
+overview and task/detail maps actually support that review before file/layout QA.
+An otherwise valid NAV-only file is insufficient when the requested critical
+screen-flow paths have no inspectable visual representation. Record this as an
+incomplete deliverable, not merely a native-rendering unknown.
+For linked maps, inspect useful navigation/notation at the working location and
+ordinary returns versus substantive recovery. A metadata link back to START or
+zero collision warnings alone does not establish these qualities. Inspect exact
+return-reference targets/retained context; a map link plus ID is not a verified
+native jump to that node. Preserve the original relation in projection evidence.
 
 For screen-flow or navigation-relation maps, apply [screen flows](screen-flow.md).
 Use semantic types: purple modules, blue modal tasks, gray empty content and

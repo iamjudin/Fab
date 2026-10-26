@@ -13,6 +13,14 @@ and systems. Partition larger products when the actual case requires it and
 refine that workflow from evidence, without imposing a premature enterprise
 process. Small examples do not validate large-product execution or scalability.
 
+Build coherent systems even within a single product: connect behavior, shared
+rules, states and interface decisions rather than stacking isolated cosmetic
+patches. Reuse only where the behavior is actually shared; a product-specific
+rule or valid local preference need not become a universal framework. When the
+target is a plugin/system, test products are fixtures, not the delivery target.
+Repair the owning mechanism and check transfer to a materially different case;
+do not drift into completing or polishing the fixture as evidence of system repair.
+
 ## Preserve meaning and cause
 Keep source, authority, uncertainty and acceptance distinct. An observation,
 hypothesis, creator decision and constraint are different. Preserve explicit
