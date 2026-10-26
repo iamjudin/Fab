@@ -8,22 +8,24 @@ Closing implementation or distribution does not establish behavioral maturity.
 
 ## Current distribution
 
-**Beta.35 release in preparation:**95files / e0b9d19a255b78d9. The scoped package matches
-tested local .20261026.12 except manifest version. Canvas repairs, system/fixture
-boundaries and selected executable handoff are included. Deferred knowledge-base
-migration and its source-only pilot are excluded. Original failures and unknown
-usage remain. Local/public distribution checks are pending in the release receipt.
+**Released, installed and enabled: beta.35**,95files/e0b9d19a255b78d9;
+`v0.1.0-beta.35` ->98103153fa3d75f0e1c4ae4a1f58c2f0730b8925.138applicable
+regressions/package/scope, exact-source branch/tag CI, anonymous assets and
+clean/primary exact-tag full95-file parity pass.16other settings and13prior tags
+are preserved. API immutable=false; no server-enforced Release lock claim.
 
-Creator accepts corrected R05 and the bounded map-to-prototype transfer as a
-working foundation, then explicitly requests release and real-use observation.
-Owner main; **next verification** is actual relevant project work. No new model
-suite, automation, whole-product/native/backend certification or test-fixture
-completion. Independent knowledge work stays deferred until separately resumed.
+Creator accepts corrected R05 and selected executable transfer as a working
+foundation and explicitly requests release/observation. Owner main; **deferred**
+until actual relevant project use supplies new feedback. No generic model suite,
+new automation, fixture product completion or native/general/backend certification.
+Original misses, timeout and unknown usage stay retained. Independent knowledge
+migration and the development checkout's source-only pilot are excluded.
 [Release evidence](../experiments/releases/canvas-beta35-20261026/report.md),
 [system validation](../experiments/maintenance/canvas-system-validation-20261026/report.md),
 [prototype transfer](../experiments/maintenance/canvas-prototype-transfer-20261026/report.md).
 
-Published beta.34 remains exact rollback. Existing version tags are preserved.
+Exact public beta.34 and local .12 snapshots remain rollback. Owned release
+scratch duplicates were removed after verified retention; primary cache retained.
 
 ## FAB-15 prevention checks — shipped in beta.34
 

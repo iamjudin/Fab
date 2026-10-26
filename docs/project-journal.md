@@ -23,6 +23,9 @@ the workstream to actual-use observation and requests a local/public beta. The
 release is reconstructed from public ancestry plus the tested95-file runtime,
 excluding deferred knowledge work. Commands and module exits gain executable
 structural guards; native/general behavior and original failures remain open.
+95-file local/public beta.35 is now verified, including exact-source CI, anonymous
+assets, clean/primary installs,16other settings and13previous tags. Rollback and
+original failures remain; actual-use observation is next.
 [Release](../experiments/releases/canvas-beta35-20261026/report.md).
 
 ## 2026-10-22 — Complete beta.34 public distribution after the access blocker
