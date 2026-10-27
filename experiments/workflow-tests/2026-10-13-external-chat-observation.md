@@ -1,5 +1,112 @@
 # External Fab chat observation
 
+## 2026-10-27 — Creator-requested observation closure and triage
+
+The creator requests deletion of the monitor. The app confirms deletion; a final
+compact snapshot shows the same already-assessed completed turn, with no pending
+assessment. Findings and prior target history remain frozen in their existing
+owners: continuity, semantic coverage, useful continuation, grounded feedback,
+and research authority/retention. Original failures remain beside corrections.
+Later positive intake does not close those broader contracts.
+
+Main processes the accumulated scope now: deduplicate existing FAB-02/03/11/14/15
+ownership, retain existing implemented corrections, and defer unproved behavioral
+claims to actual consequential use. No additional clear instruction gap is
+established by the unchanged final state; no speculative rule or new experiment
+is added. Existing library/source authority remains independent. No observed
+project edit or message, research promotion, new automation or claim of a future
+disabled-monitor job. This closure does not reopen deferred knowledge migration.
+
+## 2026-10-22 — Supplied-report intake with explicit version adoption
+
+- Requested outcome: inspect the actually installed Fab update, reread applicable
+  instructions and ingest a newly returned comparative study while preserving
+  prior foundations and accepted decisions. Three completed turns follow the
+  previous assessed boundary; two concern upstream formatting/library transfer,
+  while the final turn performs Fab intake. No active turn is marked assessed.
+- Adoption evidence: the trace reads the beta.31 manifest and relevant shared,
+  Research, Product/Analysis and method instructions. An executed package check
+  reports exact89-file installed/source parity. This establishes deliberate
+  beta.31 adoption at that time, not automatic refresh or later beta.32–34 use.
+- Useful outcome: the actor retains supplied and processed sources, writes an
+  operational brief and a47-section packet, and compares coverage with the actual
+  assignment. Earlier foundations and accepted requirements remain distinct from
+  suggested application. The final answer interprets usefulness and names a
+  bounded next product discussion without claiming it has been performed.
+- Evidence-sensitive assessment: detailed first-session and incentive-rule
+  coverage is qualified as partial. Public descriptions do not establish actual
+  independence, audience suitability, demand or developmental effects. Upstream
+  citation repair leaves114citation occurrences without exact mappings; the intake
+  discloses that limitation and does not treat formatting or packet validity as
+  source verification. Original earlier method/retention/value-framing failures
+  remain open within their existing owners.
+- Observer evidence: four specific local artifacts were independently read.
+  Original/processed file hashes match recorded provenance; the packet contains
+  47sections with the processed source identity. The trace reports successful
+  structural/index checks,133local targets, additive tagging with unchanged reader
+  body and a local checkpoint. The observer did not independently compare the
+  full packet reconstruction, reread the Library body, audit scientific sources,
+  run external products or verify the checkpoint remotely. Model/effort unknown.
+- Other limits: the trace shows an initial repository-layout lookup failure,
+  followed by correct package/release inspection; this is retained as a recovered
+  probe, not a new cross-project defect. Source tagging and exact temporary-file
+  removal are trace evidence, not general consent/session or cleanup proof.
+  Upstream Bookworm work is not promoted into a Fab implementation finding.
+- Fab interpretation/disposition: bounded positive application evidence for
+  FAB-15, with supporting FAB-14/FAB-02 behavior. **Next verification** remains
+  actual use of a consequential finding: check its source support, preserved
+  requirements and proposed versus accepted status. This intake does not close
+  scientific, continuity or usefulness claims. No new demonstrated runtime defect,
+  coherent repair batch, blocker or need for creator participation is identified.
+- Monitor actions: only this sanitized report, the existing FAB-15 backlog owner
+  and private cursor/evidence state are updated. No tests, implementation, commit,
+  publication, source-library edits, observed-chat messages or automation changes.
+
+## 2026-10-19 — Explicit beta.30 adoption and bounded method application
+
+- Requested outcomes: continue onboarding/motivation while preserving accepted
+  decisions, assess whether a prior competitor review is sufficiently broad,
+  then prepare a larger digital-product research assignment.
+- Adoption evidence: the completed trace explicitly reads the installed beta.30
+  manifest, Product/Analysis, first-value/gamification briefs and selected full
+  packet sections. This establishes deliberate rereading in this chat, not
+  automatic reload or adoption of the later unpublished source candidate.
+- Observed contribution: desired value remains distinct from the activity used
+  to demonstrate it. The proposal connects a personally recognizable result to
+  voluntary return and distinguishes access to creative material from collection
+  history. It names an unresolved product choice and recommends an option rather
+  than treating a checkpoint as task completion. The saved review preserves the
+  earlier activity-led miss and labels new mechanisms as proposals. The observer
+  independently read that updated review, not the live board or product.
+- Research framing: the actor audits the earlier feature-centered competitor map,
+  retains useful historical material and weakens unsupported uniqueness/status
+  claims. A bounded public-source scan broadens comparison by desired outcome
+  and use situation. Independent findings and local application occupy separate
+  artifact sections. Candidate alternatives are not asserted to be observed
+  substitutes or evidence of demand, and vendor benefit claims remain qualified.
+- Follow-through: after the creator requests a larger investigation, a saved
+  assignment covers positioning, age versus required skills, participation,
+  first result and return mechanisms. It is project-independent, prioritizes
+  digital products as requested and separates evidence types. Preparation is
+  completed, provider execution is explicitly unclaimed. Ordinary waiting for
+  the creator's research is not a continuation defect.
+- Evidence and limits: completed commands/dialogue and three local supporting
+  artifacts were read. Reported Git checkpoints and actor source checking were
+  not independently verified remotely or against the external products. No
+  participant, scientific-effect, runtime, native-layout or sustained dialogue
+  evaluation follows. Actual model/effort remain unknown. An assistant-selected
+  numeric age scope in the assignment is not an independently accepted audience
+  or universal research boundary.
+- Fab interpretation/disposition: this supplies bounded actual-use evidence for
+  FAB-15 and supporting FAB-14/FAB-11 behavior without closing those contracts or
+  erasing previous failures. Reuse the existing owners. **Next verification** is
+  the actual returned study or chosen onboarding/incentive rule: check support,
+  retained decisions and accepted versus proposed status. No new repair batch,
+  runtime edit, test, provider launch or creator action is warranted now.
+- Monitor actions: update this sanitized report, the owning backlog entry and
+  private cursor/evidence references only. The two later model-setting questions
+  are ancillary conversation and provide no new project-quality finding.
+
 ## 2026-10-16 — Wizard review as an onboarding learning case
 
 - Requested outcome: the creator asks main to inspect the active wizard discussion

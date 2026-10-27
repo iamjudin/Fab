@@ -55,3 +55,13 @@ relations, while main/creator still assess meaning and native readability. Share
 modules may remain dense. No new automatic monitor or generic model suite is
 scheduled; actual project feedback is the next verification trigger. Deferred
 knowledge migration is outside this release.
+
+## Beta.36 interface revision boundary
+
+The two changed instruction owners have source/package and one supplied-guidance
+local/global contrast evidence. No natural discovery test, baseline comparison,
+ambiguous scope negotiation, same-role consolidation or rendered quality proof.
+Actual authoring/revision work must still check affected relationships and
+preserved neighbors. Existing Canvas/native and production limitations remain.
+Deferred knowledge migration is excluded. Observer deletion is an administrative
+action, not closure of retained behavioral findings.

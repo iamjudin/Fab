@@ -8,24 +8,11 @@ Closing implementation or distribution does not establish behavioral maturity.
 
 ## Current distribution
 
-**Released, installed and enabled: beta.35**,95files/e0b9d19a255b78d9;
-`v0.1.0-beta.35` ->98103153fa3d75f0e1c4ae4a1f58c2f0730b8925.138applicable
-regressions/package/scope, exact-source branch/tag CI, anonymous assets and
-clean/primary exact-tag full95-file parity pass.16other settings and13prior tags
-are preserved. API immutable=false; no server-enforced Release lock claim.
-
-Creator accepts corrected R05 and selected executable transfer as a working
-foundation and explicitly requests release/observation. Owner main; **deferred**
-until actual relevant project use supplies new feedback. No generic model suite,
-new automation, fixture product completion or native/general/backend certification.
-Original misses, timeout and unknown usage stay retained. Independent knowledge
-migration and the development checkout's source-only pilot are excluded.
-[Release evidence](../experiments/releases/canvas-beta35-20261026/report.md),
-[system validation](../experiments/maintenance/canvas-system-validation-20261026/report.md),
-[prototype transfer](../experiments/maintenance/canvas-prototype-transfer-20261026/report.md).
-
-Exact public beta.34 and local .12 snapshots remain rollback. Owned release
-scratch duplicates were removed after verified retention; primary cache retained.
+Beta.36 source prepared; local/public distribution pending.95-file package
+contains only the two reviewed interface instruction changes plus version.
+Installed/public beta.35 remains the rollback until verified completion.
+Deferred knowledge migration remains excluded.
+[Release receipt](../experiments/releases/interface-beta36-20261027/report.md).
 
 ## FAB-15 prevention checks — shipped in beta.34
 
@@ -169,3 +156,19 @@ An explicit stop request here authorizes main to freeze/deduplicate, explain and
 process clear grounded Fab repairs without another generic approval. A UI toggle
 alone does not schedule that processing. Monitor wakes never edit runtime, run
 new tests, commit, install or publish; actual consequential choices remain human.
+
+### FAB-03 — beta.36 scoped revision mechanism
+
+Creator requests release of object-level revision and text-role preflight.
+One supplied-guidance local/global source contrast passes; ambiguous negotiation,
+role consolidation and rendering remain open. Main owns distribution and actual-use
+verification. No generic suite or fixture product polishing.
+[Repair](../experiments/maintenance/interface-revision-20261027/report.md).
+
+### FAB-15 — stopped observation processed, 2026-10-27
+
+Creator requests deletion. App deletion and unchanged final assessed-turn snapshot
+verified. Main freezes/deduplicates FAB-02/03/11/14/15 findings; original failures
+and corrections remain. No additional demonstrated rule gap warrants another
+runtime patch. Remaining checks trigger on relevant actual use. No other automation
+or observed project changed. [Frozen report](../experiments/workflow-tests/2026-10-13-external-chat-observation.md).

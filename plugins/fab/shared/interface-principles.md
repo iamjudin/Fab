@@ -36,6 +36,36 @@ Domain rules remain with Product; evidence gathering is conditional.
   per-element tuning; use the project's coherent foundation. Do not promote a
   platform example into a universal font, unit, size or automatic-scaling guarantee.
 
+## Authoring and revision preflight
+
+For an existing candidate, translate the request into the actual objects and
+relationship being changed before editing. Use the supplied reference and accepted
+composition to identify the alignment anchor, text role, behavior or grouping.
+Keep unaffected content, column structure, ordering and interaction intact.
+This is working reasoning, not a required plan, checklist file or approval step.
+
+An alignment request does not by itself authorize changing column counts, moving
+portraits or rebuilding neighboring sections. If plausible interpretations would
+materially change the accepted composition, explain that choice before dependent
+edits. A clear local request needs no extra confirmation. An explicitly requested
+global redesign can change those structures; do not preserve a layout the person
+has asked to replace.
+
+After editing, inspect the actual difference and affected rendered relationship:
+did the named elements align with the intended anchor, and did preserved neighbors
+stay intact? Verify the requested relation, not just that boxes fit or controls
+exist. For shared styles, inspect another affected instance and a relevant
+exception. Stop a spillover at its owning selector/component instead of compensating
+with more unrelated adjustments. Do not claim rendered verification from a diff.
+
+When authoring a new composition or adding text styles, map the visible text to
+the existing roles first. Inspect equivalent roles together at the relevant sizes:
+headings, explanations, card titles and notes should not acquire incidental
+variants through successive section edits. Reuse or consolidate equivalent roles;
+retain a distinct value when meaning, optical need or adaptation justifies it.
+Check real content and wrapping after consolidation. A uniform number can still
+serve the wrong role; a role inventory alone does not establish visual quality.
+
 ## Separate concerns instead of multiplying profiles
 
 Start from the requested outcome and known context. For an ordinary task, read

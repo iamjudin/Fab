@@ -1,0 +1,26 @@
+# Fab beta.36 — precise interface edits and role-aware preflight
+
+Interface authoring now connects a request to the affected elements, alignment
+anchor and accepted composition. Local edits preserve neighboring layout and
+behavior; explicitly requested redesign remains possible. Material ambiguous
+scope choices are surfaced before dependent changes, without a routine approval
+for every edit.
+
+Author preflight reuses equivalent text roles before introducing variants,
+retains justified differences and checks the actual changed relationship.
+Web implementation connects this to selector/component ownership and affected
+consumers. No mandatory plan, fixed scale, new skill or universal layout is added.
+
+One fresh supplied-guidance source test preserves surroundings for a local edit
+and performs an authorized global redesign on a different synthetic page.
+This is bounded source evidence, not proof of visual quality, role consolidation,
+ambiguous-request handling or general improvement over beta.35.
+
+The 95-file package changes two shared instruction files plus manifest version.
+Deferred knowledge migration and test products are excluded. Existing Canvas
+remains opt-in experimental. Approved branding and icon remain unchanged.
+Rollback: beta.35. The creator-requested research observer was deleted separately;
+this does not change other automations or promote private research into runtime.
+
+[Known limits](../../../docs/limitations.md) · [Install](../../../docs/install.md) ·
+[Verification](../../../experiments/maintenance/interface-revision-20261027/report.md).

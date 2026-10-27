@@ -1,0 +1,24 @@
+{
+  "version": "0.1.0-beta.36",
+  "tag": "v0.1.0-beta.36",
+  "files": 95,
+  "fingerprint": "cf8f63a179a6037d",
+  "baseCommit": "90cda0c6a12fa4108bfce985176b49b096dcd54f",
+  "runtimeDelta": [
+    "plugin.json",
+    "shared/interface-principles.md",
+    "shared/web-implementation.md"
+  ],
+  "state": "source prepared",
+  "checks": {
+    "package": "pass:95files/cf8f63a179a6037d",
+    "scope": "pass:limited beta promises with explicit source-test boundaries",
+    "regressions": "pass:138 release-source tests",
+    "stagedProject": "pass:19documents/282links"
+  },
+  "assetsSha256": {
+    "release-scope.json": "c17cde5fbfb6777df71916c1d61b22634fac1e9b914d534da5b8d4b0ce944976",
+    "SHA256SUMS.txt": "88ac2f1a603542a9442d4f0180506a179874b291774ab7b4fe6e402b61a8904c",
+    "fab-0.1.0-beta.36.zip": "36efc84e9d44f5ab5837104e696ce578058ae6d465a691942047e74a080c354f"
+  }
+}

@@ -16,6 +16,14 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-27 - Prepare scoped beta.36 and stop an idle observer
+
+Creator requests local/public distribution of the two-owner interface repair and
+deletion of an idle research monitor. Main freezes accumulated findings under
+existing owners, without speculative repairs. Public ancestry excludes deferred
+knowledge; original failure and single-context source-only limits remain.
+[Distribution](../experiments/releases/interface-beta36-20261027/report.md).
+
 ## 2026-10-26 - Release the accepted Canvas foundation within scoped beta limits
 
 Creator accepts the corrected schema and selected executable transfer, switches

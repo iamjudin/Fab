@@ -33,7 +33,7 @@ for the agreed channel. Each skill also works independently.
 Use a Codex client with plugin marketplace support:
 
 ```sh
-codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.35
+codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.36
 codex plugin add fab@fab-local
 ```
 
@@ -46,15 +46,14 @@ chat and transfers context after your agreement, subject to host support.
 
 ## Beta status
 
-**Current version: 0.1.0-beta.35.** Mobile apps are the current focus, not a
+**Current version: 0.1.0-beta.36.** Mobile apps are the current focus, not a
 product-size ceiling. Skills work independently; websites and landing pages have
 conditional routes.
 
-This release improves opt-in Canvas flows: visible screen content and context,
-stable reader numbers, consistent project legends, current-map navigation and
-forward column layout. Commands require their own action/outcome; reused module
-calls require connected caller continuations. Existing research, correction
-learning and interface principles remain available without a compulsory pipeline.
+This release makes interface revisions explicit about affected objects, preserved
+neighbors and justified text roles. Local changes remain local; a requested
+redesign can change the composition. One bounded source test covers that contrast.
+Rendered quality, ambiguous scope handling and general improvement remain open.
 
 A corrected raw-input-to-Canvas candidate is accepted as a working foundation.
 A selected path also runs as a checked browser prototype. Original failures and
@@ -67,8 +66,8 @@ The deferred knowledge-base migration and test products are excluded from this
 release. Library tags remain optional and additive, with one project-level choice;
 source names, content and existing tags are preserved.
 
-Read [known limits](docs/limitations.md), [release notes](docs/releases/0.1.0-beta.35.md)
-and [validation evidence](experiments/releases/canvas-beta35-20261026/report.md).
+Read [known limits](docs/limitations.md), [release notes](docs/releases/0.1.0-beta.36.md)
+and [validation evidence](experiments/releases/interface-beta36-20261027/report.md).
 
 ## Development and license
 

@@ -57,6 +57,12 @@ Use paragraphs/margins for paragraph spacing, not repeated line-break elements.
 Let containers grow; use deliberate breaks or short nonbreaking units only with
 the affected content/width checks. Keep role values in the existing CSS/token
 foundation rather than appending another per-section override for every revision.
+For a scoped revision follow the [authoring preflight](interface-principles.md#authoring-and-revision-preflight):
+trace the target element to its shared selector/component before editing; choose
+the narrowest owner that expresses the requested scope. Compare the resulting
+source diff and affected browser states, including another consumer when a shared
+owner changes. Keep a legitimate local exception local; do not normalize unrelated
+sections or preserve an obsolete override merely to avoid touching its owner.
 These are implementation choices, not a universal CSS scale or forced refactor.
 [MDN text styling](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Text_styling/Fundamentals)
 and [line breaks](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/br)
