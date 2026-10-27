@@ -9,16 +9,31 @@
     "shared/interface-principles.md",
     "shared/web-implementation.md"
   ],
-  "state": "source prepared",
+  "state": "released, installed and verified",
   "checks": {
     "package": "pass:95files/cf8f63a179a6037d",
     "scope": "pass:limited beta promises with explicit source-test boundaries",
     "regressions": "pass:138 release-source tests",
-    "stagedProject": "pass:19documents/282links"
+    "stagedProject": "pass:19documents/282links",
+    "sourceCI": "pass:40581998592 and40582002110 exact9ff78da",
+    "assets": "pass:anonymous downloads, hashes,95-file ZIP/source/scope parity",
+    "previousTags": "pass:all previous exact refs preserved",
+    "cleanInstall": "pass:exact tag/head/full95-file parity",
+    "primaryInstall": "pass:exact tag/head/full95-file parity;16other settings preserved",
+    "cleanup": "pass:hash-verified retained assets and clean inventory before exact duplicate/profile removal",
+    "observer": "deleted through host; final unchanged-turn snapshot and accumulated-scope triage recorded"
   },
   "assetsSha256": {
     "release-scope.json": "c17cde5fbfb6777df71916c1d61b22634fac1e9b914d534da5b8d4b0ce944976",
     "SHA256SUMS.txt": "88ac2f1a603542a9442d4f0180506a179874b291774ab7b4fe6e402b61a8904c",
     "fab-0.1.0-beta.36.zip": "36efc84e9d44f5ab5837104e696ce578058ae6d465a691942047e74a080c354f"
-  }
+  },
+  "sourceCommit": "9ff78da90e98c14e856147c1b09965a1e917459a",
+  "publication": {
+    "url": "https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.36",
+    "isDraft": false,
+    "isPrerelease": true,
+    "immutable": false
+  },
+  "installedPath": "/Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.36"
 }

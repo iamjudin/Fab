@@ -8,11 +8,25 @@ Closing implementation or distribution does not establish behavioral maturity.
 
 ## Current distribution
 
-Beta.36 source prepared; local/public distribution pending.95-file package
-contains only the two reviewed interface instruction changes plus version.
-Installed/public beta.35 remains the rollback until verified completion.
-Deferred knowledge migration remains excluded.
-[Release receipt](../experiments/releases/interface-beta36-20261027/report.md).
+**Released, installed and enabled: beta.36**,95files/cf8f63a179a6037d;
+v0.1.0-beta.36 ->9ff78da90e98c14e856147c1b09965a1e917459a.
+138release regressions/package/scope, exact-source CI, anonymous assets and
+clean/primary exact-tag full95-file parity pass.16other settings and14prior tags
+preserved. API immutable=false; no server-enforced lock claim.
+[Release](../experiments/releases/interface-beta36-20261027/report.md).
+
+Runtime delta is two interface author/revision owners plus version. One supplied-
+guidance local/global source contrast passes; rendered quality, ambiguous scope
+negotiation, role consolidation and general improvement remain open. Next actual
+relevant interface work supplies that evidence; no generic model suite.
+Canvas remains opted-in experimental, with its original limits and actual-use
+observation boundary. Deferred knowledge migration remains excluded.
+[Repair evidence](../experiments/maintenance/interface-revision-20261027/report.md).
+
+Exact beta.35 rollback and release assets are retained. Verified owned duplicates
+and clean install profile were disposed; primary cache is preserved. Research
+observer deleted at creator request; accumulated findings processed under existing
+owners, no speculative new repair or other automation change.
 
 ## FAB-15 prevention checks — shipped in beta.34
 
