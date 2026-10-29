@@ -3,23 +3,28 @@
 Read when deciding whether a bounded result covers its promised behavior, states,
 data and material risks. [Preserved source](slice-completeness.full.json).
 
-## Knowledge and limits
+## Current meanings
 
-- Completeness is relative to agreed scope, behavior and risks, not every possible
-  state or screen. Distinguish included, excluded, unresolved and newly requested work.
-- Trace promised behavior to evidence and added behavior back to its basis.
-  Legal or contractual requirements need not be forced into a fabricated user job.
-- Keep domain state, attempted action, plan, known result and UI representation
-  separate. An unknown outcome is neither a confirmed rejection nor a safe retry.
-- Choose coverage around meaningful scenarios. Add roles, data, environment or
-  surfaces only when they change an action, result, recovery or understanding.
-- Use equivalence classes, boundaries, transitions and decision tables where
-  appropriate. Pairwise/t-way coverage is not universally sufficient.
-- Distinguish fixtures from simulated conditions. Select failures and display
-  stress by risk rather than a fixed count. Review format, domain validity,
-  dependencies and preserved input separately for forms.
-- Stop when evidence is adequate for the next promised decision, important unknowns
-  have a disposition and residual risk is visible. No universal coverage percentage.
+Use the [current knowledge reader](../../skills/research/scripts/knowledge_view.py)
+with `--query "полнота сценариев"` or `--query "неизвестный результат"`.
+Read the selected body and related qualifications, not a parallel summary:
+
+| Question | Current unit |
+| --- | --- |
+| Accepted scope, findings and usable increment | `slice-boundary` |
+| Domain status versus attempted action/known result | `operation-outcome` |
+| Coverage, fixtures/conditions and sufficient evidence | `coverage-sufficiency` |
+| Return/cancel context on critical paths | `product-continuation` |
+| Form validity and preserved input | `form-validity` |
+| Partitions, boundaries, decisions and transitions | `test-case-selection` |
+
+## Source reconciliation boundary
+
+All77sections now have reviewed dispositions.
+Reusable knowledge is reconciled with shared mobile, behavior, evidence and
+coverage owners. Historical stages, map/record templates, fixed probe counts,
+worked examples and bibliography remain qualified reference. Current meanings
+replace their working summaries without importing a new pipeline.
 
 ## Application in current Fab
 

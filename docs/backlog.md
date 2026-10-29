@@ -1,10 +1,18 @@
 # Fab backlog
 
-Updated 2026-10-22. This is the only active Fab queue. Main owns entries unless
+Updated 2026-10-29. This is the only active Fab queue. Main owns entries unless
 another owner is named. The exact [pre-maintenance record](backlog-history-2026-10-21.md)
 and [earlier frozen record](backlog-history-2026-10-14.md) preserve original failures,
 corrections, proposals and dated authority. They are history, not current tasks.
 Closing implementation or distribution does not establish behavioral maturity.
+
+## Release preparation
+
+Creator requests beta.37 locally and publicly. The release branch starts at the
+published beta.36 record and imports the exact reviewed runtime/current authoring,
+tests and required public evidence. Working source research, private logs and
+test products are excluded. The previous beta.36 facts below remain current
+until channel/install checks complete.
 
 ## Current distribution
 
@@ -27,6 +35,41 @@ Exact beta.35 rollback and release assets are retained. Verified owned duplicate
 and clean install profile were disposed; primary cache is preserved. Research
 observer deleted at creator request; accumulated findings processed under existing
 owners, no speculative new repair or other automation change.
+
+## Knowledge migration outcome — FAB-15
+
+Creator2026-10-29 prioritizes a complete usable knowledge base over the earlier
+40-point budget ceiling or20%-remaining floor. Continue within actual account
+availability without sacrificing semantic coverage. No instruction to exhaust
+capacity for its own sake, reset limits or promote incomplete work.
+The goal is one maintained current source across the existing twelve families,
+with active consumer routes, reconciled overlaps, useful exceptions and honest
+source/evidence limits. Section counts and passing mechanics do not establish it.
+
+All twelve registered families are source-reconciled across816sections, with75
+active meanings in one current view. Four-report design-system reconciliation
+adds nine meanings and enriches existing owners without a second working base.
+Two fresh contexts preserve17cross-family/design distinctions and exceptions.
+A separate actual writable intake in Test enriches one existing meaning, creates
+no new meaning, retires the stale working paraphrase and keeps a local preference
+out of shared authority.207regressions/build/package and focused project checks pass.
+
+Disposition: **complete within the registered-source migration and bounded
+application/update boundary**. This does not repair unresolved original citations,
+conduct omitted independent research, prove native/human/scientific outcomes or
+establish sustained organic reliability. Retained limits remain with their
+meanings/source audits. Next actual intake/correction observes the same mechanism;
+no generic suite or source remainder is queued for this migration.
+Creator2026-10-29 explicitly requests local/public release. Main prepares
+beta.37 from the published baseline with a reviewed source allowlist.
+Distribution is pending independent channel/install verification.
+
+[Design-family reconciliation](../experiments/maintenance/knowledge-design-family-completion-20261029/report.md),
+[cross-family application](../experiments/maintenance/knowledge-final-application-20261029/report.md),
+[actual intake mechanism](../experiments/maintenance/knowledge-intake-seam-20261029/report.md).
+Earlier [completion correction](../experiments/maintenance/knowledge-completion-20261029/report.md)
+and [retrieval failures/corrections](../experiments/maintenance/knowledge-cross-family-review-20261029/report.md)
+retain the initial problems and exact continuation history.
 
 ## FAB-15 prevention checks — shipped in beta.34
 

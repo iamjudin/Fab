@@ -14,6 +14,10 @@ For visible interface wording/composition, read
 not the production stack or platform proof of a native-app prototype.
 
 # Prototype
+For requested creation, evolution or review of reusable interface definitions
+or their Figma/code relationship, read [design-system work](../../shared/design-system-work.md).
+This conditional route does not turn an ordinary interface edit into a library task.
+
 Read [interactive prototype contract](references/interaction-prototype.md).
 Select question, applicable UC/rules/surfaces and minimum executable paths.
 Existing inputs count; early prototypes can have explicit assumptions. Don't

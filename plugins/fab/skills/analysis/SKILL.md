@@ -16,6 +16,10 @@ For interface text/composition review, use
 Do not apply public-offer or native-platform rules to an unrelated target.
 
 # Analysis
+For requested creation, evolution or review of reusable interface definitions
+or their Figma/code relationship, read [design-system work](../../shared/design-system-work.md).
+This conditional route does not turn an ordinary interface edit into a library task.
+
 Inspect the actual target/version and relevant accepted requirements. Criteria
 come from the request, sources and applicable [methods](../../shared/methods/index.md),
 not invented completeness checklists. Missing specification limits some judgments;

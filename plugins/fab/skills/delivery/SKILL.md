@@ -14,6 +14,10 @@ read [web implementation](../../shared/web-implementation.md), plus
 These do not add a visual stage to backend/package work or select a native stack.
 
 # Delivery
+For requested creation, evolution or review of reusable interface definitions
+or their Figma/code relationship, read [design-system work](../../shared/design-system-work.md).
+This conditional route does not turn an ordinary interface edit into a library task.
+
 Choose actual technical spike, implementation/handoff or release readiness.
 Existing accepted inputs/working code suffice, no compulsory Jobs route.
 - Real feasibility/build/use: [realisation](references/realisation.md).

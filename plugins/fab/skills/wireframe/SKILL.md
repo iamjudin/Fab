@@ -13,6 +13,10 @@ For visible interface composition/wording, read
 existing mobile-structure route; a browser prototype does not change its target.
 
 # Wireframe
+For requested creation, evolution or review of reusable interface definitions
+or their Figma/code relationship, read [design-system work](../../shared/design-system-work.md).
+This conditional route does not turn an ordinary interface edit into a library task.
+
 Accept sufficient current requirements/UC/slice or an existing interface. Missing
 behavior returns only the dependent question to Product; no mandatory full Jobs.
 Choose the requested mode: [structure/access](references/navigation-ia.md),

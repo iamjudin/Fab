@@ -31,8 +31,10 @@ not an invented restriction or an automatic new external run.
 
 Keep a decision with the artifact/project when it concerns that project's content,
 behavior or accepted choice. Use an existing scenario/platform reference for its
-specific conditions. A reusable method belongs with its existing brief and linked
-source limits; an instruction about authoring belongs with its capability/reference.
+specific conditions. A reusable meaning belongs with its existing current owner
+and source limits; its brief routes there. Where no maintained meaning store
+exists, use the actual existing evidence owner. An instruction about authoring
+belongs with its capability/reference.
 Only a genuinely cross-capability principle belongs in shared policy. Source
 findings, current policy, local application and observed execution stay distinct.
 Do not rewrite a preserved source packet to make it agree with a new instruction.
@@ -65,3 +67,25 @@ and review affected consumers when meaning changes. Do not silently invalidate
 unrelated accepted work. A finding does not authorize editing a plugin, global
 instructions, another project, installation or publication. Continue the authorized
 local result while routing an out-of-scope reusable proposal to its actual owner.
+
+## Close the migration, not only the addition
+
+When consolidating existing knowledge, the outcome is one effective current
+meaning, not a second explanation layered over the first. Before marking a
+meaning migrated, switch its active consumers, remove its competing working
+paraphrases and check preserved applicability, exceptions and source identity.
+A brief can remain an entry/coverage pointer; explicitly unmigrated knowledge
+can remain until reconciled. Original source evidence is provenance, not a
+competing default authority. Do not delete uncovered knowledge to make cleanup
+appear complete, or declare an entire topic migrated from a few covered units.
+
+
+Before closing a whole topic, account for its substantive remainder in the
+existing audit/report: current meaning (including enrichment of an existing
+owner), deliberately reference-only detail, superseded advice or an explicit
+unresolved gap with a next action. A few valid units do not establish topic
+coverage. Do not call unreviewed reusable knowledge reference-only merely to
+finish. Choose incremental scope to preserve progress, not to lower the promised
+quality or leave an unexplained set of fragments. Research verification,
+source reconciliation, practical application and distribution remain distinct
+completion claims; unresolved source quality must stay visible.

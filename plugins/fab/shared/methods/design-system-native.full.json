@@ -1,0 +1,641 @@
+{
+  "schemaVersion": 1,
+  "scope": "global-method",
+  "title": "Дизайн-система для нативных iOS и Android с AI-агентом",
+  "sourceSha256": "d5055e73b48eb2e392aae3cfaa090e13abfcfb113ceff9891172c1055bee25db",
+  "sourceDate": "2026-10-21",
+  "ingestedAt": "2026-10-22",
+  "authority": "source-material-not-runtime-instructions",
+  "validation": {
+    "structure": "lossless sections; explicit exclusions",
+    "claims": "not exhaustively fact-checked"
+  },
+  "retainedSha256": "d5055e73b48eb2e392aae3cfaa090e13abfcfb113ceff9891172c1055bee25db",
+  "excluded": [],
+  "sections": [
+    {
+      "id": "R001",
+      "level": 0,
+      "title": "Preamble",
+      "text": "---\ntags:\n  - bookworm/research\n---\n\n"
+    },
+    {
+      "id": "R002",
+      "level": 2,
+      "title": "Содержание",
+      "text": "## Содержание\n\n- [[#Вывод, статус доказательств и навигация|Вывод, статус доказательств и навигация]]\n- [[#Что переиспользовать на iOS и Android|Что переиспользовать на iOS и Android]]\n- [[#Общий контракт и обязательные расхождения|Общий контракт и обязательные расхождения]]\n- [[#Нативная реализация и отображение из Figma|Нативная реализация и отображение из Figma]]\n- [[#Рабочий процесс агента и контракт обновления|Рабочий процесс агента и контракт обновления]]\n- [[#Иллюстрация, рост системы и миграции|Иллюстрация, рост системы и миграции]]\n- [[#Проверка, карта требований и границы переноса|Проверка, карта требований и границы переноса]]\n- [[#Источники|Источники]]\n\n**Дата отчёта:** 21 октября 2026\n**Исходное ТЗ:** подготовлено 16 октября 2026\n**Область:** нативные iOS и Android, Figma, SwiftUI, Jetpack Compose\n**Сопутствующий отчёт об общей основе:** не предоставлен. Ниже используются только предварительные семантические отображения. Я не приписываю отсутствующему отчёту никаких выводов.\n\n",
+      "readingContext": {
+        "kind": "navigation",
+        "note": "Navigation from the supplied report."
+      }
+    },
+    {
+      "id": "R003",
+      "level": 2,
+      "title": "Вывод, статус доказательств и навигация",
+      "text": "## Вывод, статус доказательств и навигация\n\n**Рекомендуемая архитектура:** делить между iOS и Android не пиксельную реализацию компонентов, а **семантические контракты продукта**. Цвет `action.primary`, роль `task.title`, намерение `confirm destructive action`, состояние `loading` и понятие `PrimaryAction` могут быть общими. Конкретные SwiftUI и Compose API, системная типографика, навигация, back, sheets, dialogs, insets, анимация и часть визуальных значений должны оставаться платформенными.\n\nДля обоих targets оптимальна последовательность:\n\n> **нативный системный компонент → тематизированный нативный компонент → композиция из нативных компонентов → полностью собственный control только при реальной необходимости.**\n\nЭто минимизирует объём поведения, который дизайн-система начинает имитировать сама. Apple прямо рекомендует системные controls, которые получают системные состояния, accessibility и адаптацию внешнего вида. Material 3 для Compose аналогично предоставляет code-backed компоненты, чьё оформление меняется через тему. [Apple HIG: Buttons](https://developer.apple.com/design/human-interface-guidelines/buttons) и [Material Design 3 in Compose](https://developer.android.com/develop/ui/compose/designsystems/material3) описывают именно такие системные поверхности.\n\n**Главный предел доказательств:** не был предоставлен нативный проект, Figma-файл, foundation report или устройства. В ходе исследования не изменялся живой Figma-файл, не публиковались библиотеки, не запускались Xcode или Android Studio, не компилировались примеры и не проводились device или accessibility tests. Код ниже сверялся с актуальной официальной документацией и статически проверялся на уровне используемых API. Это **не evidence of compilation or execution**.\n\nСтатус доказательств в отчёте:\n\n| Метка | Значение |\n| --- | --- |\n| **Документировано** | Возможность или требование присутствует в актуальной первичной документации |\n| **Вывод** | Архитектурная рекомендация, полученная из нескольких документированных ограничений |\n| **Предложение** | Контракт агента или процесс, который разумно внедрить, но который здесь не испытывался |\n| **Локальное наблюдение** | Отсутствует. Никакие предоставленные пользователем проекты не анализировались |\n| **Не проверено** | Требует Figma-файл, репозиторий, компиляцию, симулятор или эмулятор, устройство или человеческую проверку |\n\n"
+    },
+    {
+      "id": "R004",
+      "level": 3,
+      "title": "Основная рекомендация",
+      "text": "### Основная рекомендация\n\nУ системы должны быть три слоя, но не три обязательных технических пакета.\n\n| Параметр | Описание |\n| --- | --- |\n| Общий продуктовый контракт | отвечает на вопросы «что это означает» и «какие состояния допускает». Например `action.primary`, `task.title`, `deleteTask`, `saving`, `error`. |\n| Платформенная дизайн-реализация | определяет iOS и Android варианты в Figma. У вариантов могут отличаться форма, типографика, расположение действий, motion и presentation. |\n| Нативная code-реализация | отображает контракт на SwiftUI и Jetpack Compose. Общий контракт не должен вынуждать обе стороны иметь одинаковый API, если это скрывает важное системное поведение. |\n\nОтсюда следуют три разных утверждения о масштабе:\n\n| Уровень | Что можно утверждать |\n| --- | --- |\n| **Ограниченная начальная реализация** | Список задач, editor, destructive confirmation, базовые семантические роли и несколько компонентов можно определить как законченный первый вертикальный срез |\n| **Спроектированная расширяемость** | Stable IDs, платформенные mappings, feature boundaries, версии и правила миграции позволяют добавлять области без копирования системы |\n| **Продемонстрированное расширение** | В отчёте показано добавление Projects, общего семантического изменения и Android-only компонента |\n| **Не доказано** | Надёжность на произвольном масштабе, скорость работы агента, снижение трудозатрат, production accessibility и отсутствие долгосрочного drift |\n\n"
+    },
+    {
+      "id": "R005",
+      "level": 3,
+      "title": "Навигация",
+      "text": "### Навигация\n\n- [Что переиспользовать на iOS и Android](#что-переиспользовать-на-ios-и-android)\n- [Общий контракт и обязательные расхождения](#общий-контракт-и-обязательные-расхождения)\n- [Нативная реализация и отображение из Figma](#нативная-реализация-и-отображение-из-figma)\n- [Рабочий процесс агента и контракт обновления](#рабочий-процесс-агента-и-контракт-обновления)\n- [Иллюстрация, рост системы и миграции](#иллюстрация-рост-системы-и-миграции)\n- [Проверка, карта требований и границы переноса](#проверка-карта-требований-и-границы-переноса)\n- [Источники](#источники)\n\n"
+    },
+    {
+      "id": "R006",
+      "level": 2,
+      "title": "Что переиспользовать на iOS и Android",
+      "text": "## Что переиспользовать на iOS и Android\n\n"
+    },
+    {
+      "id": "R007",
+      "level": 3,
+      "title": "Актуальные официальные ресурсы",
+      "text": "### Актуальные официальные ресурсы\n\nКлючевая ошибка, которую нужно исключить с самого начала: **Figma kit, native framework и behavioral guidance являются разными артефактами**. Наличие кнопки в Apple или Material Figma kit не означает, что соответствующий слой связан с `SwiftUI.Button` или Compose `Button`. Такая связь появляется только через собственную договорённость команды или механизм наподобие Figma Code Connect. [Figma Code Connect](https://help.figma.com/hc/en-us/articles/23920389749655-Code-Connect) именно добавляет такую отдельную design-to-code mapping.\n\n| Тип ресурса | iOS | Android |\n| --- | --- | --- |\n| Рекомендации по дизайну | [Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines) | Рекомендации Android по дизайну и Material 3 |\n| Официальный design kit | [Apple Design Resources](https://developer.apple.com/design/resources/) содержит **iOS 27 / iPadOS 27 UI Kit** для Figma и Sketch | Официальный [Material 3 Design Kit](https://m3.material.io/) для Figma |\n| Символы | **SF Symbols 27**, более 7 000 символов | Material Symbols |\n| Основной декларативный фреймворк | SwiftUI | Jetpack Compose |\n| Основная компонентная библиотека | системные элементы управления SwiftUI | Compose Material 3 |\n| Прежние технологии и совместимость | UIKit через `UIViewRepresentable`, `UIViewControllerRepresentable`, `UIHostingController` | Android Views через `ComposeView` и `AndroidView` |\n| Связь design ↔ code | не возникает автоматически | не возникает автоматически |\n\nApple на текущей странице Design Resources перечисляет iOS 27 и iPadOS 27 UI Kit, а также SF Symbols 27.  Google предоставляет Material 3 design kit с вариантами, token metadata и accessibility-oriented структурой, но исполняемая реализация Material 3 поставляется отдельно в Compose.\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R008",
+      "level": 3,
+      "title": "Лицензионная граница Apple особенно важна для общей библиотеки",
+      "text": "### Лицензионная граница Apple особенно важна для общей библиотеки\n\nУ Apple Design Resources есть существенно более узкое разрешение, чем у обычной open-source UI library. Актуальная лицензия ADR разрешает использовать предоставленные design resources для mockups интерфейсов программных продуктов, предназначенных для Apple operating systems. Она также ограничивает встраивание самих ресурсов в программный продукт и их перераспространение. SF Fonts имеют отдельные условия. [Apple Design Resources License](https://developer.apple.com/support/downloads/terms/apple-design-resources/Apple-Design-Resources-License-20230621-English.pdf) и [Apple Fonts](https://developer.apple.com/fonts/) являются первичными источниками.\n\nПрактическое следствие для agent-assisted системы: **не следует превращать Apple UI Kit в общий кроссплатформенный набор примитивов и затем использовать извлечённые Apple assets для Android**. Безопаснее считать Apple kit платформенно ограниченным референс или ресурс дизайна и связывать собственные продуктовые компоненты с ним семантически.\n\nДля Material официальный Get Started указывает лицензирование содержимое и ресурсы Material через Apache 2.0 и Creative Commons Attribution 4.0 в зависимости от типа материала. Это всё равно не отменяет необходимости проверить условия конкретного Figma Community артефакта перед его перераспределением.\n\nЭто не юридическое заключение. Для публикации производной дизайн-библиотеки условия конкретного ресурса следует проверять отдельно.\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R009",
+      "level": 3,
+      "title": "Версии инструментов нужно хранить независимо от версии ОС",
+      "text": "### Версии инструментов нужно хранить независимо от версии ОС\n\nДля iOS на дату отчёта актуальный Xcode 27 использует iOS 27 SDK и Swift 6.4. Xcode 27 требует macOS Tahoe 26.6 или новее. При этом deployment target может быть существенно ниже текущего SDK. Apple показывает поддержку deployment targets iOS 15–27, тогда как доступные для Xcode 27 среды выполнения симуляторов и устройств начинаются с более нового диапазона. Иными словами, **compile SDK, deployment target и реально проверяемая OS version не являются одним числом**. [Xcode Support](https://developer.apple.com/support/xcode/) это разделяет явно.\n\nДля примеров этого исследования зафиксировано:\n\n```text\nIDE: Xcode 27\nSwift compiler: Swift 6.4\nCompile SDK: iOS 27\nIllustrative deployment target: iOS 17+\n```\n\n`iOS 17+` здесь является **выбранной границей примера**, а не рекомендацией Apple и не требованием SwiftUI.\n\nAndroid-стек зафиксирован отдельно:\n\n```text\nIDE: Android Studio Rabbit 1 | 2026.2.1\nAndroid Gradle Plugin: 9.4.1\nKotlin: 2.4.21\ncompileSdk / targetSdk for current-target example: API 37, Android 17\nCompose BOM: 2026.09.00\nCompose UI / Foundation / Runtime in that mapping: 1.12.1\nCompose Material 3: 1.4.0\n```\n\nAndroid Studio Rabbit 1 поддерживает AGP вплоть до ветки 9.4 и API 37.0 требует не менее AGP 9.1.1. AGP 9.4.1 был выпущен как patch к 9.4. Kotlin 2.4.21 вышел 8 октября 2026. Текущая Compose BOM mapping показывает Compose 1.12.1 и Material 3 1.4.0. [Android Studio releases](https://developer.android.com/studio/releases), [AGP release record](https://developer.android.com/studio/releases/fixed-bugs/studio/2026.1.4), [Kotlin releases](https://kotlinlang.org/docs/releases.html) и [Compose BOM mapping](https://developer.android.com/develop/ui/compose/bom/bom-mapping) это подтверждают.\n\nСмысл фиксации этих чисел не в том, чтобы заставить существующий продукт немедленно обновиться. Они делают примеры воспроизводимо описанными.\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R010",
+      "level": 3,
+      "title": "Нативный элемент управления, тематизированный или собственный компонент",
+      "text": "### Нативный элемент управления, тематизированный или собственный компонент\n\n\n"
+    },
+    {
+      "id": "R011",
+      "level": 4,
+      "title": "1. Стратегия: Системный control с минимальной стилизацией",
+      "text": "#### 1. Стратегия: Системный control с минимальной стилизацией\n\n**Поведение платформы:**\nмаксимальное\n\n**Визуальный контроль:**\nограниченное\n\n**Ответственность команды:**\nнизкая\n\n**Типичное применение:**\nButton, Toggle, TextField, List, navigation\n\n\n"
+    },
+    {
+      "id": "R012",
+      "level": 4,
+      "title": "2. Стратегия: Тематизированный platform component",
+      "text": "#### 2. Стратегия: Тематизированный platform component\n\n**Поведение платформы:**\nвысокое\n\n**Визуальный контроль:**\nвысокое в разрешённых пределах\n\n**Ответственность команды:**\nумеренная\n\n**Типичное применение:**\nбрендовый primary button, text field style, list row\n\n\n"
+    },
+    {
+      "id": "R013",
+      "level": 4,
+      "title": "3. Стратегия: Собственная композиция из native controls",
+      "text": "#### 3. Стратегия: Собственная композиция из native controls\n\n**Поведение платформы:**\nчастично наследуется\n\n**Визуальный контроль:**\nвысокое\n\n**Ответственность команды:**\nсредняя\n\n**Типичное применение:**\nсложная task row, editor section, empty state\n\n\n"
+    },
+    {
+      "id": "R014",
+      "level": 4,
+      "title": "4. Стратегия: Полностью custom interactive control",
+      "text": "#### 4. Стратегия: Полностью custom interactive control\n\n**Поведение платформы:**\nкоманда владеет почти всем\n\n**Визуальный контроль:**\nмаксимальное\n\n**Ответственность команды:**\nвысокая\n\n**Типичное применение:**\nдействительно уникальное взаимодействие\n\n\nНа iOS `Button`, `TextField`, `List`, `NavigationStack`, `Form` и presentation APIs сохраняют системную семантику. Apple отдельно подчёркивает встроенные состояния, accessibility и адаптацию системных buttons.\n\nНа Android Material Compose controls используют высокоуровневые interaction abstractions и semantics. Например `Button` опирается на `clickable`, который обрабатывает не только pointer события, а стандартное взаимодействие и accessibility semantics. При переходе на low-level pointer handling эта ответственность постепенно перемещается к приложению. [Handling user interactions](https://developer.android.com/develop/ui/compose/touch-input/user-interactions/handling-interactions) и [Tap and press](https://developer.android.com/develop/ui/compose/touch-input/pointer-input/tap-and-press) показывают эту разницу.\n\n**Вывод:** визуально необычный concept не является сам по себе основанием переписывать `Button`, `TextField`, sheet или dialog. Сначала нужно выяснить, нельзя ли получить нужный характер через theme, tint, typography, shape, composition и расположение.\n\n"
+    },
+    {
+      "id": "R015",
+      "level": 3,
+      "title": "Актуальная визуальная система Apple не должна задавать минимальную целевую версию",
+      "text": "### Актуальная визуальная система Apple не должна задавать минимальную целевую версию\n\nApple в актуальных HIG использует Liquid Glass как системный material для навигация и элемент управления слоя. SwiftUI и UIKit standard controls получают новые системные appearances при использовании новых SDK и новых OS. Отдельные API вроде `glassEffect` относятся к iOS 26+. Apple также рекомендует не складывать избыточные glass layers друг на друга и отмечает, что системный material реагирует на Reduced Transparency, Increased Contrast и Reduced Motion. [Meet Liquid Glass](https://developer.apple.com/videos/play/wwdc2025/219/) и SwiftUI material documentation описывают это поведение.\n\nЭто не означает:\n\n```text\ndeploymentTarget == iOS 26\n```\n\nи не означает:\n\n```text\nкаждый собственный компонент == glassEffect(...)\n```\n\nЕсли приложение поддерживает iOS 17+, разумный default таков:\n\n1. Использовать standard controls.\n2. Позволять ОС отрисовывать соответствующую ей системную версию control.\n3. Не кодировать вручную имитацию Liquid Glass для старых систем.\n4. Использовать iOS 26+ specific visual APIs только за availability boundary.\n5. Предоставить более старую платформенно-нормальную реализацию как fallback.\n\nЭто сохраняет visual character продукта и не превращает текущую моду ОС в неподвижную часть дизайн-системы.\n\n"
+    },
+    {
+      "id": "R016",
+      "level": 3,
+      "title": "Material 3 Expressive аналогично не должен быть обязательным",
+      "text": "### Material 3 Expressive аналогично не должен быть обязательным\n\nАктуальная Compose документация описывает Material 3 Expressive как расширение Material 3, которое дополняет визуальный язык Android 16. При этом часть новых Material APIs может оставаться experimental и требовать `@OptIn`. [Material Design 3 in Compose](https://developer.android.com/develop/ui/compose/designsystems/material3) прямо отделяет Material theme от experimental APIs.\n\nПоэтому агента не следует инструктировать в духе:\n\n> «Android всегда должен выглядеть как самая новая Material showcase».\n\nПравильнее:\n\n> «Используй текущую стабильную Material component как behavioral foundation. Примени продуктовую тему. Expressive-варианты добавляй только там, где они соответствуют утверждённому concept и принятому library stability policy».\n\n"
+    },
+    {
+      "id": "R017",
+      "level": 2,
+      "title": "Общий контракт и обязательные расхождения",
+      "text": "## Общий контракт и обязательные расхождения\n\n"
+    },
+    {
+      "id": "R018",
+      "level": 3,
+      "title": "Что действительно можно разделять",
+      "text": "### Что действительно можно разделять\n\nБез foundation report разумно использовать следующий **предварительный** уровень общности:\n\n| Общая сущность | Пример | Должно ли значение быть одинаковым |\n| --- | --- | --- |\n| Семантическое назначение цвета | `color.action.primary` | нет |\n| Семантическая роль текста | `type.task.title` | нет |\n| Состояние | `enabled`, `disabled`, `loading`, `error` | смысл — да, рендеринг — нет |\n| Продуктовое действие | `saveTask`, `deleteTask` | да |\n| Намерение разрушительного действия | удаление без возможности восстановления | да |\n| Компонентный контракт | `PrimaryAction(label, enabled, action)` | в основном |\n| Навигационное намерение | открыть task editor | да |\n| Конкретный navigation API | `NavigationStack` против Android navigation | нет |\n| Presentation | попросить подтвердить delete | да |\n| Диалог или лист подтверждения | решение платформы | нет |\n\nГлавная граница проходит между **контракт намерения и состояния** и **реализация рендеринга и взаимодействия**.\n\n"
+    },
+    {
+      "id": "R019",
+      "level": 3,
+      "title": "Пункты, dp, sp, px и геометрия Figma",
+      "text": "### Пункты, dp, sp, px и геометрия Figma\n\nЭти единицы нельзя складывать в одну колонку «px».\n\nНа iOS layout описывается в points. Реальная растеризация зависит от scale устройства. HIG формулирует размеры и touch regions в логической point geometry, а не в количестве физических пикселей.\n\nНа Android:\n\n```text\ndp ≈ density-independent layout unit\npx = dp × dpi / 160\n```\n\nпри базовой density model.\n\nДля текста используется `sp`. По умолчанию он связан с dp, но учитывает пользовательский font scale. Начиная с Android 14 масштабирование выше 100% стало нелинейным, поэтому старые вычисления через одно значение `scaledDensity` нельзя считать корректным универсальным преобразованием. Android рекомендует использовать соответствующие platform conversion APIs и не применять `sp` для layout spacing. [Support different pixel densities](https://developer.android.com/training/multiscreen/screendensities) и [Font scaling](https://developer.android.com/about/versions/14/features#non-linear-font-scaling-200) описывают эту модель.\n\nCompose 1.12 также использует нелинейное font scaling и корректирует line height в `sp` в соответствии с новой моделью.\n\nЧисло `16` в Figma следует трактовать как **design geometry**, а не как утверждение «16 физических пикселей на обоих устройствах». Для platform-specific frames команда может установить convention:\n\n```text\n1 Figma geometry unit → 1 pt в iOS spec\n1 Figma geometry unit → 1 dp в Android spec\n```\n\nНо это workflow convention. Это не физическое равенство и не повод автоматически преобразовывать типографические значения между платформами.\n\n"
+    },
+    {
+      "id": "R020",
+      "level": 3,
+      "title": "Типографика должна разделять намерение, а не числовую шкалу",
+      "text": "### Типографика должна разделять намерение, а не числовую шкалу\n\nНапример:\n\n```text\nsemantic role: task.title\n```\n\nможет отображаться как:\n\n```text\niOS:\nSwiftUI .body.weight(.semibold)\n\nAndroid:\nMaterialTheme.typography.titleMedium\n```\n\nЭто **не утверждение**, что `.body` и `titleMedium` имеют одинаковый размер, line height или optical metrics.\n\nApple Dynamic Type строится вокруг системных text styles и масштабирует их в соответствии с пользовательскими accessibility settings. При использовании custom font Apple предоставляет относительное масштабирование через APIs вроде `Font.custom(..., relativeTo:)`. [Apple Typography](https://developer.apple.com/design/human-interface-guidelines/typography) и Dynamic Type guidance требуют тестирования Larger Accessibility Text Sizes.\n\nAndroid Material 3 имеет собственную шкалу `display`, `headline`, `title`, `body`, `label` с large, medium и small ролями. Это отдельная типографическая система.\n\nПоэтому foundation-level token:\n\n```text\ntype.task.title\n```\n\nдолжен ссылаться на две платформенные реализации, а не на общий `font-size: 16`.\n\n"
+    },
+    {
+      "id": "R021",
+      "level": 3,
+      "title": "Цвет и темы",
+      "text": "### Цвет и темы\n\nДля iOS предпочтительно отображать семантические продуктовые цвета на dynamic Asset Catalog colors или системные semantic colors. Apple system colors адаптируются к светлая и тёмная темы, vibrancy и некоторым accessibility settings, включая Increased Contrast. [Apple HIG: Color](https://developer.apple.com/design/human-interface-guidelines/color) описывает эти свойства.\n\nНа Android Material 3 `MaterialTheme` передаёт `ColorScheme`, `Typography` и `Shapes` всем вложенным Material components. Dynamic Color может использовать пользовательскую палитру на поддерживаемых версиях Android, но продукт должен сознательно решить, разрешено ли ему заменять утверждённые brand colors.\n\nЭто означает, что общая семантика:\n\n```text\naction.primary\n```\n\nможет иметь:\n\n```text\niOS → App asset / tint compatible with Apple appearances\nAndroid → MaterialTheme.colorScheme.primary\n```\n\nбез требования одинакового RGB.\n\n"
+    },
+    {
+      "id": "R022",
+      "level": 3,
+      "title": "Доступность и системные настройки",
+      "text": "### Доступность и системные настройки\n\nПрактические минимумы различаются.\n\nApple HIG рекомендует interactive hit region порядка **44 × 44 pt** для touch controls. Системные components помогают выдерживать эту границу.\n\nAndroid accessibility guidance рекомендует touch target **не менее 48 × 48 dp**. Material Compose `Button`, `IconButton` и другие standard components уже имеют соответствующие minimum-interactive-size механизмы. Для custom interactive content ответственность переходит к приложению. [Android accessibility principles](https://developer.android.com/guide/topics/ui/accessibility/principles) описывают эту границу.\n\nПоэтому нельзя создавать общий token:\n\n```text\ntouchTarget = 46\n```\n\nкак компромисс.\n\nНужно:\n\n```text\nsemantic requirement:\ncontrol must meet platform touch-target requirement\n\niOS implementation:\n>= 44 pt target\n\nAndroid implementation:\n>= 48 dp target\n```\n\n"
+    },
+    {
+      "id": "R023",
+      "level": 3,
+      "title": "Повышенная контрастность в iOS и Android — разные API",
+      "text": "### Повышенная контрастность в iOS и Android — разные API\n\nНа iOS system colors и Liquid Glass могут адаптироваться к Increased Contrast. Это аргумент в пользу semantic system roles вместо большого количества hard-coded colors.\n\nНа Android 16 система ввела **outline text** вместо прежнего high-contrast-text поведения. Android предоставляет `AccessibilityManager` APIs главным образом для toolkits и custom text rendering. Стандартный toolkit должен обрабатывать это сам, а собственный renderer обязан учитывать режим отдельно. [Android 16 features](https://developer.android.com/about/versions/16/features) описывает изменение.\n\nСледовательно, общего boolean token `highContrast = true` недостаточно. Агент должен сначала позволить нативному framework выполнить его адаптацию.\n\n"
+    },
+    {
+      "id": "R024",
+      "level": 3,
+      "title": "Уменьшение движения также нельзя механически унифицировать",
+      "text": "### Уменьшение движения также нельзя механически унифицировать\n\nApple имеет явный Reduce Motion accessibility preference и рекомендует уменьшать автоматическое и повторяющееся движение, смягчать spring effects и использовать менее пространственные transitions.\n\nCompose учитывает системный Animator duration scale в animation infrastructure. Однако это не следует трактовать как точный semantic equivalent Apple Reduce Motion.\n\n**Вывод:** общий контракт может быть:\n\n```text\nmotion must respect platform accessibility preference\n```\n\nно не:\n\n```text\nisReducedMotion\n```\n\nесли приложение не определило, что конкретно этот abstraction означает на каждой платформе.\n\n"
+    },
+    {
+      "id": "R025",
+      "level": 3,
+      "title": "Безопасные области, отступы и отображение от края до края",
+      "text": "### Безопасные области, отступы и отображение от края до края\n\nНа iOS layout должен учитывать safe areas и системные layout guides. SwiftUI предоставляет `safeAreaInset`, а `ignoresSafeArea` следует применять намеренно, поскольку он способен перенести контент под системные области.\n\nНа Android ситуация жёстче привязана к текущему target SDK. Для приложений, targetting API 35+, edge-to-edge автоматически включается на Android 15+. При target API 36 Android убрал возможность opt out. Интерактивный контент должен правильно обрабатывать system bar, display cutout, gesture и IME insets. [Edge-to-edge for Compose](https://developer.android.com/develop/ui/compose/system/setup-e2e), [Window insets](https://developer.android.com/develop/ui/compose/system/insets) и [Android 16 behavior changes](https://developer.android.com/about/versions/16/behavior-changes-16) фиксируют это.\n\nПоэтому «верхний отступ 44» не является заменой поведение безопасных областей и отступов.\n\n"
+    },
+    {
+      "id": "R026",
+      "level": 3,
+      "title": "Клавиатура",
+      "text": "### Клавиатура\n\nНа iOS SwiftUI layout обычно взаимодействует с keyboard safe area, но custom ignoring of safe areas и фиксированные размеры могут это нарушить.\n\nНа Android IME является отдельным видом `WindowInsets`. Edge-to-edge layout нужно проверять во время появления клавиатуры, а не только на статичном screenshot. Android отдельно предупреждает, что некорректная edge-to-edge настройка может нарушить синхронное движение контента вместе с IME.\n\n"
+    },
+    {
+      "id": "R027",
+      "level": 3,
+      "title": "Локализация, русский текст и RTL",
+      "text": "### Локализация, русский текст и RTL\n\nApple UI frameworks по умолчанию поддерживают right-to-left layout для системных controls, а Xcode localization tooling и String Catalogs позволяют проверять локализованные варианты. [Right to left](https://developer.apple.com/design/human-interface-guidelines/right-to-left) и Apple localization guidance это документируют.\n\nAndroid выбирает locale-specific resources из `res`, поддерживает RTL через application configuration и предоставляет псевдолокаль `ar-XB` для проверки mirrored layout. [Localize your app](https://developer.android.com/guide/topics/resources/localization) и [Test with pseudolocales](https://developer.android.com/guide/topics/resources/pseudolocales) покрывают этот workflow.\n\nДля русского языка одной псевдолокали недостаточно. В validation corpus нужен реальный длинный текст, например:\n\n> «Подготовить согласование обновлённой политики доступа для команды поддержки»\n\nНужно проверять wrapping, intrinsic heights, truncation, toolbar crowding, dialogs и controls одновременно с увеличенным системным шрифтом.\n\n"
+    },
+    {
+      "id": "R028",
+      "level": 3,
+      "title": "Контракт поведения и визуальный вариант",
+      "text": "### Контракт поведения и визуальный вариант\n\nЭто разделение особенно важно в следующих patterns.\n\n| Намерение | iOS | Android | Кто принимает решение |\n| --- | --- | --- | --- |\n| Открыть деталь и вернуться | `NavigationStack`, нативный элемент возврата | навигация Android и системный возврат | структура продукта общая, механика платформенная |\n| Системный Back | стандартная iOS navigation history и swipe where supported | system back и predictive back | платформа |\n| Закрыть modal editor | sheet dismissal с platform behavior | модальный лист или диалог + system back | преимущественно платформа |\n| Подтвердить необратимое delete | `confirmationDialog` или подходящий alert | `AlertDialog` | смысл продуктовый, presentation платформенный |\n| Выбрать boolean | `Toggle` | `Switch` | смысл общий |\n| Текстовый ввод | `TextField` | `TextField` / `OutlinedTextField` | validation продуктовая, IME и фокус платформенные |\n| Загрузка | `ProgressView` | индикатор прогресса Material | состояние общее |\n| Восстанавливаемая обратная связь | встроенное сообщение или статус по контексту | inline или Snackbar | продукт + платформа |\n| Жест для быстрого действия | только с доступным альтернативным действием | то же | creator может выбрать gesture, accessibility ограничивает реализацию |\n\nAndroid predictive back позволяет пользователю увидеть, куда ведёт back gesture. Navigation Compose 2.8.0+ имеет соответствующую интеграцию, а текущая Navigation 3 строится вокруг Compose-controlled back stack. [Predictive back](https://developer.android.com/develop/ui/compose/system/predictive-back) и [Navigation 3](https://developer.android.com/guide/navigation/navigation-3) показывают, почему общий `onBack()` wrapper не должен скрывать системную навигацию.\n\nApple sheet предназначен для завершения ограниченной задачи до возврата к parent context. Он не обязан выглядеть или закрываться идентично Android `ModalBottomSheet`. [Apple HIG: Sheets](https://developer.apple.com/design/human-interface-guidelines/sheets) и [Compose Bottom sheets](https://developer.android.com/develop/ui/compose/components/bottom-sheets) задают разные platform conventions.\n\nДля destructive actions Apple советует не показывать alert для каждого обычного и легко отменяемого destructive action. Если удаление можно undo, confirmation может быть хуже undo flow. В нашем worked example delete специально считается **необратимым**, чтобы confirmation был оправдан. [Apple HIG: Alerts](https://developer.apple.com/design/human-interface-guidelines/alerts) подчёркивает это различие.\n\nAndroid `AlertDialog` имеет отдельные `confirmButton`, `dismissButton` и `onDismissRequest`. Агенту лучше использовать этот API, чем собирать собственный dialog из `Box` и gestures, если concept не требует принципиально иного поведения. [Jetpack Compose — Dialog](https://developer.android.com/develop/ui/compose/components/dialog)\n\n"
+    },
+    {
+      "id": "R029",
+      "level": 2,
+      "title": "Нативная реализация и отображение из Figma",
+      "text": "## Нативная реализация и отображение из Figma\n\n"
+    },
+    {
+      "id": "R030",
+      "level": 3,
+      "title": "Предпочтительная архитектура кода",
+      "text": "### Предпочтительная архитектура кода\n\nДля нового продукта основная линия исследования:\n\n```text\niOS\nSwiftUI\n↓\napp-owned semantic wrappers where justified\n↓\nUIKit interop only where real capability requires it\n\nAndroid\nJetpack Compose\n↓\napp-owned semantic wrappers where justified\n↓\nAndroid Views interop only where real capability requires it\n```\n\nSwiftUI может встраивать UIKit через `UIViewRepresentable` и `UIViewControllerRepresentable`, а SwiftUI content может жить в UIKit через hosting controllers. [SwiftUI UIKit integration](https://developer.apple.com/documentation/swiftui/uikit-integration) документирует оба направления.\n\nCompose официально поддерживает постепенное сосуществование с Views. Для View-only capability внутри Compose используется `AndroidView`, но Google рекомендует не сохранять custom Views без причины и переписывать собственные UI views на Compose при миграции, когда это разумно. [Compose interoperability APIs](https://developer.android.com/develop/ui/compose/migrate/interoperability-apis) и [Views in Compose](https://developer.android.com/develop/ui/compose/migrate/interoperability-apis/views-in-compose) это оговаривают.\n\n"
+    },
+    {
+      "id": "R031",
+      "level": 3,
+      "title": "Когда тонкая обёртка полезна",
+      "text": "### Когда тонкая обёртка полезна\n\nWrapper оправдан, когда он стабилизирует **продуктовую семантику**, например:\n\n```text\nPrimaryAction\nDestructiveAction\nTaskStatus\nEmptyState\n```\n\nи внутри продолжает использовать системный component.\n\nХороший wrapper:\n\n```text\nPrimaryAction(\n    label,\n    enabled,\n    loading,\n    action\n)\n```\n\nможет отображаться на:\n\n```text\nSwiftUI.Button\nCompose Material3.Button\n```\n\nПри этом он не обязан иметь одинаковые padding, corner radius и typography.\n\nПлохой wrapper пытается скрыть почти весь native API:\n\n```text\nUniversalButton(\n    width,\n    height,\n    cornerRadius,\n    pressedOpacity,\n    ripple,\n    glassBlur,\n    hapticMode,\n    platformBackBehavior,\n    ...\n)\n```\n\nТакой abstraction становится собственной UI framework и затрудняет принятие новых platform behavior.\n\n"
+    },
+    {
+      "id": "R032",
+      "level": 3,
+      "title": "Когда обёртка уже мешает",
+      "text": "### Когда обёртка уже мешает\n\nНе стоит оборачивать API только ради «симметрии» файлов.\n\nПримеры, которые разумно оставить платформенными:\n\n- iOS navigation presentation\n- Android predictive back\n- iOS `confirmationDialog`\n- Android `AlertDialog`\n- правила Android для отображения от края до края и системных отступов\n- iOS availability-specific Liquid Glass behavior\n\nЭто те области, где lowest-common-denominator API скроет именно те свойства платформы, которые система должна сохранять.\n\n"
+    },
+    {
+      "id": "R033",
+      "level": 3,
+      "title": "Владение состоянием",
+      "text": "### Владение состоянием\n\nВ SwiftUI локальное presentation state можно хранить через `@State`. Apple описывает `State` как source of truth для значения внутри view hierarchy. Более продолжительное состояние экрана или предметной области можно поднять в observable model. SwiftUI поддерживает новый Observation model и допускает постепенное смешивание с прежним `ObservableObject` подходом. [SwiftUI State](https://developer.apple.com/documentation/swiftui/state) и [Observable migration](https://developer.apple.com/documentation/swiftui/migrating-from-the-observable-object-protocol-to-the-observable-macro) описывают эти уровни.\n\nВ Compose Google рекомендует hoist state к самому низкому общему владельцу всех читатели и писатели. Когда в state участвует business logic, screen state естественно поднимается в `ViewModel`. Наружу рекомендуется отдавать immutable state и events. [Where to hoist state](https://developer.android.com/develop/ui/compose/state-hoisting) это формулирует явно.\n\nОтсюда правило агента:\n\n```text\ncomponent-internal transient visual state\n→ local state allowed\n\nscreen/product state\n→ external owner\n\ndomain state\n→ never hidden inside visual design-system component\n```\n\n"
+    },
+    {
+      "id": "R034",
+      "level": 3,
+      "title": "Предварительное отображение токенов в ресурсы",
+      "text": "### Предварительное отображение токенов в ресурсы\n\nПоскольку foundation report отсутствует, здесь нужен только минимальный mapping, необходимый нативной части.\n\n| Семантика | Figma | SwiftUI | Compose |\n| --- | --- | --- | --- |\n| Цвет основного действия | `color/action/primary` | `Color(\"ActionPrimary\")` или app tint | `MaterialTheme.colorScheme.primary` |\n| Типографика названия задачи | `type/task/title` | platform text style, например `.body.weight(.semibold)` | platform role, например `titleMedium` |\n| Критическое намерение | `action/destructive` | `Button(role: .destructive)` | app semantic role поверх Material action |\n| Недоступное состояние | свойство компонента | нативное `disabled` | `enabled = false` |\n\nFigma variables поддерживают platform-specific code syntax, в том числе iOS и Android use cases. Это позволяет одному semantic variable иметь code references для каждой платформы, но не делает generated reference автоматически правильным production API.\n\nСамо числовое устройство aliasing, naming hierarchy и token source of truth относится к foundation study и здесь намеренно не расширяется.\n\n"
+    },
+    {
+      "id": "R035",
+      "level": 3,
+      "title": "Figma Code Connect: реальное состояние связей со SwiftUI и Compose",
+      "text": "### Figma Code Connect: реальное состояние связей со SwiftUI и Compose\n\nНа 21 октября 2026 Figma Code Connect UI поддерживает **one-to-many connection**. Один design component можно независимо связать с React, SwiftUI, Jetpack Compose, Vue и другими implementations. Для каждого connection задаются собственный path, component name и instructions. [Code Connect](https://help.figma.com/hc/en-us/articles/23920389749655-Code-Connect) это документирует прямо.\n\nЭто важное доказательство реального **mapping support**, но не доказательство автоматической реализации.\n\nCode Connect UI в основном связывает:\n\n```text\nFigma component\n↔ file path\n↔ code component name\n↔ instructions / AI context\n```\n\nCLI идёт дальше и позволяет делать property mappings и динамические code examples. Figma рекомендует framework-agnostic template files.\n\nКритическое изменение 2026 года: с **17 августа 2026** Figma больше не обновляет legacy framework-specific parsers. Старые SwiftUI, Jetpack Compose, React и Web Component parsers оставлены как legacy path. Для новых mappings Figma рекомендует template API, где `.figma.ts` template исполняет JavaScript/TypeScript и возвращает нужный code string. [Migration from parsers to template files](https://developers.figma.com/docs/code-connect/templates-migration-guide/) это фиксирует. [Code Connect — Migrating from parsers to template files](https://developers.figma.com/docs/code-connect/templates-migration-guide/)\n\nПоэтому новый dual-native проект не следует строить вокруг старых API парсеров SwiftUI и Compose.\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R036",
+      "level": 3,
+      "title": "Ограничение тарифа Professional существенно для двух нативных фреймворков",
+      "text": "### Ограничение тарифа Professional существенно для двух нативных фреймворков\n\nНа Professional plan Figma разрешает **одну активную library и один active framework** для Code Connect. При переключении framework прежние mappings сохраняются, но становятся deactivated и **не возвращаются MCP server**. Organization и Enterprise могут иметь несколько active frameworks.\n\nДля данного исследования это не мелкая account detail, а архитектурное ограничение.\n\nПри Professional plan возможны два режима:\n\n```text\nрежим iOS\nactive framework = SwiftUI\n\nрежим Android\nactive framework = Jetpack Compose\n```\n\nс явным переключением и повторным чтением mappings.\n\nЕсли агенту требуется одновременно рассуждать по обоим production mappings через MCP, Organization/Enterprise снимает эту конкретную проблему.\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R037",
+      "level": 3,
+      "title": "Документированная асимметрия SwiftUI и Compose в Figma MCP",
+      "text": "### Документированная асимметрия SwiftUI и Compose в Figma MCP\n\nFigma публикует отдельный skill `figma-swiftui`, который заявлен как двунаправленный translation layer между Figma и SwiftUI. Документация говорит, что он умеет распознавать iOS patterns, round-trip SF Symbols по имени и использовать semantic Apple colors вместо постоянного превращения всего в hex. [Figma skills for MCP](https://help.figma.com/hc/en-us/articles/39166810751895-Figma-skills-for-MCP) описывает это как поддерживаемый workflow.\n\nЭто **documented capability**, а не эмпирическое доказательство fidelity.\n\nВ опубликованном списке Figma skills, проверенном для этого исследования, отдельный аналогичный `figma-compose` skill не указан. Compose при этом явно поддерживается Code Connect как target framework. Поэтому состояние поддержки несимметрично:\n\n| Возможность | SwiftUI | Jetpack Compose |\n| --- | --- | --- |\n| Связь Code Connect | документировано | документировано |\n| Файлы шаблонов Code Connect | документировано | документировано |\n| MCP получает connected code context | документировано | документировано |\n| Отдельный framework skill | `figma-swiftui` документирован | отдельный `figma-compose` в текущем списке не найден |\n| Гарантия компиляции generated output | нет | нет |\n| Гарантия platform fidelity | нет | нет |\n\nОтсутствие Compose skill в проверенном списке не доказывает, что такой механизм никогда не появится или не существует во внутреннем rollout. Это текущий evidence gap.\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R038",
+      "level": 3,
+      "title": "Запись на холст не нужно путать с генерацией нативного кода",
+      "text": "### Запись на холст не нужно путать с генерацией нативного кода\n\nFigma `figma-use` / `use_figma` умеет создавать и изменять editable frames, components, variants, variables, styles и layouts при наличии edit access. [Figma MCP tools](https://developers.figma.com/docs/figma-mcp-server/tools-and-prompts/) это документирует.\n\nВ этом исследовании эта возможность **не использовалась**, поскольку research access не разрешает изменять пользовательские files.\n\nОтдельный `generate_figma_design` принимает **живой UI web-приложения или сайта** и превращает его в Figma layers. Это не доказательство готовности SwiftUI или Compose output и не должно использоваться как shortcut в аргументации о native support.\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R039",
+      "level": 3,
+      "title": "Генерация кода является преобразованием с потерями",
+      "text": "### Генерация кода является преобразованием с потерями\n\nFigma MCP сам не позиционируется как «one-click finished-code converter». Его роль в native workflow разумнее трактовать как предоставление структурированного design context, component mappings и instructions агенту. Code Connect повышает шанс повторного использования уже существующего production component.\n\nПри трансформации Figma → native неизбежно теряются или требуют отдельного вывода:\n\n```text\nnavigation history\nsystem back semantics\nfocus behavior\nkeyboard handling\naccessibility tree\nruntime state ownership\nasync lifecycle\nsystem appearance changes\navailability checks\nbusiness validation\nerror recovery\n```\n\nПри native → Figma теряются другие вещи:\n\n```text\nruntime branching\nenvironment behavior\nreal state machines\nnetwork timing\nnative gesture arbitration\nview lifecycle\nplatform accessibility services\n```\n\nПоэтому production workflow должен предпочитать:\n\n```text\nexisting native component + Code Connect mapping\n```\n\nвместо:\n\n```text\nповторно сгенерировать visual approximation компонента\n```\n\n"
+    },
+    {
+      "id": "R040",
+      "level": 3,
+      "title": "Повторная генерация не должна повреждать ручной код",
+      "text": "### Повторная генерация не должна повреждать ручной код\n\n**Предложение:** разделить артефакты на три категории.\n\n```text\ngenerated\ntoken exports\nmapping manifests\nmachine-produced snapshots\n\nhandwritten\nnative components\nnavigation\nstate holders\nbusiness behavior\n\ngenerated-once then owned\ninitial screen scaffolds\nmigration stubs\n```\n\nАгент может автоматически перезаписывать только первый класс. В третьем классе subsequent update должен происходить как патч или разница. Второй класс нельзя заменять regeneration без явной проверки.\n\nЭто устраняет фундаментальную проблему «agent saved a new Figma version, therefore native source must be regenerated».\n\n"
+    },
+    {
+      "id": "R041",
+      "level": 2,
+      "title": "Рабочий процесс агента и контракт обновления",
+      "text": "## Рабочий процесс агента и контракт обновления\n\n"
+    },
+    {
+      "id": "R042",
+      "level": 3,
+      "title": "От утверждённого концепта к нативной системе",
+      "text": "### От утверждённого концепта к нативной системе\n\nПредлагаемый procedure не требует, чтобы концепт изначально был platform-specific.\n\n1. **Агент получает или создаёт visual concept.**\n   В этот момент concept может задавать hierarchy, tone, density, color character, imagery и отношение к space, но не объявляется native implementation.\n\n2. **Creator утверждает направление.**\n   Утверждаются именно visual intent и приоритеты. Например «спокойный, плотный task manager, primary actions заметны, destructive action не доминирует».\n\n3. **Агент извлекает semantic intent.**\n   Он фиксирует роли вроде `action.primary`, `task.title`, `task.completed`, `destructive`, а не сначала копирует размеры каждого rectangle.\n\n4. **Агент инвентаризирует существующие ресурсы.**\n   Для iOS проверяются Apple resources и уже имеющиеся SwiftUI/UIKit components. Для Android проверяются Material/Compose и существующие app components. В Figma проверяются library components, properties, variables и descriptions. Code Connect mappings читаются до создания replacement. Figma MCP предоставляет agent context именно для connected components.\n\n5. **Каждый concept element классифицируется.**\n\n   ```text\n   reuse native\n   theme native\n   compose native controls\n   build custom\n   unresolved\n   ```\n\n6. **Для iOS и Android строятся отдельные adaptation proposals.**\n   Здесь решаются navigation, modal presentation, back behavior, typography mapping, system colors, safe areas, insets и gestures.\n\n7. **Материальные изменения визуального intent возвращаются creator.**\n   Не нужно спрашивать согласование для каждой обычной platform convention. Но если адаптация меняет hierarchy, prominence, placement или узнаваемый характер concept, нужен новый approval.\n\n8. **После этого создаются или адаптируются Figma components.**\n   Общий semantic ID сохраняется. Platform-specific geometry и properties могут отличаться.\n\n9. **Design components связываются с native code components.**\n   Для новых Code Connect setups предпочтительны template files, а не deprecated framework parsers. [Code Connect — Migrating from parsers to template files](https://developers.figma.com/docs/code-connect/templates-migration-guide/)\n\n10. **Код реализуется вокруг нативных frameworks.**\n    Generated content не считается production-ready, пока не пройдёт compile, runtime и accessibility layers.\n\n11. **Результат проверяется отдельно на каждой платформе.**\n\n12. **Publishing, library release или deployment являются отдельным авторизованным действием.**\n    Само исследование и generation draft не дают права на публикацию.\n\n"
+    },
+    {
+      "id": "R043",
+      "level": 3,
+      "title": "Когда снова нужен создатель",
+      "text": "### Когда снова нужен создатель\n\nCreator input нужен не тогда, когда платформы просто выглядят немного по-разному, а когда адаптация меняет утверждённый intent.\n\n| Ситуация | Нужно новое решение создателя |\n| --- | --- |\n| iOS confirmation sheet и Android dialog выражают одинаковое irreversible delete | обычно нет |\n| iOS primary action переносится из нижней зоны в toolbar и становится заметно менее dominant | да |\n| Android получает FAB вместо inline primary action | да, если visual hierarchy меняется |\n| System font заменяет шрифт concept, существенно меняя характер | да |\n| Dynamic Color может переопределить утверждённый brand primary | да |\n| Large Text заставляет actions перестроиться вертикально | обычно нет, это accessibility adaptation |\n| Reduce Motion заменяет spatial transition на fade | нет, если смысл не меняется |\n| Платформа не может воспроизвести ключевой branded interaction без custom control | да |\n\n"
+    },
+    {
+      "id": "R044",
+      "level": 3,
+      "title": "Понятная агенту запись о компоненте",
+      "text": "### Понятная агенту запись о компоненте\n\n**Предложение:** каждый reusable component должен иметь компактную machine-readable запись.\n\n```yaml\nid: action.primary\nintent: Primary committed action on a screen\nplatforms:\n  ios:\n    figma_component: <stable reference>\n    code: AppUI/PrimaryAction.swift\n    native_base: SwiftUI.Button\n  android:\n    figma_component: <stable reference>\n    code: ui/components/PrimaryAction.kt\n    native_base: androidx.compose.material3.Button\nstates:\n  - enabled\n  - disabled\n  - loading\naccessibility:\n  label_source: visible-label\nownership:\n  behavior: platform\n  visual_intent: creator-approved\n  state_contract: product\nmapping_revision: 4\n```\n\nКонкретная schema не следует из Figma или Apple документации. Это **предлагаемый coordination contract**.\n\n"
+    },
+    {
+      "id": "R045",
+      "level": 3,
+      "title": "Идемпотентность требует идентичности, а не визуального совпадения",
+      "text": "### Идемпотентность требует идентичности, а не визуального совпадения\n\nАгент не должен решать:\n\n> «Эта синяя rounded кнопка выглядит похожей, наверное это уже наш компонент».\n\nОн должен проверять stable identity.\n\nМинимум:\n\n```text\nsemantic ID\nFigma component/node reference\nnative code symbol\nplatform\nmapping revision\nlast known generated baseline\nmanual-ownership marker\n```\n\nТогда повторный запуск выполняет:\n\n```text\nread → resolve identity → compare → update\n```\n\nа не:\n\n```text\nsearch visually → maybe duplicate\n```\n\n"
+    },
+    {
+      "id": "R046",
+      "level": 3,
+      "title": "Контракт изменения",
+      "text": "### Контракт изменения\n\nДля каждого изменения агент должен вычислять impact class.\n\n**Shared semantic change**\n\n```text\naction.primary changed\n→ evaluate iOS mapping\n→ evaluate Android mapping\n→ migrate both\n```\n\n**Platform implementation change**\n\n```text\nAndroid Material API changed\n→ migrate Android only\n→ semantic contract unchanged\n```\n\n**Feature extension**\n\n```text\nProjects needs PrimaryAction\n→ reuse contract\n→ no core change\n```\n\n**Platform-only addition**\n\n```text\nAndroid QuickAdd FAB\n→ Android extension\n→ no fake iOS counterpart\n```\n\n"
+    },
+    {
+      "id": "R047",
+      "level": 3,
+      "title": "Ручные конфликты",
+      "text": "### Ручные конфликты\n\n**Предлагаемый rule:** если и агент, и человек изменили одну owned region после последнего baseline, агент не выигрывает автоматически.\n\nRecovery должен выглядеть как three-way comparison:\n\n```text\nA = last accepted baseline\nB = current human/live state\nC = desired agent state\n```\n\nЕсли:\n\n```text\nB == A\n```\n\nможно безопасно применять `C`.\n\nЕсли:\n\n```text\nB != A\n```\n\nизменение считается конфликтным.\n\nДля production source конфликт должен стать reviewable patch.\n\nДля Figma component автоматическое обновление можно продолжать только если manual change относится к очевидно независимой property. Если изменение затрагивает утверждённую hierarchy или visual character, нужен человек.\n\n"
+    },
+    {
+      "id": "R048",
+      "level": 3,
+      "title": "Прерванная запись",
+      "text": "### Прерванная запись\n\nFigma MCP умеет реально создавать и редактировать canvas content, поэтому частично завершённая операция является реальной категорией риска.\n\n**Предложение:** многошаговая операция агента должна вести journal:\n\n```yaml\noperation_id: migrate-action-primary-v4\ndesired_revision: 4\nsteps:\n  inspect: complete\n  figma_ios: complete\n  figma_android: incomplete\n  code_ios: not_started\n  code_android: not_started\n```\n\nПосле interruption нельзя продолжать с remembered state.\n\nНужно:\n\n1. Перечитать current artifact.\n2. Повторно resolve stable identities.\n3. Сравнить с last baseline.\n4. Повторить только idempotent missing steps.\n5. Любой конфликт manual edit остановить до merge.\n\n"
+    },
+    {
+      "id": "R049",
+      "level": 3,
+      "title": "Устаревшие ссылки Code Connect",
+      "text": "### Устаревшие ссылки Code Connect\n\nPath и component name могут устареть после rename или move. Кроме того, на Professional plan framework mapping может быть сохранён, но deactivated и поэтому исчезнуть из MCP context.\n\nЗначит отсутствие mapping в MCP нельзя автоматически трактовать как:\n\n> «native component не существует».\n\nСначала агент должен различить:\n\n```text\nnever mapped\ndeactivated by plan/framework\npath moved\ncomponent renamed\nlibrary unpublished\naccess missing\nmapping genuinely deleted\n```\n\n"
+    },
+    {
+      "id": "R050",
+      "level": 3,
+      "title": "Обновление ОС или библиотеки интерфейса",
+      "text": "### Обновление ОС или библиотеки интерфейса\n\nОбновление платформы должно происходить как dependency migration, а не как design regeneration.\n\nНапример при Material 3 update:\n\n1. Обновить version lock в отдельной branch.\n2. Собрать release notes и deprecated API.\n3. Не менять semantic contracts без причины.\n4. Compile Android target.\n5. Проверить affected controls.\n6. Сравнить светлая и тёмная темы, large text, insets и accessibility.\n7. Обновить Code Connect examples только после code migration.\n8. Если новая default appearance конфликтует с approved visual intent, либо принять её как platform adaptation, либо изменить theme с creator review.\n9. При failure откатить dependency lock и mapping revision.\n\nАналогично новая iOS SDK не должна приводить к ручной перерисовке всех Apple controls. Standard controls сначала следует посмотреть на новой ОС, поскольку они сами получают системную адаптацию. Apple показывала именно такой SDK-driven adoption для новых control appearances.\n\n"
+    },
+    {
+      "id": "R051",
+      "level": 2,
+      "title": "Иллюстрация, рост системы и миграции",
+      "text": "## Иллюстрация, рост системы и миграции\n\n"
+    },
+    {
+      "id": "R052",
+      "level": 3,
+      "title": "Синтетический продукт",
+      "text": "### Синтетический продукт\n\nЭтот раздел является **иллюстрацией, а не результатом выполненного прототипа**.\n\nПредположим, агент предложил task manager с такими свойствами:\n\n```text\nспокойная визуальная иерархия\nплотный, но не перегруженный список\nвыразительный primary action\nминимум декоративного chrome\nrounded surfaces используются выборочно\ndestructive actions визуально вторичны до момента подтверждения\n```\n\nВымышленный creator отвечает:\n\n> Направление утверждено. Сохраняем спокойный характер и сильную иерархию действий. Платформы могут отличаться, если это делает взаимодействие естественным.\n\nНикаких конкретных hex-цветов исходное synthetic brief не содержит. Поэтому report **не придумывает approved hex values**.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Synthetic illustrative example, not an observed integrated system or executed build."
+      }
+    },
+    {
+      "id": "R053",
+      "level": 3,
+      "title": "Базовый семантический срез",
+      "text": "### Базовый семантический срез\n\nНачальная система охватывает:\n\n```text\nTask list\nTask editor\nIrreversible delete confirmation\nPrimaryAction\nTaskRow\nTaskEditor composition\nsemantic color action.primary\nsemantic type role task.title\n```\n\nЭто достаточно, чтобы проверить вертикальную цепочку:\n\n```text\nconcept\n→ semantic role\n→ Figma\n→ SwiftUI\n→ Compose\n→ validation\n```\n\nи недостаточно, чтобы делать выводы о произвольном масштабе.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Synthetic illustrative example, not an observed integrated system or executed build."
+      }
+    },
+    {
+      "id": "R054",
+      "level": 3,
+      "title": "Один цвет",
+      "text": "### Один цвет\n\n```text\nSemantic ID\ncolor/action/primary\n```\n\n**Figma**\n\n```text\nVariable: color/action/primary\n\nModes:\niOS Light\niOS Dark\nAndroid Light\nAndroid Dark\n```\n\nЭто позволяет сохранять одно назначение и не требовать одинакового platform value.\n\n**iOS**\n\n```swift\nColor(\"ActionPrimary\")\n```\n\nAsset Catalog содержит утверждённые светлый и тёмный внешний вид. При необходимости app tint может быть тем же semantic source.\n\n**Android**\n\n```kotlin\nMaterialTheme.colorScheme.primary\n```\n\nЕсли product разрешает Dynamic Color, Android mapping может получать system-derived scheme. Если brand primary должен оставаться неизменным по смыслу, Dynamic Color нужно отключить или ограничить в соответствующей product policy. Material 3 theme распространяет `ColorScheme` на components автоматически.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Synthetic illustrative example, not an observed integrated system or executed build."
+      }
+    },
+    {
+      "id": "R055",
+      "level": 3,
+      "title": "Одна типографическая роль",
+      "text": "### Одна типографическая роль\n\n```text\nSemantic ID\ntype/task/title\n```\n\n**Figma**\n\n```text\nTask title / iOS\nTask title / Android\n```\n\nОба style references принадлежат одной semantic role, но имеют platform-specific properties.\n\n**iOS**\n\n```swift\n.font(.body.weight(.semibold))\n```\n\n**Android**\n\n```kotlin\nstyle = MaterialTheme.typography.titleMedium\n```\n\nЭто deliberately not numeric equality. Dynamic Type и Android font scaling остаются platform-owned.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Synthetic illustrative example, not an observed integrated system or executed build."
+      }
+    },
+    {
+      "id": "R056",
+      "level": 3,
+      "title": "Один переиспользуемый элемент управления",
+      "text": "### Один переиспользуемый элемент управления\n\nSemantic contract:\n\n```text\nPrimaryAction\n\ninputs:\nlabel\nenabled\nloading\naction\n```\n\nFigma может иметь:\n\n```text\nPrimaryAction / iOS\nPrimaryAction / Android\n```\n\nс общей semantic description.\n\nНа iOS это themed `Button`.\n\nНа Android это themed Material 3 `Button`.\n\nПричина выбора **native control**, а не custom drawing: concept требует заметного primary action, но не вводит нового interaction model. Системный button уже владеет press interaction, семантика клавиатуры и доступности и адаптацией к platform style.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Synthetic illustrative example, not an observed integrated system or executed build."
+      }
+    },
+    {
+      "id": "R057",
+      "level": 3,
+      "title": "Один составной паттерн",
+      "text": "### Один составной паттерн\n\n`TaskEditor` является composition, а не новым control primitive.\n\nВ Figma:\n\n```text\nTaskEditor / iOS\n  native-style title field\n  optional metadata rows\n  PrimaryAction\n  destructive entry\n\nTaskEditor / Android\n  Material text field\n  metadata\n  PrimaryAction\n  destructive entry\n```\n\nОба выражают одни продуктовые states:\n\n```text\nediting\ninvalid\nsaving\nsave-failed\ndelete-requested\n```\n\nНо field chrome, spacing, navigation и destructive presentation не обязаны совпадать.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Synthetic illustrative example, not an observed integrated system or executed build."
+      }
+    },
+    {
+      "id": "R058",
+      "level": 3,
+      "title": "SwiftUI пример",
+      "text": "### SwiftUI пример\n\n**Статус:** не запускался и не компилировался в рамках исследования. API сверены с актуальной документацией SwiftUI. Target примера: Xcode 27, Swift 6.4, deployment iOS 17+.\n\n```swift\nimport SwiftUI\n\nstruct PrimaryActionButton: View {\n    let title: String\n    var isEnabled: Bool = true\n    let action: () -> Void\n\n    var body: some View {\n        Button(title, action: action)\n            .buttonStyle(.borderedProminent)\n            .tint(Color(\"ActionPrimary\"))\n            .disabled(!isEnabled)\n    }\n}\n\nstruct TaskEditorView: View {\n    @State private var title: String\n    @State private var showsDeleteConfirmation = false\n\n    let onSave: (String) -> Void\n    let onDelete: () -> Void\n\n    init(\n        title: String,\n        onSave: @escaping (String) -> Void,\n        onDelete: @escaping () -> Void\n    ) {\n        _title = State(initialValue: title)\n        self.onSave = onSave\n        self.onDelete = onDelete\n    }\n\n    var body: some View {\n        Form {\n            Section(\"Задача\") {\n                TextField(\"Название\", text: $title)\n\n                PrimaryActionButton(\n                    title: \"Сохранить\",\n                    isEnabled: !title.trimmingCharacters(\n                        in: .whitespacesAndNewlines\n                    ).isEmpty\n                ) {\n                    onSave(title)\n                }\n            }\n\n            Section {\n                Button(\"Удалить задачу\", role: .destructive) {\n                    showsDeleteConfirmation = true\n                }\n            }\n        }\n        .navigationTitle(\"Редактирование\")\n        .confirmationDialog(\n            \"Удалить задачу?\",\n            isPresented: $showsDeleteConfirmation,\n            titleVisibility: .visible\n        ) {\n            Button(\"Удалить\", role: .destructive) {\n                onDelete()\n            }\n\n            Button(\"Отмена\", role: .cancel) {}\n        } message: {\n            Text(\"Это действие нельзя отменить.\")\n        }\n    }\n}\n```\n\nЗдесь custom code не перерисовывает кнопку, field, form или dialog. Wrapper стабилизирует product concept `PrimaryAction`, а destructive behavior остаётся у SwiftUI.\n\n`@State` владеет только editor draft и presentation state этого сокращённого примера. В production приложении draft, save state и business validation могут быть подняты в observable screen model. Apple рекомендует использовать `State` как source of truth внутри view hierarchy и Observation для observable model.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Synthetic illustrative example, not an observed integrated system or executed build."
+      }
+    },
+    {
+      "id": "R059",
+      "level": 3,
+      "title": "Compose пример",
+      "text": "### Compose пример\n\n**Статус:** не запускался и не компилировался в рамках исследования. API сверены с Compose и Material 3 docs. Version context: Kotlin 2.4.21, Compose BOM 2026.09.00, Material 3 1.4.0.\n\n```kotlin\nimport androidx.compose.foundation.layout.Column\nimport androidx.compose.foundation.layout.RowScope\nimport androidx.compose.foundation.layout.fillMaxWidth\nimport androidx.compose.foundation.layout.imePadding\nimport androidx.compose.foundation.layout.padding\nimport androidx.compose.material3.AlertDialog\nimport androidx.compose.material3.Button\nimport androidx.compose.material3.MaterialTheme\nimport androidx.compose.material3.OutlinedTextField\nimport androidx.compose.material3.Text\nimport androidx.compose.material3.TextButton\nimport androidx.compose.runtime.Composable\nimport androidx.compose.runtime.getValue\nimport androidx.compose.runtime.mutableStateOf\nimport androidx.compose.runtime.saveable.rememberSaveable\nimport androidx.compose.runtime.setValue\nimport androidx.compose.ui.Modifier\nimport androidx.compose.ui.unit.dp\n\n@Composable\nfun PrimaryActionButton(\n    enabled: Boolean = true,\n    onClick: () -> Unit,\n    content: @Composable RowScope.() -> Unit,\n) {\n    Button(\n        enabled = enabled,\n        onClick = onClick,\n        content = content,\n    )\n}\n\n@Composable\nfun TaskEditor(\n    title: String,\n    onTitleChange: (String) -> Unit,\n    onSave: () -> Unit,\n    onDelete: () -> Unit,\n    modifier: Modifier = Modifier,\n) {\n    var showDeleteConfirmation by rememberSaveable {\n        mutableStateOf(false)\n    }\n\n    Column(\n        modifier = modifier\n            .fillMaxWidth()\n            .imePadding()\n            .padding(16.dp)\n    ) {\n        OutlinedTextField(\n            value = title,\n            onValueChange = onTitleChange,\n            label = { Text(\"Название\") },\n            modifier = Modifier.fillMaxWidth(),\n        )\n\n        PrimaryActionButton(\n            enabled = title.isNotBlank(),\n            onClick = onSave,\n        ) {\n            Text(\"Сохранить\")\n        }\n\n        TextButton(\n            onClick = { showDeleteConfirmation = true },\n        ) {\n            Text(\n                text = \"Удалить задачу\",\n                color = MaterialTheme.colorScheme.error,\n            )\n        }\n    }\n\n    if (showDeleteConfirmation) {\n        AlertDialog(\n            onDismissRequest = {\n                showDeleteConfirmation = false\n            },\n            title = {\n                Text(\"Удалить задачу?\")\n            },\n            text = {\n                Text(\"Это действие нельзя отменить.\")\n            },\n            confirmButton = {\n                TextButton(\n                    onClick = {\n                        showDeleteConfirmation = false\n                        onDelete()\n                    }\n                ) {\n                    Text(\n                        text = \"Удалить\",\n                        color = MaterialTheme.colorScheme.error,\n                    )\n                }\n            },\n            dismissButton = {\n                TextButton(\n                    onClick = {\n                        showDeleteConfirmation = false\n                    }\n                ) {\n                    Text(\"Отмена\")\n                }\n            },\n        )\n    }\n}\n```\n\nЗдесь `title` hoisted из component. `TaskEditor` получает immutable value и event. Локально сохраняется только transient state dialog visibility. Это соответствует Compose state-hoisting guidance. [Jetpack Compose — Where to hoist state](https://developer.android.com/develop/ui/compose/state-hoisting)\n\n`AlertDialog` используется вместо собственного popup container, поскольку Material API уже определяет dismissal и action slots. [Jetpack Compose — Dialog](https://developer.android.com/develop/ui/compose/components/dialog)\n\nПолный edge-to-edge screen дополнительно должен применять `Scaffold` и корректно распределять its insets. Один `imePadding()` не заменяет полноценную window-inset policy.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Synthetic illustrative example, not an observed integrated system or executed build."
+      }
+    },
+    {
+      "id": "R060",
+      "level": 3,
+      "title": "Сценарий с крупным текстом",
+      "text": "### Сценарий с крупным текстом\n\nВозьмём title:\n\n> «Подготовить согласование обновлённой политики доступа для команды поддержки»\n\nи русский action:\n\n> «Сохранить изменения задачи»\n\nНа iOS validation должен включать accessibility Dynamic Type sizes. Apple рекомендует поддерживать Larger Accessibility Text Sizes и не полагаться на fixed-height text containers.\n\nНа Android validation должна доходить как минимум до системного 200% font scale path, где scaling уже нелинеен.\n\nОжидаемое design-system правило:\n\n```text\nlabel may wrap\ncontainer may grow\ntext must not overlap adjacent controls\nprimary and secondary actions may restack\nno fixed button height that clips text\n```\n\nЕсли в обычном размере два действия расположены горизонтально, accessibility variant имеет право стать вертикальным. Это считается адаптация к платформе и доступности, а не visual divergence defect.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Synthetic illustrative example, not an observed integrated system or executed build."
+      }
+    },
+    {
+      "id": "R061",
+      "level": 3,
+      "title": "Платформенные различия в том же сценарии работы с задачей",
+      "text": "### Платформенные различия в том же сценарии работы с задачей\n\n**iOS**\n\n```text\nTask list\n→ NavigationStack push\n→ Task editor as destination or sheet depending product flow\n→ destructive request\n→ confirmationDialog\n```\n\n**Android**\n\n```text\nTask list\n→ Compose navigation destination\n→ system/predictive back owns return gesture\n→ destructive request\n→ AlertDialog\n```\n\nОбщий contract:\n\n```text\ndelete task\nis irreversible\nrequires explicit confirmation\ncancel keeps task intact\nconfirm deletes once\n```\n\nИменно этот contract должен быть shared test case.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Synthetic illustrative example, not an observed integrated system or executed build."
+      }
+    },
+    {
+      "id": "R062",
+      "level": 3,
+      "title": "Вторая продуктовая область",
+      "text": "### Вторая продуктовая область\n\nПосле Tasks добавляется **Projects**.\n\nНовые экраны требуют:\n\n```text\nProject list\nProject editor\nArchive project\n```\n\nМожно переиспользовать:\n\n```text\ncolor/action/primary\ntype roles where semantics match\nPrimaryAction\nshared loading/error conventions\nform validation principles\n```\n\nНо не нужно автоматически делать:\n\n```text\nProjectRow extends TaskRow\n```\n\nтолько из-за визуального сходства.\n\nЕсли `ProjectRow` имеет собственную information hierarchy, он может быть отдельным composed component.\n\nНа этом этапе core остаётся небольшим:\n\n```text\nsemantic theme\ngeneric product actions\ncommon status patterns\n```\n\nа Tasks и Projects живут как feature implementations.\n\nЭто и есть **спроектированная расширяемость без обязательного дерева атомов и молекул**.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Synthetic illustrative example, not an observed integrated system or executed build."
+      }
+    },
+    {
+      "id": "R063",
+      "level": 3,
+      "title": "Общее семантическое изменение",
+      "text": "### Общее семантическое изменение\n\nПредположим, accessibility review выявил, что `action.primary` должен иметь более устойчивый contrast.\n\nИзменение:\n\n```text\ncolor/action/primary revision 3 → 4\n```\n\nдолжно распространиться:\n\n```text\nFigma iOS mode\nFigma Android mode\niOS ActionPrimary asset mapping\nAndroid ColorScheme mapping\nvisual regression expectations\ncontrast checks\n```\n\nНе должно автоматически распространяться:\n\n```text\ndestructive color\nnavigation behavior\nplatform-only components\n```\n\nСтарая revision сохраняется до успешной migration. После перехода можно пометить её deprecated и удалить только после проверки consumers.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Synthetic illustrative example, not an observed integrated system or executed build."
+      }
+    },
+    {
+      "id": "R064",
+      "level": 3,
+      "title": "Компонент одной платформы",
+      "text": "### Компонент одной платформы\n\nДопустим Android concept adaptation получает **Quick Add FAB**, потому что Android information architecture и approved Android hierarchy делают floating primary action естественным.\n\nCompose использует Material FAB.\n\niOS **не получает искусственный FAB ради parity**. Его quick add может остаться toolbar `+` или другой native action.\n\nSemantic contract:\n\n```text\ncreateTask\n```\n\nобщий.\n\nPresentation:\n\n```text\nAndroid → FAB\niOS → toolbar action\n```\n\nлокальная.\n\nЭто пример полезного platform divergence.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Synthetic illustrative example, not an observed integrated system or executed build."
+      }
+    },
+    {
+      "id": "R065",
+      "level": 3,
+      "title": "Обновление библиотеки и восстановление",
+      "text": "### Обновление библиотеки и восстановление\n\nДопустим Android проект переходит с Material 3 `1.4.0` на будущую совместимую версию, которая меняет default component rendering.\n\nАгент должен:\n\n1. Зафиксировать current lock как recovery point.\n2. Прочитать release notes.\n3. Обновить library в migration branch.\n4. Compile.\n5. Проверить component API.\n6. Перезапустить screenshot baselines только после человеческого просмотра визуального diff.\n7. Проверить светлая и тёмная темы.\n8. Проверить 200% font.\n9. Проверить TalkBack semantics.\n10. Проверить edge-to-edge и predictive back там, где затронуты.\n11. Обновить фрагменты и шаблоны Code Connect.\n12. Повысить platform implementation revision.\n13. Оставить shared semantic contract version прежней, если meaning не изменился.\n\nПри failure:\n\n```text\nrestore dependency lock\nrestore generated mapping baseline\nkeep semantic version unchanged\nrecord blocked migration\n```\n\nНовый library release не должен «перетянуть» за собой iOS, если shared semantics не менялись.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Synthetic illustrative example, not an observed integrated system or executed build."
+      }
+    },
+    {
+      "id": "R066",
+      "level": 3,
+      "title": "Межплатформенный фасад или платформенные API",
+      "text": "### Межплатформенный фасад или платформенные API\n\nДве крайности одинаково рискованны.\n\nПолностью разные системы:\n\n```text\niOS invents its own semantics\nAndroid invents its own semantics\n```\n\nдают drift.\n\nПолностью единый facade:\n\n```text\nUniversalNavigation\nUniversalSheet\nUniversalBack\nUniversalButtonStyle\n```\n\nсоздаёт lowest common denominator.\n\nПрактическая середина:\n\n```text\nShared semantic contracts\n        ↓\niOS app UI API      Android app UI API\n        ↓                    ↓\nSwiftUI                 Compose\n```\n\nТот же semantic component может даже иметь разные public parameters, если platform behavior действительно различается.\n\n"
+    },
+    {
+      "id": "R067",
+      "level": 3,
+      "title": "Kotlin Multiplatform и общий интерфейс",
+      "text": "### Kotlin Multiplatform и общий интерфейс\n\nKotlin Multiplatform является условной архитектурной альтернативой, а не ответом на native-system вопрос.\n\nJetBrains на 2026 год считает Compose Multiplatform stable для Android, iOS и desktop. При этом Kotlin Multiplatform также прямо поддерживает архитектуру, где shared business logic используется совместно, а iOS и Android UI остаются нативными. [Kotlin Multiplatform native UI tutorial](https://kotlinlang.org/docs/multiplatform/multiplatform-upgrade-app.html) показывает именно вариант с раздельными native UIs.\n\nДля данного исследования предпочтительный default остаётся:\n\n```text\nSwiftUI on iOS\nCompose on Android\n```\n\nKMP имеет смысл отдельно оценивать для общая логика предметной области, данных и состояния.\n\nCompose Multiplatform UI следует выбирать только после отдельного решения, что выгода shared rendering layer перевешивает потерю части прямой платформенной independence. Его production stability сама по себе не доказывает, что он лучше для конкретного design system.\n\n"
+    },
+    {
+      "id": "R068",
+      "level": 2,
+      "title": "Проверка, карта требований и границы переноса",
+      "text": "## Проверка, карта требований и границы переноса\n\n"
+    },
+    {
+      "id": "R069",
+      "level": 3,
+      "title": "Семь разных уровней доказательства",
+      "text": "### Семь разных уровней доказательства\n\nНужно перестать использовать слово «проверено» для нескольких совершенно разных вещей.\n\n| Уровень | Что доказывает | Чего не доказывает |\n| --- | --- | --- |\n| Структура Figma | компоненты, переменные, варианты и Auto Layout собраны корректно | нативный рендеринг |\n| Рендеринг Figma | design выглядит как задумано | native APIs и accessibility |\n| Компиляция | исходный код принимает toolchain | поведение при выполнении |\n| Preview | представление или компонуемая функция способны отрисоваться в контексте предварительного просмотра | навигацию, поведение ОС, ввод на устройстве |\n| Симулятор или эмулятор | runtime работает в виртуальной ОС | физическое устройство, полный AT behavior |\n| Физическое устройство | реальное ввод, рендеринг и системное поведение на этом устройстве | все устройства |\n| Проверка человеком и с ассистивными технологиями | понятность и реальное использование | универсальную accessibility compliance |\n\nSwiftUI Preview официально предназначен для предварительного просмотра interfaces. Apple отдельно предоставляет запуск на simulated или physical device. Это разные режимы.\n\nТо же правило применяется к Compose Preview. Успешная preview не является evidence работы predictive back, IME, system bars или TalkBack на устройстве.\n\n"
+    },
+    {
+      "id": "R070",
+      "level": 3,
+      "title": "План проверки iOS",
+      "text": "### План проверки iOS\n\nДля начального task slice разумен ограниченный matrix.\n\n**Structure**\n\nПроверить Figma component identity, platform variant, variable references, component properties, Auto Layout и Code Connect mapping.\n\n**Build**\n\n```text\nXcode 27\nSwift 6.4\niOS 27 SDK\ndeployment target iOS 17+\n```\n\nОжидается clean compile и отсутствие availability violations.\n\n**OS runtime**\n\nКак минимум:\n\n```text\noldest supported iOS available to test\niOS 26\niOS 27\n```\n\nЭто позволяет увидеть pre-Liquid-Glass baseline, новую design generation и текущий OS behavior.\n\n**Appearance**\n\n```text\nLight\nDark\nIncrease Contrast\nReduce Motion\n```\n\nApple system colors и system materials сами имеют accessibility adaptations, что нужно проверить до добавления собственных overrides.\n\n**Text**\n\n```text\ndefault Dynamic Type\none large standard size\nlargest relevant accessibility sizes\nreal long Russian strings\n```\n\n**Layout**\n\nПроверить:\n\n```text\nsafe areas\nnavigation bars\nsheet/dialog placement\nkeyboard open and closed\nportrait\nrelevant adaptive/window sizes\n```\n\nApple продолжает развивать новые form factors и рекомендует опираться на size classes, layout margins и safe-area insets вместо жёсткого device detection.\n\n**Accessibility**\n\n```text\n44 pt interaction regions\nVoiceOver\nmeaningful labels\nreading order\nfocus order\ngesture alternatives\nIncrease Contrast\nReduce Motion\n```\n\nApple Accessibility Inspector умеет исследовать accessibility hierarchy и тестировать свойства интерфейса. Apple также требует фактического тестирования с accessibility settings и assistive technologies. [Accessibility Inspector](https://developer.apple.com/documentation/accessibility/accessibility-inspector) и [Performing accessibility testing](https://developer.apple.com/documentation/accessibility/performing-accessibility-testing-for-your-app) являются основными tools.\n\n**Localization**\n\nПроверить:\n\n```text\nEnglish\nRussian\nRTL locale\n```\n\nи отдельно long-content cases. Xcode UI automation может запускать test configurations для разных locales и system conditions.\n\n"
+    },
+    {
+      "id": "R071",
+      "level": 3,
+      "title": "План проверки Android",
+      "text": "### План проверки Android\n\n**Structure**\n\nПроверить Figma Android variants, semantic variable mapping и Code Connect template mapping.\n\n**Build**\n\nКонтекст этого отчёта:\n\n```text\nAndroid Studio Rabbit 1\nAGP 9.4.1\nKotlin 2.4.21\ncompileSdk 37\ntargetSdk 37\nCompose BOM 2026.09.00\nMaterial3 1.4.0\n```\n\n**Runtime OS**\n\nПри current target разумно включить:\n\n```text\nAPI 35 / Android 15\nAPI 36 / Android 16\nAPI 37 / Android 17\n```\n\nплюс фактический minimum supported API продукта.\n\nAndroid 15 важен как точка enforced edge-to-edge для target 35+. Android 16 удаляет opt-out для target 36. Android 17 является текущим API 37 target.\n\n**Navigation configuration**\n\nПроверить:\n\n```text\ngesture navigation\nthree-button navigation where supported\npredictive back\nback from editor\nback with unsaved input\nmodal dismissal\n```\n\nPredictive Back является runtime interaction, который нельзя доказать screenshot или Preview.\n\n**Insets**\n\nПроверить:\n\n```text\nstatus bar\ngesture navigation bar\nthree-button bar\ndisplay cutout where relevant\nIME\nFAB/bottom actions\nscrolling behind system bars\n```\n\nДля target 35+ это обязательная часть runtime compatibility.\n\n**Themes**\n\n```text\nLight\nDark\nDynamic Color on\nDynamic Color off\n```\n\nПоследние два нужны только если продукт разрешает Dynamic Color.\n\n**Text**\n\n```text\n100%\nlarge intermediate scale\n200%\nlong Russian strings\n```\n\nПри 200% нельзя просто ожидать линейное удвоение всех `sp`, поскольку Android использует nonlinear scaling.\n\n**Accessibility**\n\n```text\n48 dp touch targets\nTalkBack\nSwitch Access where relevant\ncontent descriptions\nrole/state semantics\nreading order\nfocus order\noutline/high contrast mode on supported OS\n```\n\nКомпоненты Material и Foundation в Compose приходят со встроенными semantics, а custom low-level components требуют их добавления вручную.\n\nCompose accessibility testing APIs могут автоматически обнаруживать часть проблем вроде отсутствующих labels, некоторых touch-target, contrast и traversal issues. Google при этом прямо рекомендует manual testing с TalkBack и другими services. [Test your app's accessibility](https://developer.android.com/guide/topics/ui/accessibility/testing) описывает обе стороны.\n\n**RTL и локализация**\n\n```text\nRussian\nar-XB pseudolocale\none real RTL locale\n```\n\nPseudolocale полезна для geometry и mirroring, но не заменяет linguistic review.\n\n"
+    },
+    {
+      "id": "R072",
+      "level": 3,
+      "title": "Что автоматизация принципиально не закрывает",
+      "text": "### Что автоматизация принципиально не закрывает\n\nАвтоматический test может доказать, что:\n\n```text\nnode exists\nlabel exists\nscreen opens\nbutton is tappable\na semantic action fires\ncontrast rule is violated in detected configuration\n```\n\nОн намного хуже отвечает на:\n\n```text\nпонятно ли человеку, что произойдёт\nправильно ли выбран native pattern\nне потерялся ли характер concept\nне слишком ли опасное действие визуально dominant\nестественно ли ощущается back/dismiss\nпонятен ли длинный русский перевод\nправильный ли reading experience у VoiceOver/TalkBack\n```\n\nПоэтому конечная acceptance gate должна содержать и native runtime, и человека.\n\n"
+    },
+    {
+      "id": "R073",
+      "level": 3,
+      "title": "Требования к окружению и учётным записям",
+      "text": "### Требования к окружению и учётным записям\n\n**iOS**\n\nПотребуются Mac, совместимый с Xcode 27, macOS Tahoe 26.6+, соответствующие simulator runtimes и физическое Apple-устройство для device checks. Для device signing и distribution нужны соответствующие team credentials. Публикация в App Store не входит в это исследование.\n\n**Android**\n\nПотребуются Android Studio, Android SDK/API images, emulator или физическое Android-устройство с debugging access. Play Console не требуется для обычной локальной проверки и в исследовании не использовался.\n\n**Figma**\n\nДля Code Connect UI нужен опубликованный library component и подходящая Dev или Full seat на Professional, Organization или Enterprise. GitHub connection опционален. GitHub Enterprise Server текущей Code Connect UI integration не поддерживается. [Code Connect UI setup](https://developers.figma.com/docs/code-connect/code-connect-ui-setup/) и [GitHub integration](https://developers.figma.com/docs/code-connect/code-connect-ui-github/) описывают prerequisites.\n\nДля write-to-canvas требуется edit access к Figma file. В данном исследовании он не использовался.\n\n"
+    },
+    {
+      "id": "R074",
+      "level": 3,
+      "title": "Карта требований, ответов и пробелов",
+      "text": "### Карта требований, ответов и пробелов\n\n| Требование исследования | Где закрыто | Статус и пробел |\n| --- | --- | --- |\n| Текущие Apple design resources | раздел о переиспользовании | закрыто, iOS 27 kit и SF Symbols 27 проверены |\n| Текущие Android design resources | раздел о переиспользовании | закрыто, Material 3 kit и Compose library проверены |\n| Отличить Figma kit от executable component | переиспользование, Code Connect | закрыто |\n| Лицензии | переиспользование | закрыто на уровне официальных terms, не юридическое заключение |\n| Нативные элементы управления против тематизированные или собственные | переиспользование | закрыто |\n| Актуальные визуальные соглашения Apple | Liquid Glass | закрыто, не превращено в минимальную целевую версию |\n| Актуальные соглашения Material | Material 3 / Expressive | закрыто, Expressive не объявлен обязательным |\n| ОС, SDK и инструменты разделены | фиксация версий | закрыто |\n| Общее семантическое намерение | общий контракт | закрыто |\n| Пункты, dp, sp, физические пиксели | единицы измерения | закрыто |\n| Отличие геометрии Figma | единицы измерения | закрыто как правило рабочего процесса, не физическая единица |\n| Dynamic Type | типографика и проверка | закрыто |\n| Масштабирование шрифта Android | типографика и проверка | закрыто, включая нелинейное масштабирование 200% |\n| Светлая и тёмная темы | themes и validation | закрыто |\n| Системные цвета и темы | общий контракт | закрыто |\n| Безопасные области и системные отступы | компоновка | закрыто |\n| Edge-to-edge | Android | закрыто |\n| Клавиатура | компоновка | закрыто |\n| Доступность | contracts и validation | закрыто |\n| Длинный русский текст | localization и разобранный пример | закрыто |\n| Increased Contrast | доступность | закрыто |\n| Уменьшение движения | доступность | закрыто, различия платформ сохранены |\n| RTL | локализация | закрыто |\n| Navigation/возврат и закрытие | таблица поведения | закрыто |\n| Листы и диалоги | таблица поведения | закрыто |\n| Выбор и формы | таблица поведения | закрыто с представительной глубиной |\n| Разрушительные действия | поведение и пример | закрыто |\n| Загрузка и ошибка | behavior | закрыто на системном уровне |\n| Gestures | поведение и доступность | закрыто |\n| Соглашение платформы и выбор создателя | поведение и точки согласования | закрыто |\n| Основной маршрут SwiftUI | реализация | закрыто |\n| Основной маршрут Compose | реализация | закрыто |\n| UIKit/View interop | реализация | закрыто |\n| Тонкие обёртки | реализация | закрыто |\n| Отображение токенов в ресурсы | реализация | предварительно, foundation report отсутствует |\n| Владение состоянием | реализация | закрыто |\n| Генерация и ручное написание кода | реализация | закрыто |\n| Преобразования с потерями | реализация | закрыто |\n| Сохранение ручных правок | контракт обновлений | предложенный процесс, не испытан |\n| Фиксация версий | реализация | закрыто для примеров |\n| Межплатформенная альтернатива | разобранный пример/growth | закрыто условно |\n| Обнаружение и переиспользование агентом | workflow | закрыто |\n| Текущая поддержка связей со SwiftUI | раздел Figma | закрыто документально |\n| Текущая поддержка связей с Compose | раздел Figma | Code Connect подтверждён |\n| Отдельный навык MCP для Compose | раздел Figma | **gap**, в опубликованном списке не найден |\n| Допущения об инструментах, ориентированных на React | раздел Figma | закрыто, web capture исключён как native evidence |\n| Идемпотентность | контракт агента | предложено, не испытано |\n| Стабильные идентичности | контракт агента | предложено |\n| Прерванные записи | recovery | предложено |\n| Устаревшие соответствия | recovery | закрыто как failure class |\n| Конфликтующие ручные правки | recovery | предложено |\n| обновления ОС и библиотеки | migration | закрыто процедурно |\n| Рост продукта | пример Projects | продемонстрировано концептуально |\n| Общее семантическое изменение | обновление цвета | продемонстрировано концептуально |\n| Компонент одной платформы | Android FAB | продемонстрировано концептуально |\n| Единый фасад и платформенные API | раздел роста | закрыто |\n| Проверка структуры Figma | проверка | закрыто процедурно |\n| Компиляция | проверка | план есть, **не выполнена** |\n| Preview | проверка | план есть, **не выполнен** |\n| Симулятор или эмулятор | проверка | план есть, **не выполнен** |\n| Физическое устройство | проверка | план есть, **не выполнен** |\n| Проверки доступности на устройстве | проверка | план есть, **не выполнен** |\n| Понимание человеком | проверка | обязательный gate, **не выполнен** |\n| Роли общей основы | весь отчёт | **gap**, foundation report не был предоставлен |\n| Точная ревизия набора Material для Figma | ресурсы | **gap**, primary landing surface не даёт стабильный semver. При импорте нужно фиксировать файл и дата ревизии |\n| Эмпирическая надёжность агента | весь отчёт | **не доказано** |\n| Эмпирическая экономия усилий | весь отчёт | **не доказано** |\n\n"
+    },
+    {
+      "id": "R075",
+      "level": 3,
+      "title": "Рекомендация и условия её изменения",
+      "text": "### Рекомендация и условия её изменения\n\nБазовая рекомендация остаётся:\n\n> **Одна семантическая продуктовая система, две нативные реализации. Figma сохраняет общий intent и платформенные variants. SwiftUI и Compose остаются владельцами platform behavior. Agent соединяет эти слои через stable identities и explicit mappings, а не через повторное визуальное угадывание.**\n\nПредпочтительная начальная архитектура:\n\n```text\nShared semantic contract\n├── iOS Figma definitions\n│   └── SwiftUI implementation\n│       └── UIKit only where necessary\n└── Android Figma definitions\n    └── Compose implementation\n        └── Views only where necessary\n```\n\nCode Connect template mappings располагаются между design и implementation, но не заменяют implementation.\n\nРекомендация изменится при одном из следующих условий:\n\n| Условие | Возможное изменение |\n| --- | --- |\n| Foundation report задаёт другой authoritative token model | заменить предварительные mappings на его точные roles |\n| Продукт сознательно выбирает Compose Multiplatform UI | потребуется отдельное исследование iOS fidelity и native interop |\n| Минимальная iOS версия становится iOS 26+ | можно шире использовать новые Liquid Glass APIs |\n| Android product policy делает Dynamic Color обязательным | semantic color architecture должна учитывать system-derived schemes |\n| В существующей кодовой базе уже есть зрелая дизайн-система на UIKit или Views | постепенное внедрение совместимости может быть лучше переписывания |\n| Visual concept требует уникального interaction, которого нет в native component | custom control становится оправданным после accessibility и maintenance assessment |\n| Figma Professional plan используется для dual-native Code Connect | workflow должен явно переключать active framework либо plan должен измениться |\n| Figma добавит полноценный Compose-specific bidirectional skill | часть custom agent mapping procedure можно пересмотреть |\n| Runtime testing выявит platform conflict | design contract должен адаптироваться, даже если Figma был формально корректен |\n\n"
+    },
+    {
+      "id": "R076",
+      "level": 3,
+      "title": "Границы переноса",
+      "text": "### Границы переноса\n\nЭти выводы непосредственно относятся к **нативным iOS и Android app interfaces**.\n\nОни не переносятся автоматически на:\n\n```text\nweb\nReact\nReact Native\nFlutter\ndesktop\nwatchOS\nWear OS\nvisionOS\nCompose Multiplatform iOS UI\n```\n\nShared semantic contracts можно перенести как концепцию. Конкретные controls, navigation, units, accessibility boundaries и agent mappings нужно исследовать для target отдельно.\n\nОсобенно важно: ни Figma web capture, ни React-oriented codegen, ни красивый generated screenshot не являются доказательством SwiftUI или Compose readiness.\n\nНаконец, worked example демонстрирует **согласованность архитектурного подхода**, а не production reliability. Без compilation, device execution, accessibility testing и creator review нельзя утверждать, что пример готов к выпуску.\n\n"
+    },
+    {
+      "id": "R077",
+      "level": 2,
+      "title": "Источники",
+      "text": "## Источники\n\n**Статус источников:** сохранены исходные именованные ссылки — 105. В разделе источников после очистки остаются 57 ссылок. Вместо 7 экспортных маркеров восстановлены ссылки на открытые источники. Для 125 маркеров точное соответствие источнику не восстановлено, в том числе там, где рядом уже есть именованная ссылка. Утверждения при этих маркерах сохранены без реконструированной ссылки. Слой источников неполон: это структурно обработанная заметка, а не заново проверенное исследование.\n\n\n",
+      "readingContext": {
+        "kind": "sources",
+        "note": "Retained source bibliography or citation status. Not independently exhaustive verification."
+      }
+    },
+    {
+      "id": "R078",
+      "level": 3,
+      "title": "Apple: дизайн и ресурсы",
+      "text": "### Apple: дизайн и ресурсы\n\n- [Apple Design Resources](https://developer.apple.com/design/resources/) — актуальные iOS/iPadOS UI kits и SF Symbols.\n- [Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines) — базовые platform conventions.\n- [Buttons](https://developer.apple.com/design/human-interface-guidelines/buttons) — system buttons и destructive roles.\n- [Sheets](https://developer.apple.com/design/human-interface-guidelines/sheets) — modal task presentation.\n- [Alerts](https://developer.apple.com/design/human-interface-guidelines/alerts) — confirmation и destructive guidance.\n- [Color](https://developer.apple.com/design/human-interface-guidelines/color) — semantic system colors и accessibility adaptation.\n- [Layout](https://developer.apple.com/design/human-interface-guidelines/layout) — safe layout и localization-sensitive geometry.\n- [Right to left](https://developer.apple.com/design/human-interface-guidelines/right-to-left) — автоматическая RTL adaptation системных UI frameworks.\n- [Accessibility](https://developer.apple.com/design/human-interface-guidelines/accessibility) — touch, text, contrast и assistive behavior.\n- [Progress indicators](https://developer.apple.com/design/human-interface-guidelines/progress-indicators) — соглашения загрузки и прогресса.\n- [Apple Design Resources License](https://developer.apple.com/support/downloads/terms/apple-design-resources/Apple-Design-Resources-License-20230621-English.pdf) — ограничения design-resource reuse.\n- [Apple Fonts](https://developer.apple.com/fonts/) — SF font resources и отдельные licensing terms.\n\n",
+      "readingContext": {
+        "kind": "sources",
+        "note": "Retained source bibliography or citation status. Not independently exhaustive verification."
+      }
+    },
+    {
+      "id": "R079",
+      "level": 3,
+      "title": "Apple: реализация и проверка",
+      "text": "### Apple: реализация и проверка\n\n- [Xcode Support](https://developer.apple.com/support/xcode/) — Xcode 27, Swift 6.4, SDKs, deployment support и macOS requirements.\n- [Interfacing with UIKit](https://developer.apple.com/tutorials/swiftui/interfacing-with-uikit) — UIKit внутри SwiftUI.\n- [UIKit integration](https://developer.apple.com/documentation/swiftui/uikit-integration) — SwiftUI/UIKit coexistence.\n- [SwiftUI State](https://developer.apple.com/documentation/swiftui/state) — local source-of-truth semantics.\n- [Observable migration](https://developer.apple.com/documentation/swiftui/migrating-from-the-observable-object-protocol-to-the-observable-macro) — current Observation model.\n- [Accessibility Inspector](https://developer.apple.com/documentation/accessibility/accessibility-inspector) — inspection и accessibility testing.\n- [Performing accessibility testing](https://developer.apple.com/documentation/accessibility/performing-accessibility-testing-for-your-app) — необходимость assistive-technology checks.\n- [Xcode UI automation](https://developer.apple.com/videos/play/wwdc2025/344/) — locales, device types и system-condition test configurations.\n- [Running on simulated or physical devices](https://developer.apple.com/documentation/xcode/running-your-app-on-simulated-or-physical-devices) — отличие Preview от runtime.\n\n",
+      "readingContext": {
+        "kind": "sources",
+        "note": "Retained source bibliography or citation status. Not independently exhaustive verification."
+      }
+    },
+    {
+      "id": "R080",
+      "level": 3,
+      "title": "Android: дизайн и реализация",
+      "text": "### Android: дизайн и реализация\n\n- [Material Design 3 in Compose](https://developer.android.com/develop/ui/compose/designsystems/material3) — MaterialTheme, ColorScheme, Typography и Material 3 Expressive.\n- [Compose BOM mapping](https://developer.android.com/develop/ui/compose/bom/bom-mapping) — версии Compose и Material 3.\n- [Compose Material 3 releases](https://developer.android.com/jetpack/androidx/releases/compose-material3) — текущая библиотека Material 3.\n- [State hoisting](https://developer.android.com/develop/ui/compose/state-hoisting) — state ownership.\n- [State and Jetpack Compose](https://developer.android.com/develop/ui/compose/state) — stateless component contract.\n- [Compose interoperability APIs](https://developer.android.com/develop/ui/compose/migrate/interoperability-apis) — Compose и Views.\n- [Views in Compose](https://developer.android.com/develop/ui/compose/migrate/interoperability-apis/views-in-compose) — `AndroidView` и migration guidance.\n- [AlertDialog](https://developer.android.com/develop/ui/compose/components/dialog) — native Material dialog API. [Jetpack Compose — Dialog](https://developer.android.com/develop/ui/compose/components/dialog)\n- [Bottom sheets](https://developer.android.com/develop/ui/compose/components/bottom-sheets) — Compose sheet behavior.\n- [Progress indicators](https://developer.android.com/develop/ui/compose/components/progress) — loading state components.\n- [Snackbar](https://developer.android.com/develop/ui/compose/components/snackbar) — transient feedback.\n\n",
+      "readingContext": {
+        "kind": "sources",
+        "note": "Retained source bibliography or citation status. Not independently exhaustive verification."
+      }
+    },
+    {
+      "id": "R081",
+      "level": 3,
+      "title": "Android: поведение платформы и доступность",
+      "text": "### Android: поведение платформы и доступность\n\n- [Edge-to-edge in Compose](https://developer.android.com/develop/ui/compose/system/setup-e2e) — Android 15+ edge-to-edge enforcement.\n- [Window insets](https://developer.android.com/develop/ui/compose/system/insets) — system bars, gestures и inset handling.\n- [Android 16 behavior changes](https://developer.android.com/about/versions/16/behavior-changes-16) — удаление edge-to-edge opt-out.\n- [Predictive back](https://developer.android.com/develop/ui/compose/system/predictive-back) — системная back navigation.\n- [Predictive back setup](https://developer.android.com/develop/ui/compose/system/predictive-back-setup) — Navigation Compose integration.\n- [Navigation 3](https://developer.android.com/guide/navigation/navigation-3) — современная Compose-centric navigation.\n- [Localization](https://developer.android.com/guide/topics/resources/localization) — locale resources.\n- [Pseudolocales](https://developer.android.com/guide/topics/resources/pseudolocales) — expansion и RTL testing.\n- [Android 16 features](https://developer.android.com/about/versions/16/features) — outline text / high-contrast changes.\n- [Compose UI releases](https://developer.android.com/jetpack/androidx/releases/compose-ui) — nonlinear font scaling и animation behavior.\n\n",
+      "readingContext": {
+        "kind": "sources",
+        "note": "Retained source bibliography or citation status. Not independently exhaustive verification."
+      }
+    },
+    {
+      "id": "R082",
+      "level": 3,
+      "title": "Android: инструменты разработки",
+      "text": "### Android: инструменты разработки\n\n- [Android Studio releases](https://developer.android.com/studio/releases) — Rabbit 1, AGP compatibility и API support.\n- [AGP 9.4.1 release record](https://developer.android.com/studio/releases/fixed-bugs/studio/2026.1.4) — AGP patch version.\n- [Kotlin releases](https://kotlinlang.org/docs/releases.html) — Kotlin 2.4.21.\n\n",
+      "readingContext": {
+        "kind": "sources",
+        "note": "Retained source bibliography or citation status. Not independently exhaustive verification."
+      }
+    },
+    {
+      "id": "R083",
+      "level": 3,
+      "title": "Figma и интеграция с агентом",
+      "text": "### Figma и интеграция с агентом\n\n- [Figma Code Connect](https://help.figma.com/hc/en-us/articles/23920389749655-Code-Connect) — one-to-many mappings, CLI/UI distinction и Professional plan constraints.\n- [Code Connect UI setup](https://developers.figma.com/docs/code-connect/code-connect-ui-setup/) — library requirements и multi-framework mapping.\n- [Migration from parsers to template files](https://developers.figma.com/docs/code-connect/templates-migration-guide/) — прекращение active maintenance framework parsers с 17 августа 2026. [Code Connect — Migrating from parsers to template files](https://developers.figma.com/docs/code-connect/templates-migration-guide/)\n- [Figma skills for MCP](https://help.figma.com/hc/en-us/articles/39166810751895-Figma-skills-for-MCP) — `figma-use`, `figma-swiftui`, `figma-code-connect` и requirements.\n- [Figma MCP tools and prompts](https://developers.figma.com/docs/figma-mcp-server/tools-and-prompts/) — write-to-canvas и web-only live UI capture distinction.\n- [Code Connect GitHub integration](https://developers.figma.com/docs/code-connect/code-connect-ui-github/) — optional GitHub mapping и отсутствие GHES support.\n- [Figma Dev Mode](https://help.figma.com/hc/en-us/articles/15023124644247-Guide-to-Dev-Mode-in-Figma) — component properties, metadata и Code Connect context.\n\n",
+      "readingContext": {
+        "kind": "sources",
+        "note": "Retained source bibliography or citation status. Not independently exhaustive verification."
+      }
+    },
+    {
+      "id": "R084",
+      "level": 3,
+      "title": "Межплатформенная альтернатива",
+      "text": "### Межплатформенная альтернатива\n\n- [Kotlin Multiplatform: native UI with shared logic](https://kotlinlang.org/docs/multiplatform/multiplatform-upgrade-app.html) — shared logic с отдельными native UIs.\n- [Kotlin Multiplatform FAQ](https://kotlinlang.org/docs/multiplatform/faq.html) — status Compose Multiplatform на Android и iOS.\n- [Recommended KMP IDEs](https://kotlinlang.org/docs/multiplatform/recommended-ides.html) — Android Studio/IntelliJ и Xcode requirement для iOS target.\n",
+      "readingContext": {
+        "kind": "sources",
+        "note": "Retained source bibliography or citation status. Not independently exhaustive verification."
+      }
+    }
+  ]
+}

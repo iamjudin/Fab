@@ -3,19 +3,32 @@
 Read when organizing content, actions, ownership, navigation and return context
 from known behavior. [Preserved source](product-structure.full.json).
 
-## Knowledge and limits
+## Current meanings
 
-- Information organization, surface ownership, navigation and task sequence are
-  different views. Several tasks can share a surface, and one task can cross many.
-- Organize access using frequency, importance, urgency and context. Inferred
-  frequency remains a hypothesis. Screen-per-use-case is not a general default.
-- Distinguish composition from navigation. A surface contains information and
-  controls, while an action opens a context with an outcome and a return path.
-- Test significant task paths against an early structural hypothesis. Include
-  relevant cancellation, alternate entry and unfinished work before committing
-  to detailed presentation. Structure and scenarios constrain each other.
-- Keep identity and meaning consistent across views. A changed structural choice
-  needs affected-path review. Valid geometry does not prove usability or completeness.
+Use the [current knowledge reader](../../skills/research/scripts/knowledge_view.py)
+with `--query "структура продукта"` or `--query "контекст вызова"`, then read
+the relevant unit and its conditions/related meanings:
+
+| Question | Current unit |
+| --- | --- |
+| Organization, composition, navigation and task paths | `product-projections` |
+| Caller context, cancellation and alternate return | `product-continuation` |
+| Included/excluded/unresolved scope and useful increments | `slice-boundary` |
+| Evidence sufficient for the next decision | `coverage-sufficiency` |
+| Access, root, roles and addressability | `navigation-access` |
+| Grouping/findability and task probes | `structure-evaluation` |
+
+These meanings replace the working summary formerly kept here. The reader owns
+their current body, exceptions and checked source receipts; the application owner
+below still owns actual output and workflow.
+
+## Source reconciliation boundary
+
+All44sections now have reviewed dispositions.
+Reusable knowledge is reconciled with shared mobile, behavior, evidence and
+coverage owners. Historical stages, map/record templates, fixed probe counts,
+worked examples and bibliography remain qualified reference. Current meanings
+replace their working summaries without importing a new pipeline.
 
 ## Application in current Fab
 

@@ -3,24 +3,30 @@
 Read when paid value, pricing model, trial, payment or access lifecycle is part of
 the actual question. [Preserved source](monetization.full.json).
 
-## Knowledge and limits
+## Current meanings
 
-- Consider value recurrence, use rhythm, cost to serve, obligations, segment and
-  alternatives. Free, one-off, recurring, usage-based and hybrid models can fit
-  different conditions. SaaS is a delivery model, freemium a free/paid boundary.
-- Identify the value unit and who pays. The paying actor may differ from the user.
-  No method establishes an optimal price, compulsory tiers or proven demand.
-- Trial is optional. If used, specify the uncertainty it reduces, its start,
-  payment conditions, expiry and alternative ways to assess value.
-- Offer timing depends on context, value and model. Refusal should preserve agreed
-  work and return context. No universally best first-screen paywall follows.
-- A payment attempt and entitlement are different. For actual async payments,
-  distinguish pending, rejection, success and unknown result. A timeout does not
-  justify a duplicate charge. Review restoration, expiry, revocation and plan
-  change only when applicable to the chosen model.
-- Explain reading, editing, export and retention after access changes. Assess
-  service cost and retention/refunds as well as conversion. Benchmarks and
-  correlations do not establish a causal effect or validated pricing choice.
+Use the [current knowledge reader](../../skills/research/scripts/knowledge_view.py)
+with `--query "модель монетизации"`, `--query "платная граница"`,
+`--query "пробный доступ"`, `--query "момент предложения"`,
+`--query "платёж и доступ"` or `--query "актуальность внешних правил"`.
+Read selected bodies and necessary qualifications. Follow relevant associations
+explicitly rather than preloading every neighboring topic.
+
+| Question | Current unit |
+| --- | --- |
+| Payer, recurring value, costs and revenue mechanism | `commercial-model` |
+| Charge unit, coherent free result and downgrade consequences | `paid-boundary` |
+| Trial purpose, allowance, timing, commitment and expiry | `trial-purpose` |
+| Offer entry, contextual trigger, repetition and refusal | `offer-context` |
+| Transaction versus access, restore and work after access changes | `entitlement-lifecycle` |
+| Dated provider/storefront/jurisdiction applicability | `external-rule-freshness` |
+| Funnel, paid value, costs, guardrails and evidence strength | `goal-signal-metric` |
+| Shared uncertainty/retry and actual implementation evidence | `operation-outcome`, `external-capability-evidence` |
+
+All68sections have reviewed dispositions. Migrated working summaries are removed
+here. Economic examples and model diagrams, provider schemas, historical process
+proposals, dated legal rules and bibliography remain qualified reference,
+not competing current guidance or an automatically required workflow.
 
 ## Application in current Fab
 
@@ -33,12 +39,14 @@ or mandatory sequence. Apply only what the current request actually needs.
 
 ## Deeper reading and freshness
 
-R003–R009 concern value/economics, R010–R016 trial and offers, R017–R040 payment,
+R003–R009 concern value/economics. R010–R016 trial and offers, R017–R040 payment,
 access and evidence. Marked mixed sections contain local terms or recommendations.
-R041–R054 contain dated legal/platform material. Verify jurisdiction, storefront,
-processor and SDK against current primary sources before consequential use.
-R061–R068 preserve sources. Four EUR-Lex export bindings remain unresolved.
+R041–R054 contain dated legal/platform material. R055–R060 preserve historical
+application and refresh suggestions. R061–R068 preserve sources.
+Verify jurisdiction, storefront, processor and SDK against current primary sources
+before consequential use. Four EUR-Lex export bindings remain unresolved.
 
-A purchase/entitlement distinction was spot-checked, not all economic/legal claims.
-Refresh on changed value, cost, audience, platform or jurisdiction. Never turn the
-historical legal snapshot into permanent policy.
+A purchase/entitlement distinction was spot-checked at intake, not all economic
+or legal claims. This source reconciliation does not freshly verify them.
+Refresh when the actual value, cost, audience, platform or jurisdiction changes.
+Never turn the historical legal snapshot into permanent policy.

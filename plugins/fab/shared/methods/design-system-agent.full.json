@@ -1,0 +1,821 @@
+{
+  "schemaVersion": 1,
+  "scope": "global-method",
+  "title": "Дизайн-система с AI-агентом — от концепта к развитию продукта",
+  "sourceSha256": "9fe42c1322b5aba96f47450852151ff8ec93bf34746015a04c6ea704bdd6eef6",
+  "sourceDate": "2026-10-21",
+  "ingestedAt": "2026-10-22",
+  "authority": "source-material-not-runtime-instructions",
+  "validation": {
+    "structure": "lossless sections; explicit exclusions",
+    "claims": "not exhaustively fact-checked"
+  },
+  "retainedSha256": "9fe42c1322b5aba96f47450852151ff8ec93bf34746015a04c6ea704bdd6eef6",
+  "excluded": [],
+  "sections": [
+    {
+      "id": "R001",
+      "level": 0,
+      "title": "Preamble",
+      "text": "---\ntags:\n  - bookworm/research\n---\n\n"
+    },
+    {
+      "id": "R002",
+      "level": 2,
+      "title": "Содержание",
+      "text": "## Содержание\n\n- [[#Ориентация и решение|Ориентация и решение]]\n- [[#Архитектура и границы роста|Архитектура и границы роста]]\n- [[#От концепта к правилам, токенам и именам|От концепта к правилам, токенам и именам]]\n- [[#Ответственность Figma, кода и агента|Ответственность Figma, кода и агента]]\n- [[#Синтетический путь от концепта к системе|Синтетический путь от концепта к системе]]\n- [[#Проверка работоспособности, роста и надёжности|Проверка работоспособности, роста и надёжности]]\n- [[#Источники|Источники]]\n\n**Дата отчёта:** 21 октября 2026 года\n**Дата задания:** 16 октября 2026 года\n**Область:** общая архитектура дизайн-системы, токены и именование, Figma ↔ код, агентная работа с Figma, проверка работоспособности и границы масштабирования\n**За пределами отчёта:** подробная реализация web-компонентов, SwiftUI-компонентов и Android-компонентов. Здесь рассматриваются только архитектурные решения, которые на них влияют.\n\n**Зафиксированные версии и срезы:** DTCG Format, Color и Resolver `2025.10`. Style Dictionary `5.7.0` как последний найденный релиз на дату исследования, при этом документация самого Style Dictionary всё ещё предупреждает о неполной поддержке DTCG 2025.10. Figma MCP, Plugin API, REST API и Code Connect проверены по текущей документации 21 октября 2026 года. Репозитории Primer и Spectrum, где отдельно не указано иное, рассматриваются по состоянию `main` на дату исследования и поэтому являются движущимися примерами, а не зафиксированными исполняемыми ревизиями.\n\n**Навигация:** [ориентация и решение](#ориентация-и-решение) · [архитектура и границы роста](#архитектура-и-границы-роста) · [концепт, токены и имена](#от-концепта-к-правилам-токенам-и-именам) · [Figma, код и агент](#ответственность-figma-кода-и-агента) · [синтетический пример](#синтетический-путь-от-концепта-к-системе) · [валидация](#проверка-работоспособности-роста-и-надёжности) · [источники и пробелы](#источники)\n\n",
+      "readingContext": {
+        "kind": "navigation",
+        "note": "Navigation from the supplied report."
+      }
+    },
+    {
+      "id": "R003",
+      "level": 2,
+      "title": "Ориентация и решение",
+      "text": "## Ориентация и решение\n\n"
+    },
+    {
+      "id": "R004",
+      "level": 3,
+      "title": "Полезный ответ",
+      "text": "### Полезный ответ\n\nДля индивидуального автора, который работает вместе с AI-агентом, **минимальная достаточная архитектура — не огромная библиотека компонентов и не набор оформленных экранов**. Нужен небольшой, но связанный набор артефактов с явным владением:\n\n| Артефакт | Что в нём является авторитетным |\n| --- | --- |\n| Визуальное направление | Одобренный характер продукта, визуальные принципы и существенные ограничения |\n| Семантические токены | Значение дизайнерских ролей и их связь с примитивами |\n| Figma-компоненты | Визуальная композиция, варианты, свойства, layout-контракт, редактируемые экземпляры |\n| Кодовые компоненты | Исполняемое поведение, состояние, accessibility API и платформенные соглашения |\n| Паттерны | Правила композиции нескольких компонентов для повторяемой продуктовой задачи |\n| Реестр соответствий | Связи `token ↔ Figma variable/style ↔ code identifier` и `Figma component ↔ code component` |\n| Проверки | Структурные, визуальные, поведенческие, accessibility и миграционные пробы |\n\nЭто не требует полноценной корпоративной инфраструктуры. Но **каждая сущность должна иметь одного владельца смысла**, а не два равноправных источника истины, синхронизируемых «как получится». DTCG формализует токены как переносимый формат, Figma разделяет variables, styles и components как разные объекты, а Code Connect отдельно задаёт соответствие Figma-компонента его кодовому воплощению. Эти механизмы не образуют автоматическую двустороннюю синхронизацию сами по себе. [DTCG Format 2025.10](https://www.designtokens.org/tr/2025.10/format/)\n\n**Рекомендуемая исходная архитектура** — shared semantic contract с раздельным владением:\n\n`intent → approved direction → semantic tokens → Figma components / platform components → patterns → product compositions`\n\nПри этом:\n\n- токен отвечает за **решение**, например `color/fg/danger`\n- Figma Variable отвечает за применение такого решения внутри Figma\n- Text Style или отдельные привязанные variables отвечают за типографическое представление\n- Figma component задаёт дизайн API\n- кодовый компонент задаёт runtime API и поведение\n- Code Connect или собственный mapping-файл связывает дизайн и код\n- platform adapter разрешает общую семантику в значения и поведение конкретной платформы\n\nТакой подход сохраняет возможность роста до нескольких продуктов, брендов и платформ, не заставляя одиночного автора начинать с registry-сервиса, CI для десятка пакетов или governance-комитета. Это архитектурный вывод из того, что DTCG предоставляет межинструментальный формат, Figma имеет отдельные сущности Variables, Styles, Components и mappings, а крупные системы вроде Spectrum и Primer также разделяют базовые данные, семантические роли и platform consumption.\n\n"
+    },
+    {
+      "id": "R005",
+      "level": 3,
+      "title": "Что строить первым",
+      "text": "### Что строить первым\n\nПервый **рабочий вертикальный срез** должен состоять не из «всех будущих компонентов», а из:\n\n1. одного одобренного визуального направления\n2. нескольких примитивов только там, где повторяемость уже обоснована\n3. небольшого набора семантических токенов\n4. одного или двух повторяемых controls\n5. одного составного product pattern\n6. нескольких связанных экземпляров, а не визуально похожих копий\n7. реализации того же среза в коде\n8. минимального mapping-реестра\n9. набора разрушительных для гипотезы проверок\n\nТакой pilot-first подход соответствует исходной идее Atomic Design Брэдa Фроста, где atomic design описан как ментальная модель одновременного рассмотрения целого и частей, а не как обязательный линейный production pipeline. Фрост отдельно подчёркивает возможность адаптировать терминологию и начинать с пилота, который доказывает полезность системы до разрастания governance. [Atomic Design Methodology](https://atomicdesign.bradfrost.com/chapter-2/)\n\n"
+    },
+    {
+      "id": "R006",
+      "level": 3,
+      "title": "Главный предел доказательств",
+      "text": "### Главный предел доказательств\n\nЭтот отчёт **не доказывает**, что AI-агент способен автономно создать и затем годами поддерживать такую систему. Текущая Figma документирует реальный write-capability через remote MCP `use_figma`, включая создание и изменение variables, components, variants, styles, frames и Auto Layout. Одновременно функция остаётся beta, Figma рекомендует сначала работать с копией или draft и прямо предупреждает, что результат может требовать ручной правки. [Figma MCP FAQ: Write to canvas](https://help.figma.com/hc/en-us/articles/39252411778583-Figma-MCP-server-FAQs)\n\nВ рамках этого исследования:\n\n| Статус | Что означает | Результат здесь |\n| --- | --- | --- |\n| **Документировано** | Возможность или правило прямо заявлены первичным источником | Основная часть API, DTCG и platform claims |\n| **Выведено** | Архитектурный вывод из нескольких документированных механизмов | Рекомендуемая ownership-архитектура, idempotency contract, growth triggers |\n| **Локально наблюдено** | Операция реально выполнена в контролируемом окружении | **Нет** |\n| **Не проверено** | Нужен живой Figma-файл, исполняемый код или пользовательский тест | Все end-to-end Figma writes, recovery, native execution, долгосрочный maintenance |\n\nНи одна Figma-мутация в этом исследовании не выполнялась. SwiftUI, Android и web-код не запускались. DTCG-примеры ниже сверены с синтаксисом спецификации, но не прогонялись через production token resolver. Следовательно, здесь исследована **архитектурная состоятельность и документированная техническая возможность**, а не доказана автономная эксплуатационная надёжность.\n\n"
+    },
+    {
+      "id": "R007",
+      "level": 3,
+      "title": "Уточнённый критерий рабочей системы",
+      "text": "### Уточнённый критерий рабочей системы\n\nПредложенный в задании критерий в основном выдерживает проверку. Я бы добавил два условия.\n\n**Рабочая система существует, если одновременно выполняется следующее:**\n\n- представительная часть интерфейса построена из связанных shared definitions\n- дизайнерские роли имеют устойчивую семантическую идентичность, а не только одинаковые значения\n- Figma representation и code representation имеют явное соответствие и определённого владельца каждого типа решения\n- состояния, content variation, тема и контекст и accessibility входят в контракт, а не добавляются после «готового UI»\n- изменение owning definition распространяется предсказуемо либо вызывает явную миграцию\n- новая предметная область может использовать core или расширить его без копирования\n- агент перед записью обнаруживает существующие объекты и ограничивает область изменения\n- повторный запуск не создаёт второй эквивалент той же сущности\n- конфликт, незавершённая запись и устаревший идентификатор обнаруживаются и сообщаются\n- система имеет способ проверить результат не только структурно, но также через rendering и реальное поведение\n\nПоследние три пункта нужны, потому что документированная возможность «создать component» ещё не говорит ничего о повторном запуске, interruption recovery или конфликте с ручной правкой. Это **выведенные требования к надёжности**, а не гарантированные свойства Figma MCP.\n\n"
+    },
+    {
+      "id": "R008",
+      "level": 2,
+      "title": "Архитектура и границы роста",
+      "text": "## Архитектура и границы роста\n\n"
+    },
+    {
+      "id": "R009",
+      "level": 3,
+      "title": "Что является дизайн-системой, а что нет",
+      "text": "### Что является дизайн-системой, а что нет\n\nТермины полезно развести, потому что агент иначе легко превращает любое визуальное повторение в «design system».\n\n| Уровень | Содержит | Сам по себе недостаточен потому, что |\n| --- | --- | --- |\n| **Визуальный язык** | характер, пропорции, цветовые отношения, типографический голос, движение | Не задаёт reusable API |\n| **Руководство по стилю** | документированные правила применения | Может существовать без исполняемых shared definitions |\n| **Tokens** | именованные решения и ссылки между ними | Не описывают структуру и поведение компонентов |\n| **Библиотека компонентов** | reusable controls и composition units | Может быть набором компонентов без общей семантики и политики изменений |\n| **Patterns** | повторяемые сочетания компонентов для задач | Обычно зависят от domain semantics |\n| **Продуктовые компоненты** | конструкции конкретной предметной области | Не должны автоматически становиться глобальными |\n| **Управляемая дизайн-система** | язык, токены, libraries, patterns, ownership, release и migration rules | Это уже система изменений, а не только библиотека |\n\nDTCG определяет tokens как переносимое выражение design decisions, а original Atomic Design — patterns как части системного целого. Реальные системы вроде Primer дополнительно разделяют base tokens, functional tokens и токены компонентов и паттернов.\n\nОтсюда важный вывод: **первая версия для индивидуального автора не обязана быть “governed design system” организационного масштаба**. Она должна содержать механизмы, из которых governance может вырасти без переписывания всей семантики.\n\n"
+    },
+    {
+      "id": "R010",
+      "level": 3,
+      "title": "Atomic Design как способ осмысления, а не структура файлов",
+      "text": "### Atomic Design как способ осмысления, а не структура файлов\n\nПять уровней Брэдa Фроста, atoms, molecules, organisms, templates и pages, полезны для вопроса «из каких повторяемых частей складывается этот интерфейс». Сам автор метода подчёркивает, что это не последовательный процесс и что терминологию следует адаптировать к команде. [Atomic Design](https://atomicdesign.bradfrost.com/chapter-2/)\n\nПоэтому обязательная структура вроде:\n\n```text\natoms/\nmolecules/\norganisms/\ntemplates/\npages/\n```\n\nдля современного multi-platform system неоправданна. Она плохо отвечает на вопросы:\n\n- где заканчивается cross-product foundation\n- что является platform adapter\n- что принадлежит domain\n- где хранится feature-local composition\n- какой компонент является control, а какой business pattern\n- что делать, если «молекула» одного контекста является полноценным domain-component другого\n\nБолее устойчивое разбиение основано на **ownership и dependency direction**:\n\n```text\ndesign-system/\n  foundations/\n  semantics/\n  components/\n  patterns/\n\nplatform/\n  web/\n  ios/\n  android/\n\ndomains/\n  tasks/\n  projects/\n\nproduct/\n  compositions/\n```\n\nЭто не предлагаемая обязательная структура каталогов. Это dependency model. `domain` может зависеть от `core`, а `core` не должен зависеть от `domain`.\n\n"
+    },
+    {
+      "id": "R011",
+      "level": 3,
+      "title": "Слои достаточной архитектуры",
+      "text": "### Слои достаточной архитектуры\n\nДля одного автора разумен такой рост.\n\n| Слой | Когда появляется | Что туда входит |\n| --- | --- | --- |\n| **Foundation** | сразу | цветовые primitives при необходимости, typography, spacing, radius, motion only-if-used |\n| **Семантическое ядро** | сразу | `fg/default`, `surface/default`, `action/destructive`, `text/body` |\n| **Общие компоненты** | по доказанному повторению | Button, Field, Checkbox, Dialog shell |\n| **Платформенная реализация** | с первой реальной платформой | SwiftUI, Compose, web behaviour и platform values |\n| **Предметный слой** | когда появляются устойчивые предметные конструкции | TaskRow, TaskEditor, ProjectCard |\n| **Локальный слой функции** | всегда допустим | композиции, пока повторение не доказано |\n| **Расширение бренда или предметной области** | при реальной вариативности | overrides и additions поверх core |\n| **Организация управления и выпусков** | когда стоимость координации становится измеримой | версионирование, вывод из использования, CI, правила проверки |\n\nAdobe Spectrum в опубликованной стратегии 2026 года идёт намного дальше и разделяет foundation dataset, platform manifest и platform implementation. Важно, что сама стратегия явно разделяет уже shipped functionality и future work. Это хороший пример архитектуры роста, но не доказательство, что одному автору нужен такой stack в первый день. [Spectrum Multi-Platform SDK Strategy](https://github.com/adobe/spectrum-design-data/blob/main/SPECTRUM_MULTIPLATFORM_SDK_STRATEGY.md)\n\nPrimer даёт другой полезный пример. Он хранит токены как данные, компилирует их Style Dictionary и имеет base, functional и категории компонентов и паттернов. Это подтверждает полезность разделения семантических уровней, но структура Primer отражает масштаб GitHub и не должна копироваться целиком. [Primer primitives](https://github.com/primer/primitives)\n\n"
+    },
+    {
+      "id": "R012",
+      "level": 3,
+      "title": "Когда требуется новая архитектурная ступень",
+      "text": "### Когда требуется новая архитектурная ступень\n\nАрхитектуру стоит усложнять **по наблюдаемому конфликту**, а не по гипотетическому будущему масштабу.\n\n| Сигнал | Предпочтительное изменение |\n| --- | --- |\n| Второй экран использует те же роли | Ничего нового, reuse |\n| Компонент повторяется с тем же смыслом | Поднять в shared component |\n| Два domain используют одинаковую композицию и одинаковую семантику | Рассмотреть shared pattern |\n| Похожая композиция имеет разные business semantics | Оставить два domain components |\n| Light и dark меняют только значения ролей | Режимы и разрешение темы |\n| Brand меняет систематически десятки значений | Слой переопределений бренда |\n| Brand меняет anatomy и interaction model | Отдельное component extension, иногда отдельная library |\n| iOS и Android разделяют intent, но расходятся в control behaviour | Общие semantics, platform implementations |\n| Несколько продуктов меняют core независимо | Версионируемое общее ядро |\n| Обновление core регулярно ломает consumers | Compatibility policy, deprecation и CI |\n| Количество domain assets затрудняет discovery | Разделение библиотеки и пакеты |\n| Требуются независимые владельцы и release cadence | Формальное управление |\n\nИными словами, **initial scope, designed extensibility и demonstrated scale — три разные вещи**. Представительный pilot может доказать extensibility mechanism. Он не доказывает, что система выдержит сотню domains.\n\n"
+    },
+    {
+      "id": "R013",
+      "level": 3,
+      "title": "Общее ядро и крупный продукт",
+      "text": "### Общее ядро и крупный продукт\n\nПри росте полезна модель:\n\n```text\nshared semantics\n       ↓\nshared foundation\n       ↓\nplatform implementations\n       ↓\ndomain libraries\n       ↓\nproduct / feature compositions\n```\n\nРазрешённое расширение идёт вниз. Обратная зависимость запрещена. Domain может сказать «мне нужен новый semantic role». Он не должен незаметно менять значение существующего core token под свои локальные нужды.\n\nSpectrum документирует похожую идею через foundation плюс platform-specific manifests с versioned dependency, overrides и extensions. Primer использует overrides для light, dark и accessibility modes поверх основного token graph. Оба примера показывают, что масштабирование обычно достигается **слоями и разрешением зависимостей**, а не одной гигантской плоской коллекцией.\n\n**Доказательственный предел:** ни Spectrum, ни Primer не доказывают, что предложенная здесь минимальная архитектура выдержит конкретный большой продукт пользователя. Это потребуется проверить на реальных dependency graphs и миграциях.\n\n"
+    },
+    {
+      "id": "R014",
+      "level": 3,
+      "title": "Когда адаптировать существующую основу",
+      "text": "### Когда адаптировать существующую основу\n\nСоздание собственного визуального языка не означает необходимость заново создавать низкоуровневое поведение каждого control.\n\nApple рекомендует проектировать интерфейсы в соответствии с platform HIG и поддерживает Dynamic Type через системную типографику. Android Compose Material даёт готовую accessibility semantics и minimum interactive targets, а Material-компоненты обеспечивают часть этих требований автоматически. [Apple HIG Typography](https://developer.apple.com/design/human-interface-guidelines/typography) [Android Compose accessibility defaults](https://developer.android.com/develop/ui/compose/accessibility/api-defaults)\n\nПоэтому адаптация существующей основы предпочтительнее, когда она уже решает:\n\n- focus и keyboard interaction\n- screen-reader semantics\n- dynamic text\n- pointer и touch behaviour\n- native dialogs, menus, switches и pickers\n- system appearance changes\n\nНа Android рекомендации требуют как минимум 48 × 48 dp touch target для touch controls. В Apple-среде Dynamic Type является системным механизмом масштабирования текста. Это не косметические детали, которые безопасно «дорисовать» после custom component.\n\nСобственная component foundation оправдана, когда адаптация чужого API систематически разрушает approved character или необходимую interaction model. При этом лучше сначала заменить **presentation layer** поверх проверенной behavioural foundation. Для web примером такого разделения служит React Aria, который предоставляет доступные unstyled primitives без навязывания Spectrum presentation. [React Spectrum / React Aria](https://github.com/adobe/react-spectrum)\n\nПрактическое правило:\n\n> Не переписывать native или хорошо проверенный behavioural primitive только ради внешнего сходства. Не сохранять чужую визуальную оболочку только ради повторного использования, если она стирает утверждённый характер продукта.\n\n"
+    },
+    {
+      "id": "R015",
+      "level": 2,
+      "title": "От концепта к правилам, токенам и именам",
+      "text": "## От концепта к правилам, токенам и именам\n\n"
+    },
+    {
+      "id": "R016",
+      "level": 3,
+      "title": "Агент должен уметь начать до существования дизайна",
+      "text": "### Агент должен уметь начать до существования дизайна\n\nПолный from-scratch route выглядит так:\n\n```text\nproduct intent\n      ↓\nconstraints + content + target contexts\n      ↓\nseveral concept hypotheses\n      ↓\nrendered representative compositions\n      ↓\ncreator approves direction\n      ↓\nobservations + inferred rules + unknowns\n      ↓\nproposed system rules\n      ↓\nsmall reusable foundation\n      ↓\nlinked Figma and code definitions\n      ↓\nrepresentative composition rebuilt from definitions\n      ↓\ndestructive probes\n      ↓\nbounded expansion\n```\n\nКлючевое отличие от распространённого design-to-code сценария в том, что агент не получает готовую Figma-спецификацию. Сначала он выполняет **concept exploration**, затем system extraction.\n\nИсследования 2026 года по design agents уже рассматривают агентные workflow, где brief превращается в редактируемые prototypes, а Figma2Code изучает преобразование Figma structure через промежуточное представление в код. Но эти работы не доказывают длительное сохранение design-system consistency после серии миграций.\n\n"
+    },
+    {
+      "id": "R017",
+      "level": 3,
+      "title": "Что именно утверждает автор, когда принимает концепт",
+      "text": "### Что именно утверждает автор, когда принимает концепт\n\nОдобрение concept direction разумно трактовать как принятие:\n\n- общего visual character\n- ключевой hierarchy\n- отношения поверхностей\n- характера typography\n- роли accent и statuses\n- density\n- формы и выразительности controls\n- принципов motion, если они показаны\n\nОно **не является** автоматическим одобрением:\n\n- всех случайных пиксельных значений\n- невидимых component states\n- accessibility behaviour\n- сценарии загрузки, ошибки и пустого состояния\n- responsive rules, которых не было на примере\n- keyboard behaviour\n- native platform deviations\n- значения каждого будущего token\n\nСледовательно, агент может самостоятельно regularise рутинные детали, если это обратимое решение и оно не меняет approved character.\n\nНовая creator decision требуется, когда агент собирается:\n\n- изменить perceptual hierarchy\n- сменить характер формы, например острый на сильно округлённый\n- заменить ключевой отношение бренда и акцента\n- поменять density принципиально\n- отказаться от отличительного interaction pattern\n- выбрать продуктовую семантику, которой не было в brief\n- пожертвовать approved characteristic ради унификации\n\nТакой boundary сокращает повторные approval gates, но не предоставляет агенту права на скрытые product decisions.\n\n"
+    },
+    {
+      "id": "R018",
+      "level": 3,
+      "title": "Что разные входы действительно доказывают",
+      "text": "### Что разные входы действительно доказывают\n\n| Вход | Что можно наблюдать | Что нельзя надёжно вывести |\n| --- | --- | --- |\n| Один растровый экран | композицию, визуальную иерархию, видимые значения | переиспользуемая структура, состояния, точные метрики, семантика |\n| Несколько screens | повторение, variation, возможные patterns | полный state model |\n| Moodboard | характер, референсы, фактура, настроение | API компонентов и правила компоновки |\n| Правила бренда | ограничения идентичности | продуктовые паттерны взаимодействия |\n| Редактируемый файл Figma | иерархия узлов, переменные, экземпляры, Auto Layout, видимый API | корректность поведения при выполнении |\n| Код с веб-рендерингом | реальный browser rendering и часть behaviour | native implementation, правильность design-system ownership |\n| Существующий код | поведение при выполнении и component API | intent за случайными implementation details |\n| Существующая библиотека | текущую reusable vocabulary | пригодность library для нового concept |\n| Код + Figma + связи | сильное evidence соответствия | отсутствие drift без проверки |\n| Несколько платформенных реализаций | различия платформ | универсальность для ещё не представленных платформ |\n\nFigma отдельно подчёркивает разницу между `generate_figma_design`, который захватывает работающий UI в обычные flat layers, и `use_figma`, который может строить с использованием components и variables. Поэтому editable Figma import не является доказательством reusable system. [Figma Code to canvas](https://developers.figma.com/docs/figma-mcp-server/code-to-canvas/)\n\n"
+    },
+    {
+      "id": "R019",
+      "level": 3,
+      "title": "Нужно сохранять происхождение каждой принятой детали",
+      "text": "### Нужно сохранять происхождение каждой принятой детали\n\nПри system extraction полезно присваивать правилу статус:\n\n| Статус | Пример |\n| --- | --- |\n| **Наблюдаемое** | На трёх экранах primary actions визуально одинаковы |\n| **Выведенное** | Вероятно, у primary action одна semantic роль |\n| **Предложенное** | Ввести `action/primary` и shared Button |\n| **Принятое** | Автор подтвердил эту роль как часть системы |\n| **Неизвестное** | Не показано поведение loading |\n| **Platform-derived** | iOS implementation использует системную interaction semantics |\n| **Локальное исключение** | Этот hero intentionally нарушает обычный spacing rhythm |\n\nЭто защищает от двух противоположных ошибок.\n\nПервая ошибка — **копировать случайность**. Если на трёх screens расстояние 15, 16 и 17 px, создание трёх global spacing tokens обычно превращает sampling noise в architecture.\n\nВторая ошибка — **регуляризировать характер до исчезновения**. Если необычная геометрия primary control является сознательным visual signature, замена на generic platform button без creator decision может уничтожить концепт.\n\n"
+    },
+    {
+      "id": "R020",
+      "level": 3,
+      "title": "Маленькая композиция должна пытаться сломать систему",
+      "text": "### Маленькая композиция должна пытаться сломать систему\n\nДо каталога из десятков компонентов полезнее собрать один composition, который одновременно содержит:\n\n- несколько text hierarchy levels\n- primary и secondary action\n- destructive action\n- form control\n- repeated list item\n- surface nesting\n- enabled, disabled и focused state\n- длинный текст\n- dynamic content\n- светлая и тёмная темы или другой relevant context\n\nЕсли система не может выразить это без local raw values и копий, foundation пока слабая.\n\nОдин concept screen всё равно создаёт sampling bias. Второй пример нужен, если первый:\n\n- почти не содержит interaction states\n- показывает только один surface context\n- не содержит формы\n- не показывает destructive semantics\n- не тестирует long text\n- не содержит адаптивного поведения\n\n"
+    },
+    {
+      "id": "R021",
+      "level": 3,
+      "title": "Трёхслойная модель токенов не является законом",
+      "text": "### Трёхслойная модель токенов не является законом\n\nПрактичная модель:\n\n```text\nprimitive → semantic → optional component\n```\n\nно каждый слой должен оправдать стоимость.\n\n**Primitive token** полезен, когда значение действительно переиспользуется или образует шкалу:\n\n```text\npalette/indigo/600\nspace/300\nradius/200\n```\n\n**Semantic token** почти всегда важнее:\n\n```text\ncolor/fg/default\ncolor/fg/muted\ncolor/fg/on-accent\ncolor/surface/default\ncolor/action/destructive\ntype/body/md\n```\n\n**Component token** нужен только тогда, когда компоненту требуется стабильная локальная contract boundary:\n\n```text\nbutton/primary/bg/default\nbutton/primary/bg/pressed\n```\n\nPrimer официально различает base, functional и токены компонентов и паттернов, при этом его собственная naming scheme делает property обязательным элементом имени. Это подтверждает полезность нескольких уровней, но не требование всегда иметь именно три. [Primer token names](https://primer-docs-preview.github.com/product/primitives/token-names/)\n\nЕсли `button/primary/bg/default` всегда является простым alias `color/action/primary`, дополнительный слой без реальной независимости только увеличивает migration surface. Он начинает окупаться, когда Button должен эволюционировать независимо от глобальной action role.\n\n"
+    },
+    {
+      "id": "R022",
+      "level": 3,
+      "title": "Оси не надо перемножать",
+      "text": "### Оси не надо перемножать\n\nTheme, brand, density, platform, state, emphasis и surface context относятся к разным типам вариативности. DTCG Resolver 2025.10 прямо вводит контексты и модификаторы и предупреждает о combinatorial explosion. Он рекомендует по возможности делать modifiers ортогональными. [DTCG Resolver 2025.10](https://www.designtokens.org/tr/2025.10/resolver/)\n\nТо есть плохая модель:\n\n```text\nbutton.primary.dark.brandA.compact.ios.hover.elevated\nbutton.primary.dark.brandA.compact.ios.pressed.elevated\n...\n```\n\nПредпочтительнее разнести ответственность:\n\n```text\nsemantic role = action/primary\ntheme resolver = dark\nbrand resolver = brandA\ndensity = compact\nplatform adapter = ios\ncomponent state = pressed\nsurface context = elevated\n```\n\nState часто лучше оставлять component API, а не превращать в глобальный mode. Platform divergence часто лучше реализовать adapter-ом. Theme и brand разумно выносить в режимы или резолвер, когда они действительно меняют множество значений.\n\n"
+    },
+    {
+      "id": "R023",
+      "level": 3,
+      "title": "DTCG: что именно стандартизировано сейчас",
+      "text": "### DTCG: что именно стандартизировано сейчас\n\n[DTCG Format 2025.10](https://www.designtokens.org/tr/2025.10/format/) опубликован 28 октября 2025 года как Final Community Group Report. Это стабильная спецификация Community Group, но не W3C Recommendation и не W3C Standards Track. Формат задаёт JSON, `$value`, `$type`, groups, aliases, composite types и `$extensions`.\n\n[DTCG Resolver 2025.10](https://www.designtokens.org/tr/2025.10/resolver/) является отдельной спецификацией для sets, modifiers и contextual resolution. Поле `version` resolver-document должно быть `2025.10`.\n\nAlias целого token можно выражать фигурными скобками, например `{palette.blue.600}`. Property-level references используют JSON Pointer. Инструменты, заявляющие соответствующую поддержку Format Module, должны обнаруживать unresolved references, type mismatch и cycles в описанных спецификацией случаях.\n\nМинимальный пример, **сверенный со структурой DTCG 2025.10, но не выполненный в resolver в рамках этого исследования**:\n\n```json\n{\n  \"palette\": {\n    \"indigo\": {\n      \"600\": {\n        \"$type\": \"color\",\n        \"$value\": {\n          \"colorSpace\": \"srgb\",\n          \"components\": [0.12, 0.32, 0.75],\n          \"alpha\": 1\n        }\n      }\n    }\n  },\n  \"color\": {\n    \"action\": {\n      \"primary\": {\n        \"$type\": \"color\",\n        \"$value\": \"{palette.indigo.600}\"\n      }\n    }\n  },\n  \"space\": {\n    \"md\": {\n      \"$type\": \"dimension\",\n      \"$value\": {\n        \"value\": 12,\n        \"unit\": \"px\"\n      }\n    }\n  },\n  \"type\": {\n    \"body\": {\n      \"$type\": \"typography\",\n      \"$value\": {\n        \"fontFamily\": \"Inter\",\n        \"fontSize\": {\n          \"value\": 16,\n          \"unit\": \"px\"\n        },\n        \"fontWeight\": 400,\n        \"letterSpacing\": {\n          \"value\": 0,\n          \"unit\": \"px\"\n        },\n        \"lineHeight\": 1.5\n      }\n    }\n  }\n}\n```\n\nDimension syntax `{ \"value\": 12, \"unit\": \"px\" }`, composite typography и sRGB color object соответствуют нормативным положениям и примерам DTCG 2025.10. [Design Tokens Format Module 2025.10](https://www.designtokens.org/tr/2025.10/format/)\n\nНо DTCG-compatible input не означает, что любой resolver его одинаково обработает. [Style Dictionary DTCG documentation](https://styledictionary.com/info/dtcg/) на дату исследования прямо предупреждает, что формат 2025.10 пока поддерживается не полностью и работа продолжается в v5. Поэтому production pipeline должен pin-ить трансформер и тестировать используемое подмножество DTCG.\n\n"
+    },
+    {
+      "id": "R024",
+      "level": 3,
+      "title": "Переменная Figma, стиль и токен DTCG — разные сущности",
+      "text": "### Переменная Figma, стиль и токен DTCG — разные сущности\n\nFigma Variables REST API разрешает `BOOLEAN`, `FLOAT`, `STRING` и `COLOR`. DTCG, напротив, имеет типизированные composite values, включая typography. Поэтому DTCG typography нельзя считать одним native Figma Variable object. [Figma Variables REST API](https://developers.figma.com/docs/rest-api/variables-endpoints/)\n\nPlugin API позволяет связать отдельные typography attributes с variables, включая font family, font style, font weight, line height, letter spacing и другие поля. Text Style при этом остаётся отдельным Figma object. Это ещё одна причина не отождествлять `token == variable == style`.\n\nПрактичное соответствие:\n\n| Дизайнерское намерение | DTCG | Figma | Код |\n| --- | --- | --- | --- |\n| Семантический цвет | `$type: color` | Переменная типа COLOR | Пользовательское свойство CSS, Swift Color, Compose Color |\n| Интервалы | `$type: dimension` | Переменная типа FLOAT и область применения | платформенный размер |\n| Типографическая роль | `$type: typography` | Текстовый стиль и привязанные переменные, где это полезно | Контракт TextStyle или Font |\n| Радиус | dimension | Переменная типа FLOAT | платформенный размер |\n| Длительность движения | длительность | FLOAT или представление, специфичное для преобразования | платформенная длительность |\n| Состояние компонента | обычно не ось токенов | variant / свойство компонента | состояние и API компонента |\n\nЕдиницы требуют осторожности. FLOAT в Figma сам по себе не является `px`, `dp` или `pt`. Platform transformation должен задавать units и иногда различные numeric values.\n\n"
+    },
+    {
+      "id": "R025",
+      "level": 3,
+      "title": "Предлагаемая грамматика именования",
+      "text": "### Предлагаемая грамматика именования\n\nДля cross-tool системы имя должно прежде всего помогать **выбрать правильное решение**, а не выглядеть красиво.\n\nМинимальный принцип:\n\n```text\n<property>/<semantic-role>/<qualifier?>\n```\n\nгде qualifier добавляется только при реальной неоднозначности.\n\nПримеры:\n\n```text\ncolor/fg/default\ncolor/fg/muted\ncolor/fg/on-accent\ncolor/fg/danger\ncolor/surface/default\ncolor/surface/elevated\ncolor/border/default\ncolor/border/danger\n\ntype/title/lg\ntype/heading/md\ntype/body/md\ntype/caption/sm\ntype/control/md\n\nspace/gap/md\nspace/inset/md\n\nradius/control/md\n\nmotion/duration/short\nmotion/easing/enter\n```\n\nЕсли требуется component layer:\n\n```text\nbutton/primary/bg/default\nbutton/primary/bg/pressed\nbutton/destructive/fg/default\n```\n\nИмя считается хорошим, если агент, увидев задачу «цвет текста ошибки на elevated surface», имеет один очевидный кандидат или может честно сообщить, что такой роли нет.\n\n"
+    },
+    {
+      "id": "R026",
+      "level": 3,
+      "title": "Оценка предоставленной схемы «Категория / Подкатегория / Стиль / Модификатор»",
+      "text": "### Оценка предоставленной схемы «Категория / Подкатегория / Стиль / Модификатор»\n\nВложенные reference tables в этой сессии не были доступны как исходные Figma/табличные файлы. Поэтому оценка основана на транскрипции из задания. **Точные paint values, font metrics, aliases, layer structure и реальные Figma bindings восстановить невозможно.**\n\nСама схема Category / Subcategory / Style / Mod не является дефектной. Повторение слова `Primary` тоже не является дефектом автоматически. Проблема возникает только там, где полное имя не даёт однозначной semantic interpretation.\n\nНапример:\n\n```text\nTitle/Primary\nLabel/Primary\nLabel/PrimaryInverse\nLabel/PositivePrimary\n```\n\nмогут быть внутренне последовательными, если документация говорит:\n\n```text\nTitle.Primary = primary title size/hierarchy\nLabel.Primary = default label emphasis\nLabel.PrimaryInverse = same role on inverse surface\n```\n\nНо тогда `Primary` обозначает **разные оси** в разных categories. Для человека это можно выучить. Для поиска, автоматических migrations и agent selection это увеличивает ambiguity.\n\nСильнее проблематичен пример `BarPrimary`, потому что он сжимает объект и контекст и hierarchy в одно слово. `PositivePrimary` аналогично склеивает semantic status и emphasis.\n\n"
+    },
+    {
+      "id": "R027",
+      "level": 3,
+      "title": "Три стратегии миграции именования",
+      "text": "### Три стратегии миграции именования\n\n| Стратегия | Пример | Стоимость | Оценка |\n| --- | --- | --- | --- |\n| **Сохранить** | `Label/PositivePrimary` | низкая | подходит, если namespace уже широко принят и документирован |\n| **Минимально уточнить** | `Label/Positive/Primary` | средняя | разумный transitional вариант |\n| **Перейти к role grammar** | `color/fg/success` или `color/fg/success/emphasis` | выше | предпочтительно до широкого распространения системы |\n\nМоя рекомендация — **не делать total rename ради эстетики**. Если система уже существует, стоит сначала ввести semantic aliases и постепенно заменить неоднозначные места.\n\nПримеры:\n\n| Старое | Переходное имя | Рекомендуемая семантическая роль |\n| --- | --- | --- |\n| `Label/Primary` | `Label/Default/Primary` | `color/fg/default` |\n| `Label/PrimaryInverse` | `Label/Primary/OnInverse` | `color/fg/on-inverse-surface` |\n| `Label/PositivePrimary` | `Label/Positive/Primary` | `color/fg/success` |\n| `Title/Primary` | `Title/Primary` | `type/title/lg` или иной реальный hierarchy |\n| `Title/BarPrimary` | `Title/Bar/Primary` | `type/title/navigation` если именно это семантика |\n| `Stroke/PositivePrimary` | `Stroke/Positive/Primary` | `color/border/success` |\n\nСтарые имена можно временно сохранить как aliases к новым canonical tokens. Это снижает migration cost и позволяет собирать telemetry или хотя бы статический поиск оставшихся uses.\n\n"
+    },
+    {
+      "id": "R028",
+      "level": 3,
+      "title": "Общее, значение по умолчанию и инверсия",
+      "text": "### Общее, значение по умолчанию и инверсия\n\n**`Common` не нужно вводить только ради симметрии.** Если название не добавляет информацию, это лишний namespace level.\n\n**`Default` полезен**, когда отсутствие qualifier иначе неоднозначно. Например `color/fg/default` явно лучше, чем просто `color/fg`, если рядом существуют muted, subtle и danger.\n\n**`Inverse` опасен как proxy для dark theme.** Белый текст может быть нужен на brand surface в light theme и на dark neutral surface независимо от global theme. Поэтому semantic context вроде `on-accent`, `on-brand`, `on-inverse-surface` точнее. Это согласуется с практикой Primer, где сочетание переднего плана и фона учитывает контекст, а theme modes вынесены отдельно.\n\n"
+    },
+    {
+      "id": "R029",
+      "level": 3,
+      "title": "Именование статусов",
+      "text": "### Именование статусов\n\n`Positive`, `Negative`, `Warning`, `Info` допустимы, если это vocabulary продукта.\n\nДля UI-system чаще понятнее:\n\n```text\nsuccess\ndanger\nwarning\ninfo\n```\n\nНо это не универсальная истина. Например финансовый продукт может различать `positive delta` и `success state`. В таком случае их нельзя бездумно слить.\n\nПравило важнее конкретного словаря:\n\n> Статус должен описывать семантическую роль, а не конкретный hue.\n\n"
+    },
+    {
+      "id": "R030",
+      "level": 3,
+      "title": "Числа 100 / 60 / 20 и 10 / 3 не означают прозрачность",
+      "text": "### Числа 100 / 60 / 20 и 10 / 3 не означают прозрачность\n\nDTCG Color Module показывает и обычные числовые tone scales, и отдельно пример computer-generated opacity scale, где alpha записан непосредственно в value. Следовательно, номер в имени сам по себе не говорит, что `60` означает `alpha: 0.6`. [DTCG Color Module 2025.10](https://www.designtokens.org/tr/2025.10/color/)\n\nЕсть как минимум три корректные модели:\n\n| Модель | `color/blue/60` может означать | Следствие |\n| --- | --- | --- |\n| Альфа-шкала | тот же RGB с alpha 0.6 | итог зависит от background |\n| Шкала непрозрачных тонов | отдельный RGB/Lab/Oklch tone | итоговый цвет стабилен |\n| Произвольная ступень палитры | шестой элемент шкалы | число имеет только ordinal meaning |\n\nДля семантические цвета переднего плана и фона **opaque resolved tones обычно проще проверять**, потому что contrast не меняется от compositing surface. Translucency полезна там, где смешение является сознательной частью визуального языка. Но тогда accessibility нужно проверять на каждом поддерживаемом underlying surface.\n\n"
+    },
+    {
+      "id": "R031",
+      "level": 3,
+      "title": "Градиент — не набор случайных цветов",
+      "text": "### Градиент — не набор случайных цветов\n\nDTCG 2025.10 описывает gradient как composite token с массивом stops, где каждый stop содержит color и position, а color может быть ссылкой на другой token. Поэтому если `GradientStart` и `GradientEnd` существуют только как части конкретного gradient, их логичнее моделировать совместно. [DTCG gradient examples](https://www.designtokens.org/tr/2025.10/format/)\n\nОтдельные endpoint tokens полезны только при независимом reuse.\n\n"
+    },
+    {
+      "id": "R032",
+      "level": 3,
+      "title": "Доступность нельзя вывести из таблицы цветовых образцов",
+      "text": "### Доступность нельзя вывести из таблицы цветовых образцов\n\nWCAG 2.2 требует для обычного текста минимум 4.5:1, для large-scale text 3:1. Interactive graphics и relevant non-text UI должны удовлетворять отдельным требованиям non-text contrast. Focus appearance также имеет собственные требования. [WCAG 2.2 Contrast Minimum](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html) [WCAG Focus Appearance](https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance.html)\n\nТакже интерфейс не должен ломаться при пользовательских изменениях text spacing, а Apple и Android имеют собственные dynamic text и touch conventions.\n\nПоэтому naming candidate надо проверять как минимум на:\n\n- light и dark\n- default, elevated и brand surfaces\n- enabled, disabled, hover, focus, pressed и selected там, где эти состояния существуют\n- destructive и status usage\n- длинный русский текст\n- большие accessibility text sizes\n- реальный background под полупрозрачными цветами\n\n`Label/PrimaryInverse` может выглядеть убедительно на swatch sheet и при этом не определять, **на каких поверхностях он гарантированно читаем**.\n\n"
+    },
+    {
+      "id": "R033",
+      "level": 2,
+      "title": "Ответственность Figma, кода и агента",
+      "text": "## Ответственность Figma, кода и агента\n\n"
+    },
+    {
+      "id": "R034",
+      "level": 3,
+      "title": "Три основные архитектуры",
+      "text": "### Три основные архитектуры\n\n\n"
+    },
+    {
+      "id": "R035",
+      "level": 4,
+      "title": "1. Архитектура: Figma как основа",
+      "text": "#### 1. Архитектура: Figma как основа\n\n**Авторитет значений:**\nПеременные и стили\n\n**Авторитет API компонента:**\nFigma для API дизайна, код отдельно\n\n**Сильная сторона:**\nминимальный порог для одиночной работы с преобладанием дизайна\n\n**Главный риск:**\nрасхождение между Figma и кодом\n\n\n"
+    },
+    {
+      "id": "R036",
+      "level": 4,
+      "title": "2. Архитектура: Код как основа",
+      "text": "#### 2. Архитектура: Код как основа\n\n**Авторитет значений:**\nрепозиторий или пакет токенов\n\n**Авторитет API компонента:**\nкод\n\n**Сильная сторона:**\nверсионирование, тесты, воспроизводимость\n\n**Главный риск:**\nинструмент дизайна становится отражением, а не удобной средой создания\n\n\n"
+    },
+    {
+      "id": "R037",
+      "level": 4,
+      "title": "3. Архитектура: Общие токены",
+      "text": "#### 3. Архитектура: Общие токены\n\n**Авторитет значений:**\nмашиночитаемый источник токенов\n\n**Авторитет API компонента:**\nFigma и код владеют своими API\n\n**Сильная сторона:**\nмежплатформенная семантическая согласованность\n\n**Главный риск:**\nтребует преобразователя и дисциплины жизненного цикла\n\n\n"
+    },
+    {
+      "id": "R038",
+      "level": 3,
+      "title": "Рекомендация",
+      "text": "### Рекомендация\n\nДля рассматриваемой задачи предпочтителен **shared-token approach с асимметричной синхронизацией**.\n\nНе нужно делать «Figma и Git одновременно master».\n\nЛучше:\n\n```text\ntokens / semantic registry\n       ↓\n     Figma\n       ↓ mapping\ncode components\n```\n\nпри этом component behaviour не генерируется из Figma tokens.\n\nБолее точно ownership распределяется так:\n\n| Решение | Рекомендуемый владелец |\n| --- | --- |\n| Семантическая идентичность токена | общий реестр токенов |\n| Исходное или разрешённое значение токена | реестр или строго выбранный владелец значений |\n| Визуальная анатомия | Компонент Figma |\n| Переходы состояния при выполнении | Компонент кода |\n| Семантика доступности | реализация в коде и документированные требования дизайна |\n| Платформенное поведение | платформенный код |\n| Связь Figma ↔ код | Code Connect или реестр соответствий |\n| Семантика продуктовой композиции | контракт паттерна или предметной области |\n\nДля действительно маленького одно-платформенного проекта можно начать Figma-led и отложить external token source. Но нужно сразу иметь устойчивые semantic names и mapping, чтобы переход к repository-authoritative tokens был migration, а не semantic redesign.\n\n"
+    },
+    {
+      "id": "R039",
+      "level": 3,
+      "title": "Почему настоящая двусторонняя синхронизация опасна",
+      "text": "### Почему настоящая двусторонняя синхронизация опасна\n\nЕсли пользователь одновременно меняет `color/action/primary` в Figma, а агент меняет его в Git, система должна знать:\n\n- какая версия новее\n- что является intentional override\n- что делать с alias graph\n- какая сторона имеет право на запись\n- как показать конфликт\n\nНи Figma Variables, ни DTCG сами не предоставляют distributed conflict-resolution protocol. Поэтому автоматический «last writer wins» для design-system semantics является рискованным архитектурным решением.\n\nSpectrum в своей multi-platform strategy как раз движется в сторону versioned source, declarative overrides, validation и diff, а не свободного конфликтного редактирования двух источников. Этот конкретный документ также честно отмечает ещё не реализованные части Figma round-trip.\n\n"
+    },
+    {
+      "id": "R040",
+      "level": 3,
+      "title": "Что Figma MCP реально умеет на 21 октября 2026 года",
+      "text": "### Что Figma MCP реально умеет на 21 октября 2026 года\n\nСтарое обобщение «Figma MCP только читает» больше неверно.\n\nТекущий [Figma MCP Tools and prompts](https://developers.figma.com/docs/figma-mcp-server/tools-and-prompts/) документирует `use_figma` как general-purpose write tool. Он может создавать, изменять, удалять и инспектировать в Figma Design pages, frames, components, variants, variables, styles, text, images и другие объекты. В примерах самой Figma фигурируют создание variable collection, spacing variables, component variants, исправление Auto Layout и typography.\n\nНо это относится именно к **remote MCP**. Figma FAQ указывает, что `use_figma` доступен только на remote server и только в клиентах, которые поддерживают write-to-canvas. Desktop MCP не имеет этой write-функции.\n\nFigma также описывает механизм реализации. `use_figma` выполняет Plugin API code для создания и изменения Figma content. Это принципиально важнее маркетинговой формулировки, потому что фактическая capability boundary в значительной степени определяется Plugin API.\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R041",
+      "level": 3,
+      "title": "MCP, Plugin API, REST и Code Connect нельзя смешивать",
+      "text": "### MCP, Plugin API, REST и Code Connect нельзя смешивать\n\n| Поверхность | Основная роль |\n| --- | --- |\n| **Remote MCP** | координация для агента, чтение контекста и запись на холст в бета-версии |\n| **Desktop MCP** | локальный контекст дизайна, без текущей возможности записи через `use_figma` |\n| **Plugin API** | программная работа с открытым Figma document внутри plugin runtime |\n| **REST API** | server-side чтение file data и отдельные специализированные write endpoints |\n| **Variables REST** | массовое создание, обновление и удаление переменных, но с ограничениями Enterprise |\n| **Code Connect** | связь компонента дизайна Figma с компонентом реализации |\n| **Code to canvas** | захват отрисованного интерфейса в виде редактируемых слоёв |\n| **HTML to Figma** | преобразование самодостаточного HTML в обычные слои дизайна |\n\nREST API **не является универсальным remote canvas-write API**. Например Variables REST имеет отдельный POST endpoint, а generic file representation в основном используется для чтения. Variables REST доступен full members Enterprise orgs и требует edit access для write. [Figma Variables endpoints](https://developers.figma.com/docs/rest-api/variables-endpoints/)\n\nЭто ограничение Variables REST нельзя автоматически переносить на `use_figma`, потому что тот использует Plugin API через MCP и имеет другой permission model.\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R042",
+      "level": 3,
+      "title": "Матрица возможностей",
+      "text": "### Матрица возможностей\n\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R043",
+      "level": 4,
+      "title": "1. Операция: Получить design context",
+      "text": "#### 1. Операция: Получить design context\n\n**Remote MCP:**\nДа\n\n**Desktop MCP:**\nДа\n\n**Plugin API:**\nДа\n\n**REST:**\nЧастично\n\n**Статус:**\n**Документировано**\n\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R044",
+      "level": 4,
+      "title": "2. Операция: Screenshot selection",
+      "text": "#### 2. Операция: Screenshot selection\n\n**Remote MCP:**\nДа\n\n**Desktop MCP:**\nДа\n\n**Plugin API:**\nЭкспорт API\n\n**REST:**\nrender endpoints\n\n**Статус:**\n**Документировано**\n\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R045",
+      "level": 4,
+      "title": "3. Операция: Variables used in selection",
+      "text": "#### 3. Операция: Variables used in selection\n\n**Remote MCP:**\nДа\n\n**Desktop MCP:**\nДа\n\n**Plugin API:**\nДа\n\n**REST:**\nДа\n\n**Статус:**\n**Документировано**\n\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R046",
+      "level": 4,
+      "title": "4. Операция: Создать local variables",
+      "text": "#### 4. Операция: Создать local variables\n\n**Remote MCP:**\n`use_figma`\n\n**Desktop MCP:**\nНет\n\n**Plugin API:**\nДа\n\n**REST:**\nДа, Enterprise Variables API\n\n**Статус:**\n**Документировано**\n\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R047",
+      "level": 4,
+      "title": "5. Операция: Collections и modes",
+      "text": "#### 5. Операция: Collections и modes\n\n**Remote MCP:**\n`use_figma` через Plugin API\n\n**Desktop MCP:**\nНет\n\n**Plugin API:**\nДа\n\n**REST:**\nДа, Enterprise\n\n**Статус:**\n**Документировано**\n\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R048",
+      "level": 4,
+      "title": "6. Операция: Создать component",
+      "text": "#### 6. Операция: Создать component\n\n**Remote MCP:**\n`use_figma`\n\n**Desktop MCP:**\nНет\n\n**Plugin API:**\nДа\n\n**REST:**\nНет generic node-write\n\n**Статус:**\n**Документировано**\n\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R049",
+      "level": 4,
+      "title": "7. Операция: Component set / variants",
+      "text": "#### 7. Операция: Component set / variants\n\n**Remote MCP:**\n`use_figma`\n\n**Desktop MCP:**\nНет\n\n**Plugin API:**\nДа\n\n**REST:**\nНет generic node-write\n\n**Статус:**\n**Документировано**\n\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R050",
+      "level": 4,
+      "title": "8. Операция: Свойства компонента",
+      "text": "#### 8. Операция: Свойства компонента\n\n**Remote MCP:**\nчерез Plugin API\n\n**Desktop MCP:**\nНет\n\n**Plugin API:**\nДа\n\n**REST:**\nread representation\n\n**Статус:**\n**Документировано**\n\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R051",
+      "level": 4,
+      "title": "9. Операция: Создание и переиспользование экземпляра",
+      "text": "#### 9. Операция: Создание и переиспользование экземпляра\n\n**Remote MCP:**\nчерез Plugin API\n\n**Desktop MCP:**\nНет\n\n**Plugin API:**\nДа\n\n**REST:**\nНет generic node-write\n\n**Статус:**\n**Документировано**\n\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R052",
+      "level": 4,
+      "title": "10. Операция: Variable bindings",
+      "text": "#### 10. Операция: Variable bindings\n\n**Remote MCP:**\nчерез Plugin API\n\n**Desktop MCP:**\nНет\n\n**Plugin API:**\nДа\n\n**REST:**\nrepresentation доступно\n\n**Статус:**\n**Документировано**\n\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R053",
+      "level": 4,
+      "title": "11. Операция: Auto Layout",
+      "text": "#### 11. Операция: Auto Layout\n\n**Remote MCP:**\n`use_figma`\n\n**Desktop MCP:**\nНет\n\n**Plugin API:**\nДа\n\n**REST:**\nread representation\n\n**Статус:**\n**Документировано**\n\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R054",
+      "level": 4,
+      "title": "12. Операция: Text styles",
+      "text": "#### 12. Операция: Text styles\n\n**Remote MCP:**\n`use_figma`\n\n**Desktop MCP:**\nНет\n\n**Plugin API:**\nДа\n\n**REST:**\nметаданные и чтение\n\n**Статус:**\n**Документировано**\n\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R055",
+      "level": 4,
+      "title": "13. Операция: Загрузить доступный font",
+      "text": "#### 13. Операция: Загрузить доступный font\n\n**Remote MCP:**\nчерез Plugin API\n\n**Desktop MCP:**\nНет\n\n**Plugin API:**\nДа\n\n**REST:**\nне эквивалент\n\n**Статус:**\n**Документировано**\n\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R056",
+      "level": 4,
+      "title": "14. Операция: Импорт published component by key",
+      "text": "#### 14. Операция: Импорт published component by key\n\n**Remote MCP:**\nчерез Plugin API\n\n**Desktop MCP:**\nНет\n\n**Plugin API:**\nДа\n\n**REST:**\nmetadata API\n\n**Статус:**\n**Документировано**\n\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R057",
+      "level": 4,
+      "title": "15. Операция: Импорт published variable by key",
+      "text": "#### 15. Операция: Импорт published variable by key\n\n**Remote MCP:**\nчерез Plugin API\n\n**Desktop MCP:**\nНет\n\n**Plugin API:**\nДа\n\n**REST:**\nvariables API\n\n**Статус:**\n**Документировано**\n\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R058",
+      "level": 4,
+      "title": "16. Операция: Включить новую library в file",
+      "text": "#### 16. Операция: Включить новую library в file\n\n**Remote MCP:**\nНе подтверждено как generic operation\n\n**Desktop MCP:**\nНет\n\n**Plugin API:**\n**Нет**, Plugin API требует включения через UI\n\n**REST:**\nНе как generic action\n\n**Статус:**\n**Ограничено**\n\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R059",
+      "level": 4,
+      "title": "17. Операция: Publish whole library",
+      "text": "#### 17. Операция: Publish whole library\n\n**Remote MCP:**\nНе документировано как public agent operation\n\n**Desktop MCP:**\nНет\n\n**Plugin API:**\npublic publish method не найден\n\n**REST:**\nне generic\n\n**Статус:**\n**Не подтверждено**\n\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R060",
+      "level": 4,
+      "title": "18. Операция: Связь Code Connect",
+      "text": "#### 18. Операция: Связь Code Connect\n\n**Remote MCP:**\nДа\n\n**Desktop MCP:**\nзависит от surface\n\n**Plugin API:**\nотдельные workflows\n\n**REST:**\nне основная роль\n\n**Статус:**\n**Документировано**\n\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R061",
+      "level": 4,
+      "title": "19. Операция: Захват running web UI",
+      "text": "#### 19. Операция: Захват running web UI\n\n**Remote MCP:**\n`generate_figma_design`\n\n**Desktop MCP:**\nНет\n\n**Plugin API:**\nне эта задача\n\n**REST:**\nнет\n\n**Статус:**\n**Документировано**\n\n\nPlugin API прямо говорит, что available library variables обнаруживаются только для libraries, уже enabled пользователем, и включить library через Plugin API в настоящий момент нельзя. [figma.teamLibrary](https://developers.figma.com/docs/plugins/api/figma-teamlibrary/)\n\nИмпорт `component`, `component set`, `style` и `variable` по ключу требует, чтобы объект был опубликован. [Figma Plugin API Team Library](https://developers.figma.com/docs/plugins/api/figma/)\n\nЯ не нашёл документированного public Plugin API call «publish this library». Более того, Figma в своих текущих write-to-canvas ограничениях указывает manual publishing как prerequisite для последующих published-component workflows. Следовательно, утверждение «агент теперь может автономно создать и опубликовать полноценную shared library» **не подтверждается** текущей документацией.\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R062",
+      "level": 3,
+      "title": "Компоненты и их свойства позволяют выразить полноценный API",
+      "text": "### Компоненты и их свойства позволяют выразить полноценный API\n\n`ComponentSetNode` в Plugin API предоставляет component property definitions и методы для `BOOLEAN`, `TEXT`, `INSTANCE_SWAP`, `VARIANT` и `SLOT`. Это позволяет агенту строить не только визуальные frames, но и осмысленный design-side API. [Figma ComponentSetNode API](https://developers.figma.com/docs/plugins/api/ComponentSetNode/)\n\nНо richness API создаёт и новую ответственность. Нельзя превращать каждую внутреннюю деталь в public variant. Например:\n\n```text\nButton\n  intent: primary | secondary | destructive\n  size: compact | regular\n  state: default | loading\n  leadingIcon: optional\n```\n\nможет быть устойчивее, чем Cartesian variant set из `colour × icon × textLength × theme × platform × interactionState`.\n\nTheme лучше получать через переменные и режимы. Text length является content variation. Platform лучше не делать component property, если platform implementation раздельная.\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R063",
+      "level": 3,
+      "title": "Шрифты как реальное ограничение выполнения",
+      "text": "### Шрифты как реальное ограничение выполнения\n\nПеред изменением Figma TextNode Plugin API требует `loadFontAsync` для font properties, которые влияют на rendering. API может загрузить только font, который уже доступен Figma editor. Он не скачивает arbitrary font из интернета. [Figma loadFontAsync](https://developers.figma.com/docs/plugins/api/properties/figma-loadfontasync/)\n\nОтсюда следует простой agent rule:\n\n> Не подменять отсутствующий approved font «похожим» и не продолжать молча. Сообщить blocked dependency либо использовать заранее одобренный fallback.\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R064",
+      "level": 3,
+      "title": "Code Connect связывает компоненты, а не генерирует их",
+      "text": "### Code Connect связывает компоненты, а не генерирует их\n\nТекущая Code Connect UI связывает опубликованный Figma component с путём и именем кодового component. Mapping передаётся Figma MCP и даёт агенту более точный implementation context. Для Code Connect UI требуется library file с published design components. [Code Connect UI setup](https://developers.figma.com/docs/code-connect/code-connect-ui-setup/)\n\nОдин Figma component может иметь implementations в различных контексты фреймворка и платформы. Поэтому conceptually правильнее говорить:\n\n```text\ndesign identity\n   ↓\nweb implementation\nios implementation\nandroid implementation\n```\n\nа не «Figma component равен React component».\n\nВ августе 2026 года Figma также перевела Code Connect от legacy framework-specific parsers к template files. Текущая документация рекомендует мигрировать, потому что template API является поддерживаемым направлением. [Code Connect template migration](https://developers.figma.com/docs/code-connect/templates-migration-guide/)\n\nЭто важно для новой инфраструктуры. Не стоит проектировать новый cross-platform mapping layer вокруг старых parsers.\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R065",
+      "level": 3,
+      "title": "Code to canvas не создаёт дизайн-систему",
+      "text": "### Code to canvas не создаёт дизайн-систему\n\n`generate_figma_design` может захватить работающий web UI и превратить его в editable layers. Но Figma прямо описывает их как flat layers без связи с libraries. `html_to_figma` также создаёт plain layers и не использует components, libraries или variables.\n\nПоэтому:\n\n```text\nworking React UI → editable Figma\n```\n\nне равно:\n\n```text\nworking React UI → Figma design system\n```\n\nи тем более не равно:\n\n```text\nworking native library\n```\n\nCode-to-canvas полезен как **concept representation и visual inspection surface**. После capture требуется отдельная systemisation stage через `use_figma` или ручное построение shared definitions.\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R066",
+      "level": 3,
+      "title": "Тарифы, типы рабочих мест, права и квоты нужно разделять",
+      "text": "### Тарифы, типы рабочих мест, права и квоты нужно разделять\n\nRemote write требует write-capable MCP client. Figma FAQ говорит, что Full seat нужен для записи в файлы вне drafts, тогда как Dev seat может писать в drafts и читать другие доступные файлы. Конкретный доступ всё равно зависит от file permission.\n\nCurrent rate-limit table относится прежде всего к MCP read calls. На дату исследования Figma документирует до 200 calls/day для Full/Dev Professional и Organization и до 600/day Enterprise, с дополнительными per-minute limits. View/Collab имеет гораздо меньший monthly allowance. Figma отдельно предупреждает, что эти limits могут меняться. [Figma MCP rate limits](https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/)\n\nЭто не следует превращать в pricing architecture. Стоимость и конкретная доступность account-specific и могут измениться.\n\n",
+      "readingContext": {
+        "kind": "dated-guidance",
+        "note": "Dated tool/platform guidance. Recheck relevant current primary documentation and actual account before consequential use."
+      }
+    },
+    {
+      "id": "R067",
+      "level": 3,
+      "title": "Идентичность объектов Figma",
+      "text": "### Идентичность объектов Figma\n\nVariables имеют `id` и `key`. Для published variables документация указывает, что `id` и `key` стабильны в течение lifetime variable, тогда как `subscribed_id` меняется после изменения и новой публикации. [Variables REST API](https://developers.figma.com/docs/rest-api/variables-endpoints/)\n\nПубликуемые компоненты и стили также имеют `key`, используемый для library import.\n\nДля agent-maintained system этого недостаточно. Дублирование file, migration или recreation объекта может породить новую Figma identity. Поэтому полезен **собственный canonical identity**:\n\n```text\nds.token.color.fg.default\nds.component.button\nds.pattern.task-row\n```\n\nMapping record может содержать:\n\n```text\ncanonicalId\nfigmaFileKey\nfigmaObjectKey\nfigmaNodeId\ncodePackage\ncodeSymbol\nstatus\nversion\n```\n\nCanonical ID является выведенной архитектурной рекомендацией. Он не является встроенной Figma feature.\n\nPlugin API также позволяет хранить shared plugin data на узлах и стилях, что может помогать с дополнительной metadata, но этот механизм не заменяет внешний versioned mapping registry.\n\n"
+    },
+    {
+      "id": "R068",
+      "level": 3,
+      "title": "Как должен работать агент",
+      "text": "### Как должен работать агент\n\nНадёжный цикл не выглядит как «сгенерируй мне дизайн-систему».\n\nОн выглядит так:\n\n```text\ninspect\n  ↓\ninventory\n  ↓\nplan bounded diff\n  ↓\nresolve identities\n  ↓\nwrite owning definitions\n  ↓\ncreate/update instances\n  ↓\ninspect structure\n  ↓\ninspect render\n  ↓\nrepair owners\n  ↓\nreport diff + unresolved items\n```\n\n`get_libraries` и `search_design_system` специально существуют для поиска уже доступных components, variables и styles. Figma сама рекомендует агенту искать имеющееся перед созданием нового. [Figma MCP — Tools and prompts](https://developers.figma.com/docs/figma-mcp-server/tools-and-prompts/)\n\n**Idempotent rerun** должен быть частью контракта:\n\n```text\nif canonical identity exists:\n    update it\nelse:\n    create it\n\nnever:\n    create another object merely because lookup by visible name failed\n```\n\nЭто **рекомендованный orchestration rule**, а не гарантированное поведение `use_figma`.\n\n"
+    },
+    {
+      "id": "R069",
+      "level": 3,
+      "title": "Частичный сбой, прерывание и одновременные правки",
+      "text": "### Частичный сбой, прерывание и одновременные правки\n\nPlugin-style writes не следует считать транзакционным database commit. Поэтому сложное изменение нужно разбивать на stages:\n\n```text\ninventory snapshot\n→ definitions\n→ bindings\n→ components\n→ instances\n→ verification\n```\n\nПосле каждого этапа агент сохраняет или возвращает journal:\n\n```text\ncreated\nupdated\nreused\nskipped\nfailed\nunverified\n```\n\nЕсли execution обрывается, следующий run сначала повторно инспектирует actual Figma state, а не продолжает по старому in-memory assumption.\n\nЕсли node ID устарел, агент повторно разрешает canonical identity через registry, key, имя и путь компонента и structural checks.\n\nЕсли пользователь вручную изменил definition после snapshot, destructive overwrite должен остановиться при несовпадении expected revision или structural fingerprint.\n\nЭти recovery правила **не документированы Figma как встроенная гарантия MCP**. Они являются необходимым верхним слоем над beta write capability. Предупреждения самой Figma о beta и рекомендации тестировать на duplicate files усиливают необходимость такой модели.\n\n"
+    },
+    {
+      "id": "R070",
+      "level": 3,
+      "title": "Понятные агенту описания полезны, но не служат доказательством",
+      "text": "### Понятные агенту описания полезны, но не служат доказательством\n\nСтили и компоненты Figma имеют descriptions и documentation links, Code Connect добавляет mapping и implementation context. Это снижает ambiguity для человека и агента.\n\nХорошее описание:\n\n```text\nButton / destructive\n\nUse for irreversible or high-cost actions.\nDo not use as a synonym for negative status.\nMust retain destructive semantics across themes.\nNative implementations may use platform destructive affordances.\n```\n\nОно помогает агенту выбрать сущность. Оно **не гарантирует**, что модель всегда выберет её правильно или что implementation доступен.\n\n"
+    },
+    {
+      "id": "R071",
+      "level": 3,
+      "title": "Веб, iOS и Android должны разделять семантику, а не все пиксели",
+      "text": "### Веб, iOS и Android должны разделять семантику, а не все пиксели\n\nApple Dynamic Type и native UI conventions, Android Material interaction sizing и Compose semantics показывают, что один набор физических размеров и behaviour rules не может безопасно копироваться между платформами.\n\nShared:\n\n```text\nintent.primary\nintent.destructive\nsurface.elevated\ntext.body\nspace.relationship.tight\n```\n\nPlatform-specific:\n\n```text\nfont metrics\ndynamic text scaling\ntouch target\nfocus model\nhover availability\nnative dialog conventions\nnavigation patterns\nsystem material/elevation\nmotion behaviour\n```\n\nСледовательно, один semantic token может разрешаться в разные values. Один conceptual component может иметь разные public code APIs, если платформенные модели этого требуют.\n\n"
+    },
+    {
+      "id": "R072",
+      "level": 2,
+      "title": "Синтетический путь от концепта к системе",
+      "text": "## Синтетический путь от концепта к системе\n\nСледующий пример **фикциональный**. Он служит для inspection архитектуры. Figma-файл не создавался. Код не исполнялся. Scale не проверялся.\n\n"
+    },
+    {
+      "id": "R073",
+      "level": 3,
+      "title": "Исходные допущения",
+      "text": "### Исходные допущения\n\nПродукт — task manager с тремя representative compositions:\n\n- список задач\n- редактор задачи\n- destructive confirmation при удалении\n\nДопустим, brief требует спокойный, ясный и немного editorial character, без визуальной тяжести enterprise-dashboard. Агент предлагает несколько направлений.\n\nАвтор принимает следующее направление:\n\n- нейтральные спокойные surfaces\n- один выразительный cool accent для primary action\n- destructive semantics визуально отличимы от accent\n- крупный title и спокойный body\n- controls имеют мягкую, но не чрезмерную округлость\n- list rows достаточно просторны для длинных task names\n\nЭто **принятые допущения примера**, а не рекомендация для task apps вообще.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Synthetic illustrative example, not an observed integrated system or executed build."
+      }
+    },
+    {
+      "id": "R074",
+      "level": 3,
+      "title": "Что агент извлекает после одобрения",
+      "text": "### Что агент извлекает после одобрения\n\n**Observed в концепте**\n\n```text\nprimary action использует accent\ndestructive action отличается от accent\nbody text повторяется\ntask rows имеют одинаковую anatomy\ncontrols используют общий radius family\n```\n\n**Inferred**\n\n```text\naccent = semantic primary action\nred family = destructive semantics\nbody style = reusable typography role\nTaskRow = повторяемая domain composition\n```\n\n**Unknown**\n\n```text\nloading\nerror\noffline state\nkeyboard behaviour\nscreen-reader announcements\nvery large text\nAndroid / iOS dialog differences\n```\n\n**Proposed**\n\n```text\ncolor/action/primary\ncolor/action/destructive\ncolor/fg/default\ncolor/surface/default\ntype/body/md\nspace/gap/md\nradius/control/md\n\nButton\nTaskRow\nTaskEditor\nDestructiveConfirmation\n```\n\nАвтору не надо заново утверждать `space/gap/md`, если агент просто regularises близкие spacing samples. Но если regularisation заметно меняет density утверждённого concept, это становится material departure.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Synthetic illustrative example, not an observed integrated system or executed build."
+      }
+    },
+    {
+      "id": "R075",
+      "level": 3,
+      "title": "Трассировка семантического цвета",
+      "text": "### Трассировка семантического цвета\n\nДопустим, approved concept содержит destructive action.\n\n**Token**\n\n```text\npalette/red/600\n        ↓\ncolor/action/destructive\n```\n\nDTCG-представление:\n\n```json\n{\n  \"palette\": {\n    \"red\": {\n      \"600\": {\n        \"$type\": \"color\",\n        \"$value\": {\n          \"colorSpace\": \"srgb\",\n          \"components\": [0.72, 0.12, 0.12]\n        }\n      }\n    }\n  },\n  \"color\": {\n    \"action\": {\n      \"destructive\": {\n        \"$type\": \"color\",\n        \"$value\": \"{palette.red.600}\"\n      }\n    }\n  }\n}\n```\n\nЭто syntactic example, не accessibility-approved color. Фактический contrast не проверялся.\n\n**Figma**\n\n```text\nVariable collection: Semantic / Color\nVariable: action/destructive\nModes: Light, Dark only if values genuinely differ\n```\n\nButton destructive variant получает fill или foreground через binding к semantic variable.\n\n**Code contract**\n\n```text\nDesign semantic role:\n  action.destructive\n\nWeb:\n  --color-action-destructive\n\nSwift:\n  DesignColor.actionDestructive\n\nAndroid:\n  DesignColor.ActionDestructive\n```\n\nЭто один semantic identity с тремя platform identifiers. Значения могут различаться, если platform requirements это оправдывают.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Synthetic illustrative example, not an observed integrated system or executed build."
+      }
+    },
+    {
+      "id": "R076",
+      "level": 3,
+      "title": "Трассировка типографической роли",
+      "text": "### Трассировка типографической роли\n\n**Concept**\n\nПовторяющийся основной текст задач и fields.\n\n**Semantic role**\n\n```text\ntype/body/md\n```\n\n**DTCG**\n\n```json\n{\n  \"type\": {\n    \"body\": {\n      \"md\": {\n        \"$type\": \"typography\",\n        \"$value\": {\n          \"fontFamily\": \"Inter\",\n          \"fontSize\": {\n            \"value\": 16,\n            \"unit\": \"px\"\n          },\n          \"fontWeight\": 400,\n          \"letterSpacing\": {\n            \"value\": 0,\n            \"unit\": \"px\"\n          },\n          \"lineHeight\": 1.5\n        }\n      }\n    }\n  }\n}\n```\n\n**Figma**\n\nНе следует ожидать один `Typography Variable`. Практичная representation — Text Style `Body/MD`, при необходимости с typography properties, привязанными к variables. Это соответствует нынешней Figma model.\n\n**Native implementation**\n\n`body/md` означает semantic intent, а не приказ использовать 16 px на любой платформе. SwiftUI implementation должна учитывать Dynamic Type. Android implementation должна учитывать platform text scaling.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Synthetic illustrative example, not an observed integrated system or executed build."
+      }
+    },
+    {
+      "id": "R077",
+      "level": 3,
+      "title": "Трассировка переиспользуемого элемента управления",
+      "text": "### Трассировка переиспользуемого элемента управления\n\nПусть это `Button`.\n\n**Design API**\n\n```text\nButton\n  intent:\n    primary\n    secondary\n    destructive\n\n  size:\n    compact\n    regular\n\n  leadingIcon:\n    optional\n\n  label:\n    text\n\n  disabled:\n    boolean\n\n  loading:\n    boolean\n```\n\nTheme не является Button property. Content length не является variant. Hover не должен становиться постоянным user-set property.\n\n**Code conceptual contract**\n\n```ts\ntype ButtonIntent =\n  | \"primary\"\n  | \"secondary\"\n  | \"destructive\"\n\ninterface ButtonProps {\n  intent: ButtonIntent\n  disabled?: boolean\n  loading?: boolean\n  leadingIcon?: Icon\n  children: string\n  onAction: () => void\n}\n```\n\nЭтот TypeScript-фрагмент служит лишь **читаемым описанием API**. Он не выполнялся и не утверждает, что React должен быть canonical implementation.\n\nSwiftUI и Compose могут выражать тот же intent другими типами и использовать native behaviour.\n\nFigma component set способен выражать `VARIANT`, `BOOLEAN`, `TEXT`, `INSTANCE_SWAP` и `SLOT` properties через Plugin API, поэтому такой design-side API технически представим.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Synthetic illustrative example, not an observed integrated system or executed build."
+      }
+    },
+    {
+      "id": "R078",
+      "level": 3,
+      "title": "Трассировка составного паттерна",
+      "text": "### Трассировка составного паттерна\n\n`TaskRow` — domain pattern, не foundational atom.\n\n```text\nTaskRow\n  Checkbox\n  Task title\n  Optional metadata\n  Optional trailing action\n```\n\nОн использует shared `Checkbox`, typography roles и spacing semantics, но его meaning принадлежит Tasks domain.\n\n```text\ncore/Button\ncore/Checkbox\ncore/type/body/md\n\n        ↓\n\ntasks/TaskRow\n```\n\nЕсли позднее Projects domain получает `ProjectRow`, не надо автоматически объединять их в абстрактный `UniversalRow`. Сначала нужно доказать, что у них совпадают anatomy, interaction contract и semantic responsibility.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Synthetic illustrative example, not an observed integrated system or executed build."
+      }
+    },
+    {
+      "id": "R079",
+      "level": 3,
+      "title": "Представительная композиция в Figma",
+      "text": "### Представительная композиция в Figma\n\nВ Figma synthetic slice выглядел бы концептуально так:\n\n```text\nTaskListScreen\n  Surface\n    Heading instance\n    Button instance\n    TaskRow instance × N\n\nTaskEditor\n  Field instance\n  Field instance\n  Button primary\n  Button destructive\n\nDestructiveConfirmation\n  Dialog shell\n    Heading\n    Body\n    Button secondary\n    Button destructive\n```\n\nКритическая проверка заключается не в визуальном сходстве, а в том, что editing `Button/destructive` действительно обновляет его instances.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Synthetic illustrative example, not an observed integrated system or executed build."
+      }
+    },
+    {
+      "id": "R080",
+      "level": 3,
+      "title": "Что делает агент при создании",
+      "text": "### Что делает агент при создании\n\nПервый run должен:\n\n1. инспектировать local variables, styles и components\n2. искать эквиваленты в enabled libraries\n3. создать отсутствующие semantic definitions\n4. создать Button только если эквивалент не найден\n5. создать domain TaskRow\n6. собрать screens из instances\n7. привязать Variables\n8. получить screenshot\n9. сравнить render с approved direction\n10. исправить owning definitions, а не каждую instance отдельно\n11. вернуть diff\n\nFigma MCP предоставляет `get_variable_defs`, screenshot tooling, library search и `use_figma`, поэтому primitives этого workflow документированы. Полный orchestration contract остаётся не проверенным end to end. [Figma MCP — Tools and prompts](https://developers.figma.com/docs/figma-mcp-server/tools-and-prompts/)\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Synthetic illustrative example, not an observed integrated system or executed build."
+      }
+    },
+    {
+      "id": "R081",
+      "level": 3,
+      "title": "Повторный запуск",
+      "text": "### Повторный запуск\n\nБез изменений input ожидаемый результат:\n\n```text\ncreated: 0\nduplicated: 0\nupdated: 0\nreused: existing definitions\n```\n\nИменно эта проба отделяет генератор от maintainer-а.\n\nТекущая документация Figma не обещает такую идемпотентность автоматически. Поэтому это обязательный hands-on test.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Synthetic illustrative example, not an observed integrated system or executed build."
+      }
+    },
+    {
+      "id": "R082",
+      "level": 3,
+      "title": "Добавление второй продуктовой области",
+      "text": "### Добавление второй продуктовой области\n\nПредположим, продукт получает Projects.\n\nСтабильны:\n\n```text\ncolor semantics\ntypography roles\nspacing relationships\nButton\nField\nDialog shell\n```\n\nДобавляются:\n\n```text\nprojects/ProjectCard\nprojects/ProjectEditor\n```\n\nВозможно расширение semantics:\n\n```text\ncolor/fg/metadata\n```\n\nесли реальная новая роль ещё не покрыта core.\n\nНе следует добавлять:\n\n```text\nProjectBlue\nProjectCardPadding\n```\n\nв global foundation только потому, что эти значения встретились один раз.\n\nЕсли `TaskRow` и `ProjectRow` после нескольких compositions оказываются структурно и семантически одинаковыми, можно провести отдельную promotion migration к shared pattern.\n\nЭто демонстрирует **mechanism of extension**, но не доказывает arbitrary product scale.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Synthetic illustrative example, not an observed integrated system or executed build."
+      }
+    },
+    {
+      "id": "R083",
+      "level": 3,
+      "title": "Изменение общего определения",
+      "text": "### Изменение общего определения\n\nДопустим, после accessibility check `color/action/destructive` нужно сделать темнее.\n\nПравильная migration:\n\n```text\nprimitive value changes\n       ↓\nsemantic alias remains\n       ↓\nFigma binding remains\n       ↓\nButton destructive updates\n       ↓\nTask editor updates\n       ↓\nDialog updates\n       ↓\ncode tokens regenerate\n       ↓\nrender and accessibility checks rerun\n```\n\nConsumer API не меняется.\n\nЕсли же `Button.intent = danger` переименовывается в `destructive`, это API migration и требует:\n\n```text\nold name → deprecated alias\nnew name → canonical\nconsumer search\nmigration\nremoval only after consumers are clean\n```\n\nЭти два изменения нельзя считать одинаковыми только потому, что visual result похож.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Synthetic illustrative example, not an observed integrated system or executed build."
+      }
+    },
+    {
+      "id": "R084",
+      "level": 3,
+      "title": "Практический рабочий контракт агента",
+      "text": "### Практический рабочий контракт агента\n\n| Фаза | Контракт |\n| --- | --- |\n| **Входные данные** | одобренное направление, целевой файл, реестр токенов, соответствия, поддерживаемые платформы, ограничения |\n| **Discovery** | сначала variables, styles, components, libraries и mappings |\n| **Классификация** | наблюдаемое / выведенное / предложенное / принятое / неизвестное |\n| **Planning** | explicit bounded diff до записи |\n| **Ownership** | менять owner, а не patch instances |\n| **Creation** | upsert по canonical identity |\n| **Разрушительные действия** | не удалять shared object без dependency check |\n| **Проверка** | проверка структуры, скриншот и подходящие исполняемые проверки |\n| **Conflict** | остановить overwrite при неожиданном изменении owner |\n| **Частичный сбой** | вернуть журнал завершённого, неуспешного и неопределённого |\n| **Recovery** | повторная inventory перед resume |\n| **Результат** | разница, открытые вопросы, невыполненные проверки, заметки о миграции |\n\n**Safe reversible defaults** допустимы для:\n\n- промежуточного spacing normalization\n- выбора local draft names\n- temporary grouping\n- placeholder content, явно помеченного как placeholder\n\n**Решение автора нужно** для:\n\n- material visual departure\n- новой product semantic\n- разрушительная миграция компонента или API\n- изменения brand intent\n- отказа от platform convention\n- решение о необратимом удалении или публикации\n\n"
+    },
+    {
+      "id": "R085",
+      "level": 2,
+      "title": "Проверка работоспособности, роста и надёжности",
+      "text": "## Проверка работоспособности, роста и надёжности\n\n"
+    },
+    {
+      "id": "R086",
+      "level": 3,
+      "title": "Пять разных классов доказательства",
+      "text": "### Пять разных классов доказательства\n\nИх нельзя взаимозаменять.\n\n| Проверка | Что она доказывает | Что не доказывает |\n| --- | --- | --- |\n| **Structural** | используются instances, variables, mappings | что интерфейс выглядит правильно |\n| **Token** | aliases разрешаются, raw values не просочились | доступность |\n| **Рендеринг** | фактический визуальный результат | поведение при выполнении |\n| **Исполняемое поведение** | состояния, события, фокус, навигация | понимание человеком |\n| **Доступность** | часть measurable requirements и assistive behaviour | общую usability |\n| **Понимание человеком** | корректность языка, иерархии и понимания взаимодействия | структурная согласованность |\n\nWCAG itself включает requirements, которые невозможно закрыть swatch check. Android accessibility guidance также рекомендует сочетать automated и manual testing, а не считать automation полной заменой проверки assistive technologies.\n\n"
+    },
+    {
+      "id": "R087",
+      "level": 3,
+      "title": "Предлагаемый план исполняемых проверок",
+      "text": "### Предлагаемый план исполняемых проверок\n\nНи одна из следующих проб в рамках этого исследования **не выполнена**.\n\n| Проба | Процедура | Успех | Что реально доказывает |\n| --- | --- | --- | --- |\n| **Первое создание** | создать vertical slice | shared definitions используются | агент способен создать один связанный slice |\n| **Повторное создание** | повторить тот же request | нет дублирующих определений | локальную идемпотентность |\n| **Тема и контекст** | сменить режим и поверхность | semantics сохраняются | модель псевдонимов и контекстов работает в выбранных случаях |\n| **Длинный русский текст** | заменить content длинными RU strings | нет обрезка содержимого и потеря действий | часть localization resilience |\n| **Крупный текст** | увеличить text size | layout остаётся usable | resilience одного slice к scaling |\n| **Новый компонент** | добавить новый control через имеющийся foundation | reuse без raw duplication | расширяемость набора понятий |\n| **Переименование токена** | переименовать semantic token | consumers мигрируют или получают явную ошибку | стратегия идентичности и миграции |\n| **Прерванная запись** | прервать run между stages | второй run корректно resumes | recovery |\n| **Ручной конфликт** | вручную изменить shared definition между инспекция и запись | агент не затирает молча | обнаружение конфликта |\n| **Удалённый компонент** | удалить или deprecate mapped owner | нарушенные соответствия обнаружены | обнаружение расхождений |\n| **Новая предметная область** | добавить Projects поверх Tasks | общее ядро переиспользуется, локальная предметная область остаётся локальной | механизм ограниченного расширения |\n| **Общее изменение** | изменить Button owner | известные потребители обновляются согласованно | распространение изменений |\n| **Разделение библиотеки** | вынести предметную область в отдельную библиотеку или пакет | идентичности и зависимости сохраняются | механизм разделения |\n| **Вторая платформа** | разрешить те же semantics в другом platform implementation | semantic contract переносим | multi-platform hypothesis на двух целях |\n\nДаже прохождение всех этих probes не доказывает «enterprise scale». Оно даёт **representative evidence**.\n\n"
+    },
+    {
+      "id": "R088",
+      "level": 3,
+      "title": "Конкретные проверки первого сквозного среза",
+      "text": "### Конкретные проверки первого сквозного среза\n\n**Structural checks**\n\n```text\n0 raw duplicate Button definitions\nall Button usages are instances\nall system colours use allowed semantic variables\nall documented Figma ↔ code components have mapping\nno unresolved canonical IDs\n```\n\nЭти проверки можно автоматизировать.\n\n**Visual checks**\n\n```text\napproved concept vs reconstructed system screen\nlight\ndark\nlong Russian copy\nlarge text\nnarrow and wide relevant layouts\n```\n\nЗдесь требуется rendering и частично человеческое judgement.\n\n**Behaviour checks**\n\n```text\ndisabled control cannot activate\nloading state behaves predictably\nfocus order is correct\ndestructive confirmation has correct action hierarchy\nkeyboard interaction works where relevant\nscreen reader exposes meaningful names and states\n```\n\nЭто требует executable implementation.\n\n**Accessibility checks**\n\nДля web text contrast минимум 4.5:1 для обычного текста и 3:1 для large-scale text. Focus, non-text contrast, reflow и text spacing проверяются отдельно.\n\nНа Android touch target следует проверять относительно рекомендаций 48 × 48 dp. На Apple — Dynamic Type и другие relevant platform accessibility settings.\n\n"
+    },
+    {
+      "id": "R089",
+      "level": 3,
+      "title": "Что измерять в эксперименте по сопровождению",
+      "text": "### Что измерять в эксперименте по сопровождению\n\nПоскольку независимых данных о labor savings именно для текущего Figma `use_figma` workflow пока недостаточно, нельзя честно написать «агент сокращает обслуживание в N раз».\n\nВместо этого hands-on experiment должен измерять:\n\n| Метрика | Единица |\n| --- | --- |\n| Первичное создание | затраченное активное время |\n| Вмешательства человека | количество |\n| Операции Figma | количество |\n| Дубли объектов после повторного запуска | количество |\n| Нарушенные соответствия | количество |\n| Добавленные исходные значения | количество |\n| Восстановление после прерывания | время и число шагов |\n| Конфликт корректно обнаружен | да или нет |\n| Потребители, которым нужна ручная миграция | количество |\n| Ненамеренные визуальные изменения | количество |\n| Регрессии доступности | количество |\n| Повторные попытки агента после устаревания идентификаторов | количество |\n\nПосле нескольких migrations можно сравнить:\n\n```text\nmanual baseline\nvs\nagent-assisted bounded workflow\n```\n\nбез предположения, что vendor demo равен measured productivity.\n\n"
+    },
+    {
+      "id": "R090",
+      "level": 3,
+      "title": "Что известно о надёжности агентов",
+      "text": "### Что известно о надёжности агентов\n\nЕсть растущая empirical literature по GUI agents и design-to-code, но transfer limit здесь очень большой.\n\nFigma2Code 2026 исследует structured Figma-to-code conversion через intermediate representation. VISTA 2026 тестирует превращение multi-page visual specifications в runnable web и Android apps. Другие project-level benchmarks прямо отмечают, что single-screen fidelity не измеряет project-wide maintainability.\n\nGUI-agent benchmarks также показывают, что короткие benchmark tasks могут заметно переоценивать готовность к длинным workflow. OSWorld 2.0 прямо критикует короткие self-contained tasks как недостаточную проверку длительной компьютерной работы. В SimuWoB авторы сообщают среднюю успешность исследованных mobile GUI agents около 27,92%, падающую до 17,82% на long-horizon tasks. Эти числа **нельзя переносить на Figma MCP**, но они являются аргументом против предположения, что успешная одиночная Figma mutation доказывает надёжный maintenance loop.\n\nFigmaTrace 2026 уже собирает human Figma interaction traces и показывает улучшение downstream GUI-agent benchmarks после соответствующего обучения, а AI Prototyper исследует decomposition и human-in-the-loop editing внутри Figma. Однако ни одно из найденных исследований не является longitudinal test, где агент создаёт design system, переживает series of token migrations, manual conflicts, product-area growth и продолжает поддерживать её без скрытого drift.\n\n**Следовательно, основная reliability hypothesis этого задания остаётся открытой.**\n\n"
+    },
+    {
+      "id": "R091",
+      "level": 3,
+      "title": "Когда разделять библиотеку",
+      "text": "### Когда разделять библиотеку\n\nLibrary split оправдан не количеством компонентов само по себе, а появлением независимой границы.\n\nХорошие triggers:\n\n```text\ndifferent ownership\ndifferent release cadence\ndifferent product/domain consumers\noptional dependency\ndifferent platform implementation\nbrand-specific assets\ndiscovery noise\npermission boundary\n```\n\nПлохой trigger:\n\n```text\n\"в файле уже много компонентов\"\n```\n\nSplit должен сохранить canonical identities и dependency graph. Потребитель domain-library должен получать core как versioned dependency, а не копию core.\n\nSpectrum platform-manifest strategy является масштабным примером versioned base + переопределения и расширения. Она полезна как evidence архитектурного паттерна, но сама документация на 20 августа 2026 года содержит ряд shipping gaps и future items. Это хороший пример того, почему roadmap нельзя выдавать за реализованную capability.\n\n"
+    },
+    {
+      "id": "R092",
+      "level": 3,
+      "title": "Когда нужны Storybook, CI и отдельный конвейер токенов",
+      "text": "### Когда нужны Storybook, CI и отдельный конвейер токенов\n\n| Параметр | Описание |\n| --- | --- |\n| Storybook или аналог | начинает окупаться, когда code components требуют систематической инспекция вида и состояния независимо от product app. |\n| Проверка токенов в CI | нужен, когда изменение tokens уже может затронуть несколько consumers. |\n| Генерируемые платформенные артефакты | оправданы, когда ручная синхронизация стала повторяемой точкой отказа. |\n| Формальные средства вывода из использования | нужно, когда components или tokens имеют внешних consumers, которых нельзя мигрировать атомарно. |\n| Отдельный governance service | не оправдан только тем, что system «может однажды стать большой». |\n\nPrimer показывает реальный automated build и diff pipeline вокруг token source. Spectrum проектирует CI-gated validation и foundation drift detection. Это подтверждает полезность tooling после появления cross-consumer change cost, а не необходимость копировать его на старте.\n\n"
+    },
+    {
+      "id": "R093",
+      "level": 3,
+      "title": "Когда архитектура минимального подхода перестаёт быть достаточной",
+      "text": "### Когда архитектура минимального подхода перестаёт быть достаточной\n\nПереходить дальше стоит, если одновременно возникают реальные требования.\n\n**От Figma-led к shared-token source**\n\nКогда:\n\n```text\nsecond platform\nsecond theme\ncode and Figma drift repeatedly\ntoken changes need review/diff\n```\n\n**От monolithic library к core + domains**\n\nКогда:\n\n```text\ndomain ownership diverges\nconsumers need different subsets\nrelease cadence diverges\n```\n\n**От semantic + primitive к component token layer**\n\nКогда:\n\n```text\ncomponents systematically need independent overrides\n```\n\n**От manual mapping к generated registry**\n\nКогда:\n\n```text\nmapping count makes stale references recurrent\n```\n\n**От solo conventions к governance**\n\nКогда:\n\n```text\nmultiple editors can make incompatible shared changes\ndeprecations affect independent consumers\n```\n\nЭто и есть Occam's razor в данном контексте: не минимальное количество объектов любой ценой, а **минимальное количество механизмов, которое сохраняет реальные инварианты**.\n\n"
+    },
+    {
+      "id": "R094",
+      "level": 2,
+      "title": "Источники",
+      "text": "## Источники\n\n**Статус источников:** сохранены исходные именованные ссылки — 62. В разделе источников после очистки остаются 40 ссылок. Вместо 11 экспортных маркеров восстановлены ссылки на открытые источники. Для 93 маркеров точное соответствие источнику не восстановлено, в том числе там, где рядом уже есть именованная ссылка. Утверждения при этих маркерах сохранены без реконструированной ссылки. Слой источников неполон: это структурно обработанная заметка, а не заново проверенное исследование.\n\n\n",
+      "readingContext": {
+        "kind": "sources",
+        "note": "Retained source bibliography or citation status. Not independently exhaustive verification."
+      }
+    },
+    {
+      "id": "R095",
+      "level": 3,
+      "title": "Реестр существенных операций Figma",
+      "text": "### Реестр существенных операций Figma\n\nНиже detailed operation record, который отделяет documented capability от доказательства working workflow.\n\n| Операция | Первичный источник | Предпосылка | Остаточное доказательство |\n| --- | --- | --- | --- |\n| Инспекция выбранного дизайна | MCP `get_design_context`, metadata | доступ к файлу | качество интерпретации агентом |\n| Инспекция переменных и стилей | `get_variable_defs` | relevant selection | полнота system inventory |\n| Search libraries | `get_libraries`, `search_design_system` | доступные и подключённые библиотеки | правильность reuse decision |\n| Запись фрейма или узла | remote `use_figma` | write-capable client, permissions | idempotency |\n| Создание переменной | `use_figma` → Plugin API | remote MCP | соответствие каноническому токену |\n| Создание коллекции и режимов | Plugin API | write access | naming and context architecture |\n| Bind variable | Plugin API | совместимое свойство или тип | preserved binding after migration |\n| Создание компонента | Plugin API | локальный редактируемый файл | качество API |\n| Объединение вариантов | Plugin API | совместимые узлы | предотвращение взрывного роста вариантов |\n| Свойства компонента | `ComponentSetNode` API | компонент или набор | consistency with code API |\n| Auto Layout | Plugin API | совместимость узлов | реальное качество изменения размеров |\n| Изменение текста | Plugin API | шрифт загружен | реальный рендеринг типографики |\n| Загрузка шрифта | `loadFontAsync` | шрифт уже доступен в Figma | обработка резервного варианта |\n| Импорт компонента библиотеки | `importComponentByKeyAsync` | опубликован и доступен | восстановление после устаревания ключа |\n| Import variable | `importVariableByKeyAsync` | опубликован и доступен | корректность режима и контекста |\n| Подключение библиотеки | Plugin API сейчас не позволяет это сделать | ручное действие в интерфейсе | может ли другая поверхность MCP безопасно это выполнить |\n| Публикация библиотеки | общая публичная возможность не установлена | вероятно, остаётся ручной процесс | нужно проверить, а не предполагать |\n| Создание связи Code Connect | MCP / Code Connect | опубликованный компонент и предпосылки создания связи | совместимость API кода |\n| Захват работающего веб-интерфейса | `generate_figma_design` | удалённый MCP и поддерживаемый клиент | превращение в переиспользуемую систему |\n| HTML → слои | `html_to_figma` | самодостаточный HTML | систематизация остаётся отдельной работой |\n| Visual inspection | screenshot | accessible node | оценка человека и восприятия |\n| Возобновление прерванной многошаговой записи | документированный механизм транзакций отсутствует | собственная координация | **не проверено** |\n| Detect concurrent manual conflict | no guaranteed high-level mechanism found | собственный снимок или отпечаток | **не проверено** |\n\nИсточники Figma для этой таблицы: [MCP Tools and prompts](https://developers.figma.com/docs/figma-mcp-server/tools-and-prompts/), [MCP FAQ](https://help.figma.com/hc/en-us/articles/39252411778583-Figma-MCP-server-FAQs), [Plugin API](https://developers.figma.com/docs/plugins/api/figma/), [Variables REST API](https://developers.figma.com/docs/rest-api/variables-endpoints/).\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Author synthesis and reported coverage, not accepted Fab policy."
+      }
+    },
+    {
+      "id": "R096",
+      "level": 3,
+      "title": "Карта покрытия требований задания",
+      "text": "### Карта покрытия требований задания\n\n| Исследовательский вопрос | Где отвечено | Непроверенный остаток |\n| --- | --- | --- |\n| Какой system действительно нужен | «Архитектура и границы роста» | scale конкретного большого продукта |\n| Atomic design и альтернативы | там же | влияние taxonomy на конкретную команду |\n| Минимальная первая реализация | «Ориентация» + architecture | затраты на практическую работу |\n| Разделение крупного продукта на части | архитектура | эмпирическая проверка масштаба |\n| Существующая или нативная основа | architecture + Figma и код | platform companion verification |\n| Концепт, созданный агентом | «От концепта…» | качество конкретного concept agent |\n| Представления концепта | там же | сравнительное пользовательское исследование |\n| Границы одобрения | там же | процесс конкретного создателя |\n| Недостающие состояния | там же + синтетический пример | исполняемая реализация |\n| Слои токенов | «От концепта…» | резолвер рабочего окружения |\n| Точный формат DTCG | там же | запуск парсера |\n| Связи с Figma | разделы токенов и Figma | проверка обратимого переноса |\n| Предоставленная схема именования | раздел именования | точные исходные таблицы недоступны |\n| Шкалы альфа-канала и непрозрачных тонов | раздел именования | actual supplied paint values unavailable |\n| Светлая и тёмная темы, доступность | naming + validation | real screens |\n| Figma как основа, код как основа и общие решения | раздел Figma и кода | comparative maintenance measurement |\n| Расхождения, версионирование и вывод из использования | Figma и код + validation | longitudinal test |\n| SwiftUI/Android cross-platform | architecture + Figma и код | companion implementations |\n| MCP vs Plugin vs REST | Figma и код | live account behaviour |\n| Компоненты, переменные и стили | реестр возможностей | end-to-end mutation |\n| Публикация | реестр возможностей | нужна проверка в работе |\n| Idempotency/возобновление и конфликт | operating contract | entirely unexecuted |\n| Работающая система и декоративный набор | проверка | полный набор исполняемых проб |\n| Проверки роста | проверка | реальный эксперимент с продуктовой областью |\n| Стоимость сопровождения | проверка | прямой эмпирический набор данных Figma не найден |\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Author synthesis and reported coverage, not accepted Fab policy."
+      }
+    },
+    {
+      "id": "R097",
+      "level": 3,
+      "title": "Ключевые открытые вопросы для практического исследования",
+      "text": "### Ключевые открытые вопросы для практического исследования\n\nСамые важные неизвестные теперь не архитектурные, а эксплуатационные.\n\n- **Первое:** сможет ли `use_figma` на конкретном учётная запись и клиент создать один vertical slice, повторить его без duplicates и обновить owning definitions после повторной inventory. Figma документирует primitives для этого, но не этот end-to-end invariant.\n\n- **Второе:** как именно remote MCP ведёт себя при interruption внутри сложного `use_figma` plan. Документация не даёт transaction guarantee.\n\n- **Третье:** можно ли построить достаточно надёжное identity resolution после duplicate file, component recreation и manual rename.\n\n- **Четвёртое:** насколько `search_design_system` и описания компонентов уменьшают ошибочный создание и переиспользование на реальной библиотеке. Текущая документация показывает capability, а не error rate. [Figma MCP — Tools and prompts](https://developers.figma.com/docs/figma-mcp-server/tools-and-prompts/)\n\n- **Пятое:** какой DTCG 2025.10 subset реально проходит выбранный production resolver. Style Dictionary 5.x всё ещё заявляет incomplete 2025.10 coverage.\n\n- **Шестое:** насколько переменные и режимы Figma удобно представляют реальную cross-platform context model без искусственного Cartesian product.\n\n- **Седьмое:** что конкретно должно оставаться platform-specific после companion studies SwiftUI, Android и web.\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Author synthesis and reported coverage, not accepted Fab policy."
+      }
+    },
+    {
+      "id": "R098",
+      "level": 3,
+      "title": "Источники по токенам и совместимости",
+      "text": "### Источники по токенам и совместимости\n\n- [Design Tokens Format Module 2025.10](https://www.designtokens.org/tr/2025.10/format/) — стабильный DTCG interchange format, Final Community Group Report от 28 октября 2025 года.\n- [Design Tokens Resolver Module 2025.10](https://www.designtokens.org/tr/2025.10/resolver/) — contexts, modifiers, sets и resolution order.\n- [Design Tokens Color Module 2025.10](https://www.designtokens.org/tr/2025.10/color/) — color spaces, alpha и naming examples.\n- [Style Dictionary DTCG support](https://styledictionary.com/info/dtcg/) — first-class DTCG support с явным предупреждением о неполной поддержке 2025.10.\n- Style Dictionary `5.7.0`, найденный релиз от 16 октября 2026 года, использован как version pin для текущего tool context.\n- [Primer primitives](https://github.com/primer/primitives) — реальный token build через Style Dictionary, themes и Figma metadata extensions. `main` на дату исследования, поэтому не immutable revision.\n- [Primer token naming](https://primer-docs-preview.github.com/product/primitives/token-names/) — base, functional и категории компонентов и паттернов.\n\n",
+      "readingContext": {
+        "kind": "sources",
+        "note": "Retained source bibliography or citation status. Not independently exhaustive verification."
+      }
+    },
+    {
+      "id": "R099",
+      "level": 3,
+      "title": "Источники по методологии и масштабированию",
+      "text": "### Источники по методологии и масштабированию\n\n- [Atomic Design Methodology, Brad Frost](https://atomicdesign.bradfrost.com/chapter-2/) — исходная five-stage model как mental model, а не обязательная линейная production hierarchy.\n- [Adobe Spectrum Design Data](https://github.com/adobe/spectrum-design-data) — design tokens, component schemas и tooling.\n- [Spectrum Multi-Platform SDK Strategy](https://github.com/adobe/spectrum-design-data/blob/main/SPECTRUM_MULTIPLATFORM_SDK_STRATEGY.md) — foundation, platform manifests, переопределения и расширения, current shipped state и явно отмеченный future work. Документ reconciled with shipped reality 20 августа 2026 года.\n- [USWDS](https://github.com/uswds/uswds) — пример web-oriented design system с собственным token vocabulary. Его implementation-specific character ограничивает переносимость примера на native.\n\n",
+      "readingContext": {
+        "kind": "sources",
+        "note": "Retained source bibliography or citation status. Not independently exhaustive verification."
+      }
+    },
+    {
+      "id": "R100",
+      "level": 3,
+      "title": "Источники по Figma",
+      "text": "### Источники по Figma\n\n- [Figma MCP Tools and prompts](https://developers.figma.com/docs/figma-mcp-server/tools-and-prompts/) — `use_figma`, library search, Code Connect tools, code-to-design surfaces. [Figma MCP — Tools and prompts](https://developers.figma.com/docs/figma-mcp-server/tools-and-prompts/)\n- [Figma MCP FAQ](https://help.figma.com/hc/en-us/articles/39252411778583-Figma-MCP-server-FAQs) — remote-only write, Plugin API execution, beta status, seat requirements и safety recommendations.\n- [Figma Code to canvas](https://developers.figma.com/docs/figma-mcp-server/code-to-canvas/) — editable flat layers и отличие от library-connected `use_figma`.\n- [Figma MCP rate limits and access](https://developers.figma.com/docs/figma-mcp-server/rate-limits-access/) — текущие ограничения тарифа и типа рабочего места и permissions.\n- [Figma Variables REST endpoints](https://developers.figma.com/docs/rest-api/variables-endpoints/) — types, modes, keys, bulk operations и Enterprise access boundary.\n- [Figma Team Library Plugin API](https://developers.figma.com/docs/plugins/api/figma-teamlibrary/) — library variable discovery и невозможность enable library через Plugin API.\n- [Figma Plugin API](https://developers.figma.com/docs/plugins/api/figma/) — импорт компонентов, стилей и переменных и font operations.\n- [ComponentSetNode](https://developers.figma.com/docs/plugins/api/ComponentSetNode/) — component property model.\n- [loadFontAsync](https://developers.figma.com/docs/plugins/api/properties/figma-loadfontasync/) — font preconditions.\n- [Code Connect UI](https://developers.figma.com/docs/code-connect/code-connect-ui-setup/) — published component ↔ code mapping.\n- [Code Connect template migration](https://developers.figma.com/docs/code-connect/templates-migration-guide/) — актуальное направление вместо legacy framework-specific parsers.\n\n",
+      "readingContext": {
+        "kind": "sources",
+        "note": "Retained source bibliography or citation status. Not independently exhaustive verification."
+      }
+    },
+    {
+      "id": "R101",
+      "level": 3,
+      "title": "Источники по accessibility и платформам",
+      "text": "### Источники по accessibility и платформам\n\n- [WCAG 2.2 Contrast Minimum](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html) — 4.5:1 для обычного текста и 3:1 для large-scale text.\n- [WCAG 2.2 Focus Appearance](https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance.html) — отдельные требования к focus indication.\n- [WCAG Text Spacing](https://www.w3.org/WAI/WCAG22/Understanding/text-spacing.html) — сохранение содержимое и функциональность при пользовательском text spacing.\n- [Apple HIG Accessibility](https://developer.apple.com/design/human-interface-guidelines/accessibility) и [Typography](https://developer.apple.com/design/human-interface-guidelines/typography) — Dynamic Type и adaptive system typography.\n- [Android accessibility](https://developer.android.com/guide/topics/ui/accessibility/apps) и [Compose API defaults](https://developer.android.com/develop/ui/compose/accessibility/api-defaults) — touch targets и built-in accessibility support.\n\n",
+      "readingContext": {
+        "kind": "sources",
+        "note": "Retained source bibliography or citation status. Not independently exhaustive verification."
+      }
+    },
+    {
+      "id": "R102",
+      "level": 3,
+      "title": "Источники по агентной надёжности",
+      "text": "### Источники по агентной надёжности\n\n- Figma2Code, апрель 2026 года — structured Figma-to-code agent workflow с intermediate representation. Это evidence для decomposition approach, не maintenance reliability. [Figma2Code: Automating Multimodal Design to Code in the Wild](https://arxiv.org/html/2604.13648v1)\n- VISTA, версия от сентября 2026 года — multi-page visual-spec-to-app benchmark для web и Android. Это ближе к product slice, но не является longitudinal design-system maintenance test. [VISTA: An End-to-End Benchmark for Visual Spec-to-Web-App Coding Agents](https://arxiv.org/abs/2605.26144)\n- OSWorld 2.0, июнь 2026 года — аргументирует необходимость long-horizon evaluation computer-use agents. [OSWorld 2.0: Benchmarking Computer Use Agents on Long-Horizon Real-World Tasks](https://arxiv.org/abs/2606.29537)\n- SimuWoB, май 2026 года — показывает существенное падение success rate GUI agents на long-horizon mobile tasks. Перенос чисел на Figma недопустим. [SimuWoB: Simulating Real-World Mobile Apps for Fast and Faithful GUI Agent Benchmarking — v1](https://arxiv.org/abs/2605.25160v1)\n- FigmaTrace, август 2026 года — Figma-centred human interaction traces и downstream GUI-agent improvements. Не проверяет design-system lifecycle. [FigmaTrace: Capturing Creative Nuances in Human Figma Design Workflows](https://arxiv.org/abs/2608.21460)\n- AI Prototyper, июль 2026 года — Figma plugin с decomposition и human-in-the-loop refinement. Это evidence полезности промежуточного review, а не автономного maintenance. [AI Prototyper: A Figma Plugin for Decomposition-Based GUI Prototyping with LLMs](https://arxiv.org/abs/2607.14830)\n\n**Итоговая граница доказательства:** современный стек уже позволяет агенту не только читать Figma, но и программно создавать и изменять настоящие Variables, Components, Variants, Styles и layout-структуры через remote MCP и Plugin API. DTCG 2025.10 предоставляет достаточно сильный общий язык для cross-tool token semantics. Platform foundations дают проверенные behavioural и accessibility primitives. Но ни эти возможности, ни текущие design-to-code benchmarks пока не доказывают главное эксплуатационное утверждение: что агент способен многократно, идемпотентно и без скрытого drift поддерживать растущую дизайн-систему после конфликтов, миграций и расширения продукта. Это должно стать следующим hands-on доказательством, а не предположением.\n",
+      "readingContext": {
+        "kind": "sources",
+        "note": "Retained source bibliography or citation status. Not independently exhaustive verification."
+      }
+    }
+  ]
+}

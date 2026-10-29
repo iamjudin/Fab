@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "fab",
-  "version": "0.1.0-beta.36",
-  "description": "Fab (Fabricator) \u2014 brainstorm, build, ship. Independent skills for indie creators to explore ideas, research decisions, shape products, prototype interactions, build plugins and prepare releases.",
+  "version": "0.1.0-beta.37",
+  "description": "Fab (Fabricator) — brainstorm, build, ship. Independent skills for indie creators to explore ideas, research decisions, shape products, prototype interactions, build plugins and prepare releases.",
   "author": {
     "name": "iamjudin"
   },

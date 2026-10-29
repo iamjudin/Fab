@@ -3,24 +3,35 @@
 Read for mobile surface ownership, navigation, return context, input, lifecycle
 or platform boundaries. [Preserved source](mobile-structure.full.json).
 
-## Knowledge and limits
+## Current meanings
 
-- Separate shared behavior from platform presentation. App context matters when
-  it changes the decision. A browser prototype does not make the target a web app.
-- Choose structure from the actual scenario, owner, transition and retained context.
-  One main context need not have a dashboard or tabs. Top-level places, commands,
-  temporary tasks and short blocking decisions have different purposes.
-- Collection/object drill-down, stack, modal task or dialog are alternatives whose
-  suitability depends on the task. A name or fixed number of levels is not proof.
-- Back, Close, Cancel, commit and dismissal have different meaning. Explicitly
-  define draft behavior and autosave rather than silently treating Close as Save.
-- Preserve ownership, context and applicable failure/recovery paths. Do not add
-  fake loading, offline or network states to satisfy a checklist.
-- Consider long text, window size, increased text size, focus and relevant keyboard
-  behavior. Hit regions, semantics and focus order matter beyond appearance.
-  Platform units and numerical thresholds are not interchangeable.
-- Preserve semantic intent when moving to another platform, then reassess URL/history,
-  input, permissions, responsive layout and accessibility under its actual conditions.
+Use the [current knowledge reader](../../skills/research/scripts/knowledge_view.py)
+with `--query "мобильная структура"`, `--query "настройки объекта"` or
+`--query "мобильная клавиатура"`, then read the selected conditions:
+
+| Question | Current unit |
+| --- | --- |
+| Main context, peers, drill-down, overview and temporary task | `mobile-access-structure` |
+| Collection/object/app/OS control placement | `control-context-ownership` |
+| Keyboard, focus and available-window adaptation | `mobile-input-context` |
+| Native/browser and cross-platform transfer boundary | `platform-transfer-boundary` |
+| Capability request, denial and revocation | `permission-context` |
+| Notification/widget value, cold entry and destination context | `external-entry-context` |
+| Shared surface/task distinctions and continuation | `product-projections`, `product-continuation` |
+| Shared text adaptation, coverage and external evidence | `layout-adaptation`, `coverage-sufficiency`, `external-capability-evidence` |
+
+Migrated working summaries are removed here. The reader owns current bodies,
+exceptions and source receipts; output/process ownership remains below.
+
+## Source reconciliation boundary
+
+All 49 sections have a recorded disposition. Reusable decision knowledge now
+routes to current meanings, including permissions, external entry, exit semantics,
+initial setup and target checks. Original worked decision tables remain examples,
+not an additional working summary. Bibliography and exact platform numbers,
+versions, API forms and implementation recipes remain optional dated reference.
+Consult current primary guidance when a decision depends on those details.
+This closes source reconciliation, not citation verification or native proof.
 
 ## Application in current Fab
 

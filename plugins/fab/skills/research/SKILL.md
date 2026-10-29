@@ -18,6 +18,9 @@ For research assignments, synthesis and human briefs read the
 [reader contract](references/reader-contract.md). Plan evidence and its reader
 presentation together, without reducing the evidence scope to fit the layout.
 For reusable knowledge choose only the relevant [method](../../shared/methods/index.md).
+For maintained meanings follow that brief's current-reader route first, including
+applicability and unavailable/review states. Source packets supply provenance or
+uncovered detail, not a bypass that reactivates retired current advice.
 If deeper needed, resolve the [bundled reader](scripts/research_packet.py) from
 this skill's directory, then use `read <full.json> --index` and `--section <ID>`.
 Do not assume a script under the package root or current workspace. No full-library
@@ -33,8 +36,11 @@ for a commissioned Deep Research route.
 Apply [output evidence review](references/evidence-review.md) to assignment coverage
 and actual returned results. Layout compliance does not establish evidence quality. Verify
 unstable consequential facts through current primary sources.
-When ingesting read [ingestion contract](references/ingestion.md); original,
-brief and compatible indexed full retain qualifications and provenance.
+When ingesting read [ingestion contract](references/ingestion.md). For authorized
+global curation, reconcile existing meanings before adding, enrich or replace
+their current owners and switch affected consumers. Preserve originals and
+compatible indexed evidence; the entry routes to current knowledge instead of
+duplicating a working summary. Project evidence retains its actual local owner.
 After completing ingestion, follow [additive project tags](../../shared/library-usage.md).
 Use existing source-write authorization or offer the exact tag once. Keep all tags
 and filenames, with technical metadata only in a hidden EOF footer. Declining

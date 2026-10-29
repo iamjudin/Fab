@@ -5,6 +5,12 @@ The runtime package is `plugins/fab`; the marketplace is
 commit messages and release notes are English. Chat language is independent.
 Source research and frozen evidence retain their recorded language.
 
+Current contextual meanings are authored in
+[knowledge/current.json](../knowledge/current.json) and compiled by
+[the knowledge builder](../scripts/build_knowledge.py). Build/package checks reject
+stale output and mismatched source bindings. Runtime uses the bundled current
+view/reader without requiring maintainer sources. [Authoring](../knowledge/README.md).
+
 Run from the repository root:
 
 ```sh

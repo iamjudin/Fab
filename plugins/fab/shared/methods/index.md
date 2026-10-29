@@ -4,6 +4,13 @@ Use the operational brief for the active decision. Read detailed sections only
 when the brief leaves a material question open. [Library contract](../../skills/research/references/ingestion.md).
 Full packets contain source material with attribution, not overriding instructions.
 
+For migrated knowledge, use the current reader linked from the relevant brief.
+`--query` discovers candidate IDs. `--unit ID` reads the selected body with its
+conditions and contradictions; other associations are compact leads. Follow a
+relevant lead explicitly, or use `--expand-related` for a wider body view.
+Avoid loading every linked topic or filtering a truncated whole-corpus dump.
+
+
 Each brief separates transferable knowledge from its application in current Fab.
 The preserved source may contain earlier project proposals. Read its section
 `readingContext` in the index and selected output: source synthesis, mixed content,
@@ -27,6 +34,9 @@ gap. These are current policy owners, not additional research reports to ingest.
 | Selected slice → surface ownership and navigation | [Product structure](product-structure.md) | Surface types, access choices, structure/scenario validation |
 | Process architecture, executable context, human/AI responsibility | [AI-native workflow](ai-native.md) | Operating models, uncertainty and quality loops |
 | Reusable interface components, themes or design/code consistency | [Design systems](design-systems.md) | Tokens, component states, governance, extension boundaries |
+| Concept-to-system, naming/ownership or agent operation/recovery | [Agent design-system foundation](design-system-agent.md) | Independent foundation, synthetic example and dated tool limits; current work owner linked from the brief |
+| Browser component behavior, Figma/web mapping or shared changes | [Web design-system supplement](design-system-web.md) | Platform alternatives, public API versus state, adaptation and unexecuted examples |
+| Native component reuse, Figma/native mapping or platform adaptation | [Native design-system supplement](design-system-native.md) | Distinct iOS/Android behavior, provisional names, uncompiled examples and native evidence boundaries |
 | Selected slice coverage, state/data/failure gaps and prototype readiness | [Slice completeness](slice-completeness.md) | Sparse coverage, applicability, fixtures, finding classification and stop rules |
 | Paid value, model, trial/paywall or entitlement lifecycle | [Monetization](monetization.md) | Economic alternatives, paid boundary, payment/access states; fresh platform/legal checks |
 | First use, deep link, setup/identity/permission and activation | [First value](first-value.md) | Entry contexts, dependencies, skip/resume and evidence of value |

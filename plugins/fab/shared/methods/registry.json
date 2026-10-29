@@ -285,6 +285,45 @@
         },
         "boundary": "Original selective synthesis with book attribution, not the whole book. Private digest and licensed images are not bundled. Historical examples and application inferences are qualified."
       }
+    },
+    {
+      "id": "design-system-agent",
+      "sourceTitle": "Дизайн-система с AI-агентом — от концепта к развитию продукта",
+      "brief": "design-system-agent.md",
+      "full": "design-system-agent.full.json",
+      "sourceSha256": "9fe42c1322b5aba96f47450852151ff8ec93bf34746015a04c6ea704bdd6eef6",
+      "ingestedAt": "2026-10-22",
+      "validation": {
+        "structure": "exact source reconstruction; no exclusions; scope metadata promoted separately",
+        "claims": "Selected primary checks in dated intake; unresolved export-marker mappings and unexecuted examples retained; no exhaustive citation or platform audit"
+      },
+      "refreshTrigger": "actual concept/mapping/recovery decision, contradictory evidence or consequential tool/platform change"
+    },
+    {
+      "id": "design-system-native",
+      "sourceTitle": "Дизайн-система для нативных iOS и Android с AI-агентом",
+      "brief": "design-system-native.md",
+      "full": "design-system-native.full.json",
+      "sourceSha256": "d5055e73b48eb2e392aae3cfaa090e13abfcfb113ceff9891172c1055bee25db",
+      "ingestedAt": "2026-10-22",
+      "validation": {
+        "structure": "exact source reconstruction; no exclusions; scope metadata promoted separately",
+        "claims": "Selected primary checks in dated intake; unresolved export-marker mappings and unexecuted examples retained; no exhaustive citation or platform audit"
+      },
+      "refreshTrigger": "actual concept/mapping/recovery decision, contradictory evidence or consequential tool/platform change"
+    },
+    {
+      "id": "design-system-web",
+      "sourceTitle": "Дизайн-система для веба с AI-агентом",
+      "brief": "design-system-web.md",
+      "full": "design-system-web.full.json",
+      "sourceSha256": "87779369232cdc785a4802e00e9c48a9a61f1fdfb147295b6ca34b37ac271747",
+      "ingestedAt": "2026-10-22",
+      "validation": {
+        "structure": "exact source reconstruction; no exclusions; scope metadata promoted separately",
+        "claims": "Selected primary checks in dated intake; unresolved export-marker mappings and unexecuted examples retained; no exhaustive citation or platform audit"
+      },
+      "refreshTrigger": "actual concept/mapping/recovery decision, contradictory evidence or consequential tool/platform change"
     }
   ]
 }

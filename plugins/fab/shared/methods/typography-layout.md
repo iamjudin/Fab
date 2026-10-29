@@ -5,46 +5,39 @@ adaptation. [Preserved report](typography-layout.full.json) contains all 57 sour
 sections, including its unsupported claims. It is supplied research material,
 not a platform standard or a new mandatory product workflow.
 
-## Knowledge and limits
+## Current contextual meanings
 
-- Start with meaning: identify the object, its label, explanation, action and
-  enclosing group. Judge whether spacing, alignment, type and region boundaries
-  express those relationships. Equal tokens alone do not establish belonging.
-- Compare spacing within and between the actual groups. A heading should visibly
-  belong to its content. Diagnose which gap obscures the relation before changing
-  it. Do not copy a fixed 2:1 ratio, blindly reverse the gap direction, or increase
-  internal spacing merely because a source example says so.
-- Use a coherent hierarchy and spacing system, with explained optical exceptions.
-  Repeated emphasis or container decoration is not a substitute for clear groups.
-  A preference for a denser or more open composition is not automatically a defect.
-- Treat Russian text as actual content: check recognizable glyphs, punctuation,
-  number/unit combinations, wrapping and labels. Preserve meaning when arranging
-  or shortening text. A fixed manual break or nonbreaking sequence must also work
-  at the actual width, localization and selected text size.
-- Prefer text roles and content-driven composition over arbitrary fixed boxes.
-  Inspect relevant long strings, increased text size and meaningful icon/label
-  combinations. Exact font sizes, hit areas, category counts and scaling behavior
-  require current target-platform evidence. CSS pixels and native points differ.
-- Review structure/styles, rendered output and understanding separately. A token
-  checker cannot determine semantic belonging. An optical judgment needs actual
-  rendered size, and a screenshot alone does not establish user understanding or
-  native accessibility behavior. Use the cases relevant to the requested change.
+For a focused layout/text decision use the package-contained
+[knowledge reader](../../skills/research/scripts/knowledge_view.py):
+`python3 -B <research-skill>/scripts/knowledge_view.py --query "обрезается текст"`,
+then `--unit layout-adaptation` for applicability, exceptions and source receipts.
+Other entry units are `layout-grouping`, `layout-alignment`,
+`layout-text-roles`, `interface-wording` and `russian-typesetting`. Lexical aliases/topics/triggers help retrieval; they do not
+establish semantic completeness. Read the relevant linked meaning rather than
+loading every source report. A no-match is a discovery limit, not proof no relevant
+knowledge exists. The full packet remains available for qualified reference detail.
 
-## Do not adopt as universal rules
+These qualified meanings supplement the existing current view across topics.
+[Interface policy](../interface-principles.md) owns actual authoring and revision
+preflight; this evidence does not create a second instruction owner or authorize
+an edit. Accepted local preferences and experience stay in their project context.
 
-| Preserved source claim | Application boundary |
-| --- | --- |
-| Mandatory 1.5 line height, 50–75 characters, 4/8 px spacing or 2:1 gaps | Source examples/practice require context. They are not a universal native-interface specification |
-| A minimum/default font number settles readability | Text role, font, content, settings and target-platform guidance still matter |
-| Fixed Russian expansion percentages or a precise Dynamic Type category count | Unverified here. Use actual localized text and current platform settings |
-| Every important title is never truncated, every meaningful icon scales automatically | Component/runtime behavior must be checked. Do not infer a native guarantee |
-| Increasing internal spacing repairs wrong nesting | First identify the incorrect relationship. That change may worsen grouping |
+## Coverage and remaining evidence
 
-The report's bibliography was reconstructed during reader refinement. Eight
-identified URLs do not prove claim-level attribution. No full study-quality or
-Russian editorial-standard audit was performed. The requested Birman-specific
-comparison is absent, and the report does not establish a unified Russian school.
-Quoted source advice and its confidence remain preserved in the full packet.
+The six current units own grouping, anchoring, text roles, adaptation,
+interface wording and qualified Russian typesetting. This entry does not maintain a parallel working summary.
+Use their applicability, exceptions and source-conflict qualifications directly.
+
+All57sections have reviewed dispositions. The existing four meanings plus
+`interface-wording` and `russian-typesetting` cover reusable decisions.
+Detailed platform numbers, diagnostic examples, source recipes and bibliography
+remain qualified reference, not unreviewed working remainder. Unsupported source
+claims are not promoted merely to declare completion.
+
+The supplied report lacks the requested Birman/Russian-practitioner comparison.
+Its bibliography was reconstructed during refinement; eight identified URLs do
+not establish claim-level attribution or full study quality. These remain intake
+coverage limits, not another typography method.
 
 ## Independent ingestion check
 

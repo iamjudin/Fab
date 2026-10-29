@@ -132,6 +132,9 @@ def validate(root):
     return manifest
 if __name__=='__main__':
     parser=argparse.ArgumentParser();parser.add_argument('--installed-root',type=Path);args=parser.parse_args()
+    build_spec=importlib.util.spec_from_file_location('fab_knowledge_build', Path(__file__).resolve().parent/'build_knowledge.py')
+    knowledge_build=importlib.util.module_from_spec(build_spec);build_spec.loader.exec_module(knowledge_build)
+    knowledge_build.build(check=True)
     m=validate(ROOT); files=payload(ROOT)
     if args.installed_root:
         other=payload(args.installed_root)

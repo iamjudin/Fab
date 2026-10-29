@@ -16,6 +16,15 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-29 - Promote maintained knowledge from the published baseline
+
+Creator requests local/public beta.37. Use the clean published checkout and an
+explicit allowlist rather than publishing the development branch wholesale.
+Current meanings, intake, tests and public coverage evidence transfer together.
+Architecture is updated from the obsolete eight-meaning pilot description.
+Source, install, channel and behavioral boundaries remain distinct.
+[Release](../experiments/releases/knowledge-beta37-20261029/report.md).
+
 ## 2026-10-27 - Release scoped beta.36 and stop an idle observer
 
 Creator requests local/public distribution of the two-owner interface repair and

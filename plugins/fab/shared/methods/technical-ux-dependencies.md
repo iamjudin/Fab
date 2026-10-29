@@ -4,30 +4,34 @@ Read when storage, network, sync, external operations or platform capabilities
 change a user-visible promise or its evidence boundary.
 [Preserved source](technical-ux-dependencies.full.json).
 
-## Knowledge and limits
+## Current meanings
 
-- Distinguish desired behavior, known technical conditions, an unresolved dependency
-  that can change UX and behavior simulated for review. This is not a required phase.
-- Record the promise, uncertainty, impact if false, adequate check and simulation
-  boundary in an appropriate existing evidence record. Avoid a second mandatory graph.
-- Defer implementation choices when plausible options preserve the same observable
-  behavior. Material uncertainty needs a bounded promise, evidence or a blocker
-  before claiming implementation readiness.
-- Draft, durable local state, queued action and remote confirmation are different.
-  Reload persistence, backup, device transfer and replica convergence are distinct.
-  Sync does not automatically require an account or a particular architecture.
-- Map connectivity per operation and preserve independent local work on failure.
-  For consequential async effects distinguish pending, rejection, success, unknown
-  and relevant partial outcomes. Timeout is not rejection, and closing UI is not
-  necessarily cancellation. Retry needs safety evidence or reconciliation.
-- OS permissions, notifications, widgets and billing have external lifecycle.
-  Select an API after defining behavior. Simulation answers an interaction question,
-  while platform documentation and probes answer feasibility questions.
-- Choose the cheapest check that can challenge the actual assumption. A device,
-  store sandbox, two replicas or server is necessary only for the property at issue.
-- Prototype evidence identifies actual/simulated operations, persistence lifetime,
-  fixtures, allowed conclusions and open risks. A network toggle must not disable
-  unrelated local capabilities merely to manufacture an error state.
+Use the [shared current reader](../../skills/research/scripts/knowledge_view.py)
+with `--query "техническая зависимость"`, `--query "синхронизация"` or another
+concrete task phrase, then read the relevant body and its qualifications:
+
+| Question | Current unit |
+| --- | --- |
+| Promise, material unknown, deferred choice and bounded probe | `technical-promise` |
+| Local durability, backup/transfer, replicas and identity | `persistence-contract` |
+| Operation-specific connectivity, stale data and error scope | `operation-connectivity` |
+| External lifecycle and actual/simulated evidence | `external-capability-evidence` |
+| Retry, unknown/partial outcomes and optimistic presentation | `operation-outcome` |
+| Return/cancel context | `product-continuation` |
+| Adequate coverage and stopping boundary | `coverage-sufficiency` |
+| Exact/eventual/resumable timing | `timing-contract` |
+
+The migrated summary is removed here. The current units own knowledge bodies,
+conditions and source receipts; existing capabilities below still own actual
+workflow, evidence records and implementation.
+
+## Source reconciliation boundary
+
+All63sections have reviewed dispositions. Shared data, operation, platform,
+permission, access and evidence meanings now cover the reusable remainder.
+Exact OS/API snapshots, implementation examples, source records and historical
+stage proposals remain qualified reference. No unreviewed working remainder or
+competing summary is left here.
 
 ## Application in current Fab
 

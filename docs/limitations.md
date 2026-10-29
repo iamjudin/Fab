@@ -65,3 +65,20 @@ Actual authoring/revision work must still check affected relationships and
 preserved neighbors. Existing Canvas/native and production limitations remain.
 Deferred knowledge migration is excluded. Observer deletion is an administrative
 action, not closure of retained behavioral findings.
+
+
+## Beta.37 knowledge boundary
+
+All fifteen registered packets/twelve families have source dispositions and75
+maintained meanings. This does not revalidate every citation or convert every
+source section into a universal rule. Lexical title/alias/topic/trigger retrieval
+has limited Russian normalization, not guaranteed semantic recall. No match is
+not absence. Follow the topic entry/index when needed.
+
+Two fresh contexts preserve17selected applications and exceptions. One writable
+copy observes raw-report preservation, enrichment of an existing meaning, stale
+entry replacement and local-preference separation. This is not sustained organic
+use, independent science, native/installed-model behavior or proof that every
+future research assignment is well framed. No automatic source monitoring,
+cross-project refresh or generated-plugin knowledge inheritance is claimed.
+Source reports remain evidence rather than competing active guidance.

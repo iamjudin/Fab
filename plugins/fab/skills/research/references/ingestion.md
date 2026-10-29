@@ -5,19 +5,26 @@ needed, or the operational brief cannot resolve a decision. Apply
 [independent research and project application](reuse.md) to new outputs. Preserve
 supplied originals even when their titles or bodies are project-specific.
 
-## Ownership and two levels
+## Ownership and current meanings
 
-- Global methodological research belongs to Fab package `shared/methods/`.
-  The human original stays with its author (Brain for this maintainer).
+- Maintained global meanings are consumed through Fab's current view and method
+  entries. Selected detailed packets under `shared/methods/` remain provenance
+  and on-demand source detail, not the owner of every current recommendation.
+  A new report need not become another bundled method when existing meanings
+  absorb it. Preserve the source packet with the actual authorized evidence
+  owner and bind the maintained claims to its exact revision. The human
+  original stays with its author, not an implicit runtime dependency.
 - Market, audience, competitor, legal jurisdiction or implementation evidence
   consumed by a particular product is registered in its `product/research/`.
   An independent report may stay in the person's existing research library with
   exact revision links and project-local provenance. Preserve supplied originals
   and never promote them into the plugin automatically. A user may supply
   material from any environment.
-- Each included report has an operational brief and a detailed machine packet.
-  Produce both during ingestion. Reading the detailed packet is conditional,
-  not a separate permission gate for creating it.
+- Preserve a compatible indexed source packet when a report is included.
+  The reader entry is a route to maintained meanings when those exist, not a
+  second editable summary of them. For project evidence, an operational brief
+  can still explain the local question and application without creating a new
+  global knowledge store. Source preservation is not a competing default answer.
 - Runtime reasoning uses bundled knowledge or project evidence. Maintainer
   paths in provenance are not required resources; never fetch Brain to complete
   the normal workflow. Request new research when available evidence is weak.
@@ -58,6 +65,39 @@ clear read trigger, useful method and explicit limitations. Keep unrelated or
 case-specific reports outside the plugin. For maintainer research, preserve the
 human original even when a bundled module is withdrawn; remove its import mark.
 
+## Reconcile before adding global knowledge
+
+For authorized curation of a maintained global base, inspect the current topic
+entry and its reader before adding an explanation. Find the decision, existing
+meaning IDs, conditions, contrary evidence and source revisions. A new report is
+evidence to assess, not a reason to create another topic, rule or complete summary.
+
+- Enrich an existing meaning when it answers the same decision. Keep its stable ID.
+  Add a distinct meaning only when the new decision/contract warrants it.
+- Preserve evidence strength, applicability, useful exceptions and contrary cases.
+  Keep source assertions, independently checked claims and accepted project
+  choices distinct. A local preference belongs with its project, not in shared
+  authority merely because the report mentions it.
+- Add useful aliases, topics and triggers to the existing metadata. Link real
+  conditions/contradictions where they change applicability. Associations are
+  discovery leads, not commands to preload everything.
+- Preserve the exact source/version and affected claim bindings. Stable principles
+  and version-sensitive technology claims have different refresh conditions.
+  A newer date alone neither proves replacement nor invalidates unrelated knowledge.
+- Switch actual consumers in the same authorized update. Replace an obsolete
+  working paraphrase with the maintained meaning or its entry route. The old
+  source remains provenance. Record dispositions for the substantive remainder
+  before claiming the topic complete. Apply [learning closure](../../../shared/learning.md).
+
+Fab's maintained runtime view is compiled from the repository's existing authoring
+source and builder. Resolve the actual source repository and its instructions
+before editing. Reuse its authoring/build/validation mechanism. Do not edit the
+installed cache, invent a second store or assume maintainer-only tools are
+installed runtime dependencies. The bundled current reader is sufficient for
+ordinary consumption. When the source owner is unavailable or the task is only
+an intake proposal, prepare the exact affected IDs, evidence, qualifications and
+consumer changes without claiming an integrated update or expanding authority.
+
 ## Ingest a report
 
 1. Determine global-method or project-evidence scope; retain the source title,
@@ -65,10 +105,13 @@ human original even when a bundled module is withdrawn; remove its import mark.
 2. Preserve all in-scope source sections in a machine packet with an index and
    external source links. Label case-specific sections and exclusions. Structural
    conversion must not quietly discard counterevidence or qualifications.
-3. Apply the [reader contract](reader-contract.md) to the human brief without
-   rewriting the preserved original or lossless full packet. Write the brief: decision served, when to read deeper, applicable method,
-   evidence/interpretation/hypothesis boundaries, limitations and update trigger.
-   Keep source-section IDs for traceability. A summary is not new evidence.
+3. Reconcile included global findings with the maintained meanings as above.
+   Apply the [reader contract](reader-contract.md) to the entry or project brief
+   without rewriting the preserved original/full packet. Keep decision/read
+   triggers, current meaning routes, source-section identity, limitations and
+   refresh conditions. Where there is no maintained global store, use the actual
+   project's existing evidence owner rather than creating a mandatory new one.
+   A summary, tag or a newer report is not new independent verification.
 4. Validate correspondence to the source, links and conflicts with current
    contracts. Record what was checked; structural pass or sample verification
    is not a full fact check. Time-sensitive prices, laws, platform rules and
@@ -169,6 +212,9 @@ not project usage tags: past use is still past use. Version original/brief/packe
 changes together and retain processed revisions and applicability limits.
 
 Revisit a module when primary sources change, a product exposes a contradiction,
-or a decision needs detail absent from the brief. Update the brief, packet audit,
-affected instructions and validation boundary together. Books and licensed raw
+or a decision needs missing detail. Reconcile the affected current meanings,
+source audit, entry routes and validation boundary together. Preserve exact
+per-unit revisions for local accepted bindings and review changed pins rather
+than invalidating every consumer. Do not update only an archive or add a second
+working brief while the older recommendation remains the default. Books and licensed raw
 materials are not automatically copied into the plugin; use attributed synthesis.

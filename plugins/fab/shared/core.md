@@ -6,6 +6,15 @@ Deliver the requested result for this person/project. A partial task can finish
 without a product pipeline. Existing accepted material is valid input. Choose
 minimum sufficient work; no ritual artifacts or mandatory sequence of skills.
 
+Before choosing a process, establish the intended outcome, why it matters and
+what would count as sufficient completion from the request and accepted context.
+State that goal briefly when starting substantial work or when scope changes.
+If plausible interpretations change the outcome, authority or material scope,
+resolve that ambiguity before dependent work; do not substitute an available
+workflow for an unknown goal. Continue useful independent work when possible.
+A clear small task needs neither a new brief nor repeated confirmation.
+At a checkpoint, compare the actual result with the goal, not just completed steps.
+
 Indie describes the creator context, not a product-size ceiling. Keep the current
 delivery scope, foundation extensibility and demonstrated scale distinct. Start
 with a sufficient increment while preserving coherent growth of shared rules

@@ -1,63 +1,52 @@
 # Motivation and gamification — knowledge brief
 
-Read when a decision concerns willingness to act, repeat participation, feedback,
-progression, rewards or competition. [Detailed synthesis](gamification.full.json).
+Read for willingness to act, repeat participation, feedback, progression, rewards
+or competition. [Detailed synthesis](gamification.full.json).
 
-## Knowledge and limits
+## Current meanings
 
-Kevin Werbach and Dan Hunter's *For the Win* (2012, Russian translation 2015)
-offers design reasoning, not a guarantee that gamification improves outcomes.
-This pair contains an attributed selective synthesis prepared from a private
-working digest, with selected EPUB checks. It is not the full book or a lossless
-digest import. Book text and illustrations are not bundled. R002 and R013 state
-the evidence boundary and omissions. No new empirical literature review.
+Use the [current knowledge reader](../../skills/research/scripts/knowledge_view.py)
+with `--query "нужна ли геймификация"`, `--query "внутренняя мотивация"`,
+`--query "баллы бейджи рейтинги"`, `--query "обратная связь и прогресс"`
+or `--query "побочные эффекты наград"`. Follow relevant associations explicitly.
 
-| Decision | Useful question |
+| Question | Current unit |
 | --- | --- |
-| Suitability | Is willingness the obstacle, or are ability, access, price or product usefulness unresolved? |
-| Participant benefit | Why would this action matter to the person as well as the creator? |
-| Motivation | What supports competence, meaningful choice or connection here? Do not map these needs to three compulsory features. |
-| Feedback | What does the person learn after acting, and why might they continue? A token is only one possible response. |
-| Progression | What changes as experience grows? A larger counter does not establish mastery. |
-| Incentives | What becomes rational to optimize, and could that damage quality, collaboration or trust? |
+| Willingness versus ability/access/value and participant benefit | `motivation-fit` |
+| Contextual interpretation of needs, rewards and pressure | `motivation-meaning` |
+| Dynamics, mechanics, points, badges and comparison functions | `game-element-purpose` |
+| Short feedback loop, longer progression and ending | `feedback-progression` |
+| Optimization, unintended effects, quality and coercion | `incentive-effects` |
+| Actual value and claim-sensitive evidence | `first-value-meaning`, `goal-signal-metric`, `verification-fit` |
 
-R008 paraphrases the authors' 6D method: objectives, target behavior, players,
-activity cycles, enjoyment and suitable tools. Use the unresolved questions,
-not six compulsory stages. Separate outcome, observable action, motivational
-explanation and evidence. Engagement volume does not itself establish value.
+All13sections of the supplied synthesis have reviewed dispositions.
+Migrated working summaries are removed here. This is not a full-book migration.
 
-The book distinguishes dynamics of experience, mechanics of interaction and
-concrete components (R006–R007). Points can serve feedback, status, exchange or
-analytics. Badges and leaderboards have different purposes and tradeoffs.
-Personal growth, cooperative contribution and relative competition are options,
-not interchangeable defaults. Do not add a game layer solely because it is easy.
+## Source boundary
+
+Kevin Werbach and Dan Hunter's For the Win (2012, Russian translation2015)
+supplies design reasoning, not a guarantee of outcomes. The pair is an attributed
+selective synthesis prepared from a private working digest with selected EPUB
+checks. It is not the full book, lossless digest or independent empirical review.
+Book prose and illustrations are not bundled. R002/R013 preserve omissions.
+Historical cases, taxonomies and 6D questions remain qualified reference,
+not causal forecasts, fixed personas or six compulsory stages.
 
 ## Application in current Fab
 
-[Product](../../skills/product/SKILL.md) owns behavior and the creator's accepted
-goals. [Analysis](../../skills/analysis/SKILL.md) can assess an existing incentive
-design against those goals. Use this method only for the active motivation
-question. Reuse existing outcomes and evidence rather than reopening discovery.
-[First value](first-value.md) owns entry/value distinctions, and
-[monetization](monetization.md) addresses actual paid boundaries.
-
-Ask whether the experience is useful without the proposed reward layer, what
-the reward changes and which cheaper alternative addresses the same obstacle.
-This is Fab's application of the book, not a quoted book template. The method
-does not authorize new features, experiments, tracking or another project edit.
+[Product](../../skills/product/SKILL.md) owns behavior and accepted goals.
+[Analysis](../../skills/analysis/SKILL.md) assesses an existing incentive design.
+Use only the active motivation question and existing outcomes/evidence.
+[First value](first-value.md) supplies entry/value knowledge.
+[Monetization](monetization.md) addresses actual paid boundaries.
+The method does not authorize new features, experiments, tracking or project edits.
 
 ## Deeper reading, evidence and refresh
 
-- R003–R005: scope, suitability and contextual motivation. Reward crowding-out
-  is conditional, not proof that all extrinsic rewards help or harm.
-- R008–R009: six design questions, engagement loop and progression. Bartle's
-  categories are historical prompts, not universal diagnoses or fixed personas.
-- R010–R011: historical cases and conflicts. Cases are author reports, not
-  causal forecasts. Employment pressure is not voluntary play.
-- R012–R013: early test limits, selective coverage and refresh conditions.
-
-No current legal, vendor, health or child-development claim follows from the
-book. Current primary evidence is needed for consequential rules and specific
-population effects. An early comprehension check cannot establish durable
-motivation or learning. Refresh on a concrete contradiction, source change or
-decision that depends on a missing theoretical/empirical binding.
+R003–R005 cover suitability and contextual motivation. R006/R007 element
+functions, R008/R009 design questions and activity cycles, R010/R011 historical
+cases and conflicts, R012/R013 early-test limits and selective coverage.
+No current legal, vendor, health or child-development claim follows from the book.
+Use appropriate current primary evidence for consequential rules and specific
+population effects. Revisit a real contradiction, changed source or missing
+theoretical/empirical binding. Early comprehension is not durable benefit.
