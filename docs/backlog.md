@@ -6,35 +6,21 @@ and [earlier frozen record](backlog-history-2026-10-14.md) preserve original fai
 corrections, proposals and dated authority. They are history, not current tasks.
 Closing implementation or distribution does not establish behavioral maturity.
 
-## Release preparation
-
-Creator requests beta.37 locally and publicly. The release branch starts at the
-published beta.36 record and imports the exact reviewed runtime/current authoring,
-tests and required public evidence. Working source research, private logs and
-test products are excluded. The previous beta.36 facts below remain current
-until channel/install checks complete.
-
 ## Current distribution
 
-**Released, installed and enabled: beta.36**,95files/cf8f63a179a6037d;
-v0.1.0-beta.36 ->9ff78da90e98c14e856147c1b09965a1e917459a.
-138release regressions/package/scope, exact-source CI, anonymous assets and
-clean/primary exact-tag full95-file parity pass.16other settings and14prior tags
-preserved. API immutable=false; no server-enforced lock claim.
-[Release](../experiments/releases/interface-beta36-20261027/report.md).
+**Released, installed and enabled: beta.37**,104files/f57692050e9015d0;
+v0.1.0-beta.37 ->15fc8230cb3fb4d7237e4889534232bf0cf5a673.
+207regressions/build/package/scope and exact-source branch/tag CI pass.
+Anonymous assets and clean/primary exact-tag full104-file parity pass.
+16other plugin settings and15prior tags are preserved. API immutable=false.
+Exact beta.36 rollback is retained.
+[Release](../experiments/releases/knowledge-beta37-20261029/report.md).
 
-Runtime delta is two interface author/revision owners plus version. One supplied-
-guidance local/global source contrast passes; rendered quality, ambiguous scope
-negotiation, role consolidation and general improvement remain open. Next actual
-relevant interface work supplies that evidence; no generic model suite.
-Canvas remains opted-in experimental, with its original limits and actual-use
-observation boundary. Deferred knowledge migration remains excluded.
-[Repair evidence](../experiments/maintenance/interface-revision-20261027/report.md).
-
-Exact beta.35 rollback and release assets are retained. Verified owned duplicates
-and clean install profile were disposed; primary cache is preserved. Research
-observer deleted at creator request; accumulated findings processed under existing
-owners, no speculative new repair or other automation change.
+Current knowledge uses one maintained source, topic routes and compiled reader.
+Earlier interface limits remain; Canvas stays opt-in experimental. Installation
+does not establish automatic other-chat adoption or native/organic behavior.
+Source research, private logs and test products outside the reviewed release
+allowlist remain excluded. No monitoring or automatic project/plugin propagation.
 
 ## Knowledge migration outcome — FAB-15
 
@@ -60,9 +46,10 @@ conduct omitted independent research, prove native/human/scientific outcomes or
 establish sustained organic reliability. Retained limits remain with their
 meanings/source audits. Next actual intake/correction observes the same mechanism;
 no generic suite or source remainder is queued for this migration.
-Creator2026-10-29 explicitly requests local/public release. Main prepares
-beta.37 from the published baseline with a reviewed source allowlist.
-Distribution is pending independent channel/install verification.
+Creator-requested local/public promotion is complete as beta.37 from the
+published baseline and reviewed allowlist. Original working research remains
+retained separately. Next actual intake/correction observes the same mechanism.
+No further migration remainder or generic test campaign is queued.
 
 [Design-family reconciliation](../experiments/maintenance/knowledge-design-family-completion-20261029/report.md),
 [cross-family application](../experiments/maintenance/knowledge-final-application-20261029/report.md),

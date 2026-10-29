@@ -16,6 +16,14 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-10-29 - Verify local and public beta.37
+
+Exact-source CI, anonymous assets and clean/primary supported tag installs verify
+the104-file maintained-knowledge release.16other settings and15prior tags remain
+unchanged. Source, installed bytes and bounded behavioral evidence remain distinct.
+Rollback and useful evidence are retained before exact owned scratch cleanup.
+[Receipt](../experiments/releases/knowledge-beta37-20261029/report.md).
+
 ## 2026-10-29 - Promote maintained knowledge from the published baseline
 
 Creator requests local/public beta.37. Use the clean published checkout and an

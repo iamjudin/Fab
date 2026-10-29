@@ -1,0 +1,33 @@
+{
+  "version": "0.1.0-beta.37",
+  "tag": "v0.1.0-beta.37",
+  "files": 104,
+  "fingerprint": "f57692050e9015d0",
+  "sourceCommit": "15fc8230cb3fb4d7237e4889534232bf0cf5a673",
+  "baseCommit": "57cac4a581b575d46c03dbd96f496c4d85070b9f",
+  "state": "released, installed and verified",
+  "assetsSha256": {
+    "release-scope.json": "03e361a14580989b17228fa61a6a2415f62fc785a71b91a82a07f8ce5bd7770c",
+    "fab-0.1.0-beta.37.zip": "fb97be75f8df39c0931ca6eb28a3170edddbf6331d260ff62f78561f06ff58cf",
+    "SHA256SUMS.txt": "c4c2ad93375e02b85ac840ec6ab577948360e711aa08129d5a3fc0438b6f7ed0"
+  },
+  "checks": {
+    "regressions": "207pass",
+    "package": "104files/f57692050e9015d0",
+    "scope": "pass:limited beta, contextual knowledge and retained baseline",
+    "stagedProject": "69documents/505links pass",
+    "rollback": "95-file exact beta.36 retained",
+    "sourceCI": "pass:40883490655 branch and40883693467 tag exact-source",
+    "assets": "pass:anonymous checksums, ZIP/source/scope full104-file parity",
+    "cleanInstall": "pass:anonymous exact-tag/head/full104-file parity",
+    "primaryInstall": "pass:exact-tag/head/full104-file parity;16other settings preserved",
+    "previousTags": "pass:15prior tags preserved",
+    "cleanup": "pass:verified retained assets/clean hashes/rollback before exact owned disposal"
+  },
+  "publication": {
+    "url": "https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.37",
+    "isDraft": false,
+    "isPrerelease": true,
+    "immutable": false
+  }
+}
