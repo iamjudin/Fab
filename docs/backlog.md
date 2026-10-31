@@ -8,35 +8,35 @@ Closing implementation or distribution does not establish behavioral maturity.
 
 ## Current distribution
 
-**Released, installed and enabled: beta.37**,104files/f57692050e9015d0;
-v0.1.0-beta.37 ->15fc8230cb3fb4d7237e4889534232bf0cf5a673.
+**Released, installed and enabled: beta.38**,104files/75b512783c0d07d4;
+v0.1.0-beta.38 ->72f62493af20a0eb3f4fca90d060f69b14dc35b8.
 207regressions/build/package/scope and exact-source branch/tag CI pass.
 Anonymous assets and clean/primary exact-tag full104-file parity pass.
-16other plugin settings and15prior tags are preserved. API immutable=false.
-Exact beta.36 rollback is retained.
-[Release](../experiments/releases/knowledge-beta37-20261029/report.md).
+16other plugin settings and16prior version tags are preserved. API immutable=false.
+Exact beta.37 rollback is retained.
+[Release](../experiments/releases/explanations-beta38-20261101/report.md).
 
-Current knowledge uses one maintained source, topic routes and compiled reader.
-Earlier interface limits remain; Canvas stays opt-in experimental. Installation
-does not establish automatic other-chat adoption or native/organic behavior.
-Source research, private logs and test products outside the reviewed release
-allowlist remain excluded. No monitoring or automatic project/plugin propagation.
+Beta.38 ships restored explanatory knowledge and curation/learning criteria,
+adequate support and real local questions in Brainstorm, inherited-question review
+in handoff, and website content-payload preflight. Complete retained-source review
+and one fresh prompted source case support bounded claims; no new installed-model,
+native/human, causal or sustained-reliability result. Review ID
+FAB-T20261030-01-R01. No automatic cross-chat/project propagation or monitoring.
+Previous Canvas/platform limits remain; opt-in experiments remain opt-in.
 
-## Beta.38 explanatory correction — release in progress
+## Explanatory quality and application — FAB-15
 
-Creator 2026-11-01 requests local and public promotion. Source review reads all
-15 registered packets/816 sections and repairs definitions, relationships and
-alternatives in existing owners. Across two stages 37 active meanings change;
-75 active IDs and original packets remain. A fresh prompted Brainstorm case on
-an audio-note interface passes connected explanation and reassesses misleading
-inherited framing. Review ID FAB-T20261030-01-R01. These are bounded source and
-application results, not sustained/installed-model/native/human proof.
-Website content-payload preflight also ships as a qualified instruction change.
-
-Beta.38 is being prepared; beta.37 above remains the verified distribution until
-actual publication, assets and clean/primary supported installs complete. No
-generic new model campaign or propagation into another chat/project.
-[Release and verification](../experiments/releases/explanations-beta38-20261101/report.md).
+Source review and repair are complete within15registered packets/816sections.
+Both stages enrich37active meanings without new IDs/store or altered originals.
+A fresh read-only audio-note discussion selects relevant knowledge, explains
+connected roles/representations and asks one real hierarchy question instead of
+seeking approval of an already explainable foundation. This prompted root review
+does not establish organic or general reliability. The source stages and bounded
+check are now distributed in beta.38; sustained use remains a real-use question,
+not a queued generic campaign. Earlier premature stopping and original failures
+remain in the source-review evidence.
+[Review](../experiments/maintenance/knowledge-explanations-20261030/full-review.md) ·
+[Application](../experiments/maintenance/knowledge-explanation-check-20261030/report.md).
 
 ## Knowledge migration outcome — FAB-15
 

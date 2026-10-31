@@ -16,16 +16,18 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
-## 2026-11-01 - Prepare explanatory knowledge beta.38
+## 2026-11-01 - Ship explanatory knowledge beta.38
 
-Creator requests local/public update after full retained-source review and one
-fresh explanation check. Main isolates a release branch from published beta.37,
-imports reviewed runtime/authoring/minimal evidence and preserves private handoff
-packets and raw runs. The beta includes richer explanations, meaningful question
-selection, inherited-question review and website content-payload preflight.
-Distribution is pending until real channel/install verification. No new model
-campaign or general reliability claim.
-[Release contract](../experiments/releases/explanations-beta38-20261101/contract.md).
+Creator requests local/public update. The bounded release from published beta.37
+ships restored explanations and consumer/handoff criteria plus web-payload review.
+All207regressions/build/package/scope, exact-source branch/tag CI and anonymous
+asset checks pass. Clean/primary installs match all104files and the exact tag;
+16other plugin settings and16prior tags are preserved. Beta.37 rollback is retained.
+Actual installed instructions/current-reader body reread, no new model/native/
+human or sustained efficacy claim. API immutable=false. Private chat packets/raw
+runs remain outside public history. The original source and behavioral limitations
+remain visible, with no generic rerun or cross-project propagation.
+[Release evidence](../experiments/releases/explanations-beta38-20261101/report.md).
 
 ## 2026-10-29 - Verify local and public beta.37
 

@@ -5,7 +5,7 @@
   "fingerprint": "75b512783c0d07d4",
   "baseCommit": "30b5d1802c0c94462459891f98730e9c175f3eeb",
   "reviewedMain": "049c73d",
-  "state": "prepared; publication and installation pending",
+  "state": "released, installed and verified",
   "assetsSha256": {
     "fab-0.1.0-beta.38.zip": "54a47ea5d4b0059a822999ac5637cc3b5be71812e929797e0ee7d204980c329b",
     "release-scope.json": "1566a4665cbb29799796d97f07b838aad29938612173f55d6ed6f77bf9453fbf",
@@ -16,13 +16,24 @@
     "builder": "pass:723748 bytes /17588bbc6c9b1fd92fc5063daf5f17054b2bdd29eae23286ba5453afedc3e354",
     "package": "104files/75b512783c0d07d4",
     "scope": "pass:limited beta, existing experiments unchanged",
-    "stagedProject": "22documents/323links pass",
+    "stagedProject": "22documents/324links pass",
     "reviewedSourceParity": "104files; manifest version only versus049c73d",
     "originalPacketsAndIcon": "15packets/factory icon unchanged versus beta.37",
     "rollback": "exact104-file beta.37 retained",
-    "CI": "pending",
-    "assets": "local104-file ZIP/source parity; public download pending",
-    "cleanInstall": "pending",
-    "primaryInstall": "pending"
-  }
+    "CI": "pass:41243224771 branch and41243293533 tag, exact72f6249",
+    "assets": "pass:anonymous hashes and full104-file ZIP/source/scope parity",
+    "cleanInstall": "pass:anonymous exact-tag/head/full104-file parity",
+    "primaryInstall": "pass:exact-tag/head/full104-file parity;16other plugin settings preserved",
+    "previousTags": "pass:16prior version tags unchanged",
+    "installedRead": "actual dialogue/ingestion and token-projection body reread; no installed-model execution",
+    "retention": "pass:published assets, exact104-file rollback, clean hashes and logs retained before owned scratch disposal"
+  },
+  "sourceCommit": "72f62493af20a0eb3f4fca90d060f69b14dc35b8",
+  "publication": {
+    "url": "https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.38",
+    "isDraft": false,
+    "isPrerelease": true,
+    "immutable": false
+  },
+  "installedPath": "/Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.38"
 }
