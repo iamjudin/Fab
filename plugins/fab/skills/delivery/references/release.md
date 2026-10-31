@@ -9,6 +9,11 @@ rollback and authorization. Local install, repository visibility, push, tag,
 GitHub Release and marketplace publication are distinct outputs; no implicit
 public release from a repair or ordinary checkpoint push.
 
+For website build, handoff or publication, apply the
+[content-payload preflight](../../../shared/web-implementation.md#content-payload-before-build-and-publication)
+before final packaging. Verify the actual output, not just the source directory;
+preserve purpose-specific format/quality exceptions and existing release authority.
+
 For plugin release read [Plugin](../../plugin/SKILL.md) and its runtime checklist.
 Plugin owns manifest/package/assets/discovery/install compatibility; Delivery
 owns organizing channel/readiness/version/evidence/rollback. App Store/native

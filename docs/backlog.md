@@ -1,6 +1,6 @@
 # Fab backlog
 
-Updated 2026-10-29. This is the only active Fab queue. Main owns entries unless
+Updated 2026-11-01. This is the only active Fab queue. Main owns entries unless
 another owner is named. The exact [pre-maintenance record](backlog-history-2026-10-21.md)
 and [earlier frozen record](backlog-history-2026-10-14.md) preserve original failures,
 corrections, proposals and dated authority. They are history, not current tasks.
@@ -21,6 +21,22 @@ Earlier interface limits remain; Canvas stays opt-in experimental. Installation
 does not establish automatic other-chat adoption or native/organic behavior.
 Source research, private logs and test products outside the reviewed release
 allowlist remain excluded. No monitoring or automatic project/plugin propagation.
+
+## Beta.38 explanatory correction — release in progress
+
+Creator 2026-11-01 requests local and public promotion. Source review reads all
+15 registered packets/816 sections and repairs definitions, relationships and
+alternatives in existing owners. Across two stages 37 active meanings change;
+75 active IDs and original packets remain. A fresh prompted Brainstorm case on
+an audio-note interface passes connected explanation and reassesses misleading
+inherited framing. Review ID FAB-T20261030-01-R01. These are bounded source and
+application results, not sustained/installed-model/native/human proof.
+Website content-payload preflight also ships as a qualified instruction change.
+
+Beta.38 is being prepared; beta.37 above remains the verified distribution until
+actual publication, assets and clean/primary supported installs complete. No
+generic new model campaign or propagation into another chat/project.
+[Release and verification](../experiments/releases/explanations-beta38-20261101/report.md).
 
 ## Knowledge migration outcome — FAB-15
 

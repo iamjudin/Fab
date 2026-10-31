@@ -89,3 +89,12 @@ finish. Choose incremental scope to preserve progress, not to lower the promised
 quality or leave an unexplained set of fragments. Research verification,
 source reconciliation, practical application and distribution remain distinct
 completion claims; unresolved source quality must stay visible.
+
+Preserve positive explanatory content as well as qualifications. For a migrated
+topic, check whether its ordinary reader can explain the important definitions,
+relationships, mechanism and relevant alternatives, with a discriminating example
+where needed. Listing a source section against an owner does not demonstrate
+that coverage. An unexecuted example can still carry useful reasoning; retain
+that reasoning with its evidence boundary rather than either adopting its literal
+implementation or deleting its explanation. A successful rule-contrast test is
+not by itself evidence of connected explanation or ordinary collaborative use.

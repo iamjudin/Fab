@@ -1,0 +1,28 @@
+{
+  "version": "0.1.0-beta.38",
+  "tag": "v0.1.0-beta.38",
+  "files": 104,
+  "fingerprint": "75b512783c0d07d4",
+  "baseCommit": "30b5d1802c0c94462459891f98730e9c175f3eeb",
+  "reviewedMain": "049c73d",
+  "state": "prepared; publication and installation pending",
+  "assetsSha256": {
+    "fab-0.1.0-beta.38.zip": "54a47ea5d4b0059a822999ac5637cc3b5be71812e929797e0ee7d204980c329b",
+    "release-scope.json": "1566a4665cbb29799796d97f07b838aad29938612173f55d6ed6f77bf9453fbf",
+    "SHA256SUMS.txt": "152b2c30549a28d75c2ae135aa2673ba043d6f36aae3f36766e269960d598930"
+  },
+  "checks": {
+    "regressions": "207pass",
+    "builder": "pass:723748 bytes /17588bbc6c9b1fd92fc5063daf5f17054b2bdd29eae23286ba5453afedc3e354",
+    "package": "104files/75b512783c0d07d4",
+    "scope": "pass:limited beta, existing experiments unchanged",
+    "stagedProject": "22documents/323links pass",
+    "reviewedSourceParity": "104files; manifest version only versus049c73d",
+    "originalPacketsAndIcon": "15packets/factory icon unchanged versus beta.37",
+    "rollback": "exact104-file beta.37 retained",
+    "CI": "pending",
+    "assets": "local104-file ZIP/source parity; public download pending",
+    "cleanInstall": "pending",
+    "primaryInstall": "pending"
+  }
+}

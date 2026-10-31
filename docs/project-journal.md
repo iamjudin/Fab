@@ -16,6 +16,17 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-11-01 - Prepare explanatory knowledge beta.38
+
+Creator requests local/public update after full retained-source review and one
+fresh explanation check. Main isolates a release branch from published beta.37,
+imports reviewed runtime/authoring/minimal evidence and preserves private handoff
+packets and raw runs. The beta includes richer explanations, meaningful question
+selection, inherited-question review and website content-payload preflight.
+Distribution is pending until real channel/install verification. No new model
+campaign or general reliability claim.
+[Release contract](../experiments/releases/explanations-beta38-20261101/contract.md).
+
 ## 2026-10-29 - Verify local and public beta.37
 
 Exact-source CI, anonymous assets and clean/primary supported tag installs verify

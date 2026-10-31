@@ -50,6 +50,40 @@ the agreed foundation. A capture is not automatically editable design. A screens
 or mock form proves neither a working backend nor visitor comprehension/conversion.
 Retain operational gaps and actual readiness; do not force a design/code round trip.
 
+## Content payload before build and publication
+
+Before a website build, handoff package or publication, inspect the actual content
+payload: file sizes, image dimensions versus rendered sizes, media duration/quality,
+font variants and document/download purpose. Recheck affected assets after content
+replacements. A successful build and valid asset paths do not establish that the
+content is ready to ship.
+
+Optimize meaningful excess before creating the final package. Resize photographs
+for their largest intended display and supported pixel density; choose suitable
+compression and delivery formats. Add responsive variants when they materially
+reduce transfer. Keep vectors for suitable artwork, transparency where required,
+and formats supported by the actual consumer (including social-preview crawlers).
+Do not prescribe WebP, lossy compression, a single pixel size or a universal byte
+limit for every asset. Full-resolution downloads, print material and other
+purposeful originals may legitimately remain large. Preserve accepted content,
+color, crop, legibility, accessibility, licenses and necessary detail.
+
+Apply the same proportional review to video/audio, fonts and downloadable files
+when present; do not introduce a media pipeline or new runtime dependency merely
+to satisfy this check. Keep authoring originals, historical evidence, duplicate
+exports and unused assets out of the deployable payload unless the user-facing
+contract needs them. Retain useful sources safely outside that payload or in
+version history; this is not authority to delete unrelated files or rewrite Git.
+
+Update affected URLs, intrinsic dimensions and format declarations; consider
+lazy loading for below-fold images without delaying essential first-screen content.
+Regenerate output from canonical source and remove superseded assets from that
+output. Verify the affected rendering and actual built/package inventory, including
+missing references and stale cached URLs. Compare relevant before/after sizes
+without treating a whole repository archive as the website's network payload.
+Report meaningful savings and justified large-asset exceptions; unresolved checks
+limit the dependent readiness claim, not unrelated work or publish authorization.
+
 ## Browser text implementation
 
 Choose semantic heading elements for content hierarchy and style roles separately.

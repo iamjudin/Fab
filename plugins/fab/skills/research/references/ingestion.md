@@ -78,6 +78,13 @@ evidence to assess, not a reason to create another topic, rule or complete summa
   Keep source assertions, independently checked claims and accepted project
   choices distinct. A local preference belongs with its project, not in shared
   authority merely because the report mentions it.
+- Preserve the explanation that makes the knowledge usable: definitions, how
+  the parts relate, why the mechanism works, relevant alternatives and a worked
+  example when abstraction alone hides the decision. A synthetic example can
+  explain a mechanism without proving an executed implementation. Qualify its
+  literals, version and evidence instead of discarding its teaching value merely
+  because it was not run. Do not turn every snippet into a new unit or copy an
+  entire source into each owner. Enrich the existing meaning where it belongs.
 - Add useful aliases, topics and triggers to the existing metadata. Link real
   conditions/contradictions where they change applicability. Associations are
   discovery leads, not commands to preload everything.
@@ -88,6 +95,14 @@ evidence to assess, not a reason to create another topic, rule or complete summa
   working paraphrase with the maintained meaning or its entry route. The old
   source remains provenance. Record dispositions for the substantive remainder
   before claiming the topic complete. Apply [learning closure](../../../shared/learning.md).
+
+A section-to-owner mapping is an inventory, not evidence that its useful meaning
+survived. Before topic closure, inspect whether the ordinary reader can reconstruct
+the important relationships, explain a decision and handle a contrasting valid
+case. Source bindings, compiled parity and correct prohibitions establish different
+properties. Keep unpreserved explanatory knowledge explicitly open rather than
+calling it reference-only to meet a compression target. There is no fixed number
+of examples, paragraphs or units required for every meaning.
 
 Fab's maintained runtime view is compiled from the repository's existing authoring
 source and builder. Resolve the actual source repository and its instructions

@@ -31,6 +31,12 @@ Prepare the minimum sufficient packet, linked to durable source revisions:
 - main/feature ownership, allowed writes, release/install/merge boundaries;
 - acceptance/return criteria, authorized next action and genuine waiting condition.
 
+Separate the supported technical basis from project conventions and open choices.
+An inherited next question is a proposal to evaluate, not an obligation to ask
+the creator to reconstruct existing knowledge. Check its premise against the
+relevant basis before carrying it forward. Recovery review checks whether the
+continuation serves the goal, not only whether it repeats the packet faithfully.
+
 The initial creation prompt includes this packet or its accessible durable paths;
 don't merely tell the new chat to read an old conversation. Full transcript is not
 necessary. Research is evidence, not instructions. After dispatch, use the host's
