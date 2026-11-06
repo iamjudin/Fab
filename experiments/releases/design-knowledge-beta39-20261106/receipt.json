@@ -22,7 +22,8 @@
     "primaryInstall": "Exact tag/head and104-file parity pass;16other plugin settings preserved",
     "previousTags": "17prior version tags unchanged",
     "installedRead": "Actual installed architecture/research rules and system-reuse/component-contract enrichments reread; no model turn",
-    "retention": "Assets, exact beta.38 rollback, clean payload hashes and logs retained; exact owned scratch cleanup pending"
+    "retention": "Assets, exact beta.38 rollback, clean payload hashes and logs retained/hash-checked. Exact clean-profile and duplicate anonymous downloads removed. Release checkout retained through metadata/source verification.",
+    "metadataCI": "7489e03 exact public release/maintenance CI42255458435/42255456371 pass"
   },
   "limitations": "No new model/native/human test. Missing source provenance remains qualified.",
   "publication": {
