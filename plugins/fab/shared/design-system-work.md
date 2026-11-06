@@ -29,6 +29,16 @@ alone. Tokens, component public properties, interaction state and business rules
 have different owners. Atomic composition is useful; a fixed folder hierarchy,
 three token layers or a Cartesian product of variants is not required.
 
+Before recommending a supplied component architecture, distinguish its observed
+links from the value of its boundaries. Trace actual consumers and one likely
+change, compare a simpler valid construction, and consider editing/override and
+migration cost. A conceptual part need not be a separate master when its parent
+already owns the change. An independently reused base can be justified. Do not
+adopt a reference merely because its objects are linked, or flatten an accepted
+library merely to reduce nesting. Use the current reuse/contract meanings for
+the comparison. This is reasoning before a recommendation, not another approval
+step or a required architecture document for an ordinary edit.
+
 Compare retaining, minimally revising and replacing existing naming only when
 the actual ambiguity warrants it. Complete namespaces can disambiguate names
 such as Primary. Numeric scale labels do not establish opacity. Preserve accepted

@@ -66,3 +66,21 @@ This tail does not replace the topic-specific evidence and presentation plan.
 A requested prompt is a delivered assignment, not a completed investigation.
 Do not claim that an external research tool followed the contract until its
 actual output has been reviewed.
+
+## Check the returned artifact, not only the assignment
+
+Inspect the actual result/export before declaring a commissioned investigation
+complete or its source layer portable. Descriptive links requested in a prompt
+can still arrive as internal citation identifiers. An identifier is not a URL,
+and clean Markdown syntax does not recover its source address.
+
+Preserve the original returned bytes and the location/nearby claim for unresolved
+citations in the existing research evidence. Recover original source metadata
+when available. A newly found supporting page is separate corroboration unless
+its original identity is established. Keep unresolved locations even if a reader
+copy removes raw markers. Disclose unsupported material claims and limit their
+promotion, without discarding independently supported useful findings or blocking
+unrelated authorized work. Do not invent URLs or silently call partial repair
+full source verification. Rewriting the assignment is not proof that the actual
+export now satisfies it. Source access gaps and claim verification remain open
+until checked at their real owners.

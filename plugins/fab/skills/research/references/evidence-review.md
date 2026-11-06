@@ -19,6 +19,11 @@ verification. Record dates and scope, and distinguish opened evidence from repor
 claims. Counts of links do not establish support. If evidence is unavailable, retain
 an explicit unknown instead of claiming verification.
 
+For a commissioned external report, also apply the
+[returned-artifact source check](deep-research.md#check-the-returned-artifact-not-only-the-assignment).
+Preserve unresolved claim locations and distinguish original-source recovery from
+new corroboration before claiming complete traceability or promoting findings.
+
 ## Conditional numerical review
 
 When quantitative scenarios serve the question, define units, denominators,

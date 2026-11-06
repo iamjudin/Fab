@@ -23,6 +23,17 @@ class KnowledgeViewTests(unittest.TestCase):
  def test_meanings_preserved_without_global_fixture(self):
   authored=json.loads(self.authoring.read_text());active=[u for u in authored['records'] if u['status']=='active'];self.assertEqual(len(active),75)
   self.assertEqual({u['id']:u['body'] for u in active},{u['id']:u['body'] for u in self.data['records'] if u['status']=='active'});self.assertNotIn('local-naming',self.units);self.assertNotIn('body',self.units['legacy-dimension'])
+ def test_component_architecture_queries_reach_existing_owners_without_archive_io(self):
+  original=Path.read_text
+  def guarded(path,*a,**kw):
+   if path.name.endswith('.full.json'):raise AssertionError('Runtime opened source archive')
+   return original(path,*a,**kw)
+  with patch.object(Path,'read_text',guarded):
+   for query,key in [('вложенность','system-reuse'),('извлечение','system-reuse'),('слоты','component-contract'),('instance swap','component-contract'),('документация компонентов','verification-fit')]:
+    with self.subTest(query=query):
+     self.assertIn(key,{u['id'] for u in self.view.read_view(query=query)['units']})
+     result=self.view.read_view(unit_id=key)
+     self.assertEqual(next(u for u in result['units'] if u['id']==key),self.units[key])
  def test_stale_compiled_output_rejected(self):
   self.author(lambda d:d['records'][0].update(title='Edited meaning title'))
   with self.assertRaisesRegex(ValueError,'stale-compiled'):BUILD.build(self.root,check=True)

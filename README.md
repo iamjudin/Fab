@@ -33,7 +33,7 @@ for the agreed channel. Each skill also works independently.
 Use a Codex client with plugin marketplace support:
 
 ```sh
-codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.38
+codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.39
 codex plugin add fab@fab-local
 ```
 
@@ -46,16 +46,16 @@ chat and transfers context after your agreement, subject to host support.
 
 ## Beta status
 
-**Current version: 0.1.0-beta.38.** Mobile apps are the current focus, not a
+**Current version: 0.1.0-beta.39.** Mobile apps are the current focus, not a
 product-size ceiling. Skills work independently; websites and landing pages have
 conditional routes.
 
-This release restores explanations behind the maintained knowledge: definitions,
-relationships, conditional alternatives and worked examples. Brainstorm explains
-the technical basis and asks about real local choices; handoff checks inherited
-questions. One fresh source-snapshot discussion passes this boundary. Research
-source truth, sustained collaboration and native/human outcomes remain distinct.
-Website delivery now checks actual content payload before packaging/publication.
+This release enriches practical component architecture knowledge: construction
+boundaries, configuration, states, documentation and migration. Discovery covers
+previously missed nesting/swap/slot terms. Architecture assessment compares real
+consumers and change cost, while research checks its actual returned source layer.
+Source review and retrieval integrity are verified. General agent behavior, source
+truth and native/human outcomes remain separately bounded.
 
 A corrected raw-input-to-Canvas candidate is accepted as a working foundation.
 A selected path also runs as a checked browser prototype. Original failures and
@@ -68,8 +68,8 @@ The registered knowledge migration is included. Test products, private run logs
 and unselected working research are excluded. Library tags remain optional and additive, with one project-level choice;
 source names, content and existing tags are preserved.
 
-Read [known limits](docs/limitations.md), [release notes](docs/releases/0.1.0-beta.38.md)
-and [validation evidence](experiments/releases/explanations-beta38-20261101/report.md).
+Read [known limits](docs/limitations.md), [release notes](docs/releases/0.1.0-beta.39.md)
+and [validation evidence](experiments/releases/design-knowledge-beta39-20261106/report.md).
 
 ## Development and license
 

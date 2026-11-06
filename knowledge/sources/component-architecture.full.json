@@ -1,0 +1,867 @@
+{
+  "schemaVersion": 1,
+  "scope": "project-evidence",
+  "title": "Архитектура и организация компонентов в дизайн‑системах",
+  "sourceSha256": "2c11e07deecd4eecfe681066b68124a8e7f517c1e5bb02556510a0d9251299e3",
+  "sourceDate": null,
+  "ingestedAt": "2026-11-06",
+  "authority": "source-material-not-runtime-instructions",
+  "validation": {
+    "structure": "lossless sections; explicit exclusions",
+    "claims": "not exhaustively fact-checked"
+  },
+  "retainedSha256": "2c11e07deecd4eecfe681066b68124a8e7f517c1e5bb02556510a0d9251299e3",
+  "excluded": [],
+  "sections": [
+    {
+      "id": "R001",
+      "level": 0,
+      "title": "Preamble",
+      "text": "---\ntags:\n  - bookworm/research\n---\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Navigation, provenance or section framing. The substantive child sections are assessed separately."
+      }
+    },
+    {
+      "id": "R002",
+      "level": 2,
+      "title": "Содержание",
+      "text": "## Содержание\n\n- [[#Ориентация и статус доказательств|Ориентация и статус доказательств]]\n- [[#Границы компонентов и смысл Atomic Design|Границы компонентов и смысл Atomic Design]]\n- [[#Когда извлечение действительно окупается|Когда извлечение действительно окупается]]\n- [[#Свойства, допустимые комбинации и состояния|Свойства, допустимые комбинации и состояния]]\n- [[#Представление библиотеки и связь с кодом|Представление библиотеки и связь с кодом]]\n- [[#Эволюция и миграция|Эволюция и миграция]]\n- [[#Рабочие сравнения|Рабочие сравнения]]\n- [[#Приложение по доказательствам и источникам|Приложение по доказательствам и источникам]]\n- [[#Применение к переданному локальному случаю|Применение к переданному локальному случаю]]\n- [[#Итоговое решение|Итоговое решение]]\n- [[#Источники|Источники]]\n\n> Подготовлено: 2026‑11‑06  \n> Статус: независимое сравнительное исследование. Это не политика внедрения и не утверждённый шаблон архитектуры.  \n> Область: Figma, кодовые библиотеки, web и mobile.  \n> Главный предел доказательности: в найденных источниках нет контролируемого исследования, которое сравнивало бы стоимость сопровождения конкретных Figma‑архитектур вроде `Component → Style master → Content master → Icon` против плоского компонента, общего Base или нативного Slot. Поэтому рекомендации ниже основаны на возможностях Figma, наблюдаемых практиках публичных систем, принципах программного переиспользования и ограниченной эмпирике, но не на доказанной «оптимальной глубине вложенности». Исследования 2026 года подтверждают, что структурная сложность Figma сама по себе создаёт когнитивные трудности, но не устанавливают универсальный предел вложенности.\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Navigation, provenance or section framing. The substantive child sections are assessed separately."
+      }
+    },
+    {
+      "id": "R003",
+      "level": 2,
+      "title": "Ориентация и статус доказательств",
+      "text": "## Ориентация и статус доказательств\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Navigation, provenance or section framing. The substantive child sections are assessed separately."
+      }
+    },
+    {
+      "id": "R004",
+      "level": 3,
+      "title": "Короткий ответ",
+      "text": "### Короткий ответ\n\nКомпонент стоит выделять не потому, что он визуально является «частью другой части», и не потому, что его можно назвать атомом или молекулой. Выделение оправдано, когда часть имеет собственный **контракт изменений**: её нужно независимо переиспользовать, обновлять, заменять, ограничивать или документировать. Atomic Design полезен прежде всего как модель «части и целого», а не как инструкция превращать каждый уровень иерархии в отдельный Figma‑master. Сам Брэд Фрост прямо описывает пять уровней как работающие **одновременно**, а не как линейный конвейер сборки от атомов к страницам. [Atomic Design Methodology — Brad Frost](https://atomicdesign.bradfrost.com/chapter-2/)\n\nДля небольшой библиотеки наиболее устойчивой исходной стратегией обычно будет **минимальная необходимая компонентность**: визуальная структура остаётся фреймами и Auto Layout, стабильные различия становятся вариантами или свойствами, ограниченно заменяемые части получают instance swap, действительно свободная область — slot, а отдельный внутренний Base появляется только тогда, когда несколько публичных компонентов должны совместно наследовать структуру, которую иначе пришлось бы синхронно менять в нескольких местах.\n\nВозможности Figma именно так разделяют разные виды конфигурируемости: text, boolean, instance swap, variants и slots имеют разные контракты, а slots официально позиционируются как свободная область внутри компонента, не требующая detach. [Figma: свойства компонентов](https://help.figma.com/hc/en-us/articles/5579474826519-Explore-component-properties) [Figma: различия slots, instance swaps и variants](https://help.figma.com/hc/en-us/articles/38741465279895-The-difference-between-slots-instance-swaps-and-variants) [Figma: создание и использование slots](https://help.figma.com/hc/en-us/articles/38231200344599-Create-and-use-slots-to-build-flexible-components-in-Figma-Design)\n\nКлючевой принцип:\n\n> **Независимая смысловая ответственность не требует независимого nested master. Независимый master нужен тогда, когда независимым должен быть цикл изменения.**\n\nЭто исследовательский вывод из сравнения механизмов, а не формулировка Figma или Atomic Design.\n\nFigma предупреждает, что большие наборы variants влияют на производительность, поскольку при использовании component set импортируются его варианты. Figma также рекомендует отдельные свойства для отдельных именованных различий, а не составные значения вроде `Primary Large`. Это аргумент против бесконтрольного variant multiplication, но не доказательство фиксированного максимального числа вариантов. [Figma: основы variants и component sets](https://help.figma.com/hc/en-us/articles/39636737843735-Components-collection-Variants-and-component-set-fundamentals) [Figma: создание и использование variants](https://help.figma.com/hc/en-us/articles/360056440594-Create-and-use-variants)\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Explain independent change/consumer responsibility versus anatomy. Compare direct construction and internal bases. No fixed nesting depth or reuse quota."
+      }
+    },
+    {
+      "id": "R005",
+      "level": 2,
+      "title": "Границы компонентов и смысл Atomic Design",
+      "text": "## Границы компонентов и смысл Atomic Design\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Navigation, provenance or section framing. The substantive child sections are assessed separately."
+      }
+    },
+    {
+      "id": "R006",
+      "level": 3,
+      "title": "Что Atomic Design действительно утверждает",
+      "text": "### Что Atomic Design действительно утверждает\n\nAtomic Design различает **atoms, molecules, organisms, templates и pages**. У Фроста atom — базовый UI‑элемент, molecule — небольшая функциональная группа, organism — более сложная самостоятельная секция, template задаёт структуру страницы, page проверяет эту структуру реальным содержимым. Важнее самой таксономии его оговорка, что уровни существуют одновременно и позволяют видеть интерфейс одновременно как целое и как набор частей. [Atomic Design Methodology — Brad Frost](https://atomicdesign.bradfrost.com/chapter-2/)\n\nИз этого не следует:\n\n- что `atom = Figma main component`\n- что `molecule = nested component`\n- что каждый organism должен физически содержать molecule instances\n- что Figma‑страницы должны повторять пятиуровневую таксономию\n- что разработка обязана начинаться с атомов\n\nНапротив, Фрост отдельно пишет, что химическая аналогия перестаёт быть полезной на уровне templates и что чрезмерное продолжение метафоры может запутывать. [Atomic Design Methodology — Brad Frost](https://atomicdesign.bradfrost.com/chapter-2/)\n\nСледовательно, Atomic Design лучше использовать для **анализа композиции и масштаба ответственности**, а не как схему dependency graph.\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Explain independent change/consumer responsibility versus anatomy. Compare direct construction and internal bases. No fixed nesting depth or reuse quota."
+      }
+    },
+    {
+      "id": "R007",
+      "level": 3,
+      "title": "Концептуальная часть, слой и компонент — разные вещи",
+      "text": "### Концептуальная часть, слой и компонент — разные вещи\n\nУдобно разделять три уровня.\n\n**Концептуальная часть** существует в языке дизайна. У кнопки есть container, label и optional icon. Carbon, например, документирует цвет и изменение состояния именно по элементам `Label`, `Icon`, `Container`. Это делает их полезными единицами спецификации, но ничего не говорит о том, должны ли Label и Container быть отдельными Figma components. [Carbon: спецификация Button](https://www.carbondesignsystem.com/building-blocks/core/components/button/specifications)\n\n**Frame или layer** существует ради структуры конкретного master. Он может задавать padding, Auto Layout, clipping или размещение содержимого. Его изменение наследуется всеми instances родительского компонента и без собственного master.\n\n**Независимо сопровождаемый компонент** имеет отдельную идентичность и lifecycle. Он нужен, когда потребитель должен найти его самостоятельно, вставить отдельно, заменить как unit, получать его обновления независимо или когда один и тот же unit входит в несколько родителей.\n\nОтсюда следует важное различие: anatomy может иметь пять частей, а Figma‑реализация — один master и один вложенный icon instance.\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Explain independent change/consumer responsibility versus anatomy. Compare direct construction and internal bases. No fixed nesting depth or reuse quota."
+      }
+    },
+    {
+      "id": "R008",
+      "level": 3,
+      "title": "Альтернативы атомной классификации",
+      "text": "### Альтернативы атомной классификации\n\nДля реальной библиотеки чаще полезнее четыре параллельные классификации.\n\n**По роли.** Action, input, navigation, feedback, disclosure, selection, data display. Carbon, Atlassian, Fluent и Material публично организуют документацию вокруг именованных компонентов и их назначения, а не требуют пользователю сначала определить, является ли объект molecule или organism. Carbon прямо описывает component как решение определённой UI‑задачи.\n\n**По устройству.** Container, label, supporting content, leading, trailing, body. Этот язык особенно полезен для документации и compositional slots. Carbon Text Input, например, описывает label, value, field и optional helper text. [Carbon: Text input — устройство и состояния](https://www.carbondesignsystem.com/building-blocks/core/components/text-input/guidelines)\n\n**По поведению.** Interactive, selectable, editable, dismissible, loading, expandable. Такое разделение хорошо выявляет различия, которые внешний вид скрывает.\n\n**По домену.** `Billing/InvoiceRow`, `Messaging/Composer`, `Commerce/ProductCard`. Такие compositions могут состоять из общих primitives, но не обязаны попадать в глобальную core‑библиотеку.\n\nАтомный уровень может оставаться дополнительным метаданным или обучающей моделью, но делать его основным namespace библиотеки обычно не требуется. Это соответствует и Figma‑рекомендации давать компонентам имена по тому, **чем они являются**, а не по текущему внешнему виду. [Figma: организация и сопровождение компонентов](https://help.figma.com/hc/en-us/articles/39747637290263-Components-collection-Tips-for-component-management)\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Explain independent change/consumer responsibility versus anatomy. Compare direct construction and internal bases. No fixed nesting depth or reuse quota."
+      }
+    },
+    {
+      "id": "R009",
+      "level": 2,
+      "title": "Когда извлечение действительно окупается",
+      "text": "## Когда извлечение действительно окупается\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Navigation, provenance or section framing. The substantive child sections are assessed separately."
+      }
+    },
+    {
+      "id": "R010",
+      "level": 3,
+      "title": "Четыре конструкции",
+      "text": "### Четыре конструкции\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Navigation, provenance or section framing. The substantive child sections are assessed separately."
+      }
+    },
+    {
+      "id": "R011",
+      "level": 4,
+      "title": "Прямая конструкция",
+      "text": "#### Прямая конструкция\n\n`Button` содержит Auto Layout frame, label и необязательный nested Icon.\n\nЭто минимальная архитектура. Изменение horizontal padding в Button master обновляет instances. Для этого не требуется `Button/Base`.\n\nПлюсы: мало переходов между masters, проще понимать dependency graph, меньше риск сломать override correspondence. Минус появляется только тогда, когда аналогичную внутреннюю структуру начинают независимо копировать несколько masters.\n\nНаследуется только сам публичный master. Подход особенно полезен для небольшого компонента с одним контрактом. Типичный антипаттерн — выделять каждый внутренний frame в компонент «на будущее».\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Explain independent change/consumer responsibility versus anatomy. Compare direct construction and internal bases. No fixed nesting depth or reuse quota."
+      }
+    },
+    {
+      "id": "R012",
+      "level": 4,
+      "title": "Общий Base",
+      "text": "#### Общий Base\n\n`Button/Primary` и `Button/Secondary` или разные публичные families используют `Internal/ButtonBase`.\n\nЭто оправдано, если Base действительно является **общей точкой изменения**. Например, четыре публичных компонента должны гарантированно разделять одну внутреннюю высоту, alignment и placement icon, а объединить их в один component set невозможно или нежелательно из‑за разных публичных контрактов.\n\nСтоимость Base — ещё одна граница instance.\n\nОбщий Base наследует общую структуру нескольких публичных компонентов, включая геометрию или базовое оформление. Цена — дополнительный уровень навигации и зависимость от Base. Типичный антипаттерн — Base, используемый одним компонентом. Figma не позволяет изменять underlying structure instance, а сохранение overrides при swaps и variant changes зависит от соответствия имён, иерархии и исходных свойств слоёв. Дополнительные nested boundaries поэтому создают дополнительные места, где архитектурное изменение может повлиять на overrides. [Figma: изменения экземпляров и сохранение overrides](https://help.figma.com/hc/en-us/articles/360039150733-Apply-changes-to-instances)\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Explain independent change/consumer responsibility versus anatomy. Compare direct construction and internal bases. No fixed nesting depth or reuse quota."
+      }
+    },
+    {
+      "id": "R013",
+      "level": 4,
+      "title": "Раздельные masters содержимого, основы и оформления",
+      "text": "#### Раздельные masters содержимого, основы и оформления\n\nНапример:\n\n`ButtonBlock → Button/Style → size Master → Content/Button → Icon`\n\nТакая схема может быть рациональной, только если каждый уровень имеет отдельного потребителя или отдельный темп изменений. Если `Content/Button` нигде не используется самостоятельно и существует лишь потому, что «content — отдельная ответственность», он добавляет dependency, но не добавляет реального reuse contract.\n\nРаздельные masters оправданы в редких случаях независимого переиспользования содержимого и оформления. Их цена — высокая стоимость редактирования, риски overrides и больше внутренних API.\n\nЭто особенно важно потому, что Figma уже умеет поднимать controls вложенных частей в Properties panel. Text, booleans, swaps и slots могут быть доступны пользователю без ручного проваливания в слои. Глубокая nesting architecture не является необходимым условием удобного публичного API. [Figma: свойства компонентов](https://help.figma.com/hc/en-us/articles/5579474826519-Explore-component-properties)\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Explain independent change/consumer responsibility versus anatomy. Compare direct construction and internal bases. No fixed nesting depth or reuse quota."
+      }
+    },
+    {
+      "id": "R014",
+      "level": 4,
+      "title": "Композиция с ограниченной областью замены",
+      "text": "#### Композиция с ограниченной областью замены\n\nЕсли родитель должен владеть shell, а содержимое — меняться свободнее, native slot меняет контракт радикальнее, чем instance swap. Figma описывает swap как ограниченную замену вложенного instance при сохранении его позиции и layout‑ограничений, а slot как область, где можно добавлять, изменять размер и переставлять содержимое непосредственно внутри instance. [Figma: различия slots, instance swaps и variants](https://help.figma.com/hc/en-us/articles/38741465279895-The-difference-between-slots-instance-swaps-and-variants) [Figma: создание и использование slots](https://help.figma.com/hc/en-us/articles/38231200344599-Create-and-use-slots-to-build-flexible-components-in-Figma-Design)\n\nПоказательно, что Figma теперь рекомендует мигрировать старые placeholder components и variant‑based «slot hacks» на native slots. Для shared placeholder component Figma рекомендует удалить центральный placeholder и дать каждому родителю собственный native slot. Это прямое контр‑свидетельство против идеи, что вся повторяемая абстракция обязана существовать как общий nested master. [Figma: миграция библиотеки на slots](https://help.figma.com/hc/en-us/articles/38607529833751-Migrate-a-library-to-using-slots)\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Distinguish public content/configuration, bounded replacement and free composition. Keep actual tool/API availability separate from documented mechanisms."
+      }
+    },
+    {
+      "id": "R015",
+      "level": 3,
+      "title": "Когда фрейм должен остаться фреймом",
+      "text": "### Когда фрейм должен остаться фреймом\n\nFrame разумно не извлекать, если одновременно верно большинство условий:\n\n- он не используется как самостоятельный asset\n- у него нет собственного публичного API\n- изменения его layout должны всегда происходить вместе с родителем\n- его «переиспользование» означает лишь одинаковую визуальную структуру\n- parent master уже является достаточной точкой массового обновления\n- его извлечение не сокращает число мест, где нужно вносить одно и то же изменение\n\nПоследний пункт важнее произвольного правила «reuse ≥ 3». В software reuse эмпирика вообще показывает сильную зависимость пользы повторного использования от контекста и организационной согласованности, а не от простого счётчика повторений. Сравнение двух крупных компаний обнаружило, что преимущества reuse яснее в однородной среде, а в гетерогенной необходима более структурированная оценка. [Analysing and supporting software reuse in practice — глава 6](https://mediatum.ub.tum.de/doc/1306629/517630.pdf)\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Explain independent change/consumer responsibility versus anatomy. Compare direct construction and internal bases. No fixed nesting depth or reuse quota."
+      }
+    },
+    {
+      "id": "R016",
+      "level": 3,
+      "title": "Решение без фиксированной глубины",
+      "text": "### Решение без фиксированной глубины\n\nПрактическая процедура:\n\n1. **Опишите контракт родителя.** Что потребитель действительно должен иметь право менять.\n2. **Для каждой внутренней части спросите, кому она принадлежит.** Если жизненный цикл совпадает с родителем, оставьте слой или фрейм.\n3. **Проверьте независимый reuse.** Используется ли часть в нескольких местах как одна и та же сущность, а не просто похожая геометрия.\n4. **Определите нужную свободу.** Текст → text property. Видимость → boolean. Один заменяемый child → instance swap. Дискретная версия → variant. Свободная область → slot. Контекстное значение → переменная или режим. Механизмы Figma имеют именно эти разные назначения. [Figma: свойства компонентов](https://help.figma.com/hc/en-us/articles/5579474826519-Explore-component-properties) [Figma: различия slots, instance swaps и variants](https://help.figma.com/hc/en-us/articles/38741465279895-The-difference-between-slots-instance-swaps-and-variants) [Figma: переменные, коллекции и режимы](https://help.figma.com/hc/en-us/articles/14506821864087-Overview-of-variables-collections-and-modes)\n5. **Сравните стоимость одного будущего изменения.** Если изменение общего spacing требует редактирования N masters, Base может окупиться. Если Base лишь добавит переход без устранения дублирования, не извлекайте.\n6. **Проверьте instance editing.** Главные действия должны быть доступны из публичного component API, а не требовать знания внутренней структуры.\n7. **Проверьте миграцию.** Если новая abstraction требует разрушить overrides существующих consumers, её потенциальная архитектурная чистота может не окупить миграционную цену.\n8. **Оставьте решение обратимым.** Начать с frame безопаснее, если его легко позднее извлечь. Начать с лишнего публичного component contract дороже, поскольку затем появляется deprecation и migration.\n\nЭто не алгоритм Figma. Это синтез механизмов и найденной evidence.\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Explain independent change/consumer responsibility versus anatomy. Compare direct construction and internal bases. No fixed nesting depth or reuse quota."
+      }
+    },
+    {
+      "id": "R017",
+      "level": 3,
+      "title": "Что известно эмпирически",
+      "text": "### Что известно эмпирически\n\nИсследований конкретно о стоимости `Base → Style → Content` в production Figma libraries в найденном корпусе нет.\n\nЕсть смежные результаты. Исследование CHI 2026 обнаружило, что участники сталкивались с проблемами, связанными с nesting, layer order, variants и скрытой declarative structure Figma. Пять участников испытывали трудности с ordering и nesting, а изменение структурных имён вариантов вызывало ошибки. Это поддерживает тезис, что архитектурная сложность имеет когнитивную стоимость, но не сообщает, сколько уровней «слишком много».\n\nИсследования reuse в программной инженерии показывают пользу переиспользования в определённых условиях, но также стоимость выбора, проверки и документирования reusable assets. Исследование web‑reuse также связывает отсутствие ownership и документации с дублированием исправлений и ростом maintenance cost. Эти результаты применимы как предостережение, но не как количественный benchmark для Figma. [Improving Reuse During the Development Process](https://assets-eu.researchsquare.com/files/rs-4719614/v1/d4051f01-a6d3-45b1-8898-0061c04ef589.pdf) [Analysing and supporting software reuse in practice — глава 6](https://mediatum.ub.tum.de/doc/1306629/517630.pdf)\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "No measured optimal nesting or quantitative maintenance superiority. Unidentified CHI structural-comprehension claims and missing source mappings stay unverified."
+      }
+    },
+    {
+      "id": "R018",
+      "level": 2,
+      "title": "Свойства, допустимые комбинации и состояния",
+      "text": "## Свойства, допустимые комбинации и состояния\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Navigation, provenance or section framing. The substantive child sections are assessed separately."
+      }
+    },
+    {
+      "id": "R019",
+      "level": 3,
+      "title": "Что должно быть публичным свойством",
+      "text": "### Что должно быть публичным свойством\n\nПубличное свойство должно соответствовать решению, которое пользователь компонента действительно принимает.\n\nОграниченная замена одного дочернего экземпляра подходит для иконки, аватара или завершающего действия. При этом нужно поддерживать совместимость контрактов заменяемых компонентов. Свободное содержимое тела диалога требует другого контракта.\n\nSlot подходит для тела карточки или диалога и повторяющихся элементов, но расширяет ответственность автора экземпляра. Для строго фиксированной позиции единственной иконки такой контракт избыточен.\n\nVariants подходят для размера, акцента, структурного типа и отдельных визуальных состояний. Типичный антипаттерн — создавать вариант для каждого случая содержимого. Variables и modes задают контекстные значения, например тему, плотность и платформенные или тематические токены, но не заменяют действительно разные структуры.\n\n| Механизм | Хороший контракт | Плохой контракт |\n|---|---|---|\n| Вариант | `Size = S/M/L`, `Emphasis = Primary/Secondary` | `Style = PrimaryLargeIconLoading` |\n| Текст | `Label`, `Helper text` | внутреннее имя токена |\n| Логическое свойство | `Show leading icon`, `Show helper` | `UsePaddingFrameB` |\n| Замена экземпляра | `Leading icon`, `Avatar` | произвольное содержимое тела диалога |\n| Slot | `Body`, `Items` | фиксированная единственная иконка |\n| Переменная | семантический цвет, отступы, радиус, плотность | сложное структурное состояние |\n| Режим | светлая или тёмная тема, плотность или другой системный контекст | локальное состояние конкретного экземпляра |\n\nFigma прямо советует отделять именованные оси variant properties друг от друга. В документации используется пример `Type` и `Size` вместо смешанного `Style = Primary Large`. Component properties, в свою очередь, предназначены для content‑level changes без необходимости размножать variants. [Figma: основы variants и component sets](https://help.figma.com/hc/en-us/articles/39636737843735-Components-collection-Variants-and-component-set-fundamentals) [Figma: организация и сопровождение компонентов](https://help.figma.com/hc/en-us/articles/39747637290263-Components-collection-Tips-for-component-management)\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Distinguish public content/configuration, bounded replacement and free composition. Keep actual tool/API availability separate from documented mechanisms."
+      }
+    },
+    {
+      "id": "R020",
+      "level": 3,
+      "title": "Допустимые комбинации важнее произведения всех свойств",
+      "text": "### Допустимые комбинации важнее произведения всех свойств\n\nЕсли есть:\n\n`Size × Emphasis × State × IconPosition × Loading`\n\nэто не означает, что библиотека обязана реализовать декартово произведение.\n\nНекоторые комбинации могут быть бессмысленны:\n\n`Loading + Disabled` может иметь один и тот же визуальный результат, но разную семантику.\n\n`Trailing icon + icon-only` противоречит самой структуре icon-only button.\n\n`Error + Read-only` может быть допустимо в одном продукте и запрещено в другом.\n\nПоэтому architecture contract должен различать:\n\n1. **оси конфигурации**\n2. **допустимые комбинации**\n3. **визуальные specimens, которые действительно нужно показать**\n\nFigma позволяет свободно комбинировать значения variant properties, но сама возможность выразить комбинацию в UI не является доказательством, что продукт должен её поддерживать. Большие sets также имеют performance cost. [Figma: создание и использование variants](https://help.figma.com/hc/en-us/articles/360056440594-Create-and-use-variants)\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Explain supported overlaps, state precedence and specimen/configuration/runtime differences. The five-axis model is synthesis, not a universal standard."
+      }
+    },
+    {
+      "id": "R021",
+      "level": 3,
+      "title": "Избыточная настраиваемость",
+      "text": "### Избыточная настраиваемость\n\nКомпонент становится over‑configurable, когда пользователь может собрать состояние, для которого нет определённой semantics, accessibility contract или code mapping.\n\nПризнаки:\n\n- несколько controls управляют одним и тем же визуальным результатом\n- существует множество комбинаций, которые документация запрещает\n- изменение одного свойства требует автоматически менять другое\n- component API начинает описывать внутреннюю реализацию\n- большинство consumers используют лишь малую часть конфигурационного пространства\n- разные варианты имеют принципиально разное поведение\n\nВ последнем случае чаще разумнее split, а не новая variant axis.\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Distinguish public content/configuration, bounded replacement and free composition. Keep actual tool/API availability separate from documented mechanisms."
+      }
+    },
+    {
+      "id": "R022",
+      "level": 3,
+      "title": "Переменные и режимы",
+      "text": "### Переменные и режимы\n\nFigma variables хранят raw values типов color, number, string, boolean, timing и easing. Значение может меняться по mode, например светлая или тёмная тема, мобильная или настольная среда. Изменение published variable может распространяться между файлами. [Figma: переменные, коллекции и режимы](https://help.figma.com/hc/en-us/articles/14506821864087-Overview-of-variables-collections-and-modes)\n\nЭто делает variables хорошим механизмом для **контекстного значения**, но не заменой component composition. Если mobile button имеет тот же contract, но другой spacing token, mode может быть подходящим. Если mobile и desktop versions имеют разную anatomy и interaction semantics, это уже не просто mode.\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Context values versus structures already covered. Six documented product types do not prove Plugin API or workspace support."
+      }
+    },
+    {
+      "id": "R023",
+      "level": 3,
+      "title": "Сохранение overrides",
+      "text": "### Сохранение overrides\n\nFigma старается сохранять изменения при swap и смене variant. Для общих overrides важны совпадение layer names и, для variants, исходные свойства слоёв. Text overrides сохраняются более либерально при совпадении имени text layer и похожей hierarchy. Изменять order, constraints и underlying structure instance напрямую нельзя. [Figma: изменения экземпляров и сохранение overrides](https://help.figma.com/hc/en-us/articles/360039150733-Apply-changes-to-instances)\n\nСледствие: стабильные layer names и структурная преемственность — не косметика. Они являются частью migration surface.\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Preserve overrides and defaults. Source names/hierarchy participate in migration. A native-slot migration can break consumers."
+      }
+    },
+    {
+      "id": "R024",
+      "level": 3,
+      "title": "Состояния нельзя сводить к одному `State`",
+      "text": "### Состояния нельзя сводить к одному `State`\n\nПолезно разделять как минимум пять независимых измерений:\n\n| Измерение | Примеры |\n|---|---|\n| Взаимодействие | покой (`idle`), наведение (`hover`), нажатие (`pressed`), фокус (`focus`) |\n| Доступность | доступно (`enabled`), недоступно (`disabled`), только чтение (`read-only`) |\n| Выбор | выбрано (`selected`), не выбрано (`unselected`), смешанное (`mixed`) |\n| Валидация | нейтральное (`neutral`), ошибка (`error`), предупреждение (`warning`), успех (`success`) |\n| Асинхронная операция | покой (`idle`), загрузка (`loading`), успех (`success`), неудача (`failure`) |\n\nCarbon Text Input, например, публикует enabled, active, focus, error, warning, disabled, skeleton и read-only. Это показывает, что mature systems сами используют разные виды состояния, хотя конкретная модель Carbon не обязана копироваться. [Carbon: Text input — устройство и состояния](https://www.carbondesignsystem.com/building-blocks/core/components/text-input/guidelines)\n\n`Focus` не является синонимом `hover`. WCAG требует видимого keyboard focus для keyboard-operable UI. Hover при этом зависит от input modality и не существует как обязательное состояние на touch target. [W3C: Focus Visible (WCAG 2.2)](https://www.w3.org/WAI/WCAG22/Understanding/focus-visible) [W3C: Media Queries Level 4 — hover](https://www.w3.org/TR/mediaqueries-4/#hover)\n\nApple отдельно рекомендует press state для custom button и минимум 44×44 pt hit region на своих платформах. Для web WCAG 2.2 AA устанавливает минимальную pointer target область 24×24 CSS px либо достаточное spacing при указанных исключениях. Это разные platform requirements, и переносить число 44 как универсальное web‑правило некорректно.\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Explain supported overlaps, state precedence and specimen/configuration/runtime differences. The five-axis model is synthesis, not a universal standard."
+      }
+    },
+    {
+      "id": "R025",
+      "level": 3,
+      "title": "Перекрывающиеся состояния и приоритеты",
+      "text": "### Перекрывающиеся состояния и приоритеты\n\nНе все состояния взаимоисключающие. Web‑control может одновременно быть:\n\n`selected + focused + hovered`\n\nили:\n\n`invalid + focused`\n\nили:\n\n`loading + focused`.\n\nПоэтому единый enum:\n\n`Default / Hover / Focus / Error / Loading / Disabled`\n\nчасто описывает не state model, а набор screenshots.\n\nДля документации лучше определить precedence визуальных сигналов. Например:\n\n- `disabled` блокирует activation и подавляет оформление наведения и нажатия\n- `loading` блокирует повторную activation, но может сохранять focus\n- `validation` остаётся семантически активной при focus\n- `focus` должен оставаться видимым поверх обычного interaction styling\n- `selected` сохраняется независимо от transient hover\n\nЭто архитектурная рекомендация, а не универсальный platform standard. Реальная precedence должна проверяться против поведения конкретного runtime component.\n\nApple демонстрирует platform‑specific разницу особенно ясно: focus имеет разные визуальные модели на iPadOS, macOS и tvOS. В iOS button loading также может заменить icon activity indicator’ом, что является native behavior, а не просто ещё одной декоративной variant.\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Explain supported overlaps, state precedence and specimen/configuration/runtime differences. The five-axis model is synthesis, not a universal standard."
+      }
+    },
+    {
+      "id": "R026",
+      "level": 2,
+      "title": "Представление библиотеки и связь с кодом",
+      "text": "## Представление библиотеки и связь с кодом\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Navigation, provenance or section framing. The substantive child sections are assessed separately."
+      }
+    },
+    {
+      "id": "R027",
+      "level": 3,
+      "title": "Организация по назначению обычно полезнее атомных папок",
+      "text": "### Организация по назначению обычно полезнее атомных папок\n\nДля потребителя первый вопрос чаще звучит «мне нужен input / action / list row», а не «мне нужна molecule». Поэтому основной namespace разумно строить вокруг component families или purpose:\n\n```text\nActions/\n  Button\n  Icon button\n  Split button\n\nInputs/\n  Text field\n  Select\n  Checkbox\n\nNavigation/\n  Tabs\n  Breadcrumb\n\nData display/\n  Avatar\n  Badge\n  List row\n\nFeedback/\n  Alert\n  Progress\n\nContainers/\n  Card\n  Dialog\n```\n\nAtomic classification при желании можно оставить как метаданные или обучающий раздел.\n\nFigma поддерживает slash‑separated names как навигационную иерархию и подчёркивает, что naming должен быть последовательным. Система также использует component descriptions при search, поэтому synonyms и purpose можно добавлять туда, не превращая folder tree в таксономический справочник. [Figma: организация и сопровождение компонентов](https://help.figma.com/hc/en-us/articles/39747637290263-Components-collection-Tips-for-component-management)\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Consumer search/public asset identity versus internal helpers. No mandatory namespace or automatic rename of accepted libraries."
+      }
+    },
+    {
+      "id": "R028",
+      "level": 3,
+      "title": "Иконкам нужно собственное пространство имён, а не размножение вариантов",
+      "text": "### Иконкам нужно собственное пространство имён, а не размножение вариантов\n\nFigma отдельно не рекомендует собирать разные icons как variants одного set. Разные размеры одного icon могут быть variants, но сами glyph identities лучше оставлять отдельными assets. [Figma: создание и использование variants](https://help.figma.com/hc/en-us/articles/360056440594-Create-and-use-variants)\n\nПрактический namespace:\n\n```text\nIcon/\n  Actions/\n    Add\n    Delete\n    Edit\n  Navigation/\n    ChevronLeft\n    ChevronRight\n  Status/\n    Success\n    Warning\n```\n\nЭто не обязательно буквально повторять в code package. Важна стабильная идентичность, которую instance swap может ограничить preferred instances.\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Consumer search/public asset identity versus internal helpers. No mandatory namespace or automatic rename of accepted libraries."
+      }
+    },
+    {
+      "id": "R029",
+      "level": 3,
+      "title": "Публичные и внутренние ресурсы",
+      "text": "### Публичные и внутренние ресурсы\n\nПолезно различать:\n\n**Public** — asset предназначен для прямого вставления consumer’ом.\n\n**Internal** — implementation helper, который нужен для inheritance другого master.\n\n`Internal/ButtonBase` может быть компонентом без права самостоятельного продуктового использования.\n\nЕсли internal asset становится заметной частью Assets search, архитектурное удобство maintainer превращается в API‑шум для consumer. Поэтому internal components стоит скрывать из publishing или помещать отдельно, когда tooling это позволяет. Figma в собственной инструкции миграции slot placeholders рекомендует переместить deprecated placeholder на другую страницу или в другой раздел и скрыть его из publishing. [Figma: миграция библиотеки на slots](https://help.figma.com/hc/en-us/articles/38607529833751-Migrate-a-library-to-using-slots)\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Consumer search/public asset identity versus internal helpers. No mandatory namespace or automatic rename of accepted libraries."
+      }
+    },
+    {
+      "id": "R030",
+      "level": 3,
+      "title": "Исходный master и документационный экземпляр — разные объекты",
+      "text": "### Исходный master и документационный экземпляр — разные объекты\n\nSource master оптимизируется для inheritance и maintenance.\n\nDocumentation specimen оптимизируется для чтения.\n\nПоэтому документационная страница может содержать instances:\n\n```text\nButton — anatomy\nButton — supported sizes\nButton — interaction matrix\nButton — icon examples\nButton — loading example\nButton — long-label stress case\n```\n\nНе нужно превращать source component set в презентационный плакат. Figma прямо отмечает, что component set может содержать только components, а аннотации следует размещать рядом. [Figma: создание и использование variants](https://help.figma.com/hc/en-us/articles/360056440594-Create-and-use-variants)\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Separate source masters from linked documentation specimens. Show representative risk/content/state cases instead of materializing every combination."
+      }
+    },
+    {
+      "id": "R031",
+      "level": 3,
+      "title": "Что показывать, а что только документировать",
+      "text": "### Что показывать, а что только документировать\n\nПоказывать specimens стоит там, где изменение визуально или структурно существенно:\n\n| Нужно показать | Можно описать ограничением |\n|---|---|\n| Исходное состояние, фокус, ошибка при разном оформлении | Запрещённые редкие комбинации |\n| Размеры с разной геометрией | Максимальное число иконок |\n| Загрузка, если меняется устройство | Правило выбора подписи |\n| Длинный текст и переносы | Несколько семантических ограничений |\n| Slot с типовыми композициями | Все теоретически возможные наполнения Slot |\n\nИсследование CHI 2026 о story variants в component libraries отмечает, что ручное создание stories само является трудной maintenance‑задачей и что ограниченный набор hand-authored stories может скрывать реальное variation space. Это поддерживает идею показывать репрезентативные и рискованные случаи, а не вручную материализовывать все комбинации. [The Way We Notice: вариации UI-компонентов](https://arxiv.org/html/2602.22436v1)\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Separate source masters from linked documentation specimens. Show representative risk/content/state cases instead of materializing every combination."
+      }
+    },
+    {
+      "id": "R032",
+      "level": 3,
+      "title": "Схема устройства и матрица состояний выполняют разные задачи",
+      "text": "### Схема устройства и матрица состояний выполняют разные задачи\n\nAnatomy отвечает «из каких частей состоит контракт».\n\nState matrix отвечает «что меняется при состоянии».\n\nCarbon Button — хороший пример второго подхода: для каждого interactive state указано, какой element и token меняется. Carbon Text Input отдельно документирует anatomy и state semantics. Эти практики полезны как форма документации, хотя конкретные Carbon values не универсальны. [Carbon: спецификация Button](https://www.carbondesignsystem.com/building-blocks/core/components/button/specifications) [Carbon: Text input — устройство и состояния](https://www.carbondesignsystem.com/building-blocks/core/components/text-input/guidelines)\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Separate source masters from linked documentation specimens. Show representative risk/content/state cases instead of materializing every combination."
+      }
+    },
+    {
+      "id": "R033",
+      "level": 3,
+      "title": "Figma и код должны совпадать семантически, а не деревом",
+      "text": "### Figma и код должны совпадать семантически, а не деревом\n\nСамое важное различие: **design component tree и runtime component tree решают разные задачи**.\n\nFigma tree оптимизирует:\n\n- authoring\n- inherited visual changes\n- instance editing\n- presentation\n- design constraints\n\nRuntime tree оптимизирует:\n\n- semantics\n- accessibility\n- rendering\n- event handling\n- performance\n- framework APIs\n- композицию CSS и раскладки\n\nСледовательно:\n\n```text\nFigma\nButton\n└─ Icon instance\n└─ Label\n\nReact\n<Button iconBefore={<AddIcon />}>\n  Save\n</Button>\n```\n\nили даже:\n\n```html\n<button class=\"...\">\n  <svg ... />\n  <span>Save</span>\n</button>\n```\n\nявляются вполне корректными соответствиями без идентичного component tree.\n\nFigma Code Connect прямо исходит из такого несовпадения. Его документация отмечает, что design props и code props часто **не совпадают 1:1**, поэтому они маппятся явно. Один Figma component может быть связан с несколькими implementations для React, SwiftUI, Jetpack Compose, Vue и других frameworks. [Figma Code Connect: обзор](https://developers.figma.com/docs/code-connect/) [Figma Code Connect: подключение React-компонентов](https://developers.figma.com/docs/code-connect/react/)\n\nБолее того, Code Connect допускает, что один Figma `Button` с `Type = Primary / Secondary / Danger` отображается на три разных code components. Обратное тоже возможно через property mappings. Это прямое доказательство того, что соответствие семантики и API важнее идентичной вложенности. [Figma Code Connect: подключение React-компонентов](https://developers.figma.com/docs/code-connect/react/)\n\nFluent 2 формулирует более умеренную цель: его Figma assets «map to the code libraries», а properties в UI kits map to code. Это не утверждение о равенстве внутренних деревьев. Fluent также пишет, что большинство assets держатся близко к поверхности и обычно не вложены глубже двух уровней. Это интересный производственный пример, но не универсальный норматив. [Fluent 2: начало работы с дизайн-библиотекой](https://fluent2.microsoft.design/get-started/design)\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Map semantic contracts and public choices without identical internal trees. Legacy Code Connect parser examples are not a current implementation prescription."
+      }
+    },
+    {
+      "id": "R034",
+      "level": 3,
+      "title": "Ответственность за обновления",
+      "text": "### Ответственность за обновления\n\nНужно различать четыре владельца:\n\n| Изменение | Основной владелец |\n|---|---|\n| Визуальный токен | Слой токенов и языка дизайна |\n| Публичный контракт Figma-компонента | Ответственный за дизайн-систему |\n| Семантика и API реализации | Ответственный за код |\n| Локальная доменная композиция | Продуктовая или доменная команда |\n\nСинхронизация между ними требует mapping, но не общей physical structure.\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Map semantic contracts and public choices without identical internal trees. Legacy Code Connect parser examples are not a current implementation prescription."
+      }
+    },
+    {
+      "id": "R035",
+      "level": 2,
+      "title": "Эволюция и миграция",
+      "text": "## Эволюция и миграция\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Navigation, provenance or section framing. The substantive child sections are assessed separately."
+      }
+    },
+    {
+      "id": "R036",
+      "level": 3,
+      "title": "Расширить или разделить",
+      "text": "### Расширить или разделить\n\n**Extend** разумен, когда новое поведение сохраняет идентичность и контракт компонента.\n\nПример: Button получает optional leading icon.\n\n**Split** лучше, когда меняется роль.\n\nПример: Button с menu trigger становится `MenuButton` или `SplitButton`, если появляется другой keyboard model, ARIA semantics и interaction contract.\n\nРазмер visual difference сам по себе не определяет split. Поведение и API важнее.\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Behavioral contract determines extension/split and domain/core ownership. Retain concrete counterexamples."
+      }
+    },
+    {
+      "id": "R037",
+      "level": 3,
+      "title": "Совместимые и несовместимые дополнения",
+      "text": "### Совместимые и несовместимые дополнения\n\nFigma прямо приводит полезное различие. Добавление hidden-by-default supporting text может быть неразрушающим. Если то же содержимое начинает отображаться по умолчанию, existing instances меняются и изменение становится breaking. Удаление или переименование properties, перестройка variants и переименование напрямую override‑ируемых layers также могут нарушить consumers. [Figma: организация и сопровождение компонентов](https://help.figma.com/hc/en-us/articles/39747637290263-Components-collection-Tips-for-component-management)\n\nУдобная классификация:\n\n| Изменение | Обычно |\n|---|---|\n| Новое необязательное свойство с прежним значением по умолчанию | добавочное изменение |\n| Новый вариант, не меняющий определение старых | добавочное изменение |\n| Новый предпочтительный экземпляр | добавочное изменение |\n| Изменение токена отступов внутри существующего контракта | визуальное обновление |\n| Переименование слоя с overrides | потенциально несовместимое |\n| Удаление свойства | несовместимое изменение |\n| Изменение видимости по умолчанию | потенциально несовместимое |\n| Замена компонента-заполнителя на нативный Slot | миграция |\n| Разделение компонента | миграция |\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Preserve overrides and defaults. Source names/hierarchy participate in migration. A native-slot migration can break consumers."
+      }
+    },
+    {
+      "id": "R038",
+      "level": 3,
+      "title": "Миграция — часть архитектуры",
+      "text": "### Миграция — часть архитектуры\n\nNative slots хорошо показывают, почему «более правильная» архитектура всё равно может иметь высокую migration price. Figma предупреждает, что при переходе от shared slot-placeholder к native slots существующие custom overrides placeholder могут не перенестись. Для variant‑based slot workaround переход фактически требует rebuild и ломает старые bindings. [Figma: миграция библиотеки на slots](https://help.figma.com/hc/en-us/articles/38607529833751-Migrate-a-library-to-using-slots)\n\nПоэтому архитектурное решение должно оцениваться не только в steady state, но и как:\n\n`стоимость создания + стоимость использования + стоимость изменения + стоимость выхода`.\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Preserve overrides and defaults. Source names/hierarchy participate in migration. A native-slot migration can break consumers."
+      }
+    },
+    {
+      "id": "R039",
+      "level": 3,
+      "title": "Локальные доменные композиции",
+      "text": "### Локальные доменные композиции\n\nНе вся успешная композиция обязана становиться core component.\n\nЕсли `Checkout/PaymentRow` стабильно сочетает Avatar‑подобный logo, label и trailing amount, но контракт существует только в checkout, локальный domain component может быть правильнее глобального `UniversalRow`.\n\nГлобализация оправдана после появления общего contract, а не после появления внешнего сходства.\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Behavioral contract determines extension/split and domain/core ownership. Retain concrete counterexamples."
+      }
+    },
+    {
+      "id": "R040",
+      "level": 3,
+      "title": "Изменение общих определений",
+      "text": "### Изменение общих определений\n\nОбновление shared spacing нормально, если оно является частью обещанного design-token contract. Однако изменение структуры nested layers может влиять на override preservation, поэтому «все instances автоматически обновятся» не равно «все instances обновятся без потери локальных намерений». Figma explicitly связывает preservation с layer names, hierarchy и initial property correspondence. [Figma: изменения экземпляров и сохранение overrides](https://help.figma.com/hc/en-us/articles/360039150733-Apply-changes-to-instances)\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Preserve overrides and defaults. Source names/hierarchy participate in migration. A native-slot migration can break consumers."
+      }
+    },
+    {
+      "id": "R041",
+      "level": 2,
+      "title": "Рабочие сравнения",
+      "text": "## Рабочие сравнения\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Navigation, provenance or section framing. The substantive child sections are assessed separately."
+      }
+    },
+    {
+      "id": "R042",
+      "level": 3,
+      "title": "Кнопка с необязательными иконками",
+      "text": "### Кнопка с необязательными иконками\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Case framing. Read actual construction/interaction children before applying."
+      }
+    },
+    {
+      "id": "R043",
+      "level": 4,
+      "title": "Задача",
+      "text": "#### Задача\n\nПоддержать:\n\n- `Label`\n- необязательную иконку до или после подписи\n- размеры\n- акцент\n- недоступность\n- загрузку\n- общее обновление отступов\n- замену иконки\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Navigation, provenance or section framing. The substantive child sections are assessed separately."
+      }
+    },
+    {
+      "id": "R044",
+      "level": 4,
+      "title": "Вариант A — прямой Button",
+      "text": "#### Вариант A — прямой Button\n\n```text\nButton\n├─ Leading icon [instance swap, visible=false]\n├─ Label [text]\n└─ Trailing icon [instance swap, visible=false]\n```\n\nПубличные свойства:\n\n```text\nEmphasis\nSize\nDisabled\nLoading\nLabel\nShow leading icon\nLeading icon\nShow trailing icon\nTrailing icon\n```\n\nЭто наиболее прямое решение, если spacing принадлежит Button. Изменение horizontal gap выполняется в Button master и распространяется на instances. Отдельный `Content/Button` для этого не нужен.\n\nIcon replacement — instance swap. Именно такой bounded replacement соответствует модели Figma: один вложенный component заменяется другим без разрешения произвольно перестраивать layout. Figma Code Connect также рекомендует instance swap props для icons, чтобы иметь устойчивый identifier для вложенного icon mapping. [Figma: различия slots, instance swaps и variants](https://help.figma.com/hc/en-us/articles/38741465279895-The-difference-between-slots-instance-swaps-and-variants) [Figma Code Connect: подключение React-компонентов](https://developers.figma.com/docs/code-connect/react/)\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Explain independent change/consumer responsibility versus anatomy. Compare direct construction and internal bases. No fixed nesting depth or reuse quota."
+      }
+    },
+    {
+      "id": "R045",
+      "level": 4,
+      "title": "Вариант B — Button с внутренним Base",
+      "text": "#### Вариант B — Button с внутренним Base\n\n```text\nButton\n└─ Internal/ButtonBase\n   ├─ Leading icon\n   ├─ Label\n   └─ Trailing icon\n```\n\nОн становится выгоднее, если `Button`, `MenuButton` и ещё один public component действительно должны делить одну geometry implementation, но иметь разные public sets и semantics.\n\nЕсли Base используется только Button, он не уменьшает число точек изменения. Тогда это дополнительная навигационная граница без явной пользы.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Explain independent change/consumer responsibility versus anatomy. Compare direct construction and internal bases. No fixed nesting depth or reuse quota."
+      }
+    },
+    {
+      "id": "R046",
+      "level": 4,
+      "title": "Вариант C — отдельные masters оформления и содержимого",
+      "text": "#### Вариант C — отдельные masters оформления и содержимого\n\n```text\nButton\n└─ ButtonStyle\n   └─ ButtonContent\n      ├─ Icon\n      └─ Label\n```\n\nДля задачи выше преимуществ почти нет. Spacing update всё равно должен иметь единственного владельца. Если spacing принадлежит Style, пользователь вынужден проследить dependency. Если Content нужен только одному Style, самостоятельный master не даёт reuse.\n\nТакой вариант становится рациональнее лишь тогда, когда тот же `ButtonContent` реально вставляется в несколько независимых shells и должен обновляться самостоятельно. Это редкое, но не невозможное условие.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Explain independent change/consumer responsibility versus anatomy. Compare direct construction and internal bases. No fixed nesting depth or reuse quota."
+      }
+    },
+    {
+      "id": "R047",
+      "level": 4,
+      "title": "Загрузка",
+      "text": "#### Загрузка\n\nLoading лучше считать отдельной behavioral dimension, а не просто ещё одним icon swap, если activation и content semantics меняются.\n\nApple iOS прямо поддерживает activity indicator внутри button и может временно скрывать обычный icon. Это хороший пример, где loading имеет поведенческий контракт. [Apple: Meet the UIKit button system](https://developer.apple.com/videos/play/wwdc2021/10064/)\n\nНе обязательно материализовывать `Loading × Hover × Focus × Disabled` как четыре mutually exclusive variants. Лучше определить допустимые overlaps и precedence.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Explain supported overlaps, state precedence and specimen/configuration/runtime differences. The five-axis model is synthesis, not a universal standard."
+      }
+    },
+    {
+      "id": "R048",
+      "level": 4,
+      "title": "Длинная подпись",
+      "text": "#### Длинная подпись\n\nLonger content должен проверять resizing и localisation resilience, а не порождать `LongText` variant. Atomic Design сам использует реальные pages и экстремальные content variations как способ проверки устойчивости шаблона. [Atomic Design Methodology — Brad Frost](https://atomicdesign.bradfrost.com/chapter-2/)\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Separate source masters from linked documentation specimens. Show representative risk/content/state cases instead of materializing every combination."
+      }
+    },
+    {
+      "id": "R049",
+      "level": 3,
+      "title": "Поле ввода с подсказкой и ошибкой",
+      "text": "### Поле ввода с подсказкой и ошибкой\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Explain supported overlaps, state precedence and specimen/configuration/runtime differences. The five-axis model is synthesis, not a universal standard."
+      }
+    },
+    {
+      "id": "R050",
+      "level": 4,
+      "title": "Задача",
+      "text": "#### Задача\n\nПоддержать:\n\n- подпись\n- значение или текст-заполнитель\n- текст подсказки\n- сообщение об ошибке\n- фокус\n- недоступность или режим только для чтения\n- длинное сообщение валидации\n\nCarbon показывает подобную anatomy: label, value, field, optional helper text, а states включает enabled, active, focus, error, warning, disabled, skeleton и read-only. [Carbon: Text input — устройство и состояния](https://www.carbondesignsystem.com/building-blocks/core/components/text-input/guidelines)\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Navigation, provenance or section framing. The substantive child sections are assessed separately."
+      }
+    },
+    {
+      "id": "R051",
+      "level": 4,
+      "title": "Наивная модель",
+      "text": "#### Наивная модель\n\n```text\nState =\nDefault\nFocus\nError\nErrorFocus\nDisabled\nReadOnly\nWarning\nWarningFocus\n...\n```\n\nОна превращает несколько orthogonal axes в один enum и быстро растёт.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Explain supported overlaps, state precedence and specimen/configuration/runtime differences. The five-axis model is synthesis, not a universal standard."
+      }
+    },
+    {
+      "id": "R052",
+      "level": 4,
+      "title": "Более устойчивый контракт",
+      "text": "#### Более устойчивый контракт\n\n```text\nAvailability = Enabled | Disabled | Read-only\nValidation = None | Error | Warning\nFocused = true | false\nLabel = text\nHelper = text\nShow helper = boolean\n```\n\nВ реальном Figma implementation `Focused` может оставаться variant, если treatment структурно или визуально значим. Здесь важен не конкретный тип property, а то, что **focus и validation не притворяются взаимоисключающими**.\n\n`Error message` не стоит моделировать как swap, если это просто текст в заранее определённой supporting region. Text + visibility достаточно.\n\nЕсли supporting region может содержать error icon, links, multiple messages или продуктовые compositions, тогда bounded component или slot может стать оправданным.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Distinguish public content/configuration, bounded replacement and free composition. Keep actual tool/API availability separate from documented mechanisms."
+      }
+    },
+    {
+      "id": "R053",
+      "level": 4,
+      "title": "Изменение общих отступов",
+      "text": "#### Изменение общих отступов\n\nЕсли label, field и supporting text принадлежат одному TextField contract, vertical gap нужно менять в одном master. `InputContentBase` не нужен только ради синхронизации.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Distinguish public content/configuration, bounded replacement and free composition. Keep actual tool/API availability separate from documented mechanisms."
+      }
+    },
+    {
+      "id": "R054",
+      "level": 4,
+      "title": "Длинное содержимое",
+      "text": "#### Длинное содержимое\n\nText layer должен разрешать wrapping, а specimen должен показывать длинную подсказку или сообщение об ошибке. Это stronger test, чем новый variant. Carbon также рассматривает helper text как optional content, а не отдельный component family. [Carbon: Text input — устройство и состояния](https://www.carbondesignsystem.com/building-blocks/core/components/text-input/guidelines)\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Separate source masters from linked documentation specimens. Show representative risk/content/state cases instead of materializing every combination."
+      }
+    },
+    {
+      "id": "R055",
+      "level": 3,
+      "title": "Строка с аватаром, текстом и завершающим содержимым",
+      "text": "### Строка с аватаром, текстом и завершающим содержимым\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Case framing. Read actual construction/interaction children before applying."
+      }
+    },
+    {
+      "id": "R056",
+      "level": 4,
+      "title": "Задача",
+      "text": "#### Задача\n\n```text\nRow\n├─ Avatar\n├─ Text block\n└─ Trailing content\n```\n\nMaterial Lists прямо описывает list item как composition с label, supporting text, image и trailing icon, которые можно настраивать. В обновлении Material 3 Expressive для lists также появились flexible slots.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Navigation, provenance or section framing. The substantive child sections are assessed separately."
+      }
+    },
+    {
+      "id": "R057",
+      "level": 4,
+      "title": "Вариант A — всё фиксировано",
+      "text": "#### Вариант A — всё фиксировано\n\nЕсли trailing content всегда `ChevronRight`:\n\n```text\nRow\n├─ Avatar [swap]\n├─ Text\n└─ ChevronRight\n```\n\nТолько avatar требует swap.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Distinguish public content/configuration, bounded replacement and free composition. Keep actual tool/API availability separate from documented mechanisms."
+      }
+    },
+    {
+      "id": "R058",
+      "level": 4,
+      "title": "Вариант B — ограниченная замена завершающего элемента",
+      "text": "#### Вариант B — ограниченная замена завершающего элемента\n\nЕсли trailing может быть:\n\n`ChevronRight / Switch / Badge / IconButton`\n\nно строго один объект и фиксированная область, instance swap даёт хороший guardrail.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Distinguish public content/configuration, bounded replacement and free composition. Keep actual tool/API availability separate from documented mechanisms."
+      }
+    },
+    {
+      "id": "R059",
+      "level": 4,
+      "title": "Вариант C — trailing Slot",
+      "text": "#### Вариант C — trailing Slot\n\nЕсли trailing может содержать несколько произвольно составленных элементов, native Slot лучше отражает контракт.\n\nЦена — автор Row instance теперь обладает большей свободой и может создать композицию, которую core team не предполагала. Preferred values и ограничения количества layers могут помочь, поскольку Figma slots позволяют задавать recommended instances и минимальное и максимальное количество слоёв. [Figma: создание и использование slots](https://help.figma.com/hc/en-us/articles/38231200344599-Create-and-use-slots-to-build-flexible-components-in-Figma-Design)\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Distinguish public content/configuration, bounded replacement and free composition. Keep actual tool/API availability separate from documented mechanisms."
+      }
+    },
+    {
+      "id": "R060",
+      "level": 4,
+      "title": "Почему нельзя решить всё вариантами",
+      "text": "#### Почему нельзя решить всё вариантами\n\n`Trailing = Chevron | Badge | Switch | Button | Empty` технически возможно сделать variant axis, но это смешивает **identity of child component** с structural variants Row. Figma позиционирует instance swaps именно для ограниченной замены child. [Figma: различия slots, instance swaps и variants](https://help.figma.com/hc/en-us/articles/38741465279895-The-difference-between-slots-instance-swaps-and-variants)\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Distinguish public content/configuration, bounded replacement and free composition. Keep actual tool/API availability separate from documented mechanisms."
+      }
+    },
+    {
+      "id": "R061",
+      "level": 4,
+      "title": "Семантика взаимодействия",
+      "text": "#### Семантика взаимодействия\n\nЕсли вся row clickable и внутри есть secondary actions, структура code должна учитывать keyboard navigation и event semantics. Fluent List, например, различает single-action rows, selection и rows с secondary actions, включая отдельное keyboard behaviour. Это хороший пример того, почему один визуальный Figma Row не всегда должен соответствовать одному универсальному runtime API. [Fluent 2: List — действия и клавиатурная навигация](https://fluent2.microsoft.design/components/web/react/core/list/usage)\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Map semantic contracts and public choices without identical internal trees. Legacy Code Connect parser examples are not a current implementation prescription."
+      }
+    },
+    {
+      "id": "R062",
+      "level": 3,
+      "title": "Контейнер с произвольным содержимым",
+      "text": "### Контейнер с произвольным содержимым\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Distinguish public content/configuration, bounded replacement and free composition. Keep actual tool/API availability separate from documented mechanisms."
+      }
+    },
+    {
+      "id": "R063",
+      "level": 4,
+      "title": "Задача",
+      "text": "#### Задача\n\nDialog или Card имеет стабильные:\n\n- поверхность\n- отступы\n- радиус\n- заголовок\n- подвал\n\nа body меняется произвольно.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Navigation, provenance or section framing. The substantive child sections are assessed separately."
+      }
+    },
+    {
+      "id": "R064",
+      "level": 4,
+      "title": "Компонент-заполнитель",
+      "text": "#### Компонент-заполнитель\n\nСтарая техника:\n\n```text\nDialog\n├─ Header\n├─ ContentPlaceholder [instance]\n└─ Footer\n```\n\nconsumer swaps `ContentPlaceholder` на локальный component.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Distinguish public content/configuration, bounded replacement and free composition. Keep actual tool/API availability separate from documented mechanisms."
+      }
+    },
+    {
+      "id": "R065",
+      "level": 4,
+      "title": "Нативный Slot",
+      "text": "#### Нативный Slot\n\n```text\nDialog\n├─ Header\n├─ Body [slot]\n└─ Footer\n```\n\nЗдесь Slot ближе к реальному contract. Figma использует именно случаи с диалогами и карточками как пример flexible content и отдельно рекомендует мигрировать dedicated placeholder masters на native slots. [Figma: различия slots, instance swaps и variants](https://help.figma.com/hc/en-us/articles/38741465279895-The-difference-between-slots-instance-swaps-and-variants) [Figma: миграция библиотеки на slots](https://help.figma.com/hc/en-us/articles/38607529833751-Migrate-a-library-to-using-slots)\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Distinguish public content/configuration, bounded replacement and free composition. Keep actual tool/API availability separate from documented mechanisms."
+      }
+    },
+    {
+      "id": "R066",
+      "level": 4,
+      "title": "Изменение общих отступов",
+      "text": "#### Изменение общих отступов\n\nPadding принадлежит Dialog shell. Обновляется parent master, slot content остаётся consumer‑owned.\n\nЭто и есть важное разделение ownership:\n\n- `container owns boundary`\n- `consumer owns slot contents`.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Distinguish public content/configuration, bounded replacement and free composition. Keep actual tool/API availability separate from documented mechanisms."
+      }
+    },
+    {
+      "id": "R067",
+      "level": 4,
+      "title": "Длинное содержимое",
+      "text": "#### Длинное содержимое\n\nBody должен expand или scroll в зависимости от platform contract. Сам slot не решает runtime overflow semantics. Это должно быть документировано отдельно.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "A slot does not define runtime scrolling or overflow behavior."
+      }
+    },
+    {
+      "id": "R068",
+      "level": 3,
+      "title": "Сводка четырёх случаев",
+      "text": "### Сводка четырёх случаев\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Navigation, provenance or section framing. The substantive child sections are assessed separately."
+      }
+    },
+    {
+      "id": "R069",
+      "level": 4,
+      "title": "Кнопка и поле ввода",
+      "text": "#### Кнопка и поле ввода\n\n| Изменение | Button | Input |\n| --- | --- | --- |\n| Изменить общие отступы | Родительский master | Родительский master |\n| Заменить иконку или аватар | Замена экземпляра | Обычно не нужно |\n| Добавить загрузку | Поведенческое свойство или состояние | Обычно отдельное асинхронное состояние поля |\n| Длинный текст | Пример с предельным содержимым | Пример с переносами |\n| Нужен Slot | Обычно нет | Редко |\n| Нужен внутренний Base | Только при реальном наследовании несколькими родителями | Редко |\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Separate source masters from linked documentation specimens. Show representative risk/content/state cases instead of materializing every combination."
+      }
+    },
+    {
+      "id": "R070",
+      "level": 4,
+      "title": "Строка и контейнер",
+      "text": "#### Строка и контейнер\n\n| Изменение | Row | Container |\n| --- | --- | --- |\n| Изменить общие отступы | Родительский master | Родительская оболочка |\n| Заменить иконку или аватар | Замена экземпляра | Только при ограниченной замене |\n| Добавить загрузку | Зависит от роли строки | Часто отдельное состояние содержимого |\n| Длинный текст | Многострочный пример | Произвольное содержимое |\n| Нужен Slot | Иногда в завершающей области | Часто в теле |\n| Нужен внутренний Base | При нескольких публичных контрактах строки | Если несколько оболочек действительно разделяют реализацию |\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Separate source masters from linked documentation specimens. Show representative risk/content/state cases instead of materializing every combination."
+      }
+    },
+    {
+      "id": "R071",
+      "level": 3,
+      "title": "Пример страницы документации",
+      "text": "### Пример страницы документации\n\n```text\n00 Overview\n   Purpose\n   When to use\n   When not to use\n\n01 Anatomy\n   Annotated instance\n   Named regions\n   Ownership of regions\n\n02 API\n   Public properties\n   Defaults\n   Allowed values\n   Unsupported combinations\n\n03 States\n   Interaction matrix\n   Availability\n   Validation\n   Async\n   Precedence notes\n\n04 Content\n   Short\n   Long\n   Localised\n   Empty where allowed\n\n05 Composition\n   Leading/trailing examples\n   Slot examples\n   Unsupported compositions\n\n06 Accessibility & platform\n   Keyboard\n   Focus\n   Touch target\n   Native differences\n\n07 Code mapping\n   Semantic component\n   Property mapping\n   Known Figma/code differences\n\n08 Migration\n   Current version\n   Deprecated properties\n   Compatibility notes\n```\n\nSource masters при этом могут находиться на отдельной maintenance page. Documentation specimens должны быть instances, чтобы демонстрация сама обнаруживала regressions после library update.\n\n",
+      "readingContext": {
+        "kind": "example",
+        "note": "Separate source masters from linked documentation specimens. Show representative risk/content/state cases instead of materializing every combination."
+      }
+    },
+    {
+      "id": "R072",
+      "level": 2,
+      "title": "Приложение по доказательствам и источникам",
+      "text": "## Приложение по доказательствам и источникам\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Navigation, provenance or section framing. The substantive child sections are assessed separately."
+      }
+    },
+    {
+      "id": "R073",
+      "level": 3,
+      "title": "Что можно считать достаточно подтверждённым",
+      "text": "### Что можно считать достаточно подтверждённым\n\n**Atomic Design — модель мышления, а не обязательное дерево masters.** Это следует непосредственно из первичного текста Фроста, где пять стадий описаны как concurrent и где шаблоны и страницы используются для проверки частей в целом. [Atomic Design Methodology — Brad Frost](https://atomicdesign.bradfrost.com/chapter-2/)\n\n**Figma предоставляет разные механизмы для разных видов конфигурируемости.** Text, boolean, instance swap, variants и slots являются отдельными component-property mechanisms. Native slots доступны в текущей документации Figma на 2026‑11‑06. [Figma: свойства компонентов](https://help.figma.com/hc/en-us/articles/5579474826519-Explore-component-properties) [Figma: создание и использование slots](https://help.figma.com/hc/en-us/articles/38231200344599-Create-and-use-slots-to-build-flexible-components-in-Figma-Design)\n\n**Swap и Slot не эквивалентны.** Figma явно противопоставляет constrained single replacement и flexible freeform composition. [Figma: различия slots, instance swaps и variants](https://help.figma.com/hc/en-us/articles/38741465279895-The-difference-between-slots-instance-swaps-and-variants)\n\n**Placeholder-slot components больше не являются необходимой архитектурной техникой.** Figma официально рекомендует миграцию таких workarounds к native slots и в одном из путей рекомендует каждому parent владеть собственным slot вместо общего placeholder master. [Figma: миграция библиотеки на slots](https://help.figma.com/hc/en-us/articles/38607529833751-Migrate-a-library-to-using-slots)\n\n**Variant axes не требуют отдельных nested masters.** Figma трактует variant properties как именованные различия одного component set и рекомендует разделять независимые properties. [Figma: основы variants и component sets](https://help.figma.com/hc/en-us/articles/39636737843735-Components-collection-Variants-and-component-set-fundamentals)\n\n**Связь дизайна и кода не требует идентичного дерева.** Code Connect прямо поддерживает property mappings, one-to-many framework connections и разные code components для variants одного design component. [Figma Code Connect: обзор](https://developers.figma.com/docs/code-connect/) [Figma Code Connect: подключение React-компонентов](https://developers.figma.com/docs/code-connect/react/)\n\n**Структура Figma влияет на редактируемость.** Figma override preservation зависит от layer names, hierarchy и исходного сходства свойств, а исследование CHI 2026 показывает реальные пользовательские затруднения вокруг nesting и declarative structure.\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Report self-assessment is not independent verification. Primary spot checks and explicit synthesis boundaries are recorded in the audit report."
+      }
+    },
+    {
+      "id": "R074",
+      "level": 3,
+      "title": "Что остаётся соглашением или исследовательским выводом",
+      "text": "### Что остаётся соглашением или исследовательским выводом\n\nПравило «оставлять frame, пока у части нет самостоятельного change contract» — синтез, а не официальное правило Figma.\n\nИдея делить state на interaction, availability, selection, validation и async — аналитическая модель. Она согласуется с тем, как публичные системы описывают overlapping behaviour, но сама пятимерная схема не является стандартом Carbon, Fluent или W3C. Carbon действительно различает множество типов состояния, а Fluent показывает отдельную семантику выбора и действий в списках. [Carbon: Text input — устройство и состояния](https://www.carbondesignsystem.com/building-blocks/core/components/text-input/guidelines) [Fluent 2: List — действия и клавиатурная навигация](https://fluent2.microsoft.design/components/web/react/core/list/usage)\n\nРекомендация организовывать основную библиотеку по семейству и назначению, а не атомам и молекулам — вывод из discoverability и наблюдаемой организации публичных систем, но не доказанная универсальная оптимальность. Figma сама не предписывает единственную naming convention. [Figma: организация и сопровождение компонентов](https://help.figma.com/hc/en-us/articles/39747637290263-Components-collection-Tips-for-component-management)\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Report self-assessment is not independent verification. Primary spot checks and explicit synthesis boundaries are recorded in the audit report."
+      }
+    },
+    {
+      "id": "R075",
+      "level": 3,
+      "title": "Пробелы в доказательствах",
+      "text": "### Пробелы в доказательствах\n\nВ найденных источниках не установлены:\n\n- оптимальная глубина Figma nesting\n- минимальное число reuse cases для extraction\n- измеренная разница времени сопровождения между прямой архитектурой, общим Base и раздельными masters содержимого и оформления\n- универсальный предел variant count до того, как usability библиотеки ухудшается\n- универсальная state precedence для разных platforms\n- доказательство того, что одинаковая структура Figma и code повышает delivery quality\n\nСмежная эмпирика существует, но отвечает на более общие вопросы. Работа CHI 2026 показывает structural comprehension problems в Figma. Исследования software reuse показывают зависимость пользы от контекста, ownership и документации. Case study 2025 по design-system reuse показывает, что простое повторное использование UI assets само по себе не гарантирует лучшую пользовательскую оценку. Эти данные поддерживают осторожность к универсальным рецептам, но не позволяют вычислить «правильную» архитектуру конкретной библиотеки.\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "No measured optimal nesting or quantitative maintenance superiority. Unidentified CHI structural-comprehension claims and missing source mappings stay unverified."
+      }
+    },
+    {
+      "id": "R076",
+      "level": 2,
+      "title": "Применение к переданному локальному случаю",
+      "text": "## Применение к переданному локальному случаю\n\nЭто применение отделено от общих выводов, как требовалось.\n\nИз предоставленного описания известна цепочка:\n\n```text\nButtonBlock\n→ Button/Style\n→ size Master\n→ Content/Button\n→ icon instances\n```\n\nОна демонстрирует связанное наследование, но сама её существующая работоспособность не доказывает необходимость каждого master.\n\nПо критериям исследования первым вопросом для каждого из `Button/Style`, `size Master` и `Content/Button` должен быть не «какой это atomic level», а:\n\n```text\nИмеет ли этот узел собственных consumers,\nсобственный change contract\nили устраняет ли он реальное дублирование между независимыми parents?\n```\n\nЕсли `Content/Button` существует только внутри одной button family, а label и icon можно безопасно выставить как public properties родителя, его концептуальная самостоятельность сама по себе недостаточна для сохранения nested master. Если `size Master` обеспечивает общий geometry contract нескольких независимо публикуемых компонентов, его ценность может быть реальной. Если он только кодирует `Size` внутри одного Button, вариант, токен или режим может быть проще.\n\nЭти выводы требуют проверки actual consumers и overrides и поэтому не являются рекомендацией немедленно перестроить файл. Миграционная осторожность соответствует документированным ограничениям Figma по override preservation и breaking library changes. [Figma: организация и сопровождение компонентов](https://help.figma.com/hc/en-us/articles/39747637290263-Components-collection-Tips-for-component-management) [Figma: изменения экземпляров и сохранение overrides](https://help.figma.com/hc/en-us/articles/360039150733-Apply-changes-to-instances)\n\nПринятые договорённости по style, icon replacement и reuse не требуют отмены. Также нет основания заменять существующую иерархию на универсальную «плоскую» схему. Корректный следующий критерий — сравнивать конкретные конструкции на одинаковых изменениях: shared spacing, icon swap, loading, long text и migration of existing overrides.\n\n",
+      "readingContext": {
+        "kind": "historical-application",
+        "note": "Local supplied-library application is not adopted architecture or authority to rebuild a file."
+      }
+    },
+    {
+      "id": "R077",
+      "level": 2,
+      "title": "Итоговое решение",
+      "text": "## Итоговое решение\n\nДля новой или небольшой библиотеки разумная default‑позиция такова:\n\n**строить публичный компонент напрямую, использовать frames для его внутренней anatomy, properties для публичного API и извлекать отдельный nested master только после появления самостоятельного inheritance или replacement contract.**\n\nVariants отвечают за дискретные версии одного identity. Text и boolean properties отвечают за простую конфигурацию содержимого. Instance swap отвечает за ограниченную замену одного child. Slot отвечает за свободную composition region. Variables и modes отвечают за контекстные значения.\n\nНи один из этих механизмов сам по себе не требует Atomic Design hierarchy. [Figma: свойства компонентов](https://help.figma.com/hc/en-us/articles/5579474826519-Explore-component-properties) [Figma: различия slots, instance swaps и variants](https://help.figma.com/hc/en-us/articles/38741465279895-The-difference-between-slots-instance-swaps-and-variants) [Figma: основы variants и component sets](https://help.figma.com/hc/en-us/articles/39636737843735-Components-collection-Variants-and-component-set-fundamentals) [Figma: создание и использование slots](https://help.figma.com/hc/en-us/articles/38231200344599-Create-and-use-slots-to-build-flexible-components-in-Figma-Design) [Figma: переменные, коллекции и режимы](https://help.figma.com/hc/en-us/articles/14506821864087-Overview-of-variables-collections-and-modes)\n\nАрхитектура должна минимизировать не количество компонентов как таковых, а количество **независимых контрактов, которые приходится понимать и поддерживать без необходимости**. При этом слишком плоская система также может быть неправильной, если она заставляет несколько публичных components дублировать одну действительно общую изменяемую implementation. Доступные источники поддерживают такую условную модель лучше, чем универсальное правило глубины, reuse count или атомного дерева.\n\nРендеринг Mermaid не использовался, поэтому его совместимость с конкретной версией Obsidian не проверялась. Фактическая доступность native slots, Code Connect и других version-sensitive функций в вашем локальном Figma workspace, plan или API environment отдельно не проверялась. Источники отражают публичную документацию, доступную 6 ноября 2026 года.\n\n",
+      "readingContext": {
+        "kind": "source-synthesis",
+        "note": "Explain independent change/consumer responsibility versus anatomy. Compare direct construction and internal bases. No fixed nesting depth or reuse quota."
+      }
+    },
+    {
+      "id": "R078",
+      "level": 2,
+      "title": "Источники",
+      "text": "## Источники\n\nИсточник ссылок восстановлен частично: из 68 экспортных маркеров 56 заменены ссылками с названиями, 12 удалены без реконструированного адреса. Утверждения при этих маркерах сохранены. В исходном файле не было обычных ссылок с названиями или разделовых списков с пригодными URL. Это структурно очищенный отчёт с неполным слоем источников, а не заново проверенное исследование.\n\n",
+      "readingContext": {
+        "kind": "sources",
+        "note": "Navigation, provenance or section framing. The substantive child sections are assessed separately."
+      }
+    },
+    {
+      "id": "R079",
+      "level": 3,
+      "title": "Методология и границы компонентов",
+      "text": "### Методология и границы компонентов\n\nОсновной первичный источник — Brad Frost, *Atomic Design Methodology*. Он определяет atoms, molecules, organisms, templates и pages и подчёркивает concurrent nature модели.\n\n- [Atomic Design Methodology — Brad Frost](https://atomicdesign.bradfrost.com/chapter-2/)\n\n",
+      "readingContext": {
+        "kind": "sources",
+        "note": "Navigation, provenance or section framing. The substantive child sections are assessed separately."
+      }
+    },
+    {
+      "id": "R080",
+      "level": 3,
+      "title": "Архитектура компонентов Figma",
+      "text": "### Архитектура компонентов Figma\n\nНаиболее существенны текущие материалы Figma о component properties, variants, management, override preservation и native slots. Они описывают возможности инструмента и рекомендации vendor, но не являются сравнительными исследованиями архитектур.\n\n- [Figma: свойства компонентов](https://help.figma.com/hc/en-us/articles/5579474826519-Explore-component-properties)\n- [Figma: основы variants и component sets](https://help.figma.com/hc/en-us/articles/39636737843735-Components-collection-Variants-and-component-set-fundamentals)\n- [Figma: организация и сопровождение компонентов](https://help.figma.com/hc/en-us/articles/39747637290263-Components-collection-Tips-for-component-management)\n- [Figma: изменения экземпляров и сохранение overrides](https://help.figma.com/hc/en-us/articles/360039150733-Apply-changes-to-instances)\n- [Figma: миграция библиотеки на slots](https://help.figma.com/hc/en-us/articles/38607529833751-Migrate-a-library-to-using-slots)\n- [Figma: создание и использование slots](https://help.figma.com/hc/en-us/articles/38231200344599-Create-and-use-slots-to-build-flexible-components-in-Figma-Design)\n\n",
+      "readingContext": {
+        "kind": "sources",
+        "note": "Navigation, provenance or section framing. The substantive child sections are assessed separately."
+      }
+    },
+    {
+      "id": "R081",
+      "level": 3,
+      "title": "Переменные и режимы",
+      "text": "### Переменные и режимы\n\nТекущая документация Figma определяет variables как контекстно изменяемые значения и поддерживает color, number, string, boolean, timing и easing.\n\n- [Figma: переменные, коллекции и режимы](https://help.figma.com/hc/en-us/articles/14506821864087-Overview-of-variables-collections-and-modes)\n\n",
+      "readingContext": {
+        "kind": "sources",
+        "note": "Navigation, provenance or section framing. The substantive child sections are assessed separately."
+      }
+    },
+    {
+      "id": "R082",
+      "level": 3,
+      "title": "Документация промышленных систем",
+      "text": "### Документация промышленных систем\n\nCarbon полезен для anatomy и state/token matrices. Atlassian — для purpose и usage guidance. Fluent показывает platform-specific behavior и публично описывает code-aligned Figma kits. Material показывает configurable list anatomy и современное использование flexible slots. Ни одна из этих систем не является доказательством универсальности своей внутренней конструкции.\n\n- [Carbon: спецификация Button](https://www.carbondesignsystem.com/building-blocks/core/components/button/specifications)\n- [Carbon: Text input — устройство и состояния](https://www.carbondesignsystem.com/building-blocks/core/components/text-input/guidelines)\n- [Fluent 2: начало работы с дизайн-библиотекой](https://fluent2.microsoft.design/get-started/design)\n\n",
+      "readingContext": {
+        "kind": "sources",
+        "note": "Navigation, provenance or section framing. The substantive child sections are assessed separately."
+      }
+    },
+    {
+      "id": "R083",
+      "level": 3,
+      "title": "Доступность и поведение на платформах",
+      "text": "### Доступность и поведение на платформах\n\nW3C WCAG 2.2 является нормативной базой для web accessibility, включая visible focus и minimum pointer target criteria. Apple HIG даёт platform-specific guidance для Apple platforms, включая 44×44 pt hit region и press/loading behaviour buttons. Эти нормы нельзя без оговорок смешивать в единый cross-platform state set.\n\n- [W3C: Focus Visible (WCAG 2.2)](https://www.w3.org/WAI/WCAG22/Understanding/focus-visible)\n- [W3C: Target Size (Minimum), WCAG 2.2](https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum)\n- [Apple: Meet the UIKit button system](https://developer.apple.com/videos/play/wwdc2021/10064/)\n\n",
+      "readingContext": {
+        "kind": "sources",
+        "note": "Navigation, provenance or section framing. The substantive child sections are assessed separately."
+      }
+    },
+    {
+      "id": "R084",
+      "level": 3,
+      "title": "Связь дизайна и кода",
+      "text": "### Связь дизайна и кода\n\nFigma Code Connect — наиболее прямое первичное свидетельство того, что design и code APIs могут маппиться без структурной идентичности.\n\n- [Figma Code Connect: обзор](https://developers.figma.com/docs/code-connect/)\n- [Figma Code Connect: подключение React-компонентов](https://developers.figma.com/docs/code-connect/react/)\n\n",
+      "readingContext": {
+        "kind": "sources",
+        "note": "Navigation, provenance or section framing. The substantive child sections are assessed separately."
+      }
+    },
+    {
+      "id": "R085",
+      "level": 3,
+      "title": "Эмпирика",
+      "text": "### Эмпирика\n\nCHI 2026 исследует mismatch между canvas interface и declarative structure Figma. Другие исследования рассматривают reuse и maintenance шире, но не сравнивают конкретные Figma master hierarchies.\n\n- [The Way We Notice: вариации UI-компонентов](https://arxiv.org/html/2602.22436v1)\n- [Improving Reuse During the Development Process](https://assets-eu.researchsquare.com/files/rs-4719614/v1/d4051f01-a6d3-45b1-8898-0061c04ef589.pdf)\n- [Analysing and supporting software reuse in practice — глава 6](https://mediatum.ub.tum.de/doc/1306629/517630.pdf)\n",
+      "readingContext": {
+        "kind": "sources",
+        "note": "Navigation, provenance or section framing. The substantive child sections are assessed separately."
+      }
+    }
+  ]
+}

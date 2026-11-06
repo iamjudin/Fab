@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "family": "fab-knowledge",
   "authority": "qualified-evidence-not-runtime-instructions",
-  "authoringSha256": "081817e7d667982c679459da3d2be5f75fe5db96ae25533efac472f8752f0316",
+  "authoringSha256": "16dd9aabfbf98791f6e97ee251dd6617fcaf83f7fd335becb6dd76ba08003689",
   "records": [
     {
       "id": "dimensions",
@@ -138,7 +138,11 @@
         "полное имя",
         "namespace",
         "role",
-        "naming"
+        "naming",
+        "организация библиотеки",
+        "публичные компоненты",
+        "внутренние компоненты",
+        "namespace иконок"
       ],
       "relations": {
         "related-to": [
@@ -147,7 +151,7 @@
         ]
       },
       "authority": "qualified-knowledge",
-      "body": "# Interpret complete semantic names\n\n## Meaning\nA repeated word such as Primary does not establish ambiguity by itself. Inspect the complete namespace, role and context. Retain, minimally revise or replace names according to actual ambiguity and migration cost.\n## Applicability and exceptions\nUse for naming review and migration. A local preference for more explicit names is valid locally, not evidence that every Primary name is defective. Screenshot scale numbers do not establish opacity or underlying bindings.\n## Evidence boundary\nThe foundation used a transcription of naming tables. Exact paints and bindings were unavailable. This is conditional practice, not a naming standard.\n\n## Role, tone and surface\nDefault, Common or another namespace level is useful only when it adds a\nneeded distinction. Inverse can describe a foreground on a contextual surface,\nnot the global dark theme. A positive numeric delta, successful operation and\ndestructive action are different semantics even when their colors resemble one\nanother. Do not rename them into a universal status vocabulary automatically.\nNumeric palette steps alone do not establish alpha or measured contrast.\n\n## Compare three migration choices on the same name\n\nFor a hypothetical accepted Label/PositivePrimary, keeping it can be sensible\nwhen its full namespace and use are clear. Label/Positive/Primary can expose the\nexisting axes while limiting disruption. A role grammar such as color/fg/success\ncan clarify selection before widespread adoption, but changes identifiers and\nmay misstate meaning if Positive actually means a numeric delta rather than a\nsuccessful operation.\n\nChoose retain, minimally clarify or replace by ambiguity, actual consumers and\nmigration cost. A compatibility alias can support gradual transition when the\nunderlying semantic identity is the same. Extra Default/Common levels and a\ntotal rename are not improvements merely because the tree looks symmetrical.\nThese names illustrate the comparison; the source lacked exact supplied bindings.\n",
+      "body": "# Interpret complete semantic names\n\n## Meaning\nA repeated word such as Primary does not establish ambiguity by itself. Inspect the complete namespace, role and context. Retain, minimally revise or replace names according to actual ambiguity and migration cost.\n## Applicability and exceptions\nUse for naming review and migration. A local preference for more explicit names is valid locally, not evidence that every Primary name is defective. Screenshot scale numbers do not establish opacity or underlying bindings.\n## Evidence boundary\nThe foundation used a transcription of naming tables. Exact paints and bindings were unavailable. This is conditional practice, not a naming standard.\n\n## Role, tone and surface\nDefault, Common or another namespace level is useful only when it adds a\nneeded distinction. Inverse can describe a foreground on a contextual surface,\nnot the global dark theme. A positive numeric delta, successful operation and\ndestructive action are different semantics even when their colors resemble one\nanother. Do not rename them into a universal status vocabulary automatically.\nNumeric palette steps alone do not establish alpha or measured contrast.\n\n## Compare three migration choices on the same name\n\nFor a hypothetical accepted Label/PositivePrimary, keeping it can be sensible\nwhen its full namespace and use are clear. Label/Positive/Primary can expose the\nexisting axes while limiting disruption. A role grammar such as color/fg/success\ncan clarify selection before widespread adoption, but changes identifiers and\nmay misstate meaning if Positive actually means a numeric delta rather than a\nsuccessful operation.\n\nChoose retain, minimally clarify or replace by ambiguity, actual consumers and\nmigration cost. A compatibility alias can support gradual transition when the\nunderlying semantic identity is the same. Extra Default/Common levels and a\ntotal rename are not improvements merely because the tree looks symmetrical.\nThese names illustrate the comparison; the source lacked exact supplied bindings.\n\n## Library discovery and internal assets\n\nOrganize public assets so consumers can find their purpose and supported family.\nAn atomic taxonomy can remain explanatory metadata rather than the main search\nhierarchy. Descriptions can carry synonyms and usage boundaries without adding\nanother namespace level. Preserve accepted names unless actual ambiguity and\nmigration cost justify a change.\n\nA public component is intended for direct use. An internal base supports another\nowner and need not appear as a competing product asset. Hide or separate internal\nhelpers when the publishing tools allow it. Keep glyph identity discoverable for\nbounded swaps. Different glyphs need not become a giant variant set merely\nbecause they share a slot size. This is qualified organization guidance, not a\nmandatory folder grammar or a prohibition on justified size variants.\n",
       "sources": [
         {
           "sourceId": "design-systems:R014",
@@ -180,9 +184,21 @@
         {
           "sourceId": "design-system-agent:R032",
           "textSha256": "3f3ff58ff7036611e604424540dacbca7b997fa606a8c6f764a4b951de381c33"
+        },
+        {
+          "sourceId": "component-architecture:R027",
+          "textSha256": "5adbb6c647bec2570a5aacbb435b33c614184ac30d3148440c63b65c6a24a25a"
+        },
+        {
+          "sourceId": "component-architecture:R028",
+          "textSha256": "ed844d179962f15d1b0751e72f23202481d0eca190656347043e8a69b300b597"
+        },
+        {
+          "sourceId": "component-architecture:R029",
+          "textSha256": "ef7d02b2ec9a5fdbe83da2abaef33bcf9458cfa04dc523025d02b1846b365064"
         }
       ],
-      "revision": "e0da4b2b9729854e08af133e4bbd2583e5dd7e65043fe31c8a3cb4919948dc3d"
+      "revision": "caddbf64f7e778b2449516788ab32cbec3e9f92a09c4445de9ac0bf38fc7326e"
     },
     {
       "id": "native-state",
@@ -239,7 +255,10 @@
         "цветов",
         "макет",
         "ownership",
-        "tokens"
+        "tokens",
+        "дерево Figma и кода",
+        "component tree",
+        "mapping свойств"
       ],
       "relations": {
         "related-to": [
@@ -249,7 +268,7 @@
         ]
       },
       "authority": "qualified-knowledge",
-      "body": "# Select Figma/code ownership by actual consumers\n\n## Meaning\nFigma-led, code-led and shared-token routes are alternatives. Choose by actual value/API ownership, consumers and maintenance needs. Figma-led work can be appropriate for a design-heavy start. Code-led work can favor reproducibility. Shared tokens can serve multiple consumers without making Figma and code symmetrically authoritative.\n## Applicability and exceptions\nNo universal registry, token service or framework follows. Define update direction and transforms explicitly. A Figma-led start still needs stable semantic names and mapping, so later repository ownership is a migration rather than a semantic redesign. The platform reports lacked the companion foundation, so provisional examples need role/state/context/API reconciliation before combination.\n## Evidence boundary\nArchitectural alternatives and conditions, not proof of a built synchronized library or demonstrated arbitrary scale.\n\n## Representation boundaries\nAssign authority by decision, not one artifact for everything. Token values,\nvisual anatomy, runtime API/behavior, domain semantics and mappings can have\ndifferent owners. A mapping or editable capture is neither an implementation\nnor automatic synchronization. Actual capability, account access, library\navailability and publication are separate. Missing tool-returned mappings can\nmean unavailable/deactivated/moved access or identity, not an absent component.\nInspect relevant evidence before creating a replacement. Concrete tool/seat/API\nclaims in the reports are dated, not present capability guarantees.\n\n## Choose the owner and trace one update\n\nFigma-led work can keep accepted visual definitions with the designer and export\nreviewed changes to code. Code-led work can derive a design representation from\nversioned implementation. A shared-token route can produce both representations\nfrom reviewed data. Choose by who edits, which consumers need the decision and\nwhere diffs can be maintained; having two tools does not justify two authorities\nfor the same value.\n\nIf a designer changes an action color in Figma while code changes its alias after\nthe same baseline, first identify the owning decision and compare both edits.\nNeither a newer timestamp nor a token format resolves the semantic conflict.\nAn independently owned description or runtime behavior must survive a visual\nupdate. Descriptions should explain purpose, use boundaries and related code\nwhere relevant; they help selection but do not prove correct agent use.\n",
+      "body": "# Select Figma/code ownership by actual consumers\n\n## Meaning\nFigma-led, code-led and shared-token routes are alternatives. Choose by actual value/API ownership, consumers and maintenance needs. Figma-led work can be appropriate for a design-heavy start. Code-led work can favor reproducibility. Shared tokens can serve multiple consumers without making Figma and code symmetrically authoritative.\n## Applicability and exceptions\nNo universal registry, token service or framework follows. Define update direction and transforms explicitly. A Figma-led start still needs stable semantic names and mapping, so later repository ownership is a migration rather than a semantic redesign. The platform reports lacked the companion foundation, so provisional examples need role/state/context/API reconciliation before combination.\n## Evidence boundary\nArchitectural alternatives and conditions, not proof of a built synchronized library or demonstrated arbitrary scale.\n\n## Representation boundaries\nAssign authority by decision, not one artifact for everything. Token values,\nvisual anatomy, runtime API/behavior, domain semantics and mappings can have\ndifferent owners. A mapping or editable capture is neither an implementation\nnor automatic synchronization. Actual capability, account access, library\navailability and publication are separate. Missing tool-returned mappings can\nmean unavailable/deactivated/moved access or identity, not an absent component.\nInspect relevant evidence before creating a replacement. Concrete tool/seat/API\nclaims in the reports are dated, not present capability guarantees.\n\n## Choose the owner and trace one update\n\nFigma-led work can keep accepted visual definitions with the designer and export\nreviewed changes to code. Code-led work can derive a design representation from\nversioned implementation. A shared-token route can produce both representations\nfrom reviewed data. Choose by who edits, which consumers need the decision and\nwhere diffs can be maintained; having two tools does not justify two authorities\nfor the same value.\n\nIf a designer changes an action color in Figma while code changes its alias after\nthe same baseline, first identify the owning decision and compare both edits.\nNeither a newer timestamp nor a token format resolves the semantic conflict.\nAn independently owned description or runtime behavior must survive a visual\nupdate. Descriptions should explain purpose, use boundaries and related code\nwhere relevant; they help selection but do not prove correct agent use.\n\n## Map supported choices rather than copying internal trees\n\nFigma authoring optimizes inherited edits, constraints and instance configuration.\nRuntime code also owns semantics, events, focus, rendering and lifecycle. The\nsame Button can therefore contain an icon instance and label in Figma while its\ncode accepts an icon parameter and text content. Supported choices and outcomes\nmust correspond, while internal trees and public identifiers can legitimately\ndiffer. Mapping is a reviewed transform, not proof of synchronization or behavior.\n\nKeep visual definitions, design API, runtime API and local domain composition with\ntheir actual owners. For a current Code Connect implementation inspect supported\ntemplate tooling and the installed target. Legacy parser examples can explain\nproperty mapping without becoming a maintained implementation recipe.\n",
       "sources": [
         {
           "sourceId": "design-system-agent:R035",
@@ -318,9 +337,21 @@
         {
           "sourceId": "design-system-agent:R070",
           "textSha256": "61f0214dfee038864b8f76d8e2bcf12c57e62b0c7c2c67339ed0cbc6f60b52b5"
+        },
+        {
+          "sourceId": "component-architecture:R033",
+          "textSha256": "705de663b2ed6012263eaa2a5b9a812d8119e9db720b3c190ee32a60a354aa9b"
+        },
+        {
+          "sourceId": "component-architecture:R034",
+          "textSha256": "d1016163b136faba839717abdbf0c98116103649d0583f3f84452c40687484ee"
+        },
+        {
+          "sourceId": "component-architecture:R061",
+          "textSha256": "d158d1072cd9acc2cfccc86e63e924c226861ddd84a5e113c5c8716439e028af"
         }
       ],
-      "revision": "bd9d92c7222a425ce11bb675572f4eb921c0c5b1ac1d92a068e8508a2ff5b1be"
+      "revision": "a88a64de1994c531413b9d58be89867d53fa5a70fde2686f26738ae06c74bb10"
     },
     {
       "id": "pending",
@@ -2580,7 +2611,11 @@
         "eval theater",
         "тесты вместо пользы",
         "синтетические пользователи",
-        "build не validation"
+        "build не validation",
+        "документация компонентов",
+        "матрица состояний",
+        "анатомия и состояния",
+        "documentation specimen"
       ],
       "topics": [
         "verification",
@@ -2599,11 +2634,12 @@
           "job-evidence-status",
           "technical-promise",
           "system-evolution",
-          "concept-extraction"
+          "concept-extraction",
+          "component-contract"
         ]
       },
       "authority": "qualified-knowledge",
-      "body": "# Match the verification signal to the claim of quality\n\n## Meaning\nA check is useful when its observable result addresses the consequential uncertainty. A plan is not execution, a successful build is not observed use, and a trace or screenshot proves only what it represents. Tests can establish selected behavior without establishing user understanding, usefulness, market demand or operational reliability. Acceptance examples, regressions, review, interaction probes and real-use evidence are complementary choices, not a mandatory universal sequence.\n## Applicability and exceptions\nSelect representative failures and valid contrasting cases for the promise at issue. A convenient numerical score or passing easy benchmark can conceal an unmet goal. Synthetic personas or agent critiques can expose assumptions and stress cases but do not add human observations. Conversely, a bounded technical correctness claim need not wait for a user interview. Preserve uncertainty and original failures, separate corrected runs, and consider operational cost, maintainability and intent drift rather than maximizing generated artifacts or test counts. Not every text change needs an executable prototype or a new suite.\n## Evidence boundary\nThe source's requirement for a real user before any validation and its fixed daily/weekly quotas are historical prescriptions, not general rules. Effectiveness and comparative vendor claims remain unverified synthesis. Tests do not automatically establish security, privacy, production readiness or external capability. Current testing and release contracts own actual execution and publication authority.\n\n## Reusable-system evidence\nA representative composition can expose relevant component/state/content/context\ngaps before constructing a catalogue. Inspect real definition/instance links,\naffected consumers and actual shared-change propagation when claiming reuse.\nA structural match, rendered design, compiled target, preview, runtime operation,\nassistive behavior and human understanding establish different properties.\nA described second domain is designed extensibility, not an executed migration\nor arbitrary scale. Choose representative probes for the claim rather than\nmandating every source checklist, a full platform survey or a fixed screen count.\nCompany benchmarks and agent discoverability ratings are reported or inferred,\nnot measurements of the current workflow. Preserve initial failures.\n",
+      "body": "# Match the verification signal to the claim of quality\n\n## Meaning\nA check is useful when its observable result addresses the consequential uncertainty. A plan is not execution, a successful build is not observed use, and a trace or screenshot proves only what it represents. Tests can establish selected behavior without establishing user understanding, usefulness, market demand or operational reliability. Acceptance examples, regressions, review, interaction probes and real-use evidence are complementary choices, not a mandatory universal sequence.\n## Applicability and exceptions\nSelect representative failures and valid contrasting cases for the promise at issue. A convenient numerical score or passing easy benchmark can conceal an unmet goal. Synthetic personas or agent critiques can expose assumptions and stress cases but do not add human observations. Conversely, a bounded technical correctness claim need not wait for a user interview. Preserve uncertainty and original failures, separate corrected runs, and consider operational cost, maintainability and intent drift rather than maximizing generated artifacts or test counts. Not every text change needs an executable prototype or a new suite.\n## Evidence boundary\nThe source's requirement for a real user before any validation and its fixed daily/weekly quotas are historical prescriptions, not general rules. Effectiveness and comparative vendor claims remain unverified synthesis. Tests do not automatically establish security, privacy, production readiness or external capability. Current testing and release contracts own actual execution and publication authority.\n\n## Reusable-system evidence\nA representative composition can expose relevant component/state/content/context\ngaps before constructing a catalogue. Inspect real definition/instance links,\naffected consumers and actual shared-change propagation when claiming reuse.\nA structural match, rendered design, compiled target, preview, runtime operation,\nassistive behavior and human understanding establish different properties.\nA described second domain is designed extensibility, not an executed migration\nor arbitrary scale. Choose representative probes for the claim rather than\nmandating every source checklist, a full platform survey or a fixed screen count.\nCompany benchmarks and agent discoverability ratings are reported or inferred,\nnot measurements of the current workflow. Preserve initial failures.\n\n## Source definitions and documentation specimens\n\nA master is maintained for inheritance. A documentation specimen is arranged\nfor reading and can be a linked instance so that shared changes expose regressions.\nAn anatomy view identifies parts and ownership. A state matrix shows what changes\nunder relevant conditions. Neither requires restructuring the source component\nset into a presentation poster.\n\nChoose visually or behaviorally consequential cases: long labels, an invalid\nfocused field, a pending action, a nested surface or representative slot content.\nDescribe unsupported combinations and use boundaries instead of materializing\nevery theoretical combination. Documentation maintenance itself has a cost.\nA useful example explains the choice and its exception. It is not evidence of\nactual state behavior, an optimal nesting depth or measured delivery savings.\n",
       "sources": [
         {
           "sourceId": "ai-native:R002",
@@ -2712,9 +2748,41 @@
         {
           "sourceId": "design-system-web:R057",
           "textSha256": "7cfc7237e3647e2bbd674c87a4f811a44a89139ba79ae19f379a94e4a17261ce"
+        },
+        {
+          "sourceId": "component-architecture:R030",
+          "textSha256": "d7c98fb2096cfb4379ba9a58b9aa6953463b3535f657d65891e7d4d2eef10a89"
+        },
+        {
+          "sourceId": "component-architecture:R031",
+          "textSha256": "ab451d69b9bc9693abc61119d348f0d107aad057ed1f8f39402c614ea736f460"
+        },
+        {
+          "sourceId": "component-architecture:R032",
+          "textSha256": "840eb7c59d40c30d063f34b83c8e55991f0c31fa68217c2a7bab834fcc7d91c7"
+        },
+        {
+          "sourceId": "component-architecture:R048",
+          "textSha256": "83d7658ac0f874bedb8902cd8c31ad8c4777091634b99899a882e1c24d900e7a"
+        },
+        {
+          "sourceId": "component-architecture:R054",
+          "textSha256": "5c417ca2bb934a21f33bd97c6b8dbb0221863c664acb89475c07e4705edf3a8b"
+        },
+        {
+          "sourceId": "component-architecture:R069",
+          "textSha256": "a5a7f5f219149423aee8ac712e749a90fa1afe95106e05808592f5c4d6083239"
+        },
+        {
+          "sourceId": "component-architecture:R070",
+          "textSha256": "e7a21a85534d522ef9ed232f15f213c2f5c3e75bf265a5867705d78ed6232aae"
+        },
+        {
+          "sourceId": "component-architecture:R071",
+          "textSha256": "55291d7ff919fbcf3c2fc7bffbf9b39e3e0b14090f8dae4aa458eae234709ff2"
         }
       ],
-      "revision": "6bbfe3c6407299534f33c4d58ab9354477dabac6720a19fcdcdb956ecccfdf1c"
+      "revision": "ed069318f4696103f038ba59fa409b47825ffba2f02a7dfe23b37a5db567f493"
     },
     {
       "id": "automation-boundary",
@@ -5054,7 +5122,13 @@
         "общее ядро и домен",
         "одинаково выглядит",
         "локальный компонент",
-        "reuse extend compose create"
+        "reuse extend compose create",
+        "вложенность",
+        "декомпозиция",
+        "извлечение компонента",
+        "nested master",
+        "общий Base",
+        "frame или компонент"
       ],
       "topics": [
         "design-system",
@@ -5073,10 +5147,11 @@
           "behavior-foundation",
           "system-evolution",
           "layers",
-          "product-projections"
+          "product-projections",
+          "context-axes"
         ]
       },
-      "body": "# Separate reusable definitions from local product compositions\n\n## Meaning\nA style guide, token set, component library and task pattern solve different parts of reuse. A useful system connects shared definitions, intent, actual consumers and a way to maintain changes; merely similar pictures do not establish reuse. Reuse an existing contract when meaning, behavior and permitted presentation fit. Extend for a capability of that abstraction; compose existing contracts for a larger task; create when the required contract is different. A deliberate fork also transfers maintenance responsibility.\n\n## Applicability and exceptions\nKeep a domain pattern local until the intended shared meaning is supported. Similar rows can differ in selection, navigation, identity or obligations. A feature composition can legitimately know its domain while a generic core control need not. Atomic Design helps reason about parts and wholes; it is not a required folder tree, production sequence or universal taxonomy. Shared core should not silently depend on one consuming domain. No fixed reuse count, component catalogue, token quota or corporate governance apparatus defines validity. An existing mature library may already be the right owner.\n\n## Evidence boundary\nConditional architectural synthesis, not proof of a constructed library, reduced delivery cost or arbitrary scale. Local components and deliberately literal values are not automatically defects. Growth mechanisms need relevant consumer/migration evidence when claimed.\n\n## Parts, wholes and a concrete reuse decision\n\nAtomic Design names atoms, molecules, organisms, templates and pages: simple\nfunctional elements combine into groups, groups into larger sections, and\nlayout/content contexts reveal whether the parts work together. The point is\nmoving between a definition and its use, not finishing all atoms before seeing\na page. The source introduces this model, not a complete universal classification\nfor every interface. A style/token supplies properties to elements; naming every\nstyle an atom does not establish a functional contract.\n\nConsider a destructive action: reuse Button when its purpose, behavior and\nsupported presentation fit. Extend Button for a genuinely reusable supported\nsize, not an isTaskDeleteButton flag. Compose a confirmation from a dialog and\nactions when the larger contract is new. Keep TaskDeleteAction local when it\nowns task permissions and the delete request. Create another control when the\ninteraction contract is different, even if its rectangle looks similar.\n\nTasks and Projects may reuse action and typography roles while keeping distinct\nrow compositions. A shared core can serve both without knowing either domain.\nThe examples explain dependency direction and reuse choices; they do not prove\na compiled library, adoption benefit or a fixed decomposition.\n\n## What each reusable artifact contributes\n\n| Artifact | Useful responsibility |\n| --- | --- |\n| Visual language | Perceptible character, proportions, typography and surface relationships |\n| Style guide | How and when to apply that vocabulary |\n| Tokens | Named design decisions and relationships between values |\n| Component library | Reusable elements with supported anatomy, content and behavior |\n| Patterns | Compositions for recurring tasks, sometimes specific to a domain |\n| System maintenance | Ownership and a way to evolve definitions and consumers coherently |\n\nThese responsibilities can be served by a small connected set of artifacts.\nTheir distinction does not demand a separate file, service or organization for\neach row. A visual inventory can contribute to the system without proving that\nits repeated pictures are linked definitions or maintained contracts.\n",
+      "body": "# Separate reusable definitions from local product compositions\n\n## Meaning\nA style guide, token set, component library and task pattern solve different parts of reuse. A useful system connects shared definitions, intent, actual consumers and a way to maintain changes; merely similar pictures do not establish reuse. Reuse an existing contract when meaning, behavior and permitted presentation fit. Extend for a capability of that abstraction; compose existing contracts for a larger task; create when the required contract is different. A deliberate fork also transfers maintenance responsibility.\n\n## Applicability and exceptions\nKeep a domain pattern local until the intended shared meaning is supported. Similar rows can differ in selection, navigation, identity or obligations. A feature composition can legitimately know its domain while a generic core control need not. Atomic Design helps reason about parts and wholes; it is not a required folder tree, production sequence or universal taxonomy. Shared core should not silently depend on one consuming domain. No fixed reuse count, component catalogue, token quota or corporate governance apparatus defines validity. An existing mature library may already be the right owner.\n\n## Evidence boundary\nConditional architectural synthesis, not proof of a constructed library, reduced delivery cost or arbitrary scale. Local components and deliberately literal values are not automatically defects. Growth mechanisms need relevant consumer/migration evidence when claimed.\n\n## Parts, wholes and a concrete reuse decision\n\nAtomic Design names atoms, molecules, organisms, templates and pages: simple\nfunctional elements combine into groups, groups into larger sections, and\nlayout/content contexts reveal whether the parts work together. The point is\nmoving between a definition and its use, not finishing all atoms before seeing\na page. The source introduces this model, not a complete universal classification\nfor every interface. A style/token supplies properties to elements; naming every\nstyle an atom does not establish a functional contract.\n\nConsider a destructive action: reuse Button when its purpose, behavior and\nsupported presentation fit. Extend Button for a genuinely reusable supported\nsize, not an isTaskDeleteButton flag. Compose a confirmation from a dialog and\nactions when the larger contract is new. Keep TaskDeleteAction local when it\nowns task permissions and the delete request. Create another control when the\ninteraction contract is different, even if its rectangle looks similar.\n\nTasks and Projects may reuse action and typography roles while keeping distinct\nrow compositions. A shared core can serve both without knowing either domain.\nThe examples explain dependency direction and reuse choices; they do not prove\na compiled library, adoption benefit or a fixed decomposition.\n\n## What each reusable artifact contributes\n\n| Artifact | Useful responsibility |\n| --- | --- |\n| Visual language | Perceptible character, proportions, typography and surface relationships |\n| Style guide | How and when to apply that vocabulary |\n| Tokens | Named design decisions and relationships between values |\n| Component library | Reusable elements with supported anatomy, content and behavior |\n| Patterns | Compositions for recurring tasks, sometimes specific to a domain |\n| System maintenance | Ownership and a way to evolve definitions and consumers coherently |\n\nThese responsibilities can be served by a small connected set of artifacts.\nTheir distinction does not demand a separate file, service or organization for\neach row. A visual inventory can contribute to the system without proving that\nits repeated pictures are linked definitions or maintained contracts.\n\n## Separate a part from an independently maintained definition\n\nA conceptual part, a structural frame and a reusable component are different.\nButton can own its label, padding and alignment in one master. Updating that\nmaster already reaches its instances. A separate Content or Base master earns\nits boundary when it has independent consumers, a supported replacement contract\nor a shared change point that removes duplicated maintenance. Counting anatomy\nparts does not determine a component tree.\n\nCompare the same future edit before extracting: change shared spacing, replace\nan icon, add loading and preserve existing instance choices. A direct Button is\nsufficient when all geometry belongs to that one family. An internal ButtonBase\ncan be useful when independently exposed Button and MenuButton must share that\ngeometry while retaining different public behavior. A Content master used only\nby one parent may add navigation and override risk without reducing edit points.\nConversely, independently reused content or a mature existing base can justify\nnesting. Compare creation, use, change and migration cost rather than minimizing\ncomponent count or imposing a maximum depth.\n\nThese are conditional architecture comparisons from supplied synthesis, not\nmeasured maintenance superiority. A supplied library is an evaluation object,\nnot creator endorsement. Identify actual consumers and a simpler valid alternative\nbefore recommending its structure or replacing it.\n",
       "sources": [
         {
           "sourceId": "design-systems:R003",
@@ -5149,9 +5224,45 @@
         {
           "sourceId": "design-system-web:R048",
           "textSha256": "ffc02dcf1ce050f228d5a83f4efcaa3f2cbdb30b62dd5f56359a7bdc26ec9681"
+        },
+        {
+          "sourceId": "component-architecture:R007",
+          "textSha256": "5484412d037ef7fa568e4aeee08b6986698c3c22a45b9d86f5849907cd5029ab"
+        },
+        {
+          "sourceId": "component-architecture:R011",
+          "textSha256": "29950d756f2316b206d204c0bda481b24713613d32e61b85fb2334aa2d129829"
+        },
+        {
+          "sourceId": "component-architecture:R012",
+          "textSha256": "f4ad34ed39b179d85622b585fc02621e3e2e217dbec9a82190656b7817451b03"
+        },
+        {
+          "sourceId": "component-architecture:R013",
+          "textSha256": "150b90fd176eeed372ed582f1e0de686e83e37c6e15b30e378a3ea899b40dc08"
+        },
+        {
+          "sourceId": "component-architecture:R015",
+          "textSha256": "e26bf92e47211221ce9f475b9c54a3f8acf359a337e75176b4ef6580c8b27090"
+        },
+        {
+          "sourceId": "component-architecture:R016",
+          "textSha256": "f8cecbd46bd678522add4d228e842b54fb5701c4dc49b44edea9eba85c5651e0"
+        },
+        {
+          "sourceId": "component-architecture:R044",
+          "textSha256": "6e67ed288fdf71de7800ee4c61f4ea5b719eb6b10d9c62ef49849af649ff24d9"
+        },
+        {
+          "sourceId": "component-architecture:R045",
+          "textSha256": "536373587a678bee6d98a485b1af98f6ed4718b151a56193ac3f327e6e6ce498"
+        },
+        {
+          "sourceId": "component-architecture:R046",
+          "textSha256": "cb7bf258fa19b7432b714615204ed3c7df13a0b840295c4fa0ba21d6e9e122d1"
         }
       ],
-      "revision": "d628b80dce70b10f724bde1fb5a79b05dd6f703c2b085d20d05aa9b69a2d60a0"
+      "revision": "8877665e8a0e0439a4048ba8672bac02c2fbbf171eccef2adaaffe3866ae5919"
     },
     {
       "id": "component-contract",
@@ -5162,7 +5273,14 @@
         "свойства и внутреннее состояние",
         "public API",
         "slots состояния",
-        "библиотека кнопок"
+        "библиотека кнопок",
+        "instance swap",
+        "замена экземпляра",
+        "слоты",
+        "slot",
+        "свойства компонента",
+        "публичные свойства",
+        "внутренний мастер"
       ],
       "topics": [
         "design-system",
@@ -5182,10 +5300,14 @@
           "native-state",
           "pending",
           "form-validity",
-          "system-reuse"
+          "system-reuse",
+          "system-evolution",
+          "naming",
+          "ownership",
+          "verification-fit"
         ]
       },
-      "body": "# Define a component by anatomy, behavior and a usable public contract\n\n## Meaning\nDescribe the component's purpose, meaningful parts, inputs/content, events, relevant states and valid transitions, composition limits, adaptation and accessibility responsibilities. A public property expresses a caller's supported choice. Internal hover, press or focus and long-lived domain state have different owners. A visual state specimen can document runtime appearance without making every transient state a caller-set property. Tokens express design decisions, not an entire operation or business state machine.\n\n## Applicability and exceptions\nUse the states the actual control and target support; do not require hover, error, loading or every theme on every component. Selection and opening may be controlled or internal according to the real ownership contract, not a universal ban on controlled props. Slots permit bounded composition, not arbitrary destruction of meaning. A product-specific composition can own product behavior; a generic Button need not decide where data is saved. Platform implementations may expose different APIs while preserving shared intent. Keep disabled, pending and remote outcome distinct.\n\n## Evidence boundary\nThis is a contract-selection aid, not a required schema or proof that a design component implements runtime behavior. A documented accessible primitive can be broken by its consumer's labels, markup, styles or orchestration. Verify the affected contract in the relevant implementation.\n\n## A control contract and its composition\n\nAn illustrative Button contract includes its purpose (invoke an action), label,\noptional icon, supported intent/size choices, availability, pending behavior\nwhere relevant, and an action event. Its anatomy and text/color roles explain\npresentation; its activation, focus and state transitions explain interaction.\nThe caller chooses supported public options. Internal pointer/focus conditions\nare not automatically choices for the caller, and a visual state specimen does\nnot itself implement them. Controlled state remains valid when the real API\nassigns it to the caller.\n\nA confirmation pattern can compose title, explanation, Cancel and destructive\naction, with a modality/focus contract. The product supplies what will be deleted,\nwhether it is allowed and the remote operation. The shared pattern can display\npending/error information without owning the request. A reversible deletion can\njustify undo instead of this irreversible-confirmation example.\n\nThus a component is more than a container for styles: purpose, supported content,\nbehavior and composition constraints determine whether it can be reused. The\nexample is conceptual, not a required schema, variant inventory or executed UI.\n",
+      "body": "# Define a component by anatomy, behavior and a usable public contract\n\n## Meaning\nDescribe the component's purpose, meaningful parts, inputs/content, events, relevant states and valid transitions, composition limits, adaptation and accessibility responsibilities. A public property expresses a caller's supported choice. Internal hover, press or focus and long-lived domain state have different owners. A visual state specimen can document runtime appearance without making every transient state a caller-set property. Tokens express design decisions, not an entire operation or business state machine.\n\n## Applicability and exceptions\nUse the states the actual control and target support; do not require hover, error, loading or every theme on every component. Selection and opening may be controlled or internal according to the real ownership contract, not a universal ban on controlled props. Slots permit bounded composition, not arbitrary destruction of meaning. A product-specific composition can own product behavior; a generic Button need not decide where data is saved. Platform implementations may expose different APIs while preserving shared intent. Keep disabled, pending and remote outcome distinct.\n\n## Evidence boundary\nThis is a contract-selection aid, not a required schema or proof that a design component implements runtime behavior. A documented accessible primitive can be broken by its consumer's labels, markup, styles or orchestration. Verify the affected contract in the relevant implementation.\n\n## A control contract and its composition\n\nAn illustrative Button contract includes its purpose (invoke an action), label,\noptional icon, supported intent/size choices, availability, pending behavior\nwhere relevant, and an action event. Its anatomy and text/color roles explain\npresentation; its activation, focus and state transitions explain interaction.\nThe caller chooses supported public options. Internal pointer/focus conditions\nare not automatically choices for the caller, and a visual state specimen does\nnot itself implement them. Controlled state remains valid when the real API\nassigns it to the caller.\n\nA confirmation pattern can compose title, explanation, Cancel and destructive\naction, with a modality/focus contract. The product supplies what will be deleted,\nwhether it is allowed and the remote operation. The shared pattern can display\npending/error information without owning the request. A reversible deletion can\njustify undo instead of this irreversible-confirmation example.\n\nThus a component is more than a container for styles: purpose, supported content,\nbehavior and composition constraints determine whether it can be reused. The\nexample is conceptual, not a required schema, variant inventory or executed UI.\n\n## Choose the smallest useful configuration contract\n\nText and visibility properties expose supported content choices. A variant\nexpresses a meaningful discrete version of the same identity. An instance swap\nallows a compatible child to replace one bounded item, such as an icon or avatar.\nA slot permits consumer-owned composition within a parent-owned region. Tokens\nor modes resolve context values and do not replace a genuinely different structure.\nDocumented Figma facilities are not proof of local plan, tool or API availability.\n\nFor a row, one fixed chevron can remain ordinary parent structure. A single\ntrailing Badge, Switch or IconButton can justify a constrained replacement.\nSeveral freely arranged trailing items need a broader composition contract,\nwith explicit layout/interaction responsibilities. A dialog can own its surface,\npadding and focus contract while the consumer supplies body content. The slot\nitself implements neither runtime scrolling nor modal behavior. A text error\nin a fixed supporting region usually needs text/visibility rather than a new\nswappable component.\n\nExpose useful nested properties where the tool supports them instead of forcing\nconsumers to navigate through private masters. More public controls are not\ninherently better: conflicting controls, mostly unsupported combinations or\nproperties named after internal frames can indicate a weak contract. A visually\nsimilar menu trigger can need a different control because its keyboard and action\nsemantics differ. The examples compare contracts, not required Figma schemas or\nidentical design/code trees.\n",
       "sources": [
         {
           "sourceId": "design-systems:R004",
@@ -5242,9 +5364,53 @@
         {
           "sourceId": "design-system-web:R045",
           "textSha256": "d6ffb097c052190b505b80133dfe5064bed8b98079b2caba0ab021ef5f591a2e"
+        },
+        {
+          "sourceId": "component-architecture:R014",
+          "textSha256": "7ad12755f3411e2b54d1fd5a3818bfed4e709219c615a17c0505195332dddb2e"
+        },
+        {
+          "sourceId": "component-architecture:R019",
+          "textSha256": "fa6c5517c0e396a430491a9329d4071df47f0ce0011723120dc043b58ba6ffde"
+        },
+        {
+          "sourceId": "component-architecture:R021",
+          "textSha256": "688d1dc7a076777ee6f7e03e5fa1992e09023cda8f3adfe90c502d38660ad59f"
+        },
+        {
+          "sourceId": "component-architecture:R052",
+          "textSha256": "1790fd9ec22e09ece09ab10f0ae3f1730d25ed85711c952d8ef16d8ab52ca5eb"
+        },
+        {
+          "sourceId": "component-architecture:R053",
+          "textSha256": "70986b2162c5dfd98ed85c78cf3d9175f0ed8ee3ae02eb98b998c828240ac565"
+        },
+        {
+          "sourceId": "component-architecture:R057",
+          "textSha256": "2074ef90e400a41acdf536a967967bd6719dde6ce7ca56a89cc367c43a711e94"
+        },
+        {
+          "sourceId": "component-architecture:R058",
+          "textSha256": "ecb02eb8943fca9ca655e2fd00f15cd6ed6987d45fc35b17ef139abda8fc81f0"
+        },
+        {
+          "sourceId": "component-architecture:R059",
+          "textSha256": "d9067575bcf38a05006a9080841772acd92694451463f20a71e8431dedb3f183"
+        },
+        {
+          "sourceId": "component-architecture:R060",
+          "textSha256": "893af033cdf5318104f1bc40732943bba1e8a86abe3546ffbc1a5917ecd30b3d"
+        },
+        {
+          "sourceId": "component-architecture:R065",
+          "textSha256": "61f78d28d1d8edddffa9c01ab75c439d19da259a21e1a170029b113411d52825"
+        },
+        {
+          "sourceId": "component-architecture:R066",
+          "textSha256": "a6f2825b7bf9625f53247fdd122f58df881dd7b381ba49fffd3a3001d003a190"
         }
       ],
-      "revision": "c2c0ff25007834f624ed5cbf7a188b11c153bcbbb0def26fdb9009692f1df014"
+      "revision": "00ab379f0da6e104fbfe3205a932aa880800725d4eed2f3974346f8e5466118a"
     },
     {
       "id": "context-axes",
@@ -5255,7 +5421,11 @@
         "тема и состояние",
         "вложенная поверхность",
         "inverse не dark",
-        "осей вариативности"
+        "осей вариативности",
+        "совмещенные состояния",
+        "приоритет состояний",
+        "focus error",
+        "state precedence"
       ],
       "topics": [
         "design-system",
@@ -5277,7 +5447,7 @@
           "platform-transfer-boundary"
         ]
       },
-      "body": "# Model theme, surface, content and state as distinct axes\n\n## Meaning\nTheme, brand, density, platform, interaction state, content and surface context can vary for different reasons. Give each actual axis its appropriate owner instead of encoding their full Cartesian product in names or variants. Theme or brand can resolve groups of values; interaction state often belongs to the control; content length is representative input; platform divergence can belong to a separate implementation. An inverse or accent surface can exist within a light theme, so inverse is not simply another spelling of dark.\n\n## Applicability and exceptions\nA finite variant set is valid when it expresses meaningful supported choices. Boolean properties are not automatically superior: they can permit impossible combinations. Represent valid combinations and relevant interactions explicitly. Context resolution must preserve intended foreground/background relationships through nested surfaces. Shared semantic intent does not require identical platform colors or a single high-contrast/reduced-motion boolean with undefined cross-platform meaning. Modes, tokens, slots and variants are alternatives chosen by the real contract, not compulsory layers.\n\n## Evidence boundary\nThe source diagrams illustrate architecture. They do not prove a resolver, nested cascade, native preference response or accessible contrast. Check the supported contexts and actual composited surfaces; palette labels and a default-theme screenshot are insufficient.\n\n## Resolving a local surface without multiplying controls\n\nAn inverse card can sit inside a light page. The card changes the surface context\nand the foreground roles resolved within it; the whole page need not become dark,\nand the body text role need not be cloned merely for that location. A larger text\nsetting changes text/layout requirements. Hover changes an applicable control's\ntransient state. Those differences do not have the same owner or lifetime.\n\nInstead of enumerating every combination of brand, theme, platform, density,\nsurface and state as a new Button, resolve the actual value contexts and expose\nthe control choices the contract supports. Retain valid combinations and inspect\nforeground/background pairs in nested use. This is an architectural example,\nnot proof that any specific Figma mode arrangement equals a browser cascade.\n",
+      "body": "# Model theme, surface, content and state as distinct axes\n\n## Meaning\nTheme, brand, density, platform, interaction state, content and surface context can vary for different reasons. Give each actual axis its appropriate owner instead of encoding their full Cartesian product in names or variants. Theme or brand can resolve groups of values; interaction state often belongs to the control; content length is representative input; platform divergence can belong to a separate implementation. An inverse or accent surface can exist within a light theme, so inverse is not simply another spelling of dark.\n\n## Applicability and exceptions\nA finite variant set is valid when it expresses meaningful supported choices. Boolean properties are not automatically superior: they can permit impossible combinations. Represent valid combinations and relevant interactions explicitly. Context resolution must preserve intended foreground/background relationships through nested surfaces. Shared semantic intent does not require identical platform colors or a single high-contrast/reduced-motion boolean with undefined cross-platform meaning. Modes, tokens, slots and variants are alternatives chosen by the real contract, not compulsory layers.\n\n## Evidence boundary\nThe source diagrams illustrate architecture. They do not prove a resolver, nested cascade, native preference response or accessible contrast. Check the supported contexts and actual composited surfaces; palette labels and a default-theme screenshot are insufficient.\n\n## Resolving a local surface without multiplying controls\n\nAn inverse card can sit inside a light page. The card changes the surface context\nand the foreground roles resolved within it; the whole page need not become dark,\nand the body text role need not be cloned merely for that location. A larger text\nsetting changes text/layout requirements. Hover changes an applicable control's\ntransient state. Those differences do not have the same owner or lifetime.\n\nInstead of enumerating every combination of brand, theme, platform, density,\nsurface and state as a new Button, resolve the actual value contexts and expose\nthe control choices the contract supports. Retain valid combinations and inspect\nforeground/background pairs in nested use. This is an architectural example,\nnot proof that any specific Figma mode arrangement equals a browser cascade.\n\n## Overlapping state is different from a catalogue of pictures\n\nA field can be invalid and focused. A selectable item can remain selected while\nhovered and keyboard-focused. A pending action can retain focus while preventing\nrepeat activation. An exclusive Default/Hover/Focus/Error/Loading enum can hide\nthese relationships even if its screenshots look complete.\n\nDistinguish configuration axes, supported combinations, visual specimens and\nruntime ownership. Where signals overlap, specify which appearance and behavior\nwins without hiding the remaining meaning. For example, focus should remain\nperceivable on an invalid field, while disabled behavior can suppress applicable\npress/hover feedback. Actual precedence belongs to the target control. The\ninteraction/availability/selection/validation/async grouping is a useful analytic\nmodel, not a mandatory five-axis standard or a universal state enum. A visual\nFigma focus variant can document a state without becoming a caller-set runtime\nproperty. Keep the existing contract when a finite exclusive state really fits.\n",
       "sources": [
         {
           "sourceId": "design-systems:R013",
@@ -5338,9 +5508,33 @@
         {
           "sourceId": "design-system-web:R029",
           "textSha256": "323ca0d1e35db6b4594eb69cec8e366f4547681897214dfa6f5577e243b1ce81"
+        },
+        {
+          "sourceId": "component-architecture:R020",
+          "textSha256": "063f2144425e2d9ac4f7625d1e9180ab8572799e6b059fb7af2ff9ee87eb63c6"
+        },
+        {
+          "sourceId": "component-architecture:R024",
+          "textSha256": "b1ce434ff5ab0e3617ae0091cbaa776c3458af3043a3b534a494dfb36c7d37d6"
+        },
+        {
+          "sourceId": "component-architecture:R025",
+          "textSha256": "2e5f1c8b6d22327e020a47b9741e3ed48138032438e87e84496d7b359dc5f245"
+        },
+        {
+          "sourceId": "component-architecture:R047",
+          "textSha256": "a72246df9dfad7de6d2570ec7f5258e5366689aa0a82a21414608b98a3d7889f"
+        },
+        {
+          "sourceId": "component-architecture:R051",
+          "textSha256": "bebca02c2a0f40c1fde2bfc4e8942610faf453bae5bad6ebf38d78661417a727"
+        },
+        {
+          "sourceId": "component-architecture:R052",
+          "textSha256": "1790fd9ec22e09ece09ab10f0ae3f1730d25ed85711c952d8ef16d8ab52ca5eb"
         }
       ],
-      "revision": "72ad8304d0eef2dd178d8b7d3a9f04356827c08ecdeafddf78afaf2636dddaaa"
+      "revision": "d41568b90edd6d42463b7ea68fb3f56086ad9d68d876490f26987b4559a867c0"
     },
     {
       "id": "concept-extraction",
@@ -5560,7 +5754,11 @@
         "совместимость API",
         "депрекация токена",
         "когда делить библиотеку",
-        "рост дизайн системы"
+        "рост дизайн системы",
+        "сохранение overrides",
+        "совместимость компонента",
+        "миграция slot",
+        "значения по умолчанию"
       ],
       "topics": [
         "design-system",
@@ -5584,7 +5782,7 @@
           "system-reuse"
         ]
       },
-      "body": "# Evolve shared definitions through actual compatibility and consumer boundaries\n\n## Meaning\nDistinguish a value change under the same meaning, a semantic change, an API/identifier change and a platform-only dependency update. Inspect actual known consumers and owned regions; visual similarity does not make these changes equivalent. Even an additive property can change compatibility through its default behavior, event, role or interaction. When consumers cannot move together, use an explicit compatibility/migration path and retire old usage only after reviewing remaining dependents.\n\n## Applicability and exceptions\nA split is useful for independent ownership, consumers, permissions, release cadence, optional dependencies or discovery/performance pressure. Component count alone is not a universal threshold, but actual file performance is a legitimate reason to partition. Preserve identities and dependency direction rather than copying core into each domain. Small coordinated projects can migrate atomically; they need no fixed deprecation duration or enterprise roster. Add preview, automation, token builds or governance when repeated coordination/failure cost justifies them. An OS/library update need not rename shared semantics or update unaffected targets.\n\n## Evidence boundary\nDesigned extensibility, a described second domain and observed large-product reliability are different claims. Adoption percentage, fewer raw values and passing component snapshots do not alone establish product quality or savings. Company productivity figures remain reported examples, not causal estimates for the current project. Migration success requires checks of the changed consumers.\n\n## Three changes with different impact\n\n1. A darker value for the same destructive color role should reach its bound\n   controls and known consumers, with relevant rendering/contrast checks. It\n   does not automatically change their action API.\n2. Renaming a public intent from danger to destructive changes identifiers used\n   by callers. Inspect consumers and provide compatibility while needed; visual\n   similarity does not make it merely a color edit.\n3. Updating an Android dependency can require Android component/mapping checks\n   without changing shared intent or forcing an iOS migration.\n\nLikewise, another domain using the same primary action needs reuse, not a new\ncore layer. Independent overrides, ownership or release needs can justify an\nextension, partition or build mechanism. Judge the actual conflict and consumers,\nnot a predetermined component count. These are illustrative migration paths,\nnot observed cross-platform or large-product execution.\n",
+      "body": "# Evolve shared definitions through actual compatibility and consumer boundaries\n\n## Meaning\nDistinguish a value change under the same meaning, a semantic change, an API/identifier change and a platform-only dependency update. Inspect actual known consumers and owned regions; visual similarity does not make these changes equivalent. Even an additive property can change compatibility through its default behavior, event, role or interaction. When consumers cannot move together, use an explicit compatibility/migration path and retire old usage only after reviewing remaining dependents.\n\n## Applicability and exceptions\nA split is useful for independent ownership, consumers, permissions, release cadence, optional dependencies or discovery/performance pressure. Component count alone is not a universal threshold, but actual file performance is a legitimate reason to partition. Preserve identities and dependency direction rather than copying core into each domain. Small coordinated projects can migrate atomically; they need no fixed deprecation duration or enterprise roster. Add preview, automation, token builds or governance when repeated coordination/failure cost justifies them. An OS/library update need not rename shared semantics or update unaffected targets.\n\n## Evidence boundary\nDesigned extensibility, a described second domain and observed large-product reliability are different claims. Adoption percentage, fewer raw values and passing component snapshots do not alone establish product quality or savings. Company productivity figures remain reported examples, not causal estimates for the current project. Migration success requires checks of the changed consumers.\n\n## Three changes with different impact\n\n1. A darker value for the same destructive color role should reach its bound\n   controls and known consumers, with relevant rendering/contrast checks. It\n   does not automatically change their action API.\n2. Renaming a public intent from danger to destructive changes identifiers used\n   by callers. Inspect consumers and provide compatibility while needed; visual\n   similarity does not make it merely a color edit.\n3. Updating an Android dependency can require Android component/mapping checks\n   without changing shared intent or forcing an iOS migration.\n\nLikewise, another domain using the same primary action needs reuse, not a new\ncore layer. Independent overrides, ownership or release needs can justify an\nextension, partition or build mechanism. Judge the actual conflict and consumers,\nnot a predetermined component count. These are illustrative migration paths,\nnot observed cross-platform or large-product execution.\n\n## Compatibility includes defaults and instance overrides\n\nAn optional supporting text hidden by default can preserve old instances. Showing\nit by default changes existing composition even though a property was only added.\nLayer names, hierarchy and property correspondence can participate in preservation\nof instance overrides. Inspect actual consumers rather than assuming every swap\nor variant change preserves their local intent.\n\nReplacing a shared placeholder with a native slot is a migration, not merely a\ncleaner picture. The documented Figma path can lose customized placeholder\noverrides. Compare that cost with staying on a valid existing contract, retain\nrecovery evidence and verify the changed instances. Availability through the\nactive tool/API must be checked separately. No structural change is automatically\nsafe because its semantic name remains the same.\n",
       "sources": [
         {
           "sourceId": "design-systems:R017",
@@ -5681,9 +5879,25 @@
         {
           "sourceId": "design-system-web:R054",
           "textSha256": "fbecb0ee0248f72be32a9324a7a683595145e28a4c1ff899a6e9a5de14e4f004"
+        },
+        {
+          "sourceId": "component-architecture:R023",
+          "textSha256": "ab22d4ee4b910efc9a69bdc74e56fc3c5bc8b888516605f926ce62b9f2eb7093"
+        },
+        {
+          "sourceId": "component-architecture:R037",
+          "textSha256": "7f862e94de4210eb5a1ed3ea7b1331b15780032f6c092b6e7fa2bdf8bbc8d27f"
+        },
+        {
+          "sourceId": "component-architecture:R038",
+          "textSha256": "0ae07c56483e1994943210c7041caafe07df0628d9e6ea0e5d8241bc97300050"
+        },
+        {
+          "sourceId": "component-architecture:R040",
+          "textSha256": "51e496de3c6f17e79280b20819fd4bf861b43f1ce7ec6d7f1b43599d8f8799e3"
         }
       ],
-      "revision": "7e54031fdda1f583f09096831fd7b2b911bb0eadfe5a2b103600294fa1d2b72d"
+      "revision": "a65186ac8443b8c274b98ee2d85cbc7eda29677bc7214771d5337b145a7c8828"
     },
     {
       "id": "accessible-interaction",
@@ -6125,6 +6339,36 @@
       "authority": "source-material-not-runtime-instructions",
       "verification": "source binding checked at build; not independent claim verification"
     },
+    "component-architecture:R027": {
+      "sourceId": "component-architecture:R027",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R027",
+      "sectionTitle": "Организация по назначению обычно полезнее атомных папок",
+      "textSha256": "5adbb6c647bec2570a5aacbb435b33c614184ac30d3148440c63b65c6a24a25a",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R028": {
+      "sourceId": "component-architecture:R028",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R028",
+      "sectionTitle": "Иконкам нужно собственное пространство имён, а не размножение вариантов",
+      "textSha256": "ed844d179962f15d1b0751e72f23202481d0eca190656347043e8a69b300b597",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R029": {
+      "sourceId": "component-architecture:R029",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R029",
+      "sectionTitle": "Публичные и внутренние ресурсы",
+      "textSha256": "ef7d02b2ec9a5fdbe83da2abaef33bcf9458cfa04dc523025d02b1846b365064",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
     "design-system-native:R033": {
       "sourceId": "design-system-native:R033",
       "archiveRepositoryPath": "plugins/fab/shared/methods/design-system-native.full.json",
@@ -6332,6 +6576,36 @@
       "sectionTitle": "Понятные агенту описания полезны, но не служат доказательством",
       "textSha256": "61f0214dfee038864b8f76d8e2bcf12c57e62b0c7c2c67339ed0cbc6f60b52b5",
       "packetSha256": "fe8b594a010d5b8b91198e0e9fc44b131b40c223a6e971d2de731caf7c871dca",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R033": {
+      "sourceId": "component-architecture:R033",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R033",
+      "sectionTitle": "Figma и код должны совпадать семантически, а не деревом",
+      "textSha256": "705de663b2ed6012263eaa2a5b9a812d8119e9db720b3c190ee32a60a354aa9b",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R034": {
+      "sourceId": "component-architecture:R034",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R034",
+      "sectionTitle": "Ответственность за обновления",
+      "textSha256": "d1016163b136faba839717abdbf0c98116103649d0583f3f84452c40687484ee",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R061": {
+      "sourceId": "component-architecture:R061",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R061",
+      "sectionTitle": "Семантика взаимодействия",
+      "textSha256": "d158d1072cd9acc2cfccc86e63e924c226861ddd84a5e113c5c8716439e028af",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
       "authority": "source-material-not-runtime-instructions",
       "verification": "source binding checked at build; not independent claim verification"
     },
@@ -8715,6 +8989,86 @@
       "authority": "source-material-not-runtime-instructions",
       "verification": "source binding checked at build; not independent claim verification"
     },
+    "component-architecture:R030": {
+      "sourceId": "component-architecture:R030",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R030",
+      "sectionTitle": "Исходный master и документационный экземпляр — разные объекты",
+      "textSha256": "d7c98fb2096cfb4379ba9a58b9aa6953463b3535f657d65891e7d4d2eef10a89",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R031": {
+      "sourceId": "component-architecture:R031",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R031",
+      "sectionTitle": "Что показывать, а что только документировать",
+      "textSha256": "ab451d69b9bc9693abc61119d348f0d107aad057ed1f8f39402c614ea736f460",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R032": {
+      "sourceId": "component-architecture:R032",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R032",
+      "sectionTitle": "Схема устройства и матрица состояний выполняют разные задачи",
+      "textSha256": "840eb7c59d40c30d063f34b83c8e55991f0c31fa68217c2a7bab834fcc7d91c7",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R048": {
+      "sourceId": "component-architecture:R048",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R048",
+      "sectionTitle": "Длинная подпись",
+      "textSha256": "83d7658ac0f874bedb8902cd8c31ad8c4777091634b99899a882e1c24d900e7a",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R054": {
+      "sourceId": "component-architecture:R054",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R054",
+      "sectionTitle": "Длинное содержимое",
+      "textSha256": "5c417ca2bb934a21f33bd97c6b8dbb0221863c664acb89475c07e4705edf3a8b",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R069": {
+      "sourceId": "component-architecture:R069",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R069",
+      "sectionTitle": "Кнопка и поле ввода",
+      "textSha256": "a5a7f5f219149423aee8ac712e749a90fa1afe95106e05808592f5c4d6083239",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R070": {
+      "sourceId": "component-architecture:R070",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R070",
+      "sectionTitle": "Строка и контейнер",
+      "textSha256": "e7a21a85534d522ef9ed232f15f213c2f5c3e75bf265a5867705d78ed6232aae",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R071": {
+      "sourceId": "component-architecture:R071",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R071",
+      "sectionTitle": "Пример страницы документации",
+      "textSha256": "55291d7ff919fbcf3c2fc7bffbf9b39e3e0b14090f8dae4aa458eae234709ff2",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
     "ai-native:R019": {
       "sourceId": "ai-native:R019",
       "archiveRepositoryPath": "plugins/fab/shared/methods/ai-native.full.json",
@@ -10965,6 +11319,96 @@
       "authority": "source-material-not-runtime-instructions",
       "verification": "source binding checked at build; not independent claim verification"
     },
+    "component-architecture:R007": {
+      "sourceId": "component-architecture:R007",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R007",
+      "sectionTitle": "Концептуальная часть, слой и компонент — разные вещи",
+      "textSha256": "5484412d037ef7fa568e4aeee08b6986698c3c22a45b9d86f5849907cd5029ab",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R011": {
+      "sourceId": "component-architecture:R011",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R011",
+      "sectionTitle": "Прямая конструкция",
+      "textSha256": "29950d756f2316b206d204c0bda481b24713613d32e61b85fb2334aa2d129829",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R012": {
+      "sourceId": "component-architecture:R012",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R012",
+      "sectionTitle": "Общий Base",
+      "textSha256": "f4ad34ed39b179d85622b585fc02621e3e2e217dbec9a82190656b7817451b03",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R013": {
+      "sourceId": "component-architecture:R013",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R013",
+      "sectionTitle": "Раздельные masters содержимого, основы и оформления",
+      "textSha256": "150b90fd176eeed372ed582f1e0de686e83e37c6e15b30e378a3ea899b40dc08",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R015": {
+      "sourceId": "component-architecture:R015",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R015",
+      "sectionTitle": "Когда фрейм должен остаться фреймом",
+      "textSha256": "e26bf92e47211221ce9f475b9c54a3f8acf359a337e75176b4ef6580c8b27090",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R016": {
+      "sourceId": "component-architecture:R016",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R016",
+      "sectionTitle": "Решение без фиксированной глубины",
+      "textSha256": "f8cecbd46bd678522add4d228e842b54fb5701c4dc49b44edea9eba85c5651e0",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R044": {
+      "sourceId": "component-architecture:R044",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R044",
+      "sectionTitle": "Вариант A — прямой Button",
+      "textSha256": "6e67ed288fdf71de7800ee4c61f4ea5b719eb6b10d9c62ef49849af649ff24d9",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R045": {
+      "sourceId": "component-architecture:R045",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R045",
+      "sectionTitle": "Вариант B — Button с внутренним Base",
+      "textSha256": "536373587a678bee6d98a485b1af98f6ed4718b151a56193ac3f327e6e6ce498",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R046": {
+      "sourceId": "component-architecture:R046",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R046",
+      "sectionTitle": "Вариант C — отдельные masters оформления и содержимого",
+      "textSha256": "cb7bf258fa19b7432b714615204ed3c7df13a0b840295c4fa0ba21d6e9e122d1",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
     "design-systems:R013": {
       "sourceId": "design-systems:R013",
       "archiveRepositoryPath": "plugins/fab/shared/methods/design-systems.full.json",
@@ -11045,6 +11489,116 @@
       "authority": "source-material-not-runtime-instructions",
       "verification": "source binding checked at build; not independent claim verification"
     },
+    "component-architecture:R014": {
+      "sourceId": "component-architecture:R014",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R014",
+      "sectionTitle": "Композиция с ограниченной областью замены",
+      "textSha256": "7ad12755f3411e2b54d1fd5a3818bfed4e709219c615a17c0505195332dddb2e",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R019": {
+      "sourceId": "component-architecture:R019",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R019",
+      "sectionTitle": "Что должно быть публичным свойством",
+      "textSha256": "fa6c5517c0e396a430491a9329d4071df47f0ce0011723120dc043b58ba6ffde",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R021": {
+      "sourceId": "component-architecture:R021",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R021",
+      "sectionTitle": "Избыточная настраиваемость",
+      "textSha256": "688d1dc7a076777ee6f7e03e5fa1992e09023cda8f3adfe90c502d38660ad59f",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R052": {
+      "sourceId": "component-architecture:R052",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R052",
+      "sectionTitle": "Более устойчивый контракт",
+      "textSha256": "1790fd9ec22e09ece09ab10f0ae3f1730d25ed85711c952d8ef16d8ab52ca5eb",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R053": {
+      "sourceId": "component-architecture:R053",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R053",
+      "sectionTitle": "Изменение общих отступов",
+      "textSha256": "70986b2162c5dfd98ed85c78cf3d9175f0ed8ee3ae02eb98b998c828240ac565",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R057": {
+      "sourceId": "component-architecture:R057",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R057",
+      "sectionTitle": "Вариант A — всё фиксировано",
+      "textSha256": "2074ef90e400a41acdf536a967967bd6719dde6ce7ca56a89cc367c43a711e94",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R058": {
+      "sourceId": "component-architecture:R058",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R058",
+      "sectionTitle": "Вариант B — ограниченная замена завершающего элемента",
+      "textSha256": "ecb02eb8943fca9ca655e2fd00f15cd6ed6987d45fc35b17ef139abda8fc81f0",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R059": {
+      "sourceId": "component-architecture:R059",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R059",
+      "sectionTitle": "Вариант C — trailing Slot",
+      "textSha256": "d9067575bcf38a05006a9080841772acd92694451463f20a71e8431dedb3f183",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R060": {
+      "sourceId": "component-architecture:R060",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R060",
+      "sectionTitle": "Почему нельзя решить всё вариантами",
+      "textSha256": "893af033cdf5318104f1bc40732943bba1e8a86abe3546ffbc1a5917ecd30b3d",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R065": {
+      "sourceId": "component-architecture:R065",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R065",
+      "sectionTitle": "Нативный Slot",
+      "textSha256": "61f78d28d1d8edddffa9c01ab75c439d19da259a21e1a170029b113411d52825",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R066": {
+      "sourceId": "component-architecture:R066",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R066",
+      "sectionTitle": "Изменение общих отступов",
+      "textSha256": "a6f2825b7bf9625f53247fdd122f58df881dd7b381ba49fffd3a3001d003a190",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
     "design-systems:R015": {
       "sourceId": "design-systems:R015",
       "archiveRepositoryPath": "plugins/fab/shared/methods/design-systems.full.json",
@@ -11102,6 +11656,56 @@
       "sectionTitle": "Где перенос между Figma и вебом не является обратимым",
       "textSha256": "323ca0d1e35db6b4594eb69cec8e366f4547681897214dfa6f5577e243b1ce81",
       "packetSha256": "e92da12e158b2d2b8df1a007a7b8fb9c2f1edfd5eb985a3558c892315e84ce89",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R020": {
+      "sourceId": "component-architecture:R020",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R020",
+      "sectionTitle": "Допустимые комбинации важнее произведения всех свойств",
+      "textSha256": "063f2144425e2d9ac4f7625d1e9180ab8572799e6b059fb7af2ff9ee87eb63c6",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R024": {
+      "sourceId": "component-architecture:R024",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R024",
+      "sectionTitle": "Состояния нельзя сводить к одному `State`",
+      "textSha256": "b1ce434ff5ab0e3617ae0091cbaa776c3458af3043a3b534a494dfb36c7d37d6",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R025": {
+      "sourceId": "component-architecture:R025",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R025",
+      "sectionTitle": "Перекрывающиеся состояния и приоритеты",
+      "textSha256": "2e5f1c8b6d22327e020a47b9741e3ed48138032438e87e84496d7b359dc5f245",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R047": {
+      "sourceId": "component-architecture:R047",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R047",
+      "sectionTitle": "Загрузка",
+      "textSha256": "a72246df9dfad7de6d2570ec7f5258e5366689aa0a82a21414608b98a3d7889f",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R051": {
+      "sourceId": "component-architecture:R051",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R051",
+      "sectionTitle": "Наивная модель",
+      "textSha256": "bebca02c2a0f40c1fde2bfc4e8942610faf453bae5bad6ebf38d78661417a727",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
       "authority": "source-material-not-runtime-instructions",
       "verification": "source binding checked at build; not independent claim verification"
     },
@@ -11535,6 +12139,46 @@
       "authority": "source-material-not-runtime-instructions",
       "verification": "source binding checked at build; not independent claim verification"
     },
+    "component-architecture:R023": {
+      "sourceId": "component-architecture:R023",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R023",
+      "sectionTitle": "Сохранение overrides",
+      "textSha256": "ab22d4ee4b910efc9a69bdc74e56fc3c5bc8b888516605f926ce62b9f2eb7093",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R037": {
+      "sourceId": "component-architecture:R037",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R037",
+      "sectionTitle": "Совместимые и несовместимые дополнения",
+      "textSha256": "7f862e94de4210eb5a1ed3ea7b1331b15780032f6c092b6e7fa2bdf8bbc8d27f",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R038": {
+      "sourceId": "component-architecture:R038",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R038",
+      "sectionTitle": "Миграция — часть архитектуры",
+      "textSha256": "0ae07c56483e1994943210c7041caafe07df0628d9e6ea0e5d8241bc97300050",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
+    "component-architecture:R040": {
+      "sourceId": "component-architecture:R040",
+      "archiveRepositoryPath": "knowledge/sources/component-architecture.full.json",
+      "section": "R040",
+      "sectionTitle": "Изменение общих определений",
+      "textSha256": "51e496de3c6f17e79280b20819fd4bf861b43f1ce7ec6d7f1b43599d8f8799e3",
+      "packetSha256": "6bcbb80c073e782dbd4a1c0248f4abb622c0eb99ce7e90f2ee6f1ac02f7d326c",
+      "authority": "source-material-not-runtime-instructions",
+      "verification": "source binding checked at build; not independent claim verification"
+    },
     "design-systems:R018": {
       "sourceId": "design-systems:R018",
       "archiveRepositoryPath": "plugins/fab/shared/methods/design-systems.full.json",
@@ -11669,5 +12313,5 @@
       "recovery"
     ]
   },
-  "revision": "42199c1d9a1ed1e4e0037e946feb39f25ddfd3120011d3ab84b3d2e2c2cba172"
+  "revision": "9b94d03c2ea487876ff01a75b01b9ba1d06ef79f736bacd4687a0f1bb2d5209d"
 }

@@ -1,6 +1,6 @@
 # Fab backlog
 
-Updated 2026-11-01. This is the only active Fab queue. Main owns entries unless
+Updated 2026-11-06. This is the only active Fab queue. Main owns entries unless
 another owner is named. The exact [pre-maintenance record](backlog-history-2026-10-21.md)
 and [earlier frozen record](backlog-history-2026-10-14.md) preserve original failures,
 corrections, proposals and dated authority. They are history, not current tasks.
@@ -37,6 +37,15 @@ not a queued generic campaign. Earlier premature stopping and original failures
 remain in the source-review evidence.
 [Review](../experiments/maintenance/knowledge-explanations-20261030/full-review.md) ·
 [Application](../experiments/maintenance/knowledge-explanation-check-20261030/report.md).
+
+## Beta.39 design-knowledge update — release in progress
+
+Creator2026-11-06 requests local/public promotion. Main reads343older retained
+sections and85new sections, enriches seven existing meanings and corrects the
+canonical architecture-assessment/returned-artifact seams. Source tests pass208.
+The auxiliary archive is outside the runtime. Missing citations and the unlocated
+older original remain explicit. Public/installed completion requires the receipt.
+[Source review](../experiments/maintenance/design-knowledge-audit-20261106/full-review.md).
 
 ## Knowledge migration outcome — FAB-15
 
