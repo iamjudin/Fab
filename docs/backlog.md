@@ -8,44 +8,18 @@ Closing implementation or distribution does not establish behavioral maturity.
 
 ## Current distribution
 
-**Released, installed and enabled: beta.38**,104files/75b512783c0d07d4;
-v0.1.0-beta.38 ->72f62493af20a0eb3f4fca90d060f69b14dc35b8.
-207regressions/build/package/scope and exact-source branch/tag CI pass.
-Anonymous assets and clean/primary exact-tag full104-file parity pass.
-16other plugin settings and16prior version tags are preserved. API immutable=false.
-Exact beta.37 rollback is retained.
-[Release](../experiments/releases/explanations-beta38-20261101/report.md).
+**Released, installed and enabled: beta.39**,104files/b7b6e1cded215685.
+v0.1.0-beta.39 ->07122707056712a6038898a2e0c43261471f9cc4.
+208regressions/build/package/scope, exact-source branch/tag CI, anonymous assets
+and clean/primary exact-tag104-file parity pass.16other settings and17prior tags
+are preserved. API immutable=false. Exact beta.38 rollback remains retained.
+[Release](../experiments/releases/design-knowledge-beta39-20261106/report.md).
 
-Beta.38 ships restored explanatory knowledge and curation/learning criteria,
-adequate support and real local questions in Brainstorm, inherited-question review
-in handoff, and website content-payload preflight. Complete retained-source review
-and one fresh prompted source case support bounded claims; no new installed-model,
-native/human, causal or sustained-reliability result. Review ID
-FAB-T20261030-01-R01. No automatic cross-chat/project propagation or monitoring.
-Previous Canvas/platform limits remain; opt-in experiments remain opt-in.
-
-## Explanatory quality and application — FAB-15
-
-Source review and repair are complete within15registered packets/816sections.
-Both stages enrich37active meanings without new IDs/store or altered originals.
-A fresh read-only audio-note discussion selects relevant knowledge, explains
-connected roles/representations and asks one real hierarchy question instead of
-seeking approval of an already explainable foundation. This prompted root review
-does not establish organic or general reliability. The source stages and bounded
-check are now distributed in beta.38; sustained use remains a real-use question,
-not a queued generic campaign. Earlier premature stopping and original failures
-remain in the source-review evidence.
-[Review](../experiments/maintenance/knowledge-explanations-20261030/full-review.md) ·
-[Application](../experiments/maintenance/knowledge-explanation-check-20261030/report.md).
-
-## Beta.39 design-knowledge update — release in progress
-
-Creator2026-11-06 requests local/public promotion. Main reads343older retained
-sections and85new sections, enriches seven existing meanings and corrects the
-canonical architecture-assessment/returned-artifact seams. Source tests pass208.
-The auxiliary archive is outside the runtime. Missing citations and the unlocated
-older original remain explicit. Public/installed completion requires the receipt.
-[Source review](../experiments/maintenance/design-knowledge-audit-20261106/full-review.md).
+Beta.39 enriches seven existing component/system meanings and discovery, compares
+architecture before recommendation and checks actual research source exports.
+Full retained-source semantic review is complete. Missing source mappings and
+model/native/human/sustained-use limits remain. No automatic other-chat adoption
+or monitoring. [Review](../experiments/maintenance/design-knowledge-audit-20261106/full-review.md).
 
 ## Knowledge migration outcome — FAB-15
 

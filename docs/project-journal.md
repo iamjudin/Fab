@@ -16,6 +16,16 @@ Backfill выполнен по текущему чату и проектным �
      предел evidence, ценность для будущего материала и следующий вопрос.
      Не записывать каждый tool call, полный чат или частные детали. -->
 
+## 2026-11-06 - Ship component-architecture knowledge beta.39
+
+Creator requests immediate local/public release after source review. Released,
+installed and enabled beta.39,104files/b7b6e1cded215685.208regressions and exact-source
+branch/tag CI pass. Anonymous assets and clean/primary exact-tag104-file parity
+pass.16other settings and17prior tags preserved. API immutable=false. Beta.38
+rollback retained. Seven existing meanings and canonical assessment/source-export
+rules change, with no new skill, mandatory hierarchy or model/native efficacy claim.
+[Distribution](../experiments/releases/design-knowledge-beta39-20261106/report.md).
+
 ## 2026-11-01 - Ship explanatory knowledge beta.38
 
 Creator requests local/public update. The bounded release from published beta.37

@@ -1,0 +1,34 @@
+{
+  "state": "released, installed and verified",
+  "version": "0.1.0-beta.39",
+  "tag": "v0.1.0-beta.39",
+  "fingerprint": "b7b6e1cded215685",
+  "sourceCommit": "07122707056712a6038898a2e0c43261471f9cc4",
+  "files": 104,
+  "assetsSha256": {
+    "fab-0.1.0-beta.39.zip": "73ce1241aae6c29e1ab9a8afa9c9a902d6804908e1006acaa19f536ab85340e8",
+    "release-scope.json": "801bc370f3391fce59a8394e74897621e2421a23ea54fecaed1b8e20bb90dfa5",
+    "SHA256SUMS.txt": "efad80099486b1f12e10075c4f21e48f35fc70609887eff6ef8e8b0f95f0c4e2"
+  },
+  "checks": {
+    "tests": "208pass",
+    "builder": "pass",
+    "package": "pass",
+    "scope": "pass",
+    "stagedProject": "18documents/164links pass",
+    "CI": "Exact-source branch42254843249 and tag42254953493 success",
+    "anonymousAssets": "All asset hashes and full104-file ZIP/source/scope parity pass",
+    "cleanInstall": "Exact tag/head and104-file parity pass",
+    "primaryInstall": "Exact tag/head and104-file parity pass;16other plugin settings preserved",
+    "previousTags": "17prior version tags unchanged",
+    "installedRead": "Actual installed architecture/research rules and system-reuse/component-contract enrichments reread; no model turn",
+    "retention": "Assets, exact beta.38 rollback, clean payload hashes and logs retained; exact owned scratch cleanup pending"
+  },
+  "limitations": "No new model/native/human test. Missing source provenance remains qualified.",
+  "publication": {
+    "url": "https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.39",
+    "prerelease": true,
+    "immutable": false
+  },
+  "installedPath": "/Users/iamjudin/.codex/plugins/cache/fab-local/fab/0.1.0-beta.39"
+}
