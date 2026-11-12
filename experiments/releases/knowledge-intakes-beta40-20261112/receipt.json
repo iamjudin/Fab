@@ -1,0 +1,52 @@
+{
+  "version": "0.1.0-beta.40",
+  "fingerprint": "210792dc682d1247",
+  "tag": "v0.1.0-beta.40",
+  "releaseCommit": "a827d4f183a3cb3f0402d39f6cbccc654cfc9ab1",
+  "checks": {
+    "regressions": 208,
+    "package": "pass",
+    "scope": "pass",
+    "branchCI": 43217819422,
+    "tagCI": 43217978470,
+    "anonymousAssets": "byte-identical"
+  },
+  "primaryInstall": {
+    "head": "a827d4f183a3cb3f0402d39f6cbccc654cfc9ab1",
+    "files": 104,
+    "fullParity": true,
+    "enabled": true,
+    "otherPluginSettingsPreserved": 16,
+    "installedReads": [
+      "layout-grouping",
+      "control-context-ownership",
+      "motivation-fit",
+      "motivation-meaning",
+      "game-element-purpose",
+      "feedback-progression",
+      "incentive-effects"
+    ]
+  },
+  "release": {
+    "assets": [
+      "fab-0.1.0-beta.40.zip",
+      "release-scope.json",
+      "SHA256SUMS.txt"
+    ],
+    "draft": false,
+    "html_url": "https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.40",
+    "immutable": false,
+    "prerelease": true,
+    "tag_name": "v0.1.0-beta.40"
+  },
+  "rollback": {
+    "tag": "v0.1.0-beta.39",
+    "files": 104,
+    "retainedArchiveSha256": "fa249855092567947668d3dc1945f1e3f7cf08c2c87a3366bea270bc2913b02d"
+  },
+  "assetsSha256": {
+    "SHA256SUMS.txt": "bc2c4a01eab20126374a0f0ad2a21f40c0a0294c971eb42775ab3a4cbcef026e",
+    "fab-0.1.0-beta.40.zip": "91643832301a373bd759479115ce60235261d85a951e8b94606928f5fee373f1",
+    "release-scope.json": "ccf29df097840d9ae4e3e2395c489c01e9bc4cbdb796664a1b55db72c64a5396"
+  }
+}

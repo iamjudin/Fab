@@ -8,8 +8,13 @@ Closing implementation or distribution does not establish behavioral maturity.
 
 ## Current distribution
 
-Beta.40 packages the two November 12 intakes for release. See the
-[release notes](releases/0.1.0-beta.40.md) for content and validation scope.
+**Released, installed and enabled: beta.40**, 104 files / 210792dc682d1247.
+The published tag and main Codex profile match the exact package. The seven
+updated meanings cover the refreshed gamification digest, component spacing
+and search scope. The rollback target is beta.39.
+[Distribution](../experiments/releases/knowledge-intakes-beta40-20261112/report.md).
+
+### Previous distribution
 
 **Released, installed and enabled: beta.39**,104files/b7b6e1cded215685.
 v0.1.0-beta.39 ->07122707056712a6038898a2e0c43261471f9cc4.
