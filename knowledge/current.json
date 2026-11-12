@@ -520,7 +520,8 @@
         "симметрия",
         "равное количество",
         "баланс колонок",
-        "колонки"
+        "колонки",
+        "внутренний отступ и промежуток между компонентами"
       ],
       "topics": [
         "layout",
@@ -567,6 +568,16 @@
           "archive": "plugins/fab/shared/methods/typography-layout.full.json",
           "section": "R020",
           "textSha256": "0ae00dc86e0cf94c175d8a609302683c6262eea6021f8a2d3a4db36ab4009ec5"
+        },
+        {
+          "archive": "knowledge/sources/mobile-figma.full.json",
+          "section": "R001",
+          "textSha256": "01c04433e8cfc81e3a3de7d22fc437192468e5fabb1f45499aac3ff7812aaf23"
+        },
+        {
+          "archive": "knowledge/sources/mobile-figma.full.json",
+          "section": "R002",
+          "textSha256": "849acd2a949ac2edd7e3d4d0cc3ee40bd8ae381ad0ef17baf8a514e54d948a37"
         }
       ],
       "relations": {
@@ -576,7 +587,7 @@
         ]
       },
       "authority": "qualified-knowledge",
-      "body": "# Express semantic belonging before adjusting spacing\n\n## Meaning\nFirst identify which object a heading, label or explanation belongs to. Let spacing, alignment and economical emphasis express that relationship. Resolve duplicated labels by the distinct information they contribute, not by deleting every secondary label. Diagnose the relationship before choosing whether to reduce or increase a gap.\n\n## Applicability and exceptions\nUse for visible grouping and nesting across interfaces. A balanced layout is valid when it preserves meaning; unequal groups need not be padded or shortened to equal counts. Explicit current Fab policy owns authoring decisions, including meaning before decorative economy. This knowledge does not prescribe a fixed section sequence or ban expressive headings.\n\n## Source conflict and evidence boundary\nR014 gives a 2:1 spacing recipe and R040 even says to reverse it; these are preserved historical statements, not a reliable universal correction. A numeric ratio alone cannot diagnose belonging. The qualified practice is relational; source claims are not independently validated comprehension outcomes. Current interface policy remains separate from this evidence.\n\n## A label, its field and a quiet common region\n\nIf a label is equally close to its own field and the next one, its belonging can\nbe unclear. First identify that relationship, then make the internal connection\nand separation from neighbors readable. A neutral background or boundary can\nmake the common region explicit, while internal spacing still expresses the\nrelationships inside it. An outer card cannot repair arbitrary internal grouping.\n\nA group need not become the strongest accent. Conversely, increasing every\nheading's size/weight/color can make several elements compete rather than clarify\npriority. Evaluate the whole composition before creating another text style or\nshade. This explains a contextual mechanism, not a universal spacing ratio,\nrequired gray, style count or measured irritation threshold.\n"
+      "body": "# Express semantic belonging before adjusting spacing\n\n## Meaning\nFirst identify which object a heading, label or explanation belongs to. Let spacing, alignment and economical emphasis express that relationship. Resolve duplicated labels by the distinct information they contribute, not by deleting every secondary label. Diagnose the relationship before choosing whether to reduce or increase a gap.\n\n## Applicability and exceptions\nUse for visible grouping and nesting across interfaces. A balanced layout is valid when it preserves meaning; unequal groups need not be padded or shortened to equal counts. Explicit current Fab policy owns authoring decisions, including meaning before decorative economy. This knowledge does not prescribe a fixed section sequence or ban expressive headings.\n\n## Source conflict and evidence boundary\nR014 gives a 2:1 spacing recipe and R040 even says to reverse it; these are preserved historical statements, not a reliable universal correction. A numeric ratio alone cannot diagnose belonging. The qualified practice is relational; source claims are not independently validated comprehension outcomes. Current interface policy remains separate from this evidence.\n\n## A label, its field and a quiet common region\n\nIf a label is equally close to its own field and the next one, its belonging can\nbe unclear. First identify that relationship, then make the internal connection\nand separation from neighbors readable. A neutral background or boundary can\nmake the common region explicit, while internal spacing still expresses the\nrelationships inside it. An outer card cannot repair arbitrary internal grouping.\n\nA group need not become the strongest accent. Conversely, increasing every\nheading's size/weight/color can make several elements compete rather than clarify\npriority. Evaluate the whole composition before creating another text style or\nshade. This explains a contextual mechanism, not a universal spacing ratio,\nrequired gray, style count or measured irritation threshold.\n\n\n## Locate the spacing change in the component or its container\n\nA button can own its content padding and the gap between its icon and label. Its parent can own the gap between buttons. A form can separate the same buttons more than a toolbar while preserving their internal spacing. If the label/icon relationship is wrong across consumers, review the shared button. If only one composition groups the buttons poorly, review that container. When the group itself has a shared contract, its own definition can keep that spacing coherent. These are ownership choices. Nested Auto Layout frames support their own padding and gap without prescribing a scale.\n"
     },
     {
       "id": "layout-alignment",
@@ -1902,7 +1913,8 @@
         "владелец действия",
         "фильтр списка",
         "object settings",
-        "control ownership"
+        "control ownership",
+        "поиск по разделу и по всему приложению"
       ],
       "topics": [
         "structure",
@@ -1939,6 +1951,16 @@
           "archive": "plugins/fab/shared/methods/mobile-structure.full.json",
           "section": "R008",
           "textSha256": "71cff8d7b088585bbd9e09113d13ff66453decffabbaf0fe2c4d25557261e42c"
+        },
+        {
+          "archive": "knowledge/sources/mobile-figma.full.json",
+          "section": "R001",
+          "textSha256": "01c04433e8cfc81e3a3de7d22fc437192468e5fabb1f45499aac3ff7812aaf23"
+        },
+        {
+          "archive": "knowledge/sources/mobile-figma.full.json",
+          "section": "R003",
+          "textSha256": "5e37a5adacac268fccbf18e5c6e5f40f315fc6f6d199df510cae7ff49b5885c0"
         }
       ],
       "relations": {
@@ -1950,7 +1972,7 @@
         ]
       },
       "authority": "qualified-knowledge",
-      "body": "# Keep commands and settings with the object they affect\n\n## Meaning\nIdentify the affected collection, object, temporary operation, application/account or operating system before placing a control. A collection's filter/search/bulk actions, an object's properties/history/actions and a temporary operation's input have different owners. App-wide preferences and OS-owned capabilities are not interchangeable with object-specific settings.\n\n## Applicability and exceptions\nAn object's notification rule can belong to that object while an app-wide mode and OS permission belong elsewhere. A global policy can legitimately need a central entry; a shared service can back local controls without moving their user-facing ownership. Local placement can need an overflow or secondary entry when the object surface is crowded. Do not create another screen merely to keep a card visually clean.\n\n## Evidence boundary\nThis is a contextual ownership heuristic from the mobile report, not a universal menu hierarchy or proof that every local action must remain permanently visible. Platform permission/settings behavior needs actual environment evidence. The linked Figma/code ownership unit concerns a different ownership axis and does not dictate product navigation or access rights.\n\n\n## Object work versus app settings\nDetail describes the current object, Edit the proposed change, Create a new\nobject in formation, and History past events. Required initial setup belongs\nto the creation/first-use task when it is needed to make the object usable,\nrather than automatically to global Settings. Cross-object activity can be a\nseparate app-level context when people actually work with it that way.\n"
+      "body": "# Keep commands and settings with the object they affect\n\n## Meaning\nIdentify the affected collection, object, temporary operation, application/account or operating system before placing a control. A collection's filter/search/bulk actions, an object's properties/history/actions and a temporary operation's input have different owners. App-wide preferences and OS-owned capabilities are not interchangeable with object-specific settings.\n\n## Applicability and exceptions\nAn object's notification rule can belong to that object while an app-wide mode and OS permission belong elsewhere. A global policy can legitimately need a central entry; a shared service can back local controls without moving their user-facing ownership. Local placement can need an overflow or secondary entry when the object surface is crowded. Do not create another screen merely to keep a card visually clean.\n\n## Evidence boundary\nThis is a contextual ownership heuristic from the mobile report, not a universal menu hierarchy or proof that every local action must remain permanently visible. Platform permission/settings behavior needs actual environment evidence. The linked Figma/code ownership unit concerns a different ownership axis and does not dictate product navigation or access rights.\n\n\n## Object work versus app settings\nDetail describes the current object, Edit the proposed change, Create a new\nobject in formation, and History past events. Required initial setup belongs\nto the creation/first-use task when it is needed to make the object usable,\nrather than automatically to global Settings. Cross-object activity can be a\nseparate app-level context when people actually work with it that way.\n\n\n## Separate what search covers from how it opens\n\nA portal can search news within the current collection and also search across the portal. The same field anatomy can serve both. Make the searched collection and results context clear through the label, placement or a scope control. A toolbar action, an inline field and a dedicated surface are possible entries. The surface alone cannot tell the person what the query covers. Check the result set and the return context separately. Choose actual system behavior for the target rather than inferring it from similar field geometry.\n"
     },
     {
       "id": "mobile-input-context",
@@ -4373,7 +4395,8 @@
         "нужна ли геймификация",
         "проблема мотивации",
         "участник и бизнес",
-        "игровой слой"
+        "игровой слой",
+        "проверка пригодности геймификации"
       ],
       "topics": [
         "motivation",
@@ -4415,6 +4438,16 @@
           "archive": "plugins/fab/shared/methods/gamification.full.json",
           "section": "R006",
           "textSha256": "c217b9070f47fb795bc83f2a7a5fd533fbbe6550f7696b650c56fe549c3d6fd3"
+        },
+        {
+          "archive": "knowledge/sources/gamification-digest-refresh.full.json",
+          "section": "R001",
+          "textSha256": "4a15de37abf647d3d183692787ed4e9daa3649ff2e219babff1ace41bac28949"
+        },
+        {
+          "archive": "knowledge/sources/gamification-digest-refresh.full.json",
+          "section": "R002",
+          "textSha256": "f3ee7b2805e7816e719d7e1818069ff9d91bf41dd73d40f0934f6e4054e54405"
         }
       ],
       "relations": {
@@ -4427,7 +4460,7 @@
         ]
       },
       "authority": "qualified-knowledge",
-      "body": "# Check whether willingness is the obstacle before adding game elements\n\n## Meaning\nGame thinking can ask why a person would willingly perform a valuable activity, understand its consequences and continue. The participant's immediate purpose and the creator's outcome can differ. Explain the connection rather than assuming that more activity benefits both. First distinguish willingness from missing skill, access, affordability, useful functionality or clear interaction.\n## Applicability and exceptions\nMeaningful choices, observable actions and feedback can make motivational design relevant. They do not by themselves establish benefit. Examine existing incentives and product promises. Extra play can conflict with a promise to save time, and competition can damage cooperation. A useful experience may need no reward layer. Internal employee programs, customer experiences and behavior-change contexts differ. Game thinking does not require a complete game world and is not mathematical game theory.\nThe book's 6D questions connect outcomes, behavior, participant differences, activity cycles, voluntary interest and suitable tools. They are reasoning aids, not six mandatory documents or stages.\n## Evidence boundary\nThis is selective attributed synthesis from Werbach/Hunter's For the Win, not the full book, a new empirical review or evidence that gamification works in the current product. Real ability/access problems are not cured by adding motivation. Existing goals, authority and behavior contracts govern any actual intervention.\n\n## The connected decisions behind 6D\n\nThe book's six design questions form a reasoning chain:\n\n| Question | What it connects |\n| --- | --- |\n| Define objectives | The real outcome, its reason and whose interest it serves |\n| Delineate behavior | Observable actions to outcomes, including quality and unwanted effects |\n| Describe players | Participant purposes, barriers, experience and relationships |\n| Devise activity cycles | What starts action, explains its result and changes with experience |\n| Do not forget fun | The source of voluntary interest, rather than assuming enjoyment from decoration |\n| Deploy suitable tools | Mechanics and components that serve the preceding answers |\n\nFor instance, selecting a quest before identifying the valuable activity reverses\nthe dependency: the visible component cannot supply the missing purpose. These\nquestions can be resolved within existing work; they prescribe neither six files\nnor entertainment for every purposeful routine and do not establish an effect.\n"
+      "body": "# Check whether willingness is the obstacle before adding game elements\n\n## Meaning\nGame thinking can ask why a person would willingly perform a valuable activity, understand its consequences and continue. The participant's immediate purpose and the creator's outcome can differ. Explain the connection rather than assuming that more activity benefits both. First distinguish willingness from missing skill, access, affordability, useful functionality or clear interaction.\n## Applicability and exceptions\nMeaningful choices, observable actions and feedback can make motivational design relevant. They do not by themselves establish benefit. Examine existing incentives and product promises. Extra play can conflict with a promise to save time, and competition can damage cooperation. A useful experience may need no reward layer. Internal employee programs, customer experiences and behavior-change contexts differ. Game thinking does not require a complete game world and is not mathematical game theory.\nThe book's 6D questions connect outcomes, behavior, participant differences, activity cycles, voluntary interest and suitable tools. They are reasoning aids, not six mandatory documents or stages.\n## Evidence boundary\nThis is selective attributed synthesis from Werbach/Hunter's For the Win, not the full book, a new empirical review or evidence that gamification works in the current product. Real ability/access problems are not cured by adding motivation. Existing goals, authority and behavior contracts govern any actual intervention.\n\n## The connected decisions behind 6D\n\nThe book's six design questions form a reasoning chain:\n\n| Question | What it connects |\n| --- | --- |\n| Define objectives | The real outcome, its reason and whose interest it serves |\n| Delineate behavior | Observable actions to outcomes, including quality and unwanted effects |\n| Describe players | Participant purposes, barriers, experience and relationships |\n| Devise activity cycles | What starts action, explains its result and changes with experience |\n| Do not forget fun | The source of voluntary interest, rather than assuming enjoyment from decoration |\n| Deploy suitable tools | Mechanics and components that serve the preceding answers |\n\nFor instance, selecting a quest before identifying the valuable activity reverses\nthe dependency: the visible component cannot supply the missing purpose. These\nquestions can be resolved within existing work; they prescribe neither six files\nnor entertainment for every purposeful routine and do not establish an effect.\n\n\n## Compare candidate activities against four questions\n\nAsk whose willingness needs support, what meaningful choice people have, how the desired action and its quality can be observed, and what existing incentives might conflict. The book contrasts supermarket checkout speed, which is easy to count but offers little worker choice, with a loyalty program that may let customers choose among rewards. Evaluate the benefit and tradeoffs of each activity separately. When defining a goal, remove proposed means such as a leaderboard and name the result and its beneficiary.\n"
     },
     {
       "id": "motivation-meaning",
@@ -4437,7 +4470,8 @@
         "внутренняя мотивация",
         "внешняя мотивация",
         "автономия компетентность связанность",
-        "crowding out"
+        "crowding out",
+        "признание и давление"
       ],
       "topics": [
         "motivation",
@@ -4469,6 +4503,16 @@
           "archive": "plugins/fab/shared/methods/gamification.full.json",
           "section": "R013",
           "textSha256": "1b481928d4f8296f14d04ca97fa177c816b18e58dc26eb1a9456d90c6a3242c1"
+        },
+        {
+          "archive": "knowledge/sources/gamification-digest-refresh.full.json",
+          "section": "R001",
+          "textSha256": "4a15de37abf647d3d183692787ed4e9daa3649ff2e219babff1ace41bac28949"
+        },
+        {
+          "archive": "knowledge/sources/gamification-digest-refresh.full.json",
+          "section": "R003",
+          "textSha256": "0a72831d39e33483e61b5cfa69590a2f16b06679567df162085ec21fc3909dd4"
         }
       ],
       "relations": {
@@ -4480,7 +4524,7 @@
         ]
       },
       "authority": "qualified-knowledge",
-      "body": "# Treat rewards and psychological needs as contextual explanations\n\n## Meaning\nIn the book's account, competence, autonomy and relatedness help explain an experience, not specify three required widgets. Feedback can support understanding and a suitable challenge, meaningful choice can support agency, and recognition/support can matter without a public contest. A score does not prove ability and a cosmetic choice does not establish control over participation.\nIntrinsic motivation concerns the activity itself. Extrinsic motivation concerns a separable result, which can still be personally meaningful. The same reward can be interpreted differently by different people and at different times.\n## Applicability and exceptions\nExpected contingent rewards can redirect attention toward earning the reward, while external recognition can support some routine activities. Neither implies all rewards help or all rewards harm. Ask whether feedback communicates understanding or pressure. Necessary purposeful routine need not be intrinsically enjoyable to be worthwhile. Bartle's historical player categories can prompt questions about motives but are not universal personality diagnoses, permanent personas or proof of a preferred competition style.\n## Evidence boundary\nThe source is the book-derived selective synthesis with selected passage checks, not independent verification of self-determination theory or effect sizes. Specific populations, lasting motivation, learning and wellbeing require applicable evidence beyond this material. A plausible motivational explanation stays a hypothesis until supported."
+      "body": "# Treat rewards and psychological needs as contextual explanations\n\n## Meaning\nIn the book's account, competence, autonomy and relatedness help explain an experience, not specify three required widgets. Feedback can support understanding and a suitable challenge, meaningful choice can support agency, and recognition/support can matter without a public contest. A score does not prove ability and a cosmetic choice does not establish control over participation.\nIntrinsic motivation concerns the activity itself. Extrinsic motivation concerns a separable result, which can still be personally meaningful. The same reward can be interpreted differently by different people and at different times.\n## Applicability and exceptions\nExpected contingent rewards can redirect attention toward earning the reward, while external recognition can support some routine activities. Neither implies all rewards help or all rewards harm. Ask whether feedback communicates understanding or pressure. Necessary purposeful routine need not be intrinsically enjoyable to be worthwhile. Bartle's historical player categories can prompt questions about motives but are not universal personality diagnoses, permanent personas or proof of a preferred competition style.\n## Evidence boundary\nThe source is the book-derived selective synthesis with selected passage checks, not independent verification of self-determination theory or effect sizes. Specific populations, lasting motivation, learning and wellbeing require applicable evidence beyond this material. A plausible motivational explanation stays a hypothesis until supported.\n\n## Look at the meaning of the same task and reward\n\nA person may study statistics for a profession they chose, even when they find the exercise tedious. An expected reward for finishing a reading quota can invite people to do just enough to earn it. Unexpected recognition or feedback that explains what a learner mastered can communicate something different. Check how the participant understands the reward and how others use the result, especially when feedback affects evaluation.\n"
     },
     {
       "id": "game-element-purpose",
@@ -4490,7 +4534,8 @@
         "баллы бейджи рейтинги",
         "динамики механики компоненты",
         "очки зачем",
-        "leaderboard"
+        "leaderboard",
+        "виртуальная валюта и счёт"
       ],
       "topics": [
         "gamification",
@@ -4527,6 +4572,16 @@
           "archive": "plugins/fab/shared/methods/gamification.full.json",
           "section": "R013",
           "textSha256": "1b481928d4f8296f14d04ca97fa177c816b18e58dc26eb1a9456d90c6a3242c1"
+        },
+        {
+          "archive": "knowledge/sources/gamification-digest-refresh.full.json",
+          "section": "R001",
+          "textSha256": "4a15de37abf647d3d183692787ed4e9daa3649ff2e219babff1ace41bac28949"
+        },
+        {
+          "archive": "knowledge/sources/gamification-digest-refresh.full.json",
+          "section": "R004",
+          "textSha256": "6550e70c37c533fb851838a5571bd17ec99d15f8b59654a9fb396efcd0f7d5aa"
         }
       ],
       "relations": {
@@ -4537,7 +4592,7 @@
         ]
       },
       "authority": "qualified-knowledge",
-      "body": "# Choose the function of feedback and comparison before its visible component\n\n## Meaning\nExperience dynamics, interaction mechanics and concrete components are different levels with many-to-many relationships. A quest can implement challenge and feedback in support of progression, but copying the component does not recreate the experience. Select the purpose before choosing points, badges, levels, teams or a leaderboard.\nPoints can express score, exchange, status, feedback or internal analytics. Internal measurement need not become a visible currency. Badges can communicate a possible goal, reputation or belonging, while a credible skill credential needs trustworthy criteria and issuer. Leaderboards emphasize relative standing rather than personal or collective progress.\n## Applicability and exceptions\nRelative competition can suit some people and contexts while discouraging others or undermining cooperation. Personal growth, contextual comparison and collective achievement are alternatives, not mandatory replacements for every ranking. A decorative award is not evidence of the skill it names. Do not implement the full element catalogue or assume one component has one psychological effect.\n## Evidence boundary\nThe taxonomy and historical stories are book-derived design vocabulary, not causal forecasts of engagement, learning, retention or sales. Component resemblance does not prove function, comprehension or benefit. Context and actual behavior determine whether the chosen implementation serves its intended role."
+      "body": "# Choose the function of feedback and comparison before its visible component\n\n## Meaning\nExperience dynamics, interaction mechanics and concrete components are different levels with many-to-many relationships. A quest can implement challenge and feedback in support of progression, but copying the component does not recreate the experience. Select the purpose before choosing points, badges, levels, teams or a leaderboard.\nPoints can express score, exchange, status, feedback or internal analytics. Internal measurement need not become a visible currency. Badges can communicate a possible goal, reputation or belonging, while a credible skill credential needs trustworthy criteria and issuer. Leaderboards emphasize relative standing rather than personal or collective progress.\n## Applicability and exceptions\nRelative competition can suit some people and contexts while discouraging others or undermining cooperation. Personal growth, contextual comparison and collective achievement are alternatives, not mandatory replacements for every ranking. A decorative award is not evidence of the skill it names. Do not implement the full element catalogue or assume one component has one psychological effect.\n## Evidence boundary\nThe taxonomy and historical stories are book-derived design vocabulary, not causal forecasts of engagement, learning, retention or sales. Component resemblance does not prove function, comprehension or benefit. Context and actual behavior determine whether the chosen implementation serves its intended role.\n\n## Trace a component to its actual effect\n\nA team can organize mutual help on a shared task or competition between teams. Check which interactions the rules reward before predicting belonging or cooperation. A ranking can use a relevant comparison group if that helps the intended comparison. Points that can be spent or exchanged also create incentives to accumulate and trade them. A personal progress indicator can communicate milestones without creating those incentives.\n"
     },
     {
       "id": "feedback-progression",
@@ -4548,7 +4603,8 @@
         "цикл вовлечения",
         "прогрессия",
         "счётчик не мастерство",
-        "конец игры"
+        "конец игры",
+        "петля мотивация действие обратная связь"
       ],
       "topics": [
         "feedback",
@@ -4580,6 +4636,16 @@
           "archive": "plugins/fab/shared/methods/gamification.full.json",
           "section": "R013",
           "textSha256": "1b481928d4f8296f14d04ca97fa177c816b18e58dc26eb1a9456d90c6a3242c1"
+        },
+        {
+          "archive": "knowledge/sources/gamification-digest-refresh.full.json",
+          "section": "R001",
+          "textSha256": "4a15de37abf647d3d183692787ed4e9daa3649ff2e219babff1ace41bac28949"
+        },
+        {
+          "archive": "knowledge/sources/gamification-digest-refresh.full.json",
+          "section": "R005",
+          "textSha256": "a15e25a53d2ae66b7f4d1b4b8809bf36bcc4d16474784f24e1d8a2a696049e84"
         }
       ],
       "relations": {
@@ -4591,7 +4657,7 @@
         ]
       },
       "authority": "qualified-knowledge",
-      "body": "# Distinguish immediate feedback from longer progression and mastery\n\n## Meaning\nA short engagement loop connects motivation, action and feedback. Feedback should make the result intelligible and explain why another action is meaningful for the person. Receiving a token does not explain continuation unless that token or activity matters. Longer progression asks how support, challenge and capability change with experience rather than merely increasing a counter.\n## Applicability and exceptions\nAccessible beginnings, later challenges and periods of ease are possibilities, not a compulsory difficulty curve or boss encounter. Newcomers and experienced people can need different support without fixed demographic labels. Decide whether a finite achievement or continuing practice serves the purpose. Winning can end participation or make others lose, and endless return is not automatically success. Meaningful routine can serve an external goal without constant entertainment.\n## Evidence boundary\nA short observed session can support comprehension or immediate preference, not durable motivation or changed capability. Longer behavior and appropriate comparison are needed for stronger claims. The source's application inference is not a full experimental protocol. Reuse claim-sensitive measurement instead of inventing universal retention or progression targets."
+      "body": "# Distinguish immediate feedback from longer progression and mastery\n\n## Meaning\nA short engagement loop connects motivation, action and feedback. Feedback should make the result intelligible and explain why another action is meaningful for the person. Receiving a token does not explain continuation unless that token or activity matters. Longer progression asks how support, challenge and capability change with experience rather than merely increasing a counter.\n## Applicability and exceptions\nAccessible beginnings, later challenges and periods of ease are possibilities, not a compulsory difficulty curve or boss encounter. Newcomers and experienced people can need different support without fixed demographic labels. Decide whether a finite achievement or continuing practice serves the purpose. Winning can end participation or make others lose, and endless return is not automatically success. Meaningful routine can serve an external goal without constant entertainment.\n## Evidence boundary\nA short observed session can support comprehension or immediate preference, not durable motivation or changed capability. Longer behavior and appropriate comparison are needed for stronger claims. The source's application inference is not a full experimental protocol. Reuse claim-sensitive measurement instead of inventing universal retention or progression targets.\n\n## Design the next action and the longer path\n\nThe result of one action can change the person's reason to try another. Across sessions, an achievable first task, a harder challenge, a consolidation period or a new role may serve different needs. The book describes Lift replacing intricate habit mechanics with simple encouragement and feedback from personal history. Check whether people can interpret the feedback, use it to improve and continue voluntarily. Each outcome needs evidence at its own timescale.\n"
     },
     {
       "id": "incentive-effects",
@@ -4601,7 +4667,8 @@
         "побочные эффекты наград",
         "оптимизация баллов",
         "принуждение в игре",
-        "соревнование мешает сотрудничеству"
+        "соревнование мешает сотрудничеству",
+        "обход игровых правил"
       ],
       "topics": [
         "incentives",
@@ -4648,6 +4715,16 @@
           "archive": "plugins/fab/shared/methods/gamification.full.json",
           "section": "R013",
           "textSha256": "1b481928d4f8296f14d04ca97fa177c816b18e58dc26eb1a9456d90c6a3242c1"
+        },
+        {
+          "archive": "knowledge/sources/gamification-digest-refresh.full.json",
+          "section": "R001",
+          "textSha256": "4a15de37abf647d3d183692787ed4e9daa3649ff2e219babff1ace41bac28949"
+        },
+        {
+          "archive": "knowledge/sources/gamification-digest-refresh.full.json",
+          "section": "R006",
+          "textSha256": "14909d90601142b87f07cfb59fcdffee95b84297ff0236cddfc36953c27f7f84"
         }
       ],
       "relations": {
@@ -4660,7 +4737,7 @@
         ]
       },
       "authority": "qualified-knowledge",
-      "body": "# Examine what incentives make rational and who bears their consequences\n\n## Meaning\nPeople respond to implemented rules and consequences. Ask what becomes advantageous to optimize and whether that damages the actual outcome, quality, collaboration, trust or the participant's purpose. Activity in a reward layer can diverge from the intended business result. Recognition and a measurable task still need relevant quality safeguards.\n## Applicability and exceptions\nUnexpected behavior can support the desired outcome, so do not ban every unplanned action solely because it was unplanned. Voluntariness depends on power and consequences. A workplace ranking tied to pay or employment differs from an optional challenge even when the visual design looks playful. Consider burdens introduced by a sophisticated mechanism, not just its ingenuity. Declining or completing an experience need not be a failure to maximize engagement.\n## Evidence boundary\nBook cases illustrate tensions and alternative explanations, not verified causal effects or current product facts. An optimistic theory is not proof of harmlessness. Specific ages, vulnerabilities, employment relationships or consequential real-world effects need their own evidence. The historical legal map is not current law, and an agreement does not settle every issue. This knowledge does not authorize tracking, experiments or new features.\n\n## Read book cases as contrasts in mechanism\n\nThe retained selective book synthesis contrasts recognition for localization\ncontributions with the need to protect translation quality; DevHub's game-layer\nactivity with the business result it was intended to improve; and workplace\nranking at Disneyland with the power and consequences that limit voluntariness.\nIts Lift and Seriosity accounts also ask whether an elaborate mechanism adds\nburden where simpler recognition or feedback could help.\n\nThese attributed case contrasts teach different questions: what is rewarded,\nwhether quality survives, who can decline, and what new work the mechanism\ncreates. They do not establish current company behavior, verified causal effects\nor a rule that all rankings or incentive systems fail. The registered source is\na selective synthesis, not the full book or an independently reproduced study.\n"
+      "body": "# Examine what incentives make rational and who bears their consequences\n\n## Meaning\nPeople respond to implemented rules and consequences. Ask what becomes advantageous to optimize and whether that damages the actual outcome, quality, collaboration, trust or the participant's purpose. Activity in a reward layer can diverge from the intended business result. Recognition and a measurable task still need relevant quality safeguards.\n## Applicability and exceptions\nUnexpected behavior can support the desired outcome, so do not ban every unplanned action solely because it was unplanned. Voluntariness depends on power and consequences. A workplace ranking tied to pay or employment differs from an optional challenge even when the visual design looks playful. Consider burdens introduced by a sophisticated mechanism, not just its ingenuity. Declining or completing an experience need not be a failure to maximize engagement.\n## Evidence boundary\nBook cases illustrate tensions and alternative explanations, not verified causal effects or current product facts. An optimistic theory is not proof of harmlessness. Specific ages, vulnerabilities, employment relationships or consequential real-world effects need their own evidence. The historical legal map is not current law, and an agreement does not settle every issue. This knowledge does not authorize tracking, experiments or new features.\n\n## Read book cases as contrasts in mechanism\n\nThe retained selective book synthesis contrasts recognition for localization\ncontributions with the need to protect translation quality; DevHub's game-layer\nactivity with the business result it was intended to improve; and workplace\nranking at Disneyland with the power and consequences that limit voluntariness.\nIts Lift and Seriosity accounts also ask whether an elaborate mechanism adds\nburden where simpler recognition or feedback could help.\n\nThese attributed case contrasts teach different questions: what is rewarded,\nwhether quality survives, who can decline, and what new work the mechanism\ncreates. They do not establish current company behavior, verified causal effects\nor a rule that all rankings or incentive systems fail. The registered source is\na selective synthesis, not the full book or an independently reproduced study.\n\n\n## Evaluate the same workaround against the actual goal\n\nThe book describes workers skipping breaks under a speed ranking. Ask who can see the ranking, how it affects evaluation and what it costs someone to decline. In the book's Lloyds example, tradeable points produced inflation while conversations between investors and authors helped improve ideas. A collaboration goal can justify preserving those conversations while addressing inflation. A fair selection goal may require examining whether the conversations undermine the use of price as the selection signal. Observe quality or participant benefit separately from activity in the system.\n"
     },
     {
       "id": "repository-first-use",

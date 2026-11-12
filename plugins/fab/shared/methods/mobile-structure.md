@@ -12,7 +12,7 @@ with `--query "мобильная структура"`, `--query "настрой
 | Question | Current unit |
 | --- | --- |
 | Main context, peers, drill-down, overview and temporary task | `mobile-access-structure` |
-| Collection/object/app/OS control placement | `control-context-ownership` |
+| Collection/object/app/OS control placement, including local and global search | `control-context-ownership` |
 | Keyboard, focus and available-window adaptation | `mobile-input-context` |
 | Native/browser and cross-platform transfer boundary | `platform-transfer-boundary` |
 | Capability request, denial and revocation | `permission-context` |

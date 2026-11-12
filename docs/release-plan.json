@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "version": "0.1.0-beta.39",
-  "fingerprint": "b7b6e1cded215685",
+  "version": "0.1.0-beta.40",
+  "fingerprint": "210792dc682d1247",
   "channel": "beta",
   "surfaces": [
     {
@@ -995,7 +995,7 @@
       "id": "knowledge.current",
       "default": true,
       "status": "limited",
-      "limitations": "Registered15packet/12family scope.75maintained meanings with source dispositions. Lexical retrieval is not universal recall. Source support, scientific/native/human/sustained evidence gaps remain. No background monitoring or automatic child-plugin/project refresh. Beta.38 restores explanations after complete retained-source review. One fresh prompted Brainstorm case passes; no all-skill, causal, installed-model, sustained or independent-source-truth proof. Beta.39 adds source-reviewed component comparisons and returned-artifact citation checks. Retrieval regression is not a new model, native, human or sustained-use result.",
+      "limitations": "Registered15packet/12family scope.75maintained meanings with source dispositions. Lexical retrieval is not universal recall. Source support, scientific/native/human/sustained evidence gaps remain. No background monitoring or automatic child-plugin/project refresh. Beta.38 restores explanations after complete retained-source review. One fresh prompted Brainstorm case passes; no all-skill, causal, installed-model, sustained or independent-source-truth proof. Beta.39 adds source-reviewed component comparisons and returned-artifact citation checks. Retrieval regression is not a new model, native, human or sustained-use result. Beta.40 enriches seven existing meanings from two reviewed sources. Retrieval and source parity checks do not establish actual Figma, native or participant outcomes.",
       "checks": [
         {
           "name": "source-bound build and detached runtime",
@@ -1016,6 +1016,11 @@
           "name": "beta.39 source preservation and archive-independent component retrieval",
           "result": "pass",
           "evidence": "experiments/releases/design-knowledge-beta39-20261106/report.md; experiments/maintenance/design-knowledge-audit-20261106/full-review.md; tests/test_knowledge_view.py"
+        },
+        {
+          "name": "beta.40 qualified mobile and motivation intake with reader discovery",
+          "result": "pass",
+          "evidence": "docs/research-audits/gamification-refresh-2026-11-12.md; docs/research-audits/mobile-figma-intake-2026-11-12.md"
         }
       ]
     }

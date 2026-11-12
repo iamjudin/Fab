@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "scope": "global-method",
+  "title": "For the Win — November 2026 digest supplement",
+  "sourceSha256": "10b6400ddd35bc40e5629bd612436d88489cd718e9a022cb1753d6dc43c72c6c",
+  "sourceDate": null,
+  "ingestedAt": "2026-11-12",
+  "authority": "source-material-not-runtime-instructions",
+  "validation": {
+    "structure": "lossless sections; explicit exclusions",
+    "claims": "not exhaustively fact-checked"
+  },
+  "retainedSha256": "10b6400ddd35bc40e5629bd612436d88489cd718e9a022cb1753d6dc43c72c6c",
+  "excluded": [],
+  "sections": [
+    {
+      "id": "R001",
+      "level": 1,
+      "title": "For the Win — selected additions from the November digest",
+      "text": "# For the Win — selected additions from the November digest\n\nThe creator supplied a refreshed Bookworm digest on 2026-11-12. It attributes\nits account to Kevin Werbach and Dan Hunter's For the Win, in the Russian\ntranslation by A. Kardash (2015). The reviewed note revision has SHA-256\n3930ec52fbef77fe1a79b6a431c10bbf07b4767cc24e23d6ba03aa252871e23f.\nSection IDs below refer to that private digest's indexed snapshot. This\nparaphrase preserves selected design reasoning and historical examples from\nthe digest. The cases illustrate possible mechanisms without establishing\neffect sizes, causality or current product facts.\n\n"
+    },
+    {
+      "id": "R002",
+      "level": 2,
+      "title": "Suitability depends on the activity",
+      "text": "## Suitability depends on the activity\n\nCompare four questions for each proposed activity: whose motivation needs\nsupport, what meaningful choice exists, whether the desired behavior and its\nquality can be observed, and what current incentives could conflict. The\ndigest's supermarket example contrasts easily measured checkout speed with\nlimited worker choice and a customer loyalty program that may give customers\nsome discretion about rewards. The second still needs a worthwhile goal.\nRank the desired outcomes and remove proposed mechanisms from the goal list.\nA leaderboard describes a means. Useful, accurate contributions could be\nan outcome. Map each proposed scored action to that outcome and its quality\ncheck. Sources in the digest: R003, R006, R010–R013 and R024–R025.\n\n"
+    },
+    {
+      "id": "R003",
+      "level": 2,
+      "title": "Feedback can inform or pressure",
+      "text": "## Feedback can inform or pressure\n\nAn external purpose can become personally endorsed. Studying statistics for\na chosen profession is a different reason for doing the same activity from\nstudying to avoid punishment. With an already interesting activity, an\nexpected reward for meeting a quota can direct attention toward the cheapest\nway to earn it. Unexpected recognition or feedback that explains progress can\nhave a different meaning. For a routine task, an external cue may help someone\nget started. Inspect what the feedback measures, how it will be used and\nwhat choice people have. Sources in the digest: R014–R017 and R029.\n\n"
+    },
+    {
+      "id": "R004",
+      "level": 2,
+      "title": "The same component can support different mechanics",
+      "text": "## The same component can support different mechanics\n\nA team can organize mutual help on a shared task or organize competition\nbetween teams. The dynamic of belonging depends on the resulting\nrelationships. Compare personal milestones, groups with a meaningful\nreference point, and collective goals according to the intended outcome.\nA score that people can spend or trade creates additional incentives to\naccumulate and exchange it. A progress indicator can simply communicate\nhow far a person has come. Sources in the digest: R019–R024, R031 and R034.\n\n"
+    },
+    {
+      "id": "R005",
+      "level": 2,
+      "title": "Match the two timescales to the participant's experience",
+      "text": "## Match the two timescales to the participant's experience\n\nIn the short loop the response to one action changes the motivation for the\nnext. Across sessions, a newcomer may need a first achievable task and an\nexperienced participant may need a harder challenge, a chance to consolidate\na skill, or a new role. The book's Lift example describes trading complex\nhabit mechanics for simple encouragement and feedback from personal history.\nObserve how people use the revised mechanism. More immediate use, competence\nand sustained voluntary use are distinct outcomes. Sources in the digest:\nR014, R024, R026–R027, R033 and R034.\n\n"
+    },
+    {
+      "id": "R006",
+      "level": 2,
+      "title": "Follow the incentives outside the score",
+      "text": "## Follow the incentives outside the score\n\nThe book describes workers skipping breaks under a speed ranking. Consider\nwho sees the ranking, whether it affects evaluation and what declining\nparticipation costs. In its Lloyds example, an exchangeable currency created\ninflation while conversations between investors and authors helped develop\nideas. Evaluate the side effects separately. If collaboration is the goal,\npreserve useful conversations and address the currency problem. If fair\nselection through prices is the goal, examine whether those conversations\nundermine that outcome. The Seriosity example illustrates a further failure:\nthe price of sending a message outweighed the benefit perceived by senders.\nTrack participation and the quality or real benefit it was intended to\nproduce separately. The digest's legal topics are historical prompts to\nidentify applicable questions. Sources in the digest: R006, R024 and R028–R034.\n"
+    }
+  ]
+}

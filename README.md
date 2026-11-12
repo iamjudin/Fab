@@ -33,7 +33,7 @@ for the agreed channel. Each skill also works independently.
 Use a Codex client with plugin marketplace support:
 
 ```sh
-codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.39
+codex plugin marketplace add iamjudin/Fab --ref v0.1.0-beta.40
 codex plugin add fab@fab-local
 ```
 
@@ -46,7 +46,7 @@ chat and transfers context after your agreement, subject to host support.
 
 ## Beta status
 
-**Current version: 0.1.0-beta.39.** Mobile apps are the current focus, not a
+**Current version: 0.1.0-beta.40.** Mobile apps are the current focus, not a
 product-size ceiling. Skills work independently; websites and landing pages have
 conditional routes.
 
@@ -68,7 +68,7 @@ The registered knowledge migration is included. Test products, private run logs
 and unselected working research are excluded. Library tags remain optional and additive, with one project-level choice;
 source names, content and existing tags are preserved.
 
-Read [known limits](docs/limitations.md), [release notes](docs/releases/0.1.0-beta.39.md)
+Read [known limits](docs/limitations.md), [release notes](docs/releases/0.1.0-beta.40.md)
 and [validation evidence](experiments/releases/design-knowledge-beta39-20261106/report.md).
 
 ## Development and license

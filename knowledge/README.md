@@ -2,8 +2,10 @@
 
 The maintained current view covers the fifteen registered source packets and a
 qualified component-architecture supplement retained in
-[sources/component-architecture.full.json](sources/component-architecture.full.json).
-The supplement enriches existing meanings without adding another method entry.
+[sources/component-architecture.full.json](sources/component-architecture.full.json),
+plus the [gamification digest](sources/gamification-digest-refresh.full.json) and
+[mobile design in Figma](sources/mobile-figma.full.json) supplements. These
+supplements enrich existing meanings through their established method entries.
 Supporting project research outside that registry is not automatically included.
 Preserved originals remain evidence. The repository source of curated meanings
 is [current.json](current.json); the packaged runtime reads

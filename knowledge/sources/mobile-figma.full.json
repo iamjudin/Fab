@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "scope": "global-method",
+  "title": "Mobile design in Figma — report supplement",
+  "sourceSha256": "006d21695980987d0a2e7c5b190c25f32fb87f9ef471657f41667fa96c549a39",
+  "sourceDate": null,
+  "ingestedAt": "2026-11-12",
+  "authority": "source-material-not-runtime-instructions",
+  "validation": {
+    "structure": "lossless sections; explicit exclusions",
+    "claims": "not exhaustively fact-checked"
+  },
+  "retainedSha256": "006d21695980987d0a2e7c5b190c25f32fb87f9ef471657f41667fa96c549a39",
+  "excluded": [],
+  "sections": [
+    {
+      "id": "R001",
+      "level": 1,
+      "title": "Mobile design in Figma — selected reasoning from the supplied report",
+      "text": "# Mobile design in Figma — selected reasoning from the supplied report\n\nThe Russian report supplied on 2026-11-12 is preserved in a private indexed\nsnapshot with SHA-256\n2dc6f620bd9783fff65c05fd32066916073270c3e62a86c0c151e9772f58908b.\nThe references below use that snapshot's section IDs. Its proposed portal and\nunavailable Memphis example are design illustrations. The report has incomplete\nclaim-level citations and gives conflicting Android top bar values. Those\nvalues and other device geometry stay in the private source as reported.\n\n"
+    },
+    {
+      "id": "R002",
+      "level": 2,
+      "title": "Own spacing at the level of the relationship",
+      "text": "## Own spacing at the level of the relationship\n\nA component can own the spacing among its meaningful parts and between its\ncontent and boundary. The composition owns spacing between component\ninstances. For example, a button can keep the gap between its label and icon\nwhile a form and a toolbar use different gaps between buttons. Change the\nshared definition if the button's internal relationship is wrong. Change the\ncontainer if the spacing issue is between siblings in one composition. A\nshared row or group can own the sibling spacing when that grouping itself has\na reusable contract. This is a design ownership decision. The tool supports\npadding and gap at each nested frame and can allow instance changes.\n\nReport R004, R005 and R010.\n[Figma Help Center — Guide to auto layout](https://help.figma.com/hc/en-us/articles/360040451373-Guide-to-auto-layout-in-Figma)\nconfirms the tool concepts and nesting. It does not mandate this ownership\narrangement or any spacing scale.\n\n"
+    },
+    {
+      "id": "R003",
+      "level": 2,
+      "title": "Choose search scope independently of its entry",
+      "text": "## Choose search scope independently of its entry\n\nThe report's proposed portal contrasts search within news and search across\nthe entire portal. The same field anatomy can serve both. The query domain,\nlabel or scope controls and results context should make the difference clear.\nA local filter can remain with the collection even if the app also provides\na global search entry. A toolbar, inline field and dedicated surface are\npresentation choices. Choose an entry appropriate to the task and target.\nVerify the actual dataset and where the person returns after a result or\ndismissal. The latter check follows Fab's existing continuation knowledge.\n\nReport R012 and R015. [Apple HIG — Search fields](https://developer.apple.com/design/human-interface-guidelines/search-fields/)\nsupports identifying the scope and choosing access patterns according to goals\nand platform. It does not validate the report's specific platform timings,\nsearch behavior or portal implementation.\n"
+    }
+  ]
+}

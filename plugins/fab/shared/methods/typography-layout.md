@@ -16,6 +16,7 @@ Other entry units are `layout-grouping`, `layout-alignment`,
 establish semantic completeness. Read the relevant linked meaning rather than
 loading every source report. A no-match is a discovery limit, not proof no relevant
 knowledge exists. The full packet remains available for qualified reference detail.
+For internal component spacing and spacing between instances, read `layout-grouping`.
 
 These qualified meanings supplement the existing current view across topics.
 [Interface policy](../interface-principles.md) owns actual authoring and revision

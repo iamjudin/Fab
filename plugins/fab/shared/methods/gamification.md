@@ -1,7 +1,7 @@
 # Motivation and gamification — knowledge brief
 
 Read for willingness to act, repeat participation, feedback, progression, rewards
-or competition. [Detailed synthesis](gamification.full.json).
+or competition. [October source synthesis](gamification.full.json).
 
 ## Current meanings
 
@@ -19,8 +19,9 @@ or `--query "побочные эффекты наград"`. Follow relevant ass
 | Optimization, unintended effects, quality and coercion | `incentive-effects` |
 | Actual value and claim-sensitive evidence | `first-value-meaning`, `goal-signal-metric`, `verification-fit` |
 
-All13sections of the supplied synthesis have reviewed dispositions.
-Migrated working summaries are removed here. This is not a full-book migration.
+All 13 sections of the October synthesis have reviewed dispositions. The five
+motivation meanings also cite a November digest supplement in their source
+receipts. Their current explanations are available in the bundled reader.
 
 ## Source boundary
 

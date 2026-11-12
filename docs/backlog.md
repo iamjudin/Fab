@@ -1,12 +1,15 @@
 # Fab backlog
 
-Updated 2026-11-06. This is the only active Fab queue. Main owns entries unless
+Updated 2026-11-12. This is the only active Fab queue. Main owns entries unless
 another owner is named. The exact [pre-maintenance record](backlog-history-2026-10-21.md)
 and [earlier frozen record](backlog-history-2026-10-14.md) preserve original failures,
 corrections, proposals and dated authority. They are history, not current tasks.
 Closing implementation or distribution does not establish behavioral maturity.
 
 ## Current distribution
+
+Beta.40 packages the two November 12 intakes for release. See the
+[release notes](releases/0.1.0-beta.40.md) for content and validation scope.
 
 **Released, installed and enabled: beta.39**,104files/b7b6e1cded215685.
 v0.1.0-beta.39 ->07122707056712a6038898a2e0c43261471f9cc4.
