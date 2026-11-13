@@ -1,0 +1,45 @@
+{
+  "install": {
+    "version": "0.1.0-beta.41",
+    "head": "59993c3538a058689bb6881953fc0b884437b303",
+    "files": 104,
+    "cleanParity": true,
+    "primaryParity": true,
+    "enabled": true,
+    "otherPluginSettingsPreserved": 16
+  },
+  "publication": {
+    "assets": [
+      "fab-0.1.0-beta.41.zip",
+      "release-scope.json",
+      "SHA256SUMS.txt"
+    ],
+    "draft": false,
+    "html_url": "https://github.com/iamjudin/Fab/releases/tag/v0.1.0-beta.41",
+    "immutable": false,
+    "prerelease": true,
+    "tag_name": "v0.1.0-beta.41"
+  },
+  "branch-ci": [
+    {
+      "conclusion": "success",
+      "databaseId": 43514717798,
+      "headSha": "59993c3538a058689bb6881953fc0b884437b303",
+      "status": "completed",
+      "url": "https://github.com/iamjudin/Fab/actions/runs/43514717798"
+    }
+  ],
+  "tag-ci": [
+    {
+      "conclusion": "success",
+      "databaseId": 43514776262,
+      "headSha": "59993c3538a058689bb6881953fc0b884437b303",
+      "status": "completed",
+      "url": "https://github.com/iamjudin/Fab/actions/runs/43514776262"
+    }
+  ],
+  "fingerprint": "48f08a55c9122653",
+  "regressions": 208,
+  "anonymousAssets": "byte-identical",
+  "rollback": "v0.1.0-beta.40"
+}

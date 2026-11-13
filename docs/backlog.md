@@ -1,6 +1,6 @@
 # Fab backlog
 
-Updated 2026-11-12. This is the only active Fab queue. Main owns entries unless
+Updated 2026-11-14. This is the only active Fab queue. Main owns entries unless
 another owner is named. The exact [pre-maintenance record](backlog-history-2026-10-21.md)
 and [earlier frozen record](backlog-history-2026-10-14.md) preserve original failures,
 corrections, proposals and dated authority. They are history, not current tasks.
@@ -8,13 +8,17 @@ Closing implementation or distribution does not establish behavioral maturity.
 
 ## Current distribution
 
-**Released, installed and enabled: beta.40**, 104 files / 210792dc682d1247.
-The published tag and main Codex profile match the exact package. The seven
-updated meanings cover the refreshed gamification digest, component spacing
-and search scope. The rollback target is beta.39.
-[Distribution](../experiments/releases/knowledge-intakes-beta40-20261112/report.md).
+**Published, installed and enabled: beta.41**, 104 files / 48f08a55c9122653.
+Shared guidance preserves decision context in concise responses. All 208
+regressions, branch/tag CI and clean/main installed package comparisons passed.
+Existing-chat application remains open. Rollback is beta.40.
+[Distribution](../experiments/releases/attention-beta41-20261114/report.md).
 
 ### Previous distribution
+
+**Beta.40**, 104 files / 210792dc682d1247, shipped the refreshed gamification
+digest, component spacing and search scope.
+[Distribution](../experiments/releases/knowledge-intakes-beta40-20261112/report.md).
 
 **Released, installed and enabled: beta.39**,104files/b7b6e1cded215685.
 v0.1.0-beta.39 ->07122707056712a6038898a2e0c43261471f9cc4.
