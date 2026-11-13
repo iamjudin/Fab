@@ -1,7 +1,7 @@
 {
   "schema": 1,
-  "version": "0.1.0-beta.40",
-  "fingerprint": "210792dc682d1247",
+  "version": "0.1.0-beta.41",
+  "fingerprint": "48f08a55c9122653",
   "channel": "beta",
   "surfaces": [
     {
@@ -159,7 +159,7 @@
       "id": "cowork",
       "default": true,
       "status": "limited",
-      "limitations": "Bounded project orientation/continuation and concrete workstream proposal. Current-source stage-handoff and growth fixture pass; native recurrence is retained. Short baseline sequence also passes. No ordinary-use trigger consistency, general recovery, installed-model or long-context guarantee. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Ordinary beta.30 research correction/relay dead end recurred. Source handoff now separates recovery/subtask completion from ongoing discussion, but no fresh model/native behavior proof is added. FAB-11 remains open. Conditional landing profile is bundled; exact final profile has structural/local-install evidence only. Real project discovery, narrow/wide visual quality and conversion remain unverified. Beta.32 conditionally routes correction learning and relevant method discovery. One configured GPT-6.1 Sol/Medium composite source review observes discovery and scope/cause application; not native/installed or general reliability. Root input forecast exceeded by77531; no budget-compliance claim. Common interface foundation and conditional web concerns are integrated; supplied-context native/browser probes are bounded, with no actual site/native rendering or conversion proof. Fresh discovery is observed only through Analysis in one composite source case; other direct/native contexts remain unobserved. Beta.37 includes contextual knowledge. Fresh discovery/application is observed through two Analysis source contexts, actual intake through one Research copy. Other direct/native/organic contexts, independent source truth and automatic cross-project/generated-plugin propagation are not established. Beta.38 restores explanations after complete retained-source review. One fresh prompted Brainstorm case passes; no all-skill, causal, installed-model, sustained or independent-source-truth proof. Beta.39 adds source-reviewed component comparisons and returned-artifact citation checks. Retrieval regression is not a new model, native, human or sustained-use result.",
+      "limitations": "Bounded project orientation/continuation and concrete workstream proposal. Current-source stage-handoff and growth fixture pass; native recurrence is retained. Short baseline sequence also passes. No ordinary-use trigger consistency, general recovery, installed-model or long-context guarantee. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Ordinary beta.30 research correction/relay dead end recurred. Source handoff now separates recovery/subtask completion from ongoing discussion, but no fresh model/native behavior proof is added. FAB-11 remains open. Conditional landing profile is bundled; exact final profile has structural/local-install evidence only. Real project discovery, narrow/wide visual quality and conversion remain unverified. Beta.32 conditionally routes correction learning and relevant method discovery. One configured GPT-6.1 Sol/Medium composite source review observes discovery and scope/cause application; not native/installed or general reliability. Root input forecast exceeded by77531; no budget-compliance claim. Common interface foundation and conditional web concerns are integrated; supplied-context native/browser probes are bounded, with no actual site/native rendering or conversion proof. Fresh discovery is observed only through Analysis in one composite source case; other direct/native contexts remain unobserved. Beta.37 includes contextual knowledge. Fresh discovery/application is observed through two Analysis source contexts, actual intake through one Research copy. Other direct/native/organic contexts, independent source truth and automatic cross-project/generated-plugin propagation are not established. Beta.38 restores explanations after complete retained-source review. One fresh prompted Brainstorm case passes; no all-skill, causal, installed-model, sustained or independent-source-truth proof. Beta.39 adds source-reviewed component comparisons and returned-artifact citation checks. Retrieval regression is not a new model, native, human or sustained-use result. Beta.41 clarifies concise collaboration in shared core. New-version response behavior remains unobserved.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
@@ -230,6 +230,11 @@
           "name": "beta.39 source preservation and archive-independent component retrieval",
           "result": "pass",
           "evidence": "experiments/releases/design-knowledge-beta39-20261106/report.md; experiments/maintenance/design-knowledge-audit-20261106/full-review.md; tests/test_knowledge_view.py"
+        },
+        {
+          "name": "beta.41 shared attention guidance and package integrity",
+          "result": "pass",
+          "evidence": "docs/releases/0.1.0-beta.41.md; scripts/check_package.py; tests/"
         }
       ]
     },
