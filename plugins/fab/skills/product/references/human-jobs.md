@@ -18,7 +18,7 @@ claim that one school owns the final definition.
 Use the bundled [JTBD brief](../../../shared/methods/jtbd.md) for research provenance and the
 conditional routes into detailed school/evidence/abstraction material. The
 maintained stage contract below defines Wireframer policy; source-school examples
-do not override it. No external Brain note is required.
+do not override it. The bundled method is self-contained.
 
 `Human Job` is the source-of-truth entity: a meaningful transition from a human
 situation A to a preferred situation B that remains meaningful when the

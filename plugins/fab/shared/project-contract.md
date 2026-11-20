@@ -17,11 +17,9 @@ One active writer per decision; no hidden parallel writers. User authorization
 persists, but changing owner/route doesn't expand it. Keep test products isolated.
 For temporary work follow [artifact lifecycle](artifact-lifecycle.md). Reuse the
 project's retention conventions; keep final handoff links outside disposable paths.
-For consumed research keep source revision and original/brief/full locations in
-project provenance. For any actually used editable library material, read
-[project tags and hidden source metadata](library-usage.md): tags are additive,
-filenames stay unchanged, source writes follow actual authorization. Research
-pairs and their content correspondence remain owned by the Research contract.
+Keep the identity and known revision of sources that inform project decisions or
+artifacts in project provenance. For research pairs, include original/brief/full
+locations and follow the Research contract for content correspondence.
 
 ## Git and GitHub language
 

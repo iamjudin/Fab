@@ -26,7 +26,7 @@ supplied originals even when their titles or bodies are project-specific.
   can still explain the local question and application without creating a new
   global knowledge store. Source preservation is not a competing default answer.
 - Runtime reasoning uses bundled knowledge or project evidence. Maintainer
-  paths in provenance are not required resources; never fetch Brain to complete
+  paths in provenance are optional source references; do not fetch them to complete
   the normal workflow. Request new research when available evidence is weak.
 
 ## Read only what the decision needs
@@ -166,47 +166,24 @@ reading-context counts consistent with the actual pair. Link the matching packet
 from its brief and keep the method visible in the index decision table. Package
 checks verify those relationships, not source truth or semantic completeness.
 
-## Optional project tags after processing
-
-After the original, brief and indexed packet are ready, apply the shared
-[project-tag/source-usage contract](../../../shared/library-usage.md). It also
-covers books, articles and other library material used by any capability.
-Use `project/<accepted-slug>`; preserve all existing tags and filenames.
-Honor standing source-write permission or ask once for the exact tag. Declining
-never blocks completed research artifacts or project-local provenance.
-
-No visible usage section or service catalogue belongs above the research. Keep
-actual processing records locally, with optional cross-project metadata in one
-hidden EOF comment. The bundled helper migrates only explicitly bounded old
-managed blocks, retaining their contents as hidden history. Tag migration does
-not refresh research, timestamps or another project's processed revision.
-
-Bundle inclusion is separate from project use. If an existing `fab-import` marker
-is present, preserve its known meaning/history without adding another visible
-service tag. Do not remove any existing tag as a side effect of this policy.
-No automatic retagging of unrelated notes or changes to historical packets.
-
 ## Source revisions and affected projects
 
-Each project keeps local provenance even if source marking is declined: original
-identity/path, processed content fingerprint/version, processing date and its
-brief/full locations, in its existing research index or alongside the pair.
-The optional hidden source footer is a cross-project usage directory, not the only copy
-of provenance and not proof that every listed project is currently up to date.
+Keep project provenance in the existing research index or alongside the pair:
+the original identity and path, processed content fingerprint or version,
+processing date and brief/full locations. Record bundle inclusion separately
+from project use.
 
 Keep the packet's source/retained hashes for the exact material actually processed.
-Track research-content revision separately from later filename/tag/usage-block
-edits. Exclude only explicitly identified technical annotation blocks when
-computing a body fingerprint; never strip arbitrary source headings or paragraphs.
-If legacy annotation boundaries are uncertain, preserve the full-file hash and
-state that content-only comparison is unavailable rather than guessing.
+Track research-content revisions separately from metadata changes. If the
+boundary of a content-only comparison is uncertain, preserve the full-file hash
+and state that limit.
 
-When processing a changed source again, inspect its usage directory and the
-available project records. List which projects consumed an older body revision
-and which cannot be checked. After the current project's pair is refreshed,
+When processing a changed source again, use available project records to identify
+which projects used an older revision and which cannot be checked. After refreshing
+the current project's pair,
 update only its processed revision/date; do not declare the other entries updated.
 Name the other affected projects and their artifact locations so the person can
-choose the scope of follow-up. Tags/names alone indicate use, not exact revision.
+choose the scope of follow-up. Confirm revisions from the actual processing records.
 Do not automatically open, edit or refresh unrelated projects, create a monitor,
 or overwrite human decisions. A source change triggers review of dependent
 findings/artifacts; it does not make every earlier conclusion false.
@@ -218,13 +195,9 @@ For a consequential knowledge correction or promotion into instructions, use
 preference and missing policy condition require different updates; preserve
 original packets and update only authorized consumers.
 
-Keep source titles, filenames, body and provenance intact when adding project
-usage. Apply the shared additive-tag/hidden-footer contract after actual use and
-source authorization. Preserve historical technical records and every existing
-tag; do not add filename prefixes or perform an old-label migration by default.
-When a module is withdrawn, update actual inclusion status in local provenance,
-not project usage tags: past use is still past use. Version original/brief/packet
-changes together and retain processed revisions and applicability limits.
+When a module is withdrawn, update its inclusion status in project provenance
+and retain the previous use and processed revisions. Version original, brief and
+packet changes together and retain applicability limits.
 
 Revisit a module when primary sources change, a product exposes a contradiction,
 or a decision needs missing detail. Reconcile the affected current meanings,

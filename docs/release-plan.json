@@ -1,14 +1,14 @@
 {
   "schema": 1,
-  "version": "0.1.0-beta.41",
-  "fingerprint": "48f08a55c9122653",
+  "version": "0.1.0-beta.42",
+  "fingerprint": "fd74fdba2c5ea4e8",
   "channel": "beta",
   "surfaces": [
     {
       "id": "analysis",
       "default": true,
       "status": "limited",
-      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Source marking uses project/<slug> without renaming, preserves all tags and hides bounded technical usage data at EOF. Common YAML only, no native Obsidian render claim. Two fresh source cases pass; root aggregate input-budget overrun is retained as process failure, not budget-compliant evidence. Qualified typography knowledge source added2026-10-16. Full source/registry/routes are structurally checked; new layout generation, native behavior and general efficacy are unobserved. Exact source numerical claims are not universal standards. Selective attributed For the Win synthesis added 2026-10-16. Packet preserves the authored synthesis, not the full book/private digest. Structural/source checks only, no empirical motivation or longitudinal effect validation. Beta.30 first-value application learning separates value, demonstration and setup, with conditional Product/Analysis routes. Source/package review only, no new model/native/conversion evidence. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Conditional landing profile is bundled; exact final profile has structural/local-install evidence only. Real project discovery, narrow/wide visual quality and conversion remain unverified. Beta.32 conditionally routes correction learning and relevant method discovery. One configured GPT-6.1 Sol/Medium composite source review observes discovery and scope/cause application; not native/installed or general reliability. Root input forecast exceeded by77531; no budget-compliance claim. Common interface foundation and conditional web concerns are integrated; supplied-context native/browser probes are bounded, with no actual site/native rendering or conversion proof. Fresh discovery is observed only through Analysis in one composite source case; other direct/native contexts remain unobserved. Beta.36 changes author/revision preflight. One supplied-guidance context distinguishes explicit local and global source edits; no baseline comparison, ambiguous negotiation, role-consolidation, browser or general improvement proof. Beta.37 includes contextual knowledge. Fresh discovery/application is observed through two Analysis source contexts, actual intake through one Research copy. Other direct/native/organic contexts, independent source truth and automatic cross-project/generated-plugin propagation are not established. Beta.38 restores explanations after complete retained-source review. One fresh prompted Brainstorm case passes; no all-skill, causal, installed-model, sustained or independent-source-truth proof. Beta.39 adds source-reviewed component comparisons and returned-artifact citation checks. Retrieval regression is not a new model, native, human or sustained-use result.",
+      "limitations": "Independent beta contract and retained bounded evidence only. Historical behavior evidence is not a new-version/full-route validation; changed shared instructions are not independently observed. No universal maturity/native/production guarantee. Qualified typography knowledge source added2026-10-16. Full source/registry/routes are structurally checked; new layout generation, native behavior and general efficacy are unobserved. Exact source numerical claims are not universal standards. Selective attributed For the Win synthesis added 2026-10-16. Packet preserves the authored synthesis, not the full book/private digest. Structural/source checks only, no empirical motivation or longitudinal effect validation. Beta.30 first-value application learning separates value, demonstration and setup, with conditional Product/Analysis routes. Source/package review only, no new model/native/conversion evidence. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Conditional landing profile is bundled; exact final profile has structural/local-install evidence only. Real project discovery, narrow/wide visual quality and conversion remain unverified. Beta.32 conditionally routes correction learning and relevant method discovery. One configured GPT-6.1 Sol/Medium composite source review observes discovery and scope/cause application; not native/installed or general reliability. Root input forecast exceeded by77531; no budget-compliance claim. Common interface foundation and conditional web concerns are integrated; supplied-context native/browser probes are bounded, with no actual site/native rendering or conversion proof. Fresh discovery is observed only through Analysis in one composite source case; other direct/native contexts remain unobserved. Beta.36 changes author/revision preflight. One supplied-guidance context distinguishes explicit local and global source edits; no baseline comparison, ambiguous negotiation, role-consolidation, browser or general improvement proof. Beta.37 includes contextual knowledge. Fresh discovery/application is observed through two Analysis source contexts, actual intake through one Research copy. Other direct/native/organic contexts, independent source truth and automatic cross-project/generated-plugin propagation are not established. Beta.38 restores explanations after complete retained-source review. One fresh prompted Brainstorm case passes; no all-skill, causal, installed-model, sustained or independent-source-truth proof. Beta.39 adds source-reviewed component comparisons and returned-artifact citation checks. Retrieval regression is not a new model, native, human or sustained-use result. Beta.42 retains project-level source provenance and removes source-note tagging and metadata writes. Package checks cover the changed boundary. No fresh Fab model-behavior claim.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
@@ -19,11 +19,6 @@
           "name": "retained bounded baseline evidence",
           "result": "pass",
           "evidence": "experiments/workflow-tests/2026-10-12-partial-routes-results.md"
-        },
-        {
-          "name": "additive project tags and reader-body/name preservation",
-          "result": "pass",
-          "evidence": "tests/test_source_usage.py; experiments/workflow-tests/project-tags-20261015/results.md"
         },
         {
           "name": "qualified typography source and conditional route integrity",
@@ -89,6 +84,11 @@
           "name": "beta.39 source preservation and archive-independent component retrieval",
           "result": "pass",
           "evidence": "experiments/releases/design-knowledge-beta39-20261106/report.md; experiments/maintenance/design-knowledge-audit-20261106/full-review.md; tests/test_knowledge_view.py"
+        },
+        {
+          "name": "beta.42 standalone package and project provenance boundary",
+          "result": "pass",
+          "evidence": "docs/releases/0.1.0-beta.42.md; scripts/check_package.py; tests/"
         }
       ]
     },
@@ -519,7 +519,7 @@
       "id": "research",
       "default": true,
       "status": "limited",
-      "limitations": "Cleaned briefs separate knowledge/application; all437original packet sections preserved. Reader/registry integrity and bounded knowledge/method/marking source cases pass. External source/arithmetic/layout compliance remains PARTIAL. No scientific revalidation, native rendering, general applicability, cross-project efficacy, installed-model behavior or long-context repair guarantee. Source marking uses project/<slug> without renaming, preserves all tags and hides bounded technical usage data at EOF. Common YAML only, no native Obsidian render claim. Two fresh source cases pass; root aggregate input-budget overrun is retained as process failure, not budget-compliant evidence. Qualified typography knowledge source added2026-10-16. Full source/registry/routes are structurally checked; new layout generation, native behavior and general efficacy are unobserved. Exact source numerical claims are not universal standards. Qualified repository/distribution method source added2026-10-16. Source preservation and conditional routes are structurally checked. Selected primary corrections do not validate all legal/case claims or prove documentation usefulness and distribution behavior. Selective attributed For the Win synthesis added 2026-10-16. Packet preserves the authored synthesis, not the full book/private digest. Structural/source checks only, no empirical motivation or longitudinal effect validation. Beta.30 first-value application learning separates value, demonstration and setup, with conditional Product/Analysis routes. Source/package review only, no new model/native/conversion evidence. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Beta.32 conditionally routes correction learning and relevant method discovery. One configured GPT-6.1 Sol/Medium composite source review observes discovery and scope/cause application; not native/installed or general reliability. Root input forecast exceeded by77531; no budget-compliance claim. Fresh discovery is observed only through Analysis in one composite source case; other direct/native contexts remain unobserved. Beta.37 includes contextual knowledge. Fresh discovery/application is observed through two Analysis source contexts, actual intake through one Research copy. Other direct/native/organic contexts, independent source truth and automatic cross-project/generated-plugin propagation are not established. Beta.38 restores explanations after complete retained-source review. One fresh prompted Brainstorm case passes; no all-skill, causal, installed-model, sustained or independent-source-truth proof. Beta.39 adds source-reviewed component comparisons and returned-artifact citation checks. Retrieval regression is not a new model, native, human or sustained-use result.",
+      "limitations": "Cleaned briefs separate knowledge/application; all437original packet sections preserved. Reader/registry integrity and bounded knowledge/method source cases pass. External source/arithmetic/layout compliance remains PARTIAL. No scientific revalidation, native rendering, general applicability, cross-project efficacy, installed-model behavior or long-context repair guarantee. Qualified typography knowledge source added2026-10-16. Full source/registry/routes are structurally checked; new layout generation, native behavior and general efficacy are unobserved. Exact source numerical claims are not universal standards. Qualified repository/distribution method source added2026-10-16. Source preservation and conditional routes are structurally checked. Selected primary corrections do not validate all legal/case claims or prove documentation usefulness and distribution behavior. Selective attributed For the Win synthesis added 2026-10-16. Packet preserves the authored synthesis, not the full book/private digest. Structural/source checks only, no empirical motivation or longitudinal effect validation. Beta.30 first-value application learning separates value, demonstration and setup, with conditional Product/Analysis routes. Source/package review only, no new model/native/conversion evidence. Source scope clarification: indie is not a product-size ceiling. Initial scope, foundation extensibility and demonstrated scale remain distinct. No large-product behavior/scalability evidence from this instruction change. Beta.32 conditionally routes correction learning and relevant method discovery. One configured GPT-6.1 Sol/Medium composite source review observes discovery and scope/cause application; not native/installed or general reliability. Root input forecast exceeded by77531; no budget-compliance claim. Fresh discovery is observed only through Analysis in one composite source case; other direct/native contexts remain unobserved. Beta.37 includes contextual knowledge. Fresh discovery/application is observed through two Analysis source contexts, actual intake through one Research copy. Other direct/native/organic contexts, independent source truth and automatic cross-project/generated-plugin propagation are not established. Beta.38 restores explanations after complete retained-source review. One fresh prompted Brainstorm case passes; no all-skill, causal, installed-model, sustained or independent-source-truth proof. Beta.39 adds source-reviewed component comparisons and returned-artifact citation checks. Retrieval regression is not a new model, native, human or sustained-use result. Beta.42 retains project-level source provenance and removes source-note tagging and metadata writes. Package checks cover the changed boundary. No fresh Fab model-behavior claim.",
       "checks": [
         {
           "name": "bundled contract/reference integrity",
@@ -560,11 +560,6 @@
           "name": "source refusal additive use and revision correspondence",
           "result": "pass",
           "evidence": "experiments/workflow-tests/backlog-closure-20261014/results.md"
-        },
-        {
-          "name": "additive project tags and reader-body/name preservation",
-          "result": "pass",
-          "evidence": "tests/test_source_usage.py; experiments/workflow-tests/project-tags-20261015/results.md"
         },
         {
           "name": "qualified typography source and conditional route integrity",
@@ -620,6 +615,11 @@
           "name": "beta.39 source preservation and archive-independent component retrieval",
           "result": "pass",
           "evidence": "experiments/releases/design-knowledge-beta39-20261106/report.md; experiments/maintenance/design-knowledge-audit-20261106/full-review.md; tests/test_knowledge_view.py"
+        },
+        {
+          "name": "beta.42 standalone package and project provenance boundary",
+          "result": "pass",
+          "evidence": "docs/releases/0.1.0-beta.42.md; scripts/check_package.py; tests/"
         }
       ]
     },

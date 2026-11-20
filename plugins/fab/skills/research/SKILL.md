@@ -23,8 +23,7 @@ applicability and unavailable/review states. Source packets supply provenance or
 uncovered detail, not a bypass that reactivates retired current advice.
 If deeper needed, resolve the [bundled reader](scripts/research_packet.py) from
 this skill's directory, then use `read <full.json> --index` and `--section <ID>`.
-Do not assume a script under the package root or current workspace. No full-library
-reading or Brain dependency.
+Read only the relevant sources.
 For actual research reach the promised evidence threshold with available tools;
 otherwise prepare the brief/prompt and name what remains unperformed.
 Honor the agreed method as well as the evidence threshold. A blocked explicitly selected
@@ -41,10 +40,6 @@ global curation, reconcile existing meanings before adding, enrich or replace
 their current owners and switch affected consumers. Preserve originals and
 compatible indexed evidence; the entry routes to current knowledge instead of
 duplicating a working summary. Project evidence retains its actual local owner.
-After completing ingestion, follow [additive project tags](../../shared/library-usage.md).
-Use existing source-write authorization or offer the exact tag once. Keep all tags
-and filenames, with technical metadata only in a hidden EOF footer. Declining
-never blocks the completed research result.
 Project evidence stays in project; global promotion requires a reusable gap and
 explicit applicability, not a market report becoming universal knowledge.
 Research findings are not creator acceptance or proof of demand. Update affected

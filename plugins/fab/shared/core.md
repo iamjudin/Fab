@@ -132,10 +132,8 @@ policy. Small completed edits need no lesson ceremony or new queue.
 Store durable decisions and deltas where useful; consult project guidance/Git/
 owning backlog, preserve others' edits. Commit verified significant checkpoints
 under project agreement. Experiments use a separate branch; no unsolicited merge.
-Runtime uses bundled methods/project evidence, never requires maintainer Brain.
-When actually using editable external library material for a project, follow
-[additive project tags](library-usage.md); do not rename sources or insert a
-reader-facing usage block. Existing source-write authorization still applies.
+Runtime uses bundled methods and project evidence. Record the source and known
+revision in project provenance when outside material informs a decision or artifact.
 Test products stay separate. No public release inferred from ordinary push.
 
 Keep temporary work task-owned and contained. When scratch files are used, read
